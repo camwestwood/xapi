@@ -2,7 +2,7 @@
 The following terms are in use in the Jisc learning analytics recipes.
 NOTE: The xapi.jisc.ac.uk namespace URI may change.
 
-## 1.0 Verbs
+## 1.0 Verb
 
 Example of a verb entity:
 
@@ -99,10 +99,10 @@ The following are extension properties in the result entity:
 </table>
 
 
-## 1.3 Object
+## 3.0 Object
 
 
-### 1.3.1 Activity Types
+### 3.1 Activity Types
 The following are types of the [Activity Definition Object](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI.md#activity-definition). 
 
 Example:
@@ -200,10 +200,8 @@ Example:
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/vle/file">http://xapi.jisc.ac.uk/vle/forum</a> </td></tr>
 </table>
 
-## 1.3.1 Object Definition Extensions
-The following are used in [object.definition.extensions](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI.md#object). See the [Assignment Graded](recipes/assignment-graded.md#verb)
-
-
+## 3.2 Object Definition Extensions
+The following are Jisc profile extensions to be used in [object.definition.extensions](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI.md#object). See the [Assignment Graded](recipes/assignment-graded.md#verb)
 
 ### Due Date
 
@@ -211,9 +209,10 @@ The following are used in [object.definition.extensions](https://github.com/adln
 <tr><th align="left">Label</th><td>Due Date</td></tr>
 <tr><th align="left">Description</th><td>Date object is due to be submitted. Format is ISO 8601 date time . </td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/dueDate">http://xapi.jisc.ac.uk/dueDate</a> </td></tr>
+<tr><th align="left">Example in Recipe</th><td> <a href="v0.3/recipes/assignment-graded.md#object">assignment-graded</a> </td></tr>
 <tr><th align="left">Data Type</th><td>String</td></tr>
 <tr><th align="left">Value Space</th><td>ISO 8601 date time</td></tr>
-<tr><th align="left">Sample Value</th><td></td></tr>
+<tr><th align="left">Sample Value</th><td>2016-02-05T17:59:45.000Z</td></tr>
 </table>
 
 ### Application Type
@@ -223,18 +222,19 @@ The following are used in [object.definition.extensions](https://github.com/adln
 <tr><th align="left">Description</th><td>Identifies the genre of software application </td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/applicationType">http://xapi.jisc.ac.uk/applicationType</a> </td></tr>
 <tr><th align="left">Example in Recipe</th><td> <a href="recipes/login.md#object">Logged in</a> </td></tr>
-<tr><th align="left">Data Type</th><td>  </td></tr>
-<tr><th align="left">Sample Value</th><td> </td></tr>
+<tr><th align="left">Data Type</th><td>IRI</td></tr>
+<tr><th align="left">Sample Value</th><td>http://id.tincanapi.com/activitytype/lms</td></tr>
 </table>
 
-## 1.4 Context
+## 4.0 Context
 
 
-## 1.4.1 Context Extensions
+## 4.1 Context Extensions
 The following are properties of the [Context extensions property](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI.md#416-context).
-(but not umberlla course area)
 
 ### Umbrella course area
+
+For more information see [CourseArea properties](#4.2 CourseArea properties)
 
 <table>
 <tr><th align="left">Label</th><td>Umbrella course area</td></tr>
@@ -242,7 +242,12 @@ The following are properties of the [Context extensions property](https://github
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/courseArea">http://xapi.jisc.ac.uk/courseArea</a> </td></tr>
 <tr><th align="left">Data Type</th><td>A JSON Object</td></tr>
 <tr><th align="left">Value Space</th><td>JSON Object with properties vle_mod_id and/or id </td></tr>
-<tr><th align="left">Sample Value</th><td> { "http://xapi.jisc.ac.uk/vle_mod_id": "LA101", "id":"http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=4"},</td></tr>
+<tr><th align="left">Sample Value</th><td> {
+
+ "http://xapi.jisc.ac.uk/vle_mod_id": "LA101",
+ "id":"http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=4"}"
+ 
+ </td></tr>
 </table>
 
 ### Session id
@@ -279,10 +284,8 @@ The following are properties of the [Context extensions property](https://github
 <tr><th align="left">Sample Value</th><td>1.0</td></tr>
 </table>
 
-## 1.4.2 CourseArea properties
-The following are properties of  Context.extensions.courseArea
-
-- Context.extensions.courseArea
+## 4.2 CourseArea properties
+The following are properties of the profile extension Context.extensions.courseArea
  
 ### VLE Module ID
 
