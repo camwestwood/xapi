@@ -2,9 +2,7 @@
 The following terms are in use in the Jisc learning analytics recipes.
 NOTE: The xapi.jisc.ac.uk namespace URI may change.
 
-## 1.0 Vocabulary
-
-### 1.1 Verbs
+## 1.0 Verbs
 
 Example of a verb entity:
 
@@ -17,7 +15,7 @@ Example of a verb entity:
     },
 ``` 
 
-The following [xAPI verbs](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI.md#verb) are defined:
+The following [xAPI verbs](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI.md#verb) are defined as part of the Jisc profile:
 
 ### Logged in
 <table>
@@ -67,9 +65,9 @@ The following [xAPI verbs](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI.
 <tr><th align="left">Recipe Example</th><td> <a href="recipes/assignment-graded.md#verb">Assignment Graded</a> </td></tr>
 </table>
 
-## 1.1.1 Result
+## 2.0 Result
 
-In the Jisc profile, the use of the [result entity](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI.md#result) and any of its properties is optional, such as in the [recipes/assignment-graded.md#verb](assignment graded recipe#result) example.
+In the Jisc profile, the use of the [result entity](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI.md#result) and any of its properties is optional. Such as in the [recipes/assignment-graded.md#verb](assignment graded recipe#result) recipe example.
 
 Example:
 
@@ -85,9 +83,7 @@ Example:
     },
 ```
 
-### extensions
-
-### 1.2.1 Result Extensions
+### 2.1 Result Extensions
 
 The following are extension properties in the result entity:
 
@@ -98,6 +94,8 @@ The following are extension properties in the result entity:
 <tr><th align="left">Description</th><td>A non-numerical assessment result. Data type is string (256)</td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/grade">http://xapi.jisc.ac.uk/grade</a> </td></tr>
 <tr><th align="left">Recipe Example</th><td> <a href="recipes/assignment-graded.md#verb">Assignment Graded</a> </td></tr>
+<tr><th align="left">Value Space</th><td>String</td></tr>
+<tr><th align="left">Sample Value</th><td>5 Stars</td></tr>
 </table>
 
 
