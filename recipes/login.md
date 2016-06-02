@@ -80,7 +80,7 @@ Example:
 		<td>The platform used in the experience of this learning activity.</td>
 	</tr>
 	<tr>
-		<td>platform.extensions</td>
+		<td>context.extensions</td>
 		<td>The sessionID extension is the VLE session ID. [IP Address](https://registry.tincanapi.com/#uri/extension/310) is used to identify the client's real address as a Context extension.</td>
 	</tr>
 </table>
