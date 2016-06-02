@@ -13,7 +13,7 @@ This activity indicates the activity provider has determined that the session wa
     "version": "1.0.0",
     "actor": {
         "objectType": "Agent",
-        "name": "madmin",
+        "name": "John Smith",
         "account": {
             "name": "2",
             "homePage": "https://courses.alpha.jisc.ac.uk/moodle"
