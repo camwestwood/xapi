@@ -6,8 +6,6 @@ This activity records a user submitting an assignment
 ## Definition
 ### Actor
 
-[Account](/common_statements.md#actor.account) is used as the identifer.  Account/Name to use is up to the sender, as long as it is resolvable, unique and persistant . Candidates include: vle id, the login name, and an other field with a student id in.
-
 The actor entity describes the individual who has submitted the assignment.
 
 
@@ -93,10 +91,6 @@ The object defines the activity that has been completed. [Examples of valid obje
 	<tr>
 		<td>object.definition</td>
 		<td>JSON object. verb.definition.type describes the activity. dueDate describes the</td>
-	</tr>
-		<tr>
-		<td>object.definition</td>
-		<td>JSON object. Object.definition.type describes the activity</td>
 	</tr>
 	</tr>
 		<tr>

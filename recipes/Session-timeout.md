@@ -8,11 +8,24 @@ This recipe may not work reliably across VLEs.
 ## Definition
 ### Actor
 
-[Account](/common_statements.md#actor.account) is used as the identifer.  Account/Name to use is up to the sender, as long as it is resolvable, unique and persistant . Candidates include: vle id, the login name, and an other field with a student id in.
+<table>
+	<tr><th>Property</th><th>Jisc Profile Information</th></tr>
+	<tr>
+		<td>actor.account</td>
+		<td>Full name of user, optional.</td>
+	</tr>
+	<tr>
+		<td>actor.objectType</td>
+		<td>Agent</td>
+	</tr>
+		<tr>
+		<td>actor.account</td>
+		<td>JSON Object with unique id and home page</td>
+	</tr>
+</table>
 
 ``` Javascript
 {
-    "version": "1.0.0",
     "actor": {
         "objectType": "Agent",
         "name": "John Smith",
@@ -26,6 +39,20 @@ This recipe may not work reliably across VLEs.
 ### Verb
 
 The Verb,[abandoned](/vocabulary.md#verbs) describes the action of logging out of a platform.
+
+<table>
+	<tr><th>Property</th><th>Jisc Profile Information</th></tr>
+	<tr>
+		<td>verb.id</td>
+		<td>IRI corresponding to Verb.</td>
+	</tr>
+		<tr>
+		<td>verb.display</td>
+		<td>Human readable representation of Verb. Key is a RFC 5646 Language Tag</td>
+	</tr>
+</table>
+
+Example:
 
 ``` javascript
 "verb": {
@@ -60,7 +87,7 @@ Plugin specific extensions are optional and not part of the core recipe.
 ### Object
 
 
-The object defines the item that the user has timed out of.  A [Jisc specific extension](common_statements.md#jisc_extensions) details that it is a VLE that is being logged out of 
+The object defines the item that the user has timed out of.  A [Jisc specific extension](common_statements.md#jisc_extensions) details that it is a VLE that is being logged out of. 
 ``` javascript
 
 "object": {
