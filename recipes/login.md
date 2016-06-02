@@ -7,7 +7,7 @@ This activity records a user logging in to a VLE.
 
 ### Actor
 
-The actor entity describes the individual logging in to the system:
+The actor entity describes the individual logging in to the system.
 
 
 <table>
@@ -18,13 +18,15 @@ The actor entity describes the individual logging in to the system:
 	</tr>
 	<tr>
 		<td>actor.objectType</td>
-		<td>Agent/td>
+		<td>Agent</td>
 	</tr>
 		<tr>
 		<td>actor.account</td>
 		<td>JSON Object with unique id and home page</td>
 	</tr>
 </table>
+
+Example:
 
 ``` Javascript
 {
@@ -52,7 +54,7 @@ The Verb, [logged in](/vocabulary.md#verbs) describes the action of logging into
 		<td>IRI corresponding to Verb.</td>
 	</tr>
 	<tr>
-		<td>verb.display/td>
+		<td>verb.display</td>
 		<td>Agent/td>
 	</tr>
 		<tr>
@@ -60,6 +62,8 @@ The Verb, [logged in](/vocabulary.md#verbs) describes the action of logging into
 		<td>Human readable representation of Verb. Key is a RFC 5646 Language Tag</td>
 	</tr>
 </table>
+
+Example:
 
 ``` javascript
 "verb": {
@@ -71,9 +75,7 @@ The Verb, [logged in](/vocabulary.md#verbs) describes the action of logging into
 ``` 
 ### Context
 
-[Context](/common_statements.md#context) identifies the platform that is being logged into, Moodle in this example.
-
-[IP Address](https://registry.tincanapi.com/#uri/extension/310) is used to identify the client's real address as a Context extension. Plugin specific extensions are optional and not part of the core recipe.
+[Context](/common_statements.md#context) identifies the platform that is being logged into, Moodle in this example. Plugin specific extensions are optional and not part of the core recipe.
 
 <table>
 	<tr><th>Property</th><th>Jisc Profile Information</th></tr>
@@ -83,9 +85,11 @@ The Verb, [logged in](/vocabulary.md#verbs) describes the action of logging into
 	</tr>
 	<tr>
 		<td>platform.extensions</td>
-		<td>The sessionID extension is the VLE session ID. IP address is the clients external IP./td>
+		<td>The sessionID extension is the VLE session ID. [IP Address](https://registry.tincanapi.com/#uri/extension/310) is used to identify the client's real address as a Context extension.</td>
 	</tr>
 </table>
+
+Example:
 
 ``` javascript
 "context": {
@@ -110,7 +114,7 @@ The object.definition.name and object.definition.definition describe the resourc
 	</tr>
 	<tr>
 		<td>object.id</td>
-		<td>An identifier for a single unique Activity/td>
+		<td>An identifier for a single unique Activity</td>
 	</tr>
 		<tr>
 		<td>verb.definition</td>
@@ -118,6 +122,7 @@ The object.definition.name and object.definition.definition describe the resourc
 	</tr>
 </table>
 
+Example:
 
 ``` javascript
 
