@@ -4,7 +4,7 @@ NOTE: The xapi.jisc.ac.uk namespace URI may change.
 
 ## 1.0 Verb
 
-Example of a verb entity:
+Example of a verb entity, this example uses 'en' language tag, but any RFC 5646 language tag can be used: 
 
 ``` javascript
 "verb": {
