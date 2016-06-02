@@ -128,6 +128,14 @@ Example:
 <tr><th align="left">Recipe Example</th><td> <a href="recipes/login.md#complete_example">Logged in</a> </td></tr>
 </table>
 
+### Course
+
+<table>
+<tr><th align="left">Label</th><td>Course</td></tr>
+<tr><th align="left">Description</th><td>A course represents an entire “content package” worth of material. The largest level of granularity. Unless flat, a course consists of multiple modules.</td></tr>
+<tr><th align="left">IRI</th><td> <a href="http://adlnet.gov/expapi/activities/course">http://adlnet.gov/expapi/activities/course</a> </td></tr>
+</table>
+
 
 ### Module
 
