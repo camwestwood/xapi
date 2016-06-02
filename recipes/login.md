@@ -4,14 +4,30 @@ Revision: 1.1
 ## Purpose
 This activity records a user logging in to a VLE.
 ## Definition
+
 ### Actor
 
-[Account](/common_statements.md#actor.account) is used as the identifer.  Account/Name to use is up to the sender, as long as it is resolvable, unique and persistant . Candidates include: vle id, the login name, and an other field with a student id in.
+The actor entity describes the individual logging in to the system:
 
+
+<table>
+	<tr><th>Property</th><th>Jisc Profile Information</th></tr>
+	<tr>
+		<td>actor.[account](/common_statements.md#actor.account)</td>
+		<td>Full name of user, optional.</td>
+	</tr>
+	<tr>
+		<td>actor.objectType</td>
+		<td>Agent/td>
+	</tr>
+		<tr>
+		<td>actor.account</td>
+		<td>JSON Object with unique id and home page</td>
+	</tr>
+</table>
 
 ``` Javascript
 {
-    "version": "1.0.0",
     "actor": {
         "objectType": "Agent",
         "name": "John Smith",
@@ -21,6 +37,8 @@ This activity records a user logging in to a VLE.
         }
     },
 ```
+
+
 
 ### Verb
 
