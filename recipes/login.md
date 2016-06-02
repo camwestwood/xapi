@@ -57,10 +57,6 @@ The Verb, [logged in](/vocabulary.md#verbs) describes the action of logging into
 		<td>verb.display</td>
 		<td>Agent/td>
 	</tr>
-		<tr>
-		<td>verb.display</td>
-		<td>Human readable representation of Verb. Key is a RFC 5646 Language Tag</td>
-	</tr>
 </table>
 
 Example:
@@ -117,8 +113,8 @@ The object.definition.name and object.definition.definition describe the resourc
 		<td>An identifier for a single unique Activity</td>
 	</tr>
 		<tr>
-		<td>verb.definition</td>
-		<td>JSON object. verb.definition.type describes the activity and verb/definition.extensions.subtype can be used to described the subtype of this activity.</td>
+		<td>object.definition</td>
+		<td>A JSON object. object.definition.type describes the activity and object.definition.extensions.subtype can be used to described the subtype of this activity.</td>
 	</tr>
 </table>
 

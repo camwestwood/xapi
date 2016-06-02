@@ -53,10 +53,6 @@ The Verb,[logged out](/vocabulary.md#verbs) describes the action of logging out 
 		<td>verb.display</td>
 		<td>Agent/td>
 	</tr>
-		<tr>
-		<td>verb.display</td>
-		<td>Human readable representation of Verb. Key is a RFC 5646 Language Tag</td>
-	</tr>
 </table>
 
 
@@ -80,7 +76,7 @@ The Verb,[logged out](/vocabulary.md#verbs) describes the action of logging out 
 		<td>The platform used in the experience of this learning activity.</td>
 	</tr>
 	<tr>
-		<td>platform.extensions</td>
+		<td>context.platform.extensions</td>
 		<td>The sessionID extension is the VLE session ID. [IP Address](https://registry.tincanapi.com/#uri/extension/310) is used to identify the client's real address as a Context extension.</td>
 	</tr>
 </table>
@@ -113,8 +109,8 @@ The object defines the item that the user has logged out of.  A [Jisc specific e
 		<td>An identifier for a single unique Activity</td>
 	</tr>
 		<tr>
-		<td>verb.definition</td>
-		<td>JSON object. verb.definition.type describes the activity and verb/definition.extensions.subtype can be used to described the subtype of this activity.</td>
+		<td>object.definition</td>
+		<td>A JSON object. Object.definition.type describes the activity and object.definition.extensions.subtype can be used to described the subtype of this activity.</td>
 	</tr>
 </table>
 
