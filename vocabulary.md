@@ -217,12 +217,25 @@ The following are Jisc profile extensions to be used in [object.definition.exten
 
 ### Application Type
 
+Was used in older recipes to identify the genre of software application. Best practice is to use subType instead.
+
 <table>
 <tr><th align="left">Label</th><td>Application Type </td></tr>
 <tr><th align="left">Description</th><td>Identifies the genre of software application </td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/applicationType">http://xapi.jisc.ac.uk/applicationType</a> </td></tr>
 <tr><th align="left">Example in Recipe</th><td> <a href="recipes/login.md#object">Logged in</a> </td></tr>
 <tr><th align="left">Data Type</th><td>IRI</td></tr>
+<tr><th align="left">Sample Value</th><td>http://id.tincanapi.com/activitytype/lms</td></tr>
+</table>
+
+### Sub Type
+
+<table>
+<tr><th align="left">Label</th><td>Sub Type </td></tr>
+<tr><th align="left">Description</th><td>Identifies the sub genre of any application </td></tr>
+<tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/subType">http://xapi.jisc.ac.uk/subType</a> </td></tr>
+<tr><th align="left">Example in Recipe</th><td> <a href="recipes/login.md#object">Logged in</a> </td></tr>
+<tr><th align="left">Data Type</th><td>IRI or String</td></tr>
 <tr><th align="left">Sample Value</th><td>http://id.tincanapi.com/activitytype/lms</td></tr>
 </table>
 

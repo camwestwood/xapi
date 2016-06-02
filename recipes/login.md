@@ -51,7 +51,6 @@ Plugin specific extensions are optional and not part of the core recipe.
         "extensions": {
  			"http://xapi.jisc.ac.uk/sessionId": "32456891",
             "http://id.tincanapi.com/extensions/ip-address": "10.3.3.48"
-              
         }
 ```
 
@@ -59,7 +58,7 @@ Plugin specific extensions are optional and not part of the core recipe.
 
 ### Object
 
-The object.definition.name and object.definition.definition describe the resource returned to the user after they have performed the logged in event. The object.definition.extensions.[applicationType](http://xapi.jisc.ac.uk/applicationType) is used to identify the system type that is being logged into: a lms, identified by  http://id.tincanapi.com/activitytype/lms
+The object.definition.name and object.definition.definition describe the resource returned to the user after they have performed the logged in event. The object.definition.extensions.[subType](http://xapi.jisc.ac.uk/subType) is used to identify the system type that is being logged into, in this example a lms, identified by  http://id.tincanapi.com/activitytype/lms
 
 
 ``` javascript
@@ -76,7 +75,7 @@ The object.definition.name and object.definition.definition describe the resourc
                 "en": "A Moodle course"
             },
             "extensions": {
-                "http://xapi.jisc.ac.uk/applicationType": "http://id.tincanapi.com/activitytype/lms"
+                "http://xapi.jisc.ac.uk/subType": "http://id.tincanapi.com/activitytype/lms"
                 }
             }
         },

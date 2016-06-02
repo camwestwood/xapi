@@ -73,7 +73,7 @@ The object defines the item that the user has timed out of.  A [Jisc specific ex
             "en": "A Moodle course"
         },
         "extensions": {
-            "http://xapi.jisc.ac.uk/applicationType": "http://id.tincanapi.com/activitytype/lms"
+            "http://xapi.jisc.ac.uk/subType": "http://id.tincanapi.com/activitytype/lms"
         }
     }
 }
