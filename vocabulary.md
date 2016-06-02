@@ -297,7 +297,7 @@ http://xapi.jisc.ac.uk/extensions/vle_mod_id is a plugin specific extension, to 
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/vle_mod_id">http://xapi.jisc.ac.uk/vle_mod_id</a> </td></tr>
 </table>
 
-## 2.0 Version Changes / identifer mappings
+## 5.0 Version Changes and identifier mappings
 
 ### v0.2
 
