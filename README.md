@@ -30,10 +30,6 @@ These are the currently platform independent documented recipes:
 * [Assignment Graded] (recipes/assignment-graded.md)
 * [Assignment Submitted] (recipes/assignment-submitted.md)
 
-The following are currently being drafted:
-* [Authorise] (recipes/authorise.md)
-* [access] (recipes/access.md)
-
 ## Specific VLE examples
 * [Blackboard VLE samples] (vle/blackboard/Examples.md)
 * [Moodle VLE samples] (vle/moodle/examples.md)
