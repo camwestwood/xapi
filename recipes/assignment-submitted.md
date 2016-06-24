@@ -8,13 +8,32 @@ This activity records a user submitting an assignment
 
 [Account](/common_statements.md#actor.account) is used as the identifer.  Account/Name to use is up to the sender, as long as it is resolvable, unique and persistant . Candidates include: vle id, the login name, and an other field with a student id in.
 
+The actor entity describes the individual who has submitted the assignment.
+
+
+<table>
+	<tr><th>Property</th><th>Jisc Profile Information</th></tr>
+	<tr>
+		<td>actor.account</td>
+		<td>Full name of user, optional.</td>
+	</tr>
+	<tr>
+		<td>actor.objectType</td>
+		<td>Agent</td>
+	</tr>
+		<tr>
+		<td>actor.account</td>
+		<td>JSON Object with unique id and home page</td>
+	</tr>
+</table>
+
 
 ``` Javascript
 {
     "version": "1.0.0",
     "actor": {
         "objectType": "Agent",
-        "name": "madmin",
+        "name": "John Smith",
         "account": {
             "name": "2",
             "homePage": "https://courses.alpha.jisc.ac.uk/moodle"
@@ -24,7 +43,21 @@ This activity records a user submitting an assignment
 
 ### Verb
 
-The Verb, [completed](/vocabulary.md#verbs) describes the action of completing an activity - finishing in its entirety. .
+The Verb, [completed](/vocabulary.md#verbs) describes the action of completing an activity - finishing in its entirety.
+
+<table>
+	<tr><th>Property</th><th>Jisc Profile Information</th></tr>
+	<tr>
+		<td>verb.id</td>
+		<td>IRI corresponding to Verb.</td>
+	</tr>
+		<tr>
+		<td>verb.display</td>
+		<td>Human readable representation of Verb. Key is a RFC 5646 Language Tag</td>
+	</tr>
+</table>
+
+Example
 
 ``` javascript
 "verb": {
@@ -38,7 +71,6 @@ The Verb, [completed](/vocabulary.md#verbs) describes the action of completing a
 ### Result
 The optional result entity can include completion. See [the xAPI specification for a full description of the result entity](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI.md#result)
 
-
 ``` javascript
  "result":{
         "completion":true
@@ -48,8 +80,34 @@ The optional result entity can include completion. See [the xAPI specification f
 ### Object
 The object defines the activity that has been completed. [Examples of valid object.definition vocabulary  Activity object Types](/common_statements.md#object) can be found on the vocab page.
 
-``` javascript
+<table>
+	<tr><th>Property</th><th>Jisc Profile Information</th></tr>
+	<tr>
+		<td>object.objectType</td>
+		<td>Must be "Activity".</td>
+	</tr>
+	<tr>
+		<td>object.id</td>
+		<td>An identifier for a single unique Activity</td>
+	</tr>
+	<tr>
+		<td>object.definition</td>
+		<td>JSON object. verb.definition.type describes the activity. dueDate describes the</td>
+	</tr>
+		<tr>
+		<td>object.definition</td>
+		<td>JSON object. Object.definition.type describes the activity</td>
+	</tr>
+	</tr>
+		<tr>
+		<td>object.extension</td>
+		<td>JSON object. dueDate is a ISO 8601 date time the assignment is due</td>
+	</tr>
+</table>
 
+Example:
+
+``` javascript
 
 "object":{
 		"objectType":"Activity",
@@ -63,6 +121,8 @@ The object defines the activity that has been completed. [Examples of valid obje
 				"en":"Course Assignment description"
 				}
 			},
+			
+		    "extensions":{
 				"http://xapi.jisc.ac.uk/dueDate": "2016-02-05T17:59:45.000Z"
 			}
 			

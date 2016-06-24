@@ -1,8 +1,10 @@
 # VLE Session timed Out Recipe
-Revision: Working Towards 1.0
+Revision: 1.1
 
 ## Purpose
 This activity indicates the activity provider has determined that the session was abnormally terminated either by an actor or due to a system failure.
+
+This recipe may not work reliably across VLEs.
 ## Definition
 ### Actor
 
@@ -13,7 +15,7 @@ This activity indicates the activity provider has determined that the session wa
     "version": "1.0.0",
     "actor": {
         "objectType": "Agent",
-        "name": "madmin",
+        "name": "John Smith",
         "account": {
             "name": "2",
             "homePage": "https://courses.alpha.jisc.ac.uk/moodle"
@@ -73,7 +75,7 @@ The object defines the item that the user has timed out of.  A [Jisc specific ex
             "en": "A Moodle course"
         },
         "extensions": {
-            "http://xapi.jisc.ac.uk/applicationType": "http://id.tincanapi.com/activitytype/lms"
+            "http://xapi.jisc.ac.uk/subType": "http://id.tincanapi.com/activitytype/lms"
         }
     }
 }
