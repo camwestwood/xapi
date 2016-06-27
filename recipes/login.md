@@ -55,7 +55,7 @@ The Verb, [logged in](/vocabulary.md#verbs) describes the action of logging into
 	</tr>
 	<tr>
 		<td>verb.display</td>
-		<td>Agent/td>
+		<td>Human readable representation of Verb. Key is a RFC 5646 Language Tag</td>
 	</tr>
 </table>
 
