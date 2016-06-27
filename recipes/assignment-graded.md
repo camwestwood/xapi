@@ -135,18 +135,23 @@ The object defines the activity that has been evaluated. [Examples of valid obje
 
 ### Context
 
-
-
-[Platform](/common_statements.md#context) identifies the platform, Moodle in this example.
-
-[IP Address](https://registry.tincanapi.com/#uri/extension/310) is used to identify the client's real address as a Context extension.
-
-SessionId is the VLE session Id
-
-contextActivities has a context type of grouping. A course that relates to a assignment as the parent.
-
 Plugin specific extensions are optional and not part of the core recipe. Instructor is optional and is the instructor that the Statement relates to.
 
+<table>
+	<tr><th>Property</th><th>Jisc Profile Information</th></tr>
+	<tr>
+		<td>context.platform</td>
+		<td>The platform used in the experience of this learning activity.</td>
+	</tr>
+	<tr>
+		<td>context.platform.extensions</td>
+		<td>The sessionID extension is the VLE session ID. [IP Address](https://registry.tincanapi.com/#uri/extension/310) is used to identify the client's real address as a Context extension.</td>
+	</tr>
+	<tr>
+		<td>context.context.activities</td>
+		<td>Has a context type of grouping. A course that relates to a assignment as the parent.</td>
+	</tr>
+</table>
 
 ``` javascript
 "context": {

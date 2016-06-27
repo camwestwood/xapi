@@ -64,14 +64,25 @@ Example:
 ``` 
 
 ### Context
-[Context](/common_statements.md#context) identifies the platform that is being logged into, Moodle in this example.
+Context identifies the platform that is being logged into, Moodle in this example. Plugin specific extensions are optional and not part of the core recipe.
 
-[IP Address](https://registry.tincanapi.com/#uri/extension/310) is used to identify the client's real address as a Context extension.
+<table>
+	<tr><th>Property</th><th>Jisc Profile Information</th></tr>
+	<tr>
+		<td>context.platform</td>
+		<td>The platform used in the experience of this learning activity.</td>
+	</tr>
+	<tr>
+		<td>context.platform.extensions</td>
+		<td>The sessionID extension is the VLE session ID. [IP Address](https://registry.tincanapi.com/#uri/extension/310) is used to identify the client's real address as a Context extension.</td>
+	</tr>
+	<tr>
+		<td>context.context.activities</td>
+		<td>Has a context type of grouping. A course that relates to a assignment as the parent.</td>
+	</tr>
+</table>
 
-SessionId is the VLE session Id
-
-Plugin specific extensions are optional and not part of the core recipe.
-
+Example:
 
 ``` javascript
 "context": {
