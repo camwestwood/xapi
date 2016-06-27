@@ -69,6 +69,14 @@ Example
 ### Result
 The optional result entity can include completion. See [the xAPI specification for a full description of the result entity](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI.md#result)
 
+<table>
+	<tr><th>Property</th><th>Jisc Profile Information</th></tr>
+	<tr>
+		<td>result.result.completion</td>
+		<td>"true". Indicates the Activity was completed</td>
+	</tr>
+</table>
+
 ``` javascript
  "result":{
         "completion":true
