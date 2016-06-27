@@ -69,6 +69,19 @@ The result entity can include scaled, raw, min and max score, success, and respo
 See the [vocabulary](../vocabulary.md) page for a definition of the http://xapi.jisc.ac.uk/grade extension.
 
 
+
+<table>
+	<tr><th>Property</th><th>Jisc Profile Information</th></tr>
+	<tr>
+		<td>result.score.raw</td>
+		<td>Decimal number</td>
+	</tr>
+		<tr>
+		<td>result.extensions.http://xapi.jisc.ac.uk/grade</td>
+		<td>A non-numerical assessment result. Data type is string (256)</td>
+	</tr>
+</table>
+
 ``` javascript
  "result":{
         "score":{
@@ -82,9 +95,6 @@ See the [vocabulary](../vocabulary.md) page for a definition of the http://xapi.
 
 ### Object
 The object defines the activity that has been evaluated. [Examples of valid object.definition vocabulary on Activity objectTypes](/common_statements.md#object) can be found on the vocab page.
-
-
-``` javascript
 
 <table>
 	<tr><th>Property</th><th>Jisc Profile Information</th></tr>
@@ -111,6 +121,7 @@ The object defines the activity that has been evaluated. [Examples of valid obje
 	</tr>
 </table>
 
+``` javascript
 
 "object":{
 		"objectType":"Activity",
