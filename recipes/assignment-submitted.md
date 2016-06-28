@@ -6,8 +6,6 @@ This activity records a user submitting an assignment
 ## Definition
 ### Actor
 
-[Account](/common_statements.md#actor.account) is used as the identifer.  Account/Name to use is up to the sender, as long as it is resolvable, unique and persistant . Candidates include: vle id, the login name, and an other field with a student id in.
-
 The actor entity describes the individual who has submitted the assignment.
 
 
@@ -71,6 +69,14 @@ Example
 ### Result
 The optional result entity can include completion. See [the xAPI specification for a full description of the result entity](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI.md#result)
 
+<table>
+	<tr><th>Property</th><th>Jisc Profile Information</th></tr>
+	<tr>
+		<td>result.result.completion</td>
+		<td>"true". Indicates the Activity was completed</td>
+	</tr>
+</table>
+
 ``` javascript
  "result":{
         "completion":true
@@ -93,10 +99,6 @@ The object defines the activity that has been completed. [Examples of valid obje
 	<tr>
 		<td>object.definition</td>
 		<td>JSON object. verb.definition.type describes the activity. dueDate describes the</td>
-	</tr>
-		<tr>
-		<td>object.definition</td>
-		<td>JSON object. Object.definition.type describes the activity</td>
 	</tr>
 	</tr>
 		<tr>
@@ -133,16 +135,26 @@ Example:
 
 ### Context
 
-[Platform](/common_statements.md#context) identifies the platform, Moodle in this example.
-
-[IP Address](https://registry.tincanapi.com/#uri/extension/310) is used to identify the client's real address as a Context extension.
-
-SessionId is the VLE session Id
-
-contextActivities has a context type of grouping. A course that relates to a assignment as the parent.
-
 Plugin specific extensions are optional and not part of the core recipe.
 
+<table>
+	<tr><th>Property</th><th>Jisc Profile Information</th></tr>
+	<tr>
+		<td>context.platform</td>
+		<td>The platform used in the experience of this learning activity.</td>
+	</tr>
+	<tr>
+		<td>context.platform.extensions</td>
+		<td>The sessionID extension is the VLE session ID. [IP Address](https://registry.tincanapi.com/#uri/extension/310) is used to identify the client's real address as a Context extension.</td>
+	</tr>
+	<tr>
+		<td>context.context.activities</td>
+		<td>Has a context type of grouping. A course that relates to a assignment as the parent.</td>
+	</tr>
+</table>
+
+
+Example:
 
 ``` javascript
 "context": {

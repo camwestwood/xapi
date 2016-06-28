@@ -55,7 +55,7 @@ The Verb, [logged in](/vocabulary.md#verbs) describes the action of logging into
 	</tr>
 	<tr>
 		<td>verb.display</td>
-		<td>Agent/td>
+		<td>Human readable representation of Verb. Key is a RFC 5646 Language Tag</td>
 	</tr>
 </table>
 
@@ -80,7 +80,7 @@ Example:
 		<td>The platform used in the experience of this learning activity.</td>
 	</tr>
 	<tr>
-		<td>platform.extensions</td>
+		<td>context.extensions</td>
 		<td>The sessionID extension is the VLE session ID. [IP Address](https://registry.tincanapi.com/#uri/extension/310) is used to identify the client's real address as a Context extension.</td>
 	</tr>
 </table>

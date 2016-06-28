@@ -7,6 +7,22 @@ This recipe defines the structure and terms to record the experience of viewing 
 ### Actor
 [Accounts](/common_statements.md#actor.account) is used as the identifer.  Account/Name to use is up to the sender, as long as it is resolvable, unique and persistant. Candidates include: vle id, the login name, and an other field with a student id in.
 
+<table>
+	<tr><th>Property</th><th>Jisc Profile Information</th></tr>
+	<tr>
+		<td>actor.account</td>
+		<td>Full name of user, optional.</td>
+	</tr>
+	<tr>
+		<td>actor.objectType</td>
+		<td>Agent</td>
+	</tr>
+		<tr>
+		<td>actor.account</td>
+		<td>JSON Object with unique id and home page</td>
+	</tr>
+</table>
+
 ``` Javascript
 {
     "version": "1.0.0",
@@ -23,6 +39,18 @@ This recipe defines the structure and terms to record the experience of viewing 
 ##Verb:
 
 The Verb,[viewed](/vocabulary.md#verbs) denotes the action of the user's browser or app requesting the resource that the user wishes to view.
+
+<table>
+	<tr><th>Property</th><th>Jisc Profile Information</th></tr>
+	<tr>
+		<td>verb.id</td>
+		<td>IRI corresponding to Verb.</td>
+	</tr>
+	<tr>
+		<td>verb.display</td>
+		<td>Human readable representation of Verb. Key is a RFC 5646 Language Tag</td>
+	</tr>
+</table>
 
 ``` javascript
 "verb": {
@@ -44,6 +72,17 @@ CourseArea is the umbrella course/parent area identified by its home page URI
 
 Plugin specific extensions are optional and not part of the core recipe.
 
+<table>
+	<tr><th>Property</th><th>Jisc Profile Information</th></tr>
+	<tr>
+		<td>context.platform</td>
+		<td>The platform used in the experience of this learning activity.</td>
+	</tr>
+	<tr>
+		<td>context.extensions</td>
+		<td>The sessionID extension is the VLE session ID. [IP Address](https://registry.tincanapi.com/#uri/extension/310) is used to identify the client's real address as a Context extension.</td>
+	</tr>
+</table>
 
 ``` javascript
 "context": {
@@ -63,6 +102,21 @@ Plugin specific extensions are optional and not part of the core recipe.
 ## Object:
 Needs to identify what was viewed. A list of valid values can be found at [the definition of  object.definition.extensions on the vocabulary page](../vocabulary.md#Object.definition.extension)
 
+<table>
+	<tr><th>Property</th><th>Jisc Profile Information</th></tr>
+	<tr>
+		<td>object.objectType</td>
+		<td>Must be "Activity".</td>
+	</tr>
+	<tr>
+		<td>object.id</td>
+		<td>An identifier for a single unique Activity</td>
+	</tr>
+		<tr>
+		<td>object.definition</td>
+		<td>A JSON object. object.definition.type describes the activity and object.definition.extensions.subtype can be used to described the subtype of this activity.</td>
+	</tr>
+</table>
 
 ``` javascript
 "object": {

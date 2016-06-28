@@ -6,12 +6,26 @@ This activity records a graded assignment
 ## Definition
 ### Actor
 
-[Account](/common_statements.md#actor.account) is used as the identifer.  Account/Name to use is up to the sender, as long as it is resolvable, unique and persistant . Candidates include: vle id, the login name, and an other field with a student id in.
+<table>
+	<tr><th>Property</th><th>Jisc Profile Information</th></tr>
+	<tr>
+		<td>actor.account</td>
+		<td>Full name of user, optional.</td>
+	</tr>
+	<tr>
+		<td>actor.objectType</td>
+		<td>Agent</td>
+	</tr>
+		<tr>
+		<td>actor.account</td>
+		<td>JSON Object with unique id and home page</td>
+	</tr>
+</table>
 
+Example:
 
 ``` Javascript
 {
-    "version": "1.0.0",
     "actor": {
         "objectType": "Agent",
         "name": "John Smith",
@@ -25,6 +39,20 @@ This activity records a graded assignment
 ### Verb
 
 The Verb, [scored](/vocabulary.md#verbs) describes the action of evaluating a learning activity.
+
+<table>
+	<tr><th>Property</th><th>Jisc Profile Information</th></tr>
+	<tr>
+		<td>verb.id</td>
+		<td>IRI corresponding to Verb.</td>
+	</tr>
+		<tr>
+		<td>verb.display</td>
+		<td>Human readable representation of Verb. Key is a RFC 5646 Language Tag</td>
+	</tr>
+</table>
+
+Example:
 
 ``` javascript
  "verb":{
@@ -41,6 +69,19 @@ The result entity can include scaled, raw, min and max score, success, and respo
 See the [vocabulary](../vocabulary.md) page for a definition of the http://xapi.jisc.ac.uk/grade extension.
 
 
+
+<table>
+	<tr><th>Property</th><th>Jisc Profile Information</th></tr>
+	<tr>
+		<td>result.score.raw</td>
+		<td>Decimal number</td>
+	</tr>
+		<tr>
+		<td>result.extensions.http://xapi.jisc.ac.uk/grade</td>
+		<td>A non-numerical assessment result. Data type is string (256)</td>
+	</tr>
+</table>
+
 ``` javascript
  "result":{
         "score":{
@@ -55,9 +96,32 @@ See the [vocabulary](../vocabulary.md) page for a definition of the http://xapi.
 ### Object
 The object defines the activity that has been evaluated. [Examples of valid object.definition vocabulary on Activity objectTypes](/common_statements.md#object) can be found on the vocab page.
 
+<table>
+	<tr><th>Property</th><th>Jisc Profile Information</th></tr>
+	<tr>
+		<td>object.objectType</td>
+		<td>Must be "Activity".</td>
+	</tr>
+	<tr>
+		<td>object.id</td>
+		<td>An identifier for a single unique Activity</td>
+	</tr>
+	<tr>
+		<td>object.definition</td>
+		<td>JSON object. verb.definition.type describes the activity. dueDate describes the</td>
+	</tr>
+		<tr>
+		<td>object.definition</td>
+		<td>JSON object. Object.definition.type describes the activity</td>
+	</tr>
+	</tr>
+		<tr>
+		<td>object.extension</td>
+		<td>JSON object. dueDate is a ISO 8601 date time the assignment is due</td>
+	</tr>
+</table>
 
 ``` javascript
-
 
 "object":{
 		"objectType":"Activity",
@@ -82,18 +146,23 @@ The object defines the activity that has been evaluated. [Examples of valid obje
 
 ### Context
 
-
-
-[Platform](/common_statements.md#context) identifies the platform, Moodle in this example.
-
-[IP Address](https://registry.tincanapi.com/#uri/extension/310) is used to identify the client's real address as a Context extension.
-
-SessionId is the VLE session Id
-
-contextActivities has a context type of grouping. A course that relates to a assignment as the parent.
-
 Plugin specific extensions are optional and not part of the core recipe. Instructor is optional and is the instructor that the Statement relates to.
 
+<table>
+	<tr><th>Property</th><th>Jisc Profile Information</th></tr>
+	<tr>
+		<td>context.platform</td>
+		<td>The platform used in the experience of this learning activity.</td>
+	</tr>
+	<tr>
+		<td>context.platform.extensions</td>
+		<td>The sessionID extension is the VLE session ID. [IP Address](https://registry.tincanapi.com/#uri/extension/310) is used to identify the client's real address as a Context extension.</td>
+	</tr>
+	<tr>
+		<td>context.context.activities</td>
+		<td>Has a context type of grouping. A course that relates to a assignment as the parent.</td>
+	</tr>
+</table>
 
 ``` javascript
 "context": {
