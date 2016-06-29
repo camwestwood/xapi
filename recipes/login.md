@@ -128,8 +128,6 @@ The object.definition.name and object.definition.definition describe the resourc
 	</tr>
 </table>
 
-Example:
-
 ``` javascript
 
 "object": {
