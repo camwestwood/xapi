@@ -67,6 +67,11 @@ The Verb,[viewed](/vocabulary.md#verbs) denotes the action of the user's browser
     },
 ```
 ### Context
+Common Statement Identifier: Context.C
+
+#### Entity Example:
+Plugin specific extensions are optional and not part of the core recipe.
+
 
 [Context](/common_statements.md#context) identifies the platform that is being logged into, Moodle in this example.
 
