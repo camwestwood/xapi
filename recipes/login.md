@@ -6,23 +6,25 @@ This activity records a user logging in to a VLE.
 ## Definition
 
 ### Actor
+Common Statement Identifier:  Actor.A
+This common statement is used across all example recipes.
 
-The actor entity describes the individual logging in to the system.
-
+The actor entity describes the individual that is logging in to the system.
 
 <table>
-	<tr><th>Property</th><th>Jisc Profile Information</th></tr>
-	<tr>
-		<td>actor.account</td>
-		<td>Full name of user, optional.</td>
-	</tr>
+	<tr><th>Property in Example</th><th>Description</th></tr>
 	<tr>
 		<td>actor.objectType</td>
 		<td>Agent</td>
 	</tr>
+	<tr>
+		<td>actor.account</td>
+		<td>Full name of user, optional.</td>
+	</tr>
+
 		<tr>
 		<td>actor.account</td>
-		<td>JSON Object with unique id and home page</td>
+		<td>JSON Object with unique id(account.name) and home page(account.homepage)</td>
 	</tr>
 </table>
 
@@ -43,12 +45,12 @@ Example:
 
 
 ### Verb
-
-The Verb, [logged in](/vocabulary.md#verbs) describes the action of logging into a platform.
+Common Statement Identifier: Verb.A
+Description: The Verb, [logged in](/vocabulary.md#verbs) describes the action of logging into a platform.
 
 
 <table>
-	<tr><th>Property</th><th>Jisc Profile Information</th></tr>
+	<tr><th>Property in Example</th><th>Description</th></tr>
 	<tr>
 		<td>verb.id</td>
 		<td>IRI corresponding to Verb.</td>
@@ -70,18 +72,19 @@ Example:
     },
 ``` 
 ### Context
+Common Statement Identifier: Context.A
 
 [Context](/common_statements.md#context) identifies the platform that is being logged into, Moodle in this example. Plugin specific extensions are optional and not part of the core recipe.
 
 <table>
-	<tr><th>Property</th><th>Jisc Profile Information</th></tr>
+	<tr><th>Property in Example</th><th>Description</th></tr>
 	<tr>
 		<td>context.platform</td>
 		<td>The platform used in the experience of this learning activity.</td>
 	</tr>
 	<tr>
 		<td>context.extensions</td>
-		<td>The sessionID extension is the VLE session ID. [IP Address](https://registry.tincanapi.com/#uri/extension/310) is used to identify the client's real address as a Context extension.</td>
+		<td>The sessionID extension is the VLE session ID. <a href="https://registry.tincanapi.com/#uri/extension/310">IP Address</a> is used to identify the client's real address as a Context extension.</td>
 	</tr>
 </table>
 
@@ -92,7 +95,7 @@ Example:
         "platform": "Moodle",
         "extensions": {
  			"http://xapi.jisc.ac.uk/sessionId": "32456891",
-            "http://id.tincanapi.com/extensions/ip-address": "10.3.3.48"
+        		 "http://id.tincanapi.com/extensions/ip-address": "10.3.3.48"
         }
 ```
 
@@ -114,7 +117,7 @@ The object.definition.name and object.definition.definition describe the resourc
 	</tr>
 		<tr>
 		<td>object.definition</td>
-		<td>A JSON object. object.definition.type describes the activity and object.definition.extensions.subtype can be used to described the subtype of this activity.</td>
+		<td>A JSON object. object.definition.type describes the activity. object.definition.extensions.subtype can be used to described the subtype of this activity.</td>
 	</tr>
 </table>
 
