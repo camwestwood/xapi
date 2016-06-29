@@ -7,8 +7,10 @@ This activity records a user logging in to a VLE.
 
 ### Actor
 Common Statement Identifier:  Actor.A
+
 This common statement is used across all example recipes.
 
+#### Entity Example:
 The actor entity describes the individual that is logging in to the system.
 
 <table>
@@ -28,8 +30,6 @@ The actor entity describes the individual that is logging in to the system.
 	</tr>
 </table>
 
-Example:
-
 ``` Javascript
 {
     "actor": {
@@ -46,7 +46,11 @@ Example:
 
 ### Verb
 Common Statement Identifier: Verb.A
-Description: The Verb, [logged in](/vocabulary.md#verbs) describes the action of logging into a platform.
+
+This common statement is used across all example recipes
+
+#### Entity Example:
+The Verb, [logged in](/vocabulary.md#verbs) describes the action of logging into a platform.
 
 
 <table>
@@ -61,7 +65,7 @@ Description: The Verb, [logged in](/vocabulary.md#verbs) describes the action of
 	</tr>
 </table>
 
-Example:
+
 
 ``` javascript
 "verb": {
@@ -74,6 +78,7 @@ Example:
 ### Context
 Common Statement Identifier: Context.A
 
+#### Entity Example:
 [Context](/common_statements.md#context) identifies the platform that is being logged into, Moodle in this example. Plugin specific extensions are optional and not part of the core recipe.
 
 <table>
@@ -88,7 +93,7 @@ Common Statement Identifier: Context.A
 	</tr>
 </table>
 
-Example:
+
 
 ``` javascript
 "context": {
@@ -106,7 +111,7 @@ Example:
 The object.definition.name and object.definition.definition describe the resource returned to the user after they have performed the logged in event. The object.definition.extensions.[subType](http://xapi.jisc.ac.uk/subType) is used to identify the system type that is being logged into, in this example a lms, identified by  http://id.tincanapi.com/activitytype/lms
 
 <table>
-	<tr><th>Property</th><th>Jisc Profile Information</th></tr>
+	<tr><th>Property</th><th>Description</th></tr>
 	<tr>
 		<td>object.objectType</td>
 		<td>Must be "Activity".</td>
