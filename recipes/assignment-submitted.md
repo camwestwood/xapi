@@ -92,7 +92,7 @@ The optional result entity can include completion. See [the xAPI specification f
 ```
 
 ### Object
-Common Statement Identifier: Object.A
+Common Statement Identifier: Object.B
 
 #### Entity Example:
 The object defines the activity that has been completed. [Examples of valid object.definition vocabulary  Activity object Types](/common_statements.md#object) can be found on the vocab page.
