@@ -17,7 +17,7 @@ The actor entity describes the individual that is logging in to the system.
 	<tr><th>Property in Example</th><th>Description</th></tr>
 	<tr>
 		<td>actor.objectType</td>
-		<td>Agent</td>
+		<td>"Agent"</td>
 	</tr>
 	<tr>
 		<td>actor.account</td>
@@ -41,8 +41,6 @@ The actor entity describes the individual that is logging in to the system.
         }
     },
 ```
-
-
 
 ### Verb
 Common Statement Identifier: Verb.A
@@ -107,6 +105,10 @@ Common Statement Identifier: Context.A
 
 
 ### Object
+
+Common Statement Identifier: Object.A
+
+#### Entity Example:
 
 The object.definition.name and object.definition.definition describe the resource returned to the user after they have performed the logged in event. The object.definition.extensions.[subType](http://xapi.jisc.ac.uk/subType) is used to identify the system type that is being logged into, in this example a lms, identified by  http://id.tincanapi.com/activitytype/lms
 
