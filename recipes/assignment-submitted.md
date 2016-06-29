@@ -4,13 +4,17 @@ Revision: 1.1
 ## Purpose
 This activity records a user submitting an assignment
 ## Definition
-### Actor
 
+### Actor
+Common Statement Identifier:  Actor.A
+
+
+#### Entity Example:
 The actor entity describes the individual who has submitted the assignment.
 
 
 <table>
-	<tr><th>Property</th><th>Jisc Profile Information</th></tr>
+	<tr><th>Property in Example</th><th>Description</th></tr>
 	<tr>
 		<td>actor.account</td>
 		<td>Full name of user, optional.</td>
@@ -40,22 +44,23 @@ The actor entity describes the individual who has submitted the assignment.
 ```
 
 ### Verb
+Common Statement Identifier: Verb.A
+
+#### Entity Example:
 
 The Verb, [completed](/vocabulary.md#verbs) describes the action of completing an activity - finishing in its entirety.
 
 <table>
-	<tr><th>Property</th><th>Jisc Profile Information</th></tr>
+	<tr><th>Property in Example</th><th>Description</th></tr>
 	<tr>
 		<td>verb.id</td>
 		<td>IRI corresponding to Verb.</td>
 	</tr>
-		<tr>
+	<tr>
 		<td>verb.display</td>
 		<td>Human readable representation of Verb. Key is a RFC 5646 Language Tag</td>
 	</tr>
 </table>
-
-Example
 
 ``` javascript
 "verb": {
@@ -66,11 +71,14 @@ Example
     },
 ``` 
 
-### Result
+### Result.A
+Common Statement Identifier: Result.A
+
+#### Entity Example:
 The optional result entity can include completion. See [the xAPI specification for a full description of the result entity](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI.md#result)
 
 <table>
-	<tr><th>Property</th><th>Jisc Profile Information</th></tr>
+	<tr><th>Property in Example</th><th>Description</th></tr>
 	<tr>
 		<td>result.result.completion</td>
 		<td>"true". Indicates the Activity was completed</td>
@@ -84,10 +92,13 @@ The optional result entity can include completion. See [the xAPI specification f
 ```
 
 ### Object
+Common Statement Identifier: Object.A
+
+#### Entity Example:
 The object defines the activity that has been completed. [Examples of valid object.definition vocabulary  Activity object Types](/common_statements.md#object) can be found on the vocab page.
 
 <table>
-	<tr><th>Property</th><th>Jisc Profile Information</th></tr>
+	<tr><th>Property in Example</th><th>Description</th></tr>
 	<tr>
 		<td>object.objectType</td>
 		<td>Must be "Activity".</td>
@@ -103,7 +114,7 @@ The object defines the activity that has been completed. [Examples of valid obje
 	</tr>
 		<tr>
 		<td>object.extension</td>
-		<td>JSON object. dueDate is a ISO 8601 date time the assignment is due</td>
+		<td>JSON object. "http://xapi.jisc.ac.uk/dueDate" is a ISO 8601 date time that the assignment is due</td>
 	</tr>
 </table>
 
@@ -134,11 +145,13 @@ Example:
 
 
 ### Context
+Common Statement Identifier: Context.B
 
+#### Entity Example:
 Plugin specific extensions are optional and not part of the core recipe.
 
 <table>
-	<tr><th>Property</th><th>Jisc Profile Information</th></tr>
+	<tr><th>Property in Example</th><th>Description</th></tr>
 	<tr>
 		<td>context.platform</td>
 		<td>The platform used in the experience of this learning activity.</td>
