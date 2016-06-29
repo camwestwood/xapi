@@ -1,30 +1,33 @@
 # VLE User Logged Out Recipe
-Revision: Working Towards 1.0
+Revision: 1.1
 
 ## Purpose
 This activity records a user logging out of a VLE.
 ## Definition
 ### Actor
+Common Statement Identifier:  Actor.A
 
+This common statement is used across all example recipes.
+
+#### Entity Example:
 The actor entity describes the individual logging out of the system.
 
 <table>
-	<tr><th>Property</th><th>Jisc Profile Information</th></tr>
+	<tr><th>Property in Example</th><th>Description</th></tr>
+	<tr>
+		<td>actor.objectType</td>
+		<td>"Agent"</td>
+	</tr>
 	<tr>
 		<td>actor.account</td>
 		<td>Full name of user, optional.</td>
 	</tr>
-	<tr>
-		<td>actor.objectType</td>
-		<td>Agent</td>
-	</tr>
+
 		<tr>
 		<td>actor.account</td>
-		<td>JSON Object with unique id and home page</td>
+		<td>JSON Object with unique id(account.name) and home page(account.homepage)</td>
 	</tr>
 </table>
-
-Example:
 
 ``` Javascript
 {
@@ -39,19 +42,24 @@ Example:
     },
 ```
 
-### Verb
 
+### Verb
+Common Statement Identifier: Verb.A
+
+This common statement is used across all example recipes
+
+#### Entity Example:
 The Verb,[logged out](/vocabulary.md#verbs) describes the action of logging out of a platform.
 
 <table>
-	<tr><th>Property</th><th>Jisc Profile Information</th></tr>
+	<tr><th>Property in Example</th><th>Description</th></tr>
 	<tr>
 		<td>verb.id</td>
 		<td>IRI corresponding to Verb.</td>
 	</tr>
 	<tr>
 		<td>verb.display</td>
-		<td>Agent/td>
+		<td>Human readable representation of Verb. Key is a RFC 5646 Language Tag</td>
 	</tr>
 </table>
 
@@ -64,24 +72,24 @@ The Verb,[logged out](/vocabulary.md#verbs) describes the action of logging out 
         }
     },
 ``` 
-
 ### Context
+Common Statement Identifier: Context.A
 
-[Context](/common_statements.md#context) identifies the platform that is being logged into, Moodle in this example. Plugin specific extensions are optional and not part of the core recipe.
+#### Entity Example:
+[Context](/common_statements.md#context) identifies the platform that is being logged out of, Moodle in this example. Plugin specific extensions are optional and not part of the core recipe.
 
 <table>
-	<tr><th>Property</th><th>Jisc Profile Information</th></tr>
+	<tr><th>Property in Example</th><th>Description</th></tr>
 	<tr>
 		<td>context.platform</td>
 		<td>The platform used in the experience of this learning activity.</td>
 	</tr>
 	<tr>
-		<td>context.platform.extensions</td>
-		<td>The sessionID extension is the VLE session ID. [IP Address](https://registry.tincanapi.com/#uri/extension/310) is used to identify the client's real address as a Context extension.</td>
+		<td>context.extensions</td>
+		<td>The sessionID extension is the VLE session ID. <a href="https://registry.tincanapi.com/#uri/extension/310">IP Address</a> is used to identify the client's real address as a Context extension.</td>
 	</tr>
 </table>
 
-Example:
 
 
 ``` javascript
@@ -89,17 +97,19 @@ Example:
         "platform": "Moodle",
         "extensions": {
  			"http://xapi.jisc.ac.uk/sessionId":"32456891",
-            "http://id.tincanapi.com/extensions/ip-address": "10.3.3.48"    
+        		  "http://id.tincanapi.com/extensions/ip-address": "10.3.3.48"    
         }
 ```
 
 ### Object
+Common Statement Identifier: Object.A
 
+#### Entity Example:
 
-The object defines the item that the user has logged out of.  A [Jisc specific extension](common_statements.md#jisc_extensions) details that it is a lms that is being logged out of.
+The object.definition.name and object.definition.definition describe the resource logged out of. The object.definition.extensions.[subType](http://xapi.jisc.ac.uk/subType) is used to identify the system type that is being logged into, in this example a lms, identified by  http://id.tincanapi.com/activitytype/lms
 
 <table>
-	<tr><th>Property</th><th>Jisc Profile Information</th></tr>
+	<tr><th>Property</th><th>Description</th></tr>
 	<tr>
 		<td>object.objectType</td>
 		<td>Must be "Activity".</td>
