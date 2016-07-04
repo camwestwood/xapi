@@ -20,7 +20,7 @@ The actor entity describes the individual that is logging in to the system.
 		<td>"Agent"</td>
 	</tr>
 	<tr>
-		<td>actor.account</td>
+		<td>actor.name</td>
 		<td>Full name of user, optional.</td>
 	</tr>
 
