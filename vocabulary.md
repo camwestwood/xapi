@@ -337,5 +337,3 @@ http://xapi.jisc.ac.uk/extensions/vle_mod_id is a plugin specific extension, to 
 | http://xapi.jisc.ac.uk/extensions/duedate  | http://xapi.jisc.ac.uk/dueDate
 | http://xapi.jisc.ac.uk/define/vle   		 | http://id.tincanapi.com/activitytype/lms        
 | http://www.tincanapi.co.uk/verbs/evaluated | http://adlnet.gov/expapi/verbs/scored 
-
-## 3.0 Common Properties
