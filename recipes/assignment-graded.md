@@ -5,9 +5,12 @@ Revision: 1.1
 This activity records a graded assignment
 ## Definition
 ### Actor
+Common Statement Identifier:  Actor.A
+
+#### Entity Example:
 
 <table>
-	<tr><th>Property</th><th>Jisc Profile Information</th></tr>
+	<tr><th>Property in Example</th><th>Description</th></tr>
 	<tr>
 		<td>actor.account</td>
 		<td>Full name of user, optional.</td>
@@ -22,8 +25,6 @@ This activity records a graded assignment
 	</tr>
 </table>
 
-Example:
-
 ``` Javascript
 {
     "actor": {
@@ -37,11 +38,14 @@ Example:
 ```
 
 ### Verb
+Common Statement Identifier: Verb.A
+
+#### Entity Example:
 
 The Verb, [scored](/vocabulary.md#verbs) describes the action of evaluating a learning activity.
 
 <table>
-	<tr><th>Property</th><th>Jisc Profile Information</th></tr>
+	<tr><th>Property in Example</th><th>Description</th></tr>
 	<tr>
 		<td>verb.id</td>
 		<td>IRI corresponding to Verb.</td>
@@ -51,8 +55,6 @@ The Verb, [scored](/vocabulary.md#verbs) describes the action of evaluating a le
 		<td>Human readable representation of Verb. Key is a RFC 5646 Language Tag</td>
 	</tr>
 </table>
-
-Example:
 
 ``` javascript
  "verb":{
@@ -64,6 +66,9 @@ Example:
 ``` 
 
 ### Result
+Common Statement Identifier: Result.A
+
+#### Entity Example:
 The result entity can include scaled, raw, min and max score, success, and response (the instructor's feedback). See [result](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI.md#result). In the Jisc profile, the use of the result entity and any of its properties is optional. 
 
 See the [vocabulary](../vocabulary.md) page for a definition of the http://xapi.jisc.ac.uk/grade extension.
@@ -71,7 +76,7 @@ See the [vocabulary](../vocabulary.md) page for a definition of the http://xapi.
 
 
 <table>
-	<tr><th>Property</th><th>Jisc Profile Information</th></tr>
+	<tr><th>Property in Example</th><th>Description</th></tr>
 	<tr>
 		<td>result.score.raw</td>
 		<td>Decimal number</td>
@@ -94,10 +99,13 @@ See the [vocabulary](../vocabulary.md) page for a definition of the http://xapi.
 ```
 
 ### Object
+Common Statement Identifier: Object.B
+
+#### Entity Example:
 The object defines the activity that has been evaluated. [Examples of valid object.definition vocabulary on Activity objectTypes](/common_statements.md#object) can be found on the vocab page.
 
 <table>
-	<tr><th>Property</th><th>Jisc Profile Information</th></tr>
+	<tr><th>Property in Example</th><th>Description</th></tr>
 	<tr>
 		<td>object.objectType</td>
 		<td>Must be "Activity".</td>
@@ -145,11 +153,16 @@ The object defines the activity that has been evaluated. [Examples of valid obje
 
 
 ### Context
+Common Statement Identifier: Context.C
+
+#### Entity Example:
+Plugin specific extensions are optional and not part of the core recipe.
+
 
 Plugin specific extensions are optional and not part of the core recipe. Instructor is optional and is the instructor that the Statement relates to.
 
 <table>
-	<tr><th>Property</th><th>Jisc Profile Information</th></tr>
+	<tr><th>Property in Example</th><th>Description</th></tr>
 	<tr>
 		<td>context.platform</td>
 		<td>The platform used in the experience of this learning activity.</td>
@@ -196,11 +209,11 @@ Plugin specific extensions are optional and not part of the core recipe. Instruc
         "extensions":  {
       		"http://xapi.jisc.ac.uk/courseArea": {
       		 	 "http://xapi.jisc.ac.uk/vle_mod_id": "LA101",
-                 "id":"http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=4"
+        		 "id":"http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=4"
               },
 			  
  			"http://xapi.jisc.ac.uk/sessionId": "32456891" ,
-            "http://id.tincanapi.com/extensions/ip-address": "10.3.3.48"
+        		"http://id.tincanapi.com/extensions/ip-address": "10.3.3.48"
          
 		 
         }

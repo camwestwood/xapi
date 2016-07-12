@@ -5,6 +5,9 @@ Revision: 1.1
 This recipe defines the structure and terms to record the experience of viewing a vle resource such as a Moodle Module or Blackboard building block (eg a page as identified by its url)
 
 ### Actor
+Common Statement Identifier:  Actor.A
+
+#### Entity Example:
 [Accounts](/common_statements.md#actor.account) is used as the identifer.  Account/Name to use is up to the sender, as long as it is resolvable, unique and persistant. Candidates include: vle id, the login name, and an other field with a student id in.
 
 <table>
@@ -36,7 +39,10 @@ This recipe defines the structure and terms to record the experience of viewing 
     },
 ```
 
-##Verb:
+### Verb
+Common Statement Identifier: Verb.A
+
+#### Entity Example:
 
 The Verb,[viewed](/vocabulary.md#verbs) denotes the action of the user's browser or app requesting the resource that the user wishes to view.
 
@@ -61,6 +67,11 @@ The Verb,[viewed](/vocabulary.md#verbs) denotes the action of the user's browser
     },
 ```
 ### Context
+Common Statement Identifier: Context.C
+
+#### Entity Example:
+Plugin specific extensions are optional and not part of the core recipe.
+
 
 [Context](/common_statements.md#context) identifies the platform that is being logged into, Moodle in this example.
 
@@ -99,7 +110,10 @@ Plugin specific extensions are optional and not part of the core recipe.
         }
 ```
 
-## Object:
+### Object
+Common Statement Identifier: Object.D
+
+#### Entity Example:
 Needs to identify what was viewed. A list of valid values can be found at [the definition of  object.definition.extensions on the vocabulary page](../vocabulary.md#Object.definition.extension)
 
 <table>

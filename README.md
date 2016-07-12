@@ -1,4 +1,4 @@
-#xAPI recipes for the Jisc Learning Analytics Project v0.3
+#xAPI recipes for the Jisc Learning Analytics Project v0.4
 
 ##Repository Workflow
 The simplest way of contributing xAPI recipes works as follows:
@@ -18,6 +18,7 @@ If the need arises, particular versions will get their own branches, but until t
 * [Vocabulary] (vocabulary.md)
 
 # Recipes
+As far as possible all entities are the same across recipes and are identified by a version.
 
 ## VLE examples
 These are the currently platform independent documented recipes:
@@ -29,9 +30,25 @@ These are the currently platform independent documented recipes:
 * [Assignment Graded] (recipes/assignment-graded.md)
 * [Assignment Submitted] (recipes/assignment-submitted.md)
 
-## Specific VLE examples
+### Specific VLE examples
 * [Blackboard VLE samples] (vle/blackboard/Examples.md)
 * [Moodle VLE samples] (vle/moodle/examples.md)
+
+
+## Library examples (in draft)
+### Reading Lists
+
+ * Viewed Reading List
+ * Viewed Reading List item
+
+### Authentication Systems
+
+ * Logged in
+
+### Attendance 
+
+ * Visited Library
+
 
 ## Predictive Model Output
 * [Alerting JSON] (/lap/apereo/model_output.js)
