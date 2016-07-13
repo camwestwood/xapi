@@ -32,7 +32,6 @@ The actor entity describes the individual who has submitted the assignment.
 
 ``` Javascript
 {
-    "version": "1.0.0",
     "actor": {
         "objectType": "Agent",
         "name": "John Smith",
