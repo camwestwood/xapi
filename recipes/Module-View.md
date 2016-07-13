@@ -90,12 +90,12 @@ Plugin specific extensions are optional and not part of the core recipe
 "context": {
         "platform": "Moodle",
         "extensions": {
-      		"http://xapi.jisc.ac.uk/courseArea": {
-      		 "http://xapi.jisc.ac.uk/vle_mod_id": "LA101",
-                 "id":"http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=4"
-		  "http://xapi.jisc.ac.uk/sessionId": "32456891"  ,
-		  "http://id.tincanapi.com/extensions/ip-address": "10.3.3.48"
-		  }
+      			"http://xapi.jisc.ac.uk/courseArea": {
+      		 	"http://xapi.jisc.ac.uk/vle_mod_id": "LA101",
+                 	"id":"http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=4"
+		  	"http://xapi.jisc.ac.uk/sessionId": "32456891"  ,
+		  	"http://id.tincanapi.com/extensions/ip-address": "10.3.3.48"
+			 }
               
         }
 ```
