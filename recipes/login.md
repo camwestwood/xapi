@@ -77,7 +77,7 @@ The Verb, [logged in](/vocabulary.md#verbs) describes the action of logging into
 Common entity identifier: Context.A
 
 #### Entity Example:
-[Context](/common_statements.md#context) identifies the platform that is being logged into, Moodle in this example. Plugin specific extensions are optional and not part of the core recipe.
+Contextual information. Plugin specific extensions are optional and not part of the core recipe.
 
 <table>
 	<tr><th>Property in Example</th><th>Description</th></tr>
