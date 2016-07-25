@@ -1,5 +1,5 @@
 # VLE User Submits Assignment Recipe
-Revision: 1.1
+Revision: 1.2
 
 ## Purpose
 This activity records a user submitting an assignment
@@ -156,8 +156,8 @@ Plugin specific extensions are optional and not part of the core recipe.
 		<td>The platform used in the experience of this learning activity.</td>
 	</tr>
 	<tr>
-		<td>context.platform.extensions</td>
-		<td>The sessionID extension is the VLE session ID. [IP Address](https://registry.tincanapi.com/#uri/extension/310) is used to identify the client's real address as a Context extension.</td>
+		<td>context.extensions</td>
+		<td>The sessionID extension is the VLE session ID. [IP Address](https://registry.tincanapi.com/#uri/extension/310) is used to identify the client's real address as a Context extension. RecipeVersion is recommended and is the version of this recipe found at the top of this page.</td>
 	</tr>
 	<tr>
 		<td>context.context.activities</td>
@@ -194,11 +194,13 @@ Example:
       		"http://xapi.jisc.ac.uk/courseArea": {
       		 	"http://xapi.jisc.ac.uk/vle_mod_id": "LA101",
                 "id": http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=4"
-            },
+				},
 			
  			"http://xapi.jisc.ac.uk/sessionId":"32456891",
             "http://id.tincanapi.com/extensions/ip-address": "10.3.3.48"
-        }
+			"http://xapi.jisc.ac.uk/recipeVersion" : "1.2"
+			}
+		}
 ```
 
 

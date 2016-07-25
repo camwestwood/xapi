@@ -1,5 +1,5 @@
 #Module/Block/Object View
-Revision: 1.1
+Revision: 1.2
 
 ##Purpose
 This recipe defines the structure and terms to record the experience of viewing a vle resource such as a Moodle Module or Blackboard building block (eg a page as identified by its url)
@@ -81,7 +81,7 @@ Plugin specific extensions are optional and not part of the core recipe
 	</tr>
 	<tr>
 		<td>context.extensions</td>
-		<td>Json object with the following proerties: The sessionID extension is the VLE session ID. [IP Address](https://registry.tincanapi.com/#uri/extension/310) is used to identify the client's real address as a Context extension. SessionId is the VLE session Id. CourseArea is the umbrella course/parent area identified by its home page URI 
+		<td>Json object with the following properties: The sessionID extension is the VLE session ID. [IP Address](https://registry.tincanapi.com/#uri/extension/310) is used to identify the client's real address as a Context extension. SessionId is the VLE session Id. CourseArea is the umbrella course/parent area identified by its home page URI. RecipeVersion is recommended and is the version of this recipe found at the top of this page.
 	</td>
 	</tr>
 </table>
@@ -90,12 +90,17 @@ Plugin specific extensions are optional and not part of the core recipe
 "context": {
         "platform": "Moodle",
         "extensions": {
+		
       			"http://xapi.jisc.ac.uk/courseArea": {
-      		 	"http://xapi.jisc.ac.uk/vle_mod_id": "LA101",
+					"http://xapi.jisc.ac.uk/vle_mod_id": "LA101",
                  	"id":"http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=4"
+					},
+					
 		  	"http://xapi.jisc.ac.uk/sessionId": "32456891"  ,
 		  	"http://id.tincanapi.com/extensions/ip-address": "10.3.3.48"
-			 }
+			"http://xapi.jisc.ac.uk/recipeVersion" : "1.2"
+			
+			}
               
         }
 ```

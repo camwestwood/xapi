@@ -87,7 +87,7 @@ Contextual information. Plugin specific extensions are optional and not part of 
 	</tr>
 	<tr>
 		<td>context.extensions</td>
-		<td>The sessionID extension is the VLE session ID. <a href="https://registry.tincanapi.com/#uri/extension/310">IP Address</a> is used to identify the client's real address as a Context extension. Recipe Version recommended is the version of Recipe used found on recipe page</td>
+		<td>The sessionID extension is the VLE session ID. <a href="https://registry.tincanapi.com/#uri/extension/310">IP Address</a> is used to identify the client's real address as a Context extension. RecipeVersion is recommended and is the version of this recipe found at the top of this page.</td>
 	</tr>
 </table>
 
@@ -99,7 +99,7 @@ Contextual information. Plugin specific extensions are optional and not part of 
         "extensions": {
  			"http://xapi.jisc.ac.uk/sessionId": "32456891",
         		"http://id.tincanapi.com/extensions/ip-address": "10.3.3.48",
-        		"http://xapi.jisc.ac.uk/recipeVersion" : "1.2 "
+        		"http://xapi.jisc.ac.uk/recipeVersion" : "1.2"
 		     }
 	}
 ```

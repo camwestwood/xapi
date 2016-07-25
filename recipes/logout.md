@@ -1,5 +1,5 @@
 # VLE User Logged Out Recipe
-Revision: 1.1
+Revision: 1.2
 
 ## Purpose
 This activity records a user logging out of a VLE.
@@ -86,7 +86,7 @@ Common entity identifier: Context.A
 	</tr>
 	<tr>
 		<td>context.extensions</td>
-		<td>The sessionID extension is the VLE session ID. <a href="https://registry.tincanapi.com/#uri/extension/310">IP Address</a> is used to identify the client's real address as a Context extension.</td>
+		<td>The sessionID extension is the VLE session ID. <a href="https://registry.tincanapi.com/#uri/extension/310">IP Address</a> is used to identify the client's real address as a Context extension. RecipeVersion is recommended and is the version of this recipe found at the top of this page.</td>
 	</tr>
 </table>
 
@@ -97,8 +97,9 @@ Common entity identifier: Context.A
         "platform": "Moodle",
         "extensions": {
  			"http://xapi.jisc.ac.uk/sessionId":"32456891",
-        		  "http://id.tincanapi.com/extensions/ip-address": "10.3.3.48"    
-        }
+        	"http://id.tincanapi.com/extensions/ip-address": "10.3.3.48",
+			"http://xapi.jisc.ac.uk/recipeVersion" : "1.2"
+			}
 ```
 
 ### Object
