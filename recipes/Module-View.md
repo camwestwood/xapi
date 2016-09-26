@@ -1,4 +1,4 @@
-#vle_resource_viewed
+#vle_resource_viewed recipe
 Revision: 1.3
 
 ##Purpose
@@ -109,7 +109,7 @@ Plugin specific extensions are optional and not part of the core recipe
 Common entity identifier: Object.D
 
 #### Entity Example:
-Needs to identify what was viewed. A list of valid values can be found at [the definition of  object.definition.extensions on the vocabulary page](../vocabulary.md#Object.definition.extension)
+Needs to identify what was viewed. A list of valid values can be found at [the definition of object.definition.extensions on the vocabulary page](../vocabulary.md#Object.definition.extension)
 
 <table>
 	<tr><th>Property</th><th>Jisc Profile Information</th></tr>

@@ -1,5 +1,5 @@
-# VLE Session timed out recipe
-Revision: 1.2
+#session_timed_out recipe
+Revision: 1.3
 
 ## Purpose
 This activity indicates the activity provider has determined that the session was abnormally terminated either by an actor or due to a system failure.
@@ -74,7 +74,7 @@ Context identifies the platform that is being logged into, Moodle in this exampl
 	</tr>
 	<tr>
 		<td>context.platform.extensions</td>
-		<td>The sessionID extension is the VLE session ID. [IP Address](https://registry.tincanapi.com/#uri/extension/310) is used to identify the client's real address as a Context extension. <a href="https://registry.tincanapi.com/#uri/extension/310">IP Address</a> is used to identify the client's real address as a Context extension. RecipeVersion is recommended and is the version of this recipe found at the top of this page.</td>
+		<td>The sessionID extension is the VLE session ID. [IP Address](https://registry.tincanapi.com/#uri/extension/310) is used to identify the client's real address as a Context extension. <a href="https://registry.tincanapi.com/#uri/extension/310">IP Address</a> is used to identify the client's real address as a Context extension. RecipeVersion is recommended, and identifies this recipe and its version.</td>
 	</tr>
 	<tr>
 		<td>context.context.activities</td>
@@ -90,7 +90,7 @@ Example:
         "extensions": {
 			"http://xapi.jisc.ac.uk/sessionId": "32456891",
 			"http://id.tincanapi.com/extensions/ip-address" :"10.3.3.48"
-			"http://xapi.jisc.ac.uk/recipeVersion" : "1.2"
+			"http://xapi.jisc.ac.uk/recipeVersion" : "session_timed_outV1.2"
              }
         }
 ```

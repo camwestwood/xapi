@@ -1,5 +1,5 @@
-# VLE Assignment Graded Recipe
-Revision: 1.2
+#vle_assignment_graded Recipe
+Revision: 1.3
 
 ## Purpose
 This activity records a graded assignment
@@ -170,7 +170,7 @@ Plugin specific extensions are optional and not part of the core recipe. Instruc
 	</tr>
 	<tr>
 		<td>context.extensions</td>
-		<td>The sessionID extension is the VLE session ID. [IP Address](https://registry.tincanapi.com/#uri/extension/310) is used to identify the client's real address as a Context extension. RecipeVersion is recommended and is the version of this recipe found at the top of this page.</td>
+		<td>The sessionID extension is the VLE session ID. [IP Address](https://registry.tincanapi.com/#uri/extension/310) is used to identify the client's real address as a Context extension. RecipeVersion is recommended, and identifies this recipe and its version.</td>
 	</tr>
 	<tr>
 		<td>context.context.activities</td>
@@ -215,7 +215,7 @@ Plugin specific extensions are optional and not part of the core recipe. Instruc
 			  
  			"http://xapi.jisc.ac.uk/sessionId": "32456891" ,
         	"http://id.tincanapi.com/extensions/ip-address": "10.3.3.48"
-			"http://xapi.jisc.ac.uk/recipeVersion" : "1.2"
+			"http://xapi.jisc.ac.uk/recipeVersion" : "vle_assignment_gradedV1.2"
         }
 ```
 
