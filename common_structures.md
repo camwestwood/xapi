@@ -124,7 +124,7 @@ This object pattern describes the core attributes of Object as used in the Jisc 
 	</tr>
 		<tr>
 		<td>object.definition</td>
-		<td>A JSON object comprising both standard xAPI attributes and the Jisc profile subType extension.   
+		<td>A JSON object comprising both standard xAPI attributes and the Jisc profile subType extension.<br/>
     The <b>type</b> indicates the type of the object of the statement. It is required and valid values are listed on the [vocabulary](vocabulary.md#31-activity-types) page.</br>
     The <b>name</b> is optional.</br>
     The <b>extensions</b> may be used to indicate the sub-type of this activity, if applicable for the recipe being used to create the statement. This qualifies the object.objectType, and is described on the [vocabularies](vocabulary.md#32-object-definition-extensions) page.</td>
