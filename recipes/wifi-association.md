@@ -9,7 +9,8 @@ This activity records a user device associating with a wifi access point.
 ### Actor
 Common entity identifier:  Actor.A
 
-The entity is used across all recipes in the Jisc profile.
+#### Entity Example:
+The actor entity describes the individual that is making the association
 
 <table>
 	<tr>
@@ -35,9 +36,6 @@ The entity is used across all recipes in the Jisc profile.
         }
     },
 ```
-
-#### Entity Example:
-The actor entity describes the individual that is making the association
 
 ### Verb
 Common entity identifier: Verb.A
