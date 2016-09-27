@@ -10,17 +10,16 @@ Common entity identifier:  Actor.A, as defined on the [common structures](../com
 
 The actor entity identifies the individual that is logging in to the system.
 
-#### Entity Example:
+#### Example:
 ``` Javascript
-{
-    "actor": {
-        "objectType": "Agent",
-        "name": "John Smith",
-        "account": {
-            "name": "jsmith12",
-            "homePage": "https://courses.alpha.jisc.ac.uk/moodle"
-        }
-    },
+"actor": {
+  "objectType": "Agent",
+  "name": "John Smith",
+  "account": {
+    "name": "jsmith12",
+    "homePage": "https://courses.alpha.jisc.ac.uk/moodle"
+  }
+}
 ```
 
 ### Verb
@@ -28,14 +27,14 @@ Common entity identifier: Verb.A, as defined on the [common structures](../commo
 
 This recipe uses the [logged in](/vocabulary.md#verbs) verb to describe the action of logging into a platform.
 
-#### Entity Example:
+#### Example
 ``` javascript
-	"verb": {
-        "id": "https://brindlewaye.com/xAPITerms/verbs/loggedin",
-        "display": {
-            "en" : "logged in to"
-        }
-    },
+"verb": {
+  "id": "https://brindlewaye.com/xAPITerms/verbs/loggedin",
+  "display": {
+    "en" : "logged in to"
+  }
+}
 ```
 
 ### Context
@@ -43,16 +42,16 @@ Common entity identifier: Context.A, as defined on the [common structures](../co
 
 Since the logged-in action is not undertaken in the context of a learning activity or course, only the core attributes of context are applicable.
 
-#### Entity Example:
+#### Example:
 ``` javascript
-	"context": {
-        "platform": "Moodle",
-        "extensions": {
- 						"http://xapi.jisc.ac.uk/sessionId": "32456891",
-        		"http://id.tincanapi.com/extensions/ip-address": "10.3.3.48",
-        		"http://xapi.jisc.ac.uk/recipeVersion" : "vle_logged_inV1.3"
-		     }
-	}
+"context": {
+  "platform": "Moodle",
+  "extensions": {
+    "http://xapi.jisc.ac.uk/sessionId": "32456891",
+    "http://id.tincanapi.com/extensions/ip-address": "10.3.3.48",
+    "http://xapi.jisc.ac.uk/recipeVersion" : "vle_logged_inV1.3"
+  }
+}
 ```
 
 ### Object
@@ -60,21 +59,21 @@ Common entity identifier: Object.A, as defined on the [common structures](../com
 
 For the logged-in recipe, the object.definition.type is "http://activitystrea.ms/schema/1.0/application". The subType (http://xapi.jisc.ac.uk/subType) extension should be used to identify the system type that is being logged into, in this example a Virtual Learning Environment (aka Learning Management System), identified by  http://id.tincanapi.com/activitytype/lms. Different application types should use the relevant subType, as defined on the [vocabularies](vocabulary.md#32-object-definition-extensions) page.
 
-#### Entity Example:
+#### Example:
 ``` javascript
-		"object": {
-        "objectType": "Activity",
-        "id": "https://courses.alpha.jisc.ac.uk/moodle",
-        "definition": {
-            "type": "http://activitystrea.ms/schema/1.0/application",
-            "name": {
-                "en": "University of Jisc VLE"
-            },
-            "extensions": {
-                "http://xapi.jisc.ac.uk/subType": "http://id.tincanapi.com/activitytype/lms"
-            }
-        }
+"object": {
+  "objectType": "Activity",
+  "id": "https://courses.alpha.jisc.ac.uk/moodle",
+  "definition": {
+    "type": "http://activitystrea.ms/schema/1.0/application",
+    "name": {
+      "en": "University of Jisc VLE"
     },
+    "extensions": {
+      "http://xapi.jisc.ac.uk/subType": "http://id.tincanapi.com/activitytype/lms"
+    }
+  }
+}
 ```
 
 ### Complete VLE Specific Examples
