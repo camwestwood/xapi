@@ -11,6 +11,31 @@ Common entity identifier:  Actor.A
 
 The entity is used across all recipes in the Jisc profile.
 
+<table>
+	<tr>
+		<th>Property in Example</th><th>Description</th>
+	</tr>
+	<tr>
+		<td>actor.objectType</td>
+		<td>"Agent"</td>
+	</tr>
+	<tr>
+		<td>actor.account</td>
+		<td>JSON Object with unique id(account.name) and home page(account.homepage)</td>
+	</tr>
+</table>
+
+``` Javascript
+{
+    "actor": {
+        "objectType": "Agent",,
+        "account": {
+            "name": "s1234567",
+            "homePage": "https://intranet.uni.ac.uk/"
+        }
+    },
+```
+
 #### Entity Example:
 The actor entity describes the individual that is making the association
 
