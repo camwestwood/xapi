@@ -6,7 +6,7 @@ This activity records a user logging in to a VLE.
 ## Definition
 
 ### Actor
-Common entity identifier:  Actor.A, as defined on the [common structures](../common_structures.md#actor.a) page.
+Common entity identifier:  Actor.A, as defined on the [common structures](../common_structures.md#actora) page.
 
 #### Entity Example:
 The actor entity describes the individual that is logging in to the system.
