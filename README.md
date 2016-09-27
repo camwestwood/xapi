@@ -15,7 +15,8 @@ If the need arises, particular versions will get their own branches, but until t
 
 ## Vocabulary and Common Structures
 
-* [Vocabulary] (vocabulary.md)
+* [Vocabulary](vocabulary.md) gives the IRIs and definitions for verbs, activity types, etc, as well as for extensions used in the recipes.
+* [Common Structures](common_structures.md) outlines common patterns used across different recipes.
 
 # Recipes
 As far as possible all entities are the same across recipes and are identified by a version.
@@ -45,7 +46,7 @@ These are the currently platform independent documented recipes:
 
  * Logged in
 
-### Attendance 
+### Attendance
 
  * Visited Library
 

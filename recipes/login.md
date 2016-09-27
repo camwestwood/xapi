@@ -6,29 +6,10 @@ This activity records a user logging in to a VLE.
 ## Definition
 
 ### Actor
-Common entity identifier:  Actor.A
-
-The entity is used across all recipes in the Jisc profile.
+Common entity identifier:  Actor.A, as defined on the [common structures](../common_structures.md#actor.a) page.
 
 #### Entity Example:
 The actor entity describes the individual that is logging in to the system.
-
-<table>
-	<tr><th>Property in Example</th><th>Description</th></tr>
-	<tr>
-		<td>actor.objectType</td>
-		<td>"Agent"</td>
-	</tr>
-	<tr>
-		<td>actor.name</td>
-		<td>Full name of user, optional.</td>
-	</tr>
-
-		<tr>
-		<td>actor.account</td>
-		<td>JSON Object with unique id(account.name) and home page(account.homepage)</td>
-	</tr>
-</table>
 
 ``` Javascript
 {
@@ -36,7 +17,7 @@ The actor entity describes the individual that is logging in to the system.
         "objectType": "Agent",
         "name": "John Smith",
         "account": {
-            "name": "2",
+            "name": "jsmith12",
             "homePage": "https://courses.alpha.jisc.ac.uk/moodle"
         }
     },
@@ -72,7 +53,7 @@ The Verb, [logged in](/vocabulary.md#verbs) describes the action of logging into
             "en" : "logged in to"
         }
     },
-``` 
+```
 ### Context
 Common entity identifier: Context.A
 
