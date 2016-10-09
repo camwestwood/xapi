@@ -255,7 +255,7 @@ The following are properties of the [Context extensions property](https://github
 
 ### Umbrella course area
 
-For more information see [CourseArea properties](#4.2 CourseArea properties)
+For more information see [CourseArea properties](#42-coursearea-properties)
 
 <table>
 <tr><th align="left">Label</th><td>Umbrella course area</td></tr>
