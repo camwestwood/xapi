@@ -115,10 +115,6 @@ The object defines the activity that has been evaluated. [Examples of valid obje
 		<td>object.id</td>
 		<td>An identifier for a single unique Activity</td>
 	</tr>
-	<tr>
-		<td>object.definition</td>
-		<td>JSON object. verb.definition.type describes the activity. dueDate describes the</td>
-	</tr>
 		<tr>
 		<td>object.definition</td>
 		<td>JSON object. Object.definition.type describes the activity</td>

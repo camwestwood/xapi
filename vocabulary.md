@@ -216,6 +216,30 @@ Example:
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/vle/file">http://xapi.jisc.ac.uk/vle/file</a> </td></tr>
 </table>
 
+### Lecture
+
+<table>
+<tr><th align="left">Label</th><td>Lecture</td></tr>
+<tr><th align="left">Description</th><td>A learning activity that consists mainly of an expert giving a talk to a number of learners.</td></tr>
+<tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/lecture">http://xapi.jisc.ac.uk/lecture</a> </td></tr>
+</table>
+
+### Tutor session
+
+<table>
+<tr><th align="left">Label</th><td>Tutor session</td></tr>
+<tr><th align="left">Description</th><td>This represents a tutoring session.</td></tr>
+<tr><th align="left">IRI</th><td> <a href="http://id.tincanapi.com/activitytype/tutor-session">http://id.tincanapi.com/activitytype/tutor-session</a> </td></tr>
+</table>
+
+### Event
+
+<table>
+<tr><th align="left">Label</th><td>Event</td></tr>
+<tr><th align="left">Description</th><td>Any event.<br/>The "event" Activity Type should only be used when the type of event is unspecified.</td></tr>
+<tr><th align="left">IRI</th><td> <a href="http://activitystrea.ms/schema/1.0/event">http://activitystrea.ms/schema/1.0/event</a> </td></tr>
+</table>
+
 ## 3.2 Object Definition Extensions
 The following are Jisc profile extensions to be used in [object.definition.extensions](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI.md#object). See the [Assignment Graded](recipes/assignment-graded.md#verb)
 
@@ -229,6 +253,30 @@ The following are Jisc profile extensions to be used in [object.definition.exten
 <tr><th align="left">Data Type</th><td>String</td></tr>
 <tr><th align="left">Value Space</th><td>ISO 8601 date time</td></tr>
 <tr><th align="left">Sample Value</th><td>2016-02-05T17:59:45.000Z</td></tr>
+</table>
+
+### DateTime
+
+<table>
+<tr><th align="left">Label</th><td>DateTime</td></tr>
+<tr><th align="left">Description</th><td>Value representing a calendar date and time, such as 2013-08-27 09:26:45.001. Value should be a string formatted as an ISO8601 date and time to match the rest of the specification values.</td></tr>
+<tr><th align="left">IRI</th><td> <a href="http://id.tincanapi.com/extension/datetime">http://id.tincanapi.com/extension/datetime</a> </td></tr>
+<tr><th align="left">Example in Recipe</th><td> <a href="recipes/attendance.md#object">attendance</a> </td></tr>
+<tr><th align="left">Data Type</th><td>String</td></tr>
+<tr><th align="left">Value Space</th><td>ISO 8601 date time</td></tr>
+<tr><th align="left">Sample Value</th><td>2016-02-05T17:59:45.000Z</td></tr>
+</table>
+
+### Duration
+
+<table>
+<tr><th align="left">Label</th><td>Duration</td></tr>
+<tr><th align="left">Description</th><td>Value representing a length of time, for example the length of a video. Value should be either a string formatted as an ISO8601 duration to match the Result.duration property or a float that uses the same units as expected with correlating information (other extensions). This extension will generally be used within an Activity Definition to indicate a length of an Activity as compared to the Result.duration which captures the length of time for a specific event. For example a video may be 5 minutes long (this Extension), but an actor may have only watched 30 seconds of it (the Result.duration). </td></tr>
+<tr><th align="left">IRI</th><td> <a href="http://id.tincanapi.com/extension/duration">http://id.tincanapi.com/extension/duration</a> </td></tr>
+<tr><th align="left">Example in Recipe</th><td> <a href="recipes/attendance.md#object">attendance</a> </td></tr>
+<tr><th align="left">Data Type</th><td>String</td></tr>
+<tr><th align="left">Value Space</th><td>ISO 8601 duration</td></tr>
+<tr><th align="left">Sample Value</th><td>PT1H30M0S</td></tr>
 </table>
 
 ### Application Type

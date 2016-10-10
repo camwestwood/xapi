@@ -70,10 +70,64 @@ The Verb,[attended](/vocabulary.md#verbs) denotes the action of the user's brows
     },
 ```
 
+### Result
+Common entity identifier: Result.B
+
+#### Entity Example:
+
 
 ### Object
+Common entity identifier: Object.E
 
+#### Entity Example:
+The object defines the activity that has been completed. [Examples of valid object.definition Activity object Types can be found in the vocabulary](../vocabulary.md#30-object).
 
+<table>
+	<tr><th>Property in Example</th><th>Description</th></tr>
+	<tr>
+		<td>object.objectType</td>
+		<td>The value must be "Activity".</td>
+	</tr>
+	<tr>
+		<td>object.id</td>
+		<td>An identifier for a single unique learning event.</td>
+	</tr>
+	<tr>
+		<td>object.definition</td>
+		<td>JSON object. Object.definition.type identifies the activity.</td>
+	</tr>
+	</tr>
+		<tr>
+		<td>object.extension</td>
+		<td>JSON object.<br/> "http://id.tincanapi.com/extension/datetime" is a ISO 8601 date time that indicates when the learning event started.<br/>"http://id.tincanapi.com/extension/duration" represents the length of time the event took. </td>
+	</tr>
+</table>
+
+Example:
+
+``` javascript
+
+"object":{
+		"objectType":"Activity",
+		"id":"http://www.poppleton.ac.uk/psy101/lecture1",
+		"definition":{
+			"type":"http://activitystrea.ms/schema/1.0/event",
+			"name":{
+				"en":"Lecture"
+			},
+			"description":{
+				"en":"The first lecture of psychology 101"
+				}
+			},
+			
+		    "extensions":{
+				"http://id.tincanapi.com/extension/datetime": "2016-02-05T10:00:00.000Z",
+				"http://id.tincanapi.com/extension/duration": "PT1H30M0S"
+			}
+			
+		}
+		
+```
 
 ### Context
 
