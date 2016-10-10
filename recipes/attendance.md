@@ -74,7 +74,21 @@ The Verb,[attended](/vocabulary.md#verbs) denotes the action of the user's brows
 Common entity identifier: Result.B
 
 #### Entity Example:
+The optional result entity can include completion. See [the xAPI specification for a full description of the result entity](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#245-result)
 
+<table>
+	<tr><th>Property in Example</th><th>Description</th></tr>
+	<tr>
+		<td>result.result.completion</td>
+		<td>"true". Indicates that the learner attended the event.<br/>"false"indicates that the learner did not attend the event.</td>
+	</tr>
+</table>
+
+``` javascript
+ "result":{
+        "completion":true
+    }
+```
 
 ### Object
 Common entity identifier: Object.E
@@ -130,48 +144,60 @@ Example:
 ```
 
 ### Context
-
-
-#### Entity Example:
-Contexual Information
-_Recipe version?_
+Common entity identifier: Context.D
 
 #### Entity Example:
-The object is the place the person is attending, in this case the library.
-
-_ need to check what is possible here_ 
+Plugin specific extensions are optional and not part of the core recipe. Instructor is optional and is the instructor who organised the learning event.
 
 <table>
-	<tr><th>Property</th><th>Jisc Profile Information</th></tr>
+	<tr><th>Property in Example</th><th>Description</th></tr>
 	<tr>
-		<td>object.objectType</td>
-		<td>Must be "Activity".</td>
+		<td>context.platform</td>
+		<td>The system used to record attendance to this learning activity.</td>
 	</tr>
 	<tr>
-		<td>object.id</td>
-		<td>An identifier for a single unique Activity</td>
+		<td>context.extensions</td>
+		<td>RecipeVersion is recommended, and identifies this recipe and its version.</td>
 	</tr>
-		<tr>
-		<td>object.definition</td>
-		<td>A JSON object. object.definition.type states activity type is place.</td>
+	<tr>
+		<td>context.context.activities</td>
+		<td>Has a context type of grouping. A course that relates to an assignment as the parent.</td>
 	</tr>
 </table>
 
 ``` javascript
-"object": {
-	"objectType": "Activity",
-	 "id": "  ", /
-	 "definition": {
-		  "name": {"en-GB" : "Library Name" },
-		 "description": { "en": "Description.",
+"context": {
+	"contextActivities":{
+            "grouping":[
+                {
+                    "objectType":"Activity",
+                    "id":"http://wicketkeeper.poppleton.ac.uk/courses/psy101",
+                    "definition":{
+                        "type":"http://xapi.jisc.ac.uk/courseArea",
+                        "name":{
+                            "en":"Psychology 101"
+                        },
+                        "description":{
+                            "en":"Entrance course for psychology."
+                        }
+                    }
+                }
+            ]
         },
-       
-       "type": "http://activitystrea.ms/schema/1.0/place",
-   }
-}
+		
+		"instructor": {
+            "objectType": "Agent",
+            "name": "instructor",
+            "account": {
+                "name": "2",
+                "homePage": "http://localhost/moodle"
+            },
+        
+        "platform": "Wicketkeeper"
+        "extensions":  {
+      		"http://wicketkeeper.poppleton.ac.uk/extensions": {
+      		 	 "http://wicketkeeper.poppleton.ac.uk/extensions/weighting": "3"
+              },
+			"http://xapi.jisc.ac.uk/recipeVersion" : "attendanceV0.1"
+        }
 ```
-
-### Complete VLE Specific Examples
-[Moodle Example](/vle/moodle/moduleview.js)
-
-[Blackboard Example](/vle/blackboard/course_content_access.json)
