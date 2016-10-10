@@ -29,7 +29,7 @@ The actor entity describes the individual accessing wifi
 ``` Javascript
 {
     "actor": {
-        "objectType": "Agent",,
+        "objectType": "Agent",
         "account": {
             "name": "s1234567",
             "homePage": "https://intranet.uni.ac.uk/"
@@ -66,9 +66,6 @@ The Verb, accessed, describes the action of associating a device to a wifi acces
     },
 ```
 
-### Context
-Common entity identifier: Context.A
-
 #### Entity Example:
 Contextual information.
 
@@ -76,3 +73,52 @@ Contextual information.
 Common entity identifier: Object.A
 
 #### Entity Example:
+This object, a device, represents the access point being accessed and is uniquely identified by it's MAC address.
+
+<table>
+	<tr><th>Property in Example</th><th>Description</th></tr>
+	<tr>
+		<td>object.objectType</td>
+		<td>"Device"</td>
+	</tr>
+	<tr>
+		<td>object.macAddress</td>
+		<td>uniquely identifying MAC address of the device</td>
+	</tr>
+</table>
+
+``` javascript
+"object": {
+		objectType: "Device",
+		macAddress: "2A3DDE45B7B9"
+	},
+```
+
+### Context
+Common entity identifier: Context.A
+
+#### Context Example:
+This context is an object that represents the client device that accessed the access point at a given time and is uniquely identified by it's MAC address.
+
+<table>
+	<tr><th>Property in Example</th><th>Description</th></tr>
+	<tr>
+		<td>object.objectType</td>
+		<td>"Device"</td>
+	</tr>
+	<tr>
+		<td>object.macAddress</td>
+		<td>uniquely identifying MAC address of the client device</td>
+	</tr>
+</table>
+
+``` javascript
+"context": {
+		"object": {
+			objectType: "Device",
+			macAddress: "2A3DDE45B7B9"
+		}
+	},
+	"timestamp": "2012-07-05T18:30:32.360Z"
+}
+```
