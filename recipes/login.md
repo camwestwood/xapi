@@ -67,7 +67,7 @@ The Verb, [logged in](/vocabulary.md#verbs) describes the action of logging into
 
 ``` javascript
 "verb": {
-        "id": "https://brindlewaye.com/xAPITerms/verbs/loggedin",
+        "id": "https://brindlewaye.com/xAPITerms/verbs/loggedin/",
         "display": {
             "en" : "logged in to"
         }
