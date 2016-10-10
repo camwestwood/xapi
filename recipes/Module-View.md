@@ -11,17 +11,25 @@ Common entity identifier:  Actor.A
 The actor entity describes the individual that is viewing a vle resource.
 
 <table>
-	<tr><th>Property</th><th>Jisc Profile Information</th></tr>
+	<tr><th>Property</th><th>Jisc Profile Information</th><th></th>Cardinality</tr>
 	<tr>
 		<td>actor.account</td>
 		<td>Full name of user, optional.</td>
+		<td>actor.account [0.1]
+		    actor.account.name [0.1]
+		    actor.account.hompage [0.1]
+		</td>
 	</tr>
 	<tr>
 		<td>actor.objectType</td>
 		<td>Agent</td>
 	</tr>
-		<tr>
+	<tr>
 		<td>actor.account</td>
+		<td>JSON Object with unique id and home page</td>
+	</tr>
+	<tr>
+		
 		<td>JSON Object with unique id and home page</td>
 	</tr>
 </table>
