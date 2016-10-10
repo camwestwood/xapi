@@ -98,7 +98,7 @@ Contextual information. Plugin specific extensions are optional and not part of 
         "platform": "Moodle",
         "extensions": {
  			"http://xapi.jisc.ac.uk/sessionId": "32456891",
-        		"http://id.tincanapi.com/extensions/ip-address": "10.3.3.48",
+        		"http://id.tincanapi.com/extension/ip-address": "10.3.3.48",
         		"http://xapi.jisc.ac.uk/recipeVersion" : "vle_logged_inV1.3"
 		     }
 	}

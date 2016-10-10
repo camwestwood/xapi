@@ -97,7 +97,7 @@ Plugin specific extensions are optional and not part of the core recipe
 					},
 					
 		  	"http://xapi.jisc.ac.uk/sessionId": "32456891"  ,
-		  	"http://id.tincanapi.com/extensions/ip-address": "10.3.3.48"
+		  	"http://id.tincanapi.com/extension/ip-address": "10.3.3.48"
 			"http://xapi.jisc.ac.uk/recipeVersion" : "vle_resource_viewedV1.3"
 			
 			}
