@@ -22,7 +22,7 @@ The actor entity describes the individual accessing wifi
 	</tr>
 	<tr>
 		<td>actor.account</td>
-		<td>JSON Object with unique id(account.name) and home page(account.homepage)</td>
+		<td>JSON Object with unique id (account.name) and home page (account.homepage)</td>
 	</tr>
 </table>
 
