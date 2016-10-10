@@ -8,7 +8,7 @@ Example of a verb entity, this example uses 'en' language tag, but any RFC 5646 
 
 ``` javascript
 "verb": {
-        "id": "https://brindlewaye.com/xAPITerms/verbs/loggedin/",
+        "id": "https://brindlewaye.com/xAPITerms/verbs/loggedin",
         "display": {
             "en" : "logged in to"
         }
