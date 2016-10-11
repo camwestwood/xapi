@@ -11,28 +11,29 @@ Common entity identifier:  Actor.A
 The actor entity describes the individual that is viewing a vle resource.
 
 <table>
-	<tr><th>Property</th><th>Jisc Profile Information</th><th>Obligations</th></tr>
+	<tr><th>Property</th><th>Jisc Profile Information</th><th>Entity Obligations</th></tr>
 	<tr>
-		<td>actor.account</td>
-		<td>Full name of user, optional.</td>
+		<td>actor.name</td>
+		<td>Full name of user.</td>
 		<td><ul>
-			<li>actor.account [0.1] </li>
-		    <li>actor.account.name [0.1] </li>
-		    <li>actor.account.hompage [0.1] </li>
+		    <li>actor.name [0.1] </li>
 			</ul>
 		</td>
 	</tr>
 	<tr>
 		<td>actor.objectType</td>
-		<td>Agent</td>
+		<td>"Agent"</td>
+		<td>actor.objectType [1] </td>
 	</tr>
 	<tr>
 		<td>actor.account</td>
 		<td>JSON Object with unique id and home page</td>
-	</tr>
-	<tr>
-		
-		<td>JSON Object with unique id and home page</td>
+		<td><ul>
+			<li>actor.account [1] </li>
+		    <li>actor.account.name [1] </li>
+		    <li>actor.account.homepage [1] </li>
+			</ul>
+		</td>
 	</tr>
 </table>
 
@@ -57,14 +58,17 @@ Common entity identifier: Verb.A
 The Verb,[viewed](/vocabulary.md#verbs) denotes the action of the user's browser or app requesting the resource that the user wishes to view.
 
 <table>
-	<tr><th>Property</th><th>Jisc Profile Information</th></tr>
+	<tr><th>Property</th><th>Jisc Profile Information</th><th>Entity Obligations</th></tr>
 	<tr>
 		<td>verb.id</td>
 		<td>IRI corresponding to Verb.</td>
+		<td>verb.id [1]</td>
 	</tr>
 	<tr>
 		<td>verb.display</td>
 		<td>Human readable representation of Verb. Key is a RFC 5646 Language Tag</td>
+		<td>verb.display[1] </td>
+		
 	</tr>
 </table>
 
@@ -84,15 +88,24 @@ Plugin specific extensions are optional and not part of the core recipe
 
 
 <table>
-	<tr><th>Property</th><th>Jisc Profile Information</th></tr>
+	<tr><th>Property</th><th>Jisc Profile Information</th><th>Entity Obligations</th></tr>
 	<tr>
 		<td>context.platform</td>
 		<td>The platform used in the experience of this learning activity.</td>
+		<td>context.platform [0.1]</td>
 	</tr>
 	<tr>
 		<td>context.extensions</td>
-		<td>Json object with the following properties: The sessionID extension is the VLE session ID. [IP Address](https://registry.tincanapi.com/#uri/extension/310) is used to identify the client's real address as a Context extension. SessionId is the VLE session Id. CourseArea is the umbrella course/parent area identified by its home page URI. RecipeVersion is recommended, and identifies this recipe and its version.
-	</td>
+		<td>JSON object with the following properties: The [sessionId]() extension is the VLE session ID. [ip Address](https://registry.tincanapi.com/#uri/extension/310) is used to identify the client's real address as a Context extension.  CourseArea is the umbrella course/parent area identified by its home page URI. RecipeVersion is recommended, and identifies this recipe and its version.
+		</td>
+		    <td>
+		    <ul>
+				<li>context.extension.courseArea [0.1]</li>
+				<li>context.extension.sessionId [0.1]</li>
+				<li>context.extension.ip-address [0.1]</li>
+				<li>context.extension.RecipeVersion [0.1] </li>
+			</ul>
+			</td>
 	</tr>
 </table>
 
@@ -100,10 +113,10 @@ Plugin specific extensions are optional and not part of the core recipe
 "context": {
         "platform": "Moodle",
         "extensions": {
-		
-      			"http://xapi.jisc.ac.uk/courseArea": {
-					"http://xapi.jisc.ac.uk/vle_mod_id": "LA101",
-                 	"id":"http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=4"
+	
+      	"http://xapi.jisc.ac.uk/courseArea": {
+			"http://xapi.jisc.ac.uk/vle_mod_id": "LA101",
+            "id":"http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=4"
 					},
 					
 		  	"http://xapi.jisc.ac.uk/sessionId": "32456891"  ,
@@ -122,18 +135,28 @@ Common entity identifier: Object.D
 Needs to identify what was viewed. A list of valid values can be found at [the definition of object.definition.extensions on the vocabulary page](../vocabulary.md#Object.definition.extension)
 
 <table>
-	<tr><th>Property</th><th>Jisc Profile Information</th></tr>
+	<tr><th>Property</th><th>Jisc Profile Information</th><th>Entity Obligations</th></tr>
 	<tr>
 		<td>object.objectType</td>
 		<td>Must be "Activity".</td>
+		<td>object.ojectType [0.1]</td>
 	</tr>
 	<tr>
 		<td>object.id</td>
 		<td>An identifier for a single unique Activity</td>
+		<td>object.id [0.1]</td>
 	</tr>
 		<tr>
 		<td>object.definition</td>
 		<td>A JSON object. object.definition.type describes the activity and object.definition.extensions.subtype can be used to described the subtype of this activity.</td>
+		 <td>
+		    <ul>
+				<li>object.definition.type [1]</li>
+				<li>object.definition.name [0.1]</li>
+				<li>object.definition.description [0.1]</li>
+				
+			</ul>
+			</td>
 	</tr>
 </table>
 
