@@ -11,7 +11,7 @@ Common entity identifier:  Actor.A, as defined on the [common structures](../com
 
 The actor entity describes the individual whose work has been graded.
 
-
+### Example:
 ``` Javascript
 {
     "actor": {
@@ -29,7 +29,7 @@ Common entity identifier: Verb.A, as defined on the [common structures](../commo
 
 The Verb, [scored](/vocabulary.md#verbs) describes the action of evaluating a learning activity.
 
-<
+### Example:
 
 ``` javascript
  "verb":{
@@ -46,7 +46,7 @@ Common entity identifier: Result.B, as defined on the [common structures](../com
 In the Jisc profile, the use of the result entity and any of its properties is optional. 
 
 
-
+### Example:
 ``` javascript
  "result":{
         "score":{
@@ -64,6 +64,7 @@ Common entity identifier: Object.B, as defined on the [common structures](../com
 The object defines the activity that has been evaluated. [Examples of valid object.definition vocabulary on Activity objectTypes](/common_statements.md#object) can be found on the vocab page.
 
 
+### Example:
 ``` javascript
 
 "object":{
@@ -88,24 +89,11 @@ The object defines the activity that has been evaluated. [Examples of valid obje
 
 
 ### Context
-Common entity identifier: Object.B, as defined on the [common structures](../common_structures.md#objectb) page.
+Common entity context: Context.B, as defined on the [common structures](../common_structures.md#contextb) page.
 
+For the graded recipe, the context.contextAxtivities is property with a ‘grouping’ that allows statements to be associated to the activity described in the object entities as part of a larger whole. Different activitie types can be found on the vocabulary page.
 
-<table>
-	<tr><th>Property in Example</th><th>Description</th></tr>
-	<tr>
-		<td>context.platform</td>
-		<td>The platform used in the experience of this learning activity.</td>
-	</tr>
-	<tr>
-		<td>context.extensions</td>
-		<td>The sessionID extension is the VLE session ID. [IP Address](https://registry.tincanapi.com/#uri/extension/310) is used to identify the client's real address as a Context extension. RecipeVersion is recommended, and identifies this recipe and its version.</td>
-	</tr>
-	<tr>
-		<td>context.context.activities</td>
-		<td>Has a context type of grouping. A course that relates to a assignment as the parent.</td>
-	</tr>
-</table>
+### Example
 
 ``` javascript
 "context": {
