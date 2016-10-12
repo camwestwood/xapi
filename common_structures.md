@@ -113,7 +113,6 @@ This pattern is used across many recipes in the Jisc profile, but there may be a
     The <b>recipeVersion</b> extension is recommended, and identifies the recipe (and its version) which was followed to create the xAPI statement.
 	The <b>courseArea</b> identifies Umbrella course/parent area by its home page URI. More information can be found on the [vocabularies](vocabulary.md#Umberella-course-area) page. Its requirement depends on the recipe</td></td>
 	</tr>
-	</td>
 		<td>
 		<ul>
 			<li>context.extension.recipeVersion [0.1]</li>
