@@ -107,12 +107,15 @@ This pattern is used across many recipes in the Jisc profile, but there may be a
 	</tr>
 	<tr>
 		<td>context.extensions</td>
-		<td>Four extensions are provided for, with IRIs as defined on the [vocabularies](vocabulary.md#41-context-extensions) page.</br>
-    The <b>sessionID</b> extension is the VLE session ID, or a suitably hashed version of it. A value should be provided if this information is available.</br>
-    The <b>ip-address</b> is required and is used to identify the client's IP address. An IPv4 address is recommended.</br>
+		<td>
+		Four extensions are provided for, with IRIs as defined on the [vocabularies](vocabulary.md#41-context-			extensions) page.<br/>
+  	  The <b>sessionID</b> extension is the VLE session ID, or a suitably hashed version of it. A value should be provided if this information is available.<br/>
+    The <b>ip-address</b> is required and is used to identify the client's IP address. An IPv4 address is recommended.<br/>
     The <b>recipeVersion</b> extension is recommended, and identifies the recipe (and its version) which was followed to create the xAPI statement.
-	The <b>courseArea</b> identifies Umbrella course/parent area by its home page URI. More information can be found on the [vocabularies](vocabulary.md#Umberella-course-area) page. Its requirement depends on the recipe</td></td>
-	</tr>
+	The <b>courseArea</b> identifies Umbrella course/parent area by its home page URI. More information can be found on the [vocabularies](vocabulary.md#Umberella-course-area) page. Its requirement depends on the recipe
+		</td>
+	
+	</tr><tr>
 		<td>
 		<ul>
 			<li>context.extension.recipeVersion [0.1]</li>
@@ -121,6 +124,7 @@ This pattern is used across many recipes in the Jisc profile, but there may be a
 			<li>context.extension.recipeVersion [dependant on recipe]</li>
 		</ul>
 		</td>
+		</tr>
 </table>
 
 #### Example:
