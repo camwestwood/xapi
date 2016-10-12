@@ -149,7 +149,7 @@ Context.B pattern is similar to Context.A, but with the addition of a contextAct
 	<tr>
 		<td>context.contextActivities</td>
 		<td>Property with a ‘grouping’ property that allows statements to be associated to the object entities activity as part of a larger whole. Example shows a course within the VLE</td>
-		<td><ul><li>context.contextActivities [0.1]<li></ul></td>
+		<td><ul><li>context.contextActivities [0.1]</li></ul></td>
 	</tr>
 	<tr>
 		<td>context.platform</td>
@@ -238,9 +238,11 @@ This object pattern describes the core attributes of Object as used in the Jisc 
     The <b>type</b> indicates the type of the object of the statement. It is required and valid values are listed on the [vocabulary](vocabulary.md#31-activity-types) page.</br>
     The <b>name</b> is optional.</br>
     The <b>extensions</b> may be used to indicate the sub-type of this activity, if applicable for the recipe being used to create the statement. This qualifies the object.objectType, and is described on the [vocabularies](vocabulary.md#32-object-definition-extensions) page.</td>
-	<td>object.definition.type [1]</td>
-	<td>object.definition.name [0.1]</td>
-	<td>object.definition.extensions.subType [0.1]</td>
+	<td><ul>
+	<li>object.definition.type [1]</li>
+	<li>object.definition.name [0.1]</li>
+	<li>object.definition.extensions.subType [0.1] </li>
+	</ul></td>
 	</tr>
 	
 </table>
