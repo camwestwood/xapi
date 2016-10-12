@@ -10,18 +10,34 @@ This entity is required across all recipes in the Jisc profile.
 The actor entity describes the individual that is the subject of the statement.
 
 <table>
-	<tr><th>Property</th><th>Description</th></tr>
+	<tr><th>Property</th><th>Description</th><th>Entity Obligations</th></tr>
 	<tr>
 		<td>actor.objectType</td>
-		<td>Must have the value "Agent". Actors of type "Group" are not supported in the Jisc profile.</td>
+		<td>
+		Must have the value "Agent". Actors of type "Group" are not supported in the Jisc profile.
+		</td>
+		<td><ul>
+		    <li>actor.objectType [1]</li>
+			</ul>
+		</td>
 	</tr>
 	<tr>
 		<td>actor.name</td>
 		<td>Full name of user, optional.</td>
+		<td><ul>
+		    <li>actor.name [0.1] </li>
+			</ul>
+		</td>
 	</tr>
 	<tr>
 		<td>actor.account</td>
 		<td>JSON Object with account.name giving the login id for the subject of the statement and account.homepage giving the URL of the home page of the application for which the login id applies. Both are required.</td>
+		<td><ul>
+			<li>actor.account [1] </li>
+		    <li>actor.account.name [1] </li>
+		    <li>actor.account.homepage [1] </li>
+			</ul>
+		</td>
 	</tr>
 </table>
 
@@ -45,18 +61,23 @@ This entity is required across all recipes in the Jisc profile.
 The Verb structure indicates the action which the statement expresses. The verbs used in the Jisc profile are listed on the [vocabularies](vocabulary.md#verb) page.
 
 <table>
-	<tr><th>Property</th><th>Description</th></tr>
+	<tr><th>Property</th><th>Description</th><th>Entity Obligations</th></tr>
 	<tr>
 		<td>verb.id</td>
-		<td>IRI corresponding to Verb. Valid IRIs depend on the recipe and are given on the relevant recipe page.  
-    The verb.id is required.</td>
+		<td>IRI corresponding to Verb. Valid IRIs depend on the recipe and are given on the relevant recipe page.  The verb.id is required.</td>
+		<td> <ul>
+		     <li>verb.id [1] </li></ul>
+		</td>
 	</tr>
 	<tr>
 		<td>verb.display</td>
 		<td>Human readable representation of Verb. Key is a RFC 5646 Language Tag.  
-    The verb.display structure is optional\*.</td>
+		The verb.display structure is optional\*.</td>
+		<td><ul>
+		<li>verb.display[1]<li></ul> </td>
 	</tr>
 </table>
+
 \* - verb.display is "recommended" in the xAPI v1.0.1 specification but is not likely to be of use within the Jisc Learning Analytics architecture.
 
 ### Example
