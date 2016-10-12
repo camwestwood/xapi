@@ -103,7 +103,7 @@ This pattern is used across many recipes in the Jisc profile, but there may be a
 	<tr>
 		<td>context.platform</td>
 		<td>The platform used in the experience of this learning activity. This is required. The value used should not change between platform upgrades and version changes and should typically be a concise name by which the application is commonly known, for example "Moodle" or "Blackboard"</td>
-		<td><ul><li>context.platform [1]<li></ul></td>
+		<td><ul><li>context.platform [1]</li></ul></td>
 	</tr>
 	<tr>
 		<td>context.extensions</td>
@@ -154,18 +154,18 @@ Context.B pattern is similar to Context.A, but with the addition of a contextAct
 	<tr>
 		<td>context.platform</td>
 		<td>The platform used in the experience of this learning activity. This is required. The value used should not change between platform upgrades and version changes and should typically be a concise name by which the application is commonly known, for example "Moodle" or "Blackboard"</td>
-		<td><ul><li>context.platform [1]<li></ul></td>
+		<td><ul><li>context.platform [1]</li></ul></td>
 	</tr>
 	<tr>
 		<td>context.extensions</td>
-		<td>Four extensions are provided for, with IRIs as defined on the [vocabularies](vocabulary.md#41-context-extensions) page.</br>
-    The <b>sessionID</b> extension is the VLE session ID, or a suitably hashed version of it. A value should be provided if this information is available.</br>
-    The <b>ip-address</b> is required and is used to identify the client's IP address. An IPv4 address is recommended.</br>
+		<td>Four extensions are provided for, with IRIs as defined on the [vocabularies](vocabulary.md#41-context-extensions) page.<br/>
+    The <b>sessionID</b> extension is the VLE session ID, or a suitably hashed version of it. A value should be provided if this information is available.<br/>
+    The <b>ip-address</b> is required and is used to identify the client's IP address. An IPv4 address is recommended.<br/>
     The <b>recipeVersion</b> extension is recommended, and identifies the recipe (and its version) which was followed to create the xAPI statement.</td>
-	</br>
+	<br/>
     The <b>courseArea</b> extension is recommended, and identifies Umbrella course/parent area by its home page URI. More information can be found on the [vocabularies](vocabulary.md#Umberella-course-area) page.</td>
 	</tr>
-	</td>
+	<tr>
 		<td>
 		<ul>
 			<li>context.extension.courseArea [0.1]</li>
@@ -174,6 +174,7 @@ Context.B pattern is similar to Context.A, but with the addition of a contextAct
 			<li>context.extension.recipeVersion [1]</li>
 		</ul>
 		</td>
+		</tr>
 </table>
 
 #### Example:
