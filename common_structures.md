@@ -142,7 +142,7 @@ This pattern is used across many recipes in the Jisc profile, but there may be a
 ### Context.B
 Common entity identifier: Context.B
 
-Context.B pattern is similar to Context.A, but with the addition of a contextActivities property with a ‘grouping’ property that allows statements to be associated to the object entities activity as part of a larger whole.
+Context.B pattern is similar to Context.A, but with the addition of a contextActivities property with a ‘grouping’ property. This allows statements to be associated to the activity described in the object entities as part of a larger whole.
 
 <table>
 	<tr><th>Property</th><th>Description</th><th>Entity Obligations</th></tr>
@@ -161,7 +161,7 @@ Context.B pattern is similar to Context.A, but with the addition of a contextAct
 		<td>Four extensions are provided for, with IRIs as defined on the [vocabularies](vocabulary.md#41-context-extensions) page.<br/>
     The <b>sessionID</b> extension is the VLE session ID, or a suitably hashed version of it. A value should be provided if this information is available.<br/>
     The <b>ip-address</b> is required and is used to identify the client's IP address. An IPv4 address is recommended.<br/>
-    The <b>recipeVersion</b> extension is recommended, and identifies the recipe (and its version) which was followed to create the xAPI statement.</td>
+    The <b>recipeVersion</b> extension is recommended, and identifies the recipe (and its version) which was followed to create the xAPI statement.
 	<br/>
     The <b>courseArea</b> extension is recommended, and identifies Umbrella course/parent area by its home page URI. More information can be found on the [vocabularies](vocabulary.md#Umberella-course-area) page. </td>
 	
