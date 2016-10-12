@@ -74,7 +74,7 @@ The Verb structure indicates the action which the statement expresses. The verbs
 		<td>Human readable representation of Verb. Key is a RFC 5646 Language Tag.  
 		The verb.display structure is optional\*.</td>
 		<td><ul>
-		<li>verb.display[1]<li></ul> </td>
+		<li>verb.display[1]</li></ul> </td>
 	</tr>
 </table>
 
