@@ -81,7 +81,7 @@ Example:
 ### Context
 Common entity identifier: Context.B, as defined on the [common structures](../common_structures.md#contextb) page.
 
-
+For the submitted recipe, the context.contextAxtivities is property with a ‘grouping’ that allows statements to be associated to the activity described in the object entities as part of a larger whole. Different activitie types can be found on the vocabulary page.
 
 
 Example:
