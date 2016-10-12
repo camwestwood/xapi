@@ -29,6 +29,7 @@ Common entity identifier: Verb.A, as defined on the [common structures](../commo
 
 The Verb,[viewed](/vocabulary.md#verbs) denotes the action of the user's browser or app requesting the resource that the user wishes to view.
 
+### Example:
 
 ``` javascript
 "verb": {
@@ -43,7 +44,7 @@ Common entity identifier: Context.A, as defined on the [common structures](../co
 
 For this recipe the courseArea is required. See the [vocabularies](vocabulary.md#Umberella-course-area) page for more information
 
-</table>
+### Example:
 
 ``` javascript
 "context": {
@@ -68,35 +69,9 @@ For this recipe the courseArea is required. See the [vocabularies](vocabulary.md
 
 Common entity identifier: Object.A, as defined on the [common structures](../common_structures.md#objecta) page.
 
-For this recipe the object needs to identify what was viewed. A list of valid values can be found at [the definition of object.definition.extensions on the vocabulary page](../vocabulary.md#Object.definition.extension)
+For this recipe the object needs to identify what was viewed. A list of valid values  for the object definition type can be found at (../vocabulary.md#Object.definition.extension)
 
-<table>
-	<tr><th>Property</th><th>Jisc Profile Information</th><th>Entity Obligations</th></tr>
-	<tr>
-		<td>object.objectType</td>
-		<td>Must be "Activity".</td>
-		<td><ul>
-		    <li>object.ojectType [0.1]</li></ul><td>
-	</tr>
-	<tr>
-		<td>object.id</td>
-		<td>An identifier for a single unique Activity</td>
-		<td><ul>
-		    <li>object.id [0.1]</td>
-	</tr>
-		<tr>
-		<td>object.definition</td>
-		<td>A JSON object. object.definition.type describes the activity and object.definition.extensions.subtype can be used to described the subtype of this activity.</td>
-		 <td>
-		    <ul>
-				<li>object.definition.type [1]</li>
-				<li>object.definition.name [0.1]</li>
-				<li>object.definition.description [0.1]</li>
-				
-			</ul>
-			</td>
-	</tr>
-</table>
+### Example
 
 ``` javascript
 "object": {
