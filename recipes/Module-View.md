@@ -16,14 +16,16 @@ The actor entity describes the individual that is viewing a vle resource.
 		<td>actor.name</td>
 		<td>Full name of user.</td>
 		<td><ul>
-		    <li>actor.name [0.1] </li>
+		    <li>actor.name [1] </li>
 			</ul>
 		</td>
 	</tr>
 	<tr>
 		<td>actor.objectType</td>
 		<td>"Agent"</td>
-		<td>actor.objectType [1] </td>
+		<td><ul>
+		    <li>actor.objectType [1]</li>
+			</ul></td>
 	</tr>
 	<tr>
 		<td>actor.account</td>
@@ -139,12 +141,14 @@ Needs to identify what was viewed. A list of valid values can be found at [the d
 	<tr>
 		<td>object.objectType</td>
 		<td>Must be "Activity".</td>
-		<td>object.ojectType [0.1]</td>
+		<td><ul>
+		    <li>object.ojectType [0.1]</li></ul>td>
 	</tr>
 	<tr>
 		<td>object.id</td>
 		<td>An identifier for a single unique Activity</td>
-		<td>object.id [0.1]</td>
+		<td><ul>
+		    <li>object.id [0.1]</td>
 	</tr>
 		<tr>
 		<td>object.definition</td>
