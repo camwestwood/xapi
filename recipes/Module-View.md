@@ -16,7 +16,7 @@ The actor entity describes the individual that is viewing a vle resource.
 		<td>actor.name</td>
 		<td>Full name of user.</td>
 		<td><ul>
-		    <li>actor.name [1] </li>
+		    <li>actor.name [0.1] </li>
 			</ul>
 		</td>
 	</tr>
@@ -64,7 +64,8 @@ The Verb,[viewed](/vocabulary.md#verbs) denotes the action of the user's browser
 	<tr>
 		<td>verb.id</td>
 		<td>IRI corresponding to Verb.</td>
-		<td>verb.id [1]</td>
+		<td> <ul>
+		     <li>verb.id [1] </li></ul></td>
 	</tr>
 	<tr>
 		<td>verb.display</td>
@@ -142,7 +143,7 @@ Needs to identify what was viewed. A list of valid values can be found at [the d
 		<td>object.objectType</td>
 		<td>Must be "Activity".</td>
 		<td><ul>
-		    <li>object.ojectType [0.1]</li></ul>td>
+		    <li>object.ojectType [0.1]</li></ul><td>
 	</tr>
 	<tr>
 		<td>object.id</td>
