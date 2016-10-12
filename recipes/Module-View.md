@@ -5,11 +5,11 @@ Revision: 1.3
 This recipe defines the structure and terms to record the experience of viewing a vle resource such as a Moodle Module or Blackboard building block (eg a page as identified by its url)
 
 ### Actor
-Common entity identifier:  Actor.A
+Common entity identifier:  Actor.A, as defined on the [common structures](../common_structures.md#actora) page.
 
-#### Entity Example:
 The actor entity describes the individual that is viewing a vle resource.
 
+### Example:
 
 ``` Javascript
 {
@@ -19,18 +19,15 @@ The actor entity describes the individual that is viewing a vle resource.
         "name": "John Smith",
         "account": {
             "name": "2",
-            "homePage": "https://courses.alpha.jisc.ac.uk/moodle"
+            "homePage: "jsmith12"https://courses.alpha.jisc.ac.uk/moodle"
         }
     },
 ```
 
 ### Verb
-Common entity identifier: Verb.A
-
-#### Entity Example:
+Common entity identifier: Verb.A, as defined on the [common structures](../common_structures.md#verba) page.
 
 The Verb,[viewed](/vocabulary.md#verbs) denotes the action of the user's browser or app requesting the resource that the user wishes to view.
-
 
 
 ``` javascript
@@ -42,32 +39,10 @@ The Verb,[viewed](/vocabulary.md#verbs) denotes the action of the user's browser
     },
 ```
 ### Context
-Common entity identifier: Context.C
+Common entity identifier: Context.A, as defined on the [common structures](../common_structures.md#contextc) page.
 
-#### Entity Example:
-Plugin specific extensions are optional and not part of the core recipe
+For this recipe the courseArea is required. See the [vocabularies](vocabulary.md#Umberella-course-area) page for more information
 
-
-<table>
-	<tr><th>Property</th><th>Jisc Profile Information</th><th>Entity Obligations</th></tr>
-	<tr>
-		<td>context.platform</td>
-		<td>The platform used in the experience of this learning activity.</td>
-		<td>context.platform [0.1]</td>
-	</tr>
-	<tr>
-		<td>context.extensions</td>
-		<td>JSON object with the following properties: The [sessionId]() extension is the VLE session ID. [ip Address](https://registry.tincanapi.com/#uri/extension/310) is used to identify the client's real address as a Context extension.  CourseArea is the umbrella course/parent area identified by its home page URI. RecipeVersion is recommended, and identifies this recipe and its version.
-		</td>
-		    <td>
-		    <ul>
-				<li>context.extension.courseArea [0.1]</li>
-				<li>context.extension.sessionId [0.1]</li>
-				<li>context.extension.ip-address [0.1]</li>
-				<li>context.extension.RecipeVersion [0.1] </li>
-			</ul>
-			</td>
-	</tr>
 </table>
 
 ``` javascript
@@ -90,10 +65,10 @@ Plugin specific extensions are optional and not part of the core recipe
 ```
 
 ### Object
-Common entity identifier: Object.D
 
-#### Entity Example:
-Needs to identify what was viewed. A list of valid values can be found at [the definition of object.definition.extensions on the vocabulary page](../vocabulary.md#Object.definition.extension)
+Common entity identifier: Object.A, as defined on the [common structures](../common_structures.md#objecta) page.
+
+For this recipe the object needs to identify what was viewed. A list of valid values can be found at [the definition of object.definition.extensions on the vocabulary page](../vocabulary.md#Object.definition.extension)
 
 <table>
 	<tr><th>Property</th><th>Jisc Profile Information</th><th>Entity Obligations</th></tr>

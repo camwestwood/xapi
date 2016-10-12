@@ -7,24 +7,10 @@ This activity records a graded assignment
 ### Actor
 Common entity identifier:  Actor.A
 
-#### Entity Example:
+Common entity identifier:  Actor.A, as defined on the [common structures](../common_structures.md#actora) page.
+
 The actor entity describes the individual whose work has been graded.
 
-<table>
-	<tr><th>Property in Example</th><th>Description</th></tr>
-	<tr>
-		<td>actor.account</td>
-		<td>Full name of user, optional.</td>
-	</tr>
-	<tr>
-		<td>actor.objectType</td>
-		<td>Agent</td>
-	</tr>
-		<tr>
-		<td>actor.account</td>
-		<td>JSON Object with unique id and home page</td>
-	</tr>
-</table>
 
 ``` Javascript
 {
@@ -32,30 +18,18 @@ The actor entity describes the individual whose work has been graded.
         "objectType": "Agent",
         "name": "John Smith",
         "account": {
-            "name": "2",
+            "name": "jsmith12",
             "homePage": "https://courses.alpha.jisc.ac.uk/moodle"
         }
     },
 ```
 
 ### Verb
-Common entity identifier: Verb.A
-
-#### Entity Example:
+Common entity identifier: Verb.A, as defined on the [common structures](../common_structures.md#verba) page.
 
 The Verb, [scored](/vocabulary.md#verbs) describes the action of evaluating a learning activity.
 
-<table>
-	<tr><th>Property in Example</th><th>Description</th></tr>
-	<tr>
-		<td>verb.id</td>
-		<td>IRI corresponding to Verb.</td>
-	</tr>
-		<tr>
-		<td>verb.display</td>
-		<td>Human readable representation of Verb. Key is a RFC 5646 Language Tag</td>
-	</tr>
-</table>
+<
 
 ``` javascript
  "verb":{
@@ -67,26 +41,11 @@ The Verb, [scored](/vocabulary.md#verbs) describes the action of evaluating a le
 ``` 
 
 ### Result
-Common entity identifier: Result.A
+Common entity identifier: Result.B, as defined on the [common structures](../common_structures.md#resultb) page.
 
-#### Entity Example:
-The result entity can include scaled, raw, min and max score, success, and response (the instructor's feedback). See [result](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI.md#result). In the Jisc profile, the use of the result entity and any of its properties is optional. 
-
-See the [vocabulary](../vocabulary.md) page for a definition of the http://xapi.jisc.ac.uk/grade extension.
+In the Jisc profile, the use of the result entity and any of its properties is optional. 
 
 
-
-<table>
-	<tr><th>Property in Example</th><th>Description</th></tr>
-	<tr>
-		<td>result.score.raw</td>
-		<td>Decimal number</td>
-	</tr>
-		<tr>
-		<td>result.extensions.http://xapi.jisc.ac.uk/grade</td>
-		<td>A non-numerical assessment result. Data type is string (256)</td>
-	</tr>
-</table>
 
 ``` javascript
  "result":{
@@ -100,31 +59,10 @@ See the [vocabulary](../vocabulary.md) page for a definition of the http://xapi.
 ```
 
 ### Object
-Common entity identifier: Object.B
+Common entity identifier: Object.B, as defined on the [common structures](../common_structures.md#objectb) page.
 
-#### Entity Example:
 The object defines the activity that has been evaluated. [Examples of valid object.definition vocabulary on Activity objectTypes](/common_statements.md#object) can be found on the vocab page.
 
-<table>
-	<tr><th>Property in Example</th><th>Description</th></tr>
-	<tr>
-		<td>object.objectType</td>
-		<td>Must be "Activity".</td>
-	</tr>
-	<tr>
-		<td>object.id</td>
-		<td>An identifier for a single unique Activity</td>
-	</tr>
-		<tr>
-		<td>object.definition</td>
-		<td>JSON object. Object.definition.type describes the activity</td>
-	</tr>
-	</tr>
-		<tr>
-		<td>object.extension</td>
-		<td>JSON object. dueDate is a ISO 8601 date time the assignment is due</td>
-	</tr>
-</table>
 
 ``` javascript
 
@@ -150,13 +88,8 @@ The object defines the activity that has been evaluated. [Examples of valid obje
 
 
 ### Context
-Common entity identifier: Context.C
+Common entity identifier: Object.B, as defined on the [common structures](../common_structures.md#objectb) page.
 
-#### Entity Example:
-Plugin specific extensions are optional and not part of the core recipe.
-
-
-Plugin specific extensions are optional and not part of the core recipe. Instructor is optional and is the instructor that the Statement relates to.
 
 <table>
 	<tr><th>Property in Example</th><th>Description</th></tr>
@@ -198,7 +131,7 @@ Plugin specific extensions are optional and not part of the core recipe. Instruc
             "objectType": "Agent",
             "name": "instructor",
             "account": {
-                "name": "2",
+                "name": "Ray Keenan",
                 "homePage": "http://localhost/moodle"
             },
         
