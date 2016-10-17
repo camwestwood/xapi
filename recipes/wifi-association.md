@@ -1,5 +1,5 @@
-# Wifi access recipe
-Revision: 1.2
+# wifi_access_recipe
+Revision: 0.1
 
 ## Purpose
 This activity records a users device accessing wifi via an access point.
@@ -7,55 +7,26 @@ This activity records a users device accessing wifi via an access point.
 ## Definition
 
 ### Actor
-Common entity identifier:  Actor.A
+Common entity identifier:  Actor.A, as defined on the [common structures](../common_structures.md#actora) page.
+The actor entity describes the individual accessing wifi.
 
-#### Entity Example:
-The actor entity describes the individual accessing wifi
-
-<table>
-	<tr>
-		<th>Property in Example</th><th>Description</th>
-	</tr>
-	<tr>
-		<td>actor.objectType</td>
-		<td>"Agent"</td>
-	</tr>
-	<tr>
-		<td>actor.account</td>
-		<td>JSON Object with unique id (account.name) and home page (account.homepage)</td>
-	</tr>
-</table>
 
 ``` Javascript
-{
-    "actor": {
-        "objectType": "Agent",
-        "account": {
-            "name": "s1234567",
-            "homePage": "https://intranet.uni.ac.uk/"
-        }
-    },
+"actor": {
+  "objectType": "Agent",
+  "name": "John Smith",
+  "account": {
+    "name": "jsmith12",
+    "homePage": "https://courses.alpha.jisc.ac.uk/moodle"
+  }
+}
 ```
 
 ### Verb
-Common entity identifier: Verb.A
+Common entity identifier: Verb.A, as defined on the [common structures](../common_structures.md#verba) page.
 
-The entity is used across all recipes in the Jisc profile.
-
-#### Entity Example:
 The Verb, accessed, describes the action of associating a device to a wifi access point.
 
-<table>
-	<tr><th>Property in Example</th><th>Description</th></tr>
-	<tr>
-		<td>verb.id</td>
-		<td>IRI corresponding to Verb.</td>
-	</tr>
-	<tr>
-		<td>verb.display</td>
-		<td>Human readable representation of Verb. Key is a RFC 5646 Language Tag</td>
-	</tr>
-</table>
 
 ``` javascript
 "verb": {
@@ -66,59 +37,43 @@ The Verb, accessed, describes the action of associating a device to a wifi acces
     },
 ```
 
-#### Entity Example:
-Contextual information.
-
 ### Object
-Common entity identifier: Object.A
+Common entity identifier: Object.*
 
 #### Entity Example:
 This object, a device, represents the access point being accessed and is uniquely identified by it's MAC address.
 
-<table>
-	<tr><th>Property in Example</th><th>Description</th></tr>
-	<tr>
-		<td>object.objectType</td>
-		<td>"Device"</td>
-	</tr>
-	<tr>
-		<td>object.macAddress</td>
-		<td>uniquely identifying MAC address of the device</td>
-	</tr>
-</table>
-
+#### Example:
 ``` javascript
 "object": {
-		objectType: "Device",
-		macAddress: "2A3DDE45B7B9"
-	},
+  "objectType": "Activity",
+  "id": "https://jisc.ac.uk/wifi", //not sure about this
+  "definition": {
+    "type": "http://activitystrea.ms/schema/1.0/device",
+    "name": {
+      "en": "University of Jisc wifi access point"
+    },
+    "extensions": {
+      "http://xapi.jisc.ac.uk/macAddress": "2A3DDE45B7B9"
+    }
+  }
+}
 ```
 
 ### Context
-Common entity identifier: Context.A
+Common entity identifier: Context.*
 
 #### Context Example:
 This context is an object that represents the client device that accessed the access point at a given time and is uniquely identified by it's MAC address.
 
-<table>
-	<tr><th>Property in Example</th><th>Description</th></tr>
-	<tr>
-		<td>object.objectType</td>
-		<td>"Device"</td>
-	</tr>
-	<tr>
-		<td>object.macAddress</td>
-		<td>uniquely identifying MAC address of the client device</td>
-	</tr>
-</table>
 
 ``` javascript
 "context": {
-		"object": {
-			objectType: "Device",
-			macAddress: "2A3DDE45B7B9"
-		}
-	},
-	"timestamp": "2012-07-05T18:30:32.360Z"
+  "extensions": {
+	"http://xapi.jisc.ac.uk/macAddress": "2A3DDE45B7B9",
+    "http://id.tincanapi.com/extensions/ip-address": "10.3.3.48",
+    "http://xapi.jisc.ac.uk/recipeVersion" : "wifi_access_recipe0.1"
+  }
 }
 ```
+
