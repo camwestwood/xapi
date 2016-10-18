@@ -5,26 +5,11 @@ Revision: 1.3
 This recipe defines the structure and terms to record the experience of viewing a vle resource such as a Moodle Module or Blackboard building block (eg a page as identified by its url)
 
 ### Actor
-Common entity identifier:  Actor.A
+Common entity identifier:  Actor.A, as defined on the [common structures](../common_structures.md#actora) page.
 
-#### Entity Example:
 The actor entity describes the individual that is viewing a vle resource.
 
-<table>
-	<tr><th>Property</th><th>Jisc Profile Information</th></tr>
-	<tr>
-		<td>actor.account</td>
-		<td>Full name of user, optional.</td>
-	</tr>
-	<tr>
-		<td>actor.objectType</td>
-		<td>Agent</td>
-	</tr>
-		<tr>
-		<td>actor.account</td>
-		<td>JSON Object with unique id and home page</td>
-	</tr>
-</table>
+### Example:
 
 ``` Javascript
 {
@@ -34,29 +19,17 @@ The actor entity describes the individual that is viewing a vle resource.
         "name": "John Smith",
         "account": {
             "name": "2",
-            "homePage": "https://courses.alpha.jisc.ac.uk/moodle"
+            "homePage: "jsmith12"https://courses.alpha.jisc.ac.uk/moodle"
         }
     },
 ```
 
 ### Verb
-Common entity identifier: Verb.A
-
-#### Entity Example:
+Common entity identifier: Verb.A, as defined on the [common structures](../common_structures.md#verba) page.
 
 The Verb,[viewed](/vocabulary.md#verbs) denotes the action of the user's browser or app requesting the resource that the user wishes to view.
 
-<table>
-	<tr><th>Property</th><th>Jisc Profile Information</th></tr>
-	<tr>
-		<td>verb.id</td>
-		<td>IRI corresponding to Verb.</td>
-	</tr>
-	<tr>
-		<td>verb.display</td>
-		<td>Human readable representation of Verb. Key is a RFC 5646 Language Tag</td>
-	</tr>
-</table>
+### Example:
 
 ``` javascript
 "verb": {
@@ -67,33 +40,20 @@ The Verb,[viewed](/vocabulary.md#verbs) denotes the action of the user's browser
     },
 ```
 ### Context
-Common entity identifier: Context.C
+Common entity identifier: Context.A, as defined on the [common structures](../common_structures.md#contextc) page.
 
-#### Entity Example:
-Plugin specific extensions are optional and not part of the core recipe
+For this recipe the courseArea is required. See the [vocabularies](vocabulary.md#Umberella-course-area) page for more information
 
-
-<table>
-	<tr><th>Property</th><th>Jisc Profile Information</th></tr>
-	<tr>
-		<td>context.platform</td>
-		<td>The platform used in the experience of this learning activity.</td>
-	</tr>
-	<tr>
-		<td>context.extensions</td>
-		<td>Json object with the following properties: The sessionID extension is the VLE session ID. [IP Address](https://registry.tincanapi.com/#uri/extension/310) is used to identify the client's real address as a Context extension. SessionId is the VLE session Id. CourseArea is the umbrella course/parent area identified by its home page URI. RecipeVersion is recommended, and identifies this recipe and its version.
-	</td>
-	</tr>
-</table>
+### Example:
 
 ``` javascript
 "context": {
         "platform": "Moodle",
         "extensions": {
-		
-      			"http://xapi.jisc.ac.uk/courseArea": {
-					"http://xapi.jisc.ac.uk/vle_mod_id": "LA101",
-                 	"id":"http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=4"
+	
+      	"http://xapi.jisc.ac.uk/courseArea": {
+			"http://xapi.jisc.ac.uk/vle_mod_id": "LA101",
+            "id":"http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=4"
 					},
 					
 		  	"http://xapi.jisc.ac.uk/sessionId": "32456891"  ,
@@ -106,26 +66,12 @@ Plugin specific extensions are optional and not part of the core recipe
 ```
 
 ### Object
-Common entity identifier: Object.D
 
-#### Entity Example:
-Needs to identify what was viewed. A list of valid values can be found at [the definition of object.definition.extensions on the vocabulary page](../vocabulary.md#Object.definition.extension)
+Common entity identifier: Object.A, as defined on the [common structures](../common_structures.md#objecta) page.
 
-<table>
-	<tr><th>Property</th><th>Jisc Profile Information</th></tr>
-	<tr>
-		<td>object.objectType</td>
-		<td>Must be "Activity".</td>
-	</tr>
-	<tr>
-		<td>object.id</td>
-		<td>An identifier for a single unique Activity</td>
-	</tr>
-		<tr>
-		<td>object.definition</td>
-		<td>A JSON object. object.definition.type describes the activity and object.definition.extensions.subtype can be used to described the subtype of this activity.</td>
-	</tr>
-</table>
+For this recipe the object needs to identify what was viewed. A list of valid values  for the object definition type can be found at (../vocabulary.md#Object.definition.extension)
+
+### Example
 
 ``` javascript
 "object": {
