@@ -6,7 +6,7 @@ This activity records a user submitting an assignment
 ## Definition
 
 ### Actor
-Common entity identifier:  Actor.A, as defined on the [common structures](../common_structures.md#actora) page.
+Common entity identifier:  ActorA, as defined on the [common structures](../common_structures.md#actora) page.
 
 The actor entity describes the individual who has submitted the assignment.
 
@@ -23,7 +23,7 @@ The actor entity describes the individual who has submitted the assignment.
 ```
 
 ### Verb
-Common entity identifier: Verb.A, as defined on the [common structures](../common_structures.md#verba) page.
+Common entity identifier: VerbA, as defined on the [common structures](../common_structures.md#verba) page.
 
 The Verb, [completed](/vocabulary.md#verbs) describes the action of completing an activity - finishing in its entirety.
 
@@ -37,7 +37,7 @@ The Verb, [completed](/vocabulary.md#verbs) describes the action of completing a
 ``` 
 
 ### Result
-Common entity identifier: Result.A, as defined on the [common structures](../common_structures.md#resulta) page.
+Common entity identifier: ResultA, as defined on the [common structures](../common_structures.md#resulta) page.
 
 
 In this recipe the result entity is optional and includes completion. See [the xAPI specification for a full description of the result entity](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI.md#result)
@@ -49,7 +49,7 @@ In this recipe the result entity is optional and includes completion. See [the x
 ```
 
 ### Object
-Common entity identifier: Object.B, as defined on the [common structures](../common_structures.md#objectb) page.
+Common entity identifier: ObjectB, as defined on the [common structures](../common_structures.md#objectb) page.
 
 
 Example:
@@ -79,9 +79,9 @@ Example:
 
 
 ### Context
-Common entity identifier: Context.B, as defined on the [common structures](../common_structures.md#contextb) page.
+Common entity identifier: ContextB, as defined on the [common structures](../common_structures.md#contextb) page.
 
-For the submitted recipe, the context.contextAxtivities is property with a ‘grouping’ that allows statements to be associated to the activity described in the object entities as part of a larger whole. Different activitie types can be found on the vocabulary page.
+For the submitted recipe, the context.contextActivities is property with a ‘grouping’ that allows statements to be associated to the activity described in the object entities as part of a larger whole. Different activitie types can be found on the vocabulary page.
 
 
 Example:

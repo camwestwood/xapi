@@ -2,8 +2,8 @@
 The following sections describe common patterns used across several of the recipes.
 Wherever a recipe refers to a "common entity identifier", the example given in the recipe follows one of the patterns given on this page.
 
-## Actor.A
-Common entity identifier:  Actor.A
+## ActorA
+Common entity identifier:  ActorA
 
 This entity is required across all recipes in the Jisc profile.
 
@@ -53,8 +53,8 @@ The actor entity describes the individual that is the subject of the statement.
 }
 ```
 
-## Verb.A
-Common entity identifier: Verb.A
+## VerbA
+Common entity identifier: VerbA
 
 This entity is required across all recipes in the Jisc profile.
 
@@ -93,8 +93,8 @@ The Verb structure indicates the action which the statement expresses. The verbs
 ## Context
 Depending on the recipe, different patterns apply to express the context of a statement.
 
-### Context.A
-Common entity identifier: Context.A
+### ContextA
+Common entity identifier: ContextA
 
 This pattern is used across many recipes in the Jisc profile, but there may be additional data elements required for some recipes.
 
@@ -118,10 +118,10 @@ This pattern is used across many recipes in the Jisc profile, but there may be a
 		</td>
 		<td>
 		<ul>
-			<li>context.extension.recipeVersion [0.1]</li>
-			<li>context.extension.sessionId [0.1]</li>
-			<li>context.extension.ip-address [1]</li>
-			<li>context.extension.recipeVersion [dependant on recipe]</li>
+			<li>context.extensions.recipeVersion [0.1]</li>
+			<li>context.extensions.sessionId [0.1]</li>
+			<li>context.extensions.ip-address [1]</li>
+			<li>context.extensions.recipeVersion [dependant on recipe]</li>
 		</ul>
 		</td>
 		</tr>
@@ -139,17 +139,17 @@ This pattern is used across many recipes in the Jisc profile, but there may be a
 }
 ```
 
-### Context.B
-Common entity identifier: Context.B
+### ContextB
+Common entity identifier: ContextB
 
-Context.B pattern is similar to Context.A, but with the addition of a contextActivities property with a ‘grouping’ property. This allows statements to be associated to the activity described in the object entities as part of a larger whole.
+ContextB pattern is similar to ContextA, but with the addition of a contextActivities property with a ‘grouping’ property. This allows statements to be associated to the activity described in the object entities as part of a larger whole.
 
 <table>
 	<tr><th>Property</th><th>Description</th><th>Entity Obligations</th></tr>
 	<tr>
-		<td>context.contextActivities</td>
+		<td>context.context.activities</td>
 		<td>Property with a ‘grouping’ property that allows statements to be associated to the object entities activity as part of a larger whole. Example shows a course within the VLE</td>
-		<td><ul><li>context.contextActivities [0.1]</li></ul></td>
+		<td><ul><li>ContextContextActivities [0.1]</li></ul></td>
 	</tr>
 	<tr>
 		<td>context.platform</td>
@@ -215,8 +215,8 @@ Context.B pattern is similar to Context.A, but with the addition of a contextAct
 ## Object
 Depending on the recipe, different patterns apply to express the object of a statement.
 
-### Object.A
-Common entity identifier: Object.A
+### ObjectA
+Common entity identifier: ObjectA
 
 This object pattern describes the core attributes of Object as used in the Jisc profile.
 
@@ -264,8 +264,8 @@ This object pattern describes the core attributes of Object as used in the Jisc 
 }
 ```
 
-### Object.B
-Common entity identifier: Object.B
+### ObjectB
+Common entity identifier: ObjectB
 
 This object pattern describes he activity that has been completed.Examples of valid object.definition vocabulary  Activity object Types are listed on the [vocabularies](vocabulary.md) page.
 
@@ -337,8 +337,8 @@ This object pattern describes he activity that has been completed.Examples of va
 ## Result
 In the Jisc profile, the use of the result entity and any of its properties is optional.
 
-### Result.A
-Common entity identifier: Result.A
+### ResultA
+Common entity identifier: ResultA
 
 This result pattern describes completion and is optional.
 
