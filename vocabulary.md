@@ -376,7 +376,7 @@ The following are properties of the profile extension context.extensions.courseA
  
 ### VLE Module ID
 
-http://xapi.jisc.ac.uk/extensions/vle_mod_id is a plugin specific extension, to hold the VLE course's module id, as defined in the [Jisc UDD](https://github.com/jiscdev/analytics-udd/blob/master/udd/module_vle_map.md). It is therefore not required. 
+http://xapi.jisc.ac.uk/extensions/vle_mod_id is a courseArea identifier. It is used in the module_VLE_map entity of the UDD to link module instances to course areas. Note that several module instances (as identified by their UDD MOD_INSTANCE_ID) can link to one courseArea. 
 
 <table>
 <tr><th align="left">Label</th><td>VLE Module ID</td></tr>
