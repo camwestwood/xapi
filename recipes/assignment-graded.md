@@ -71,7 +71,7 @@ The object defines the activity that has been evaluated. [Examples of valid obje
 		"objectType":"Activity",
 		"id":"http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=4",
 		"definition":{
-			"type":"http://adlnet.gov/expapi/activities/module",
+			"type":"http://adlnet.gov/expapi/activities/assessment",
 			"name":{
 				"en":"Course Assignment"
 			},
@@ -91,7 +91,7 @@ The object defines the activity that has been evaluated. [Examples of valid obje
 ### Context
 Common entity context: ContextB, as defined on the [common structures](../common_structures.md#contextb) page.
 
-For the graded recipe, the Context.ContextActivities is property with a ‘grouping’ that allows statements to be associated to the activity described in the object entities as part of a larger whole. Different activitie types can be found on the vocabulary page.
+For the graded recipe, the context.contextActivities is property with a ‘grouping’ that allows statements to be associated to the activity described in the object entities as part of a larger whole. Different activitie types can be found on the vocabulary page.
 
 ### Example
 
