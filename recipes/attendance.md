@@ -7,26 +7,10 @@ DRAFT
 This recipe defines the structure and terms to record a learner's attendance of an event such as a lecture or other learning activity. The expectation is that the source data will be collected by a system designed to explicitly record attendance via some action of the learner, such as swiping a card.
 
 ### Actor
-Common entity identifier: Actor.A
+Common entity identifier: [Actor.A](../common_structures.md#actora)
 
 #### Entity Example:
 The actor entity describes the individual who has attended the learning activity.
-
-<table>
-	<tr><th>Property</th><th>Jisc Profile Information</th></tr>
-	<tr>
-		<td>actor.account</td>
-		<td>Full name of user, optional.</td>
-	</tr>
-	<tr>
-		<td>actor.objectType</td>
-		<td>Agent</td>
-	</tr>
-		<tr>
-		<td>actor.account</td>
-		<td>JSON Object with unique id and home page</td>
-	</tr>
-</table>
 
 ``` Javascript
 {
@@ -43,23 +27,11 @@ The actor entity describes the individual who has attended the learning activity
 
 ### Verb
 
-Common entity identifier: Verb.A
+Common entity identifier: [Verb.A](../common_structures.md#verba)
 
 #### Entity Example:
 
 The Verb,[attended](/vocabulary.md#verbs) denotes the action of the user's browser or app requesting the resource that the user wishes to view.
-
-<table>
-	<tr><th>Property</th><th>Jisc Profile Information</th></tr>
-	<tr>
-		<td>verb.id</td>
-		<td>IRI corresponding to Verb.</td>
-	</tr>
-	<tr>
-		<td>verb.display</td>
-		<td>Human readable representation of Verb. Key is a RFC 5646 Language Tag</td>
-	</tr>
-</table>
 
 ``` javascript
 "verb": {

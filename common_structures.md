@@ -267,7 +267,7 @@ This object pattern describes the core attributes of Object as used in the Jisc 
 ### Object.B
 Common entity identifier: Object.B
 
-This object pattern describes he activity that has been completed.Examples of valid object.definition vocabulary  Activity object Types are listed on the [vocabularies](vocabulary.md) page.
+This object pattern describes an activity that has been completed. Examples of valid object.definition vocabulary Activity object Types are listed on the [vocabularies](vocabulary.md) page.
 
 
 <table>
@@ -334,6 +334,61 @@ This object pattern describes he activity that has been completed.Examples of va
 		}
 ```
 
+### Object.C
+Common entity identifier: Object.C
+
+The object pattern defines an activity that has been completed. [Examples of valid object.definition Activity object Types can be found in the vocabulary](../vocabulary.md#30-object).
+
+<table>
+	<tr><th>Property [cardinality]</th><th>Description</th></tr>
+	<tr>
+		<td>object.objectType [1]</td>
+		<td>The value must be "Activity".</td>
+	</tr>
+	<tr>
+		<td>object.id [1]</td>
+		<td>An identifier for a single unique learning event.</td>
+	</tr>
+	<tr>
+		<td>object.definition [1]<br/>
+		object.definition.type [1]<br/>
+		object.definition.extension.http://id.tincanapi.com/extension/datetime [1]<br/>
+		object.definition.extension.http://id.tincanapi.com/extension/duration [1]</td>
+		<td>The <b>type</b> indicates the type of the object of the statement. It is required and valid values are listed on the <a href="vocabulary.md#31-activity-types">vocabulary</a> page.</br>
+				The <b>name</b> holds the name of the learning activity.</br>
+		The <b>description</b> describes the learning activity.</br>
+		The <b>extensions</b>: 
+<ul><li><b>"http://id.tincanapi.com/extension/datetime"</b> is a ISO 8601 date time that indicates when the learning event started.</li><li><b>"http://id.tincanapi.com/extension/duration"</b> represents the length of time the event is scheduled to take, expressed as a string formatted as an ISO8601 duration. Note that ISO8601 duration allows representations to extend beyond their carry over points. e.g. one and a half hours can be PT1H30M or PT90M</li> </ul></td>
+	</tr>
+</table>
+
+Example:
+
+``` javascript
+
+"object":{
+		"objectType":"Activity",
+		"id":"http://www.poppleton.ac.uk/psy101/lecture1",
+		"definition":{
+			"type":"http://activitystrea.ms/schema/1.0/event",
+			"name":{
+				"en":"Lecture"
+			},
+			"description":{
+				"en":"The first lecture of psychology 101"
+				}
+			},
+			
+		    "extensions":{
+				"http://id.tincanapi.com/extension/datetime": "2016-02-05T10:00:00.000Z",
+				"http://id.tincanapi.com/extension/duration": "PT1H30M"
+			}
+			
+		}
+		
+```
+
+
 ## Result
 In the Jisc profile, the use of the result entity and any of its properties is optional.
 
@@ -345,7 +400,7 @@ This result pattern describes completion and is optional.
 <table>
 	<tr><th>Property in Example</th><th>Description</th><th>Entity Obligations</th></tr>
 	<tr>
-		<td>result.result.completion</td>
+		<td>result.completion</td>
 		<td>"true". Indicates the Activity was completed</td>
 		<td><ul><li>result.result.completion [1]</li></ul></td>
 	</tr>
@@ -373,7 +428,7 @@ This result pattern describes completion and is usually optional. This result en
 		<tr>
 		<td>result.extensions.http://xapi.jisc.ac.uk/grade</td>
 		<td>A non-numerical assessment result. Data type is string (256)</td>
-		<td><ul><li>result.extensions.grade [0.1] [0.1]</li></ul></td>
+		<td><ul><li>result.extensions.grade [0.1]</li></ul></td>
 	</tr>
 </table>
 
