@@ -372,6 +372,7 @@ For more information see [CourseArea properties](#42-coursearea-properties)
 </table>
 
 ## 4.2 CourseArea properties
+The following are properties of the profile extension context.extensions.courseArea
  
 ### VLE Module ID
 
