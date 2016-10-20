@@ -7,7 +7,7 @@ This activity indicates the activity provider has determined that the session wa
 This recipe may not work reliably across VLEs.
 ## Definition
 ### Actor
-Common entity identifier:  Actor.A, as defined on the [common structures](../common_structures.md#actora) page.
+Common entity identifier:  ActorA, as defined on the [common structures](../common_structures.md#actora) page.
 
 Example:
 ``` Javascript
@@ -23,7 +23,7 @@ Example:
 ```
 
 ### Verb
-Common entity identifier: Verb.A, as defined on the [common structures](../common_structures.md#verba) page.
+Common entity identifier: VerbA, as defined on the [common structures](../common_structures.md#verba) page.
 
 The Verb,[abandoned](/vocabulary.md#verbs) describes the action of logging out of a platform.
 
@@ -39,7 +39,7 @@ Example:
 ``` 
 
 ### Context
-Common entity identifier: Context.A, as defined on the [common structures](../common_structures.md#contexta) page. Only the core attributes of context are applicable.
+Common entity identifier: ContextA, as defined on the [common structures](../common_structures.md#contexta) page. Only the core attributes of context are applicable.
 
 Example:
 
@@ -55,7 +55,7 @@ Example:
 ```
 
 ### Object
-Common entity identifier: Object.A, as defined on the [common structures](../common_structures.md#objecta) page.
+Common entity identifier: ObjectA, as defined on the [common structures](../common_structures.md#objecta) page.
 
 The object defines the item that the user has timed out of.  A [Jisc specific extension](common_statements.md#jisc_extensions) details that it is a VLE that is being logged out of. 
 

@@ -111,7 +111,7 @@ The following are extension properties in the result entity:
 
 
 ### 3.1 Activity Types
-The following are types of the [Activity Definition Object](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI.md#activity-definition). 
+The following are types of the [Activity Definition Object](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#activity-definition). 
 
 Example:
 ``` javascript
@@ -313,11 +313,19 @@ Was used in older recipes to identify the genre of software application. Best pr
 <tr><th align="left">Sample Value</th><td>http://id.tincanapi.com/activitytype/lms</td></tr>
 </table>
 
+### UDD Module Instance ID
+
+<tr><th align="left">Label</th><td>UDD Module Instance ID</td></tr>
+<tr><th align="left">Description</th><td>An identifier for a module instance<br/>The value should correspond to the [UDD module_instance.MOD_INSTANCE_ID](https://github.com/jiscdev/analytics-udd/blob/master/udd/module_instance.md#mod_instance_id) identifier that identifies the relevant module in UDD compliant data.</td></tr>
+<tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/uddModInstanceID">http://xapi.jisc.ac.uk/uddModInstanceID</a> </td></tr>
+</table>
+
+
 ## 4.0 Context
 
 
 ## 4.1 Context Extensions
-The following are properties of the [Context extensions property](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI.md#416-context).
+The following are properties of the [Context extensions property](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#246-context).
 
 ### Umbrella course area
 
@@ -380,7 +388,7 @@ http://xapi.jisc.ac.uk/extensions/vle_mod_id is a plugin specific extension, to 
 
 <table>
 <tr><th align="left">Label</th><td>VLE Module ID</td></tr>
-<tr><th align="left">Description</th><td><a href="https://github.com/jiscdev/analytics-udd/module_vle_map.md  ">Entity that connects a course area in a VLE with a module</a></td></tr>
+<tr><th align="left">Description</th><td><a href="https://github.com/jiscdev/analytics-udd/blob/master/udd/module_vle_map.md">Entity that connects a course area in a VLE with a module</a></td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/vle_mod_id">http://xapi.jisc.ac.uk/vle_mod_id</a> </td></tr>
 </table>
 

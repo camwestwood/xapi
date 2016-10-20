@@ -5,7 +5,7 @@ Revision: 1.3
 This recipe defines the structure and terms to record the experience of viewing a vle resource such as a Moodle Module or Blackboard building block (eg a page as identified by its url)
 
 ### Actor
-Common entity identifier:  Actor.A, as defined on the [common structures](../common_structures.md#actora) page.
+Common entity identifier:  ActorA, as defined on the [common structures](../common_structures.md#actora) page.
 
 The actor entity describes the individual that is viewing a vle resource.
 
@@ -25,7 +25,7 @@ The actor entity describes the individual that is viewing a vle resource.
 ```
 
 ### Verb
-Common entity identifier: Verb.A, as defined on the [common structures](../common_structures.md#verba) page.
+Common entity identifier: VerbA, as defined on the [common structures](../common_structures.md#verba) page.
 
 The Verb,[viewed](/vocabulary.md#verbs) denotes the action of the user's browser or app requesting the resource that the user wishes to view.
 
@@ -40,7 +40,7 @@ The Verb,[viewed](/vocabulary.md#verbs) denotes the action of the user's browser
     },
 ```
 ### Context
-Common entity identifier: Context.A, as defined on the [common structures](../common_structures.md#contextc) page.
+Common entity identifier: ContextA, as defined on the [common structures](../common_structures.md#contextc) page.
 
 For this recipe the courseArea is required. See the [vocabularies](vocabulary.md#Umberella-course-area) page for more information
 
@@ -67,7 +67,7 @@ For this recipe the courseArea is required. See the [vocabularies](vocabulary.md
 
 ### Object
 
-Common entity identifier: Object.A, as defined on the [common structures](../common_structures.md#objecta) page.
+Common entity identifier: ObjectA, as defined on the [common structures](../common_structures.md#objecta) page.
 
 For this recipe the object needs to identify what was viewed. A list of valid values  for the object definition type can be found at (../vocabulary.md#Object.definition.extension)
 

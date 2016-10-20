@@ -1,5 +1,5 @@
 #Attended learning activity
-Revision: 0.1
+Revision: 0.2
 
 DRAFT
 
@@ -7,7 +7,7 @@ DRAFT
 This recipe defines the structure and terms to record a learner's attendance of an event such as a lecture or other learning activity. The expectation is that the source data will be collected by a system designed to explicitly record attendance via some action of the learner, such as swiping a card.
 
 ### Actor
-Common entity identifier: [Actor.A](../common_structures.md#actora)
+Common entity identifier: [ActorA](../common_structures.md#actora)
 
 #### Entity Example:
 The actor entity describes the individual who has attended the learning activity.
@@ -27,11 +27,11 @@ The actor entity describes the individual who has attended the learning activity
 
 ### Verb
 
-Common entity identifier: [Verb.A](../common_structures.md#verba)
+Common entity identifier: [VerbA](../common_structures.md#verba)
 
 #### Entity Example:
 
-The Verb,[attended](/vocabulary.md#verbs) denotes the action of the user's browser or app requesting the resource that the user wishes to view.
+The verb [attended](/vocabulary.md#verbs) denotes the action of the user's browser or app requesting the resource that the user wishes to view.
 
 ``` javascript
 "verb": {
@@ -43,18 +43,10 @@ The Verb,[attended](/vocabulary.md#verbs) denotes the action of the user's brows
 ```
 
 ### Result
-Common entity identifier: Result.B
+Common entity identifier: [ResultA](../common_structures.md#resulta)
 
 #### Entity Example:
-The optional result entity can include completion. See [the xAPI specification for a full description of the result entity](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#245-result)
-
-<table>
-	<tr><th>Property in Example</th><th>Description</th></tr>
-	<tr>
-		<td>result.result.completion</td>
-		<td>"true". Indicates that the learner attended the event.<br/>"false"indicates that the learner did not attend the event.</td>
-	</tr>
-</table>
+When set to "true", result.completion indicates that the learner attended the event. "false"indicates that the learner did not attend the event.
 
 ``` javascript
  "result":{
@@ -63,39 +55,16 @@ The optional result entity can include completion. See [the xAPI specification f
 ```
 
 ### Object
-Common entity identifier: Object.E
+Common entity identifier: [ObjectC](../common_structures.md#objectc)
 
 #### Entity Example:
-The object defines the activity that has been completed. [Examples of valid object.definition Activity object Types can be found in the vocabulary](../vocabulary.md#30-object).
-
-<table>
-	<tr><th>Property in Example</th><th>Description</th></tr>
-	<tr>
-		<td>object.objectType</td>
-		<td>The value must be "Activity".</td>
-	</tr>
-	<tr>
-		<td>object.id</td>
-		<td>An identifier for a single unique learning event.</td>
-	</tr>
-	<tr>
-		<td>object.definition</td>
-		<td>JSON object. Object.definition.type identifies the activity.</td>
-	</tr>
-	</tr>
-		<tr>
-		<td>object.extension</td>
-		<td>JSON object.<br/> "http://id.tincanapi.com/extension/datetime" is a ISO 8601 date time that indicates when the learning event started.<br/>"http://id.tincanapi.com/extension/duration" represents the length of time the event took. </td>
-	</tr>
-</table>
-
-Example:
+The object defines the activity that has been completed. Examples of valid object.definition Activity object Types can be found in [the vocabulary](../vocabulary.md#30-object).
 
 ``` javascript
 
 "object":{
 		"objectType":"Activity",
-		"id":"http://www.poppleton.ac.uk/psy101/lecture1",
+		"id":"http://wicketkeeper.poppleton.ac.uk/modules/2016/sem1/psy101/qlecture1",
 		"definition":{
 			"type":"http://activitystrea.ms/schema/1.0/event",
 			"name":{
@@ -116,26 +85,10 @@ Example:
 ```
 
 ### Context
-Common entity identifier: Context.D
+Common entity identifier: ContextC
 
 #### Entity Example:
-Plugin specific extensions are optional and not part of the core recipe. Instructor is optional and is the instructor who organised the learning event.
-
-<table>
-	<tr><th>Property in Example</th><th>Description</th></tr>
-	<tr>
-		<td>context.platform</td>
-		<td>The system used to record attendance to this learning activity.</td>
-	</tr>
-	<tr>
-		<td>context.extensions</td>
-		<td>RecipeVersion is recommended, and identifies this recipe and its version.</td>
-	</tr>
-	<tr>
-		<td>context.context.activities</td>
-		<td>Has a context type of grouping. A course that relates to an assignment as the parent.</td>
-	</tr>
-</table>
+Plugin specific extensions are optional and not part of the core recipe. The 'instructor' object is optional and describes the instructor who organised the learning event described in the object.
 
 ``` javascript
 "context": {
@@ -143,15 +96,18 @@ Plugin specific extensions are optional and not part of the core recipe. Instruc
             "grouping":[
                 {
                     "objectType":"Activity",
-                    "id":"http://wicketkeeper.poppleton.ac.uk/courses/psy101",
+                    "id":"http://wicketkeeper.poppleton.ac.uk/modules/2016/sem1/psy101",
                     "definition":{
-                        "type":"http://xapi.jisc.ac.uk/courseArea",
+                        "type":"http://adlnet.gov/expapi/activities/module",
                         "name":{
                             "en":"Psychology 101"
                         },
                         "description":{
                             "en":"Entrance course for psychology."
                         }
+                        "extensions":{
+                        	"http://xapi.jisc.ac.uk/uddModInstanceID" : "2016.sem1.psy101"
+                        	}
                     }
                 }
             ]
