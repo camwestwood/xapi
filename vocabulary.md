@@ -15,7 +15,7 @@ Example of a verb entity, this example uses 'en' language tag, but any RFC 5646 
     },
 ``` 
 
-The following [xAPI verbs](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI.md#verb) are defined as part of the Jisc profile:
+The following [xAPI verbs](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#verb) are defined as part of the Jisc profile:
 
 ### Logged in
 <table>
@@ -75,7 +75,7 @@ The following [xAPI verbs](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI.
 
 ## 2.0 Result
 
-In the Jisc profile, the use of the [result entity](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI.md#result) and any of its properties is optional. Such as in the [recipes/assignment-graded.md#verb](assignment graded recipe#result) recipe example.
+In the Jisc profile, the use of the [result entity](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#result) and any of its properties is optional. Such as in the [recipes/assignment-graded.md#verb](assignment graded recipe#result) recipe example.
 
 Example:
 
@@ -251,7 +251,7 @@ Example:
 </table>
 
 ## 3.2 Object Definition Extensions
-The following are Jisc profile extensions to be used in [object.definition.extensions](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI.md#object). See the [Assignment Graded](recipes/assignment-graded.md#verb)
+The following are Jisc profile extensions to be used in [object.definition.extensions](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#object). See the [Assignment Graded](recipes/assignment-graded.md#verb)
 
 ### Due Date
 
@@ -315,6 +315,7 @@ Was used in older recipes to identify the genre of software application. Best pr
 
 ### UDD Module Instance ID
 
+<table>
 <tr><th align="left">Label</th><td>UDD Module Instance ID</td></tr>
 <tr><th align="left">Description</th><td>An identifier for a module instance<br/>The value should correspond to the [UDD module_instance.MOD_INSTANCE_ID](https://github.com/jiscdev/analytics-udd/blob/master/udd/module_instance.md#mod_instance_id) identifier that identifies the relevant module in UDD compliant data.</td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/uddModInstanceID">http://xapi.jisc.ac.uk/uddModInstanceID</a> </td></tr>
@@ -329,7 +330,7 @@ The following are properties of the [Context extensions property](https://github
 
 ### Umbrella course area
 
-For more information see [CourseArea properties](#42-coursearea-properties)
+For more information see Jisc profile [CourseArea properties](#42-coursearea-properties).
 
 <table>
 <tr><th align="left">Label</th><td>Umbrella course area</td></tr>

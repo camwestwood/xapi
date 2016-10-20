@@ -23,9 +23,9 @@ The actor entity describes the individual that is the subject of the statement.
 	</tr>
 	<tr>
 		<td>	
-			ActorAccount [1] <br />
-		    ActorAccount.name [1] <br />
-		    ActorAccount.homepage [1]
+			actor.account [1] <br />
+		    actor.account.name [1] <br />
+		    actor.account.homepage [1]
 </td>
 		<td>A JSON Object with <b>account.name</b> giving the login id for the subject of the statement and <b>account.homepage</b> giving the URL of the home page of the application for which the login id applies.</td>
 	</tr>
@@ -60,8 +60,6 @@ The Verb structure indicates the action which the statement expresses. The verbs
 		<td>verb.display [1]</td>
 		<td>A human readable representation of Verb. It takes a RFC 5646 Language Tag.  
 		The verb.display is "recommended" in the xAPI v1.0.1 specification but is not likely to be of use within the Jisc Learning Analytics architecture.</td>
-		<td><ul>
-		<li>verb.display[1]</li></ul> </td>
 	</tr>
 </table>
 
@@ -126,8 +124,8 @@ ContextB pattern is similar to ContextA, but with the addition of a contextActiv
 <table>
 	<tr><th>Property</th><th>Description</th></tr>
 	<tr>
-		<td>ContextContextActivities [0..1]<br />
-		ContextContextActivities.grouping [1]
+		<td>context.contextActivities [0..1]<br />
+		context.contextActivities.grouping [1]
 		</td>
 		<td>An optional property that holds a mandatory ‘grouping’ property. It allows statements to be associated with the object entity's activity as part of a larger whole. The example shows a course within the VLE. The 'grouping' property has an <a href="#objecta">ObjectA</a> as its value.</td>
 	</tr>
@@ -194,8 +192,8 @@ ContextC pattern is similar to ContextB, but is designed to be used with systems
 <table>
 	<tr><th>Property</th><th>Description</th></tr>
 	<tr>
-		<td>ContextContextActivities [0..1]<br />
-		ContextContextActivities.grouping [1]
+		<td>context.contextActivities [0..1]<br />
+		context.contextActivities.grouping [1]
 		</td>
 		<td>An optional property that holds a mandatory ‘grouping’ property. It allows statements to be associated with the object entity's activity as part of a larger whole. The example shows a course within the VLE. The 'grouping' property has an <a href="#objecta">ObjectA</a> as its value.</td>
 	</tr>
@@ -237,7 +235,7 @@ This object pattern describes the core attributes of Object as used in the Jisc 
 		<td>An identifier for the object of the xAPI statement. This must be unique (within a given platform) across all object types.</td>
 	</tr>
 		<tr>
-		<td>	<li>object.definition.type [1]<br />
+		<td>object.definition.type [1]<br />
 	object.definition.name [0..1]<br />
 	object.definition.extensions.http://xapi.jisc.ac.uk/subType [0..1]<br />
 	object.definition.extensions.http://xapi.jisc.ac.uk/uddModInstanceID [0..1]</td>
@@ -292,7 +290,7 @@ This object pattern describes an activity that has been completed. Examples of v
 		    object.instructor.account.name [1] <br />
 		    object.instructor.account.homepage [1]
 </td>
-		<td>A JSON Object. <b>object.instructor.objectType</b> typically has "Agent" as a value. <br /><b>object.instructor.name</b> gives the name of the role, which is typically 'instructor'. <br /> <b>account.name</b> gives the login id for the instructor. <br /> <b>account.homepage</b> gives the URL of the home page of the application for which the login id applies.</td>
+		<td>A JSON Object. <b>object.instructor.objectType</b> typically has "Agent" as a value. <br /><b>object.instructor.name</b> gives the name of the role, which is typically "instructor". <br /> <b>account.name</b> gives the login id for the instructor. <br /> <b>account.homepage</b> gives the URL of the home page of the application for which the login id applies.</td>
 	</tr>
 	<tr>
 		<td>object.definition 
@@ -355,8 +353,7 @@ The object pattern defines an activity that has been completed. [Examples of val
 		<td>The <b>type</b> indicates the type of the object of the statement. It is required and valid values are listed on the <a href="vocabulary.md#31-activity-types">vocabulary</a> page.</br>
 				The <b>name</b> holds the name of the learning activity.</br>
 		The <b>description</b> describes the learning activity.</br>
-		The <b>extensions</b>: 
-<ul><li><b>"http://id.tincanapi.com/extension/datetime"</b> is a ISO 8601 date time that indicates when the learning event started.</li><li><b>"http://id.tincanapi.com/extension/duration"</b> represents the length of time the event is scheduled to take, expressed as a string formatted as an ISO8601 duration. Note that ISO8601 duration allows representations to extend beyond their carry over points. e.g. one and a half hours can be represented as either PT1H30M or PT90M</li> </ul></td>
+<b>"http://id.tincanapi.com/extension/datetime"</b> is an extension that holds a ISO 8601 date time that indicates when the learning event started.<br /><b>"http://id.tincanapi.com/extension/duration"</b> represents the length of time the event is scheduled to take, expressed as a string formatted as an ISO8601 duration. Note that ISO8601 duration allows representations to extend beyond their carry over points. e.g. one and a half hours can be represented as either PT1H30M or PT90M.</td>
 	</tr>
 </table>
 

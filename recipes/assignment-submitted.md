@@ -40,7 +40,7 @@ The Verb, [completed](/vocabulary.md#verbs) describes the action of completing a
 Common entity identifier: ResultA, as defined on the [common structures](../common_structures.md#resulta) page.
 
 
-In this recipe the result entity is optional and includes completion. See [the xAPI specification for a full description of the result entity](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI.md#result)
+In this recipe the result entity is optional and includes completion. See [the xAPI specification for a full description of the result entity](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#result)
 
 ``` javascript
  "result":{
