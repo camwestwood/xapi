@@ -1,5 +1,5 @@
 # wifi_access_recipe
-Revision: 0.1
+Revision: 0.2
 
 ## Purpose
 This activity records a users device accessing wifi via an access point.

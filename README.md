@@ -1,4 +1,4 @@
-#xAPI recipes for the Jisc Learning Analytics Project v0.4
+#xAPI recipes for the Jisc Learning Analytics Project v0.5
 
 ##Repository Workflow
 The simplest way of contributing xAPI recipes works as follows:
@@ -30,6 +30,7 @@ These are the currently platform independent documented recipes:
 * [Session timeout] (recipes/Session-timeout.md)
 * [Assignment Graded] (recipes/assignment-graded.md)
 * [Assignment Submitted] (recipes/assignment-submitted.md)
+* [Attended learning activity](recipes/attendance.md
 
 ### Specific VLE examples
 * [Blackboard VLE samples] (vle/blackboard/Examples.md)

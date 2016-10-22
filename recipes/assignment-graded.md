@@ -41,7 +41,7 @@ The Verb, [scored](/vocabulary.md#verbs) describes the action of evaluating a le
 ``` 
 
 ### Result
-Common entity identifier: Result.B, as defined on the [common structures](../common_structures.md#resultb) page.
+Common entity identifier: ResultB, as defined on the [common structures](../common_structures.md#resultb) page.
 
 In the Jisc profile, the use of the result entity and any of its properties is optional. 
 
@@ -91,7 +91,7 @@ The object defines the activity that has been evaluated. [Examples of valid obje
 ### Context
 Common entity context: ContextB, as defined on the [common structures](../common_structures.md#contextb) page.
 
-For the graded recipe, the context.contextActivities is property with a ‘grouping’ that allows statements to be associated to the activity described in the object entities as part of a larger whole. Different activitie types can be found on the vocabulary page.
+For the graded recipe, the context.contextActivities is property with a ‘grouping’ that allows statements to be associated to the activity described in the object entities as part of a larger whole. Different activity types can be found on the vocabulary page.
 
 ### Example
 
