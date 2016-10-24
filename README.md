@@ -36,20 +36,9 @@ These are the currently platform independent documented recipes:
 * [Blackboard VLE samples] (vle/blackboard/Examples.md)
 * [Moodle VLE samples] (vle/moodle/examples.md)
 
-
-## Library examples (in draft)
-### Reading Lists
-
- * Viewed Reading List
- * Viewed Reading List item
-
-### Authentication Systems
-
- * Logged in
-
-### Attendance
-
- * Visited Library
+## Draft
+* [WiFi associated/Presence](recipes/wifi-association.md)
+* Library examples (https://github.com/jiscdev/xapi/tree/ds10-recipedev)
 
 
 ## Predictive Model Output
