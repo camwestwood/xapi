@@ -30,7 +30,7 @@ These are the currently platform independent documented recipes:
 * [Session timeout] (recipes/Session-timeout.md)
 * [Assignment Graded] (recipes/assignment-graded.md)
 * [Assignment Submitted] (recipes/assignment-submitted.md)
-* [Attended learning activity](recipes/attendance.md
+* [Attended learning activity](recipes/attendance.md)
 
 ### Specific VLE examples
 * [Blackboard VLE samples] (vle/blackboard/Examples.md)
