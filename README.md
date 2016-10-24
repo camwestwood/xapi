@@ -38,7 +38,7 @@ These are the currently platform independent documented recipes:
 
 ## Draft
 * [WiFi associated/Presence](recipes/wifi-association.md)
-* [Library examples](https://github.com/jiscdev/xapi/tree/ds10-recipedev)
+* [Library examples](https://github.com/jiscdev/xapi/tree/ds10-recipedev)(In development branch)
 
 
 ## Predictive Model Output
