@@ -42,7 +42,7 @@ The Verb,[viewed](/vocabulary.md#verbs) denotes the action of the user's browser
 ### Context
 Common entity identifier: ContextA, as defined on the [common structures](../common_structures.md#contextc) page.
 
-For this recipe the courseArea is required. See the [vocabularies](vocabulary.md#Umberella-course-area) page for more information
+For this recipe the courseArea is required. See the [vocabularies](../vocabulary.md#42-coursearea-properties) page for more information
 
 ### Example:
 
