@@ -1,4 +1,4 @@
-#xAPI recipes for the Jisc Learning Analytics Project v0.4
+#xAPI recipes for the Jisc Learning Analytics Project v0.5
 
 ##Repository Workflow
 The simplest way of contributing xAPI recipes works as follows:
@@ -15,7 +15,8 @@ If the need arises, particular versions will get their own branches, but until t
 
 ## Vocabulary and Common Structures
 
-* [Vocabulary] (vocabulary.md)
+* [Vocabulary](vocabulary.md) gives the IRIs and definitions for verbs, activity types, etc, as well as for extensions used in the recipes.
+* [Common Structures](common_structures.md) outlines common patterns used across different recipes.
 
 # Recipes
 As far as possible all entities are the same across recipes and are identified by a version.
@@ -29,25 +30,15 @@ These are the currently platform independent documented recipes:
 * [Session timeout] (recipes/Session-timeout.md)
 * [Assignment Graded] (recipes/assignment-graded.md)
 * [Assignment Submitted] (recipes/assignment-submitted.md)
+* [Attended learning activity](recipes/attendance.md)
 
 ### Specific VLE examples
 * [Blackboard VLE samples] (vle/blackboard/Examples.md)
 * [Moodle VLE samples] (vle/moodle/examples.md)
 
-
-## Library examples (in draft)
-### Reading Lists
-
- * Viewed Reading List
- * Viewed Reading List item
-
-### Authentication Systems
-
- * Logged in
-
-### Attendance 
-
- * Visited Library
+## Draft
+* [WiFi associated/Presence](recipes/wifi-association.md)
+* [Library examples](https://github.com/jiscdev/xapi/tree/ds10-recipedev)(In development branch)
 
 
 ## Predictive Model Output

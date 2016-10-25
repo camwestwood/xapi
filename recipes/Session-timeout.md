@@ -1,5 +1,5 @@
-# VLE Session timed out recipe
-Revision: 1.2
+#session_timed_out recipe
+Revision: 1.3
 
 ## Purpose
 This activity indicates the activity provider has determined that the session was abnormally terminated either by an actor or due to a system failure.
@@ -7,23 +7,9 @@ This activity indicates the activity provider has determined that the session wa
 This recipe may not work reliably across VLEs.
 ## Definition
 ### Actor
+Common entity identifier:  ActorA, as defined on the [common structures](../common_structures.md#actora) page.
 
-<table>
-	<tr><th>Property</th><th>Jisc Profile Information</th></tr>
-	<tr>
-		<td>actor.account</td>
-		<td>Full name of user, optional.</td>
-	</tr>
-	<tr>
-		<td>actor.objectType</td>
-		<td>Agent</td>
-	</tr>
-		<tr>
-		<td>actor.account</td>
-		<td>JSON Object with unique id and home page</td>
-	</tr>
-</table>
-
+Example:
 ``` Javascript
 {
     "actor": {
@@ -37,20 +23,9 @@ This recipe may not work reliably across VLEs.
 ```
 
 ### Verb
+Common entity identifier: VerbA, as defined on the [common structures](../common_structures.md#verba) page.
 
 The Verb,[abandoned](/vocabulary.md#verbs) describes the action of logging out of a platform.
-
-<table>
-	<tr><th>Property</th><th>Jisc Profile Information</th></tr>
-	<tr>
-		<td>verb.id</td>
-		<td>IRI corresponding to Verb.</td>
-	</tr>
-		<tr>
-		<td>verb.display</td>
-		<td>Human readable representation of Verb. Key is a RFC 5646 Language Tag</td>
-	</tr>
-</table>
 
 Example:
 
@@ -64,23 +39,7 @@ Example:
 ``` 
 
 ### Context
-Context identifies the platform that is being logged into, Moodle in this example. Plugin specific extensions are optional and not part of the core recipe.
-
-<table>
-	<tr><th>Property</th><th>Jisc Profile Information</th></tr>
-	<tr>
-		<td>context.platform</td>
-		<td>The platform used in the experience of this learning activity.</td>
-	</tr>
-	<tr>
-		<td>context.platform.extensions</td>
-		<td>The sessionID extension is the VLE session ID. [IP Address](https://registry.tincanapi.com/#uri/extension/310) is used to identify the client's real address as a Context extension. <a href="https://registry.tincanapi.com/#uri/extension/310">IP Address</a> is used to identify the client's real address as a Context extension. RecipeVersion is recommended and is the version of this recipe found at the top of this page.</td>
-	</tr>
-	<tr>
-		<td>context.context.activities</td>
-		<td>Has a context type of grouping. A course that relates to a assignment as the parent.</td>
-	</tr>
-</table>
+Common entity identifier: ContextA, as defined on the [common structures](../common_structures.md#contexta) page. Only the core attributes of context are applicable.
 
 Example:
 
@@ -89,16 +48,19 @@ Example:
         "platform": "Moodle",
         "extensions": {
 			"http://xapi.jisc.ac.uk/sessionId": "32456891",
-			"http://id.tincanapi.com/extensions/ip-address" :"10.3.3.48"
-			"http://xapi.jisc.ac.uk/recipeVersion" : "1.2"
+			"http://id.tincanapi.com/extension/ip-address" :"10.3.3.48"
+			"http://xapi.jisc.ac.uk/recipeVersion" : "session_timed_outV1.2"
              }
         }
 ```
 
 ### Object
-
+Common entity identifier: ObjectA, as defined on the [common structures](../common_structures.md#objecta) page.
 
 The object defines the item that the user has timed out of.  A [Jisc specific extension](common_statements.md#jisc_extensions) details that it is a VLE that is being logged out of. 
+
+The object.definition.type is "http://activitystrea.ms/schema/1.0/application". The subType (http://xapi.jisc.ac.uk/subType) extension should be used to identify the system type that is being logged into, in this example a Virtual Learning Environment (aka Learning Management System), identified by  http://id.tincanapi.com/activitytype/lms. Different application types should use the relevant subType, as defined on the [vocabularies](vocabulary.md#32-object-definition-extensions) page.
+
 ``` javascript
 
 "object": {

@@ -8,14 +8,14 @@ Example of a verb entity, this example uses 'en' language tag, but any RFC 5646 
 
 ``` javascript
 "verb": {
-        "id": "https://brindlewaye.com/xAPITerms/verbs/loggedin/",
+        "id": "https://brindlewaye.com/xAPITerms/verbs/loggedin",
         "display": {
             "en" : "logged in to"
         }
     },
 ``` 
 
-The following [xAPI verbs](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI.md#verb) are defined as part of the Jisc profile:
+The following [xAPI verbs](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#verb) are defined as part of the Jisc profile:
 
 ### Logged in
 <table>
@@ -65,9 +65,17 @@ The following [xAPI verbs](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI.
 <tr><th align="left">Recipe Example</th><td> <a href="recipes/assignment-graded.md#verb">Assignment Graded</a> </td></tr>
 </table>
 
+### Attended
+<table>
+<tr><th align="left">Verb</th><td>Attended</td></tr>
+<tr><th align="left">Description</th><td>Indicates the actor was present at a virtual or physical event or activity.</td></tr>
+<tr><th align="left">IRI</th><td> <a href="http://adlnet.gov/expapi/verbs/attended">http://adlnet.gov/expapi/verbs/attended</a> </td></tr>
+<tr><th align="left">Recipe Example</th><td> <a href="recipes/attended.md#verb">Attended learning activity</a> </td></tr>
+</table>
+
 ## 2.0 Result
 
-In the Jisc profile, the use of the [result entity](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI.md#result) and any of its properties is optional. Such as in the [recipes/assignment-graded.md#verb](assignment graded recipe#result) recipe example.
+In the Jisc profile, the use of the [result entity](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#result) and any of its properties is optional. Such as in the [recipes/assignment-graded.md#verb](assignment graded recipe#result) recipe example.
 
 Example:
 
@@ -103,7 +111,7 @@ The following are extension properties in the result entity:
 
 
 ### 3.1 Activity Types
-The following are types of the [Activity Definition Object](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI.md#activity-definition). 
+The following are types of the [Activity Definition Object](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#activity-definition). 
 
 Example:
 ``` javascript
@@ -127,6 +135,16 @@ Example:
 <tr><th align="left">IRI</th><td> <a href="http://activitystrea.ms/schema/1.0/application">http://activitystrea.ms/schema/1.0/application</a> </td></tr>
 <tr><th align="left">Recipe Example</th><td> <a href="recipes/login.md#complete_example">Logged in</a> </td></tr>
 </table>
+
+### Assessment
+
+<table>
+<tr><th align="left">Label</th><td>Application</td></tr>
+<tr><th align="left">Description</th><td>An assessment is an activity type that determines a learner’s mastery of a particular subject area. An assessment typically has one or more questions.</td></tr>
+<tr><th align="left">IRI</th><td> <a href="http://adlnet.gov/expapi/activities/assessment">http://adlnet.gov/expapi/activities/assessment</a> </td></tr>
+<tr><th align="left">Recipe Example</th><td> <a href="recipes/assignment-submitted.md">assignment-submitted</a> </td></tr>
+</table>
+
 
 ### Course
 
@@ -205,11 +223,35 @@ Example:
 <table>
 <tr><th align="left">Label</th><td>File</td></tr>
 <tr><th align="left">Description</th><td>Accessing any kind of non-web native file type. e.g. MS office, video or audio. </td></tr>
-<tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/vle/file">http://xapi.jisc.ac.uk/vle/forum</a> </td></tr>
+<tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/vle/file">http://xapi.jisc.ac.uk/vle/file</a> </td></tr>
+</table>
+
+### Lecture
+
+<table>
+<tr><th align="left">Label</th><td>Lecture</td></tr>
+<tr><th align="left">Description</th><td>A learning activity that consists mainly of an expert giving a talk to a number of learners.</td></tr>
+<tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/lecture">http://xapi.jisc.ac.uk/lecture</a> </td></tr>
+</table>
+
+### Tutor session
+
+<table>
+<tr><th align="left">Label</th><td>Tutor session</td></tr>
+<tr><th align="left">Description</th><td>This represents a tutoring session.</td></tr>
+<tr><th align="left">IRI</th><td> <a href="http://id.tincanapi.com/activitytype/tutor-session">http://id.tincanapi.com/activitytype/tutor-session</a> </td></tr>
+</table>
+
+### Event
+
+<table>
+<tr><th align="left">Label</th><td>Event</td></tr>
+<tr><th align="left">Description</th><td>Any event.<br/>The "event" Activity Type should only be used when the type of event is unspecified.</td></tr>
+<tr><th align="left">IRI</th><td> <a href="http://activitystrea.ms/schema/1.0/event">http://activitystrea.ms/schema/1.0/event</a> </td></tr>
 </table>
 
 ## 3.2 Object Definition Extensions
-The following are Jisc profile extensions to be used in [object.definition.extensions](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI.md#object). See the [Assignment Graded](recipes/assignment-graded.md#verb)
+The following are Jisc profile extensions to be used in [object.definition.extensions](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#object). See the [Assignment Graded](recipes/assignment-graded.md#verb)
 
 ### Due Date
 
@@ -221,6 +263,30 @@ The following are Jisc profile extensions to be used in [object.definition.exten
 <tr><th align="left">Data Type</th><td>String</td></tr>
 <tr><th align="left">Value Space</th><td>ISO 8601 date time</td></tr>
 <tr><th align="left">Sample Value</th><td>2016-02-05T17:59:45.000Z</td></tr>
+</table>
+
+### DateTime
+
+<table>
+<tr><th align="left">Label</th><td>DateTime</td></tr>
+<tr><th align="left">Description</th><td>Value representing a calendar date and time, such as 2013-08-27 09:26:45.001. Value should be a string formatted as an ISO8601 date and time to match the rest of the specification values.</td></tr>
+<tr><th align="left">IRI</th><td> <a href="http://id.tincanapi.com/extension/datetime">http://id.tincanapi.com/extension/datetime</a> </td></tr>
+<tr><th align="left">Example in Recipe</th><td> <a href="recipes/attendance.md#object">attendance</a> </td></tr>
+<tr><th align="left">Data Type</th><td>String</td></tr>
+<tr><th align="left">Value Space</th><td>ISO 8601 date time</td></tr>
+<tr><th align="left">Sample Value</th><td>2016-02-05T17:59:45.000Z</td></tr>
+</table>
+
+### Duration
+
+<table>
+<tr><th align="left">Label</th><td>Duration</td></tr>
+<tr><th align="left">Description</th><td>Value representing a length of time, for example the length of a video. Value should be formatted as an ISO8601 duration to match the Result.duration property. Note that ISO8601 duration allows representations to extend beyond their carry over points. e.g. one and a half hours can be represented as either PT1H30M0S or PT90M. This extension will generally be used within an Activity Definition to indicate a length of an Activity as compared to the Result.duration which captures the length of time for a specific event. For example a video may be 5 minutes long (this Extension), but an actor may have only watched 30 seconds of it (the Result.duration). </td></tr>
+<tr><th align="left">IRI</th><td> <a href="http://id.tincanapi.com/extension/duration">http://id.tincanapi.com/extension/duration</a> </td></tr>
+<tr><th align="left">Example in Recipe</th><td> <a href="recipes/attendance.md#object">attendance</a> </td></tr>
+<tr><th align="left">Data Type</th><td>String</td></tr>
+<tr><th align="left">Value Space</th><td>ISO 8601 duration</td></tr>
+<tr><th align="left">Sample Value</th><td>PT1H30M0S</td></tr>
 </table>
 
 ### Application Type
@@ -247,15 +313,24 @@ Was used in older recipes to identify the genre of software application. Best pr
 <tr><th align="left">Sample Value</th><td>http://id.tincanapi.com/activitytype/lms</td></tr>
 </table>
 
+### UDD Module Instance ID
+
+<table>
+<tr><th align="left">Label</th><td>UDD Module Instance ID</td></tr>
+<tr><th align="left">Description</th><td>An identifier for a module instance<br/>The value should correspond to the [UDD module_instance.MOD_INSTANCE_ID](https://github.com/jiscdev/analytics-udd/blob/master/udd/module_instance.md#mod_instance_id) identifier that identifies the relevant module in UDD compliant data.</td></tr>
+<tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/uddModInstanceID">http://xapi.jisc.ac.uk/uddModInstanceID</a> </td></tr>
+</table>
+
+
 ## 4.0 Context
 
 
 ## 4.1 Context Extensions
-The following are properties of the [Context extensions property](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI.md#416-context).
+The following are properties of the [Context extensions property](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#246-context).
 
 ### Umbrella course area
 
-For more information see [CourseArea properties](#4.2 CourseArea properties)
+For more information see Jisc profile [CourseArea properties](#42-coursearea-properties).
 
 <table>
 <tr><th align="left">Label</th><td>Umbrella course area</td></tr>
@@ -306,15 +381,15 @@ For more information see [CourseArea properties](#4.2 CourseArea properties)
 </table>
 
 ## 4.2 CourseArea properties
-The following are properties of the profile extension Context.extensions.courseArea
+The following are properties of the profile extension context.extensions.courseArea
  
 ### VLE Module ID
 
-http://xapi.jisc.ac.uk/extensions/vle_mod_id is a plugin specific extension, to hold the VLE course's module id, as defined in the [Jisc UDD](https://github.com/jiscdev/analytics-udd/blob/master/udd/module_vle_map.md). It is therefore not required. 
+http://xapi.jisc.ac.uk/extensions/vle_mod_id is a courseArea identifier. It is used in the module_VLE_map entity of the UDD to link module instances to course areas. Note that several module instances (as identified by their UDD MOD_INSTANCE_ID) can link to one courseArea. 
 
 <table>
 <tr><th align="left">Label</th><td>VLE Module ID</td></tr>
-<tr><th align="left">Description</th><td><a href="https://github.com/jiscdev/analytics-udd/module_vle_map.md  ">Entity that connects a course area in a VLE with a module</a></td></tr>
+<tr><th align="left">Description</th><td><a href="https://github.com/jiscdev/analytics-udd/blob/master/udd/module_vle_map.md">Entity that connects a course area in a VLE with a module</a></td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/vle_mod_id">http://xapi.jisc.ac.uk/vle_mod_id</a> </td></tr>
 </table>
 
