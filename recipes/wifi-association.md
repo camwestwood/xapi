@@ -41,7 +41,7 @@ The Verb, accessed, describes the action of associating a device to a wifi acces
 Common entity identifier: Object.*
 
 #### Entity Example:
-This object, a device, represents the access point being accessed and is uniquely identified by it's MAC address.
+This object, a device, represents the **access point being accessed** and is uniquely identified by it's MAC address.
 
 #### Example:
 ``` javascript
@@ -64,13 +64,13 @@ This object, a device, represents the access point being accessed and is uniquel
 Common entity identifier: Context.*
 
 #### Context Example:
-This context is an object that represents the client device that accessed the access point at a given time and is uniquely identified by it's MAC address.
+This context is an object that represents the **client device** that accessed the access point at a given time and is uniquely identified by it's MAC address.
 
 
 ``` javascript
 "context": {
   "extensions": {
-	"http://xapi.jisc.ac.uk/macAddress": "2A3DDE45B7B9",
+	"http://xapi.jisc.ac.uk/macAddress": "000A959D6816",
     "http://id.tincanapi.com/extensions/ip-address": "10.3.3.48",
     "http://xapi.jisc.ac.uk/recipeVersion" : "wifi_access_recipe0.1"
   }
