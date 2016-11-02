@@ -35,7 +35,7 @@ The verb, intervene describes an intervention by the actor on the object.
 
 ``` javascript
 "verb": {
-        "id": "http://xapi.jisc.ac.uk/authorize",
+        "id": "http://xapi.jisc.ac.uk/intervene",
         "display": {
             "en": "intervene"
         }
