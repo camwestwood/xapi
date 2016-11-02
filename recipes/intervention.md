@@ -2,10 +2,11 @@
 Revision: 0.1 
 
 ## Purpose
-This activity records a service creating an intervention on a person person.
+This activity records a service creating an intervention for a person.
 
 ## Draft Notes
-This draft the actor is the service, the object is the person the intervention is sent to, and the context describes the intervention activity. 
+In this draft the actor is the service, the object is the person the intervention is sent to, and the context describes the intervention activity. 
+
 An alternative draft could cast the agent as the person the intervention is sent to, the object describes the intervention activity and the context the system? But the person is passive in this recipe?
 
 ## Definition
@@ -14,7 +15,7 @@ An alternative draft could cast the agent as the person the intervention is sent
 
 The actor is the system that sends the intervention.
 
-List of valid systems in the Jisc profile: //do we need a list of systems in the profile?
+List of valid systems in the jisc profile: //do we need a list of systems in the profile?
 
 * https://www.unicon.net/opensource/student-success-plan
 
@@ -44,7 +45,7 @@ The verb, intervene describes an intervention by the actor on the object.
 
 ### Object
 
-In this case, object is the person that has been given an intervention 
+In this case, object is the person that has been sent an intervention 
 
 ``` Javascript
 {
