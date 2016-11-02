@@ -37,6 +37,7 @@ These are the currently platform independent documented recipes:
 * [Moodle VLE samples] (vle/moodle/examples.md)
 
 ## Draft
+* [Intervention recipe](recipes/intervention.md)
 * [WiFi associated/Presence](recipes/wifi-association.md)
 * [Library examples](https://github.com/jiscdev/xapi/tree/ds10-recipedev)(In development branch)
 
