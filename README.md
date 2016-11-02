@@ -1,4 +1,4 @@
-#xAPI recipes for the Jisc Learning Analytics Project v0.5
+#xAPI recipes for the Jisc Learning Analytics Project v0.6
 
 ##Repository Workflow
 The simplest way of contributing xAPI recipes works as follows:
