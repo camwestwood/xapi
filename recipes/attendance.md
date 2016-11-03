@@ -76,8 +76,8 @@ The object defines the activity that has been completed. Examples of valid objec
 			},
 			
 		    "extensions":{
-				"http://id.tincanapi.com/extension/datetime": "2016-02-05T10:00:00.000Z",
-				"http://id.tincanapi.com/extension/duration": "PT1H30M0S"
+				"http://id.tincanapi.com/extension/planned-start-time": "2016-02-05T10:00:00.000Z",
+				"http://xapi.jisc.ac.uk/extension/planned-end-time": "2016-02-05T14:00:00.000Z"
 			}
 			
 		}
