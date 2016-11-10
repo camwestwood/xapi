@@ -380,6 +380,28 @@ For more information see Jisc profile [CourseArea properties](#42-coursearea-pro
 <tr><th align="left">Sample Value</th><td>1.0</td></tr>
 </table>
 
+### Planned Start Time
+
+<table>
+<tr><th align="left">Label</th><td>Planned start time</td></tr>
+<tr><th align="left">Description</th><td>An ISO 8601 timestamp representing the planned start time of a scheduled or planned event."</td></tr>
+<tr><th align="left">IRI</th><td> <a href="http://id.tincanapi.com/extension/planned-start-time">http://id.tincanapi.com/extension/planned-start-time</a> </td></tr>
+<tr><th align="left">Data Type</th><td>ISO 8601 timestamp</td></tr>
+<tr><th align="left">Value Space</th><td>Timestamp</td></tr>
+<tr><th align="left">Sample Value</th><td>2016-02-05T10:00:00.000Z</td></tr>
+</table>
+
+### Planned End Time
+
+<table>
+<tr><th align="left">Label</th><td>Planned end time</td></tr>
+<tr><th align="left">Description</th><td>An ISO 8601 timestamp representing the planned end time of a scheduled or planned event."</td></tr>
+<tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/extension/planned-end-time">http://xapi.jisc.ac.uk/extension/planned-end-time</a> </td></tr>
+<tr><th align="left">Data Type</th><td>ISO 8601 timestamp</td></tr>
+<tr><th align="left">Value Space</th><td>Timestamp</td></tr>
+<tr><th align="left">Sample Value</th><td>2016-02-05T10:00:00.000Z</td></tr>
+</table>
+
 ## 4.2 CourseArea properties
 The following are properties of the profile extension context.extensions.courseArea
  
