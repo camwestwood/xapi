@@ -51,6 +51,7 @@ This object, a device, represents the **access point being accessed** . An id is
   "definition": {
     "type": "http://activitystrea.ms/schema/1.0/device",
     "name": {
+      "en": "WiFi Access point"
     },
     "extensions": {
       "http://xapi.jisc.ac.uk/macAddress": "2A3DDE45B7B9"
