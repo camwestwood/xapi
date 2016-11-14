@@ -1,14 +1,14 @@
-# wifi_association_recipe (Physical Presence)
+# left recipe (Physical Presence)
 Revision: 0.2
 
 ## Purpose
-This activity records a users device associating with a WiFi access point via an access point.
+This activity records that a person has left a place. In this example deassociation with a WiFi access point
 
 ## Definition
 
 ### Actor
 Common entity identifier:  ActorA, as defined on the [common structures](../common_structures.md#actora) page.
-The actor entity describes the individual whose device is associating with a WiFi access point.
+The actor entity describes the individual has left.
 
 
 ``` Javascript
@@ -25,14 +25,14 @@ The actor entity describes the individual whose device is associating with a WiF
 ### Verb
 Common entity identifier: VerbA, as defined on the [common structures](../common_structures.md#verba) page.
 
-The Verb, accessed, describes the action of access.
+The Verb, left, describes the action of the actor leaving the object.
 
 
 ``` javascript
 "verb": {
-        "id": "http://activitystrea.ms/schema/1.0/access",
+        "id": "http://activitystrea.ms/schema/1.0/leave",
         "display": {
-            "en" : "accessed"
+            "en" : "left"
         }
     },
 ```
@@ -41,7 +41,7 @@ The Verb, accessed, describes the action of access.
 Common entity identifier: Object.*
 
 #### Entity Example:
-This object, a device, represents the **access point being accessed** . An id is required and should use a domain that the creator is authorised to use for this purpose. If a mac address is supplied here it is the mac address for the access point.
+This object, a device, represents the **access point reporting a dissociation** . An id is required and should use a domain that the creator is authorised to use for this purpose. If a mac address is supplied it is the mac address for the access point.
 
 #### Example:
 ``` javascript
@@ -65,7 +65,7 @@ This object, a device, represents the **access point being accessed** . An id is
 Common entity identifier: Context.*
 
 #### Context Example:
-This context 
+Only the recipe version is required. Other information in the context extensions can include the mac/ip address of the clients device and the location of the WiFi access point.
 
 
 ``` javascript
