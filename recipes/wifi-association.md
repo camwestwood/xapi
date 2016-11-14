@@ -41,20 +41,20 @@ The Verb, accessed, describes the action of associating a device to a wifi acces
 Common entity identifier: Object.*
 
 #### Entity Example:
-This object, a device, represents the **access point being accessed** and is uniquely identified by it's MAC address.
+This object, a device, represents the **access point being accessed** . An id is required and should use a domain that the creator is authorised to use for this purpose. If a ma address is supplied it is the mac address for the access point.
 
 #### Example:
 ``` javascript
 "object": {
   "objectType": "Activity",
-  "id": "https://jisc.ac.uk/wifi", //not sure about this
+  "id": "http://jisc.ac.uk/acesspoints/83028", //id of the access point
   "definition": {
     "type": "http://activitystrea.ms/schema/1.0/device",
     "name": {
-      "en": "University of Jisc wifi access point"
     },
     "extensions": {
       "http://xapi.jisc.ac.uk/macAddress": "2A3DDE45B7B9"
+	  
     }
   }
 }
@@ -64,7 +64,7 @@ This object, a device, represents the **access point being accessed** and is uni
 Common entity identifier: Context.*
 
 #### Context Example:
-This context is an object that represents the **client device** that accessed the access point at a given time and is uniquely identified by it's MAC address.
+This context 
 
 
 ``` javascript
@@ -72,7 +72,8 @@ This context is an object that represents the **client device** that accessed th
   "extensions": {
 	"http://xapi.jisc.ac.uk/macAddress": "000A959D6816",
     "http://id.tincanapi.com/extensions/ip-address": "10.3.3.48",
-    "http://xapi.jisc.ac.uk/recipeVersion" : "wifi_access_recipe0.1"
+    "http://xapi.jisc.ac.uk/recipeVersion" : "wifi_access_recipe0.1",
+	"http://id.tincanapi.com/extension/location" : "Library"
   }
 }
 ```
