@@ -73,6 +73,48 @@ The following [xAPI verbs](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-
 <tr><th align="left">Recipe Example</th><td> <a href="recipes/attended.md#verb">Attended learning activity</a> </td></tr>
 </table>
 
+## Intervention Verbs
+
+### Interviewed
+<table>
+<tr><th align="left">Verb</th><td>Interviewed</td></tr>
+<tr><th align="left">Description</th><td>For use when one agent or group interviews another agent or group. It could be used for the purposes of hiring, creating news articles, shows, research, etc.</td></tr>
+<tr><th align="left">IRI</th><td> <a href="http://id.tincanapi.com/verb/interviewed">http://id.tincanapi.com/verb/interviewed</a> </td></tr>
+<tr><th align="left">Recipe Example</th><td> <a href="recipes/intervention.md#verb">Intervention</a> </td></tr>
+</table>
+
+### Interacted
+<table>
+<tr><th align="left">Verb</th><td>Interacted</td></tr>
+<tr><th align="left">Description</th><td>Indicates that the actor has interacted with the object. For instance, when one person interacts with another.</td></tr>
+<tr><th align="left">IRI</th><td> <a href="http://activitystrea.ms/schema/1.0/interact">http://activitystrea.ms/schema/1.0/interact</a> </td></tr>
+<tr><th align="left">Recipe Example</th><td> <a href="recipes/intervention.md#verb">Intervention</a> </td></tr>
+</table>
+
+### Invited
+<table>
+<tr><th align="left">Verb</th><td>Invited</td></tr>
+<tr><th align="left">Description</th><td>Indicates that the actor has invited the object, typically a person object, to join or participate in the object described by the target. The target could, for instance, be an event, group or a service.</td></tr>
+<tr><th align="left">IRI</th><td> <a href="http://activitystrea.ms/schema/1.0/invite">http://activitystrea.ms/schema/1.0/invite</a> </td></tr>
+<tr><th align="left">Recipe Example</th><td> <a href="recipes/intervention.md#verb">Intervention</a> </td></tr>
+</table>
+
+### Mentored
+<table>
+<tr><th align="left">Verb</th><td>Mentored</td></tr>
+<tr><th align="left">Description</th><td>Indicates that that the actor has mentored the object. For instance, a manager mentoring an employee, or a teacher mentoring a student. </td></tr>
+<tr><th align="left">IRI</th><td> <a href="http://id.tincanapi.com/verb/mentored">http://id.tincanapi.com/verb/mentored</a> </td></tr>
+<tr><th align="left">Recipe Example</th><td> <a href="recipes/intervention.md#verb">Intervention</a> </td></tr>
+</table>
+ 
+### Annotated
+<table>
+<tr><th align="left">Verb</th><td>Annotated</td></tr>
+<tr><th align="left">Description</th><td>Indicates a new annotation has been added to a document. This verb may be used with PDFs, images, assignment submissions or any other type of document which may be annotated.</td></tr>
+<tr><th align="left">IRI</th><td> <a href="http://risc-inc.com/annotator/verbs/annotated">http://risc-inc.com/annotator/verbs/annotated</a> </td></tr>
+<tr><th align="left">Recipe Example</th><td> <a href="recipes/intervention.md#verb">Intervention</a> </td></tr>
+</table>
+
 ## 2.0 Result
 
 In the Jisc profile, the use of the [result entity](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#result) and any of its properties is optional. Such as in the [recipes/assignment-graded.md#verb](assignment graded recipe#result) recipe example.
@@ -90,6 +132,8 @@ Example:
         	}
     },
 ```
+
+
 
 ### 2.1 Result Extensions
 

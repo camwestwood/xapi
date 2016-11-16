@@ -2,42 +2,37 @@
 Revision: 0.1 
 
 ## Purpose
-This activity records a service creating an intervention for a person.
+This recipe records an intervention taking place, it is a record of an act by a person with an intention to help. 
 
 ## Draft Notes
-In this draft the actor is the service, the object is the person the intervention is sent to, and the context describes the intervention activity. 
-
-An alternative draft could cast the agent as the person the intervention is sent to, the object describes the intervention activity and the context the system? But the person is passive in this recipe?
+In this draft the actor is an instructor or service making the intervention, the object is the person the intervention is sent to, and the context describes the intervention activity. 
 
 ## Definition
 ### Actor
  
-
-The actor is the system that sends the intervention.
-
-List of valid systems in the jisc profile: //do we need a list of systems in the profile?
-
-* https://www.unicon.net/opensource/student-success-plan
-
+The actor is usually the instructor that sends the intervention.
 
 ``` Javascript
 "actor": {
-	 "objectType : Agent" ,
-     "name": "Student Success Plan",
-     "openid" : " " // I take it that we can't use account object because there is no account, Possible options are openid , mbox_sha1sum and mbox
+	"objectType": "Agent",
+      "name": "instructor",
+      "account": {
+         "name": "2",
+         "homePage": "http://localhost/moodle"
+      }
+	}
 ```
+
 
 ### Verb
 
-//need to mint a verb?
-
-The verb, intervene describes an intervention by the actor on the object.
+The verb, depends on the intervention taking place. A list of verbs describing interventions can be found in the vocabulary page(/vocabulary.md#Intervention_verbs). In this example the tutor interviewed the student. 
 
 ``` javascript
 "verb": {
-        "id": "http://xapi.jisc.ac.uk/intervene",
+        "id": "http://id.tincanapi.com/verb/interviewed",
         "display": {
-            "en": "intervene"
+            "en": "Interviewed"
         }
     },
 ```
@@ -45,7 +40,7 @@ The verb, intervene describes an intervention by the actor on the object.
 
 ### Object
 
-In this case, object is the person that has been sent an intervention 
+In this case, object is the person that the intervention is acted upon. It is usually the student.
 
 ``` Javascript
 {
@@ -61,8 +56,11 @@ In this case, object is the person that has been sent an intervention
 
 ### Context
 
-The Context describes the intervention itself
+TODO: The context may describe:
 
+The item in the academic management system?
+item in tutoring system?
+Mod id?
 
 ``` javascript
 "context": {
