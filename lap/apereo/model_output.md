@@ -42,7 +42,7 @@ context/contextActivities/grouping[0]/id contains the mod instance id
             "grouping": [
                 {
                     "objectType": "Activity",
-                    "id": "https://github.com/jiscdev/analytics-udd/blob/master/predictive-core.md#mod_instance/BM4090/A12/UMS/2015/16",
+                    "id": "https://github.com/jiscdev/analytics-udd/blob/master/predictive-core.md#mod_instance/bar",
                     "definition": {
                         "type": "http://adlnet.gov/expapi/activities/module",
                         "extensions": {
@@ -60,10 +60,10 @@ context/contextActivities/grouping[0]/id contains the mod instance id
         },
         "extensions": {
             "http://xapi.jisc.ac.uk/recipient": {
-                "http://xapi.jisc.ac.uk/studentid": "000491c4da080d857735ddddf3e7c87a"
+                "http://xapi.jisc.ac.uk/studentid": "foo"
             },
             "http://xapi.jisc.ac.uk/courseArea": {
-                "http://xapi.jisc.ac.uk/modinstanceid": "BM4090/A12/UMS/2015/16"
+                "http://xapi.jisc.ac.uk/modinstanceid": "bar"
             }
         }
     },
