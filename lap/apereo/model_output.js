@@ -1,70 +1,86 @@
-{
-  "version":"1.0.0",
-  "actor":{
-    "objectType":"Agent",
-    "account":{
-      "name":"12345",
-      "homePage":"https://github.com/jiscdev/analytics-udd/blob/master/predictive-core.md#student_id"
-    }
-  },
-  "verb":{
-    "id":"http://activitystrea.ms/schema/1.0/receive",
-    "display":{
-      "en-GB":"receive",
-      "en-US":"receive"
-    }
-  },
-  "object":{
-    "objectType":"Activity",
-    "id":"https://lap.jisc.ac.uk/earlyAlert/unicon/id",
-    "definition":{
-      "type":"http://activitystrea.ms/schema/1.0/alert",
-      "name":{
-        "en-GB":"An early alert",
-        "en-US":"An early alert"
-      },
-      "description":{
-        "en-GB":"An early alert",
-        "en-US":"An early alert"
-      },
-      "moreInfo":"url to view the alert",
-      "extensions":{
-        "https://lap.jisc.ac.uk/earlyAlert/type":"UNICON"
-      }
-    }
-  },
-  "context":{
-    "contextActivities":{
-      "grouping":[
-        {
-          "objectType":"Activity",
-          "id":"https://github.com/jiscdev/analytics-udd/blob/master/predictive-core.md#mod_instance/id",
-          "definition":{
-            "type":"http://adlnet.gov/expapi/activities/module",
-            "description":{
-              "en":"Jisc Module Instance"
-            },
-            "name":{
-              "en":"Jisc Module Instance"
-            },
-            "extensions":{
-              "https://lap.jisc.ac.uk/taxonomy":"MOD_INSTANCE"
-            }
-          }
+    "version": "1.0.0",
+    "timestamp": "2016-12-05T21:15:13-05:00",
+    "verb": {
+        "id": "http://xapi.jisc.ac.uk/verbs/predicted",
+        "display": {
+            "en-US": "predicted",
+            "en-GB": "predicted"
         }
-      ]
-    }
-  },
-  "timestamp":"2016-02-10T10:20:28+00:00",
-  "result":{
-    "extensions":{
-      "https://lap.jisc.ac.uk/earlyAlert/score":"HIGH",
-      "https://lap.jisc.ac.uk/earlyAlert/metricN":"3.89"
-    }
-  },
-  "authority":{
-    "objectType":"Agent",
-    "name":"Unicon",
-    "mbox":"mailto:hello@unicon.net"
-  }
+    },
+    "actor": {
+        "objectType": "Agent",
+        "account": {
+            "homePage": "http://jisc.ac.uk",
+            "name": "JiscLAPv0"
+        }
+    },
+    "object": {
+        "objectType": "Activity",
+        "id": "https://lap.jisc.ac.uk/earlyAlert/unicon/id",
+        "definition": {
+            "type": "http://activitystrea.ms/schema/1.0/alert",
+            "extensions": {
+                "https://lap.jisc.ac.uk/earlyAlert/type": "JiscLAPv0"
+            },
+            "name": {
+                "en-US": "An early alert",
+                "en-GB": "An early alert"
+            },
+            "description": {
+                "en-US": "An early alert",
+                "en-GB": "An early alert"
+            }
+        }
+    },
+    "result": {
+        "extensions": {
+            "https://lap.jisc.ac.uk/earlyAlert/academicrisk": "true",
+            "https://lap.jisc.ac.uk/earlyAlert/passprobability": "0.0",
+            "https://lap.jisc.ac.uk/earlyAlert/statistics": [
+                {
+                    "https://lap.jisc.ac.uk/earlyAlert/statistics/name": "status",
+                    "https://lap.jisc.ac.uk/earlyAlert/statistics/value": "100.0",
+                    "https://lap.jisc.ac.uk/earlyAlert/statistics/min": "0.0",
+                    "https://lap.jisc.ac.uk/earlyAlert/statistics/max": "100.0"
+                }
+            ]
+        }
+    },
+    "context": {
+        "contextActivities": {
+            "grouping": [
+                {
+                    "objectType": "Activity",
+                    "id": "https://github.com/jiscdev/analytics-udd/blob/master/predictive-core.md#mod_instance/foo",
+                    "definition": {
+                        "type": "http://adlnet.gov/expapi/activities/module",
+                        "extensions": {
+                            "https://lap.jisc.ac.uk/taxonomy": "MOD_INSTANCE"
+                        },
+                        "name": {
+                            "en-US": "Jisc Module Instance"
+                        },
+                        "description": {
+                            "en-US": "Jisc Module Instance"
+                        }
+                    }
+                }
+            ]
+        },
+        "extensions": {
+            "http://xapi.jisc.ac.uk/recipient": {
+                "http://xapi.jisc.ac.uk/studentid": "bar"
+            },
+            "http://xapi.jisc.ac.uk/courseArea": {
+                "http://xapi.jisc.ac.uk/modinstanceid": "foo"
+            }
+        }
+    },
+    "authority": {
+        "objectType": "Agent",
+        "name": "Unicon",
+        "mbox": "mailto:ggilbert@unicon.net"
+    },
+    "stored": "2016-12-06T02:15:14.475900+00:00",
+    "id": "b21d83df-d93c-4571-9884-d25787983e92"
 }
