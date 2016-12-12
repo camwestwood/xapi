@@ -65,7 +65,7 @@ This object, a device, represents the **access point being accessed** . An id is
 Common entity identifier: Context.*
 
 #### Context Example:
-This context 
+The location is the physical location in which the student was prescent  
 
 
 ``` javascript
