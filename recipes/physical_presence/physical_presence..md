@@ -38,7 +38,9 @@ The verb, at, describes the actor being at the location.
         "display": {
             "en" : "at"
         }
-    },
+    }
+
+```
 
 ### Object
 
@@ -49,6 +51,7 @@ ObjectToDo
 #### Entity Example:
 The object defines the activity of being at the place. Institutions should talk to a data scientist for guidance on place names and descriptions.
 
+``` javascript
 "object": {
   "objectType": "Activity",
   "id": "http://locations.university.ac.uk/library/5328",
@@ -62,7 +65,7 @@ The object defines the activity of being at the place. Institutions should talk 
 			}
 		}
 	}
-		
+```
 
 ### Context
 
