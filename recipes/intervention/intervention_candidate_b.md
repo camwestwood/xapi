@@ -1,4 +1,4 @@
-#intervention Recipe
+#intervention_candidate_b Recipe
 Revision: 0.1 
 
 ## Purpose
@@ -74,8 +74,6 @@ In this case, object is the person that the intervention is acted upon. It is us
         }
     },
 ```
-
-### Context
 
 ### Context
 
