@@ -39,8 +39,11 @@ These are the currently platform independent documented recipes:
 ## Draft
 The following draft recipes are under discussion, you can contribute to these by leaving a issue to the tracker.  
 
-* [Intervention recipe](recipes/intervention/intervention.md)
-* [Physical presence ](recipes/wifi-association.md)
+* [Intervention recipe A](recipes/intervention/intervention_candidate_a.md)
+* [Intervention recipe B](recipes/intervention/intervention_candidate_b.md)
+* [Intervention recipe C](recipes/intervention/intervention_candidate_c.md)
+* [Physical presence ](recipes/physical_presence/physical_presence.md)
+* [Physical presence ](recipes/physical_presence/physical_presence_leaving.md)
 
 
 * [Library examples](https://github.com/jiscdev/xapi/tree/ds10-recipedev)(In development branch)
