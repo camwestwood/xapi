@@ -83,14 +83,18 @@ Common entity identifier: Context*
 
 #### Entity Example:
 
-The context includes the version number of this recipe. It also includes an extension to highlight the fact this statement belongs to an intervention
+The context includes the version number of this recipe. It also groups this statement with other interventions
 
 ``` javascript
 "context": {
-  "extensions": {
-    "http://xapi.jisc.ac.uk/recipeVersion" : "physical_presence0.1",
-	"http://xapi.jisc.ac.uk/intervention" : true
-  }
+	"contextActivities":{
+		"category": [{
+			"objectType": "Activity",
+			"id": "http://xapi.jisc.ac.uk/activities/intervention"
+		}],
+		},
+	"extensions": {
+    "http://xapi.jisc.ac.uk/recipeVersion" : "intervention.1",
 }
 ```
 
