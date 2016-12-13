@@ -3,14 +3,13 @@ Revision: 1.3
 
 ## Purpose
 This activity records a user logging in to a VLE.
-## Definition
 
 ### Actor
-Common entity identifier:  ActorA, as defined on the [common structures](../common_structures.md#actora) page.
+Common entity identifier: Common entity identifier: [ActorA](../common_structures.md#actora)
 
+#### Entity Example:
 The actor entity identifies the individual that is logging in to the system.
 
-#### Example:
 ``` Javascript
 "actor": {
   "objectType": "Agent",
@@ -23,11 +22,11 @@ The actor entity identifies the individual that is logging in to the system.
 ```
 
 ### Verb
-Common entity identifier: VerbA, as defined on the [common structures](../common_structures.md#verba) page.
+Common entity identifier: [VerbA](../common_structures.md#verba)
 
-This recipe uses the [logged in](/vocabulary.md#verbs) verb to describe the action of logging into a platform.
+#### Entity Example:
+This verb, [logged in](/vocabulary.md#verbs), describes the action of logging into a platform.
 
-#### Example
 ``` javascript
 "verb": {
   "id": "https://brindlewaye.com/xAPITerms/verbs/loggedin",
