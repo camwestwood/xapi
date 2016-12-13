@@ -14,9 +14,9 @@ This recipe records an intervention taking place, it is a record of an act by a 
 
 
 ### Actor
-Common entity identifier: Common entity identifier: [ActorB](../common_structures.md#actorb) (todo)
+Common entity identifier: Common entity identifier: [ActorA](../common_structures.md#actora) 
  
-The actor is an instructor or service making the intervention
+The actor is an instructor or service creating the intervention.
 
 #### Entity Example A:
 In this example it is the instructor that sends the intervention.
