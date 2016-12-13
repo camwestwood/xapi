@@ -115,11 +115,11 @@ For the graded recipe, the context.contextActivities is property with a ‘group
             ]
         },
 		
-		"instructor": {
+	"instructor": {
             "objectType": "Agent",
-            "name": "instructor",
+            "name": "Ray Keenan",
             "account": {
-                "name": "Ray Keenan",
+                "name": "RKeenan",
                 "homePage": "http://localhost/moodle"
             },
         
