@@ -88,13 +88,13 @@ A list of verbs can be found at the bottom of this recipe (To be moved to the vo
             } 
         },
         "object": {
-            "objectType": "Activity",
-            "id":"http://example.com/website",
-            "definition": { 
-                "name" : {
-                    "en-US":"Some Awesome Website"
-                }
-            }
+            "objectType": "Agent",
+		"name": "Joe Blogs",
+		"account": {
+			"name": "Jblogs9",
+			"homePage": "http://localhost/moodle"
+        		},
+            	}
         }
 ```
 
