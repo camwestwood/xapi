@@ -88,31 +88,16 @@ A list of verbs can be found at the bottom of this recipe (To be moved to the vo
             } 
         },
         "object": {
-            "objectType": "Agent",
-		"name": "Joe Blogs",
-		"account": {
-			"name": "Jblogs9",
-			"homePage": "http://localhost/moodle"
-        		},
-            	}
+           "objectType": "Agent",
+	   "name": "Joe Blogs",
+	   "account": {
+		"name": "Jblogs9",
+		"homePage": "http://localhost/moodle"
+        	},
+            }
         }
 ```
 
-#### Entity Example
-
-In this case, object is the person that the intervention is acted upon. It is usually the student.
-
-``` Javascript
-{
-    "object": {
-        "objectType": "Agent",
-        "name": "John Smith",
-        "account": {
-            "name": "2",
-            "homePage": "https://courses.alpha.jisc.ac.uk/moodle"
-        }
-    },
-```
 
 ### Context
 
