@@ -8,7 +8,9 @@ This recipe records an intervention taking place.
 The following previous candidates can be found:
 
 [Candidate A](intervention_candidate_a.md)
+
 [Candidate B](intervention_candidate_b.md)
+
 [Candidate C](intervention_candidate_c.md)
 
 Notes from the development chat can be found on [issue 130](https://github.com/jiscdev/xapi/issues/130)
