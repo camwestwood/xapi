@@ -1,4 +1,4 @@
-#intervention Release Candidate Recipe
+#intervention (Student performing activity) Recipe
 Revision: 0.1 
 
 ## Purpose
@@ -8,7 +8,9 @@ This recipe records a student taking part in an activity in response to an inter
 The following previous candidates can be found:
 
 [Candidate A](intervention_candidate_a.md)
+
 [Candidate B](intervention_candidate_b.md)
+
 [Candidate C](intervention_candidate_c.md)
 
 Notes from the development chat can be found on [issue 130](https://github.com/jiscdev/xapi/issues/130)
@@ -25,7 +27,7 @@ In this draft the following approach has been taken:
 
 ### Actor
 
-The actor is student.
+The actor is student performing an activity.
  
 #### Entity Example:
 In this example it is the student who is doing something in response to an intervention.
@@ -44,7 +46,7 @@ In this example it is the student who is doing something in response to an inter
 
 ### Verb
 
-The verb, depends on the intervention activity taking place. A list of verbs describing interventions and related recipes can be found at the bottom of this recipe page (to be moved to vocab after draft). In this example the student attended a revision module. 
+The verb, depends on the intervention activity taking place. A list of verbs describing interventions and any related recipes can be found at the bottom of this recipe page (to be moved to vocab after draft). In this example the student attended a revision module. 
 
 ''' javascript
 "verb": {
@@ -94,7 +96,7 @@ context includes the version number of this recipe.
 context.contextActivies is of type category is tells us that this statement is related to intervention activities. (required if intervention)
 context.platform is set to the platform tracking this activity. (optional)
 context.extension.interventionId is any id or ticket number used by the system to identify the intervention this was a part of (optional)
-context.tutor may be used to identify an involed tutor
+context.tutor may be used to identify an involed tutor (optional)
 
 ``` javascript
 "context": {
