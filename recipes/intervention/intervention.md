@@ -1,4 +1,4 @@
-#intervention Release Candidate Recipe
+#intervention Recipe
 Revision: 0.1 
 
 ## Purpose
@@ -13,9 +13,7 @@ The following previous candidates can be found:
 
 [Candidate C](intervention_candidate_c.md)
 
-Notes from the development chat can be found on [issue 130](https://github.com/jiscdev/xapi/issues/130)
-
-In this draft the following approach has been taken:
+Notes from the development chat can be found on [issue 130](https://github.com/jiscdev/xapi/issues/130). In this draft the following approach has been taken:
 
 - The actor can be the alerting system/tutor. The [sister recipe](intervention_student) describes a recipe where student is the actor.
 - Specific verbs are used in the verb entity to describe the intervention
@@ -27,9 +25,10 @@ In this draft the following approach has been taken:
 
 ### Actor
 
-The actor is an instructor or service creating the intervention. 
+The actor is an instructor or service creating the intervention. If the recipe needs a student performing an activity as part of an intervention then see [Intervention student activity](intervention_student)
  
 #### Entity Example:
+
 In this example it is the instructor that sends the intervention.
 
 ``` Javascript
@@ -61,7 +60,7 @@ The verb, depends on the intervention taking place. A list of verbs describing i
 
 ### Object
 
-In this case, object is the person that the intervention is acted upon. It is usually the student.
+Object is the person that the intervention is acted upon. It is usually the student.
 
 ``` Javascript
 {
@@ -109,14 +108,6 @@ context.extensions.interventionId is any id or ticket number used by the system 
 <tr><th align="left">Verb</th><td>Interviewed</td></tr>
 <tr><th align="left">Description</th><td>For use when one agent or group interviews another agent or group. It could be used for the purposes of hiring, creating news articles, shows, research, etc.</td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://id.tincanapi.com/verb/interviewed">http://id.tincanapi.com/verb/interviewed</a> </td></tr>
-<tr><th align="left">Recipe Example</th><td> <a href="recipes/intervention.md#verb">Intervention</a> </td></tr>
-</table>
-
-### Mentored
-<table>
-<tr><th align="left">Verb</th><td>Mentored</td></tr>
-<tr><th align="left">Description</th><td>Indicates that that the actor has mentored the object. For instance, a manager mentoring an employee, or a teacher mentoring a student. </td></tr>
-<tr><th align="left">IRI</th><td> <a href="http://id.tincanapi.com/verb/mentored">http://id.tincanapi.com/verb/mentored</a> </td></tr>
 <tr><th align="left">Recipe Example</th><td> <a href="recipes/intervention.md#verb">Intervention</a> </td></tr>
 </table>
 
