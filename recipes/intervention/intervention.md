@@ -15,7 +15,7 @@ Notes from the development chat can be found on [issue 130](https://github.com/j
 
 In this draft the following approach has been taken:
 
-- The actor can be the alerting system/tutor OR student. The [sister recipe](intervention_student) describes student actions in a recipe.
+- The actor can be the alerting system/tutor. The [sister recipe](intervention_student) describes a recipe where student is the actor.
 - Specific verbs are used in the verb entity to describe the intervention
 - System information is added to the recipe. This helps the ' splitting of data pertaining to activity' 
 - context.contextActivities 'tags' this as an intervention recipe
@@ -82,7 +82,7 @@ Common entity identifier: Context*
 context includes the version number of this recipe. 
 context.contextActivies is of type category is tells us that this statement is related to intervention activities. (required if intervention)
 context.platform is set to the platform tracking this activity. (optional)
-The identificationId is any id or ticket number used by the system to identify the intervention this was a part of (optional)
+context.extensions.interventionId is any id or ticket number used by the system to identify the intervention this was a part of (optional)
 
 ``` javascript
 "context": {
@@ -96,7 +96,7 @@ The identificationId is any id or ticket number used by the system to identify t
     "platform": "Student Information Desk", 
 	"extensions": {
 		"http://xapi.jisc.ac.uk/recipeVersion" : "intervention.1",
-		"http://xapi.jisc.ac.uk/IdentificationId":"38223",
+		"http://xapi.jisc.ac.uk/interventionId":"38223",
 		}
 ```
 
