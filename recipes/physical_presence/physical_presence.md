@@ -67,6 +67,16 @@ The object defines the activity of being at the place. Institutions should talk 
 	}
 ```
 
+### Timestamp
+
+
+#### Entity Example:
+The timestamp defines the time at which the actor arrived at the location.
+
+``` javascript
+"timestamp": "2012-07-05T18:30:32.360Z",
+```
+
 ### Context
 
 Common entity identifier: Context*
@@ -74,9 +84,11 @@ Common entity identifier: Context*
 #### Entity Example:
 
 The context includes the version number of this recipe.
+context.platform defines the platform that captures the presence.
 
 ``` javascript
 "context": {
+  "platform": "WiFi Access Logs", //this isn't really a platform is it?
   "extensions": {
     "http://xapi.jisc.ac.uk/recipeVersion" : "physical_presence0.1",
   }

@@ -58,18 +58,28 @@ The object defines the activity of leaving the place. Institutions should talk t
 	}
 ```
 
+### Timestamp
+
+
+#### Entity Example:
+The timestamp defines the time at which the actor left the location.
+
+``` javascript
+"timestamp": "2012-07-05T18:30:32.360Z",
+```
+
 ### Context
 Common entity identifier: Context*
 
 #### Context Example:
 The context includes the version number of this recipe.
+context.platform defines the platform that captures the presence.
 
-
-
-The context includes the version number of this.
 
 ``` javascript
 "context": {
+
+  "platform": "WiFi Access Logs", //this isn't really a platform is it?
   "extensions": {  
     "http://xapi.jisc.ac.uk/recipeVersion" : "leave_physical_presence0.1",
   }
