@@ -49,14 +49,14 @@ In this example it is the student who is doing something in response to an inter
 
 The verb, depends on the intervention activity taking place. A list of verbs describing interventions and any related recipes can be found at the bottom of this recipe page (to be moved to vocab after draft). In this example the student attended a revision module. 
 
-''' javascript
+``` javascript
 "verb": {
         "id": "http://adlnet.gov/expapi/verbs/attended",
         "display": {
             "en": "attended"
         }
     }
-'''
+``` 
  
 
 #### Entity Example:
@@ -117,6 +117,7 @@ context.tutor may be used to identify an involed tutor (optional)
 
 ## Full Example
 
+``` javascript
 {
 	"actor": {
 		"objectType": "Agent",
@@ -169,6 +170,7 @@ context.tutor may be used to identify an involed tutor (optional)
 
 	"id": "12345678-1234-5678-1234-567812345678"
 }
+```
 
 ## Intervention Verbs / Recipes
 Verbs with their own recipes may be helpful.
