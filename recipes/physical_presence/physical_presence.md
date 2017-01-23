@@ -127,13 +127,6 @@ context.platform defines the platform that captures the presence.
 		}
 	},
 	"context": {
-		"contextActivities": {
-			"category": [{
-				"objectType": "Activity",
-				"id": "http://xapi.jisc.ac.uk/activities/intervention"
-			}]
-		},
-		"platform": "Student Information Desk",
 		"extensions": {
 			"http://xapi.jisc.ac.uk/recipeVersion": "intervention.1",
 			"http://xapi.jisc.ac.uk/interventionId": "38223",
