@@ -129,7 +129,7 @@ context.platform defines the platform that captures the presence.
 	"context": {
 		"extensions": {
 			"http://xapi.jisc.ac.uk/recipeVersion": "physical_presence.1",
-			"http://xapi.jisc.ac.uk/logPlatform": "Student Information Desk"
+			"http://xapi.jisc.ac.uk/logPlatform": "WiFi access logs"
 		}
 	},
 	"timestamp": "2012-07-05T18:30:32.360Z",

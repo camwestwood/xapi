@@ -68,6 +68,49 @@ The timestamp defines the time at which the actor left the location.
 "timestamp": "2012-07-05T18:30:32.360Z",
 ```
 
+
+## Full Example
+
+``` javascript
+
+{
+	"actor": {
+		"objectType": "Agent",
+		"name": "John Smith",
+		"account": {
+			"name": "jsmith12",
+			"homePage": "https://courses.alpha.jisc.ac.uk/moodle"
+		}
+	},
+	"verb": {
+		"id": "http://activitystrea.ms/schema/1.0/leave"",
+		"display": {
+			"en": "left"
+		}
+	},
+	"object": {
+		"objectType": "Activity",
+		"id": "http://locations.university.ac.uk/library/5328",
+		"definition": {
+			"type": "http://activitystrea.ms/schema/1.0/place",
+			"name": {
+				"en": "Library"
+
+			}
+		}
+	},
+	"context": {
+		"extensions": {
+			"http://xapi.jisc.ac.uk/recipeVersion": "physical_presence_leaving.1",
+			"http://xapi.jisc.ac.uk/logPlatform": "WiFi access logs"
+		}
+	},
+	"timestamp": "2012-07-05T18:30:32.360Z",
+	"id": "12345678-1234-5678-1234-567812345678"
+}
+
+```
+
 ### Context
 Common entity identifier: Context*
 
