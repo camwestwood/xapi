@@ -27,7 +27,7 @@ These are the currently platform independent documented recipes:
 
 <table>
 <tr><th align="left">Statement Recipe              </th><td>Example Statement                                     </td><td>Statement Generation Notes</td><td>Groupings</td></tr>
-<tr><th align="left">[Logged in] (recipes/login.md)</th><td> [Logged In Moodle statement](vle/moodle/login.js)<br/>[Logged In Blackboard statement](vle/blackboard/loggedin.json)     </td><td>VLE Plugin                </td><td>           </td></tr>                                                           
+<tr><th align="left"><a href = "recipes/login.md">Logged in</a></th><td> [Logged In Moodle statement](vle/moodle/login.js)<br/>[Logged In Blackboard statement](vle/blackboard/loggedin.json)     </td><td>VLE Plugin                </td><td>           </td></tr>                                                           
 <tr><th align="left">[Logged out] (recipes/logout.md)</th><td> [Logged Out Moodle statement](vle/moodle/logout.js) <br/> [Logged Out Blackboard statement](vle/blackboard/loggedout.json)    </td><td>VLE Plugin                </td><td>           </td></tr>    
 <tr><th align="left">[VLE resource viewed] (recipes/Module-View.md)</th><td> [Moodle Module Viewed](vle/moodle/moduleview.js) <br/> [Blackboard Course Access](vle/blackboard/course_access.json)<br/> [Blackboard course_content_access.json](vle/blackboard/login.json)     </td><td>VLE Plugin                </td><td>           </td></tr>    
 <tr><th align="left">[Session timeout] (recipes/Session-timeout.md)</th><td>[Blackboard session timeout statement](vle/blackboard/session_timeout.json)    </td><td>VLE Plugin                </td><td>           </td></tr>    
