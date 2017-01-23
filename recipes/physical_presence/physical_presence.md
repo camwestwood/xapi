@@ -128,8 +128,7 @@ context.platform defines the platform that captures the presence.
 	},
 	"context": {
 		"extensions": {
-			"http://xapi.jisc.ac.uk/recipeVersion": "intervention.1",
-			"http://xapi.jisc.ac.uk/interventionId": "38223",
+			"http://xapi.jisc.ac.uk/recipeVersion": "physical_presence.1",
 			"http://xapi.jisc.ac.uk/logPlatform": "Student Information Desk"
 		}
 	},
@@ -137,4 +136,4 @@ context.platform defines the platform that captures the presence.
 	"id": "12345678-1234-5678-1234-567812345678"
 }
 
-``'
+```
