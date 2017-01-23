@@ -98,7 +98,7 @@ context.platform defines the platform that captures the presence.
 
 ## Full Example
 
-''' Javascript
+``` javascript
 
 {
 	"actor": {
@@ -143,3 +143,5 @@ context.platform defines the platform that captures the presence.
 	"timestamp": "2012-07-05T18:30:32.360Z",
 	"id": "12345678-1234-5678-1234-567812345678"
 }
+
+``'
