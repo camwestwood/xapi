@@ -104,7 +104,7 @@ context.extensions.interventionId is any id or ticket number used by the system 
 ### Full Example
 
 
-''' javascript
+``` javascript
 
 {
     "actor": {
@@ -146,7 +146,7 @@ context.extensions.interventionId is any id or ticket number used by the system 
     },
     "id": "12345678-1234-5678-1234-567812345678"
 }
-'''
+``` 
 
 ## Intervention Verbs
 
