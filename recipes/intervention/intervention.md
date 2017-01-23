@@ -1,8 +1,8 @@
-#intervention Recipe
+# intervention Recipe
 Revision: 0.1 
 
 ## Purpose
-This recipe records an intervention taking place.
+This recipe records an intervention taking place. Interventions can be any learning activity, in this example an interview has taken place. The context is used to show that an intervention has taken place.
 
 ## Draft Notes
 The following previous candidates can be found:
@@ -17,7 +17,7 @@ Notes from the development chat can be found on [issue 130](https://github.com/j
 
 - The actor can be the alerting system/tutor. The [sister recipe](intervention_student) describes a recipe where student is the actor.
 - Specific verbs are used in the verb entity to describe the intervention
-- System information is added to the recipe. This helps the ' splitting of data pertaining to activity' 
+-  The reporting system information is added to the recipe. This helps the ' splitting of data pertaining to activity'. context.platform is not used because the platform is used for reporting (context.platform cannot be set if object is statement or group)
 - context.contextActivities 'tags' this as an intervention recipe
 - ticket numbers are stored in the context
 - The lost of verbs needs expanding by the community
@@ -100,6 +100,53 @@ context.extensions.interventionId is any id or ticket number used by the system 
 		"http://xapi.jisc.ac.uk/interventionId":"38223",
 		}
 ```
+
+### Full Example
+
+
+''' javascript
+
+{
+    "actor": {
+        "objectType": "Agent",
+        "name": "Ray Keenan",
+        "account": {
+            "name": "rkeenan12",
+            "homePage": "http://localhost/moodle"
+        }
+    },
+    "verb": {
+        "id": "http://id.tincanapi.com/verb/interviewed",
+        "display": {
+            "en": "Interviewed"
+        }
+    },
+    "object": {
+        "objectType": "Agent",
+        "name": "John Smith",
+        "account": {
+            "name": "2",
+            "homePage": "https://courses.alpha.jisc.ac.uk/moodle"
+        }
+    },
+    "context": {
+        "contextActivities": {
+            "category": [
+                {
+                    "objectType": "Activity",
+                    "id": "http://xapi.jisc.ac.uk/activities/intervention"
+                }
+            ]
+        },
+        "extensions": {
+            "http://xapi.jisc.ac.uk/recipeVersion": "intervention.1",
+            "http://xapi.jisc.ac.uk/interventionId": "38223",
+            "http://xapi.jisc.ac.uk/logPlatform": "Student Information Desk"
+        }
+    },
+    "id": "12345678-1234-5678-1234-567812345678"
+}
+'''
 
 ## Intervention Verbs
 

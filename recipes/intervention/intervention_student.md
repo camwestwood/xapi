@@ -2,7 +2,8 @@
 Revision: 0.1 
 
 ## Purpose
-This recipe records a student taking part in an activity in response to an intervention
+This recipe records an intervention taking place. Interventions can be any learning activity, in this example an interview has taken place. The context is used to show that an intervention has taken place, particly the context.contextActivities.Catergory http://xapi.jisc.ac.uk/activities/intervention
+
 
 ## Draft Notes
 The following previous candidates can be found:
@@ -114,13 +115,67 @@ context.tutor may be used to identify an involed tutor (optional)
 		}
 ```
 
+## Full Example
+
+{
+	"actor": {
+		"objectType": "Agent",
+		"name": "Ray Keenan",
+		"account": {
+			"name": "rkeenan12",
+			"homePage": "http://localhost/moodle"
+		}
+	},
+	"verb": {
+		"id": "http://adlnet.gov/expapi/verbs/attended",
+		"display": {
+			"en": "attended"
+		}
+	},
+	"object": {
+		"objectType": "Activity",
+		"id": "http://wicketkeeper.poppleton.ac.uk/modules/2016/sem1/rev101/rlecture1",
+		"definition": {
+			"type": "http://activitystrea.ms/schema/1.0/event",
+			"name": {
+				"en": "Lecture"
+			},
+			"description": {
+				"en": "Revision class"
+			}
+		}
+
+
+	},
+
+	"context": {
+		"contextActivities": {
+			"category": [{
+				"objectType": "Activity",
+				"id": "http://xapi.jisc.ac.uk/activities/intervention"
+			}]
+		},
+
+		"platform": "Student Information Desk",
+		"extensions": {
+			"http://xapi.jisc.ac.uk/recipeVersion": "intervention.1",
+			"http://xapi.jisc.ac.uk/interventionId": "38223",
+			"http://xapi.jisc.ac.uk/logPlatform": "Student Information Desk"
+		}
+
+
+
+	},
+
+	"id": "12345678-1234-5678-1234-567812345678"
+}
+
 ## Intervention Verbs / Recipes
 Verbs with their own recipes may be helpful.
 
 
 ### Attended
 (attendence Recipe)[]
-
 
 <table>
 <tr><th align="left">Verb</th><td>Attended</td></tr>

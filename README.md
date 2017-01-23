@@ -1,6 +1,6 @@
-#xAPI recipes for the Jisc Learning Analytics Project v0.6
+# xAPI recipes for the Jisc Learning Analytics Project v0.6
 
-##Repository Workflow
+## Repository Workflow
 The simplest way of contributing xAPI recipes works as follows:
 
 1. add an issue to the issue tracker to alert everyone to what you are working on and why
@@ -18,10 +18,10 @@ If the need arises, particular versions will get their own branches, but until t
 * [Vocabulary](vocabulary.md) gives the IRIs and definitions for verbs, activity types, etc, as well as for extensions used in the recipes.
 * [Common Structures](common_structures.md) outlines common patterns used across different recipes.
 
-# Recipes
+# Statement Recipes
 As far as possible all entities are the same across recipes and are identified by a version.
 
-## VLE examples
+## VLE Statements
 These are the currently platform independent documented recipes:
 
 * [Logged in] (recipes/login.md)
@@ -36,20 +36,20 @@ These are the currently platform independent documented recipes:
 * [Blackboard VLE samples] (vle/blackboard/Examples.md)
 * [Moodle VLE samples] (vle/moodle/examples.md)
 
-## Draft
-The following draft recipes are under discussion, you can contribute to these by leaving a issue to the tracker.  
+## Intervention Statements
 
 * [Intervention recipe A](recipes/intervention/intervention_candidate_a.md)
 * [Intervention recipe B](recipes/intervention/intervention_candidate_b.md)
 * [Intervention recipe C](recipes/intervention/intervention_candidate_c.md)
 
+## Physical Presence Statements
 * [Physical presence ](recipes/physical_presence/physical_presence.md)
 * [Physical presence (left)](recipes/physical_presence/physical_presence_leaving.md)
-
-
-* [Library examples](https://github.com/jiscdev/xapi/tree/ds10-recipedev)(In development branch)
-
 
 ## Predictive Model Output
 * [Alerting JSON] (/lap/apereo/model_output.js)
 * [Alerting] (/lap/apereo/model_output.md)
+
+## Statements In Draft
+* [Library examples](https://github.com/jiscdev/xapi/tree/ds10-recipedev)(In development branch)
+
