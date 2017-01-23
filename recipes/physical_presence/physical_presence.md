@@ -88,9 +88,58 @@ context.platform defines the platform that captures the presence.
 
 ``` javascript
 "context": {
-  "platform": "WiFi Access Logs", //this isn't really a platform is it?
   "extensions": {
     "http://xapi.jisc.ac.uk/recipeVersion" : "physical_presence0.1",
+	"http://xapi.jisc.ac.uk/logPlatform": "WiFi Access Logs"
   }
 }
 ```
+
+
+## Full Example
+
+''' Javascript
+
+{
+	"actor": {
+		"objectType": "Agent",
+		"name": "John Smith",
+		"account": {
+			"name": "jsmith12",
+			"homePage": "https://courses.alpha.jisc.ac.uk/moodle"
+		}
+	},
+	"verb": {
+		"id": "http://activitystrea.ms/schema/1.0/at",
+		"display": {
+			"en": "at"
+		}
+	},
+	"object": {
+		"objectType": "Activity",
+		"id": "http://locations.university.ac.uk/library/5328",
+		"definition": {
+			"type": "http://activitystrea.ms/schema/1.0/place",
+			"name": {
+				"en": "Library"
+
+			}
+		}
+	},
+	"context": {
+		"contextActivities": {
+			"category": [{
+				"objectType": "Activity",
+				"id": "http://xapi.jisc.ac.uk/activities/intervention"
+			}]
+		},
+		"platform": "Student Information Desk",
+		"extensions": {
+			"http://xapi.jisc.ac.uk/recipeVersion": "intervention.1",
+			"http://xapi.jisc.ac.uk/interventionId": "38223",
+			"http://xapi.jisc.ac.uk/logPlatform": "Student Information Desk"
+		}
+	},
+	"timestamp": "2012-07-05T18:30:32.360Z",
+	"id": "12345678-1234-5678-1234-567812345678"
+}
