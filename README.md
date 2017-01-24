@@ -26,21 +26,19 @@ As far as possible all entities are the same across recipes and are identified b
 These are the currently platform independent documented recipes:
 
 <table>
-<tr>Statement Recipe              <td>Example Statements                                     </td><td>Statement Generation Notes</td><td>Groupings</td></tr>
-<tr> <a href = "recipes/login.md">Logged in</a><td> <a href = "vle/moodle/login.js">Logged in Moodle Statement</a> <br/><a href = "vle/blackboard/loggedin.json"> Logged In Blackboard statement  </a>   </td><td>VLE Plugin                </td><td>           </td></tr>                                                           
-<tr> <a href = "recipes/logout.md>Logged out"</a><td> <a href = "vle/moodle/logout.js">Logged Out Moodle statement</a>  <br/> <a href = "vle/blackboard/loggedout.json"> Logged Out Blackboard statement  </a>    </td><td>VLE Plugin                </td><td>           </td></tr>    
-<tr> <a href = "recipes/Module-View.md">VLE resource viewed   </a><td><a href = "vle/moodle/moduleview.js">Moodle Module Viewed </a> <br/> <a href = "vle/blackboard/course_access.json"> Blackboard Course Access  </a> <br/> <a href="/vle/blackboard/login.json">Blackboard course_content_access.json</a>     </td><td>VLE Plugin                </td><td>           </td></tr>    
-<tr> <a href = "recipes/Session-timeout.md">Session timeout   </a><td><a href = "vle/blackboard/session_timeout.json">Blackboard session timeout </a>    </td><td>VLE Plugin                </td><td>           </td></tr>    
-<tr> <a href = "recipes/assignment-graded.md">Assignment Graded   </a><td> <a href = "vle/moodle/assignment_graded.json">Assignment submitted In Moodle</a><br/> <a http="vle/blackboard/assignment_submitted.json">Assignment submitted In Blackboard </a>   </td><td>VLE Plugin                </td><td>           </td></tr>    
-<tr> <a href = "recipes/assignment-submitted.md">Assignment Submitted  </a><td><a href = "vle/moodle/assignment_submitted.json">Assignment graded in Moodle</a><br/> <a href="vle/blackboard/assignment_graded.json">Assignment graded in Blackboard statement></a>   </td><td>VLE Plugin                </td><td>           </td></tr>    
+<tr><td>Statement Recipe</td>
+            <td>Example Statements                                     </td><td>Statement Generation Notes</td><td>Groupings</td></tr>
 
-
+<tr><td> <a href = "recipes/login.md">Logged in</a></td>
+<td> <a href = "vle/moodle/login.js">Logged in Moodle Statement</a> <br/><a href = "vle/blackboard/loggedin.json"> Logged In Blackboard statement  </a>   </td><td>VLE Plugin                </td><td>           </td></tr>                                                           
+<tr><td> <a href = "recipes/logout.md>Logged out"></a></td><td> <a href = "vle/moodle/logout.js">Logged Out Moodle statement</a>  <br/> <a href = "vle/blackboard/loggedout.json"> Logged Out Blackboard statement  </a>    </td><td>VLE Plugin                </td><td>           </td></tr>    
+<tr><td> <a href = "recipes/Module-View.md">VLE resource viewed   </a></td><td><a href = "vle/moodle/moduleview.js">Moodle Module Viewed </a> <br/> <a href = "vle/blackboard/course_access.json"> Blackboard Course Access  </a> <br/> <a href="/vle/blackboard/login.json">Blackboard course_content_access.json</a>     </td><td>VLE Plugin                </td><td>           </td></tr>    
+<tr><td> <a href = "recipes/Session-timeout.md">Session timeout   </a></td><td><a href = "vle/blackboard/session_timeout.json">Blackboard session timeout </a>    </td><td>VLE Plugin                </td><td>           </td></tr>    
+<tr><td><a href = "recipes/assignment-graded.md">Assignment Graded   </a></td><td> <a href = "vle/moodle/assignment_graded.json">Assignment submitted In Moodle</a><br/> <a http="vle/blackboard/assignment_submitted.json">Assignment submitted In Blackboard </a>   </td><td>VLE Plugin                </td><td>           </td></tr>    
+<tr> <td><a href = "recipes/assignment-submitted.md">Assignment Submitted  </a></td><td><a href = "vle/moodle/assignment_submitted.json">Assignment graded in Moodle</a><br/> <a href="vle/blackboard/assignment_graded.json">Assignment graded in Blackboard statement></a>   </td><td>VLE Plugin                </td><td>           </td></tr>    
 </table>
 
-
-
-
-### Specific VLE examples
+### All VLE statement examples
 * [Blackboard VLE samples] (vle/blackboard/Examples.md)
 * [Moodle VLE samples] (vle/moodle/examples.md)
 
