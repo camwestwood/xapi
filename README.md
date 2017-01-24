@@ -28,11 +28,11 @@ These are the currently platform independent documented recipes:
 <table>
 <tr><td>Statement Recipe</td><td>Example Statements</td><td>Statement Generation Notes</td><td>Groupings</td></tr>
 <tr><td> <a href = "recipes/login.md">Logged in</a></td><td> <a href = "vle/moodle/login.js">Logged in Moodle </a> <br/><a href = "vle/blackboard/loggedin.json"> Logged In Blackboard   </a>   </td><td>VLE Plugin                </td><td>           </td></tr>                                                           
-<tr><td> <a href = "recipes/logout.md>Logged out">Logged out</a></td><td> <a href = "vle/moodle/logout.js">Logged Out Moodle </a>  <br/> <a href = "vle/blackboard/loggedout.json"> Logged Out Blackboard   </a>    </td><td>VLE Plugin                </td><td>           </td></tr>    
-<tr><td> <a href = "recipes/Module-View.md">VLE resource viewed   </a></td><td><a href = "vle/moodle/moduleview.js">Moodle Module Viewed </a> <br/> <a href = "vle/blackboard/course_access.json"> Blackboard Course Access  </a> <br/> <a href="course_content_access.json">Blackboard Content accessed</a>     </td><td>VLE Plugin                </td><td>           </td></tr>    
+<tr><td> <a href = "recipes/logout.md>Logged out">Logged out</a></td><td> <a href = "vle/moodle/logout.js">Logged out Moodle </a>  <br/> <a href = "vle/blackboard/loggedout.json"> Logged out Blackboard   </a>    </td><td>VLE Plugin                </td><td>           </td></tr>    
+<tr><td> <a href = "recipes/Module-View.md">VLE resource viewed   </a></td><td><a href = "vle/moodle/moduleview.js">Moodle module viewed </a> <br/> <a href = "vle/blackboard/course_access.json"> Blackboard course acccess  </a> <br/> <a href="vle/blackboard/course_content_access.json">Blackboard content accessed</a>     </td><td>VLE Plugin                </td><td>           </td></tr>    
 <tr><td> <a href = "recipes/Session-timeout.md">Session timeout   </a></td><td><a href = "vle/blackboard/session_timeout.json">Blackboard session timeout </a>    </td><td>VLE Plugin                </td><td>           </td></tr>    
-<tr><td><a href = "recipes/assignment-graded.md">Assignment Graded   </a></td><td> <a href = "vle/moodle/assignment_graded.json">Assignment graded in Moodle</a><br/> <a href="vle/blackboard/assignment_graded.json">Assignment graded in Blackboard </a>   </td><td>VLE Plugin                </td><td>           </td></tr>    
-<tr><td><a href = "recipes/assignment-submitted.md">Assignment Submitted  </a></td><td><a href = "vle/moodle/assignment_submitted.json">Assignment submitted in Moodle</a><br/> <a href="vle/blackboard/assignment_submitted.json">Assignment submitted in Blackboard></a>   </td><td>VLE Plugin                </td><td>           </td></tr>    
+<tr><td><a href =  "recipes/assignment-graded.md">Assignment Graded   </a></td><td> <a href = "vle/moodle/asssignment_graded.json">Assignment graded in Moodle</a><br/> <a href="vle/blackboard/asssignment_graded.json">Assignment graded in Blackboard </a>   </td><td>VLE Plugin                </td><td>           </td></tr>    
+<tr><td><a href =  "recipes/assignment-submitted.md">Assignment Submitted  </a></td><td><a href = "vle/moodle/assignment_submitted.json">Assignment submitted in Moodle</a><br/> <a href="vle/blackboard/assignment_submitted.json">Assignment submitted in Blackboard</a>   </td><td>VLE Plugin                </td><td>           </td></tr>    
 </table>
 
 ### All VLE statement examples
@@ -40,16 +40,32 @@ These are the currently platform independent documented recipes:
 * [Moodle VLE samples] (vle/moodle/examples.md)
 
 ## Intervention Statements
+An intervention statement describes a learning activity that taken place as part of an intervention. Two examples are given, with the student actor as different entities.
 
+<table>
+<tr><td>Statement Recipe</td><td>Example Statements</td><td>Statement Generation Notes</td><td>Groupings</td></tr>
+<tr><td> <a href = "recipes/intervention/intervention.md">Intervention Example 1. Student is object.</a></td><td> <a href = "recipes/intervention/intervention.md#Statement">Logged in Moodle </a> <br/><a href = "vle/blackboard/loggedin.json"> Logged In Blackboard   </a>   </td><td>TSV Upload                </td><td>           </td></tr>                                                           
+<tr><td> <a href = "recipes/intervention/intervention_student.md>Intervention Example 2. Student is actor./a></td><td> <a href = "recipes/intervention/intervention_student.md#Statement">Logged out Moodle </a>  <br/> <a href = "vle/blackboard/loggedout.json"> Logged out Blackboard   </a>    </td><td>TSV Upload                </td><td>           </td></tr>    
+</table>
+
+### Draft Candidates to be removed
 * [Intervention recipe A](recipes/intervention/intervention_candidate_a.md)
 * [Intervention recipe B](recipes/intervention/intervention_candidate_b.md)
 * [Intervention recipe C](recipes/intervention/intervention_candidate_c.md)
 
-<tr><th align="left"> <a href = "recipes/attendance.md">Attended learning activity   </a></th><td>  </td><td>VLE Plugin                </td><td>           </td></tr>    
+<table>
+<tr><td>Statement Recipe</td><td>Example Statements</td><td>Statement Generation Notes</td><td>Groupings</td></tr>
+<tr><td> <a href = "recipes/intervention/intervention.md">Intervention Example 1. Student is object.</a></td><td> <a href = "recipes/intervention/intervention.md#Statement">Intervention </a>   </td><td>TSV Upload                </td><td>           </td></tr>                                                           
+<tr><td> <a href = "recipes/intervention/intervention_student.md>Intervention Example 2. Student is actor./a></td><td> <a href = "recipes/intervention/intervention_student.md#Statement">Intervention ### </a>    </td><td>TSV Upload                </td><td>           </td></tr>    
+</table>
 
-## Physical Presence Statements
-* [Physical presence ](recipes/physical_presence/physical_presence.md)
-* [Physical presence (left)](recipes/physical_presence/physical_presence_leaving.md)
+## Presense and Attendence
+<table>
+<tr><td>Statement Recipe</td><td>Example Statements</td><td>Statement Generation Notes</td><td>Groupings</td></tr>
+<tr><td> <a href = "recipes/attendance.md">Attended learning activity </td>  </a></th><td>  </td><td>TSV Upload                </td><td>           </td></tr>    
+<tr><td> <a href = "recipes/physical_presence/physical_presence.md">At physical location</a> </td>  </a></td><td><a href = "recipes/physical_presence/physical_presence.md#Example">At physical location</a> </td>  </td><td>TSV Upload                </td><td>           </td></tr>    
+<tr><td> <a href = "recipes/physical_presence/physical_presence_leaving.md">Left physical location</a></td> <a href = "recipes/physical_presence/physical_presence.md#Example">At physical location </td> </a></td><td>  </td><td>TSV Upload                </td><td>           </td></tr>    
+
 
 ## Predictive Model Output
 * [Alerting JSON] (/lap/apereo/model_output.js)

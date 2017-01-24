@@ -96,7 +96,7 @@ context.platform defines the platform that captures the presence.
 ```
 
 
-## Full Example
+## Example
 
 ``` javascript
 

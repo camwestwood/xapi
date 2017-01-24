@@ -115,7 +115,7 @@ context.tutor may be used to identify an involed tutor (optional)
 		}
 ```
 
-## Full Example
+## Example
 
 ``` javascript
 {

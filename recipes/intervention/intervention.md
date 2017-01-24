@@ -101,7 +101,7 @@ context.extensions.interventionId is any id or ticket number used by the system 
 		}
 ```
 
-### Full Example
+### Example
 
 
 ``` javascript
