@@ -61,7 +61,7 @@ An intervention statement describes a learning activity that taken place as part
 <tr><td> <a href = "recipes/attendance.md">Attended learning activity </a></td><td>  </td><td>TSV Upload                </td><td>           </td></tr>    
 
 <tr><td> <a href = "recipes/physical_presence/physical_presence.md">At physical location</a> </td><td><a href = "recipes/physical_presence/physical_presence.md#example">At physical location</a> </td>  <td>TSV Upload                </td><td>           </td></tr>    
-<tr><td> <a href = "recipes/physical_presence/physical_presence_leaving.md">Left physical location</a></td><td> <a href = "recipes/physical_presence/physical_presence_leaving.md#example">Left physical location </a></td><td>TSV Upload                </td><td>           </td></tr>    
+<tr><td> <a href = "recipes/physical_presence/physical_presence_leaving.md">Left physical location (To be replaced with LRW Example)</a></td><td> <a href = "recipes/physical_presence/physical_presence_leaving.md#example">Left physical location (To be replaced with LRW Example) </a></td><td>TSV Upload                </td><td>           </td></tr>    
 </table>
 
 
