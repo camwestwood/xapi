@@ -44,8 +44,9 @@ An intervention statement describes a learning activity that taken place as part
 
 <table>
 <tr><td>Statement Recipe</td><td>Example Statements</td><td>Statement Generation Notes</td><td>Groupings</td></tr>
-<tr><td> <a href = "recipes/intervention/intervention.md">Intervention Example 1. Student is object.</a></td><td> <a href = "recipes/intervention/intervention.md#Statement">Logged in Moodle </a> <br/><a href = "vle/blackboard/loggedin.json"> Logged In Blackboard   </a>   </td><td>TSV Upload                </td><td>           </td></tr>                                                           
-<tr><td> <a href = "recipes/intervention/intervention_student.md>Intervention Example 2. Student is actor./a></td><td> <a href = "recipes/intervention/intervention_student.md#Statement">Logged out Moodle </a>  <br/> <a href = "vle/blackboard/loggedout.json"> Logged out Blackboard   </a>    </td><td>TSV Upload                </td><td>           </td></tr>    
+<tr><td> <a href = "recipes/intervention/intervention.md">Intervention Example 1. Student is object.</a></td><td> <a href = "recipes/intervention/intervention.md#Statement">Intervention (To be replaced with LRW Example) </a> </td><td>TSV Upload                </td><td>           </td></tr>      
+
+<tr><td> <a href = "recipes/intervention/intervention_student.md">Intervention Example 2. Student is actor.</a></td><td> <a href = "recipes/intervention/intervention_student.md#Statement"> Intervention (To be replaced with LRW Example) </a>    </td><td>TSV Upload                </td><td>           </td></tr>    
 </table>
 
 ### Draft Candidates to be removed
@@ -53,18 +54,12 @@ An intervention statement describes a learning activity that taken place as part
 * [Intervention recipe B](recipes/intervention/intervention_candidate_b.md)
 * [Intervention recipe C](recipes/intervention/intervention_candidate_c.md)
 
-<table>
-<tr><td>Statement Recipe</td><td>Example Statements</td><td>Statement Generation Notes</td><td>Groupings</td></tr>
-<tr><td> <a href = "recipes/intervention/intervention.md">Intervention Example 1. Student is object.</a></td><td> <a href = "recipes/intervention/intervention.md#Statement">Intervention </a>   </td><td>TSV Upload                </td><td>           </td></tr>                                                           
-<tr><td> <a href = "recipes/intervention/intervention_student.md>Intervention Example 2. Student is actor./a></td><td> <a href = "recipes/intervention/intervention_student.md#Statement">Intervention ### </a>    </td><td>TSV Upload                </td><td>           </td></tr>    
-</table>
-
 ## Presense and Attendence
 <table>
 <tr><td>Statement Recipe</td><td>Example Statements</td><td>Statement Generation Notes</td><td>Groupings</td></tr>
-<tr><td> <a href = "recipes/attendance.md">Attended learning activity </td>  </a></th><td>  </td><td>TSV Upload                </td><td>           </td></tr>    
+<tr><td> <a href = "recipes/attendance.md">Attended learning activity </a></td><td>  </td><td>TSV Upload                </td><td>           </td></tr>    
 <tr><td> <a href = "recipes/physical_presence/physical_presence.md">At physical location</a> </td>  </a></td><td><a href = "recipes/physical_presence/physical_presence.md#Example">At physical location</a> </td>  </td><td>TSV Upload                </td><td>           </td></tr>    
-<tr><td> <a href = "recipes/physical_presence/physical_presence_leaving.md">Left physical location</a></td> <a href = "recipes/physical_presence/physical_presence.md#Example">At physical location </td> </a></td><td>  </td><td>TSV Upload                </td><td>           </td></tr>    
+<tr><td> <a href = "recipes/physical_presence/physical_presence_leaving.md">Left physical location</a></td><td> <a href = "recipes/physical_presence/physical_presence.md#Example">At physical location </a></td><td>  </td><td>TSV Upload                </td><td>           </td></tr>    
 
 
 ## Predictive Model Output
