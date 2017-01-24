@@ -57,8 +57,10 @@ An intervention statement describes a learning activity that taken place as part
 ## Presense and Attendence
 <table>
 <tr><td>Statement Recipe</td><td>Example Statements</td><td>Statement Generation Notes</td><td>Groupings</td></tr>
+
 <tr><td> <a href = "recipes/attendance.md">Attended learning activity </a></td><td>  </td><td>TSV Upload                </td><td>           </td></tr>    
-<tr><td> <a href = "recipes/physical_presence/physical_presence.md">At physical location</a> </td>  </a></td><td><a href = "recipes/physical_presence/physical_presence.md#Example">At physical location</a> </td>  </td><td>TSV Upload                </td><td>           </td></tr>    
+
+<tr><td> <a href = "recipes/physical_presence/physical_presence.md">At physical location</a> </td><td><a href = "recipes/physical_presence/physical_presence.md#Example">At physical location</a> </td>  <td>TSV Upload                </td><td>           </td></tr>    
 <tr><td> <a href = "recipes/physical_presence/physical_presence_leaving.md">Left physical location</a></td><td> <a href = "recipes/physical_presence/physical_presence.md#Example">At physical location </a></td><td>  </td><td>TSV Upload                </td><td>           </td></tr>    
 </table>
 
