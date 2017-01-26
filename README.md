@@ -18,15 +18,15 @@ If the need arises, particular versions will get their own branches, but until t
 * [Vocabulary](vocabulary.md) gives the IRIs and definitions for verbs, activity types, etc, as well as for extensions used in the recipes.
 * [Common Structures](common_structures.md) outlines common patterns used across different recipes.
 
-# Statement Recipes
-As far as possible all entities are the same across recipes and are identified by a version.
+# Statements
+As far as possible all entities are the same across statements and are identified by a version.
 
 ## VLE Statements
 
-These are the currently platform independent documented recipes:
+These are the currently platform independent documented statements:
 
 <table>
-<tr><td>Statement Recipe</td><td>Example Statements</td><td>Statement Generation Notes</td><td>Groupings</td></tr>
+<tr><td>Statement</td><td>Full Example</td><td>Statement Generation Notes</td><td>Related Recipes</td></tr>
 <tr><td> <a href = "recipes/login.md">Logged in</a></td><td> <a href = "vle/moodle/login.js">Logged in Moodle </a> <br/><a href = "vle/blackboard/loggedin.json"> Logged In Blackboard   </a>   </td><td>VLE Plugin                </td><td>           </td></tr>                                                           
 <tr><td> <a href = "recipes/logout.md>Logged out">Logged out</a></td><td> <a href = "vle/moodle/logout.js">Logged out Moodle </a>  <br/> <a href = "vle/blackboard/loggedout.json"> Logged out Blackboard   </a>    </td><td>VLE Plugin                </td><td>           </td></tr>    
 <tr><td> <a href = "recipes/Module-View.md">VLE resource viewed   </a></td><td><a href = "vle/moodle/moduleview.js">Moodle module viewed </a> <br/> <a href = "vle/blackboard/course_access.json"> Blackboard course acccess  </a> <br/> <a href="vle/blackboard/course_content_access.json">Blackboard content accessed</a>     </td><td>VLE Plugin                </td><td>           </td></tr>    
@@ -43,7 +43,7 @@ These are the currently platform independent documented recipes:
 An intervention statement describes a learning activity that taken place as part of an intervention. Two examples are given, with the student actor as different entities.
 
 <table>
-<tr><td>Statement Recipe</td><td>Example Statements</td><td>Statement Generation Notes</td><td>Groupings</td></tr>
+<tr><td>Statement Recipe</td><td>Full Example</td><td>Statement Generation Notes</td><td>Related Recipes</td></tr>
 <tr><td> <a href = "recipes/intervention/intervention.md">Intervention Example 1. Student is object.</a></td><td> <a href = "recipes/intervention/intervention.md#example">Intervention (To be replaced with LRW Example) </a> </td><td>TSV Upload                </td><td>           </td></tr>      
 
 <tr><td> <a href = "recipes/intervention/intervention_student.md">Intervention Example 2. Student is actor.</a></td><td> <a href = "recipes/intervention/intervention_student.md#example"> Intervention (To be replaced with LRW Example) </a>    </td><td>TSV Upload                </td><td>           </td></tr>    
@@ -56,7 +56,7 @@ An intervention statement describes a learning activity that taken place as part
 
 ## Presense and Attendence
 <table>
-<tr><td>Statement Recipe</td>   <td>Example Statements</td>   <td>Statement Generation Notes</td><td>Groupings</td></tr>
+<tr><td>Statement </td>   <td>Full Example</td>   <td>Statement Generation Notes</td><td>Related Recipes</td></tr>
 
 <tr><td> <a href = "recipes/attendance.md">Attended learning activity </a></td><td>  </td><td>TSV Upload                </td><td>           </td></tr>    
 
@@ -69,6 +69,10 @@ An intervention statement describes a learning activity that taken place as part
 * [Alerting JSON] (/lap/apereo/model_output.js)
 * [Alerting] (/lap/apereo/model_output.md)
 
-## Statements In Draft
+## Statements in draft
 * [Library examples](https://github.com/jiscdev/xapi/tree/ds10-recipedev)(In development branch)
+
+# Recipes
+
+## Intervention Recipes
 
