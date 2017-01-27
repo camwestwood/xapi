@@ -129,3 +129,88 @@ Plugin specific extensions are optional and not part of the core recipe. The 'in
 			"http://xapi.jisc.ac.uk/recipeVersion" : "attendanceV0.1"
         }
 ```
+
+
+# Example
+``` javascript
+{
+	"id": "12345678-1234-5678-1234-567812345678",
+	"actor": {
+		"objectType": "Agent",
+		"name": "John Smith",
+		"account": {
+			"name": "2",
+			"homePage": "https://www.poppleton.ac.uk/attendance/stu123"
+		}
+	},
+	"verb": {
+		"id": "http://adlnet.gov/expapi/verbs/attended",
+		"display": {
+			"en": "attended"
+		}
+	},
+	"result": {
+		"completion": true
+	},
+
+
+	"object": {
+		"objectType": "Activity",
+		"id": "http://wicketkeeper.poppleton.ac.uk/modules/2016/sem1/psy101/qlecture1",
+		"definition": {
+			"type": "http://activitystrea.ms/schema/1.0/event",
+			"name": {
+				"en": "Lecture"
+			},
+			"description": {
+				"en": "The first lecture of psychology 101"
+			}
+		},
+
+		"extensions": {
+			"http://id.tincanapi.com/extension/planned-start-time": "2016-02-05T10:00:00.000Z",
+			"http://xapi.jisc.ac.uk/extension/planned-end-time": "2016-02-05T14:00:00.000Z"
+		}
+
+	},
+
+	"context": {
+		"contextActivities": {
+			"grouping": [{
+				"objectType": "Activity",
+				"id": "http://wicketkeeper.poppleton.ac.uk/modules/2016/sem1/psy101",
+				"definition": {
+					"type": "http://adlnet.gov/expapi/activities/module",
+					"name": {
+						"en": "Psychology 101"
+					},
+					"description": {
+						"en": "Entrance course for psychology."
+					},
+					"extensions": {
+						"http://xapi.jisc.ac.uk/uddModInstanceID": "2016.sem1.psy101"
+					}
+				}
+			}]
+		},
+
+		"instructor": {
+			"objectType": "Agent",
+			"name": "instructor",
+			"account": {
+				"name": "2",
+				"homePage": "http://localhost/moodle"
+			},
+
+			"platform": "Wicketkeeper",
+			"extensions": {
+				"http://wicketkeeper.poppleton.ac.uk/extensions": {
+					"http://wicketkeeper.poppleton.ac.uk/extensions/weighting": "3"
+				},
+				"http://xapi.jisc.ac.uk/recipeVersion": "attendanceV0.1"
+			}
+		}
+	}
+}
+
+```
