@@ -133,14 +133,3 @@ context.extension.logplatform details the system which logged the activity.
     "id": "12345678-1234-5678-1234-567812345678"
 }
 ``` 
-
-## Intervention Verbs
-
-### Interviewed
-<table>
-<tr><th align="left">Verb</th><td>Interviewed</td></tr>
-<tr><th align="left">Description</th><td>For use when one agent or group interviews another agent or group. It could be used for the purposes of hiring, creating news articles, shows, research, etc.</td></tr>
-<tr><th align="left">IRI</th><td> <a href="http://id.tincanapi.com/verb/interviewed">http://id.tincanapi.com/verb/interviewed</a> </td></tr>
-<tr><th align="left">Recipe Example</th><td> <a href="recipes/intervention.md#verb">Intervention</a> </td></tr>
-</table>
-
