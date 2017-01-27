@@ -88,7 +88,7 @@ The object defines the activity that has been completed. Examples of valid objec
 Common entity identifier: ContextC
 
 #### Entity Example:
-Plugin specific extensions are optional and not part of the core recipe. The 'instructor' object is optional and describes the instructor who organised the learning event described in the object.
+Plugin specific extensions are optional and not part of the core statement. The 'instructor' object is optional and describes the instructor who organised the learning event described in the object.
 
 ``` javascript
 "context": {
