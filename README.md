@@ -21,7 +21,7 @@ Here are descriptions of statements that can be sent to the Jisc LRW, full state
 * [Vocabulary](vocabulary.md) gives the IRIs and definitions for verbs, activity types, etc, as well as for extensions used in the recipes.
 * [Common Structures](common_structures.md) outlines common patterns used across different recipes.
 
-## VLE Recipe
+## VLE
 
 These are the currently platform independent documented statements related to virtual learning enviroments.
 
