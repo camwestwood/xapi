@@ -81,5 +81,4 @@ Interventions are statements in which we can query student activities that have 
 ## Statements in draft
 * [Library examples](https://github.com/jiscdev/xapi/tree/ds10-recipedev)(In development branch)
 
-# Analyst Recipes
 
