@@ -45,7 +45,7 @@ The following recipes are under draft, their creation has not yet been tested wi
 ## Presense and Attendence
 <table>
 <tr><td>Statement Template </td>   <td>Statement Example</td>   <td>Statement Generation Notes</td> </tr>
-<tr><td> <a href = "recipes/attendance.md">Attended learning activity </a></td><td>TSV Upload                </td> </tr>    
+<tr><td> <a href = "recipes/attendance.md">Attended learning activity </a></td><td><a href = "recipes/attendance.md#example">Attended learning activity </a></td><td>TSV Upload</td> </tr>    
 <tr><td> <a href = "recipes/physical_presence/physical_presence.md">At physical location</a> </td><td><a href = "recipes/physical_presence/physical_presence.md#example">At physical location (To be replaced with LRW Example)</a> </td>  <td>TSV Upload                </td> </tr>    
 <tr><td> <a href = "recipes/physical_presence/physical_presence_leaving.md">Left physical location </a></td><td> <a href = "recipes/physical_presence/physical_presence_leaving.md#example">Left physical location (To be replaced with LRW Example) </a></td><td>TSV Upload                </td> </tr>    
 </table>
@@ -59,7 +59,7 @@ Interventions are statements in which we can query student activities that have 
 
 <table>
 <tr><td>Statement Template </td>  <td>Statement Example</td>   <td>Statement Generation Notes</td> </tr>
-<tr><td> <a href = "recipes/interviewed.md">Interviewed </a></td><td><a href = "recipes/interviewed.md#example">Interviewed</a><br/>  </td><td>TSV Upload                </td><td><ul><li><a href="#intervention">Intervention</a></li></ul>           </td></tr>    
+<tr><td> <a href = "recipes/interviewed.md">Interviewed </a></td><td><a href = "recipes/interviewed.md#example">Interviewed</a><br/>  </td><td>TSV Upload                </td></tr>    
 </table>
  
  
