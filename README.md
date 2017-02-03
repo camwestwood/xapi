@@ -13,8 +13,8 @@ You can do all this through the Github GUI, but you're welcome to use any other 
 
 If the need arises, particular versions will get their own branches, but until that time, everything is merged into the main branch. Releases will be made after the group has come to an agreement.
 
-# Statement Templates
-Here are descriptions of statements that can be sent to the Jisc LRW, full statement examples, data needed to create the statement and any analysis recipes that the statement may be a part of.  As far as possible all entities are the same across statements and are identified by a version.
+# Recipes
+Here are descriptions of statements that can be sent to the Jisc LRW, full statement examples, data needed to create the statement.  As far as possible all entities are the same across statements and are identified by a version.
 
 ## Statement Vocabulary and Common Structures
 
@@ -39,25 +39,19 @@ These are the currently platform independent documented statements related to vi
 * [Blackboard VLE samples] (vle/blackboard/Examples.md)
 * [Moodle VLE samples] (vle/moodle/examples.md)
 
-### Draft Recipes
-The following recipes are under draft, they have not yet been tested with live data.
+# Draft Recipes
+The following recipes are under draft, their creation has not yet been tested with instiutional data.
 
 ## Presense and Attendence
 <table>
 <tr><td>Statement Template </td>   <td>Statement Example</td>   <td>Statement Generation Notes</td> </tr>
-<tr><td> <a href = "recipes/attendance.md">Attended learning activity </a></td><td><a href = "recipes/attendance.md#example">Attended learning activity</a><br/>Attended Learning Activity as part of intervention  </td><td>TSV Upload                </td> </tr>    
+<tr><td> <a href = "recipes/attendance.md">Attended learning activity </a></td><td>TSV Upload                </td> </tr>    
 <tr><td> <a href = "recipes/physical_presence/physical_presence.md">At physical location</a> </td><td><a href = "recipes/physical_presence/physical_presence.md#example">At physical location (To be replaced with LRW Example)</a> </td>  <td>TSV Upload                </td> </tr>    
 <tr><td> <a href = "recipes/physical_presence/physical_presence_leaving.md">Left physical location </a></td><td> <a href = "recipes/physical_presence/physical_presence_leaving.md#example">Left physical location (To be replaced with LRW Example) </a></td><td>TSV Upload                </td> </tr>    
 </table>
 
 ## Student Goal app
 Statements related to the Student Goal app
-<table>
-<tr><td>Statement Template </td>   <td>Statement Example</td>   <td>Statement Generation Notes</td> </tr>
-<tr><td> <a href = "recipes/attendance.md">Attended learning activity </a></td><td><a href = "recipes/attendance.md#example">Attended learning activity</a><br/>Attended Learning Activity as part of intervention  </td><td>TSV Upload                </td> </tr>    
-<tr><td> <a href = "recipes/physical_presence/physical_presence.md">At physical location</a> </td><td><a href = "recipes/physical_presence/physical_presence.md#example">At physical location (To be replaced with LRW Example)</a> </td>  <td>TSV Upload                </td> </tr>    
-<tr><td> <a href = "recipes/physical_presence/physical_presence_leaving.md">Left physical location </a></td><td> <a href = "recipes/physical_presence/physical_presence_leaving.md#example">Left physical location (To be replaced with LRW Example) </a></td><td>TSV Upload                </td> </tr>    
-</table>
 
 
 ## Intervention
