@@ -13,13 +13,13 @@ You can do all this through the Github GUI, but you're welcome to use any other 
 
 If the need arises, particular versions will get their own branches, but until that time, everything is merged into the main branch. Releases will be made after the group has come to an agreement.
 
-# Recipes
-Here are descriptions of statements that can be sent to the Jisc LRW, full statement examples, data needed to create the statement.  As far as possible all entities are the same across statements and are identified by a version.
-
 ## Statement Vocabulary and Common Structures
 
 * [Vocabulary](vocabulary.md) gives the IRIs and definitions for verbs, activity types, etc, as well as for extensions used in the recipes.
 * [Common Structures](common_structures.md) outlines common patterns used across different recipes.
+
+# Recipes
+Here are descriptions of statements that can be sent to the Jisc LRW, full statement examples, data needed to create the statement.  As far as possible all entities are the same across statements and are identified by a version.
 
 ## VLE
 
