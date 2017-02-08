@@ -68,18 +68,9 @@ Interventions are statements in which we can query student activities that have 
 
 
 ## Library
-* [Library examples](https://github.com/jiscdev/xapi/tree/ds10-recipedev)(In development branch)
+[Library examples](https://github.com/jiscdev/xapi/tree/ds10-recipedev)(In development branch)
  
-### Draft Candidates to be removed
-<table>
-<tr><td>Statement Template </td>  <td>Statement Example</td>   <td>Statement Generation Notes</td> </tr>
-<tr><td> <a href = "recipes/intervention/intervention.md">Intervention Example 1. Student is object.</a></td><td><a href = "recipes/intervention/intervention.md#example">Intervention Example 1. Student is object.</a><br/>  </td><td>TSV Upload                </td> </tr>  
-<tr><td><a href = "recipes/intervention/intervention_student.md">Intervention Example 2. Student is actor.</a></td><td><a href = "recipes/intervention/intervention_student.md#example">Intervention Example 2. Student is actor.</a><br/>  </td><td>TSV Upload                </td> </tr> 
-</table>
 
-* [Intervention recipe A](recipes/intervention/intervention_candidate_a.md)
-* [Intervention recipe B](recipes/intervention/intervention_candidate_b.md)
-* [Intervention recipe C](recipes/intervention/intervention_candidate_c.md)
 
 
 
