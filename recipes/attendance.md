@@ -43,10 +43,10 @@ The verb [attended](/vocabulary.md#verbs) denotes the action of the user's brows
 ```
 
 ### Result
-Common entity identifier: [ResultB](../common_structures.md#resulta)
+Common entity identifier: [ResultB](../common_structures.md#resultb)
 
 #### Entity Example:
-
+ResultB is a new entity, while in draft information on the properties is avalible here:
 <table>
 	<tr><th>Property [cardinality]</th><th>Description</th></tr>
 	<tr>
@@ -115,7 +115,7 @@ ContextD is a new entity, while in draft information on the properties is avalib
 		context.extensions.http://xapi.jisc.ac.uk/starttime<br/>
 		context.extensions.http://xapi.jisc.ac.uk/endtime<br/>
 		context.extensions.http://xapi.jisc.ac.uk/courseArea<br/>
-	</td>
+
 	<td>
 	
 	The <b>uddModInstanceID</b> extension records the module instance with which the learning activity is associated. See the <a href="vocabulary.md#31-activity-types">vocabulary page</a> for more details.</td>
