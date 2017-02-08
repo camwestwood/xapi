@@ -121,7 +121,7 @@ ContextD is a new entity, while in draft information on the properties is avalib
 	The <b>uddModInstanceID</b> extension records the module instance with which the learning activity is associated. See the <a href="vocabulary.md#31-activity-types">vocabulary page</a> for more details.
 	The <b>recipeVersion</b> extension is recommended, and identifies the recipe (and its version) which was followed to create the xAPI statement. <br/>
 	The <b>courseArea</b> identifies Umbrella course/parent area by its home page URI. More information can be found on the <a href="vocabulary.md#umbrella-course-area">vocabularies page</a>.
-	The <b>starttime</b> and <b>endtime<b/> uses datetimes for planned start and end of event.
+	The <b>starttime</b> and <b>endtime</b> uses datetimes for planned start and end of event.
 	<b> activity_max_count</b>is the maximum number of people that could have attended the event
 	<b> activity_max_mandatory</b> states if the event was optional or not
 	</td>
