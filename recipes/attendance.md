@@ -128,10 +128,10 @@ ContextD is a new entity, while in draft information on the properties is avalib
 	</tr>
 	<tr>
 	<td>
-			object.instructor [0..1] <br />
-			object.instructor.objectType [1] <br />
-		    object.instructor.account.name [1] <br />
-		    object.instructor.account.homepage [1]
+			context.instructor [0..1] <br />
+			context.instructor.objectType [1] <br />
+		    context.instructor.account.name [1] <br />
+		    context.instructor.account.homepage [1]
 </td>
 		<td>A JSON Object. <b>object.instructor.objectType</b>  has "Agent" as a value. <br /> <b>account.name</b> gives the login id for the instructor. <br /> <b>account.homepage</b> gives the URL of the home page of the application for which the login id applies.</td>
 	</tr>
