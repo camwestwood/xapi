@@ -20,7 +20,7 @@ The actor entity describes the individual who has attended the learning activity
         "name": "John Smith",
         "account": {
             "name": "2",
-            "homePage": "https://www.poppleton.ac.uk/attendance/stu123"
+            "homePage": "https://courses.alpha.jisc.ac.uk/moodle"
         }
     },
 ```
@@ -50,7 +50,11 @@ When set to "true", result.completion indicates that the learner attended the ev
 
 ``` javascript
  "result":{
-        "completion":true
+        "completion":true,
+		
+		 "extensions":{
+		  "http://xapi.jisc.ac.uk/activity_late":"1",
+		 }
     }
 ```
 
@@ -64,21 +68,17 @@ The object defines the activity that has been completed. Examples of valid objec
 
 "object":{
 		"objectType":"Activity",
-		"id":"http://wicketkeeper.poppleton.ac.uk/modules/2016/sem1/psy101/qlecture1",
+		"id":"L1001",
 		"definition":{
 			"type":"http://activitystrea.ms/schema/1.0/event",
 			"name":{
 				"en":"Lecture"
 			},
 			"description":{
-				"en":"The first lecture of psychology 101"
+				"en":"The first lecture of 101"
 				}
 			},
 			
-		    "extensions":{
-				"http://id.tincanapi.com/extension/planned-start-time": "2016-02-05T10:00:00.000Z",
-				"http://xapi.jisc.ac.uk/extension/planned-end-time": "2016-02-05T14:00:00.000Z"
-			}
 			
 		}
 		
@@ -88,128 +88,95 @@ The object defines the activity that has been completed. Examples of valid objec
 Common entity identifier: ContextC
 
 #### Entity Example:
-Plugin specific extensions are optional and not part of the core statement. The 'instructor' object is optional and describes the instructor who organised the learning event described in the object.
+
+
+
 
 ``` javascript
-"context": {
-	"contextActivities":{
-            "grouping":[
-                {
-                    "objectType":"Activity",
-                    "id":"http://wicketkeeper.poppleton.ac.uk/modules/2016/sem1/psy101",
-                    "definition":{
-                        "type":"http://adlnet.gov/expapi/activities/module",
-                        "name":{
-                            "en":"Psychology 101"
-                        },
-                        "description":{
-                            "en":"Entrance course for psychology."
-                        }
-                        "extensions":{
-                        	"http://xapi.jisc.ac.uk/uddModInstanceID" : "2016.sem1.psy101"
-                        	}
-                    }
-                }
-            ]
+ "context": {
+        "extensions": {
+            "http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0",
+            "http://xapi.jisc.ac.uk/activity_type_id": "1",
+            "http://xapi.jisc.ac.uk/activity_max_count": "32",
+            "http://xapi.jisc.ac.uk/activity_mandatory": "1",
+            "http://xapi.jisc.ac.uk/recipeVersion": "attendanceV0.1",
+            "http://xapi.jisc.ac.uk/starttime": "2016-02-05T10:00:00.000Z",
+            "http://xapi.jisc.ac.uk/endtime": "2016-02-05T14:00:00.000Z",
+            "http://xapi.jisc.ac.uk/courseArea": {
+                "http://xapi.jisc.ac.uk/vle_mod_id": "LA101-200-2016S1-0",
+                "id": "http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=4"
+            }
         },
-		
-		"instructor": {
+        "instructor": {
             "objectType": "Agent",
             "account": {
                 "name": "2",
                 "homePage": "http://localhost/moodle"
-            },
-        
-        "platform": "Wicketkeeper"
-        "extensions":  {
-      		"http://wicketkeeper.poppleton.ac.uk/extensions": {
-      		 	 "http://wicketkeeper.poppleton.ac.uk/extensions/weighting": "3"
-              },
-			"http://xapi.jisc.ac.uk/recipeVersion" : "attendanceV0.1"
+            }
         }
+    }
 ```
 
 
 # Example
 ``` javascript
 {
-	"id": "12345678-1234-5678-1234-567812345678",
-	"actor": {
-		"objectType": "Agent",
-		"name": "John Smith",
-		"account": {
-			"name": "2",
-			"homePage": "https://www.poppleton.ac.uk/attendance/stu123"
-		}
-	},
-	"verb": {
-		"id": "http://adlnet.gov/expapi/verbs/attended",
-		"display": {
-			"en": "attended"
-		}
-	},
-	"result": {
-		"completion": true
-	},
-
-
-	"object": {
-		"objectType": "Activity",
-		"id": "http://wicketkeeper.poppleton.ac.uk/modules/2016/sem1/psy101/qlecture1",
-		"definition": {
-			"type": "http://activitystrea.ms/schema/1.0/event",
-			"name": {
-				"en": "Lecture"
-			},
-			"description": {
-				"en": "The first lecture of psychology 101"
-			}
-		},
-
-		"extensions": {
-			"http://id.tincanapi.com/extension/planned-start-time": "2016-02-05T10:00:00.000Z",
-			"http://xapi.jisc.ac.uk/extension/planned-end-time": "2016-02-05T14:00:00.000Z"
-		}
-
-	},
-
-	"context": {
-		"contextActivities": {
-			"grouping": [{
-				"objectType": "Activity",
-				"id": "http://wicketkeeper.poppleton.ac.uk/modules/2016/sem1/psy101",
-				"definition": {
-					"type": "http://adlnet.gov/expapi/activities/module",
-					"name": {
-						"en": "Psychology 101"
-					},
-					"description": {
-						"en": "Entrance course for psychology."
-					},
-					"extensions": {
-						"http://xapi.jisc.ac.uk/uddModInstanceID": "2016.sem1.psy101"
-					}
-				}
-			}]
-		},
-
-		"instructor": {
-			"objectType": "Agent",
-			"name": "instructor",
-			"account": {
-				"name": "2",
-				"homePage": "http://localhost/moodle"
-			},
-
-			"platform": "Wicketkeeper",
-			"extensions": {
-				"http://wicketkeeper.poppleton.ac.uk/extensions": {
-					"http://wicketkeeper.poppleton.ac.uk/extensions/weighting": "3"
-				},
-				"http://xapi.jisc.ac.uk/recipeVersion": "attendanceV0.1"
-			}
-		}
-	}
+    "id": "12345678-1234-5678-1234-567812345678",
+    "actor": {
+        "objectType": "Agent",
+        "name": "John Smith",
+        "account": {
+            "name": "2",
+            "homePage": "https://courses.alpha.jisc.ac.uk/moodle"
+        }
+    },
+    "verb": {
+        "id": "http://adlnet.gov/expapi/verbs/attended",
+        "display": {
+            "en": "attended"
+        }
+    },
+    "result": {
+        "completion": true,
+        "extensions": {
+            "http://xapi.jisc.ac.uk/activity_late": "1"
+        }
+    },
+    "object": {
+        "objectType": "Activity",
+        "id": "http://wicketkeeper.poppleton.ac.uk/modules/2016/sem1/psy101/qlecture1",
+        "definition": {
+            "type": "http://activitystrea.ms/schema/1.0/event",
+            "name": {
+                "en": "Lecture"
+            },
+            "description": {
+                "en": "The first lecture of psychology 101"
+            }
+        }
+    },
+    "context": {
+        "extensions": {
+            "http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0",
+            "http://xapi.jisc.ac.uk/activity_type_id": "1",
+            "http://xapi.jisc.ac.uk/activity_max_count": "32",
+            "http://xapi.jisc.ac.uk/activity_mandatory": "1",
+            "http://xapi.jisc.ac.uk/recipeVersion": "attendanceV0.1",
+			"http://xapi.jisc.ac.uk/starttime": "2016-02-05T10:00:00.000Z",
+            "http://xapi.jisc.ac.uk/endtime": "2016-02-05T14:00:00.000Z",
+            "http://xapi.jisc.ac.uk/courseArea": {
+                "http://xapi.jisc.ac.uk/vle_mod_id": "LA101-200-2016S1-0",
+                "id": "http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=4"
+            }
+        },
+        "instructor": {
+            "objectType": "Agent",
+            "account": {
+                "name": "2",
+                "homePage": "http://localhost/moodle"
+            }
+        }
+    }
 }
 
 ```
