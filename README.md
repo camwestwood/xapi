@@ -39,6 +39,10 @@ These are the currently platform independent documented statements related to vi
 * [Blackboard VLE samples] (vle/blackboard/Examples.md)
 * [Moodle VLE samples] (vle/moodle/examples.md)
 
+## Predictive Model Output
+* [Alerting JSON] (/lap/apereo/model_output.js)
+* [Alerting] (/lap/apereo/model_output.md)
+
 # Draft Recipes
 The following recipes are under draft, their creation has not yet been tested with instiutional data.
 
@@ -61,7 +65,10 @@ Interventions are statements in which we can query student activities that have 
 <tr><td>Statement Template </td>  <td>Statement Example</td>   <td>Statement Generation Notes</td> </tr>
 <tr><td> <a href = "recipes/interviewed.md">Interviewed </a></td><td><a href = "recipes/interviewed.md#example">Interviewed</a><br/>  </td><td>TSV Upload                </td></tr>    
 </table>
- 
+
+
+## Library
+* [Library examples](https://github.com/jiscdev/xapi/tree/ds10-recipedev)(In development branch)
  
 ### Draft Candidates to be removed
 <table>
@@ -74,11 +81,6 @@ Interventions are statements in which we can query student activities that have 
 * [Intervention recipe B](recipes/intervention/intervention_candidate_b.md)
 * [Intervention recipe C](recipes/intervention/intervention_candidate_c.md)
 
-## Predictive Model Output
-* [Alerting JSON] (/lap/apereo/model_output.js)
-* [Alerting] (/lap/apereo/model_output.md)
 
-## Statements in draft
-* [Library examples](https://github.com/jiscdev/xapi/tree/ds10-recipedev)(In development branch)
 
 
