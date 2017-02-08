@@ -43,10 +43,25 @@ The verb [attended](/vocabulary.md#verbs) denotes the action of the user's brows
 ```
 
 ### Result
-Common entity identifier: [ResultA](../common_structures.md#resulta)
+Common entity identifier: [ResultB](../common_structures.md#resulta)
 
 #### Entity Example:
-When set to "true", result.completion indicates that the learner attended the event. "false"indicates that the learner did not attend the event.
+
+<table>
+	<tr><th>Property [cardinality]</th><th>Description</th></tr>
+	<tr>
+		<td>result.completion [0..1]</td>
+		<td>"When set to "true", result.completion indicates that the learner attended the event. "false"indicates that the learner did not attend the event.
+</td>
+	</tr>
+	<tr>
+		<td>result.extension.activity_late [0..1]</td>
+		<td>Whether the person was late
+</td>
+	</tr>
+</table>
+
+
 
 ``` javascript
  "result":{
@@ -85,7 +100,44 @@ The object defines the activity that has been completed. Examples of valid objec
 ```
 
 ### Context
-Common entity identifier: ContextC
+Common entity identifier: ContextD
+
+ContextD is a new entity, while in draft information on the properties is avalible here:
+<table>
+	<tr><th>Property [cardinality]</th><th>Description</th></tr>
+	<tr>
+	<td>
+		context.extensions.http://xapi.jisc.ac.uk/uddModInstanceID<br/>	
+	    context.extensions.http://xapi.jisc.ac.uk/activity_type_id<br/>		
+		context.extensions.http://xapi.jisc.ac.uk/activity_max_count<br/>
+		context.extensions.http://xapi.jisc.ac.uk/activity_mandatory<br/>
+		context.extensions.http://xapi.jisc.ac.uk/recipeVersion<br/>
+		context.extensions.http://xapi.jisc.ac.uk/starttime<br/>
+		context.extensions.http://xapi.jisc.ac.uk/endtime<br/>
+		context.extensions.http://xapi.jisc.ac.uk/courseArea<br/>
+	</td>
+	<td>
+	
+	The <b>uddModInstanceID</b> extension records the module instance with which the learning activity is associated. See the <a href="vocabulary.md#31-activity-types">vocabulary page</a> for more details.</td>
+	The <b>recipeVersion</b> extension is recommended, and identifies the recipe (and its version) which was followed to create the xAPI statement. <br/>
+	The <b>courseArea</b> identifies Umbrella course/parent area by its home page URI. More information can be found on the <a href="vocabulary.md#umbrella-course-area">vocabularies page</a>.
+	The <b>starttime</b> and <b>endtime<br/> uses datetimes for planned start and end of event.
+	<b> activity_max_count</b>is the maximum number of people that could have attended the event
+	<b> activity_max_mandatory</b> states if the event was optional or not
+	</td>
+	</tr>
+	<tr>
+	<td>
+			object.instructor [0..1] <br />
+			object.instructor.objectType [1] <br />
+		    object.instructor.account.name [1] <br />
+		    object.instructor.account.homepage [1]
+</td>
+		<td>A JSON Object. <b>object.instructor.objectType</b>  has "Agent" as a value. <br /> <b>account.name</b> gives the login id for the instructor. <br /> <b>account.homepage</b> gives the URL of the home page of the application for which the login id applies.</td>
+	</tr>
+
+	
+</table>
 
 #### Entity Example:
 
