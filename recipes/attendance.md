@@ -115,7 +115,6 @@ Plugin specific extensions are optional and not part of the core statement. The 
 		
 		"instructor": {
             "objectType": "Agent",
-            "name": "instructor",
             "account": {
                 "name": "2",
                 "homePage": "http://localhost/moodle"
