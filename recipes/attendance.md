@@ -10,9 +10,7 @@ In this recipe:
 
 - Agent and verb
 
-Student with identifier STUDENT_ID (and name NAME)
-
-Attended a learning activity.
+Student with identifier STUDENT_ID (and name NAME) attended a learning activity.
 
 - Object
 
@@ -20,14 +18,9 @@ The activity was an activity event with id of ACTIVITY_EVENT_ID, it was of activ
 
 - Context
 
-The event is a part of module instance id MOD_INSTANCE_ID. The sctivity type has an id of Activity_Type_ID. There maximum number of people who could have attended the event was ACTIVITY_MAX_COUNT,
-
-The activity started at ACTIVITY_LOGGED_START, ending at ACTIVITY_LOGGED_END.
-
-The activity was led by instructor with identifer STAFF_ID.
+The event is a part of module instance id MOD_INSTANCE_ID. The sctivity type has an id of Activity_Type_ID. There maximum number of people who could have attended the event was ACTIVITY_MAX_COUNT, The activity started at ACTIVITY_LOGGED_START, ending at ACTIVITY_LOGGED_END. The activity was led by instructor with identifer STAFF_ID.
 			
 			
-(todo)See the Sample Attendance TSV for more details.
 
 ### Actor
 
