@@ -6,7 +6,25 @@ DRAFT
 ##Purpose
 This recipe defines the structure and terms to record a learner's attendance of an event such as a lecture or other learning activity. The expectation is that the source data will be collected by a system designed to explicitly record attendance via some action of the learner, such as swiping a card.
 
+In this recipe:
+
+- Agent and verb
+Student with identifier STUDENT_ID (and name NAME)
+Attended a learning activity.
+
+- Object
+The activity was an activity event with id of ACTIVITY_EVENT_ID, it was of activity type ACTIVIITY_TYPE.
+
+- Context
+The event is a part of module instance id MOD_INSTANCE_ID. The sctivity type has an id of Activity_Type_ID. There maximum number of people who could have attended the event was ACTIVITY_MAX_COUNT,
+The activity started at ACTIVITY_LOGGED_START, ending at ACTIVITY_LOGGED_END.
+The activity was led by instructor with identifer STAFF_ID.
+			
+			
+(todo)See the Sample Attendance TSV for more details.
+
 ### Actor
+
 Common entity identifier: [ActorA](../common_structures.md#actora)
 
 #### Entity Example:
