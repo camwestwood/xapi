@@ -85,7 +85,7 @@ The object defines the activity that has been completed. Examples of valid objec
 		"objectType":"Activity",
 		"id":"L1001",
 		"definition":{
-			"type":"http://activitystrea.ms/schema/1.0/event",
+			"type":"http://xapi.jisc.ac.uk/lecture",
 			"name":{
 				"en":"Lecture"
 			},
