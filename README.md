@@ -69,7 +69,13 @@ Interventions are statements in which we can query student activities that have 
 
 
 ## Library
-[Library examples](https://github.com/jiscdev/xapi/tree/ds10-recipedev)(In development branch)
+
+<table>
+<tr><td>Statement Template </td>   <td>JSON example</td> </tr>
+<tr><td> <a href = "recipes/pclogin.md">PC Log In</a></td><td>   </td> </tr>                                                           
+
+
+[Old Library Repository examples](https://github.com/jiscdev/xapi/tree/ds10-recipedev)
  
 
 
