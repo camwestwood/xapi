@@ -14,11 +14,11 @@ Student with identifier STUDENT_ID (and name NAME) attended a learning activity.
 
 - Object
 
-The activity was an activity event with id of ACTIVITY_EVENT_ID, it was of activity type ACTIVIITY_TYPE.
+It was an event activity with id of ACTIVITY_EVENT_ID, of type ACTIVIITY_TYPE.
 
 - Context
 
-The event is a part of module instance id MOD_INSTANCE_ID. The sctivity type has an id of Activity_Type_ID. There maximum number of people who could have attended the event was ACTIVITY_MAX_COUNT, The activity started at ACTIVITY_LOGGED_START, ending at ACTIVITY_LOGGED_END. The activity was led by instructor with identifer STAFF_ID.
+Event was a part of module instance MOD_INSTANCE_ID. The activity type has an id of Activity_Type_ID. The maximum number of people who could have attended the event was ACTIVITY_MAX_COUNT. The time it started was ACTIVITY_LOGGED_START and ended at ACTIVITY_LOGGED_END. The activity was led by instructor with identifer STAFF_ID.
 			
 			
 
