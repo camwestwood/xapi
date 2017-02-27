@@ -23,7 +23,7 @@ The actor entity describes the individual that is the subject of the statement.
 	</tr>
 	<tr>
 		<td>	
-			actor.account [1] <br />
+		    actor.account [1] <br />
 		    actor.account.name [1] <br />
 		    actor.account.homepage [1]
 </td>
@@ -431,5 +431,34 @@ This result pattern describes completion and is usually optional. This result en
     }
 ```
 
+### ResultC
+Common entity identifier: ResultB
 
+This pattern describes the result and if the actor was on time to the event.
+
+<table>
+	<tr><th>Property [cardinality]</th><th>Description</th></tr>
+	<tr>
+		<td>result.completion [0..1]</td>
+		<td>"When set to "true", result.completion indicates that the learner attended the event. "false"indicates that the learner did not attend the event.
+</td>
+	</tr>
+	<tr>
+		<td>result.extension.activity_late [0..1]</td>
+		<td>Whether the person was late
+</td>
+	</tr>
+</table>
+
+### Example
+
+``` javascript
+ "result":{
+        "completion":true,
+		
+		 "extensions":{
+		  "http://xapi.jisc.ac.uk/activity_late":"1",
+		 }
+    }
+```
 
