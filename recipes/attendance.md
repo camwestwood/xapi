@@ -60,31 +60,17 @@ The verb [attended](/vocabulary.md#verbs) denotes the action of the user's brows
 ```
 
 ### Result
-Common entity identifier: [ResultB](../common_structures.md#resultb)
+Common entity identifier: [ResultC](../common_structures.md#resultc)
 
 #### Entity Example:
-ResultB is a new entity, while in draft information on the properties is avalible here:
-<table>
-	<tr><th>Property [cardinality]</th><th>Description</th></tr>
-	<tr>
-		<td>result.completion [0..1]</td>
-		<td>"When set to "true", result.completion indicates that the learner attended the event. "false"indicates that the learner did not attend the event.
-</td>
-	</tr>
-	<tr>
-		<td>result.extension.activity_late [0..1]</td>
-		<td>Whether the person was late
-</td>
-	</tr>
-</table>
-
+The result.completion must be set true or false, indicating if the actor attended the activity. The extension activity_late can be set to 1 if the actor did not attend the event on time.
 
 
 ``` javascript
  "result":{
         "completion":true,
 		
-		 "extensions":{
+	 "extensions":{
 		  "http://xapi.jisc.ac.uk/activity_late":"1",
 		 }
     }
