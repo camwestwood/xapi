@@ -1,11 +1,12 @@
-#vle_logged_in Recipe
+#vle_logged_in statement template
+
 Revision: 1.3
 
 ## Purpose
 This activity records a user logging in to a VLE.
 
 ### Actor
-Common entity identifier: Common entity identifier: [ActorA](../common_structures.md#actora)
+Common entity identifier: Common entity identifier: [ActorA](/common_structures.md#actora)
 
 #### Entity Example:
 The actor entity identifies the individual that is logging in to the system.
@@ -22,7 +23,7 @@ The actor entity identifies the individual that is logging in to the system.
 ```
 
 ### Verb
-Common entity identifier: [VerbA](../common_structures.md#verba)
+Common entity identifier: [VerbA](/common_structures.md#verba)
 
 #### Entity Example:
 This verb, [logged in](/vocabulary.md#verbs), describes the action of logging into a platform.
@@ -37,7 +38,7 @@ This verb, [logged in](/vocabulary.md#verbs), describes the action of logging in
 ```
 
 ### Context
-Common entity identifier: ContextA, as defined on the [common structures](../common_structures.md#contexta) page.
+Common entity identifier: ContextA, as defined on the [common structures](/common_structures.md#contexta) page.
 
 Since the logged-in action is not undertaken in the context of a learning activity or course, only the core attributes of context are applicable.
 
@@ -54,9 +55,9 @@ Since the logged-in action is not undertaken in the context of a learning activi
 ```
 
 ### Object
-Common entity identifier: ObjectA, as defined on the [common structures](../common_structures.md#objecta) page.
+Common entity identifier: ObjectA, as defined on the [common structures](/common_structures.md#objecta) page.
 
-For the logged-in recipe, the object.definition.type is "http://activitystrea.ms/schema/1.0/application". The subType (http://xapi.jisc.ac.uk/subType) extension should be used to identify the system type that is being logged into, in this example a Virtual Learning Environment (aka Learning Management System), identified by  http://id.tincanapi.com/activitytype/lms. Different application types should use the relevant subType, as defined on the [vocabularies](vocabulary.md#32-object-definition-extensions) page.
+object.definition.type is "http://activitystrea.ms/schema/1.0/application". The subType (http://xapi.jisc.ac.uk/subType) extension should be used to identify the system type that is being logged into, in this example a Virtual Learning Environment (aka Learning Management System), identified by  http://id.tincanapi.com/activitytype/lms. Different application types should use the relevant subType, as defined on the [vocabularies](vocabulary.md#32-object-definition-extensions) page.
 
 #### Example:
 ``` javascript

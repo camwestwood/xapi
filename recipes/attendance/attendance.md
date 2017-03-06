@@ -1,12 +1,12 @@
-#Attended learning activity
+#Attended learning statement template
 Revision: 0.2
 
 DRAFT
 
 ##Purpose
-This recipe defines the structure and terms to record a learner's attendance of an event such as a lecture or other learning activity. The expectation is that the source data will be collected by a system designed to explicitly record attendance via some action of the learner, such as swiping a card.
+This statement defines the structure and terms to record a learner's attendance of an event such as a lecture or other learning activity. The expectation is that the source data will be collected by a system designed to explicitly record attendance via some action of the learner, such as swiping a card.
 
-In this recipe:
+In this statement:
 
 - Agent and verb
 
@@ -24,7 +24,7 @@ Event was a part of module instance MOD_INSTANCE_ID. The activity type has an id
 
 ### Actor
 
-Common entity identifier: [ActorA](../common_structures.md#actora)
+Common entity identifier: [ActorA](/common_structures.md#actora)
 
 #### Entity Example:
 The actor entity describes the individual who has attended the learning activity.
@@ -44,7 +44,7 @@ The actor entity describes the individual who has attended the learning activity
 
 ### Verb
 
-Common entity identifier: [VerbA](../common_structures.md#verba)
+Common entity identifier: [VerbA](/common_structures.md#verba)
 
 #### Entity Example:
 
@@ -60,7 +60,7 @@ The verb [attended](/vocabulary.md#verbs) denotes the action of the user's brows
 ```
 
 ### Result
-Common entity identifier: [ResultC](../common_structures.md#resultc)
+Common entity identifier: [ResultC](/common_structures.md#resultc)
 
 #### Entity Example:
 The result.completion must be set true or false, indicating if the actor attended the activity. The extension activity_late can be set to 1 if the actor did not attend the event on time.
@@ -77,7 +77,7 @@ The result.completion must be set true or false, indicating if the actor attende
 ```
 
 ### Object
-Common entity identifier: [ObjectC](../common_structures.md#objectc)
+Common entity identifier: [ObjectC](/common_structures.md#objectc)
 
 #### Entity Example:
 The object defines the activity that has been completed. Examples of valid object.definition Activity object Types can be found in [the vocabulary](../vocabulary.md#30-object).
@@ -122,7 +122,7 @@ ContextD is a new entity, while in draft information on the properties is avalib
 	<td>
 	
 	The <b>uddModInstanceID</b> extension records the module instance with which the learning activity is associated. See the <a href="vocabulary.md#31-activity-types">vocabulary page</a> for more details.
-	The <b>recipeVersion</b> extension is recommended, and identifies the recipe (and its version) which was followed to create the xAPI statement. <br/>
+	The <b>recipeVersion</b> extension is recommended, and identifies the statement (and its version) which was followed to create the xAPI statement. <br/>
 	The <b>courseArea</b> identifies Umbrella course/parent area by its home page URI. More information can be found on the <a href="vocabulary.md#umbrella-course-area">vocabularies page</a>.
 	The <b>starttime</b> and <b>endtime</b> uses datetimes for planned start and end of event.
 	<b> activity_max_count</b>is the maximum number of people that could have attended the event
