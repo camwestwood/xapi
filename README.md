@@ -58,16 +58,6 @@ The following recipes are under draft, their creation has not yet been tested wi
 ## Student Goal app
 Statements related to the Student Goal app
 
-
-## Intervention
-Interventions are statements in which we can query student activities that have been undertaken as part of a intervention.
-
-<table>
-<tr><td>Statement Template </td><td>JSON Example</td></tr>
-<tr><td> <a href = "recipes/interviewed.md">Interviewed </a></td><td><a href = "recipes/interviewed.md#example">Interviewed</a><br/></td></tr>    
-</table>
-
-
 ## Library
 
 <table>
