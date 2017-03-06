@@ -45,9 +45,9 @@ Statements related to the Student Goal app
 ## Presence and Attendance
 <table>
 <tr><td>Statement Template </td><td>JSON Example</td></tr>
-<tr><td> <a href = "/recipes/attendancne/attendance.md">Attended learning activity </a></td><td><a href = "recipes/attendance.md#example">Attended learning activity </a></td> </tr>    
-<tr><td> <a href = "/recipes/attendancne/physical_presence.md">At physical location</a> </td><td><a href = "recipes/attendancne/physical_presence.md#example">At physical location</a> </td></tr>    
-<tr><td> <a href = "/recipes/attendancne/physical_presence_leaving.md">Left physical location </a></td><td> <a href = "recipes/attendancne/physical_presence_leaving.md#example">Left physical location</a></td></tr>    
+<tr><td> <a href = "/recipes/attendance/attendance.md">Attended learning activity </a></td><td><a href = "recipes/attendance/attendance.md#example">Attended learning activity </a></td> </tr>    
+<tr><td> <a href = "/recipes/attendance/physical_presence.md">At physical location</a> </td><td><a href = "recipes/attendance/physical_presence.md#example">At physical location</a> </td></tr>    
+<tr><td> <a href = "/recipes/attendance/physical_presence_leaving.md">Left physical location </a></td><td> <a href = "recipes/attendance/physical_presence_leaving.md#example">Left physical location</a></td></tr>    
 </table>
 
 ## Predictive Model Output
