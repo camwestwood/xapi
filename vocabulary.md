@@ -22,7 +22,7 @@ The following [xAPI verbs](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-
 <tr><th align="left">Verb</th><td>Logged in</td></tr>
 <tr><th align="left">Description</th><td>Logged in to some service </td></tr>
 <tr><th align="left">IRI</th><td> <a href="https://brindlewaye.com/xAPITerms/verbs/loggedin"> https://brindlewaye.com/xAPITerms/verbs/loggedin </a> </td></tr>
-<tr><th align="left">Recipe Example</th><td> <a href="recipes/vle/login.md#verb">Logged in</a> </td></tr>
+<tr><th align="left">Statement Example</th><td> <a href="/recipes/vle/login.md#verb">Logged in</a> </td></tr>
 </table>
 
 ### Logged out
@@ -30,7 +30,7 @@ The following [xAPI verbs](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-
 <tr><th align="left">Verb</th><td>Logged out</td></tr>
 <tr><th align="left">Description</th><td>Logged out of some service</td></tr>
 <tr><th align="left">IRI</th><td> <a href="https://brindlewaye.com/xAPITerms/verbs/loggedout"> https://brindlewaye.com/xAPITerms/verbs/loggedout </a> </td></tr>
-<tr><th align="left">Recipe Example</th><td> <a href="recipes/vle/logout.md#verb">Logged out</a> </td></tr>
+<tr><th align="left">Statement Example</th><td> <a href="/recipes/vle/logout.md#verb">Logged out</a> </td></tr>
 </table>
 
 ### Viewed
@@ -38,7 +38,7 @@ The following [xAPI verbs](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-
 <tr><th align="left">Verb</th><td>Viewed</td></tr>
 <tr><th align="left">Description</th><td>Indicates that the actor has viewed the object</td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://id.tincanapi.com/verb/viewed"> http://id.tincanapi.com/verb/viewed</a> </td></tr>
-<tr><th align="left">Recipe Example</th><td> <a href="recipes/vle/Module-View.md#verb">Object Viewed</a> </td></tr>
+<tr><th align="left">Statement Example</th><td> <a href="/recipes/vle/Module-View.md#verb">Object Viewed</a> </td></tr>
 </table>
 
 ### Session timed out
@@ -46,7 +46,7 @@ The following [xAPI verbs](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-
 <tr><th align="left">Verb</th><td>Session timed out</td></tr>
 <tr><th align="left">Description</th><td>IIndicates the activity provider has determined that the session was abnormally terminated either by an actor or due to a system failure. </td></tr>
 <tr><th align="left">IRI</th><td> <a href="https://w3id.org/xapi/adl/verbs/abandoned">https://w3id.org/xapi/adl/verbs/abandoned</a> </td></tr>
-<tr><th align="left">Recipe Example</th><td> <a href="recipes/vle/Session-timeout.md#verb">Session Timeout</a> </td></tr>
+<tr><th align="left">Statement Example</th><td> <a href="/recipes/vle/Session-timeout.md#verb">Session Timeout</a> </td></tr>
 </table>
 
 ### Completed
@@ -54,7 +54,7 @@ The following [xAPI verbs](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-
 <tr><th align="left">Verb</th><td>Completed</td></tr>
 <tr><th align="left">Description</th><td>Completing an activity - finishing in its entirety</td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://adlnet.gov/expapi/verbs/completed">http://adlnet.gov/expapi/verbs/completed</a> </td></tr>
-<tr><th align="left">Recipe Example</th><td> <a href="recipes/vle/assignment-submitted.md">Assignment submitted</a> </td></tr>
+<tr><th align="left">Statement Example</th><td> <a href="recipes/vle/assignment-submitted.md">Assignment submitted</a> </td></tr>
 </table>
 
 ### Scored
@@ -62,7 +62,7 @@ The following [xAPI verbs](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-
 <tr><th align="left">Verb</th><td>Scored</td></tr>
 <tr><th align="left">Description</th><td>Indicates a numerical value related to an actor's performance on an activity.</td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://adlnet.gov/expapi/verbs/scored">http://adlnet.gov/expapi/verbs/scored</a> </td></tr>
-<tr><th align="left">Recipe Example</th><td> <a href="recipes/vle/assignment-graded.md#verb">Assignment Graded</a> </td></tr>
+<tr><th align="left">Statement Example</th><td> <a href="/recipes/vle/assignment-graded.md#verb">Assignment Graded</a> </td></tr>
 </table>
 
 ### Attended
@@ -70,12 +70,12 @@ The following [xAPI verbs](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-
 <tr><th align="left">Verb</th><td>Attended</td></tr>
 <tr><th align="left">Description</th><td>Indicates the actor was present at a virtual or physical event or activity.</td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://adlnet.gov/expapi/verbs/attended">http://adlnet.gov/expapi/verbs/attended</a> </td></tr>
-<tr><th align="left">Recipe Example</th><td> <a href="recipes/vle/attended.md#verb">Attended learning activity</a> </td></tr>
+<tr><th align="left">Statement Example</th><td> <a href="/recipes/vle/attended.md#verb">Attended learning activity</a> </td></tr>
 </table>
 
 ## 2.0 Result
 
-In the Jisc profile, the use of the [result entity](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#result) and any of its properties is optional. Such as in the [recipes/assignment-graded.md#verb](assignment graded recipe#result) recipe example.
+In the Jisc profile, the use of the [result entity](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#result) and any of its properties is optional. Such as in the [recipes/assignment-graded.md#verb](assignment graded recipe#result) Statement Example.
 
 Example:
 
@@ -103,7 +103,7 @@ The following are extension properties in the result entity:
 <tr><th align="left">Label</th><td>Scored</td></tr>
 <tr><th align="left">Description</th><td>A non-numerical assessment result. Data type is string (256)</td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/grade">http://xapi.jisc.ac.uk/grade</a> </td></tr>
-<tr><th align="left">Recipe Example</th><td> <a href="recipes/vle/assignment-graded.md#verb">Assignment Graded</a> </td></tr>
+<tr><th align="left">Statement Example</th><td> <a href="recipes/vle/assignment-graded.md#verb">Assignment Graded</a> </td></tr>
 <tr><th align="left">Value Space</th><td>String</td></tr>
 <tr><th align="left">Sample Value</th><td>5 Stars</td></tr>
 </table>
@@ -135,7 +135,7 @@ Example:
 <tr><th align="left">Label</th><td>Application</td></tr>
 <tr><th align="left">Description</th><td>Represents any kind of software application</td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://activitystrea.ms/schema/1.0/application">http://activitystrea.ms/schema/1.0/application</a> </td></tr>
-<tr><th align="left">Recipe Example</th><td> <a href="recipes/vle/login.md#complete_example">Logged in</a> </td></tr>
+<tr><th align="left">Statement Example</th><td> <a href="recipes/vle/login.md#complete_example">Logged in</a> </td></tr>
 </table>
 
 ### Assessment
@@ -144,7 +144,7 @@ Example:
 <tr><th align="left">Label</th><td>Application</td></tr>
 <tr><th align="left">Description</th><td>An assessment is an activity type that determines a learner’s mastery of a particular subject area. An assessment typically has one or more questions.</td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://adlnet.gov/expapi/activities/assessment">http://adlnet.gov/expapi/activities/assessment</a> </td></tr>
-<tr><th align="left">Recipe Example</th><td> <a href="recipes/vle/assignment-submitted.md">assignment-submitted</a> </td></tr>
+<tr><th align="left">Statement Example</th><td> <a href="recipes/vle/assignment-submitted.md">assignment-submitted</a> </td></tr>
 </table>
 
 
@@ -163,7 +163,7 @@ Example:
 <tr><th align="left">Label</th><td>Module</td></tr>
 <tr><th align="left">Description</th><td>A module represents any “content aggregation” at least one level below the course level. Modules of modules can exist for layering purposes. Modules are not content. Modules are one level up from all content. </td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://adlnet.gov/expapi/activities/module">http://adlnet.gov/expapi/activities/module</a> </td></tr>
-<tr><th align="left">Recipe Example</th><td> <a href="recipes/vle/Module-View.md#object">Module-View</a> </td></tr>
+<tr><th align="left">Statement Example</th><td> <a href="recipes/vle/Module-View.md#object">Module-View</a> </td></tr>
 </table>
 
 ### VLE
@@ -416,23 +416,3 @@ http://xapi.jisc.ac.uk/extensions/vle_mod_id is a courseArea identifier. It is u
 <tr><th align="left">Description</th><td><a href="https://github.com/jiscdev/analytics-udd/blob/master/udd/module_vle_map.md">Entity that connects a course area in a VLE with a module</a></td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/vle_mod_id">http://xapi.jisc.ac.uk/vle_mod_id</a> </td></tr>
 </table>
-
-## 5.0 Version Changes and identifier mappings
-
-### v0.2
-
-
-| V0.1  		| v0.2                    		 | 
-| ------------- | -------------------------------|
-| http://xapi.jisc.ac.uk/define/extensions/vle/content  | http://xapi.jisc.ac.uk/vle/content
-| http://xapi.jisc.ac.uk/define/extensions/vle/page     | http://xapi.jisc.ac.uk/vle/page  
-| http://xapi.jisc.ac.uk/define/extensions/vle/quiz     | http://xapi.jisc.ac.uk/vle/quiz  
-| http://xapi.jisc.ac.uk/define/extensions/vle/forum    | http://xapi.jisc.ac.uk/vle/forum  
-| http://xapi.jisc.ac.uk/define/extensions/externalURL  | http://xapi.jisc.ac.uk/externalURL
-| http://xapi.jisc.ac.uk/extensions/courseArea | http://xapi.jisc.ac.uk/courseArea	
-| http://xapi.jisc.ac.uk/extensions/sessionId  | http://xapi.jisc.ac.uk/sessionId 
-| http://xapi.jisc.ac.uk/extensions/recipeVersion | http://xapi.jisc.ac.uk/recipeVersion
-| http://xapi.jisc.ac.uk/extensions/applicationType | http://xapi.jisc.ac.uk/applicationType
-| http://xapi.jisc.ac.uk/extensions/duedate  | http://xapi.jisc.ac.uk/dueDate
-| http://xapi.jisc.ac.uk/define/vle   		 | http://id.tincanapi.com/activitytype/lms        
-| http://www.tincanapi.co.uk/verbs/evaluated | http://adlnet.gov/expapi/verbs/scored 
