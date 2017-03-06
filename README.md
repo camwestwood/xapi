@@ -43,9 +43,6 @@ These are the currently platform independent documented statements related to vi
 * [Alerting JSON] (/lap/apereo/model_output.js)
 * [Alerting] (/lap/apereo/model_output.md)
 
-# Draft Recipes
-The following recipes are under draft, their creation has not yet been tested with institutional data in the LRW. 
-
 ## Presense and Attendence
 <table>
 <tr><td>Statement Template </td><td>JSON Example</td></tr>
