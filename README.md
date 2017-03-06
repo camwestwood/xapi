@@ -42,7 +42,7 @@ These are the currently platform independent documented statements related to vi
 ## Student Goal app
 Statements related to the Student Goal app
 
-## Presense and Attendance
+## Presence and Attendance
 <table>
 <tr><td>Statement Template </td><td>JSON Example</td></tr>
 <tr><td> <a href = "recipes/attendancne/attendance.md">Attended learning activity </a></td><td><a href = "recipes/attendance.md#example">Attended learning activity </a></td> </tr>    
