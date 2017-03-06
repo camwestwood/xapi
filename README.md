@@ -1,4 +1,4 @@
-# xAPI recipes for the Jisc Learning Analytics Project v0.6
+# xAPI recipes for the Jisc Learning Analytics Project v1.0
 
 ## Repository Workflow
 The simplest way of contributing xAPI recipes works as follows:
@@ -39,23 +39,18 @@ These are the currently platform independent documented statements related to vi
 * [Blackboard VLE samples] (vle/blackboard/Examples.md)
 * [Moodle VLE samples] (vle/moodle/examples.md)
 
-## Predictive Model Output
-* [Alerting JSON] (/lap/apereo/model_output.js)
-* [Alerting] (/lap/apereo/model_output.md)
+## Student Goal app
+Statements related to the Student Goal app
 
 ## Presense and Attendence
 <table>
 <tr><td>Statement Template </td><td>JSON Example</td></tr>
 <tr><td> <a href = "recipes/attendance.md">Attended learning activity </a></td><td><a href = "recipes/attendance.md#example">Attended learning activity </a></td> </tr>    
-<tr><td> <a href = "recipes/physical_presence/physical_presence.md">At physical location</a> </td><td><a href = "recipes/physical_presence/physical_presence.md#example">At physical location</a> </td></tr>    
-<tr><td> <a href = "recipes/physical_presence/physical_presence_leaving.md">Left physical location </a></td><td> <a href = "recipes/physical_presence/physical_presence_leaving.md#example">Left physical location</a></td></tr>    
 </table>
 
-
-## Student Goal app
-Statements related to the Student Goal app
-
-
+## Predictive Model Output
+* [Alerting JSON] (/lap/apereo/model_output.js)
+* [Alerting] (/lap/apereo/model_output.md)
 
 
 
