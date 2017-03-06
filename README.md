@@ -58,16 +58,6 @@ The following recipes are under draft, their creation has not yet been tested wi
 ## Student Goal app
 Statements related to the Student Goal app
 
-## Library
-
-<table>
-<tr><td>Statement Template </td>   <td>JSON example</td> </tr>
-<tr><td> <a href = "recipes/pclogin.md">PC Log In</a></td><td>   </td> </tr>                                                           
-
-
-[Old Library Repository examples](https://github.com/jiscdev/xapi/tree/ds10-recipedev)
- 
-
 
 
 
