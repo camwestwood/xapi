@@ -74,7 +74,7 @@ The Context describes the intervention itself
                     "definition":{
                         "type":"http://xapi.jisc.ac.uk/intervention",
                         "description":{
-                            "en":" //?
+                            "en":"
                         }
                     }
                 }
