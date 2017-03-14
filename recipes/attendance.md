@@ -1,4 +1,4 @@
-#Attended learning activity
+# Attended learning activity
 Revision: 0.2
 
 DRAFT

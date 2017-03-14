@@ -1,7 +1,7 @@
-#vle_resource_viewed recipe
+# vle_resource_viewed recipe
 Revision: 1.3
 
-##Purpose
+## Purpose
 This recipe defines the structure and terms to record the experience of viewing a vle resource such as a Moodle Module or Blackboard building block (eg a page as identified by its url)
 
 ### Actor

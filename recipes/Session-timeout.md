@@ -1,4 +1,4 @@
-#session_timed_out recipe
+# session_timed_out recipe
 Revision: 1.3
 
 ## Purpose
