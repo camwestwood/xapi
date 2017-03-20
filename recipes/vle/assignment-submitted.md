@@ -64,11 +64,6 @@ Example:
 			"name":{
 				"en":"xapi Assignment"
 			},
-			"description":{
-				"en":"xppi Assignment description"
-				}
-			},
-			
 		    "extensions":{
 				"http://xapi.jisc.ac.uk/dueDate": "2016-02-05T17:59:45.000Z"
 			}
