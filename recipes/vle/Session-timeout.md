@@ -70,9 +70,6 @@ The object.definition.type is "http://activitystrea.ms/schema/1.0/application". 
         "name": {
             "en": "A Moodle course"
         },
-        "description": {
-            "en": "A Moodle course"
-        },
         "extensions": {
             "http://xapi.jisc.ac.uk/subType": "http://id.tincanapi.com/activitytype/lms"
         }

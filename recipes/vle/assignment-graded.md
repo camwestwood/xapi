@@ -75,10 +75,6 @@ The object defines the activity that has been evaluated. [Examples of valid obje
 			"name":{
 				"en":"Course Assignment"
 			},
-			"description":{
-				"en":"Course Assignment description"
-				}
-			},
 			"extensions":{
 				"http://xapi.jisc.ac.uk/dueDate": "2016-02-05T17:59:45.000Z"
 			}
