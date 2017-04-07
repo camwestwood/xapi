@@ -36,8 +36,8 @@ These are the currently platform independent documented statements related to vi
 </table>
 
 ### All VLE statement examples
-* [Blackboard VLE samples] (vle/blackboard/Examples.md)
-* [Moodle VLE samples] (vle/moodle/examples.md)
+* [Blackboard VLE samples](vle/blackboard/Examples.md)
+* [Moodle VLE samples](vle/moodle/examples.md)
 
 ## Student Goal app
 Statements related to the Student Goal app
@@ -45,12 +45,12 @@ Statements related to the Student Goal app
 ## Presence and Attendance
 <table>
 <tr><td>Statement Template </td><td>JSON Example</td></tr>
-<tr><td> <a href = "recipes/attendancne/attendance.md">Attended learning activity </a></td><td><a href = "recipes/attendance.md#example">Attended learning activity </a></td> </tr>    
+<tr><td> <a href = "recipes/attendance/attendance.md">Attended learning activity </a></td><td><a href = "recipes/attendance.md#example">Attended learning activity </a></td> </tr>    
 </table>
 
 ## Predictive Model Output
-* [Alerting JSON] (/lap/apereo/model_output.js)
-* [Alerting] (/lap/apereo/model_output.md)
+* [Alerting JSON](/lap/apereo/model_output.js)
+* [Alerting](/lap/apereo/model_output.md)
 
 
 
