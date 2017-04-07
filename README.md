@@ -24,17 +24,17 @@ As far as possible all entities are the same across recipes and are identified b
 ## VLE examples
 These are the currently platform independent documented recipes:
 
-* [Logged in] (recipes/login.md)
-* [Logged out] (recipes/logout.md)
-* [VLE resource viewed] (recipes/Module-View.md)
-* [Session timeout] (recipes/Session-timeout.md)
-* [Assignment Graded] (recipes/assignment-graded.md)
-* [Assignment Submitted] (recipes/assignment-submitted.md)
+* [Logged in](recipes/login.md)
+* [Logged out](recipes/logout.md)
+* [VLE resource viewed](recipes/Module-View.md)
+* [Session timeout](recipes/Session-timeout.md)
+* [Assignment Graded](recipes/assignment-graded.md)
+* [Assignment Submitted](recipes/assignment-submitted.md)
 * [Attended learning activity](recipes/attendance.md)
 
 ### Specific VLE examples
-* [Blackboard VLE samples] (vle/blackboard/Examples.md)
-* [Moodle VLE samples] (vle/moodle/examples.md)
+* [Blackboard VLE samples](vle/blackboard/Examples.md)
+* [Moodle VLE samples](vle/moodle/examples.md)
 
 ## Draft
 * [WiFi associated/Presence](recipes/wifi-association.md)
@@ -42,5 +42,5 @@ These are the currently platform independent documented recipes:
 
 
 ## Predictive Model Output
-* [Alerting JSON] (/lap/apereo/model_output.js)
-* [Alerting] (/lap/apereo/model_output.md)
+* [Alerting JSON](/lap/apereo/model_output.js)
+* [Alerting](/lap/apereo/model_output.md)
