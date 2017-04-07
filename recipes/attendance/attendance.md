@@ -1,3 +1,4 @@
+
 # Attended_Learning_Event statement template
 Revision: 0.2
 
@@ -107,14 +108,13 @@ Common entity identifier: ContextD
 
 ContextD is a new entity, while in draft information on the properties is avalible here:
 
+
 <table>
 	<tr><th>Property [cardinality]</th><th>Description</th></tr>
-	
 	<tr>
 	   <td>context.extensions.http://xapi.jisc.ac.uk/uddModInstanceID</td>
-	   <td>The uddModInstanceID extension records the module instance with which the learning activity is associated. See 		   the <a href="vocabulary.md#31-activity-types">vocabulary page</a> for more details. </td>
+	   <td>The uddModInstanceID extension records the module instance with which the learning activity is associated. See 		  the <a href="vocabulary.md#31-activity-types">vocabulary page</a> for more details. </td>
 	</tr>
-	
 	<tr>
 	   <td>context.extensions.http://xapi.jisc.ac.uk/activity_type_id</td>
 	   <td></td>
@@ -129,12 +129,10 @@ ContextD is a new entity, while in draft information on the properties is avalib
 	   <td>context.extensions.http://xapi.jisc.ac.uk/recipeVersion</td>
 	   <td>The <b>recipeVersion</b> extension is recommended, and identifies the statement (and its version) which was followed to 			create the xAPI statement.  </td>
 	   </tr>
-	  
 	   <tr>
 	     <td>context.extensions.http://xapi.jisc.ac.uk/starttime</td>
-	     <td>The planned start time. USes datetimes for planned end of event.  </td>
+	     <td>The planned start time. Uses datetimes for planned end of event.  </td>
 	   </tr>
-	   
 	   <tr>   
 	     <td>context.extensions.http://xapi.jisc.ac.uk/endtime<br/></td>
 	     <td>The planned end time of event. Uses datetimes for planned end time of event.  </td>
@@ -145,8 +143,7 @@ ContextD is a new entity, while in draft information on the properties is avalib
 	    </td>
 	    <td>The <b>courseArea</b> identifies Umbrella course/parent area by its home page URI. More information can be found on the <a href="vocabulary.md#umbrella-course-area">vocabularies page</a>.
 	    </td>
-	    </tr>
-	    
+	    </tr>    
 	<tr>
 	<td>
 	context.instructor [0..1]
@@ -166,11 +163,9 @@ ContextD is a new entity, while in draft information on the properties is avalib
 		    </tr>
 		    <tr>
 		    <td>context.instructor.account.homepage [1]</td>
-	<td> gives the URL of the home page of the application for which the login id applies.</td>
+			<td> gives the URL of the home page of the application for which the login id applies.</td>
 	</tr>
-
-	
-</table>
+ </table>
 
 #### Entity Example:
 
