@@ -1,4 +1,4 @@
-# Attended learning statement template
+# Attended_Learning_Event statement template
 Revision: 0.2
 
 DRAFT
@@ -109,34 +109,61 @@ ContextD is a new entity, while in draft information on the properties is avalib
 <table>
 	<tr><th>Property [cardinality]</th><th>Description</th></tr>
 	<tr>
+	   <td>context.extensions.http://xapi.jisc.ac.uk/uddModInstanceID</td>
+	   <td>The uddModInstanceID extension records the module instance with which the learning activity is associated. See 		   the <a href="vocabulary.md#31-activity-types">vocabulary page</a> for more details. <td>
+	</tr>
+	<tr>
+	   <td>context.extensions.http://xapi.jisc.ac.uk/activity_type_id</td>
+	   <td><td>
+	</tr>
+	   <td>context.extensions.http://xapi.jisc.ac.uk/activity_max_count</td>
+	   <td>Maximum number of people that could have attended the event<td>
+	 <tr>
+	   <td>context.extensions.http://xapi.jisc.ac.uk/activity_mandatory</td>
+	   <td>States if the event was optional or not <td>
+	  </tr>
+	  <tr>
+	   <td>context.extensions.http://xapi.jisc.ac.uk/recipeVersion</td>
+	   <td>The <b>recipeVersion</b> extension is recommended, and identifies the statement (and its version) which was followed to 			create the xAPI statement.  <td>
+	   </tr>
+	   <tr/>
+	   
+	   <tr>
+	     <td>context.extensions.http://xapi.jisc.ac.uk/starttime<br/></td>
+	     <td>The planned start time. USes datetimes for planned end of event.  <td>
+	   </tr>
+	   
+	   <tr>   
+	     <td>context.extensions.http://xapi.jisc.ac.uk/endtime<br/></td>
+	     <td>The planned end time of event. Uses datetimes for planned end time of event.  <td>
+	   </tr>
+	   <tr>
+		<td>
+		context.extensions.http://xapi.jisc.ac.uk/courseArea
+	    </td>
+	    <td>The <b>courseArea</b> identifies Umbrella course/parent area by its home page URI. More information can be found on the <a href="vocabulary.md#umbrella-course-area">vocabularies page</a>.
+	    <td>
+	    </tr>
+	    
+	<tr>
 	<td>
-		context.extensions.http://xapi.jisc.ac.uk/uddModInstanceID<br/>	
-	    context.extensions.http://xapi.jisc.ac.uk/activity_type_id<br/>		
-		context.extensions.http://xapi.jisc.ac.uk/activity_max_count<br/>
-		context.extensions.http://xapi.jisc.ac.uk/activity_mandatory<br/>
-		context.extensions.http://xapi.jisc.ac.uk/recipeVersion<br/>
-		context.extensions.http://xapi.jisc.ac.uk/starttime<br/>
-		context.extensions.http://xapi.jisc.ac.uk/endtime<br/>
-		context.extensions.http://xapi.jisc.ac.uk/courseArea<br/>
-	</td>
-	<td>
-	
-	The <b>uddModInstanceID</b> extension records the module instance with which the learning activity is associated. See the <a href="vocabulary.md#31-activity-types">vocabulary page</a> for more details.
-	The <b>recipeVersion</b> extension is recommended, and identifies the statement (and its version) which was followed to create the xAPI statement. <br/>
-	The <b>courseArea</b> identifies Umbrella course/parent area by its home page URI. More information can be found on the <a href="vocabulary.md#umbrella-course-area">vocabularies page</a>.
-	The <b>starttime</b> and <b>endtime</b> uses datetimes for planned start and end of event.
-	<b> activity_max_count</b>is the maximum number of people that could have attended the event
-	<b> activity_max_mandatory</b> states if the event was optional or not
-	</td>
+	context.instructor [0..1]
+	</td><td></td>
 	</tr>
 	<tr>
 	<td>
-			context.instructor [0..1] <br />
-			context.instructor.objectType [1] <br />
-		    context.instructor.account.name [1] <br />
-		    context.instructor.account.homepage [1]
-</td>
-		<td>A JSON Object. <b>object.instructor.objectType</b>  has "Agent" as a value. <br /> <b>account.name</b> gives the login id for the instructor. <br /> <b>account.homepage</b> gives the URL of the home page of the application for which the login id applies.</td>
+			context.instructor.objectType [1]
+			</td>
+			<td>A JSON Object. <b>object.instructor.objectType</b>  has "Agent" as a value. </td>
+	</tr>
+	<tr>
+	<td>
+		    context.instructor.account.name [1]
+		    </td><td>account.name gives the login id for the instructor. </td>
+		    </tr>
+		    <tr>
+		    <td>context.instructor.account.homepage [1]</td>
+	<td> gives the URL of the home page of the application for which the login id applies.</td>
 	</tr>
 
 	
