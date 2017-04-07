@@ -106,8 +106,12 @@ The object defines the activity that has been completed. Examples of valid objec
 Common entity identifier: ContextD
 
 ContextD is a new entity, while in draft information on the properties is avalible here:
+
 <table>
+</table>
 	<tr><th>Property [cardinality]</th><th>Description</th></tr>
+	
+	
 	<tr>
 	   <td>context.extensions.http://xapi.jisc.ac.uk/uddModInstanceID</td>
 	   <td>The uddModInstanceID extension records the module instance with which the learning activity is associated. See 		   the <a href="vocabulary.md#31-activity-types">vocabulary page</a> for more details. <td>
@@ -126,8 +130,7 @@ ContextD is a new entity, while in draft information on the properties is avalib
 	   <td>context.extensions.http://xapi.jisc.ac.uk/recipeVersion</td>
 	   <td>The <b>recipeVersion</b> extension is recommended, and identifies the statement (and its version) which was followed to 			create the xAPI statement.  <td>
 	   </tr>
-	   <tr/>
-	   
+	  
 	   <tr>
 	     <td>context.extensions.http://xapi.jisc.ac.uk/starttime<br/></td>
 	     <td>The planned start time. USes datetimes for planned end of event.  <td>
