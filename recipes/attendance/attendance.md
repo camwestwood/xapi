@@ -71,6 +71,7 @@ The result.completion must be set true or false, indicating if the actor attende
 		
 	 "extensions":{
 		  "http://xapi.jisc.ac.uk/activity_late":"1",
+		  "http://xapi.jisc.ac.uk/attendance_category":"1",
 		 }
     }
 ```
@@ -115,6 +116,7 @@ Common entity identifier: Common entity identifier: [ContextD](/common_structure
         "extensions": {
             "http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0",
             "http://xapi.jisc.ac.uk/activity_type_id": "1",
+			"http://xapi.jisc.ac.uk/activity_type_description": "Lecture", 
             "http://xapi.jisc.ac.uk/activity_max_count": "32",
             "http://xapi.jisc.ac.uk/activity_mandatory": "1",
             "http://xapi.jisc.ac.uk/recipeVersion": "attendanceV0.1",

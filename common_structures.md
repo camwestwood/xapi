@@ -226,6 +226,10 @@ ContextC pattern is similar to ContextB, but is designed to be used with systems
 	   <td>context.extensions.http://xapi.jisc.ac.uk/activity_type_id</td>
 	   <td></td>
 	</tr>
+		<tr>
+	   <td>context.extensions.http://xapi.jisc.ac.uk/activity_type_description</td>
+	   <td></td>
+	</tr>
 	   <td>context.extensions.http://xapi.jisc.ac.uk/activity_max_count</td>
 	   <td>Maximum number of people that could have attended the event</td>
 	 <tr>
@@ -248,7 +252,7 @@ ContextC pattern is similar to ContextB, but is designed to be used with systems
 		<td>
 		context.extensions.http://xapi.jisc.ac.uk/courseArea
 	    </td>
-	    <td>The <b>courseArea</b> identifies Umbrella course/parent area by its home page URI. More information can be found on the <a href="vocabulary.md#umbrella-course-area">vocabularies page</a>.
+	    <td>Identifies Umbrella course/parent area by its home page URI. More information can be found on the <a href="vocabulary.md#umbrella-course-area">vocabularies page</a>.
 	    </td>
 	    </tr>    
 	<tr>
@@ -516,6 +520,7 @@ This pattern describes the result and if the actor was on time to the event.
 		
 		 "extensions":{
 		  "http://xapi.jisc.ac.uk/activity_late":"1",
+		  "http://xapi.jisc.ac.uk/attendance_category":"1",
 		 }
     }
 ```
