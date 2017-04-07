@@ -110,34 +110,34 @@ ContextD is a new entity, while in draft information on the properties is avalib
 <table>
 	<tr><th>Property [cardinality]</th><th>Description</th></tr>
 	
-	
 	<tr>
 	   <td>context.extensions.http://xapi.jisc.ac.uk/uddModInstanceID</td>
-	   <td>The uddModInstanceID extension records the module instance with which the learning activity is associated. See 		   the <a href="vocabulary.md#31-activity-types">vocabulary page</a> for more details. <td>
+	   <td>The uddModInstanceID extension records the module instance with which the learning activity is associated. See 		   the <a href="vocabulary.md#31-activity-types">vocabulary page</a> for more details. </td>
 	</tr>
+	
 	<tr>
 	   <td>context.extensions.http://xapi.jisc.ac.uk/activity_type_id</td>
-	   <td><td>
+	   <td></td>
 	</tr>
 	   <td>context.extensions.http://xapi.jisc.ac.uk/activity_max_count</td>
-	   <td>Maximum number of people that could have attended the event<td>
+	   <td>Maximum number of people that could have attended the event</td>
 	 <tr>
 	   <td>context.extensions.http://xapi.jisc.ac.uk/activity_mandatory</td>
-	   <td>States if the event was optional or not <td>
+	   <td>States if the event was optional or not </td>
 	  </tr>
 	  <tr>
 	   <td>context.extensions.http://xapi.jisc.ac.uk/recipeVersion</td>
-	   <td>The <b>recipeVersion</b> extension is recommended, and identifies the statement (and its version) which was followed to 			create the xAPI statement.  <td>
+	   <td>The <b>recipeVersion</b> extension is recommended, and identifies the statement (and its version) which was followed to 			create the xAPI statement.  </td>
 	   </tr>
 	  
 	   <tr>
-	     <td>context.extensions.http://xapi.jisc.ac.uk/starttime<br/></td>
-	     <td>The planned start time. USes datetimes for planned end of event.  <td>
+	     <td>context.extensions.http://xapi.jisc.ac.uk/starttime</td>
+	     <td>The planned start time. USes datetimes for planned end of event.  </td>
 	   </tr>
 	   
 	   <tr>   
 	     <td>context.extensions.http://xapi.jisc.ac.uk/endtime<br/></td>
-	     <td>The planned end time of event. Uses datetimes for planned end time of event.  <td>
+	     <td>The planned end time of event. Uses datetimes for planned end time of event.  </td>
 	   </tr>
 	   <tr>
 		<td>
@@ -150,13 +150,14 @@ ContextD is a new entity, while in draft information on the properties is avalib
 	<tr>
 	<td>
 	context.instructor [0..1]
-	</td><td></td>
+	</td>
+	<td></td>
 	</tr>
 	<tr>
 	<td>
 			context.instructor.objectType [1]
 			</td>
-			<td>A JSON Object. <b>object.instructor.objectType</b>  has "Agent" as a value. </td>
+			<td>A JSON Object. object.instructor.objectType has "Agent" as a value. </td>
 	</tr>
 	<tr>
 	<td>
