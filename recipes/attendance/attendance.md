@@ -163,19 +163,23 @@ Common entity identifier: Common entity identifier: [ContextD](/common_structure
             "http://xapi.jisc.ac.uk/activity_late": "1"
         }
     },
-  "object": {
+ "object": {
         "objectType": "Activity",
         "id": "http://wicketkeeper.poppleton.ac.uk/modules/2016/sem1/psy101/qlecture1",
         "definition": {
-            "type": "http://activitystrea.ms/schema/1.0/event",
+            "type": "http://xapi.jisc.ac.uk/timeTabledEvent/",
             "name": {
-                "en": "Lecture"
+                "en": "Online Tutorial"
             },
             "description": {
-                "en": "The first lecture of psychology 101"
+                "en": "The first tutorial of psychology 101"
             }
+		"extensions": {
+            "http://xapi.jisc.ac.uk/subType": "http://id.tincanapi.com/activitytype/lms"
+		}
         }
     },
+		
     "context": {
         "extensions": {
             "http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0",
