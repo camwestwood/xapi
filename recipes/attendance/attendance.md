@@ -108,7 +108,6 @@ Common entity identifier: ContextD
 ContextD is a new entity, while in draft information on the properties is avalible here:
 
 <table>
-</table>
 	<tr><th>Property [cardinality]</th><th>Description</th></tr>
 	
 	
