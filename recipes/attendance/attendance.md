@@ -144,7 +144,7 @@ ContextD is a new entity, while in draft information on the properties is avalib
 		context.extensions.http://xapi.jisc.ac.uk/courseArea
 	    </td>
 	    <td>The <b>courseArea</b> identifies Umbrella course/parent area by its home page URI. More information can be found on the <a href="vocabulary.md#umbrella-course-area">vocabularies page</a>.
-	    <td>
+	    </td>
 	    </tr>
 	    
 	<tr>
