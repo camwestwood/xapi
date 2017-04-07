@@ -220,20 +220,20 @@ ContextC pattern is similar to ContextB, but is designed to be used with systems
 	<tr><th>Property [cardinality]</th><th>Description</th></tr>
 	<tr>
 	   <td>context.extensions.http://xapi.jisc.ac.uk/uddModInstanceID</td>
-	   <td>The uddModInstanceID extension records the module instance with which the learning activity is associated. See 		  the <a href="vocabulary.md#31-activity-types">vocabulary page</a> for more details. </td>
+	   <td>The uddModInstanceID extension records the module instance with which the learning event is associated. See 		  the <a href="vocabulary.md#31-activity-types">vocabulary page</a> for more details. </td>
 	</tr>
 	<tr>
-	   <td>context.extensions.http://xapi.jisc.ac.uk/activity_type_id</td>
+	   <td>context.extensions.http://xapi.jisc.ac.uk/event_type_id</td>
 	   <td></td>
 	</tr>
 		<tr>
-	   <td>context.extensions.http://xapi.jisc.ac.uk/activity_type_description</td>
+	   <td>context.extensions.http://xapi.jisc.ac.uk/event_type_description</td>
 	   <td></td>
 	</tr>
-	   <td>context.extensions.http://xapi.jisc.ac.uk/activity_max_count</td>
+	   <td>context.extensions.http://xapi.jisc.ac.uk/event_max_count</td>
 	   <td>Maximum number of people that could have attended the event</td>
 	 <tr>
-	   <td>context.extensions.http://xapi.jisc.ac.uk/activity_mandatory</td>
+	   <td>context.extensions.http://xapi.jisc.ac.uk/event_mandatory</td>
 	   <td>States if the event was optional or not </td>
 	  </tr>
 	  <tr>

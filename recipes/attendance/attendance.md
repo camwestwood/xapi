@@ -9,15 +9,15 @@ In this statement:
 
 - Agent and verb
 
-Student with identifier STUDENT_ID (and name NAME) attended a learning activity.
+Student with identifier STUDENT_ID (and name NAME) attended a learning event.
 
 - Object
 
-It was an event activity with id of ACTIVITY_EVENT_ID, of type ACTIVIITY_TYPE.
+It was an event event with id of EVENT_ID, of type EVENT_TYPE.
 
 - Context
 
-Event was a part of module instance MOD_INSTANCE_ID. The activity type has an id of Activity_Type_ID. The maximum number of people who could have attended the event was ACTIVITY_MAX_COUNT. The time it started was ACTIVITY_LOGGED_START and ended at ACTIVITY_LOGGED_END. The activity was led by instructor with identifer STAFF_ID.
+Event was a part of module instance MOD_INSTANCE_ID. The activity type has an id of Event_Type_ID. The maximum number of people who could have attended the event was EVENT_MAX_COUNT. The time it started was ACTIVITY_LOGGED_START and ended at ACTIVITY_LOGGED_END. The activity was led by instructor with identifer STAFF_ID.
 			
 			
 
@@ -70,8 +70,8 @@ The result.completion must be set true or false, indicating if the actor attende
         "completion":true,
 		
 	 "extensions":{
-		  "http://xapi.jisc.ac.uk/activity_late":"1",
-		  "http://xapi.jisc.ac.uk/attendance_category":"1",
+		  "http://xapi.jisc.ac.uk/event_late":"1",
+		  "http://xapi.jisc.ac.uk/event_category":"1",
 		 }
     }
 ```
@@ -84,21 +84,22 @@ The object defines the activity that has been completed. Examples of valid objec
 
 ``` javascript
 
-"object":{
-		"objectType":"Activity",
-		"id":"L1001",
-		"definition":{
-			"type":"http://xapi.jisc.ac.uk/lecture",
-			"name":{
-				"en":"Lecture"
-			},
-			"description":{
-				"en":"The first lecture of 101"
-				}
-			},
-			
-			
-		}
+ "object": {
+        "objectType": "Activity",
+        "id": "http://wicketkeeper.poppleton.ac.uk/modules/2016/sem1/psy101/qlecture1",
+        "definition": {
+            "type": "http://xapi.jisc.ac.uk/timeTabledEvent/",
+            "name": {
+                "en": "Online Tutorial"
+            },
+            "description": {
+                "en": "The first tutorial of psychology 101"
+            }
+		"extensions": {
+            "http://xapi.jisc.ac.uk/subType": "http://id.tincanapi.com/activitytype/lms"
+        }
+        }
+    },
 		
 ```
 
@@ -115,10 +116,10 @@ Common entity identifier: Common entity identifier: [ContextD](/common_structure
  "context": {
         "extensions": {
             "http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0",
-            "http://xapi.jisc.ac.uk/activity_type_id": "1",
-			"http://xapi.jisc.ac.uk/activity_type_description": "Lecture", 
-            "http://xapi.jisc.ac.uk/activity_max_count": "32",
-            "http://xapi.jisc.ac.uk/activity_mandatory": "1",
+            "http://xapi.jisc.ac.uk/event_type_id": "1",
+			"http://xapi.jisc.ac.uk/event_type_description": "Lecture", 
+            "http://xapi.jisc.ac.uk/event_max_count": "32",
+            "http://xapi.jisc.ac.uk/event_mandatory": "1",
             "http://xapi.jisc.ac.uk/recipeVersion": "attendanceV0.1",
             "http://xapi.jisc.ac.uk/starttime": "2016-02-05T10:00:00.000Z",
             "http://xapi.jisc.ac.uk/endtime": "2016-02-05T14:00:00.000Z",
@@ -162,26 +163,25 @@ Common entity identifier: Common entity identifier: [ContextD](/common_structure
             "http://xapi.jisc.ac.uk/activity_late": "1"
         }
     },
-   object":{
-		"objectType":"Activity",
-		"id":"L1001",
-		"definition":{
-			"type":"http://xapi.jisc.ac.uk/lecture",
-			"name":{
-				"en":"Lecture"
-			},
-			"description":{
-				"en":"The first lecture of 101"
-				}
-			},
-		}
+  "object": {
+        "objectType": "Activity",
+        "id": "http://wicketkeeper.poppleton.ac.uk/modules/2016/sem1/psy101/qlecture1",
+        "definition": {
+            "type": "http://activitystrea.ms/schema/1.0/event",
+            "name": {
+                "en": "Lecture"
+            },
+            "description": {
+                "en": "The first lecture of psychology 101"
+            }
+        }
     },
     "context": {
         "extensions": {
             "http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0",
-            "http://xapi.jisc.ac.uk/activity_type_id": "1",
-            "http://xapi.jisc.ac.uk/activity_max_count": "32",
-            "http://xapi.jisc.ac.uk/activity_mandatory": "1",
+            "http://xapi.jisc.ac.uk/event_type_id": "1",
+            "http://xapi.jisc.ac.uk/event_max_count": "32",
+            "http://xapi.jisc.ac.uk/event_mandatory": "1",
             "http://xapi.jisc.ac.uk/recipeVersion": "attendanceV0.1",
 			"http://xapi.jisc.ac.uk/starttime": "2016-02-05T10:00:00.000Z",
             "http://xapi.jisc.ac.uk/endtime": "2016-02-05T14:00:00.000Z",
