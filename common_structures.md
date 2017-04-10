@@ -10,25 +10,23 @@ This entity is required across all recipes in the Jisc profile.
 The actor entity describes the individual that is the subject of the statement.
 
 <table>
-	<tr><th>Property</th><th>Description</th></tr>
-	<tr>
-		<td>actor.objectType [1]</td>
-		<td>
-		Must have the value "Agent". Actors of type "Group" are not supported in the Jisc profile.
-		</td>
-	</tr>
-	<tr>
-		<td>actor.name [0..1]</td>
-		<td>Full name of user.</td>
-	</tr>
-	<tr>
-		<td>	
-		    actor.account [1] <br />
-		    actor.account.name [1] <br />
-		    actor.account.homepage [1]
+<tr><th>Property</th><th>Description</th></tr>
+<tr>
+<td>actor.objectType [1]</td>
+<td>Must have the value "Agent". Actors of type "Group" are not supported in the Jisc profile.</td>
+</tr>
+<tr>
+<td>actor.name [0..1]</td>
+<td>Full name of user.</td>
+</tr>
+<tr>
+<td>	
+actor.account [1] 
+actor.account.name [1]
+actor.account.homepage [1]
 </td>
-		<td>A JSON Object with <b>account.name</b> giving the login id for the subject of the statement and <b>account.homepage</b> giving the URL of the home page of the application for which the login id applies.</td>
-	</tr>
+<td>A JSON Object with <b>account.name</b> giving the login id for the subject of the statement and <b>account.homepage</b> giving the URL of the home page of the application for which the login id applies.</td>
+</tr>
 </table>
 
 ### Example
