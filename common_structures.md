@@ -217,6 +217,7 @@ ContextC pattern is similar to ContextB, but is designed to be used with systems
 ### ContextD
 
 <table>
+<tr>
 <td>
 	context.instructor [0..1]
 	</td>
