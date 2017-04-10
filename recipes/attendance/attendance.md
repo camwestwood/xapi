@@ -94,22 +94,21 @@ The object defines the event that has been completed. Examples of valid object.d
             },
             "description": {
                 "en": "The first tutorial of psychology 101"
+            },
+	    "extensions": {
+            	"http://xapi.jisc.ac.uk/subType": "http://xapi.jisc.ac.uk/lecture"
+	    	"http://xapi.jisc.ac.uk/starttime": "2016-02-05T10:00:00.000Z",
+          	"http://xapi.jisc.ac.uk/endtime": "2016-02-05T14:00:00.000Z",
+	   	"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0",
+            	"http://xapi.jisc.ac.uk/event_type_id": "1",
+	    	"http://xapi.jisc.ac.uk/event_type_description": "Lecture", 
+            	"http://xapi.jisc.ac.uk/event_max_count": "32",
+            	"http://xapi.jisc.ac.uk/event_mandatory": "1",
+		"http://xapi.jisc.ac.uk/courseArea": {
+                	"http://xapi.jisc.ac.uk/vle_mod_id": "LA101-200-2016S1-0",
+                	"id": "http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=4"
             }
-		"extensions": {
-            "http://xapi.jisc.ac.uk/subType": "http://xapi.jisc.ac.uk/lecture"
-			"http://xapi.jisc.ac.uk/starttime": "2016-02-05T10:00:00.000Z",
-            "http://xapi.jisc.ac.uk/endtime": "2016-02-05T14:00:00.000Z",
-			"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0",
-            "http://xapi.jisc.ac.uk/event_type_id": "1",
-			"http://xapi.jisc.ac.uk/event_type_description": "Lecture", 
-            "http://xapi.jisc.ac.uk/event_max_count": "32",
-            "http://xapi.jisc.ac.uk/event_mandatory": "1",
-			"http://xapi.jisc.ac.uk/courseArea": {
-                "http://xapi.jisc.ac.uk/vle_mod_id": "LA101-200-2016S1-0",
-                "id": "http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=4"
-            }
-            
-        }
+       	 }
     },
 		
 ```
