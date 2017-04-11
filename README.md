@@ -28,7 +28,7 @@ These are the currently platform independent documented statements related to vi
 <table>
 <tr><td>Statement Template </td>   <td>JSON example</td> </tr>
 <tr><td> <a href = "/recipes/vle/login.md">Logged in</a></td><td> <a href = "vle/moodle/login.js">Logged in Moodle </a> <br/><a href = "vle/blackboard/loggedin.json"> Logged In Blackboard   </a>   </td> </tr>                                                           
-<tr><td> <a href = "/recipes/vle/logout.md>Logged out">Logged out</a></td><td> <a href = "vle/moodle/logout.js">Logged out Moodle </a>  <br/> <a href = "vle/blackboard/loggedout.json"> Logged out Blackboard   </a>    </td> </tr>    
+<tr><td> <a href = "/recipes/vle/logout.md">Logged out</a></td><td> <a href = "vle/moodle/logout.js">Logged out Moodle </a>  <br/> <a href = "vle/blackboard/loggedout.json"> Logged out Blackboard   </a>    </td> </tr>    
 <tr><td> <a href = "/recipes/vle/Module-View.md">VLE resource viewed   </a></td><td><a href = "vle/moodle/moduleview.js">Moodle module viewed </a> <br/> <a href = "vle/blackboard/course_access.json"> Blackboard course acccess  </a> <br/> <a href="vle/blackboard/course_content_access.json">Blackboard content accessed</a></td> </tr>    
 <tr><td> <a href = "/recipes/vle/Session-timeout.md">Session timeout   </a></td><td><a href = "vle/blackboard/session_timeout.json">Blackboard session timeout </a>    </td></tr>    
 <tr><td><a href =  "/recipes/vle/assignment-graded.md">Assignment Graded   </a></td><td> <a href = "vle/moodle/asssignment_graded.json">Assignment graded in Moodle</a><br/> <a href="vle/blackboard/asssignment_graded.json">Assignment graded in Blackboard </a>   </td></tr>    
