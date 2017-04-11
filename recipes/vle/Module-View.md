@@ -79,6 +79,10 @@ For this recipe the object needs to identify what was viewed. A list of valid va
 		"type": "http://xapi.jisc.ac.uk/define/vle/page",			
 		"name": { "en": "Sample page" },			   
 	 }
+	 "extensions": {
+     		 "http://xapi.jisc.ac.uk/subType": "http://id.tincanapi.com/activitytype/lms"
+	 }
+    }
 }
 ```
 
