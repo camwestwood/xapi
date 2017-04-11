@@ -47,6 +47,7 @@ Student starts an attempt for Blackboard assignment/assessment/test/survey
 
 ### Attempt completed (Not used)
 
+
 Student completed an attempt for Blackboard assignment/assessment/test/survey
 
 * [attempt_started.json](attempt_started.json)

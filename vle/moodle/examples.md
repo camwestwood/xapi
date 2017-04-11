@@ -2,7 +2,7 @@
 
 ## All examples of currently supported activity events recipes
 
-###Logged in
+### Logged in
 
 Student logged 
 

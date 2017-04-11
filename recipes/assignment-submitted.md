@@ -1,34 +1,14 @@
-# VLE User Submits Assignment Recipe
-Revision: 1.2
+# vle_assignment_submitted Recipe
+Revision: 1.3
 
 ## Purpose
 This activity records a user submitting an assignment
 ## Definition
 
 ### Actor
-Common entity identifier:  Actor.A
+Common entity identifier:  ActorA, as defined on the [common structures](../common_structures.md#actora) page.
 
-
-#### Entity Example:
 The actor entity describes the individual who has submitted the assignment.
-
-
-<table>
-	<tr><th>Property in Example</th><th>Description</th></tr>
-	<tr>
-		<td>actor.account</td>
-		<td>Full name of user, optional.</td>
-	</tr>
-	<tr>
-		<td>actor.objectType</td>
-		<td>Agent</td>
-	</tr>
-		<tr>
-		<td>actor.account</td>
-		<td>JSON Object with unique id and home page</td>
-	</tr>
-</table>
-
 
 ``` Javascript
 {
@@ -36,30 +16,16 @@ The actor entity describes the individual who has submitted the assignment.
         "objectType": "Agent",
         "name": "John Smith",
         "account": {
-            "name": "2",
+            "name": "jsmith12",
             "homePage": "https://courses.alpha.jisc.ac.uk/moodle"
         }
     },
 ```
 
 ### Verb
-Common entity identifier: Verb.A
-
-#### Entity Example:
+Common entity identifier: VerbA, as defined on the [common structures](../common_structures.md#verba) page.
 
 The Verb, [completed](/vocabulary.md#verbs) describes the action of completing an activity - finishing in its entirety.
-
-<table>
-	<tr><th>Property in Example</th><th>Description</th></tr>
-	<tr>
-		<td>verb.id</td>
-		<td>IRI corresponding to Verb.</td>
-	</tr>
-	<tr>
-		<td>verb.display</td>
-		<td>Human readable representation of Verb. Key is a RFC 5646 Language Tag</td>
-	</tr>
-</table>
 
 ``` javascript
 "verb": {
@@ -70,19 +36,11 @@ The Verb, [completed](/vocabulary.md#verbs) describes the action of completing a
     },
 ``` 
 
-### Result.A
-Common entity identifier: Result.A
+### Result
+Common entity identifier: ResultA, as defined on the [common structures](../common_structures.md#resulta) page.
 
-#### Entity Example:
-The optional result entity can include completion. See [the xAPI specification for a full description of the result entity](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI.md#result)
 
-<table>
-	<tr><th>Property in Example</th><th>Description</th></tr>
-	<tr>
-		<td>result.result.completion</td>
-		<td>"true". Indicates the Activity was completed</td>
-	</tr>
-</table>
+In this recipe the result entity is optional and includes completion. See [the xAPI specification for a full description of the result entity](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#result)
 
 ``` javascript
  "result":{
@@ -91,31 +49,8 @@ The optional result entity can include completion. See [the xAPI specification f
 ```
 
 ### Object
-Common entity identifier: Object.B
+Common entity identifier: ObjectB, as defined on the [common structures](../common_structures.md#objectb) page.
 
-#### Entity Example:
-The object defines the activity that has been completed. [Examples of valid object.definition vocabulary  Activity object Types](/common_statements.md#object) can be found on the vocab page.
-
-<table>
-	<tr><th>Property in Example</th><th>Description</th></tr>
-	<tr>
-		<td>object.objectType</td>
-		<td>Must be "Activity".</td>
-	</tr>
-	<tr>
-		<td>object.id</td>
-		<td>An identifier for a single unique Activity</td>
-	</tr>
-	<tr>
-		<td>object.definition</td>
-		<td>JSON object. Object.definition.type identifies the activity.</td>
-	</tr>
-	</tr>
-		<tr>
-		<td>object.extension</td>
-		<td>JSON object. "http://xapi.jisc.ac.uk/dueDate" is a ISO 8601 date time that the assignment is due</td>
-	</tr>
-</table>
 
 Example:
 
@@ -125,12 +60,12 @@ Example:
 		"objectType":"Activity",
 		"id":"http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=4",
 		"definition":{
-			"type":"http://adlnet.gov/expapi/activities/module",
+			"type":"http://adlnet.gov/expapi/activities/assessment",
 			"name":{
-				"en":"Course Assignment"
+				"en":"xapi Assignment"
 			},
 			"description":{
-				"en":"Course Assignment description"
+				"en":"xppi Assignment description"
 				}
 			},
 			
@@ -144,27 +79,9 @@ Example:
 
 
 ### Context
-Common entity identifier: Context.B
+Common entity identifier: ContextB, as defined on the [common structures](../common_structures.md#contextb) page.
 
-#### Entity Example:
-Plugin specific extensions are optional and not part of the core recipe.
-
-<table>
-	<tr><th>Property in Example</th><th>Description</th></tr>
-	<tr>
-		<td>context.platform</td>
-		<td>The platform used in the experience of this learning activity.</td>
-	</tr>
-	<tr>
-		<td>context.extensions</td>
-		<td>The sessionID extension is the VLE session ID. [IP Address](https://registry.tincanapi.com/#uri/extension/310) is used to identify the client's real address as a Context extension. RecipeVersion is recommended and is the version of this recipe found at the top of this page.</td>
-	</tr>
-	<tr>
-		<td>context.context.activities</td>
-		<td>Has a context type of grouping. A course that relates to a assignment as the parent.</td>
-	</tr>
-</table>
-
+For the submitted recipe, the context.contextActivities is property with a ‘grouping’ that allows statements to be associated to the activity described in the object entities as part of a larger whole. Different activity types can be found on the vocabulary page.
 
 Example:
 
@@ -176,7 +93,8 @@ Example:
                     "objectType":"Activity",
                     "id":"http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=4",
                     "definition":{
-                        "type":"http://xapi.jisc.ac.uk/courseArea",
+                       
+						"type": "http://xapi.jisc.ac.uk/define/vle/course"
                         "name":{
                             "en":"xAPI Basics"
                         },
@@ -197,8 +115,8 @@ Example:
 				},
 			
  			"http://xapi.jisc.ac.uk/sessionId":"32456891",
-            "http://id.tincanapi.com/extensions/ip-address": "10.3.3.48"
-			"http://xapi.jisc.ac.uk/recipeVersion" : "1.2"
+            "http://id.tincanapi.com/extension/ip-address": "10.3.3.48"
+			"http://xapi.jisc.ac.uk/recipeVersion" : "vle_assignment_submittedV1.3"
 			}
 		}
 ```
