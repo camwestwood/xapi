@@ -1,14 +1,57 @@
+# Statement Template Changes
+
+
+##  VLE Recipes
+
+
+### Logged in
+
+2-05-2016
+[subType supersedes ApplicationType][https://github.com/jiscdev/xapi/issues/55]
+
+### Logged out
+
+2-05-2016
+[subType supersedes ApplicationType][https://github.com/jiscdev/xapi/issues/55]
+
+
+### VLE resource viewed
+
+2-05-2016
+[subType supersedes ApplicationType][https://github.com/jiscdev/xapi/issues/55]
+
+11-04-2017
+(documentation change) added subtype example to documentation
+
+### Session timeout
+
+2-05-2016
+[subType supersedes ApplicationType][https://github.com/jiscdev/xapi/issues/55]
+
+
+#### Assignment Graded
+
+2-05-2016
+[subType supersedes ApplicationType][https://github.com/jiscdev/xapi/issues/55]
+
+
+#### Assignment Submitted
+
+2-05-2016
+[subType supersedes ApplicationType][https://github.com/jiscdev/xapi/issues/55]
+
+#### Attended learning activity
+
+### Attendance Recipes
+
+#### Attended learning activity
+
+### Student Recipes
+
+
 # Version changes to vocabulary
 
 Tracking identifier mappings between changes
-
-## v0.3
-
-| V0.2			| v0.3                    		 | 
-| ------------- | -------------------------------|
-|				|								 |
-
-
 
 ## v0.2
 
