@@ -295,16 +295,6 @@ This object pattern describes an activity that has been completed. Examples of v
 		<td>An identifier for a single unique Activity</td>
 	</tr>
 	<tr>
-		<td>
-			object.instructor [0..1] <br />
-			object.instructor.objectType [1] <br />
-			object.instructor.name [0..1] <br />
-		    object.instructor.account.name [1] <br />
-		    object.instructor.account.homepage [1]
-</td>
-		<td>A JSON Object. <b>object.instructor.objectType</b> typically has "Agent" as a value. <br /><b>object.instructor.name</b> gives the name of the role, which is typically "instructor". <br /> <b>account.name</b> gives the login id for the instructor. <br /> <b>account.homepage</b> gives the URL of the home page of the application for which the login id applies.</td>
-	</tr>
-	<tr>
 			<td>object.definition<br/>
 			object.definition.type [1]<br />
 			object.definition.name [0..1]<br />
