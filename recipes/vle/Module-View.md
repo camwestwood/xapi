@@ -88,4 +88,5 @@ For this recipe the object needs to identify what was viewed. A list of valid va
 
 ### Complete VLE Specific Examples
 [Moodle Example](/vle/moodle/moduleview.js)
+
 [Blackboard Example](/vle/blackboard/course_content_access.json)
