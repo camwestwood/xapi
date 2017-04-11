@@ -87,6 +87,6 @@ For the logged-out recipe, the object.definition.type is "http://activitystrea.m
 
 ### Complete VLE Specific Examples
 
-Moodle (ToDo)
+[Moodle](/vle/moodle/logout.js)
 
 [Blackboard](/vle/blackboard/loggedout.json)
