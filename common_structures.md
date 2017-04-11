@@ -305,10 +305,9 @@ This object pattern describes an activity that has been completed. Examples of v
 		<td>A JSON Object. <b>object.instructor.objectType</b> typically has "Agent" as a value. <br /><b>object.instructor.name</b> gives the name of the role, which is typically "instructor". <br /> <b>account.name</b> gives the login id for the instructor. <br /> <b>account.homepage</b> gives the URL of the home page of the application for which the login id applies.</td>
 	</tr>
 	<tr>
-		<td>object.definition 
+			<td>object.definition<br/>
 			object.definition.type [1]<br />
 			object.definition.name [0..1]<br />
-			object.definition.description [0..1]<br />
 			object.definition.extensions.http://xapi.jisc.ac.uk/dueDate [0..1]
 </td>
 		<td>The <b>object.definition.type</b> indicates the type of the object of the statement. Valid values are listed on the <a href="vocabulary.md#31-activity-types">vocabulary page</a>.<br />
