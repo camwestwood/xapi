@@ -1,4 +1,4 @@
-#vle_logged_out statement template
+# vle_logged_out statement template
 Revision: 1.2
 
 ## Purpose
