@@ -52,16 +52,14 @@ The courseArea is required. See the [vocabularies](../vocabulary.md#42-courseare
         "extensions": {
 	
       	"http://xapi.jisc.ac.uk/courseArea": {
-			"http://xapi.jisc.ac.uk/vle_mod_id": "LA101",
+	    "http://xapi.jisc.ac.uk/vle_mod_id": "LA101",
             "id":"http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=4"
-					},
+		},
 					
-		  	"http://xapi.jisc.ac.uk/sessionId": "32456891"  ,
-		  	"http://id.tincanapi.com/extension/ip-address": "10.3.3.48"
-			"http://xapi.jisc.ac.uk/recipeVersion" : "vle_resource_viewedV1.3"
-			
+	"http://xapi.jisc.ac.uk/sessionId": "32456891"  ,
+	"http://id.tincanapi.com/extension/ip-address": "10.3.3.48"
+	"http://xapi.jisc.ac.uk/recipeVersion" : "vle_resource_viewedV1.3"
 			}
-              
         }
 ```
 
@@ -76,15 +74,14 @@ For this recipe the object needs to identify what was viewed. A list of valid va
 ``` javascript
 "object": {
 	"objectType": "Activity",
-	"id": "http://moodle.data.alpha.jisc.ac.uk/mod/quiz/view.php?id=13"   	 	//  unique id or url of the item being logged into
+	"id": "http://moodle.data.alpha.jisc.ac.uk/mod/quiz/view.php?id=13"   	 	
 	"definition": {
-		"type": "http://xapi.jisc.ac.uk/define/vle/page",			//  definition type as above
-		"name": { "en": "Sample page" },			   //  name of item as returned by VLE	
+		"type": "http://xapi.jisc.ac.uk/define/vle/page",			
+		"name": { "en": "Sample page" },			   
 	 }
 }
 ```
 
 ### Complete VLE Specific Examples
 [Moodle Example](/vle/moodle/moduleview.js)
-
 [Blackboard Example](/vle/blackboard/course_content_access.json)
