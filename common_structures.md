@@ -311,8 +311,7 @@ This object pattern describes an activity that has been completed. Examples of v
 			object.definition.extensions.http://xapi.jisc.ac.uk/dueDate [0..1]
 </td>
 		<td>The <b>object.definition.type</b> indicates the type of the object of the statement. Valid values are listed on the <a href="vocabulary.md#31-activity-types">vocabulary page</a>.<br />
-		The <b>object.definition.name</b> holds a human readable name of the object type.</br>
-		The <b>description</b> holds a description of the object type.</br>
+		The <b>object.definition.name</b> holds a human readable name of the object type.<br/>
  <b>"http://xapi.jisc.ac.uk/dueDate"</b> is a ISO 8601 date time that indicates when an assignment is due</td>
 		</td>
 	</tr>
