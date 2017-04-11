@@ -191,7 +191,9 @@ ContextC pattern is similar to ContextB, but is designed to be used with systems
 	</tr>
 	<tr>
 		<td> context.extensions.courseArea [0..1]<br />
-			context.extensions.recipeVersion [1]
+		context.extensions.recipeVersion [1]<br />
+		context.extension.sessionId [0..1]<br />
+		context.extension.ip-address [1] <br />
 </td>
 		<td>Four extensions are provided for, with IRIs as defined on the <a href="vocabulary.md#41-context-extensions">vocabularies page</a>.<br/>
     The <b>sessionID</b> extension is the VLE session ID, or a suitably hashed version of it. A value should be provided if it is available.<br/>
