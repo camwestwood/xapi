@@ -1,4 +1,4 @@
-#vle_logged_in statement template
+# vle_logged_in statement template
 
 Revision: 1.3
 
