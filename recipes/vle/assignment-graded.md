@@ -1,4 +1,4 @@
-#vle_assignment_graded statement template
+# vle_assignment_graded statement template
 Revision: 1.3
 
 ## Purpose
