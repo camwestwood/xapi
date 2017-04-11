@@ -19,11 +19,11 @@ The actor entity describes the individual that is the subject of the statement.
 </tr>
 <tr>
 <td>	
-actor.account [1] 
-actor.account.name [1]
-actor.account.homepage [1]
+actor.account [1] <br/>
+actor.account.name [1] <br/>
+actor.account.homepage [1] <br/>
 </td>
-<td>A JSON Object with account.name giving the login id for the subject of the statement and account.homepage giving the URL of the home page of the application for which the login id applies.</td></tr>
+<td>A JSON Object with <b>account.name</b> giving the login id for the subject of the statement and <b>account.homepage</b> giving the URL of the home page of the application for which the login id applies.</td></tr>
 </table>
 
 ### Example
