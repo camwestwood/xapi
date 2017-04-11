@@ -52,7 +52,7 @@ Since the logged-in action is not undertaken in the context of a learning activi
         "platform": "Moodle",
         "extensions": {
  			"http://xapi.jisc.ac.uk/sessionId":"32456891",
-        	"http://id.tincanapi.com/extension/ip-address": "10.3.3.48",
+        		"http://id.tincanapi.com/extension/ip-address": "10.3.3.48",
 			"http://xapi.jisc.ac.uk/recipeVersion" : "vle_logged_outV1.3"
 			}
 ```
@@ -84,6 +84,6 @@ The object.definition.type is "http://activitystrea.ms/schema/1.0/application". 
 
 ### Complete VLE Specific Examples
 
-Moodle (ToDo)
+[Moodle](/vle/blackboard/loggedout.js)
 
 [Blackboard](/vle/blackboard/loggedout.json)
