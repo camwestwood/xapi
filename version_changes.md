@@ -6,39 +6,45 @@
 
 ### Logged in
 
-2-05-2016
-[subType supersedes ApplicationType][https://github.com/jiscdev/xapi/issues/55]
+2-05-2016, Documentation change [subType supersedes ApplicationType][https://github.com/jiscdev/xapi/issues/55] in objectA
 
 ### Logged out
 
-2-05-2016
-[subType supersedes ApplicationType][https://github.com/jiscdev/xapi/issues/55]
+20-03-2017, Spec Change. [Description no longer required in ObjectA.](https://github.com/jiscdev/xapi/issues/148)
+
+2-05-2016, Documentation change [subType supersedes ApplicationType][https://github.com/jiscdev/xapi/issues/55] in objectA
 
 
 ### VLE resource viewed
 
-2-05-2016
-[subType supersedes ApplicationType][https://github.com/jiscdev/xapi/issues/55]
 
-11-04-2017
-(documentation change) added subtype example to documentation
+11-04-2017, Documentation change [added subtype example to documentation]
+
+20-03-2017, Spec Change. [Description no longer required in ObjectA.](https://github.com/jiscdev/xapi/issues/148)
+
+2-05-2016, Documentation change [subType supersedes ApplicationType][https://github.com/jiscdev/xapi/issues/55]
+
+
 
 ### Session timeout
 
-2-05-2016
-[subType supersedes ApplicationType][https://github.com/jiscdev/xapi/issues/55]
+20-03-2017, Spec Change. [Description no longer required in ObjectA.](https://github.com/jiscdev/xapi/issues/148)
+
+2-05-2016, Documentation change [subType supersedes ApplicationType][https://github.com/jiscdev/xapi/issues/55]
 
 
 #### Assignment Graded
 
-2-05-2016
-[subType supersedes ApplicationType][https://github.com/jiscdev/xapi/issues/55]
+11-04-2017, Documentation Change. [Description no longer required in ObjectA or B.](https://github.com/jiscdev/xapi/issues/148)
+20-03-2017, Spec Change. [Description no longer required in ObjectA or B.](https://github.com/jiscdev/xapi/issues/148)
 
 
 #### Assignment Submitted
 
-2-05-2016
-[subType supersedes ApplicationType][https://github.com/jiscdev/xapi/issues/55]
+
+11-04-2017, Documentation Change. [Description no longer required in ObjectA.](https://github.com/jiscdev/xapi/issues/148)
+20-03-2017, Spec Change. [Description no longer required in ObjectA.](https://github.com/jiscdev/xapi/issues/148). Removed from ObjectA in Context.
+
 
 #### Attended learning activity
 
@@ -49,7 +55,7 @@
 ### Student Recipes
 
 
-# Version changes to vocabulary
+# Vocabulary Changes
 
 Tracking identifier mappings between changes
 
