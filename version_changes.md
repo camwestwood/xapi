@@ -36,6 +36,7 @@
 #### Assignment Graded
 
 11-04-2017, Documentation Change. [Description no longer required in ObjectA or B.](https://github.com/jiscdev/xapi/issues/148)
+
 20-03-2017, Spec Change. [Description no longer required in ObjectA or B.](https://github.com/jiscdev/xapi/issues/148)
 
 
@@ -43,6 +44,7 @@
 
 
 11-04-2017, Documentation Change. [Description no longer required in ObjectA.](https://github.com/jiscdev/xapi/issues/148)
+
 20-03-2017, Spec Change. [Description no longer required in ObjectA.](https://github.com/jiscdev/xapi/issues/148). Removed from ObjectA in Context.
 
 
