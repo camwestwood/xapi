@@ -238,12 +238,12 @@ This object pattern describes the core attributes of Object as used in the Jisc 
 		<td>object.definition.type [1]<br />
 	object.definition.name [0..1]<br />
 	object.definition.extensions.http://xapi.jisc.ac.uk/subType [0..1]<br />
-	object.definition.extensions.http://xapi.jisc.ac.uk/uddModInstanceID [0..1]</td>
+	object.definition.extensions.http://xapi.jisc.ac.uk/uddModInstanceID [0..1] (attendence)</td>
 		<td>A JSON object comprising both standard xAPI attributes and the Jisc profile 'subType' and 'uddModInstanceID' extensions.<br/>
-    The <b>type</b> indicates the type of the object of the statement. It is required and valid values are listed on the <a href="vocabulary.md#31-activity-types">vocabulary page</a>.</br>
-    The <b>name</b> is optional.</br>
+    The <b>type</b> indicates the type of the object of the statement. It is required and valid values are listed on the <a href="vocabulary.md#31-activity-types">vocabulary page</a>.<br/>
+    The <b>name</b> is optional.<br/>
     The <b>subType</b> extension may be used to indicate the sub-type of this activity, if applicable for the recipe being used to create the statement. This qualifies the object.objectType, and is described on the [vocabularies](vocabulary.md#32-object-definition-extensions) page.<br />
-    The <b>uddModInstanceID</b> extension records the module instance with which the learning activity is associated. See the <a href="vocabulary.md#31-activity-types">vocabulary page</a> for more details.</td>
+    The <b>uddModInstanceID</b> extension is used in attendence recipes with vle_mod_id to match the UDD [see ticket 140](https://github.com/jiscdev/xapi/issues/140) records the module instance with which the learning activity is associated. See the <a href="vocabulary.md#31-activity-types">vocabulary page</a> for more details.</td>
 	</tr>
 	
 </table>
