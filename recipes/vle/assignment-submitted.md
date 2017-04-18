@@ -1,4 +1,4 @@
-#vle_assignment_submitted statement template
+# vle_assignment_submitted statement template
 Revision: 1.3
 
 ## Purpose
