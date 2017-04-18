@@ -35,6 +35,7 @@
 
 #### Assignment Graded
 
+20-04-2017, Documentation Change. SubType example in context.contextActivities (which is an object that fits objectA statement).
 
 11-04-2017, Documentation Change. [Description no longer required in ObjectA or B.](https://github.com/jiscdev/xapi/issues/148)
 
@@ -43,6 +44,7 @@
 
 #### Assignment Submitted
 
+20-04-2017, Documentation Change. SubType example in context.contextActivities (which is an object that fits objectA statement).
 
 11-04-2017, Documentation Change. [Description no longer required in ObjectA.](https://github.com/jiscdev/xapi/issues/148)
 
