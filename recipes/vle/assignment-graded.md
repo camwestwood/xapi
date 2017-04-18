@@ -103,9 +103,9 @@ The context.contextActivities is property with a ‘grouping’ that allows stat
                         "name":{
                             "en":"xAPI Basics"
                         },
-                        "description":{
-                            "en":"xAPI Basics course for Learning Analytics enthusiasts"
-                        }
+                    "extensions": {
+     		   	 "http://xapi.jisc.ac.uk/subType": "http://id.tincanapi.com/activitytype/lms"
+			}
                     }
                 }
             ]
