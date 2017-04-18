@@ -19,7 +19,7 @@ The actor entity describes the individual that is viewing a vle resource.
         "name": "John Smith",
         "account": {
             "name": "2",
-            "homePage: "https://courses.alpha.jisc.ac.uk/moodle"
+            "homePage": "https://courses.alpha.jisc.ac.uk/moodle"
         }
     },
 ```
