@@ -12,7 +12,7 @@
 
 20-03-2017, Spec Change. [Description no longer required in ObjectA.](https://github.com/jiscdev/xapi/issues/148)
 
-2-05-2016, Documentation change [subType supersedes ApplicationType][https://github.com/jiscdev/xapi/issues/55] in objectA
+2-05-2016, Documentation change [subType supersedes ApplicationType](https://github.com/jiscdev/xapi/issues/55) in objectA
 
 
 ### VLE resource viewed
@@ -22,7 +22,7 @@
 
 20-03-2017, Spec Change. [Description no longer required in ObjectA.](https://github.com/jiscdev/xapi/issues/148)
 
-2-05-2016, Documentation change [subType supersedes ApplicationType][https://github.com/jiscdev/xapi/issues/55]
+2-05-2016, Documentation change [subType supersedes ApplicationType](https://github.com/jiscdev/xapi/issues/55)
 
 
 
@@ -30,7 +30,7 @@
 
 20-03-2017, Spec Change. [Description no longer required in ObjectA.](https://github.com/jiscdev/xapi/issues/148)
 
-2-05-2016, Documentation change [subType supersedes ApplicationType][https://github.com/jiscdev/xapi/issues/55]
+2-05-2016, Documentation change [subType supersedes ApplicationType](https://github.com/jiscdev/xapi/issues/55)
 
 
 #### Assignment Graded
