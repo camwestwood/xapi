@@ -1,4 +1,4 @@
-#session_timed_out statement template
+# session_timed_out statement template
 Revision: 1.3
 
 ## Purpose
