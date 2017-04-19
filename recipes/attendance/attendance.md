@@ -30,7 +30,6 @@ The actor entity describes the individual who has attended the event.
 
 ``` Javascript
 {
-    "version": "1.0.0",
     "actor": {
         "objectType": "Agent",
         "name": "John Smith",
@@ -62,7 +61,7 @@ The verb [attended](/vocabulary.md#verbs) denotes the action of the user's brows
 Common entity identifier: [ResultC](/common_structures.md#resultc)
 
 #### Entity Example:
-The result.completion must be set true or false, indicating if the actor attended the event. The extension event_late can be set to 1 if the actor did not attend the event on time.
+The result.completion must be set true or false, indicating if the actor attended the event. The extension attendance_late can be set to 1 if the actor did not attend the event on time. Attendance_category can map to an indication of why the actor was late.
 
 
 ``` javascript
