@@ -480,18 +480,21 @@ This result pattern describes completion and is usually optional. This result en
 ### ResultC
 Common entity identifier: ResultC
 
-This pattern describes the result and if the actor was on time to the event.
+This pattern describes the result and if the actor was on time to the event, if they were late and what category a late
 
 <table>
 	<tr><th>Property [cardinality]</th><th>Description</th></tr>
 	<tr>
-		<td>result.completion [0..1]</td>
+		<td>result.completion [1]</td>
 		<td>"When set to "true", result.completion indicates that the learner attended the event. "false"indicates that the learner did not attend the event.
 </td>
 	</tr>
 	<tr>
-		<td>result.extension.activity_late [0..1]</td>
-		<td>Whether the person was late
+		<td>result.extension.http://xapi.jisc.ac.uk/attendance_late [1] <br/>
+		    result.extension.http://xapi.jisc.ac.uk/attendance_category [0..1]
+		 
+		</td>
+		<td> <b>http://xapi.jisc.ac.uk/attendance_late</b> indicates whether the person was late.<br/> <b>http://xapi.jisc.ac.uk/attendance_category</b> indicates category for non-attendance or lateness.
 </td>
 	</tr>
 </table>
