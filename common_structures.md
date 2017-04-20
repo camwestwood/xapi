@@ -209,21 +209,21 @@ ContextC pattern is similar to ContextB, but is designed to be used with systems
 <table>
 <tr><th>Property</th><th>Description</th></tr>
 <tr>
-<td>context.instructor [0..1]</td>
-<td></td>
-</tr>
-<tr>
-<td>context.instructor.objectType [1]</td>
-<td>A JSON Object. object.instructor.objectType has "Agent" as a value. </td>
-</tr>
-<tr>
-<td>context.instructor.account.name [1]
+<td>context.instructor [0..1]<br/>
+context.instructor.objectType [1]<br/>
+context.instructor.account.homepage [1] <br/>
+context.instructor.account.name [1] <br/>
 </td>
-<td>account.name gives the login id for the instructor. </td>
-</tr>
-<tr>
-<td>context.instructor.account.homepage [1]</td>
-<td> gives the URL of the home page of the application for which the login id applies.</td>
+<td>
+A JSON Object. object.instructor.objectType has "Agent" as a value. account.name gives the login id for the instructor. <br/>
+and context.account.homepage gives the URL of the home page of the application for which the login id applies.
+</td></tr><tr>
+<td>
+context.extensions.recipeVersion
+</td>
+<td>
+The <b>recipeVersion</b> extension is recommended, and identifies the recipe (and its version) which was followed to create the xAPI statement.
+</td>
 </tr>
 </table>
 
