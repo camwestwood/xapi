@@ -113,7 +113,7 @@ The following are extension properties in the result entity:
 <table>
 <tr><th align="left">Label</th><td>Attendance Late</td></tr>
 <tr><th align="left">Description</th><td>Indicates if agent had late attendance</td></tr>
-<tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/event_mandatory">http://xapi.jisc.ac.uk/attendance_late"</a> </td></tr>
+<tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/event_mandatory">http://xapi.jisc.ac.uk/attendance_late</a> </td></tr>
 <tr><th align="left">Example in Recipe</th><td> <a href="/recipes/attendance/attendance.md#object">attendance</a> </td></tr>
 <tr><th align="left">Data Type</th><td>Integer</td></tr>
 <tr><th align="left">Value Space</th><td>1 for late</td></tr>
@@ -125,7 +125,7 @@ The following are extension properties in the result entity:
 <table>
 <tr><th align="left">Label</th><td>Attendance Category</td></tr>
 <tr><th align="left">Description</th><td>Indicates the category of non-attendance</td></tr>
-<tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/event_mandatory">http://xapi.jisc.ac.uk/event_mandatory"</a> </td></tr>
+<tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/event_mandatory">http://xapi.jisc.ac.uk/event_mandatory</a> </td></tr>
 <tr><th align="left">Example in Recipe</th><td> <a href="/recipes/attendance/attendance.md#object">attendance</a> </td></tr>
 <tr><th align="left">Data Type</th><td>Integer</td></tr>
 <tr><th align="left">Value Space</th><td></td></tr>
@@ -345,7 +345,7 @@ The following are Jisc profile extensions to be used in [object.definition.exten
 <table>
 <tr><th align="left">Label</th><td>Event Mandatory</td></tr>
 <tr><th align="left">Description</th><td>Indicates if the session is option or not</td></tr>
-<tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/event_mandatory">http://xapi.jisc.ac.uk/event_mandatory"</a> </td></tr>
+<tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/event_mandatory">http://xapi.jisc.ac.uk/event_mandatory</a> </td></tr>
 <tr><th align="left">Example in Recipe</th><td> <a href="/recipes/attendance/attendance.md#object">attendance</a> </td></tr>
 <tr><th align="left">Data Type</th><td>Integer</td></tr>
 <tr><th align="left">Value Space</th><td>1 for mandatory, 0 for non mandatory</td></tr>
