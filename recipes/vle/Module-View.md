@@ -67,7 +67,7 @@ The courseArea is required. See the [vocabularies](../vocabulary.md#42-courseare
 
 Common entity identifier: ObjectA, as defined on the [common structures](/common_structures.md#objecta) page.
 
-For this recipe the object needs to identify what was viewed. A list of valid values  for the object definition type can be found on the[vocabularies page](../vocabulary.md#Object.definition.extension)
+For this recipe the object needs to identify what was viewed. A list of valid values  for the object definition type can be found on the[vocabularies page](/vocabulary.md#Object.definition.extension)
 
 ### Example
 
