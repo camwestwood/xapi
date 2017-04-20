@@ -26,7 +26,7 @@ The actor entity identifies the individual that is logging in to the system.
 Common entity identifier: [VerbA](/common_structures.md#verba)
 
 #### Entity Example:
-This verb, [logged in](/vocabulary.md#verbs), describes the action of logging into a platform.
+This verb, [logged in](/vocabulary.md#logged-in), describes the action of logging into a platform.
 
 ``` javascript
 "verb": {
