@@ -108,6 +108,31 @@ The following are extension properties in the result entity:
 <tr><th align="left">Sample Value</th><td>5 Stars</td></tr>
 </table>
 
+### Attendance Late
+
+<table>
+<tr><th align="left">Label</th><td>Attendance Late</td></tr>
+<tr><th align="left">Description</th><td>Indicates if agent had late attendance</td></tr>
+<tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/event_mandatory">http://xapi.jisc.ac.uk/attendance_late"</a> </td></tr>
+<tr><th align="left">Example in Recipe</th><td> <a href="/recipes/attendance/attendance.md#object">attendance</a> </td></tr>
+<tr><th align="left">Data Type</th><td>Integer</td></tr>
+<tr><th align="left">Value Space</th><td>1 for late</td></tr>
+<tr><th align="left">Sample Value</th><td>1</td></tr>
+</table>
+
+### Attendance Category
+
+<table>
+<tr><th align="left">Label</th><td>Attendance Category</td></tr>
+<tr><th align="left">Description</th><td>Indicates the category of non-attendance</td></tr>
+<tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/event_mandatory">http://xapi.jisc.ac.uk/event_mandatory"</a> </td></tr>
+<tr><th align="left">Example in Recipe</th><td> <a href="/recipes/attendance/attendance.md#object">attendance</a> </td></tr>
+<tr><th align="left">Data Type</th><td>Integer</td></tr>
+<tr><th align="left">Value Space</th><td></td></tr>
+<tr><th align="left">Sample Value</th><td>1</td></tr>
+</table>
+
+
 
 ## 3.0 Object
 
@@ -278,6 +303,56 @@ The following are Jisc profile extensions to be used in [object.definition.exten
 <tr><th align="left">Value Space</th><td>ISO 8601 date time</td></tr>
 <tr><th align="left">Sample Value</th><td>2016-02-05T17:59:45.000Z</td></tr>
 </table>
+
+### Event Type ID
+
+<table>
+<tr><th align="left">Label</th><td>Event Type ID</td></tr>
+<tr><th align="left">Description</th><td>Value representing an activity type. (e.g 1 for lecture, 2 for seminar)</td></tr>
+<tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/activity_type_id">http://xapi.jisc.ac.uk/activity_type_id</a> </td></tr>
+<tr><th align="left">Example in Recipe</th><td> <a href="/recipes/attendance/attendance.md#object">attendance</a> </td></tr>
+<tr><th align="left">Data Type</th><td>Integer</td></tr>
+<tr><th align="left">Value Space</th><td>Related to activty type.</td></tr>
+<tr><th align="left">Sample Value</th><td>1</td></tr>
+</table>
+
+### Event Type Description
+
+<table>
+<tr><th align="left">Label</th><td>Event Type Description</td></tr>
+<tr><th align="left">Description</th><td>String describing event</td></tr>
+<tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/event_type_description">http://xapi.jisc.ac.uk/event_type_id</a> </td></tr>
+<tr><th align="left">Example in Recipe</th><td> <a href="/recipes/attendance/attendance.md#object">attendance</a> </td></tr>
+<tr><th align="left">Data Type</th><td>String</td></tr>
+<tr><th align="left">Value Space</th><td>Description of event</td></tr>
+<tr><th align="left">Sample Value</th><td>Lecture</td></tr>
+</table>
+
+### Event Max Count
+
+<table>
+<tr><th align="left">Label</th><td>Event max count</td></tr>
+<tr><th align="left">Description</th><td>Value representing the total number of people who could have gone to the session</td></tr>
+<tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/event_max_count">http://xapi.jisc.ac.uk/event_type_id</a> </td></tr>
+<tr><th align="left">Example in Recipe</th><td> <a href="/recipes/attendance/attendance.md#object">attendance</a> </td></tr>
+<tr><th align="left">Data Type</th><td>Integer</td></tr>
+<tr><th align="left">Value Space</th><td></td></tr>
+<tr><th align="left">Sample Value</th><td>32</td></tr>
+</table>
+
+### Event Manatory
+
+<table>
+<tr><th align="left">Label</th><td>Event Mandatory</td></tr>
+<tr><th align="left">Description</th><td>Indicates if the session is option or not</td></tr>
+<tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/event_mandatory">http://xapi.jisc.ac.uk/event_mandatory"</a> </td></tr>
+<tr><th align="left">Example in Recipe</th><td> <a href="/recipes/attendance/attendance.md#object">attendance</a> </td></tr>
+<tr><th align="left">Data Type</th><td>Integer</td></tr>
+<tr><th align="left">Value Space</th><td>1 for mandatory, 0 for non mandatory</td></tr>
+<tr><th align="left">Sample Value</th><td>1</td></tr>
+</table>
+
+
 
 ### Duration
 
