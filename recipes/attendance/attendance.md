@@ -113,7 +113,7 @@ The object defines a timetabled event that has been completed. Information on th
 ```
 
 ### Context
-Common entity identifier: Common entity identifier: [ContextD](/common_structures.md#contextD)
+Common entity identifier: Common entity identifier: [ContextD](/common_structures.md#contextd)
 
 
 #### Entity Example:
@@ -123,18 +123,16 @@ Common entity identifier: Common entity identifier: [ContextD](/common_structure
 
 ``` javascript
  "context": {
-        "extensions": {
-        
-            "http://xapi.jisc.ac.uk/recipeVersion": "attendanceV0.1",
-           
-        },
         "instructor": {
             "objectType": "Agent",
             "account": {
                 "name": "2",
                 "homePage": "http://localhost/moodle"
-            }
-        }
+            },
+	 "extensions": {
+            "http://xapi.jisc.ac.uk/recipeVersion": "attendanceV0.1",
+          }
+       }
     }
 ```
 
