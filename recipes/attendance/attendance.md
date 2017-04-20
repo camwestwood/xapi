@@ -46,7 +46,7 @@ Common entity identifier: [VerbA](/common_structures.md#verba)
 
 #### Entity Example:
 
-The verb [attended](/vocabulary.md#verbs) denotes the action of the user's browser or app requesting the resource that the user wishes to view.
+The verb [attended](/vocabulary.md#attended) denotes the action of the user's browser or app requesting the resource that the user wishes to view.
 
 ``` javascript
 "verb": {
@@ -61,7 +61,7 @@ The verb [attended](/vocabulary.md#verbs) denotes the action of the user's brows
 Common entity identifier: [ResultC](/common_structures.md#resultc)
 
 #### Entity Example:
-The result.completion must be set true or false, indicating if the actor attended the event. The extension attendance_late can be set to 1 if the actor did not attend the event on time. Attendance_category can map to an indication of why the actor was late.
+The result.completion must be set true or false, indicating if the actor attended the event. The extension [attendance_late](/vocabulary.md#attendance-late) can be set to 1 if the actor did not attend the event on time. [Attendance_category](/vocabulary.md#attendance-category) can map to an indication of why the actor was late.
 
 
 ``` javascript
