@@ -79,7 +79,7 @@ The result.completion must be set true or false, indicating if the actor attende
 Common entity identifier: [ObjectD](/common_structures.md#objectd)
 
 #### Entity Example:
-The object defines the event that has been completed. Examples of valid object.definition Activity object Types can be found in [the vocabulary](../vocabulary.md#30-object).
+The object defines a timetabled event that has been completed. Information on the timetabled event can be found in the object.extensions. See the [objectD section in the common structures document](/common_structures.md#objectd).
 
 ``` javascript
 
