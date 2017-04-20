@@ -1,5 +1,8 @@
 # vle_resource_viewed statement template
+
 Revision: 1.3
+
+[Statement Template Changes](/version_changes.md#vle-resource-viewed)
 
 ## Purpose
 This template defines the structure and terms to record the experience of viewing a vle resource such as a Moodle Module or Blackboard building block (eg a page as identified by its url)

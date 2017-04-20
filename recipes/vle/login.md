@@ -2,6 +2,8 @@
 
 Revision: 1.3
 
+[Statement Template Changes](/version_changes.md#logged-in)
+
 ## Purpose
 This activity records a user logging in to a VLE.
 

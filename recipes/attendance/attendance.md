@@ -2,6 +2,8 @@
 # Attended_Learning_Event statement template
 Revision: 0.2
 
+[Statement Template Changes](/version_changes.md#attendance)
+
 ## Purpose
 This statement defines the structure and terms to record a learner's attendance of an event such as a lecture or other learning activity. The expectation is that the source data will be collected by a system designed to explicitly record attendance via some action of the learner, such as swiping a card.
 

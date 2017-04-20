@@ -1,5 +1,8 @@
 # vle_logged_out statement template
+
 Revision: 1.2
+
+[Statement Template Changes](/version_changes.md#logged-out)
 
 ## Purpose
 This activity records a user logging out of a VLE.

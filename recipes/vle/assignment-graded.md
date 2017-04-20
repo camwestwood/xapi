@@ -1,6 +1,8 @@
 # vle_assignment_graded statement template
 Revision: 1.3
 
+[Statement Template Changes](/version_changes.md#assignment-graded)
+
 ## Purpose
 This activity records a graded assignment
 ## Definition

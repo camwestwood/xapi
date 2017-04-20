@@ -1,6 +1,8 @@
 # vle_assignment_submitted statement template
 Revision: 1.3
 
+[Statement Template Changes](/version_changes.md#assignment-submitted)
+
 ## Purpose
 This activity records a user submitting an assignment
 ## Definition
