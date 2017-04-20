@@ -390,44 +390,37 @@ Example:
 
 The object pattern defines an event that has been attended.
 
-
 <table>
 	<tr><th>Property [cardinality]</th><th>Description</th></tr>
 	<tr>
-	   <td>context.extensions.http://xapi.jisc.ac.uk/uddModInstanceID</td>
-	   <td>The uddModInstanceID extension records the module instance with which the learning event is associated. See 		  the <a href="vocabulary.md#31-activity-types">vocabulary page</a> for more details. </td>
+		<td>object.objectType [1]</td>
+		<td>The value must be "Activity".</td>
 	</tr>
 	<tr>
-	   <td>context.extensions.http://xapi.jisc.ac.uk/event_type_id</td>
-	   <td></td>
+		<td>object.id [1]</td>
+		<td>An identifier for a single unique learning event.</td>
 	</tr>
-		<tr>
-	   <td>context.extensions.http://xapi.jisc.ac.uk/event_type_description</td>
-	   <td></td>
+	<tr>
+		The <b>type</b> indicates the type of the object of the statement. It is required and valid values are listed on the <a href="vocabulary.md#31-activity-types">vocabulary</a> page.</br>
+				The <b>name</b> holds the name of the learning activity.</br>
+		The <b>description</b> describes the learning activity.</br>
+<b>"http://id.tincanapi.com/extension/datetime"</b> is an extension that holds a ISO 8601 date time that indicates when the learning event started.<br /><b>"http://id.tincanapi.com/extension/duration"</b> represents the length of time the event is scheduled to take, expressed as a string formatted as an ISO8601 duration. Note that ISO8601 duration allows representations to extend beyond their carry over points. e.g. one and a half hours can be represented as either PT1H30M or PT90M.</td>
 	</tr>
-	   <td>context.extensions.http://xapi.jisc.ac.uk/event_max_count</td>
-	   <td>Maximum number of people that could have attended the event</td>
-	 <tr>
-	   <td>context.extensions.http://xapi.jisc.ac.uk/event_mandatory</td>
-	   <td>States if the event was optional or not </td>
-	  </tr>
-	  <tr>
-	   <td>context.extensions.http://xapi.jisc.ac.uk/recipeVersion</td>
-	   <td>The <b>recipeVersion</b> extension is recommended, and identifies the statement (and its version) which was followed to 			create the xAPI statement.  </td>
-	   </tr>
-	   <tr>
-	     <td>context.extensions.http://xapi.jisc.ac.uk/starttime</td>
-	     <td>The planned start time. Uses datetimes for planned end of event.  </td>
-	   </tr>
-	   <tr>   
-	     <td>context.extensions.http://xapi.jisc.ac.uk/endtime<br/></td>
-	     <td>The planned end time of event. Uses datetimes for planned end time of event.  </td>
-	   </tr>
-	   <tr>
-		<td>
-		context.extensions.http://xapi.jisc.ac.uk/courseArea
+	<tr>
+	   <td>object.definition.extensions.http://xapi.jisc.ac.uk/uddModInstanceID [0.1]<br/>
+	       object.definition.extensions.http://xapi.jisc.ac.uk/event_type_id [0.1]<br/>
+	       object.definition.extensions.http://xapi.jisc.ac.uk/event_type_description [0.1]<br/>
+	       object.definition.extensions.http://xapi.jisc.ac.uk/event_max_count [0.1]<br/>
+	       object.definition.extensions.http://xapi.jisc.ac.uk/event_mandatory [0.1]<br/>
+	       object.definition.extensions.http://xapi.jisc.ac.uk/starttime [0.1]<br/>
+	       object.definition.extensions.http://xapi.jisc.ac.uk/endtime [0.1]<br/>
+	       object.definition.extensions.http://xapi.jisc.ac.uk/courseArea [0.1]<br/>
+	   </td>
+	   <td>
+	   The <b>uddModInstanceID</b> extension records the module instance with which the learning event is associated.<br/>
+	   The <b>object.extensions.http://xapi.jisc.ac.uk/event_type_id</b> requires an identifier for the type of even<br/> <b>object.extensions.http://xapi.jisc.ac.uk/event_type_description</b> is a description of the event type<br/>object.extensions.http://xapi.jisc.ac.uk/event_max_count</b> is the maximum number of people that could have attended the event. <b>object.extensions.http://xapi.jisc.ac.uk/event_mandatory</b> states if the event was optional or not <br/> <b>object.extensions.http://xapi.jisc.ac.uk/starttime</b> is the planned start time. Uses datetimes for planned end of event. <br/><b>object.extensions.http://xapi.jisc.ac.uk/endtime</b> The planned end time of event. Uses datetimes for planned end time of event.  <br/>
 	    </td>  
-	<tr>
+	</tr>
  </table>
 
 ## Result
