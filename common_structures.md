@@ -355,9 +355,6 @@ The object pattern defines an activity that has been completed. [Examples of val
 		The <b>description</b> describes the learning activity.</br>
 <b>"http://id.tincanapi.com/extension/datetime"</b> is an extension that holds a ISO 8601 date time that indicates when the learning event started.<br /><b>"http://id.tincanapi.com/extension/duration"</b> represents the length of time the event is scheduled to take, expressed as a string formatted as an ISO8601 duration. Note that ISO8601 duration allows representations to extend beyond their carry over points. e.g. one and a half hours can be represented as either PT1H30M or PT90M.</td>
 	</tr>
-	
-	
-	
 </table>
 
 Example:
@@ -401,13 +398,9 @@ The object pattern defines an event that has been attended.
 		<td>An identifier for a single unique learning event.</td>
 	</tr>
 	<tr>
-		The <b>type</b> indicates the type of the object of the statement. It is required and valid values are listed on the <a href="vocabulary.md#31-activity-types">vocabulary</a> page.</br>
-				The <b>name</b> holds the name of the learning activity.</br>
-		The <b>description</b> describes the learning activity.</br>
-<b>"http://id.tincanapi.com/extension/datetime"</b> is an extension that holds a ISO 8601 date time that indicates when the learning event started.<br /><b>"http://id.tincanapi.com/extension/duration"</b> represents the length of time the event is scheduled to take, expressed as a string formatted as an ISO8601 duration. Note that ISO8601 duration allows representations to extend beyond their carry over points. e.g. one and a half hours can be represented as either PT1H30M or PT90M.</td>
-	</tr>
-	<tr>
-	   <td>object.definition.extensions.http://xapi.jisc.ac.uk/uddModInstanceID [0.1]<br/>
+	   <td>object.definition [1]<br>
+	       object.definition.type [1]<br/>
+	       object.definition.extensions.http://xapi.jisc.ac.uk/uddModInstanceID [0.1]<br/>
 	       object.definition.extensions.http://xapi.jisc.ac.uk/event_type_id [0.1]<br/>
 	       object.definition.extensions.http://xapi.jisc.ac.uk/event_type_description [0.1]<br/>
 	       object.definition.extensions.http://xapi.jisc.ac.uk/event_max_count [0.1]<br/>
@@ -416,9 +409,10 @@ The object pattern defines an event that has been attended.
 	       object.definition.extensions.http://xapi.jisc.ac.uk/endtime [0.1]<br/>
 	       object.definition.extensions.http://xapi.jisc.ac.uk/courseArea [0.1]<br/>
 	   </td>
-	   <td>
+	   <td>The <b>type</b> indicates the type of the object of the statement. It is required and valid values are listed on the <a href="vocabulary.md#31-activity-types">vocabulary</a> page.<br/>The <b>name</b> holds the name of the learning activity.<br/>
+The <b>description</b> describes the learning activity.<br/>
 	   The <b>uddModInstanceID</b> extension records the module instance with which the learning event is associated.<br/>
-	   The <b>object.extensions.http://xapi.jisc.ac.uk/event_type_id</b> requires an identifier for the type of even<br/> <b>object.extensions.http://xapi.jisc.ac.uk/event_type_description</b> is a description of the event type<br/>object.extensions.http://xapi.jisc.ac.uk/event_max_count</b> is the maximum number of people that could have attended the event. <b>object.extensions.http://xapi.jisc.ac.uk/event_mandatory</b> states if the event was optional or not <br/> <b>object.extensions.http://xapi.jisc.ac.uk/starttime</b> is the planned start time. Uses datetimes for planned end of event. <br/><b>object.extensions.http://xapi.jisc.ac.uk/endtime</b> The planned end time of event. Uses datetimes for planned end time of event.  <br/>
+	   The <b>object.extensions.http://xapi.jisc.ac.uk/event_type_id</b> requires an identifier for the type of even<br/> <b>object.extensions.http://xapi.jisc.ac.uk/event_type_description</b> is a description of the event type<br/>object.extensions.http://xapi.jisc.ac.uk/event_max_count<br/> is the maximum number of people that could have attended the event. <b>object.extensions.http://xapi.jisc.ac.uk/event_mandatory</b> states if the event was optional or not <br/> <b>object.extensions.http://xapi.jisc.ac.uk/starttime</b> is the planned start time. Uses datetimes for planned end of event. <br/><b>object.extensions.http://xapi.jisc.ac.uk/endtime</b> The planned end time of event. Uses datetimes for planned end time of event.  <br/>
 	    </td>  
 	</tr>
  </table>
