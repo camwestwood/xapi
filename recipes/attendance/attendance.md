@@ -63,7 +63,7 @@ The verb [attended](/vocabulary.md#attended) denotes the action of the user's br
 Common entity identifier: [ResultC](/common_structures.md#resultc)
 
 #### Entity Example:
-The result.completion must be set true or false, indicating if the actor attended the event. The extension [attendance_late](/vocabulary.md#attendance-late) can be set to 1 if the actor did not attend the event on time. [Attendance_category](/vocabulary.md#attendance-category) can map to an indication of why the actor was late.
+The result.completion must be set true or false, indicating if the actor attended the event. The extension [attendance_late](/vocabulary.md#attendance-late) can be set to 1 if the actor did not attend the event on time. [Attendance_category](/vocabulary.md#attendance-category) can be used to express additional detail, for example whether lateness was extreme or condoned, or to provide the source system attendance type code (as might be recorded in a conventional paper register). 
 
 
 ``` javascript
