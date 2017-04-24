@@ -125,11 +125,11 @@ The following are extension properties in the result entity:
 <table>
 <tr><th align="left">Label</th><td>Attendance Category</td></tr>
 <tr><th align="left">Description</th><td>Indicates the category of non-attendance</td></tr>
-<tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/event_mandatory">http://xapi.jisc.ac.uk/event_mandatory</a> </td></tr>
+<tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/attendance_categoryy">http://xapi.jisc.ac.uk/attendance_category</a> </td></tr>
 <tr><th align="left">Example in Recipe</th><td> <a href="/recipes/attendance/attendance.md#object">attendance</a> </td></tr>
-<tr><th align="left">Data Type</th><td>Integer</td></tr>
-<tr><th align="left">Value Space</th><td></td></tr>
-<tr><th align="left">Sample Value</th><td>1</td></tr>
+<tr><th align="left">Data Type</th><td>String</td></tr>
+<tr><th align="left">Value Space</th><td>defined by the source system</td></tr>
+<tr><th align="left">Sample Value</th><td>C</td></tr>
 </table>
 
 
