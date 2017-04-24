@@ -71,7 +71,7 @@ The result.completion must be set true or false, indicating if the actor attende
         "completion":true,
 		
 	 "extensions":{
-		  "http://xapi.jisc.ac.uk/attendance_late":"1",
+		  "http://xapi.jisc.ac.uk/attendance_late":1,
 		  "http://xapi.jisc.ac.uk/attendance_category":"1",
 		 }
     }
@@ -103,8 +103,8 @@ The object defines a timetabled event that has been completed. Information on th
 	   	"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0",
             	"http://xapi.jisc.ac.uk/event_type_id": "1",
 	    	"http://xapi.jisc.ac.uk/event_type_description": "Lecture", 
-            	"http://xapi.jisc.ac.uk/event_max_count": "32",
-            	"http://xapi.jisc.ac.uk/event_mandatory": "1",
+            	"http://xapi.jisc.ac.uk/event_max_count": 32,
+            	"http://xapi.jisc.ac.uk/event_mandatory": 1,
 		"http://xapi.jisc.ac.uk/courseArea": {
                 	"http://xapi.jisc.ac.uk/vle_mod_id": "LA101-200-2016S1-0",
                 	"id": "http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=4"
