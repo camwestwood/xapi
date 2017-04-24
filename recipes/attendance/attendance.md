@@ -19,7 +19,7 @@ It was an event event with id of EVENT_ID, of type EVENT_TYPE.
 
 - Context
 
-Event was a part of module instance MOD_INSTANCE_ID. The event type has an id of Event_Type_ID. The maximum number of people who could have attended the event was EVENT_MAX_COUNT. The time it started was EVENT_LOGGED_START and ended at EVENT_LOGGED_END. The event was led by instructor with identifer STAFF_ID.
+Event was a part of module instance MOD_INSTANCE_ID. The event type has an id of Event_Type_ID. The maximum number of people who could have attended the event was EVENT_MAX_COUNT. The time it started was START_TIME and ended at END_TIME. The event was led by instructor with identifer STAFF_ID.
 			
 			
 
