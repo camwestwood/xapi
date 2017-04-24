@@ -253,6 +253,14 @@ Example:
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/vle/file">http://xapi.jisc.ac.uk/vle/file</a> </td></tr>
 </table>
 
+### Timetabled Event
+
+<table>
+<tr><th align="left">Label</th><td>Timetabled Event</td></tr>
+<tr><th align="left">Description</th><td>The statement refers to a scheduled teaching and learning activity. This may be of various types, which can be clarified using object.definition.extensions.</td></tr>
+<tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/event_timetabled/">http://xapi.jisc.ac.uk/event_timetabled/</a> </td></tr>
+</table>
+
 ### Lecture
 
 <table>
