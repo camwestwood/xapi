@@ -400,6 +400,9 @@ The object pattern defines an event that has been attended.
 	<tr>
 	   <td>object.definition [1]<br>
 	       object.definition.type [1]<br/>
+	       object.definition.name [0.1]<br/>
+	       object.definition.description [0.1]<br/>
+	       object.definition.extensions.http://xapi.jisc.ac.uk/subType [0.1]<br/>
 	       object.definition.extensions.http://xapi.jisc.ac.uk/uddModInstanceID [0.1]<br/>
 	       object.definition.extensions.http://xapi.jisc.ac.uk/event_type_id [0.1]<br/>
 	       object.definition.extensions.http://xapi.jisc.ac.uk/event_type_description [0.1]<br/>
@@ -409,8 +412,10 @@ The object pattern defines an event that has been attended.
 	       object.definition.extensions.http://xapi.jisc.ac.uk/endtime [0.1]<br/>
 	       object.definition.extensions.http://xapi.jisc.ac.uk/courseArea [0.1]<br/>
 	   </td>
-	   <td>The <b>type</b> indicates the type of the object of the statement. It is required and valid values are listed on the <a href="vocabulary.md#31-activity-types">vocabulary</a> page.<br/>The <b>name</b> holds the name of the learning activity.<br/>
-The <b>description</b> describes the learning activity.<br/>
+	   <td>The <b>type</b> indicates the type of the object of the statement. It is required and must contain the value "http://xapi.jisc.ac.uk/event_timetabled/" (see <a href="vocabulary.md#31-activity-types">vocabulary</a> page).<br/>
+	   The <b>name</b> holds the name of the event.<br/>
+	   The <b>description</b> describes the learning activity.<br/>
+	   The <b>subType</b> may be used to qualify what kind of timetabled event occurred using an IRI given on the <a href="vocabulary.md#31-activity-types">vocabulary</a> page. Permitted values are: "http://xapi.jisc.ac.uk/lecture" or "	http://id.tincanapi.com/activitytype/tutor-session".<br/>
 	   The <b>uddModInstanceID</b> extension records the module instance with which the learning event is associated.<br/>
 	   The <a href ="/vocabulary.md#event-type-id">event_type_id</a> requires an identifier for the type of even<br/> <a href="/vocabulary.md#event-type-description">event_type_description</a> is a description of the event type<br/><a href="/vocabulary.md#event-max-count">event_max_count</a><br/> is the maximum number of people that could have attended the event. <a href="/vocabulary.md#event-mandatory">event_mandatory</a>  states if the event was optional or not <br/> <b>object.extensions.http://xapi.jisc.ac.uk/starttime</b> is the planned start time. Uses datetimes for planned end of event. <br/><b>object.extensions.http://xapi.jisc.ac.uk/endtime</b> The planned end time of event. Uses datetimes for planned end time of event.  <br/>
 	    </td>  
