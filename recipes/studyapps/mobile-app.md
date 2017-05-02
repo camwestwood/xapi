@@ -1,4 +1,4 @@
-# mobile_app content viewed recipe
+# mobile_app_content_viewed recipe
 Revision: 1.3
 
 ## Purpose
