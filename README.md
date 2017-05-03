@@ -23,7 +23,7 @@ Here are descriptions of statements that can be sent to the Jisc LRW, full state
 
 ## VLE
 
-These are the currently platform independent documented statements related to virtual learning enviroments.
+These are platform independent statements related to Virtual Learning Enviroments.
 
 <table>
 <tr><td>Statement Template </td>   <td>JSON example</td> </tr>
@@ -33,6 +33,16 @@ These are the currently platform independent documented statements related to vi
 <tr><td> <a href = "/recipes/vle/Session-timeout.md">Session timeout   </a></td><td><a href = "vle/blackboard/session_timeout.json">Blackboard session timeout </a>    </td></tr>    
 <tr><td><a href =  "/recipes/vle/assignment-graded.md">Assignment Graded   </a></td><td> <a href = "vle/moodle/asssignment_graded.json">Assignment graded in Moodle</a><br/> <a href="vle/blackboard/asssignment_graded.json">Assignment graded in Blackboard </a>   </td></tr>    
 <tr><td><a href =  "/recipes/vle/assignment-submitted.md">Assignment Submitted  </a></td><td><a href = "vle/moodle/assignment_submitted.json">Assignment submitted in Moodle</a><br/> <a href="vle/blackboard/assignment_submitted.json">Assignment submitted in Blackboard</a>   </td></tr>    
+</table>
+
+(These are platform independent statements related to forum usage in a Virtual Learning Enviroments.
+
+<table>
+<tr><td>Statement Template </td>   <td>JSON example</td> </tr>
+<tr><td> <a href = "/recipes/vle/">Post inital</a></td><td> </td> </tr>                                                           
+<tr><td> <a href = "/recipes/vle/">Comment</a></td><td> </td> </tr>    
+<tr><td> <a href = "/recipes/vle/">Delete</a></td><td></td> </tr>    
+<tr><td> <a href = "/recipes/vle/">Update </a></td><td></td></tr>    
 </table>
 
 ### All VLE statement examples
