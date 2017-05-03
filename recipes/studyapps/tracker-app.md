@@ -1,5 +1,4 @@
 #tracking app use recipe
-Revision: 1.3
 
 ## Purpose
 This recipe defines the structure and terms to record the experience of using a tracking app. 

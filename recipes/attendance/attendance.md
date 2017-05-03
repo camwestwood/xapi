@@ -1,6 +1,4 @@
-
 # Attended_Learning_Event statement template
-Revision: 0.2
 
 [Statement Template Changes](/version_changes.md#attendance)
 
@@ -132,7 +130,7 @@ Common entity identifier: Common entity identifier: [ContextD](/common_structure
                 "homePage": "http://localhost/moodle"
             },
 	 "extensions": {
-            "http://xapi.jisc.ac.uk/recipeVersion": "attendanceV0.1",
+            "http://xapi.jisc.ac.uk/recipeVersion": "1.0",
           }
        }
     }

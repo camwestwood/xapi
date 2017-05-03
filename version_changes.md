@@ -6,9 +6,13 @@
 
 ### Logged in
 
+3-05-2016, Documentation change [RecipeVersion is the version of the collection of all statements, removed revision number](https://github.com/jiscdev/xapi/issues/154)
+
 2-05-2016, Documentation change [subType supersedes ApplicationType](https://github.com/jiscdev/xapi/issues/55) in objectA
 
 ### Logged out
+
+3-05-2016, Documentation change [RecipeVersion is the version of the collection of all statements, removed revision number](https://github.com/jiscdev/xapi/issues/154)
 
 20-03-2017, Spec change. [Description no longer required in ObjectA.](https://github.com/jiscdev/xapi/issues/148)
 
@@ -17,6 +21,7 @@
 
 ### VLE resource viewed
 
+3-05-2016, Documentation change [RecipeVersion is the version of the collection of all statements, removed revision number](https://github.com/jiscdev/xapi/issues/154)
 
 11-04-2017, Documentation change [added subtype example to documentation]
 
@@ -28,12 +33,16 @@
 
 ### Session timeout
 
+3-05-2016, Documentation change [RecipeVersion is the version of the collection of all statements, removed revision number](https://github.com/jiscdev/xapi/issues/154)
+
 20-03-2017, Spec Change. [Description no longer required in ObjectA.](https://github.com/jiscdev/xapi/issues/148)
 
 2-05-2016, Documentation change [subType supersedes ApplicationType](https://github.com/jiscdev/xapi/issues/55)
 
 
 #### Assignment Graded
+
+3-05-2016, Documentation change [RecipeVersion is the version of the collection of all statements, removed revision number](https://github.com/jiscdev/xapi/issues/154)
 
 20-04-2017, Documentation Change. SubType example in context.contextActivities (which is an object that fits objectA statement).
 
@@ -43,6 +52,8 @@
 
 
 #### Assignment Submitted
+
+3-05-2016, Documentation change [RecipeVersion is the version of the collection of all statements, removed revision number](https://github.com/jiscdev/xapi/issues/154)
 
 20-04-2017, Documentation change. SubType example in context.contextActivities (which is an object that fits objectA statement).
 
@@ -54,6 +65,9 @@
 ### Attendance Recipes
 
 #### Attended learning activity
+
+3-05-2016, Documentation change [RecipeVersion is the version of the collection of all statements, removed revision number](https://github.com/jiscdev/xapi/issues/154)
+
 
 10-04-2017
 
@@ -74,6 +88,8 @@ Spec change [http://xapi.jisc.ac.uk/activity_type_description added](https://git
 
 
 08-02-2017
+
+3-05-2016, Documentation change [RecipeVersion is the version of the collection of all statements, removed revision number](https://github.com/jiscdev/xapi/issues/154)
 
 Spec change [Attendance - change context to match VLE](https://github.com/jiscdev/xapi/issues/139)
 

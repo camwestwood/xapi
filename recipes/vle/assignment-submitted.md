@@ -1,5 +1,4 @@
 # vle_assignment_submitted statement template
-Revision: 1.3
 
 [Statement Template Changes](/version_changes.md#assignment-submitted)
 
@@ -114,7 +113,7 @@ Example:
 			
  		"http://xapi.jisc.ac.uk/sessionId":"32456891",
          	"http://id.tincanapi.com/extension/ip-address": "10.3.3.48",
-		"http://xapi.jisc.ac.uk/recipeVersion" : "vle_assignment_submittedV1.3"
+		"http://xapi.jisc.ac.uk/recipeVersion" : "1.0"
 			}
 		}
 ```

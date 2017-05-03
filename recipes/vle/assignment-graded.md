@@ -1,5 +1,4 @@
 # vle_assignment_graded statement template
-Revision: 1.3
 
 [Statement Template Changes](/version_changes.md#assignment-graded)
 
@@ -129,7 +128,7 @@ The context.contextActivities is property with a ‘grouping’ that allows stat
               		},
 		"http://xapi.jisc.ac.uk/sessionId": "32456891" ,
         	"http://id.tincanapi.com/extension/ip-address": "10.3.3.48"
-		"http://xapi.jisc.ac.uk/recipeVersion" : "vle_assignment_gradedV1.2"
+		"http://xapi.jisc.ac.uk/recipeVersion" : "1.0"
         }
 ```
 

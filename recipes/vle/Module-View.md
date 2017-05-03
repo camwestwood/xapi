@@ -1,7 +1,5 @@
 # vle_resource_viewed statement template
 
-Revision: 1.3
-
 [Statement Template Changes](/version_changes.md#vle-resource-viewed)
 
 ## Purpose
@@ -61,7 +59,7 @@ The courseArea is required. See the [vocabularies](../vocabulary.md#42-courseare
 					
 	"http://xapi.jisc.ac.uk/sessionId": "32456891"  ,
 	"http://id.tincanapi.com/extension/ip-address": "10.3.3.48"
-	"http://xapi.jisc.ac.uk/recipeVersion" : "vle_resource_viewedV1.3"
+	"http://xapi.jisc.ac.uk/recipeVersion" : "1.0"
 			}
         }
 ```
