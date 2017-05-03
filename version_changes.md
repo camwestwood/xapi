@@ -66,9 +66,6 @@ Spec change [object.definition.type changed from event to event_timetabled](http
 Spec change [context.extensions.http://xapi.jisc.ac.uk/activity_max_count and context.extensions.http://xapi.jisc.ac.uk/activity_mandatory changed to event_max_count and activity_mandatory](https://github.com/jiscdev/xapi/issues/151)
 
 
-
-
-
 17-02-2017
 
 Spec change [added http://xapi.jisc.ac.uk/attendance_category to results.extension](https://github.com/jiscdev/xapi/issues/142)
@@ -91,8 +88,9 @@ Spec change [added http://xapi.jisc.ac.uk/activity_late to result.extensions](ht
 Documentation change [starttime and end time replace duartion](https://github.com/jiscdev/xapi/issues/143)
 
 
+## Student App Recipes
 
-### Student Recipes
+### Mobile App Content Viewed 
 
 
 # Vocabulary Changes

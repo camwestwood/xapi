@@ -1,31 +1,31 @@
 # mobile_app_content_viewed recipe
 Revision: 1.3
 
+[Statement Template Changes](/version_changes.md#mobile-app-content-viewed recipe)
+
 ## Purpose
 This recipe defines the structure and terms to record the experience of viewing a mobile app screen. It shares a lot with vle_resource_viewed.
 
 ### Actor
-Common entity identifier:  ActorA, as defined on the [common structures](../common_structures.md#actora) page.
+Common entity identifier: [ActorA](/common_structures.md#actora)
 
+### Entity Example:
 The actor entity describes the individual that is viewing a vle resource.
 
-### Example:
 
 ``` Javascript
-{
-    "version": "1.0.0",
     "actor": {
         "objectType": "Agent",
         "name": "John Smith",
         "account": {
-            "name": "2",
-            "homePage": "https://jisc.ac.uk"
+            "name": "jsmith12",
+            "homePage": "https://courses.alpha.jisc.ac.uk/moodle"
         }
-    },
+
 ```
 
 ### Verb
-Common entity identifier: VerbA, as defined on the [common structures](../common_structures.md#verba) page.
+Common entity identifier: [VerbA](/common_structures.md#verba)
 
 The Verb,[viewed](/vocabulary.md#viewed) denotes the action of the user's browser or app requesting the resource that the user wishes to view.
 
@@ -40,7 +40,7 @@ The Verb,[viewed](/vocabulary.md#viewed) denotes the action of the user's browse
     },
 ```
 ### Context
-Common entity identifier: ContextA, as defined on the [common structures](../common_structures.md#contextc) page.
+Common entity identifier: [ContextA](/common_structures.md#contextc) page.
 
 ### Example:
 
@@ -60,11 +60,10 @@ Common entity identifier: ContextA, as defined on the [common structures](../com
 
 ### Object
 
-Common entity identifier: ObjectA, as defined on the [common structures](../common_structures.md#objecta) page.
+Common entity identifier: [ObjectA](common_structures.md#objecta) 
 
-For this recipe the courseArea is optional, but should use uddModInstanceID when present. See the [vocabularies](../vocabulary.md#42-coursearea-properties) page for more information
-
-For this recipe the object needs to identify what was viewed. A list of valid values  for the object definition type can be found at (../vocabulary.md#Object.definition.extension)
+For this recipe the courseArea is optional, but should use uddModInstanceID when present. See the [vocabularies](/vocabulary.md#42-coursearea-properties) page for more information
+For this recipe the object needs to identify what was viewed. A list of valid values  for the object definition type can be found at (/vocabulary.md#Object.definition.extension)
 
 ### Example
 
