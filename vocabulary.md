@@ -285,6 +285,17 @@ Example:
 <tr><th align="left">IRI</th><td> <a href="http://activitystrea.ms/schema/1.0/event">http://activitystrea.ms/schema/1.0/event</a> </td></tr>
 </table>
 
+### Event
+
+<table>
+<tr><th align="left">Label</th><td>stats</td></tr>
+<tr><th align="left">Description</th><td>Statistics on the Study Goal app.</td></tr>
+<tr><th align="left">IRI</th><td> <a href="http://activitystrea.ms/schema/1.0/event">http://activitystrea.ms/schema/1.0/event</a> </td></tr>
+</table>
+
+
+
+
 ## 3.2 Object Definition Extensions
 The following are Jisc profile extensions to be used in [object.definition.extensions](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#object). See the [Assignment Graded](recipes/assignment-graded.md#verb)
 
@@ -359,7 +370,6 @@ The following are Jisc profile extensions to be used in [object.definition.exten
 <tr><th align="left">Value Space</th><td>1 for mandatory, 0 for non mandatory</td></tr>
 <tr><th align="left">Sample Value</th><td>1</td></tr>
 </table>
-
 
 
 ### Duration
