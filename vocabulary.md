@@ -468,7 +468,8 @@ For more information see Jisc profile [CourseArea properties](#42-coursearea-pro
 
 <table>
 <tr><th align="left">Label</th><td>Recipe Version</td></tr>
-<tr><th align="left">Description</th><td>Version of Recipe used. Version number can be found on recipe page</td></tr>
+<tr><th align="left">Description</th><td>Version of profile the statement template was taken from. Version number can be found on recipe page. Data CAN be supplied that meets later, experimental or tweaked versions of statements or recipes by using version number of the form “x-[dateStamp]”. Purely experimental data can have version number of “x-ignore”. This data can be anything, and should be ignored in normal processing.
+</td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/recipeVersion">http://xapi.jisc.ac.uk/recipeVersion</a> </td></tr>
 <tr><th align="left">Data Type</th><td>String</td></tr>
 <tr><th align="left">Value Space</th><td>Version number found on recipe page, follows Semantic versioning.</td></tr>
