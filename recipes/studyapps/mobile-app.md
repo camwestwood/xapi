@@ -1,4 +1,4 @@
-# mobile_app_content_viewed recipe
+# mobile_app_content_viewed statement template
 Revision: 1.3
 
 [Statement Template Changes](/version_changes.md#mobile-app-content-viewed)
@@ -60,7 +60,7 @@ Common entity identifier: [ContextA](/common_structures.md#contexta) page.
 
 ### Object
 
-Common entity identifier: [ObjectA](common_structures.md#objecta) 
+Common entity identifier: [ObjectA](/common_structures.md#objecta) 
 
 For this recipe the courseArea is optional, but should use uddModInstanceID when present. See the [vocabularies](/vocabulary.md#42-coursearea-properties) page for more information
 For this recipe the object needs to identify what was viewed. A list of valid values  for the object definition type can be found at (/vocabulary.md#Object.definition.extension)
