@@ -1,7 +1,7 @@
 # mobile_app_content_viewed recipe
 Revision: 1.3
 
-[Statement Template Changes](/version_changes.md#mobile-app-content-viewed recipe)
+[Statement Template Changes](/version_changes.md#mobile-app-content-viewed)
 
 ## Purpose
 This recipe defines the structure and terms to record the experience of viewing a mobile app screen. It shares a lot with vle_resource_viewed.
@@ -27,7 +27,7 @@ The actor entity describes the individual that is viewing a vle resource.
 ### Verb
 Common entity identifier: [VerbA](/common_structures.md#verba)
 
-The Verb,[viewed](/vocabulary.md#viewed) denotes the action of the user's browser or app requesting the resource that the user wishes to view.
+The Verb, [viewed](/vocabulary.md#viewed) denotes the action of the user's browser or app requesting the resource that the user wishes to view.
 
 ### Example:
 
@@ -40,7 +40,7 @@ The Verb,[viewed](/vocabulary.md#viewed) denotes the action of the user's browse
     },
 ```
 ### Context
-Common entity identifier: [ContextA](/common_structures.md#contextc) page.
+Common entity identifier: [ContextA](/common_structures.md#contexta) page.
 
 ### Example:
 
