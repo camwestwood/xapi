@@ -40,8 +40,8 @@ These are platform independent statements related to Virtual Learning Enviroment
 
 <table>
 <tr><td>Statement Template </td>   <td>JSON example</td> </tr>
-<tr><td> <a href = "/recipes/vle/forum-post">Post in forum</a></td><td> </td> </tr>                                                           
-<tr><td> <a href = "/recipes/vle/post-reply">replied to post</a></td><td> </td> </tr>    
+<tr><td> <a href = "/recipes/vle/forum-post.md">Post in forum</a></td><td> </td> </tr>                                                           
+<tr><td> <a href = "/recipes/vle/post-reply.md">replied to post</a></td><td> </td> </tr>    
 </table>
 
 ### All VLE statement examples
