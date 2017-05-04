@@ -77,7 +77,7 @@ For this recipe the object needs to identify what was viewed. A list of valid va
 	"objectType": "Activity",
 	"id": "http://moodle.data.alpha.jisc.ac.uk/mod/quiz/view.php?id=13"   	 	
 	"definition": {
-		"type": "http://xapi.jisc.ac.uk/define/vle/page",			
+		"type": "http://xapi.jisc.ac.uk/vle/page",			
 		"name": { "en": "Sample page" },			   
 	 }
 	 "extensions": {

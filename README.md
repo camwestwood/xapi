@@ -17,6 +17,7 @@ If the need arises, particular versions will get their own branches, but until t
 
 * [Vocabulary](vocabulary.md) gives the IRIs and definitions for verbs, activity types, etc, as well as for extensions used in the recipes.
 * [Common Structures](common_structures.md) outlines common patterns used across different recipes.
+* [Generic Statement Templates](generic) can be found in this directory.
 
 # Recipes
 Here are descriptions of statements that can be sent to the Jisc LRW, full statement examples, data needed to create the statement.  As far as possible all entities are the same across statements and are identified by a version.
@@ -39,10 +40,8 @@ These are platform independent statements related to Virtual Learning Enviroment
 
 <table>
 <tr><td>Statement Template </td>   <td>JSON example</td> </tr>
-<tr><td> <a href = "/recipes/vle/">Post inital</a></td><td> </td> </tr>                                                           
-<tr><td> <a href = "/recipes/vle/">Comment</a></td><td> </td> </tr>    
-<tr><td> <a href = "/recipes/vle/">Delete</a></td><td></td> </tr>    
-<tr><td> <a href = "/recipes/vle/">Update </a></td><td></td></tr>    
+<tr><td> <a href = "/recipes/vle/forum-post">Post in forum</a></td><td> </td> </tr>                                                           
+<tr><td> <a href = "/recipes/vle/post-reply">replied to post</a></td><td> </td> </tr>    
 </table>
 
 ### All VLE statement examples
