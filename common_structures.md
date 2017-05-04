@@ -219,10 +219,12 @@ A JSON Object. object.instructor.objectType has "Agent" as a value. account.name
 and context.account.homepage gives the URL of the home page of the application for which the login id applies.
 </td></tr><tr>
 <td>
-context.extensions.recipeVersion
+context.extensions.recipeVersion [0.1]
+context.extensions.http://id.tincanapi.com/extension/geojson [0.]
 </td>
 <td>
-The <b>recipeVersion</b> extension is recommended, and identifies the recipe (and its version) which was followed to create the xAPI statement.
+The <b>recipeVersion</b> extension is recommended, and identifies the recipe (and its version) which was followed to create the xAPI statement.<br/>
+http://id.tincanapi.com/extension/geojson is an optional geojson object with  geolocation details of the event.
 </td>
 </tr>
 </table>
@@ -419,6 +421,7 @@ The object pattern defines an event that has been attended.
 	   The <b>uddModInstanceID</b> extension records the module instance with which the learning event is associated.<br/>
 	   The <a href ="/vocabulary.md#event-type-id">event_type_id</a> requires an identifier for the type of even<br/> <a href="/vocabulary.md#event-type-description">event_type_description</a> is a description of the event type<br/><a href="/vocabulary.md#event-max-count">event_max_count</a><br/> is the maximum number of people that could have attended the event. <a href="/vocabulary.md#event-mandatory">event_mandatory</a>  states if the event was optional or not <br/> <b>object.extensions.http://xapi.jisc.ac.uk/starttime</b> is the planned start time. Uses datetimes for planned end of event. <br/><b>object.extensions.http://xapi.jisc.ac.uk/endtime</b> The planned end time of event. Uses datetimes for planned end time of event.  <br/>
 	    </td>  
+		
 	</tr>
  </table>
 

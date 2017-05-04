@@ -498,6 +498,16 @@ For more information see Jisc profile [CourseArea properties](#42-coursearea-pro
 <tr><th align="left">Sample Value</th><td>2016-02-05T10:00:00.000Z</td></tr>
 </table>
 
+### GeoJSON
+
+<table>
+<tr><th align="left">Label</th><td>GeoJSON</td></tr>
+<tr><th align="left">Description</th><td>Value should be a GeoJSON object as defined by the GeoJSON specification. GeoJSON can be used to represent GPS coordinates, as well as other geometrical entities. See http://www.geojson.org/ for more information.</td></tr>
+<tr><th align="left">IRI</th><td> <a href="http://id.tincanapi.com/extension/geojson">http://id.tincanapi.com/extension/geojson</a> </td></tr>
+<tr><th align="left">Data Type</th><td>JSON Object/td></tr>
+<tr><th align="left">Value Space</th><td>GeoJSON Object</td></tr>
+</table>
+
 ## 4.2 CourseArea properties
 The following are properties of the profile extension context.extensions.courseArea
  
