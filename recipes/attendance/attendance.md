@@ -129,18 +129,18 @@ Common entity identifier: Common entity identifier: [ContextD](/common_structure
             },
 	 "extensions": {
             "http://xapi.jisc.ac.uk/recipeVersion": "1.0",
-			"http://id.tincanapi.com/extension/geojson": {
-				"type": "Feature",
-				"geometry": {
-					"type": "Point",
-					"coordinates": [51.510531, -0.118930]
-						},
-				"properties": {
-				"name": "University of Jisc"
-					}
-				}	
-        }
-    }
+	    "http://id.tincanapi.com/extension/geojson": {
+		"type": "Feature",
+		"geometry": {
+			"type": "Point",
+			"coordinates": [51.510531, -0.118930]
+				},
+			"properties": {
+			"name": "University of Jisc"
+				}
+			}	
+        	}
+    	}
 ```
 
 
