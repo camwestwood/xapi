@@ -47,7 +47,7 @@ actor.account.homepage [1] <br/>
 ```
 
 ### Verb
-Common entity identifier: [VerbA](/common_structures.md#verba).
+Common entity identifier: [VerbA](/common_structures.md#verba). This verb, [logged in](/vocabulary.md#logged-in), describes the action of logging into a platform.
 
 #### Entity properties:
 
