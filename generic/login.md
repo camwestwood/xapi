@@ -8,10 +8,13 @@ Examples:
 - [Actor in VLE Login](/recipes/vle/login.md#actor)
 
 ### Actor
-Common entity identifier: Common entity identifier: [ActorA](/common_structures.md#actora)
+Common entity identifier: [ActorA](/common_structures.md#actora). 
+
+The actor entity identifies the individual that is logging in.
+
+The verb, [logged in](/vocabulary.md#logged-in), describes the action of logging into a platform.
 
 #### Entity properties:
-The actor entity identifies the individual that is logging in.
 
 <table>
 <tr><th>Property</th><th>Description</th></tr>
@@ -44,10 +47,10 @@ actor.account.homepage [1] <br/>
 ```
 
 ### Verb
-Common entity identifier: [VerbA](/common_structures.md#verba)
+Common entity identifier: [VerbA](/common_structures.md#verba).
 
 #### Entity properties:
-This verb, [logged in](/vocabulary.md#logged-in), describes the action of logging into a platform.
+
 
 <table>
 	<tr><th>Property</th><th>Description</th></tr>
@@ -73,9 +76,9 @@ This verb, [logged in](/vocabulary.md#logged-in), describes the action of loggin
 ```
 
 ### Context
-Common entity identifier: ContextA, as defined on the [common structures](/common_structures.md#contexta) page.
+Common entity identifier: ContextA, as defined on the [common structures](/common_structures.md#contexta) page. 
 
-Context describes the device used to log-in. If the device supports it, session Ids and ip-addresses can be recorded.
+Context describes the device used to log-in. If the device supports it, session Ids and ip-addresses can be recorded. 
 
 <table>
 <tr><th>Property</th><th>Description</th></tr>
