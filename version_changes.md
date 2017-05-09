@@ -66,6 +66,8 @@
 
 #### Attended learning activity
 
+9-05-2017, Spec Change. [DeviceLocation added to context](https://github.com/jiscdev/xapi/issues/158)
+
 3-05-2017, Documentation change [RecipeVersion is the version of the collection of all statements, removed revision number](https://github.com/jiscdev/xapi/issues/154)
 
 
