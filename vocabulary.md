@@ -498,7 +498,7 @@ For more information see Jisc profile [CourseArea properties](#42-coursearea-pro
 <tr><th align="left">Sample Value</th><td>2016-02-05T10:00:00.000Z</td></tr>
 </table>
 
-### GeoJSON
+### Device Location
 
 <table>
 <tr><th align="left">Label</th><td>GeoJSON</td></tr>

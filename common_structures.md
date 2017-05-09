@@ -125,6 +125,7 @@ ContextB pattern is similar to ContextA, but with the addition of a contextActiv
 		<td> context.extensions.courseArea [0..1]<br />
 			context.extensions.sessionId [0..1]<br />
 			context.extensions.ip-address [1]<br />
+			context.extensions.ip-address [1]<br />
 			context.extensions.recipeVersion [1]
 </td>
 		<td>Four extensions are provided for, with IRIs as defined on the <a href="vocabulary.md#41-context-extensions">vocabularies page</a>.<br/>
@@ -220,11 +221,11 @@ and context.account.homepage gives the URL of the home page of the application f
 </td></tr><tr>
 <td>
 context.extensions.recipeVersion [0.1]
-context.extensions.http://id.tincanapi.com/extension/geojson [0.]
+context.extensions.https://xapi.jisc.ac.uk/devicelocation [0.1]
 </td>
 <td>
 The <b>recipeVersion</b> extension is recommended, and identifies the recipe (and its version) which was followed to create the xAPI statement.<br/>
-http://id.tincanapi.com/extension/geojson is an optional geojson object with  geolocation details of the event.
+devicelocation is an optional geojson object with  geolocation details of the device used to attend the event.
 </td>
 </tr>
 </table>

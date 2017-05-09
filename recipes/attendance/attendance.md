@@ -129,7 +129,7 @@ Common entity identifier: Common entity identifier: [ContextD](/common_structure
             },
 	 "extensions": {
             "http://xapi.jisc.ac.uk/recipeVersion": "1.0",
-	    "http://id.tincanapi.com/extension/geojson": {
+	    "http://xapi.jisc.ac.uk/deviceLocation": {
 		"type": "Feature",
 		"geometry": {
 			"type": "Point",
