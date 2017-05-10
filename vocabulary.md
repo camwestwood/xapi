@@ -464,7 +464,7 @@ For more information see Jisc profile [CourseArea properties](#42-coursearea-pro
 </table>
 
 
-### Recipe Version
+### Recipe Version (deprecated since 1.0)
 
 <table>
 <tr><th align="left">Label</th><td>Recipe Version</td></tr>
@@ -473,6 +473,18 @@ For more information see Jisc profile [CourseArea properties](#42-coursearea-pro
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/recipeVersion">http://xapi.jisc.ac.uk/recipeVersion</a> </td></tr>
 <tr><th align="left">Data Type</th><td>String</td></tr>
 <tr><th align="left">Value Space</th><td>Version number found on recipe page, follows Semantic versioning.</td></tr>
+<tr><th align="left">Sample Value</th><td>1.0</td></tr>
+</table>
+
+### Xapi Profile Version 
+
+<table>
+<tr><th align="left">Label</th><td>Jisc Profile Version</td></tr>
+<tr><th align="left">Description</th><td>Version of xapi profile version, found on homepage.
+</td></tr>
+<tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/version">http://xapi.jisc.ac.uk/version</a> </td></tr>
+<tr><th align="left">Data Type</th><td>String</td></tr>
+<tr><th align="left">Value Space</th><td>Version number found on homepage, follows Semantic versioning.</td></tr>
 <tr><th align="left">Sample Value</th><td>1.0</td></tr>
 </table>
 

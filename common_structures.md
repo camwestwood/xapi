@@ -81,14 +81,14 @@ This pattern is used across many recipes in the Jisc profile, but there may be a
 <tr><th>Property</th><th>Description</th></tr>
 	<tr><td>context.platform [1]</td>
 	<td>The platform used in the experience of this learning activity. The value used should not change between platform upgrades and version changes and should typically be a concise name by which the application is commonly known, for example "Moodle" or "Blackboard"</td></tr>
-	<tr><td>context.extensions.recipeVersion [0..1]
+	<tr><td>context.extensions.version [0..1]
 		 context.extension.sessionId [0..1]
 		 context.extension.ip-address [1]
 		 </td>
 		<td>Four extensions are provided for, with IRIs as defined on the <a href="vocabulary.md#41-context-extensions">vocabularies page</a>.
   	  The <b>sessionID</b> extension is the VLE session ID, or a suitably hashed version of it. A value should be provided if this information is available.<br/>
     The <b>ip-address</b> is used to identify the client's IP address. An IPv4 address is recommended.<br/>
-    The <b>recipeVersion</b> extension is recommended, and identifies the recipe (and its version) which was followed to create the xAPI statement. <br/>
+    The <b>version</b> extension is recommended, and identifies the version of the Jisc xAPI profile found on the ReadMe page. <br/>
 	The <b>courseArea</b> identifies Umbrella course/parent area by its home page URI. More information can be found on the <a href="vocabulary.md#umbrella-course-area">vocabularies page</a>.
 		</td></tr></table>
 
@@ -99,7 +99,7 @@ This pattern is used across many recipes in the Jisc profile, but there may be a
   "extensions": {
     "http://xapi.jisc.ac.uk/sessionId": "32456891",
     "http://id.tincanapi.com/extensions/ip-address": "10.3.3.48",
-    "http://xapi.jisc.ac.uk/recipeVersion" : "vle_logged_inV1.3"
+    "http://xapi.jisc.ac.uk/version" : "vle_logged_inV1.3"
   }
 }
 ```
@@ -126,12 +126,12 @@ ContextB pattern is similar to ContextA, but with the addition of a contextActiv
 			context.extensions.sessionId [0..1]<br />
 			context.extensions.ip-address [1]<br />
 			context.extensions.ip-address [1]<br />
-			context.extensions.recipeVersion [1]
+			context.extensions.version [1]
 </td>
 		<td>Four extensions are provided for, with IRIs as defined on the <a href="vocabulary.md#41-context-extensions">vocabularies page</a>.<br/>
     The <b>sessionID</b> extension is the VLE session ID, or a suitably hashed version of it. A value should be provided if it is available.<br/>
     The <b>ip-address</b> is used to identify the client's IP address. An IPv4 address is recommended.<br/>
-    The <b>recipeVersion</b> extension is recommended, and identifies the recipe (and its version) which was followed to create the xAPI statement.
+    The <b>version</b> extension is recommended, and identifies the version of the Jisc xAPI profile found on the ReadMe page.
 	<br/>
     The <b>courseArea</b> extension is recommended, and identifies umbrella course/parent area by its home page URI. More information can be found on the <a href="vocabulary.md#umbrella-course-area">vocabularies page</a>.</td>
 		</tr>
@@ -168,7 +168,7 @@ ContextB pattern is similar to ContextA, but with the addition of a contextActiv
 			
  			"http://xapi.jisc.ac.uk/sessionId":"32456891",
             "http://id.tincanapi.com/extension/ip-address": "10.3.3.48"
-			"http://xapi.jisc.ac.uk/recipeVersion" : "vle_assignment_submittedV1.3"
+			"http://xapi.jisc.ac.uk/version" : "vle_assignment_submittedV1.3"
 			}
 		}
 ```
@@ -192,14 +192,14 @@ ContextC pattern is similar to ContextB, but is designed to be used with systems
 	</tr>
 	<tr>
 		<td> context.extensions.courseArea [0..1]<br />
-		context.extensions.recipeVersion [1]<br />
+		context.extensions.version [1]<br />
 		context.extension.sessionId [0..1]<br />
 		context.extension.ip-address [1] <br />
 </td>
 		<td>Four extensions are provided for, with IRIs as defined on the <a href="vocabulary.md#41-context-extensions">vocabularies page</a>.<br/>
     The <b>sessionID</b> extension is the VLE session ID, or a suitably hashed version of it. A value should be provided if it is available.<br/>
     The <b>ip-address</b> is used to identify the client's IP address. An IPv4 address is recommended.<br/>
-    The <b>recipeVersion</b> extension is recommended, and identifies the recipe (and its version) which was followed to create the xAPI statement.
+    The <b>version</b> extension is recommended, and identifies the version of the Jisc xAPI profile found on the ReadMe page.
 	<br/>
     The <b>courseArea</b> extension is recommended, and identifies umbrella course/parent area by its home page URI. More information can be found on the <a href="vocabulary.md#umbrella-course-area">vocabularies page</a>.</td>
 		</tr>
@@ -220,11 +220,11 @@ A JSON Object. object.instructor.objectType has "Agent" as a value. account.name
 and context.account.homepage gives the URL of the home page of the application for which the login id applies.
 </td></tr><tr>
 <td>
-context.extensions.recipeVersion [0.1]
+context.extensions.version [0.1]
 context.extensions.https://xapi.jisc.ac.uk/devicelocation [0.1]
 </td>
 <td>
-The <b>recipeVersion</b> extension is recommended, and identifies the recipe (and its version) which was followed to create the xAPI statement.<br/>
+The <b>version</b> extension is recommended, and identifies the version of the Jisc xAPI profile found on the ReadMe page.<br/>
 devicelocation is an optional geojson object with  geolocation details of the device used to attend the event.
 </td>
 </tr>

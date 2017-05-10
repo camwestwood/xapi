@@ -128,7 +128,7 @@ Common entity identifier: Common entity identifier: [ContextD](/common_structure
                 "homePage": "http://localhost/moodle"
             },
 	 "extensions": {
-            "http://xapi.jisc.ac.uk/recipeVersion": "1.0",
+            "http://xapi.jisc.ac.uk/version": "1.0",
 	    "http://xapi.jisc.ac.uk/deviceLocation": {
 		"type": "Feature",
 		"geometry": {
