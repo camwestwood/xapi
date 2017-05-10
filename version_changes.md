@@ -6,11 +6,15 @@
 
 ### Logged in
 
+10-05-2017, Spec Change. recipeVersion depricated, replaced with version
+
 3-05-2017, Documentation change [RecipeVersion is the version of the collection of all statements, removed revision number](https://github.co7/jiscdev/xapi/issues/154)
 
 2-05-2016, Documentation change [subType supersedes ApplicationType](https://github.com/jiscdev/xapi/issues/55) in objectA
 
 ### Logged out
+
+10-05-2017, Spec Change. recipeVersion depricated, replaced with version
 
 3-05-2017, Documentation change [RecipeVersion is the version of the collection of all statements, removed revision number](https://github.com/jiscdev/xapi/issues/154)
 
@@ -20,6 +24,8 @@
 
 
 ### VLE resource viewed
+
+10-05-2017, Spec Change. recipeVersion depricated, replaced with version
 
 3-05-2017, Documentation change [RecipeVersion is the version of the collection of all statements, removed revision number](https://github.com/jiscdev/xapi/issues/154)
 
@@ -33,6 +39,8 @@
 
 ### Session timeout
 
+10-05-2017, Spec Change. recipeVersion depricated, replaced with version
+
 3-05-2017, Documentation change [RecipeVersion is the version of the collection of all statements, removed revision number](https://github.com/jiscdev/xapi/issues/154)
 
 20-03-2017, Spec Change. [Description no longer required in ObjectA.](https://github.com/jiscdev/xapi/issues/148)
@@ -41,6 +49,8 @@
 
 
 #### Assignment Graded
+
+10-05-2017, Spec Change. recipeVersion depricated, replaced with version
 
 3-05-2017, Documentation change [RecipeVersion is the version of the collection of all statements, removed revision number](https://github.com/jiscdev/xapi/issues/154)
 
@@ -52,6 +62,8 @@
 
 
 #### Assignment Submitted
+
+10-05-2017, Spec Change. recipeVersion depricated, replaced with version
 
 3-05-2017, Documentation change [RecipeVersion is the version of the collection of all statements, removed revision number](https://github.com/jiscdev/xapi/issues/154)
 
@@ -65,6 +77,8 @@
 ### Attendance Recipes
 
 #### Attended learning activity
+
+10-05-2017, Spec Change. recipeVersion depricated, replaced with version10-05-2016, Spec Change. recipeVersion depricated, replaced with version
 
 9-05-2017, Spec Change. [DeviceLocation added to context](https://github.com/jiscdev/xapi/issues/158)
 
