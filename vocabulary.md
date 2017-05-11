@@ -166,7 +166,7 @@ Example:
 ### Assessment
 
 <table>
-<tr><th align="left">Label</th><td>Application</td></tr>
+<tr><th align="left">Label</th><td>Assessment</td></tr>
 <tr><th align="left">Description</th><td>An assessment is an activity type that determines a learner’s mastery of a particular subject area. An assessment typically has one or more questions.</td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://adlnet.gov/expapi/activities/assessment">http://adlnet.gov/expapi/activities/assessment</a> </td></tr>
 <tr><th align="left">Statement Example</th><td> <a href="recipes/vle/assignment-submitted.md">assignment-submitted</a> </td></tr>
