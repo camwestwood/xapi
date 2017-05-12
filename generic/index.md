@@ -11,6 +11,7 @@ The process in using these generic statement templates:
 - Add new vocab to the vocabulary page
 - Update copied generic recipe with specific examples for each of the statement properties
 - If a statement needs changing, check if it is already in the common statements page, otherwise create a new one
+- Descriptions of statement can be removed from the template once in the commin statements page
 - Once completed update ticket for discussion at next team meeting
 
 
