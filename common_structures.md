@@ -449,29 +449,69 @@ This result pattern describes the completion of a learning activity and is optio
     }
 ```
 
-### ResultB
+## ResultB
 Common entity identifier: ResultB
-
-This result pattern describes completion and is usually optional. This result entity can include scaled, raw, min and max score, success, and response (the instructor's feedback). See [result](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#result). See the [vocabulary](../vocabulary.md) page for a definition of the 'http://xapi.jisc.ac.uk/grade' extension.
+This result pattern describes completion and is usually optional. It can include scaled, raw, min and max score, success, and response (the instructor's feedback). See [score](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#Score). See the [vocabulary](https://github.com/jiscdev/xapi/blob/vocabulary.md) page for a definition of the 'http://xapi.jisc.ac.uk/grade' extension.
 
 <table>
-	<tr><th>Property [cardinality]</th><th>Description</th></tr>
+	<tr><th>Property [cardinality]</th><th>Description</th><th>Data type</th></tr>
+	<tr>
+		<td>result.score.scaled [0..1]</td>
+		<td>The score related to the experience as modified by scaling and/or normalization</td>
+<td>decimal number between -1 and 1, inclusive.</td>
+	</tr>
 	<tr>
 		<td>result.score.raw [0..1]</td>
-		<td>Decimal number</td>
+		<td>Unmodified score</td>
+<td>decimal number between min and max (if present, otherwise unrestricted), inclusive</td>
 	</tr>
-		<tr>
+	<tr>
+		<td>result.score.min [0..1]</td>
+		<td>The lowest possible score</td>
+<td>decimal number less than max (if present)</td>
+	</tr>
+	<tr>
+		<td>result.score.max [0..1]</td>
+		<td>The highest possible score</td>
+		<td>decimal number greater than min (if present)</td>
+	</tr>
+	<tr>
+		<td>result.success [0..1]</td>
+		<td>Indicates whether or not the attempt was successful.</td>
+		<td>true or false</td>
+	</tr>
+	<tr>
+		<td>result.response [0..1]</td>
+		<td>Instructor's or automatic feedback</td>
+		<td>string (256)</td>
+	</tr>
+	<tr>
 		<td>result.extensions.http://xapi.jisc.ac.uk/grade [0..1]</td>
-		<td>A non-numerical assessment result. Data type is string (256)</td>
+		<td>Non-numerical assessment result</td>
+		<td>string (256)</td>
 	</tr>
 </table>
 
-#### Example:
-``` javascript
- "result":{
-        "completion":true
-    }
+## Example:
+
 ```
+"result": {
+        "score": {
+            "scaled": 0.25,
+            "raw": 25,
+            "min": 0,
+            "max": 100
+        },
+		
+        "success": false,
+        "completion": true,
+        "response": "The cow jumped over the moon."
+         }
+
+        "extensions": { 
+             "http://xapi.jisc.ac.uk/grade": "5 Stars"
+        }
+````
 
 ### ResultC
 Common entity identifier: ResultC
