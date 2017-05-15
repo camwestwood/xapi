@@ -17,12 +17,12 @@ The process in using these generic statement templates:
 
 ## List of Generic statement templaes
 
-- [login](login.md)
+
 
 <table>
 <tr><th>Statement</th><th>Recipe Examples</th></tr>
 <tr>
 <td><a href="login.md">login<a></td><td><href="recipes/vle/login.md#actor">VLE Login</td>
 </tr><tr>
-<td><a href="logout.md">login<a></td><td><href="recipes/vle/logout.md#actor">VLE Login</td>
+<td><a href="logout.md">logout<a></td><td><href="recipes/vle/logout.md#actor">VLE Logout</td>
 </table>
