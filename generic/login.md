@@ -5,14 +5,12 @@ This activity records a user logging in to something.
 
 Examples:
 
-- [Actor in VLE Login](/recipes/vle/login.md#actor)
+- [VLE Login](/recipes/vle/login.md#actor)
 
 ### Actor
 Common entity identifier: [ActorA](/common_structures.md#actora). 
 
 The actor entity identifies the individual that is logging in.
-
-The verb, [logged in](/vocabulary.md#logged-in), describes the action of logging into a platform.
 
 #### Entity properties:
 
@@ -80,6 +78,7 @@ Common entity identifier: ContextA, as defined on the [common structures](/commo
 
 Context describes the device used to log-in. If the device supports it, session Ids and ip-addresses can be recorded. 
 
+#### Entity properties:
 <table>
 <tr><th>Property</th><th>Description</th></tr>
 	<tr><td>context.platform [1]</td>
@@ -109,8 +108,9 @@ Context describes the device used to log-in. If the device supports it, session 
 ```
 
 ### Object
-Common entity identifier: ObjectA, as defined on the [common structures](/common_structures.md#objecta) page.
+Common entity identifier: [ObjectA] as defined on the [common structures](/common_structures.md#objecta) page.
 
+#### Entity properties:
 <table>
 	<tr><th>Property</th><th>Description</th></tr>
 	<tr>
