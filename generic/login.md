@@ -109,7 +109,7 @@ Context describes the device used to log-in. If the device supports it, session 
 ```
 
 ### Object
-Common entity identifier: [ObjectA] as defined on the [common structures](../common_structures.md#objecta) page.
+Common entity identifier: [ObjectA](../common_structures.md#objecta)
 
 #### Entity properties:
 <table>
