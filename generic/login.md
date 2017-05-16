@@ -39,7 +39,7 @@ actor.account.homepage [1] <br/>
   "name": "<Real Name: e.g. John Smith>",
   "account": {
     "name": "<Account name: e.g. jsmith12>",
-    "homePage": "<URL of the home page for the application: https://courses.alpha.jisc.ac.uk/moodle>"
+    "homePage": "<URL of the home page for the application: e.g. https://courses.alpha.jisc.ac.uk/moodle>"
   }
 }
 ```
@@ -138,7 +138,7 @@ Common entity identifier: [ObjectA](../common_structures.md#objecta)
 ``` javascript
 "object": {
   "objectType": "Activity",
-  "id": "<id of Object: e.g https://courses.alpha.jisc.ac.uk/moodle">",
+  "id": "<id of Object: e.g https://courses.alpha.jisc.ac.uk/moodle>",
   "definition": {
     "type": "<type of object: e.g. http://activitystrea.ms/schema/1.0/application>",
     "name": {
@@ -149,22 +149,5 @@ Common entity identifier: [ObjectA](../common_structures.md#objecta)
     }
   }
 }
-
-#### Example:
-``` javascript
-"object": {
-  "objectType": "Activity",
-  "id": "https://courses.alpha.jisc.ac.uk/moodle",
-  "definition": {
-    "type": "http://activitystrea.ms/schema/1.0/application",
-    "name": {
-      "en": "University of Jisc VLE"
-    },
-    "extensions": {
-      "http://xapi.jisc.ac.uk/subType": "http://id.tincanapi.com/activitytype/lms"
-    }
-  }
-}
-```
 
 
