@@ -128,7 +128,7 @@ ContextB pattern is similar to ContextA, but with the addition of a contextActiv
 			context.extensions.ip-address [1]<br />
 			context.extensions.version [1]
 </td>
-		<td>Four extensions are provided for, with IRIs as defined on the <a href="vocabulary.md#41-context-extensions">vocabularies page</a>.<br/>
+	    <td>Four extensions are provided for, with IRIs as defined on the <a href="vocabulary.md#41-context-extensions">vocabularies page</a>.<br/>
     The <b>sessionID</b> extension is the VLE session ID, or a suitably hashed version of it. A value should be provided if it is available.<br/>
     The <b>ip-address</b> is used to identify the client's IP address. An IPv4 address is recommended.<br/>
     The <b>version</b> extension is recommended, and identifies the version of the Jisc xAPI profile found on the ReadMe page.
@@ -543,3 +543,21 @@ This pattern describes the result and if the actor was on time to the event, if 
     }
 ```
 
+### ResultD
+Common entity identifier: ResultD
+
+This pattern contains the content of the post.
+
+<table>
+	<tr><th>Property [cardinality]</th><th>Description</th></tr>
+	<tr><td>result.response [1]</td><td>Content of post or reply</td></tr>
+</table>
+
+### Example
+
+
+``` javascript
+ "result":{
+        "response":"I have some good links on that subject, I will find them for you"
+    }
+``` 

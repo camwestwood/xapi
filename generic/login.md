@@ -36,16 +36,18 @@ actor.account.homepage [1] <br/>
 ``` Javascript
 "actor": {
   "objectType": "Agent",
-  "name": "Real Name",
+  "name": "<Real Name>",
   "account": {
-    "name": "Account name",
-    "homePage": "URL of the home page for the application for which the login id"
+    "name": "<Account name>",
+    "homePage": "<URL of the home page for the application for which the login id>"
   }
 }
 ```
 
 ### Verb
-Common entity identifier: [VerbA](/common_structures.md#verba). This verb, [logged in](/vocabulary.md#logged-in), describes the action of logging into a platform.
+Common entity identifier: [VerbA](/common_structures.md#verba). 
+
+The verb, [logged in](/vocabulary.md#logged-in), describes the action of logging into a platform.
 
 #### Entity properties:
 
@@ -100,9 +102,9 @@ Context describes the device used to log-in. If the device supports it, session 
 "context": {
   "platform": "Platform",
   "extensions": {
-    "http://xapi.jisc.ac.uk/sessionId": "Session ID if platform permits",
-    "http://id.tincanapi.com/extensions/ip-address": "IP Address of",
-    "http://xapi.jisc.ac.uk/recipeVersion" : "Version of JISC xAPI Profile"
+    "http://xapi.jisc.ac.uk/sessionId": "<Session ID if platform permits>",
+    "http://id.tincanapi.com/extensions/ip-address": "<IP Address of client>",
+    "http://xapi.jisc.ac.uk/recipeVersion" : "<Version of JISC xAPI Profile>"
   }
 }
 ```

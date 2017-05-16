@@ -1,16 +1,16 @@
-# vle_resource_viewed statement template
+# Generic reply template
 
 ## Purpose
 This template defines the structure and terms to record the experience of viewing a resource on a platform.
 
 Examples:
 
-- [VLE resource viewed](../recipes/vle/Module-View.md)
+- [Forum Reply](../recipes/vle/post-reply.md)
 
 ### Actor
 Common entity identifier:  [ActorA](../common_structures.md#actora)
 
-The actor entity describes the individual that is viewing a vle resource.
+The actor entity describes the individual that is replying to a discussion.
 
 #### Entity properties:
 
@@ -45,9 +45,9 @@ actor.account.homepage [1] <br/>
 ```
 
 ### Verb
-Common entity identifier: VerbA, as defined on the [common structures](/common_structures.md#verba) page.
+Common entity identifier: VerbA, [common structures](/common_structures.md#verba) page.
 
-The Verb,[viewed](../vocabulary.md#verbs) denotes the action of the user requesting the resource that the user wishes to view.
+The verb [replied](/vocabulary.md#replied) denotes the action of replying to a post or discussion topic on a forum.
 
 #### Entity properties:
 

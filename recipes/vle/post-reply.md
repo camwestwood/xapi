@@ -1,13 +1,11 @@
 # VLE forum post reply template
 
-[Statement Template Changes](/version_changes.md#post-reply)
-
 ## Purpose
 This statement defines the structure and terms to record a post to a forum with a VLE
 
 ### Actor
 
-Common entity identifier: [ActorA](/common_structures.md#actora)
+Common entity identifier: [ActorA](../common_structures.md#actora)
 
 #### Entity Example:
 The actor entity describes the individual who is making the reply.
@@ -44,6 +42,10 @@ The verb [replied](/vocabulary.md#replied) denotes the action of replying to a p
 ### Result
 Common entity identifier: [ResultD](/common_structures.md#resultd)
 
+This pattern contains the content of the post.
+
+
+
 #### Entity Example:
 
 
@@ -75,8 +77,7 @@ The object defines the post that has been replied to.
 
 
 ### Context
-Common entity identifier: ContextA, as defined on the [common structures](/common_structures.md#contextc) page.
-The courseArea is required. See the [vocabularies](../vocabulary.md#42-coursearea-properties) page for more information
+Common entity identifier: [ContextA](../common_structures.md#contextc) page.
 
 ### Example:
 

@@ -5,14 +5,14 @@ This activity records a user logging out of a VLE.
 
 Examples:
 
-- [VLE Logout](/recipes/vle/login.md#actor)
+- [VLE Logout](/recipes/vle/login.md)
 
 ### Actor
-Common entity identifier:  [ActorA](/common_structures.md#actora) page.
+Common entity identifier:  [ActorA](/common_structures.md#actora)
 
-The actor entity describes the individual logging out of the system.
+The actor entity identifies the individual logging out.
 
-####  Entity properties:
+#### Entity properties:
 
 <table>
 <tr><th>Property</th><th>Description</th></tr>
@@ -28,22 +28,20 @@ actor.account [1] <br/>
 actor.account.name [1] <br/>
 actor.account.homepage [1] <br/>
 </td>
-<td>A JSON Object with <b>account.name</b> giving the login id for the subject of the statement and <b>account.homepage</b> giving the URL of the home page of the application for which the login id applies.</td></tr>
+<td>A JSON Object with <b>account.name</b> giving a system login id for the subject of the statement and <b>account.homepage</b> giving the URL of the home page of the application for which the login id applies.</td></tr>
 </table>
 
-#### Example
+### Example:
 
 ``` Javascript
-{
-
-    "actor": {
-        "objectType": "Agent",
-        "name": "John Smith",
-        "account": {
-            "name": "jsmith12",
-            "homePage": "https://courses.alpha.jisc.ac.uk/moodle"
-        }
-    },
+"actor": {
+  "objectType": "Agent",
+  "name": "Real Name",
+  "account": {
+    "name": "Account name",
+    "homePage": "URL of the home page for the application for which the login id"
+  }
+}
 ```
 
 ### Verb
