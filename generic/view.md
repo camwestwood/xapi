@@ -1,4 +1,4 @@
-# resource_viewed statement template
+# resource_viewed generic statement template
 
 ## Purpose
 This template defines the structure and terms to record the experience of viewing a resource on a platform.
