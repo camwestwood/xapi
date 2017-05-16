@@ -11,18 +11,18 @@ The process in using these generic statement templates:
 5. Add new vocabulary to the vocabulary page
 6. Update copied generic recipe with specific examples for each of the statement properties
 7. If a statement needs changing, check if it is already in the common statements page, otherwise create a new one
-8 Descriptions of statement can be removed from the template once in the commin statements page
+8. Descriptions of statement can be removed from the template once in the commin statements page
 9. Once completed update ticket for discussion at next team meeting and make a pull request
 
 
 ## List of Generic statement templaes
 
-
-
 <table>
 <tr><th>Statement</th><th>Recipe Examples</th></tr>
-<tr>
-<td><a href="login.md">login<a></td><td><href="recipes/vle/login.md#actor">VLE Login</td>
-</tr><tr>
-<td><a href="logout.md">logout<a></td><td><href="recipes/vle/logout.md#actor">VLE Logout</td>
+<tr><td><a href="login.md">login<a></td><td><a href="recipes/vle/login.md">VLE log in</td></tr>
+<tr><td><a href="logout.md">logout<a></td><td><a href="recipes/vle/logout.md">VLE logout</td></tr>
+<tr><td><a href="view.md">view content<a></td><td><a href="recipes/vle/Module-View.md">VLE view content</td></tr>
+<tr><td><a href="post.md">post<a></td><td><a href="recipes/vle/forum-post.md">VLE forum post</td></tr>
+<tr><td><a href="reply.md">reply<a></td><td><a href="recipes/vle/forum-reply.md">VLE reply to post</td></tr>
+
 </table>
