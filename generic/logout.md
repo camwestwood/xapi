@@ -5,10 +5,10 @@ This activity records a user logging out of a VLE.
 
 Examples:
 
-- [VLE Logout](/recipes/vle/login.md)
+- [VLE Logout](/recipes/vle/logout.md)
 
 ### Actor
-Common entity identifier:  [ActorA](/common_structures.md#actora)
+Common entity identifier:  [ActorA](/common_structures.md)
 
 The actor entity identifies the individual logging out.
 
@@ -35,11 +35,11 @@ actor.account.homepage [1] <br/>
 
 ``` Javascript
 "actor": {
-  "objectType": "Agent",
-  "name": "Real Name",
+  "objectType": "<ObjectType set to Agent>",
+  "name": "<Real Name: e.g. John Smith>",
   "account": {
-    "name": "Account name",
-    "homePage": "URL of the home page for the application for which the login id"
+    "name": "<Account name: e.g. jsmith12>",
+    "homePage": "<URL of the home page for the application: e.g. https://courses.alpha.jisc.ac.uk/moodle>"
   }
 }
 ```
@@ -57,12 +57,11 @@ This statement uses the [logged out](/vocabulary.md#verbs) describes the action 
 	<tr><th>Property</th><th>Description</th></tr>
 	<tr>
 		<td>verb.id [1]</td>
-		<td>An IRI that identifies the Verb. Valid IRIs depend on the recipe and are given on the relevant recipe page.</td>
+		<td>An IRI that identifies the Verb. For logging out statements the iri https://brindlewaye.com/xAPITerms/verbs/loggedout is used</td>
 	</tr>
 	<tr>
 		<td>verb.display [1]</td>
-		<td>A human readable representation of Verb. It takes a RFC 5646 Language Tag.  
-		The verb.display is "recommended" in the xAPI v1.0.1 specification but is not likely to be of use within the Jisc Learning Analytics architecture.</td>
+		<td>A human readable representation of Verb. It takes a RFC 5646 Language Tag.  For logging out statement "Logged out of".</td>
 	</tr>
 </table>
 
@@ -71,12 +70,12 @@ This statement uses the [logged out](/vocabulary.md#verbs) describes the action 
 
 ``` javascript
 "verb": {
-        "id": "https://brindlewaye.com/xAPITerms/verbs/loggedout",
-        "display": {
-            "en": "logged out of"
-        }
-    },
-``` 
+  "id": "<URI of Verb: i.e https://brindlewaye.com/xAPITerms/verbs/loggedout >",
+  "display": {
+    "en" : "<Human readable representation of verb: i.e logged out of">
+  }
+}
+```
 ### Context
 Common entity identifier: [ContextA](/common_structures.md#contexta)
 
@@ -104,12 +103,13 @@ Since the logged-out action is not undertaken in the context of a learning activ
 
 ``` javascript
 "context": {
-        "platform": "Moodle",
-        "extensions": {
- 			"http://xapi.jisc.ac.uk/sessionId":"32456891",
-        	"http://id.tincanapi.com/extension/ip-address": "10.3.3.48",
-			"http://xapi.jisc.ac.uk/version" : "1.0"
-			}
+  "platform": "<Platform: e.g Moodle>",
+  "extensions": {
+    "http://xapi.jisc.ac.uk/sessionId": "<Session ID if platform permits>",
+    "http://id.tincanapi.com/extensions/ip-address": "<IP Address of client e.g. 10.3.3.48>",
+    "http://xapi.jisc.ac.uk/recipeVersion" : "<Version of JISC xAPI Profile, found on README.MD e.g. 1.0>"
+  }
+}
 ```
 
 ### Object
@@ -146,18 +146,18 @@ When the object.definition.type is "http://activitystrea.ms/schema/1.0/applicati
 
 ### Example
 ``` javascript
-
 "object": {
-        "objectType": "Activity",
-        "id": "https://courses.alpha.jisc.ac.uk/moodle",
-        "definition": {
-            "type": "http://activitystrea.ms/schema/1.0/application",
-            "name": {
-                "en": "A Moodle course"
-            },
-            "extensions": {
-                "http://xapi.jisc.ac.uk/subType": "http://id.tincanapi.com/activitytype/lms"
-                }
-            }
-        },
-```
+  "objectType": "<ObjectType: i.e Activity>",
+  "id": "<id of Object: e.g https://courses.alpha.jisc.ac.uk/moodle>",
+  "definition": {
+    "type": "<type of object: e.g. http://activitystrea.ms/schema/1.0/application>",
+    "name": {
+      "en": "<English Description: e.g University of Jisc VLE>"
+    },
+    "extensions": {
+      "http://xapi.jisc.ac.uk/subType": "<Subtype: e.g http://id.tincanapi.com/activitytype/lms>"
+    }
+  }
+}
+
+'''
