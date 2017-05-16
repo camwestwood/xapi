@@ -10,7 +10,7 @@ Examples:
 ### Actor
 Common entity identifier:  [ActorA](../common_structures.md#actora)
 
-The actor entity describes the individual that is viewing a vle resource.
+The actor entity describes the individual that is viewing a resource.
 
 #### Entity properties:
 
@@ -35,11 +35,11 @@ actor.account.homepage [1] <br/>
 
 ``` Javascript
 "actor": {
-  "objectType": "Agent",
-  "name": "<Real Name>",
+  "objectType": "<ObjectType set to Agent>",
+  "name": "<Real Name: e.g. John Smith>",
   "account": {
-    "name": "<Account name>",
-    "homePage": "<URL of the home page for the application for which the login id>"
+    "name": "<Account name: e.g. jsmith12>",
+    "homePage": "<URL of the home page for the application: e.g. https://courses.alpha.jisc.ac.uk/moodle>"
   }
 }
 ```
@@ -55,12 +55,11 @@ The Verb,[viewed](../vocabulary.md#verbs) denotes the action of the user request
 	<tr><th>Property</th><th>Description</th></tr>
 	<tr>
 		<td>verb.id [1]</td>
-		<td>An IRI that identifies the Verb. Valid IRIs depend on the recipe and are given on the relevant recipe page.</td>
+		<td>An IRI that identifies the Verb. http://id.tincanapi.com/verb/viewed in viewed statements.</td>
 	</tr>
 	<tr>
 		<td>verb.display [1]</td>
-		<td>A human readable representation of Verb. It takes a RFC 5646 Language Tag.  
-		The verb.display is "recommended" in the xAPI v1.0.1 specification but is not likely to be of use within the Jisc Learning Analytics architecture.</td>
+		<td>A human readable representation of Verb. It takes a RFC 5646 Language Tag. "viewd" in viewed statements </td>
 	</tr>
 </table>
 
@@ -70,14 +69,15 @@ The Verb,[viewed](../vocabulary.md#verbs) denotes the action of the user request
 
 ``` javascript
 "verb": {
-        "id": "http://id.tincanapi.com/verb/viewed",
-        "display": {
-            "en": "viewed"
-        }
-    },
+  "id": "<URI of Verb: i.e http://id.tincanapi.com/verb/viewed >",
+  "display": {
+    "en" : "<Human readable representation of verb: i.e viewed>"
+  }
+}
 ```
+
 ### Context
-Common entity identifier: [ContextA](../common_structures.md#contextc) page.
+Common entity identifier: [ContextA](../common_structures.md#contexta) page.
 
 #### Entity properties:
 <table>
@@ -87,6 +87,7 @@ Common entity identifier: [ContextA](../common_structures.md#contextc) page.
 	<tr><td>context.extensions.version [0..1]
 		 context.extension.sessionId [0..1]
 		 context.extension.ip-address [1]
+		 context.extension.courseArea [0..1]
 		 </td>
 		<td>Four extensions are provided for, with IRIs as defined on the <a href="vocabulary.md#41-context-extensions">vocabularies page</a>.
   	  The <b>sessionID</b> extension is the VLE session ID, or a suitably hashed version of it. A value should be provided if this information is available.<br/>
@@ -99,7 +100,7 @@ Common entity identifier: [ContextA](../common_structures.md#contextc) page.
 
 ``` javascript
 "context": {
-        "platform": "Moodle",
+        "platform": "<Platform: e.g: Moodle>",
         "extensions": {
 	
       	"http://xapi.jisc.ac.uk/courseArea": {
@@ -107,9 +108,9 @@ Common entity identifier: [ContextA](../common_structures.md#contextc) page.
             "id":"http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=4"
 		},
 					
-	"http://xapi.jisc.ac.uk/sessionId": "32456891"  ,
-	"http://id.tincanapi.com/extension/ip-address": "10.3.3.48"
-	"http://xapi.jisc.ac.uk/version" : "1.0"
+	"http://xapi.jisc.ac.uk/sessionId": "<Session id: e.g: 32456891>"  ,
+	"http://id.tincanapi.com/extension/ip-address": "<Ip address of client 10.3.3.48>"
+	"http://xapi.jisc.ac.uk/version" : "<jisc xapi version: e.g 1.0>"
 			}
         }
 ```
@@ -150,18 +151,20 @@ For this statement the object needs to identify what was viewed. A list of valid
 
 ``` javascript
 "object": {
-	"objectType": "Activity",
-	"id": "http://moodle.data.alpha.jisc.ac.uk/mod/quiz/view.php?id=13"   	 	
-	"definition": {
-		"type": "http://xapi.jisc.ac.uk/vle/page",			
-		"name": { "en": "Sample page" },			   
-	 }
-	 "extensions": {
-     		 "http://xapi.jisc.ac.uk/subType": "http://id.tincanapi.com/activitytype/lms"
-	 }
+  "objectType": "<ObjectType: i.e Activity>",
+  "id": "<id of Object: e.g https://courses.alpha.jisc.ac.uk/moodle>",
+  "definition": {
+    "type": "<type of object: e.g. http://activitystrea.ms/schema/1.0/application>",
+    "name": {
+      "en": "<English Description: e.g University of Jisc VLE>"
+    },
+    "extensions": {
+      "http://xapi.jisc.ac.uk/subType": "<Subtype: e.g http://id.tincanapi.com/activitytype/lms>"
     }
+  }
 }
-```
+
+'''
 
 
 
