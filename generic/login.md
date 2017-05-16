@@ -69,7 +69,7 @@ The verb, [logged in](../vocabulary.md#logged-in), describes the action of loggi
 "verb": {
   "id": "<URI of Verb: i.e https://brindlewaye.com/xAPITerms/verbs/loggedin >",
   "display": {
-    "en" : "<Human readable representation of verb: i.e Logged In"
+    "en" : "<Human readable representation of verb: i.e Logged In>"
   }
 }
 ```
@@ -137,7 +137,7 @@ Common entity identifier: [ObjectA](../common_structures.md#objecta)
 #### Example:
 ``` javascript
 "object": {
-  "objectType": "Activity",
+  "objectType": "<ObjectType: i.e Activity>",
   "id": "<id of Object: e.g https://courses.alpha.jisc.ac.uk/moodle>",
   "definition": {
     "type": "<type of object: e.g. http://activitystrea.ms/schema/1.0/application>",
@@ -150,4 +150,5 @@ Common entity identifier: [ObjectA](../common_structures.md#objecta)
   }
 }
 
+'''
 
