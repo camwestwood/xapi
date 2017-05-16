@@ -145,7 +145,7 @@ Common entity identifier: [ObjectA](../common_structures.md#objecta)
       "en": "<English Description: e.g University of Jisc VLE>"
     },
     "extensions": {
-      "http://xapi.jisc.ac.uk/subType": "<Subtype: e.g http://id.tincanapi.com/activitytype/lms">"
+      "http://xapi.jisc.ac.uk/subType": "<Subtype: e.g http://id.tincanapi.com/activitytype/lms>"
     }
   }
 }
