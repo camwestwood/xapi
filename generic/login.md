@@ -39,7 +39,7 @@ actor.account.homepage [1] <br/>
   "name": "<Real Name>",
   "account": {
     "name": "<Account name>",
-    "homePage": "<URL of the home page for the application for which the login id>"
+    "homePage": "<URL of the home page for the application  login id>"
   }
 }
 ```
@@ -49,28 +49,27 @@ Common entity identifier: [VerbA](/common_structures.md#verba).
 
 The verb, [logged in](/vocabulary.md#logged-in), describes the action of logging into a platform.
 
-#### Entity properties:
+#### Entity properties and statement details:
 
 
 <table>
 	<tr><th>Property</th><th>Description</th></tr>
 	<tr>
 		<td>verb.id [1]</td>
-		<td>An IRI that identifies the Verb. Valid IRIs depend on the recipe and are given on the relevant recipe page.</td>
+		<td>An IRI that identifies the Verb. For logged in statements the Jisc profile uses https://brindlewaye.com/xAPITerms/verbs/loggedin verb id</td>
 	</tr>
 	<tr>
 		<td>verb.display [1]</td>
-		<td>A human readable representation of Verb. It takes a RFC 5646 Language Tag.  
-		The verb.display is "recommended" in the xAPI v1.0.1 specification but is not likely to be of use within the Jisc Learning Analytics architecture.</td>
+		<td>A human readable representation of Verb. It takes a RFC 5646 Language Tag. For logged in statements use "logged in"</td>
 	</tr>
 </table>
 
 #### Example
 ``` javascript
 "verb": {
-  "id": "<URI of Verb>",
+  "id": "<URI of Verb: i.e https://brindlewaye.com/xAPITerms/verbs/loggedin >",
   "display": {
-    "en" : "Human readable representation of verb"
+    "en" : "<Human readable representation of verb: i.e Logged In"
   }
 }
 ```
@@ -100,17 +99,17 @@ Context describes the device used to log-in. If the device supports it, session 
 #### Example:
 ``` javascript
 "context": {
-  "platform": "Platform",
+  "platform": "<Platform: e.g Moodle>",
   "extensions": {
     "http://xapi.jisc.ac.uk/sessionId": "<Session ID if platform permits>",
     "http://id.tincanapi.com/extensions/ip-address": "<IP Address of client>",
-    "http://xapi.jisc.ac.uk/recipeVersion" : "<Version of JISC xAPI Profile>"
+    "http://xapi.jisc.ac.uk/recipeVersion" : "<Version of JISC xAPI Profile, found on README.MD>"
   }
 }
 ```
 
 ### Object
-Common entity identifier: [ObjectA] as defined on the [common structures](/common_structures.md#objecta) page.
+Common entity identifier: [ObjectA] as defined on the [common structures](../common_structures.md#objecta) page.
 
 #### Entity properties:
 <table>
@@ -129,11 +128,9 @@ Common entity identifier: [ObjectA] as defined on the [common structures](/commo
 	object.definition.extensions.http://xapi.jisc.ac.uk/subType [0..1]<br />
 	object.definition.extensions.http://xapi.jisc.ac.uk/uddModInstanceID [0..1]</td>
 		<td>A JSON object comprising both standard xAPI attributes and the Jisc profile 'subType' and 'uddModInstanceID' extensions.<br/>
-    The <b>type</b> indicates the type of the object of the statement. It is required and valid values are listed on the <a href="vocabulary.md#31-activity-types">vocabulary page</a>.<br/>
+    The <b>type</b> indicates the type of the object of the statement. It is required and valid values are listed on the <a href="../vocabulary.md#31-activity-types">vocabulary page</a>.<br/>
     The <b>name</b> is optional.<br/>
-    The <b>subType</b> extension may be used to indicate the sub-type of this activity, if applicable for the recipe being used to create the statement. This qualifies the object.objectType, and is described on the [vocabularies](vocabulary.md#32-object-definition-extensions) page.<br />
-    The <b>uddModInstanceID</b> extension records the module instance with which the learning activity is associated. It is not usually required and overlaps with context.extension.courseArea. [See issue 140](https://github.com/jiscdev/xapi/issues/140) </td>
-	</tr>
+    The <b>subType</b> extension may be used to indicate the sub-type of this activity, if applicable for the recipe being used to create the statement. This qualifies the object.objectType, and is described on the [vocabularies](vocabulary.md#32-object-definition-extensions) page.<br /></tr>
 	
 </table>
 
@@ -141,14 +138,30 @@ Common entity identifier: [ObjectA] as defined on the [common structures](/commo
 ``` javascript
 "object": {
   "objectType": "Activity",
-  "id": "<ID of Object>",
+  "id": "<ID of Object: e.g https://courses.alpha.jisc.ac.uk/moodle">",
   "definition": {
-    "type": "<Type>",
+    "type": "<type of application: e.g. http://activitystrea.ms/schema/1.0/application>",
     "name": {
-      "en": "<En Description>"
+      "en": "<En Description: e.g University of Jisc VLE>"
     },
     "extensions": {
-      "http://xapi.jisc.ac.uk/subType": "<Subtype>"
+      "http://xapi.jisc.ac.uk/subType": "<Subtype: e.g http://id.tincanapi.com/activitytype/lms">"
+    }
+  }
+}
+
+#### Example:
+``` javascript
+"object": {
+  "objectType": "Activity",
+  "id": "https://courses.alpha.jisc.ac.uk/moodle",
+  "definition": {
+    "type": "http://activitystrea.ms/schema/1.0/application",
+    "name": {
+      "en": "University of Jisc VLE"
+    },
+    "extensions": {
+      "http://xapi.jisc.ac.uk/subType": "http://id.tincanapi.com/activitytype/lms"
     }
   }
 }
