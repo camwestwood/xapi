@@ -5,7 +5,7 @@ This activity records a user logging in to something.
 
 Examples:
 
-- [VLE Login](/recipes/vle/login.md#actor)
+- [VLE Login](/recipes/vle/login.md)
 
 ### Actor
 Common entity identifier: [ActorA](/common_structures.md#actora). 
@@ -35,19 +35,19 @@ actor.account.homepage [1] <br/>
 
 ``` Javascript
 "actor": {
-  "objectType": "Agent",
-  "name": "<Real Name>",
+  "objectType": "<ObjectType set to Agent>",
+  "name": "<Real Name: e.g. John Smith>",
   "account": {
-    "name": "<Account name>",
-    "homePage": "<URL of the home page for the application  login id>"
+    "name": "<Account name: e.g. jsmith12>",
+    "homePage": "<URL of the home page for the application: https://courses.alpha.jisc.ac.uk/moodle>"
   }
 }
 ```
 
 ### Verb
-Common entity identifier: [VerbA](/common_structures.md#verba). 
+Common entity identifier: [VerbA](../common_structures.md#verba). 
 
-The verb, [logged in](/vocabulary.md#logged-in), describes the action of logging into a platform.
+The verb, [logged in](../vocabulary.md#logged-in), describes the action of logging into a platform.
 
 #### Entity properties and statement details:
 
@@ -88,7 +88,7 @@ Context describes the device used to log-in. If the device supports it, session 
 		 context.extension.sessionId [0..1]
 		 context.extension.ip-address [1]
 		 </td>
-		<td>Four extensions are provided for, with IRIs as defined on the <a href="vocabulary.md#41-context-extensions">vocabularies page</a>.
+		<td>Four extensions are provided for, with IRIs as defined on the <a href="../vocabulary.md#41-context-extensions">vocabularies page</a>.
   	  The <b>sessionID</b> extension is the VLE session ID, or a suitably hashed version of it. A value should be provided if this information is available.<br/>
     The <b>ip-address</b> is used to identify the client's IP address. An IPv4 address is recommended.<br/>
     The <b>recipeVersion</b> extension is recommended, and identifies the recipe (and its version) which was followed to create the xAPI statement. <br/>
@@ -102,8 +102,8 @@ Context describes the device used to log-in. If the device supports it, session 
   "platform": "<Platform: e.g Moodle>",
   "extensions": {
     "http://xapi.jisc.ac.uk/sessionId": "<Session ID if platform permits>",
-    "http://id.tincanapi.com/extensions/ip-address": "<IP Address of client>",
-    "http://xapi.jisc.ac.uk/recipeVersion" : "<Version of JISC xAPI Profile, found on README.MD>"
+    "http://id.tincanapi.com/extensions/ip-address": "<IP Address of client e.g. 10.3.3.48>",
+    "http://xapi.jisc.ac.uk/recipeVersion" : "<Version of JISC xAPI Profile, found on README.MD e.g. 1.0>"
   }
 }
 ```
@@ -138,11 +138,11 @@ Common entity identifier: [ObjectA] as defined on the [common structures](../com
 ``` javascript
 "object": {
   "objectType": "Activity",
-  "id": "<ID of Object: e.g https://courses.alpha.jisc.ac.uk/moodle">",
+  "id": "<id of Object: e.g https://courses.alpha.jisc.ac.uk/moodle">",
   "definition": {
-    "type": "<type of application: e.g. http://activitystrea.ms/schema/1.0/application>",
+    "type": "<type of object: e.g. http://activitystrea.ms/schema/1.0/application>",
     "name": {
-      "en": "<En Description: e.g University of Jisc VLE>"
+      "en": "<English Description: e.g University of Jisc VLE>"
     },
     "extensions": {
       "http://xapi.jisc.ac.uk/subType": "<Subtype: e.g http://id.tincanapi.com/activitytype/lms">"
