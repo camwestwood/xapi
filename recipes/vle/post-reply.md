@@ -74,7 +74,7 @@ The object defines the post that has been replied to.
 	 }
     }
 }
-
+'''
 
 ### Context
 Common entity identifier: [ContextA](../common_structures.md#contextc) page.
