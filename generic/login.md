@@ -110,7 +110,7 @@ The object for Login statements identifies what is being logged in to. It uses t
       "en": "University of Jisc VLE"
     },
     "extensions": {
-      "http://xapi.jisc.ac.uk/subType": "http://id.tincanapi.com/activitytype/lms>"
+      "http://xapi.jisc.ac.uk/subType": "http://id.tincanapi.com/activitytype/lms"
     }
   }
 }
