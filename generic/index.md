@@ -1,6 +1,8 @@
 # Generic Statements templates
 
-These statements pull together common statements that are the building blocks of recipes. 
+These statements pull together common statements that are the building blocks of recipes.
+
+[generic.md](A blank generic statement template can be found here.)
 
 The process in using these generic statement templates:
 

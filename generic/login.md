@@ -7,7 +7,7 @@ The entities and properties described here represent a typical statement templat
 
 Natural language example of a typical login statement: "John Smith logged in to his university Moodle VLE using his mobile phone."
 
-## Statement template examples in Jisc Profile:
+## Statement template and JSON examples in Jisc Profile:
 
 - [VLE Login](/recipes/vle/login.md)
 - [Blackboard VLE Login](/vle/blackboard/loggedin.json)
