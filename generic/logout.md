@@ -3,7 +3,7 @@
 ## Purpose
 This activity records a user logging out of a VLE.
 
-Examples:
+## Statement template and JSON examples in Jisc Profile:
 
 - [VLE Logout](/recipes/vle/logout.md)
 

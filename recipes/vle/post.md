@@ -1,14 +1,16 @@
-# VLE forum post reply template
+# VLE forum post statement template
+
+[Statement Template Changes](/version_changes.md#posted-in-forum)
 
 ## Purpose
-This statement defines the structure and terms to record a post to a forum with a VLE
+This statement defines the structure and terms to record a post to a forum within a VLE
 
 ### Actor
 
-Common entity identifier: [ActorA](../common_structures.md#actora)
+Common entity identifier: [ActorA](/common_structures.md#actora)
 
 #### Entity Example:
-The actor entity describes the individual who is making the reply.
+The actor entity describes the individual who is making the post.
 
 ``` Javascript
 {
@@ -28,13 +30,13 @@ Common entity identifier: [VerbA](/common_structures.md#verba)
 
 #### Entity Example:
 
-The verb [replied](/vocabulary.md#replied) denotes the action of replying to a post or discussion topic on a forum.
+The verb [posted](/vocabulary.md#posted) denotes the action of posting a discussion topic or message on a forum.
 
 ``` javascript
 "verb": {
-        "id": "http://id.tincanapi.com/verb/replied",
+        "id": "https://w3id.org/xapi/acrossx/verbs/posted",
         "display": {
-            "en": "replied"
+            "en": "posted"
         }
     },
 ```
@@ -42,14 +44,14 @@ The verb [replied](/vocabulary.md#replied) denotes the action of replying to a p
 ### Result
 Common entity identifier: [ResultD](/common_structures.md#resultd)
 
-This pattern contains the content of the post.
+The result.response entity contaisn text from the post.
 
 #### Entity Example:
 
 
 ``` javascript
  "result":{
-        "response":"I have some good links on that subject, I will find them for you"
+        "response":"Does anybody have any good links to this subject?"
     }
 ```
 
@@ -57,18 +59,15 @@ This pattern contains the content of the post.
 Common entity identifier: [ObjectD](/common_structures.md#objectd)
 
 #### Entity Example:
-The object defines the post that has been replied to.
+The object defines the activity that has been posted to:
 
  ``` javascript
 "object": {
 	"objectType": "Activity",
-	"id": "http://moodle2.bolton.ac.uk/mod/forum/discuss.php?d=19474"	
+	"id": "http://moodle.data.alpha.jisc.ac.uk/mod/forum/discuss.php?d=19474"	
 	"definition": {
 		"type": "http://xapi.jisc.ac.uk/vle/forum-post",			
-		"name": { "en": "Forum post" },			   
-	 }
-	 "extensions": {
-     		 "http://xapi.jisc.ac.uk/subType": "http://id.tincanapi.com/activitytype/lms"
+		"name": { "en": "Help please" },			   
 	 }
     }
 }

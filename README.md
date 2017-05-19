@@ -35,14 +35,8 @@ These are platform independent statements related to Virtual Learning Enviroment
 <tr><td> <a href = "/recipes/vle/Session-timeout.md">Session timeout   </a></td><td><a href = "vle/blackboard/session_timeout.json">Blackboard session timeout </a>    </td></tr>    
 <tr><td><a href =  "/recipes/vle/assignment-graded.md">Assignment Graded   </a></td><td> <a href = "vle/moodle/asssignment_graded.json">Assignment graded in Moodle</a><br/> <a href="vle/blackboard/asssignment_graded.json">Assignment graded in Blackboard </a>   </td></tr>    
 <tr><td><a href =  "/recipes/vle/assignment-submitted.md">Assignment Submitted  </a></td><td><a href = "vle/moodle/assignment_submitted.json">Assignment submitted in Moodle</a><br/> <a href="vle/blackboard/assignment_submitted.json">Assignment submitted in Blackboard</a>   </td></tr>    
-</table>
-
-(These are platform independent statements related to forum usage in a Virtual Learning Enviroments.
-
-<table>
-<tr><td>Statement Template </td>   <td>JSON example</td> </tr>
-<tr><td> <a href = "/recipes/vle/forum-post.md">Post in forum</a></td><td> </td> </tr>                                                           
-<tr><td> <a href = "/recipes/vle/post-reply.md">replied to post</a></td><td> </td> </tr>    
+<tr><td> <a href = "/recipes/vle/post.md">Post in a forum</a></td><td> </td> </tr>                                                           
+<tr><td> <a href = "/recipes/vle/post-reply.md">Replied to post</a></td><td> </td> </tr>    
 </table>
 
 ### All VLE statement examples
