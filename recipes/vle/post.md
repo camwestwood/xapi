@@ -59,7 +59,7 @@ The result.response entity contaisn text from the post.
 Common entity identifier: [ObjectD](/common_structures.md#objectd)
 
 #### Entity Example:
-The object defines the activity that has been posted to:
+The object defines the activity that has been posted:
 
  ``` javascript
 "object": {
@@ -111,7 +111,7 @@ The contextActivities.grouping property has an [ObjectA](/common_structures.md#o
 				},
 			
  		"http://xapi.jisc.ac.uk/sessionId":"32456891",
-        "http://id.tincanapi.com/extension/ip-address": "10.3.3.48",
+       		"http://id.tincanapi.com/extension/ip-address": "10.3.3.48",
 		"http://xapi.jisc.ac.uk/version" : "1.0"
 			}
 		}
