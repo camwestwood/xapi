@@ -415,7 +415,7 @@ The object pattern defines an event that has been attended.
 	       object.definition.extensions.http://xapi.jisc.ac.uk/endtime [0.1]<br/>
 	       object.definition.extensions.http://xapi.jisc.ac.uk/courseArea [0.1]<br/>
 	   </td>
-	   <td>The <b>type</b> indicates the type of the object of the statement. It is required and must contain the value "http://xapi.jisc.ac.uk/event_timetabled/" (see <a href="vocabulary.md#31-activity-types">vocabulary</a> page).<br/>
+	   <td>The <b>type</b> indicates the type of the object of the statement. It is required and must contain the value "http://xapi.jisc.ac.uk/event_timetabled" (see <a href="vocabulary.md#31-activity-types">vocabulary</a> page).<br/>
 	   The <b>name</b> holds the name of the event.<br/>
 	   The <b>description</b> describes the learning activity.<br/>
 	   The <b>subType</b> may be used to qualify what kind of timetabled event occurred using an IRI given on the <a href="vocabulary.md#31-activity-types">vocabulary</a> page. Permitted values are: "http://xapi.jisc.ac.uk/lecture" or "	http://id.tincanapi.com/activitytype/tutor-session".<br/>

@@ -78,6 +78,8 @@
 
 #### Attended learning activity
 
+19/05/2017, Documentation change. [Remove event_timetabled uri trailing] /(https://github.com/jiscdev/xapi/issues/167)
+
 10-05-2017, Spec Change. recipeVersion depricated, replaced with version10-05-2016, Spec Change. recipeVersion depricated, replaced with version
 
 9-05-2017, Spec Change. [DeviceLocation added to context](https://github.com/jiscdev/xapi/issues/158)
