@@ -13,10 +13,10 @@ Natural language example of a typical login statement: "John Smith logged in to 
 - [Blackboard VLE Login](/vle/blackboard/loggedin.json)
 - [Moodle VLE Login](/vle/moodle/login.js)
 
-### Login Actor Entity
+### Actor Entity
 The actor entity is used to identify the individual that is logging in. It uses the Jisc profile common entity [ActorA](/common_structures.md#actora).
 
-#### Login Actor Entity properties:
+#### Actor Entity properties:
 
 <table>
 <tr><th>Property</th><th>Description</th></tr>
@@ -35,7 +35,7 @@ actor.account.homepage [1] <br/>
 <td>A JSON Object with <b>account.name</b> giving a system login id for the Actor and <b>account.homepage</b> giving the URL of the home page of the application to which the login id applies.</td></tr>
 </table>
 
-### Login Actor Example:
+### Actor Example:
 
 ``` Javascript
 "actor": {
@@ -48,10 +48,10 @@ actor.account.homepage [1] <br/>
 }
 ```
 
-### Login Verb Entity
+### Verb Entity
 The verb used in login statements is [logged in](../vocabulary.md#logged-in). It describes the action of logging into a platform. It uses the Jisc common entity [VerbA](../common_structures.md#verba). 
 
-#### Login Verb Entity properties:
+#### Verb Entity properties:
 <table>
 	<tr><th>Property</th><th>Description</th></tr>
 	<tr>
@@ -64,7 +64,7 @@ The verb used in login statements is [logged in](../vocabulary.md#logged-in). It
 	</tr>
 </table>
 
-#### Login Verb Example
+#### Verb Example
 ``` javascript
 "verb": {
   "id": "https://brindlewaye.com/xAPITerms/verbs/loggedin",
@@ -74,10 +74,10 @@ The verb used in login statements is [logged in](../vocabulary.md#logged-in). It
 }
 ```
 
-### Login Object Entity
+### Object Entity
 The object for Login statements identifies what is being logged in to. It uses the Jisc Profile common entity [ObjectA](../common_structures.md#objecta),
 
-#### Login Object Entity properties:
+#### Object Entity properties:
 <table>
 	<tr><th>Property</th><th>Description</th></tr>
 	<tr>
@@ -99,7 +99,7 @@ The object for Login statements identifies what is being logged in to. It uses t
 	
 </table>
 
-#### Login Object Example:
+#### Object Example:
 ``` javascript
 "object": {
   "objectType": "Activity",
@@ -116,10 +116,10 @@ The object for Login statements identifies what is being logged in to. It uses t
 }
 ```
 
-### Login Context Entity
+### Context Entity
 Context can be used to describe any surrounding circumstances to the login, including for example the device used to login. If the device supports it, session Ids and ip-addresses can be recorded. Common entity identifier: ContextA, as defined on the [common structures](/common_structures.md#contexta) page. 
 
-#### Login Context Entity properties:
+#### Context Entity properties:
 <table>
 <tr><th>Property</th><th>Description</th></tr>
 	<tr><td>context.platform [1]</td>
@@ -133,7 +133,7 @@ Context can be used to describe any surrounding circumstances to the login, incl
     The <b>ip-address</b> is used to identify the client's IP address. An IPv4 address is recommended.<br/>
     The <b>version</b> extension is recommended and identifies the xAPI Profile version. <br/></td></tr></table>
 			
-#### Login Context Entity Example:
+#### Context Entity Example:
 ``` javascript
 "context": {
   "platform": "Moodle",

@@ -1,16 +1,21 @@
 # Generic logged_out statement template
 
 ## Purpose
-This activity records a user logging out of a VLE.
+This generic statement template describes a user logging out of a VLE.
+
+The entities and properties described here represent a typical statement template. Further properties or constraints could be defined to create a login statement template for a more specific purpose.
+
+Natural language example of a typical login statement: "John Smith logged out of his university Moodle VLE using his mobile phone."
+
 
 ## Statement template and JSON examples in Jisc Profile:
 
 - [VLE Logout](/recipes/vle/logout.md)
+- [Blackboard VLE Login](/vle/blackboard/loggedout.json)
+- [Moodle VLE Login](/vle/moodle/logout.js)
 
 ### Actor
-Common entity identifier:  [ActorA](/common_structures.md)
-
-The actor entity identifies the individual logging out.
+The actor entity is used to identify the individual that is logging out. It uses the Jisc profile common entity [ActorA](/common_structures.md#actora).
 
 #### Entity properties:
 
@@ -35,19 +40,17 @@ actor.account.homepage [1] <br/>
 
 ``` Javascript
 "actor": {
-  "objectType": "<ObjectType set to Agent>",
-  "name": "<Real Name: e.g. John Smith>",
+  "objectType": "Agent",
+  "name": "John Smith",
   "account": {
-    "name": "<Account name: e.g. jsmith12>",
-    "homePage": "<URL of the home page for the application: e.g. https://courses.alpha.jisc.ac.uk/moodle>"
+    "name": "jsmith12",
+    "homePage": "https://courses.alpha.jisc.ac.uk/moodle"
   }
 }
 ```
 
 ### Verb
-Common entity identifier: [VerbA](/common_structures.md#verba).
-
-This statement uses the [logged out](/vocabulary.md#verbs) describes the action of logging out of a platform.
+The verb used in log out statements is  [logged out](/vocabulary.md#verbs) describes the action of logging out of a platform.  It describes the action of logging into a platform. It uses the Jisc common entity [VerbA](../common_structures.md#verba). 
 
 
 ####  Entity properties:
@@ -70,52 +73,15 @@ This statement uses the [logged out](/vocabulary.md#verbs) describes the action 
 
 ``` javascript
 "verb": {
-  "id": "<URI of Verb: i.e https://brindlewaye.com/xAPITerms/verbs/loggedout >",
+  "id": "https://brindlewaye.com/xAPITerms/verbs/loggedout",
   "display": {
-    "en" : "<Human readable representation of verb: i.e logged out of">
-  }
-}
-```
-### Context
-Common entity identifier: [ContextA](/common_structures.md#contexta)
-
-Since the logged-out action is not undertaken in the context of a learning activity or course, only the core attributes of context are applicable.
-
-#### Entity properties:
-
-
-<table>
-<tr><th>Property</th><th>Description</th></tr>
-	<tr><td>context.platform [1]</td>
-	<td>The platform used in the experience of this learning activity. The value used should not change between platform upgrades and version changes and should typically be a concise name by which the application is commonly known, for example "Moodle" or "Blackboard"</td></tr>
-	<tr><td>context.extensions.version [0..1]
-		 context.extension.sessionId [0..1]
-		 context.extension.ip-address [1]
-		 </td>
-		<td>Four extensions are provided for, with IRIs as defined on the <a href="vocabulary.md#41-context-extensions">vocabularies page</a>.
-  	  The <b>sessionID</b> extension is the VLE session ID, or a suitably hashed version of it. A value should be provided if this information is available.<br/>
-    The <b>ip-address</b> is used to identify the client's IP address. An IPv4 address is recommended.<br/>
-    The <b>version</b> extension is recommended, and identifies the version of the Jisc xAPI profile found on the ReadMe page. <br/>
-	The <b>courseArea</b> identifies Umbrella course/parent area by its home page URI. More information can be found on the <a href="vocabulary.md#umbrella-course-area">vocabularies page</a>.
-		</td></tr></table>
-
-### Example:
-
-``` javascript
-"context": {
-  "platform": "<Platform: e.g Moodle>",
-  "extensions": {
-    "http://xapi.jisc.ac.uk/sessionId": "<Session ID if platform permits>",
-    "http://id.tincanapi.com/extensions/ip-address": "<IP Address of client e.g. 10.3.3.48>",
-    "http://xapi.jisc.ac.uk/recipeVersion" : "<Version of JISC xAPI Profile, found on README.MD e.g. 1.0>"
+    "en" : "logged out"
   }
 }
 ```
 
 ### Object
-Common entity identifier: [ObjectA][common structures](/common_structures.md#objecta)
-
-When the object.definition.type is "http://activitystrea.ms/schema/1.0/application".  The subType (http://xapi.jisc.ac.uk/subType) extension should be used to identify the subType of the application that is being logged into, in this example a Virtual Learning Environment (aka Learning Management System), identified by  http://id.tincanapi.com/activitytype/lms. Different application types should use the relevant subType, as defined on the [vocabularies page](/vocabulary.md#32-object-definition-extensions) page.
+The object for logout statements identifies what is being logged out of. It uses the Jisc Profile common entity [ObjectA](../common_structures.md#objecta),
 
 #### Entity properties:
 
@@ -161,3 +127,41 @@ When the object.definition.type is "http://activitystrea.ms/schema/1.0/applicati
 }
 
 '''
+
+
+
+
+### Context
+Context can be used to describe any surrounding circumstances to the logout, including for example the device used to login. If the device supports it, session Ids and ip-addresses can be recorded. Common entity identifier: ContextA, as defined on the [common structures](/common_structures.md#contexta) page. 
+
+#### Entity properties:
+
+
+<table>
+<tr><th>Property</th><th>Description</th></tr>
+	<tr><td>context.platform [1]</td>
+	<td>The platform used in the experience of this learning activity. The value used should not change between platform upgrades and version changes and should typically be a concise name by which the application is commonly known, for example "Moodle" or "Blackboard"</td></tr>
+	<tr><td>context.extensions.version [0..1]
+		 context.extension.sessionId [0..1]
+		 context.extension.ip-address [1]
+		 </td>
+		<td>Four extensions are provided for, with IRIs as defined on the <a href="vocabulary.md#41-context-extensions">vocabularies page</a>.
+  	  The <b>sessionID</b> extension is the VLE session ID, or a suitably hashed version of it. A value should be provided if this information is available.<br/>
+    The <b>ip-address</b> is used to identify the client's IP address. An IPv4 address is recommended.<br/>
+    The <b>version</b> extension is recommended, and identifies the version of the Jisc xAPI profile found on the ReadMe page. <br/>
+	The <b>courseArea</b> identifies Umbrella course/parent area by its home page URI. More information can be found on the <a href="vocabulary.md#umbrella-course-area">vocabularies page</a>.
+		</td></tr></table>
+
+### Example:
+
+``` javascript
+"context": {
+  "platform": "Moodle",
+  "extensions": {
+    "http://xapi.jisc.ac.uk/sessionId": "L5t1W93PED",
+    "http://id.tincanapi.com/extensions/ip-address": "10.3.3.48",
+    "http://xapi.jisc.ac.uk/version" : "1.0"
+  }
+}
+```
+
