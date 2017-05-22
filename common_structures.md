@@ -508,11 +508,14 @@ This result pattern describes completion and is usually optional. It can include
         "response": "The cow jumped over the moon."
          }
 
+````
+
+For grade, leave out min and max, and insert the following:
+````
         "extensions": { 
              "http://xapi.jisc.ac.uk/grade": "5 Stars"
         }
 ````
-
 ### ResultC
 Common entity identifier: ResultC
 
