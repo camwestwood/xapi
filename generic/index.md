@@ -21,8 +21,6 @@ The process in using these generic statement templates:
 <tr><th>Statement</th><th>Recipe Examples</th></tr>
 <tr><td><a href="login.md">login<a></td><td><a href="/recipes/vle/login.md">VLE log in</td></tr>
 <tr><td><a href="logout.md">logout<a></td><td><a href="/recipes/vle/logout.md">VLE logout</td></tr>
-<tr><td><a href="view.md">view content<a></td><td><a href="/recipes/vle/Module-View.md">VLE view content</td></tr>
+<tr><td><a href="view.md">view content<a></td><td><ul><li><a href="/recipes/studyapps/mobile-app.md">Mobile app view content</li></ul><ul><li><a href="/recipes/vle/Module-View.md">VLE view content</li></ul></td></tr>
 <tr><td><a href="post.md">post<a></td><td><a href="/recipes/vle/forum-post.md">VLE forum post</td></tr>
 <tr><td><a href="reply.md">reply<a></td><td><a href="/recipes/vle/forum-reply.md">VLE reply to post</td></tr>
-
-</table>

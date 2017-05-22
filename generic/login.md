@@ -1,4 +1,4 @@
-# Generic login statement template
+# Generic login generic statement template
 
 ## Purpose
 This generic statement template describes a user logging in to something. Use this template to create a specific login statement template, for example for a student logging in to a VLE.

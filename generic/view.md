@@ -1,16 +1,24 @@
 # resource_viewed generic statement template
 
 ## Purpose
+This generic statement template describes viewing something. Use this template to create a specific viewing statement template, for example for a student viewing stats in a student app.
+
+The entities and properties described here represent a typical statement template. Further properties or constraints could be defined to create a login statement template for a more specific purpose.
+
+Natural language example of a typical login statement: "John Smith viewed a module in is university Moodle VLE.."
+
+
 This template defines the structure and terms to record the experience of viewing a resource on a platform.
 
 Examples:
 
 - [VLE resource viewed](../recipes/vle/Module-View.md)
+- [Mobile app content viewed] (../recipes/studyapps/mobile-app.md)
+- [Blackboard course viewed ](../recipes/blackboard/course_access.json)
+- [Moodle module viewed ](../recipes/moodle/moduleview.js)
 
 ### Actor
-Common entity identifier:  [ActorA](../common_structures.md#actora)
-
-The actor entity describes the individual that is viewing a resource.
+The actor entity is used to identify the individual that is viewing the resource. It uses the Jisc profile common entity [ActorA](/common_structures.md#actora).
 
 #### Entity properties:
 
@@ -35,19 +43,17 @@ actor.account.homepage [1] <br/>
 
 ``` Javascript
 "actor": {
-  "objectType": "<ObjectType set to Agent>",
-  "name": "<Real Name: e.g. John Smith>",
+  "objectType": "Agent",
+  "name": "John Smith",
   "account": {
-    "name": "<Account name: e.g. jsmith12>",
-    "homePage": "<URL of the home page for the application: e.g. https://courses.alpha.jisc.ac.uk/moodle>"
+    "name": "jsmith12",
+    "homePage": "https://courses.alpha.jisc.ac.uk/moodle"
   }
 }
 ```
 
 ### Verb
-Common entity identifier: VerbA, as defined on the [common structures](/common_structures.md#verba) page.
-
-The Verb,[viewed](../vocabulary.md#verbs) denotes the action of the user requesting the resource that the user wishes to view.
+The verb used in view statements is [viewed](../vocabulary.md#verbs). It denotes the action of the user requesting the resource that the user wishes to view. It uses the Jisc common entity [VerbA](../common_structures.md#verba). 
 
 #### Entity properties:
 
@@ -69,59 +75,19 @@ The Verb,[viewed](../vocabulary.md#verbs) denotes the action of the user request
 
 ``` javascript
 "verb": {
-  "id": "<URI of Verb: i.e http://id.tincanapi.com/verb/viewed >",
+  "id": "http://id.tincanapi.com/verb/viewed",
   "display": {
-    "en" : "<Human readable representation of verb: i.e viewed>"
+    "en" : "viewed"
   }
 }
 ```
 
-### Context
-Common entity identifier: [ContextA](../common_structures.md#contexta) page.
-
-#### Entity properties:
-<table>
-<tr><th>Property</th><th>Description</th></tr>
-	<tr><td>context.platform [1]</td>
-	<td>The platform used in the experience of this learning activity. The value used should not change between platform upgrades and version changes and should typically be a concise name by which the application is commonly known, for example "Moodle" or "Blackboard"</td></tr>
-	<tr><td>context.extensions.version [0..1]
-		 context.extension.sessionId [0..1]
-		 context.extension.ip-address [1]
-		 context.extension.courseArea [0..1]
-		 </td>
-		<td>Four extensions are provided for, with IRIs as defined on the <a href="vocabulary.md#41-context-extensions">vocabularies page</a>.
-  	  The <b>sessionID</b> extension is the VLE session ID, or a suitably hashed version of it. A value should be provided if this information is available.<br/>
-    The <b>ip-address</b> is used to identify the client's IP address. An IPv4 address is recommended.<br/>
-    The <b>version</b> extension is recommended, and identifies the version of the Jisc xAPI profile found on the ReadMe page. <br/>
-	The <b>courseArea</b> identifies Umbrella course/parent area by its home page URI. More information can be found on the <a href="vocabulary.md#umbrella-course-area">vocabularies page</a>.
-		</td></tr></table>
-
-### Example:
-
-``` javascript
-"context": {
-        "platform": "<Platform: e.g: Moodle>",
-        "extensions": {
-	
-      	"http://xapi.jisc.ac.uk/courseArea": {
-	    "http://xapi.jisc.ac.uk/vle_mod_id": "LA101",
-            "id":"http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=4"
-		},
-					
-	"http://xapi.jisc.ac.uk/sessionId": "<Session id: e.g: 32456891>"  ,
-	"http://id.tincanapi.com/extension/ip-address": "<Ip address of client 10.3.3.48>"
-	"http://xapi.jisc.ac.uk/version" : "<jisc xapi version: e.g 1.0>"
-			}
-        }
-```
-
 ### Object
 
-Common entity identifier: [ObjectA](../common_structures.md#objecta)
+The object for Viewed statements identifies what is being viewed. It uses the Jisc Profile common entity [ObjectA](../common_structures.md#objecta).
 
-For this statement the object needs to identify what was viewed. A list of valid values  for the object definition type can be found on the[vocabularies page](../vocabulary.md#Object.definition.extension)
 
-#### Entity properties:
+#### Object Entity properties:
 
 <table>
 	<tr><th>Property</th><th>Description</th></tr>
@@ -151,15 +117,15 @@ For this statement the object needs to identify what was viewed. A list of valid
 
 ``` javascript
 "object": {
-  "objectType": "<ObjectType: i.e Activity>",
-  "id": "<id of Object: e.g https://courses.alpha.jisc.ac.uk/moodle>",
+  "objectType": "Activity",
+  "id": "<https://courses.alpha.jisc.ac.uk/moodle",
   "definition": {
-    "type": "<type of object: e.g. http://activitystrea.ms/schema/1.0/application>",
+    "type": "http://activitystrea.ms/schema/1.0/application",
     "name": {
-      "en": "<English Description: e.g University of Jisc VLE>"
+      "en": "University of Jisc VLE"
     },
     "extensions": {
-      "http://xapi.jisc.ac.uk/subType": "<Subtype: e.g http://id.tincanapi.com/activitytype/lms>"
+      "http://xapi.jisc.ac.uk/subType": "http://id.tincanapi.com/activitytype/lms"
     }
   }
 }
@@ -167,4 +133,46 @@ For this statement the object needs to identify what was viewed. A list of valid
 '''
 
 
+
+
+
+
+### Context
+Context can be used to describe any surrounding circumstances to the viewed, including for example the device used and id of module. If the device supports it, session Ids and ip-addresses can be recorded. Common entity identifier: ContextA, as defined on the [common structures](/common_structures.md#contexta) page. 
+
+#### Entity properties:
+<table>
+<tr><th>Property</th><th>Description</th></tr>
+	<tr><td>context.platform [1]</td>
+	<td>The platform used in the experience of this learning activity. The value used should not change between platform upgrades and version changes and should typically be a concise name by which the application is commonly known, for example "Moodle" or "Blackboard"</td></tr>
+	<tr><td>context.extensions.version [0..1]
+		 context.extension.sessionId [0..1]
+		 context.extension.ip-address [1]
+		 context.extension.courseArea [0..1]
+		 </td>
+		<td>Four extensions are provided for, with IRIs as defined on the <a href="vocabulary.md#41-context-extensions">vocabularies page</a>.
+  	  The <b>sessionID</b> extension is the VLE session ID, or a suitably hashed version of it. A value should be provided if this information is available.<br/>
+    The <b>ip-address</b> is used to identify the client's IP address. An IPv4 address is recommended.<br/>
+    The <b>version</b> extension is recommended, and identifies the version of the Jisc xAPI profile found on the ReadMe page. <br/>
+	The <b>courseArea</b> identifies Umbrella course/parent area by its home page URI. More information can be found on the <a href="vocabulary.md#umbrella-course-area">vocabularies page</a>.
+		</td></tr></table>
+
+### Example:
+
+``` javascript
+"context": {
+        "platform": "Moodle",
+        "extensions": {
+	
+      	"http://xapi.jisc.ac.uk/courseArea": {
+	    "http://xapi.jisc.ac.uk/vle_mod_id": "LA101",
+            "id":"http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=4"
+		},
+					
+	"http://xapi.jisc.ac.uk/sessionId": "32456891"  ,
+	"http://id.tincanapi.com/extension/ip-address": "10.3.3.48"
+	"http://xapi.jisc.ac.uk/version" : "1.0"
+			}
+        }
+```
 
