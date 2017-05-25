@@ -123,12 +123,13 @@ The context.contextActivities is property with a ‘grouping’ that allows stat
         "platform": "Moodle"
         "extensions":  {
       		"http://xapi.jisc.ac.uk/courseArea": {
-      			"http://xapi.jisc.ac.uk/vle_mod_id": "LA101",
-        		"id":"http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=4"
+				"http://xapi.jisc.ac.uk/vle_mod_id": "LA101",
+				"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0",
+				"id":"http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=4"
               		},
-		"http://xapi.jisc.ac.uk/sessionId": "32456891" ,
+			"http://xapi.jisc.ac.uk/sessionId": "32456891" ,
         	"http://id.tincanapi.com/extension/ip-address": "10.3.3.48"
-		"http://xapi.jisc.ac.uk/version" : "1.0"
+			"http://xapi.jisc.ac.uk/version" : "1.0"
         }
 ```
 

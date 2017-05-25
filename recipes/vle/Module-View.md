@@ -42,7 +42,6 @@ The Verb,[viewed](/vocabulary.md#verbs) denotes the action of the user's browser
 ```
 ### Context
 Common entity identifier: ContextA, as defined on the [common structures](/common_structures.md#contextc) page.
-
 The courseArea is required. See the [vocabularies](../vocabulary.md#42-coursearea-properties) page for more information
 
 ### Example:
@@ -53,7 +52,8 @@ The courseArea is required. See the [vocabularies](../vocabulary.md#42-courseare
         "extensions": {
 	
       	"http://xapi.jisc.ac.uk/courseArea": {
-	    "http://xapi.jisc.ac.uk/vle_mod_id": "LA101",
+			"http://xapi.jisc.ac.uk/vle_mod_id": "LA101",
+			"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0",
             "id":"http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=4"
 		},
 					

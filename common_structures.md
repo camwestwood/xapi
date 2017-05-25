@@ -89,7 +89,7 @@ This pattern is used across many recipes in the Jisc profile, but there may be a
   	  The <b>sessionID</b> extension is the VLE session ID, or a suitably hashed version of it. A value should be provided if this information is available.<br/>
     The <b>ip-address</b> is used to identify the client's IP address. An IPv4 address is recommended.<br/>
     The <b>version</b> extension is recommended, and identifies the version of the Jisc xAPI profile found on the ReadMe page. <br/>
-	The <b>courseArea</b> identifies Umbrella course/parent area by its home page URI. More information can be found on the <a href="vocabulary.md#umbrella-course-area">vocabularies page</a>.
+	The <b>courseArea</b> identifies Umbrella course/parent area by its home page URI. More information can be found on the <a href="vocabulary.md#course-area">vocabularies page</a>.
 		</td></tr></table>
 
 #### Example:
@@ -133,7 +133,7 @@ ContextB pattern is similar to ContextA, but with the addition of a contextActiv
     The <b>ip-address</b> is used to identify the client's IP address. An IPv4 address is recommended.<br/>
     The <b>version</b> extension is recommended, and identifies the version of the Jisc xAPI profile found on the ReadMe page.
 	<br/>
-    The <b>courseArea</b> extension is recommended, and identifies umbrella course/parent area by its home page URI. More information can be found on the <a href="vocabulary.md#umbrella-course-area">vocabularies page</a>.</td>
+    The <b>courseArea</b> extension is recommended, and identifies umbrella course/parent area by its home page URI. More information can be found on the <a href="vocabulary.md#course-area">vocabularies page</a>.</td>
 		</tr>
 </table>
 
@@ -201,7 +201,7 @@ ContextC pattern is similar to ContextB, but is designed to be used with systems
     The <b>ip-address</b> is used to identify the client's IP address. An IPv4 address is recommended.<br/>
     The <b>version</b> extension is recommended, and identifies the version of the Jisc xAPI profile found on the ReadMe page.
 	<br/>
-    The <b>courseArea</b> extension is recommended, and identifies umbrella course/parent area by its home page URI. More information can be found on the <a href="vocabulary.md#umbrella-course-area">vocabularies page</a>.</td>
+    The <b>courseArea</b> extension is recommended, and identifies umbrella course/parent area by its home page URI. More information can be found on the <a href="vocabulary.md#course-area">vocabularies page</a>.</td>
 		</tr>
 </table>
 

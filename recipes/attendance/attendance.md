@@ -4,21 +4,6 @@
 
 ## Purpose
 This statement defines the structure and terms to record a learner's attendance of an event such as a lecture or other learning activity. The expectation is that the source data will be collected by a system designed to explicitly record attendance via some action of the learner, such as swiping a card, or of the teacher, such as completing an electronic register.
-
-In this statement:
-
-- Agent and verb
-
-Student with identifier STUDENT_ID (and name NAME) attended a learning event.
-
-- Object
-
-It was an event event with id of EVENT_ID, of type EVENT_TYPE.
-
-- Context
-
-Event was a part of module instance MOD_INSTANCE_ID. The event type has an id of Event_Type_ID. The maximum number of people who could have attended the event was EVENT_MAX_COUNT. The time it started was START_TIME and ended at END_TIME. The event was led by instructor with identifer STAFF_ID.
-			
 			
 
 ### Actor
@@ -87,7 +72,7 @@ The object defines a timetabled event that has been completed. Information on th
         "objectType": "Activity",
         "id": "http://wicketkeeper.poppleton.ac.uk/modules/2016/sem1/psy101/qlecture1",
         "definition": {
-            "type": "http://xapi.jisc.ac.uk/event_timetabled",
+            "type": "http://xapi.jisc.ac.uk/lecture",
             "name": {
                 "en": "Psychology 101 Introduction"
             },
@@ -95,18 +80,13 @@ The object defines a timetabled event that has been completed. Information on th
                 "en": "The first tutorial of psychology 101"
             },
 	    "extensions": {
-            "http://xapi.jisc.ac.uk/subType": "http://xapi.jisc.ac.uk/lecture"
+            "http://xapi.jisc.ac.uk/subType": "http://xapi.jisc.ac.uk/workshop"
 	    	"http://xapi.jisc.ac.uk/starttime": "2016-02-05T10:00:00.000Z",
           	"http://xapi.jisc.ac.uk/endtime": "2016-02-05T14:00:00.000Z",
-			"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0",
             "http://xapi.jisc.ac.uk/event_type_id": "1",
 	    	"http://xapi.jisc.ac.uk/event_type_description": "Lecture", 
             "http://xapi.jisc.ac.uk/event_max_count": 32,
             "http://xapi.jisc.ac.uk/event_mandatory": 1,
-			"http://xapi.jisc.ac.uk/courseArea": {
-                	"http://xapi.jisc.ac.uk/vle_mod_id": "LA101-200-2016S1-0",
-                	"id": "http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=4"
-            }
        	 }
     },
 		
@@ -126,21 +106,29 @@ Common entity identifier: Common entity identifier: [ContextD](/common_structure
             "account": {
                 "name": "2",
                 "homePage": "http://localhost/moodle"
-            },
+            }
+		},
+		
 	 "extensions": {
-            "http://xapi.jisc.ac.uk/version": "1.0",
-	    "http://xapi.jisc.ac.uk/deviceLocation": {
-		"type": "Feature",
-		"geometry": {
-			"type": "Point",
-			"coordinates": [51.510531, -0.118930]
-				},
-			"properties": {
-			"name": "University of Jisc"
+        "http://xapi.jisc.ac.uk/version": "1.0",
+			"http://xapi.jisc.ac.uk/deviceLocation": {
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [51.510531, -0.118930]
+					},
+				"properties": {
+				"name": "University of Jisc"
 				}
-			}	
-        	}
-    	}
+			},	
+			
+		"http://xapi.jisc.ac.uk/courseArea": {
+                "http://xapi.jisc.ac.uk/vle_mod_id": "LA101-200-2016S1-0",
+				"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0",
+                "id": "http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=4"
+            }	
+		}
+    }
 ```
 
 
@@ -173,7 +161,7 @@ Common entity identifier: Common entity identifier: [ContextD](/common_structure
         "objectType": "Activity",
         "id": "http://wicketkeeper.poppleton.ac.uk/modules/2016/sem1/psy101/qlecture1",
         "definition": {
-            "type": "http://xapi.jisc.ac.uk/event_timetabled",
+            "type": "http://xapi.jisc.ac.uk/lecture",
             "name": {
                 "en": "Psychology 101 Introduction"
             },
@@ -181,18 +169,15 @@ Common entity identifier: Common entity identifier: [ContextD](/common_structure
                 "en": "The first tutorial of psychology 101"
             }
 		"extensions": {
-            "http://xapi.jisc.ac.uk/subType": "http://xapi.jisc.ac.uk/lecture"
+            "http://xapi.jisc.ac.uk/subType": "http://xapi.jisc.ac.uk/workshop"
 			"http://xapi.jisc.ac.uk/starttime": "2016-02-05T10:00:00.000Z",
             "http://xapi.jisc.ac.uk/endtime": "2016-02-05T14:00:00.000Z",
-			"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0",
             "http://xapi.jisc.ac.uk/event_type_id": "1",
+			"http://xapi.jisc.ac.uk/event_timetabled": "1",
 			"http://xapi.jisc.ac.uk/event_type_description": "Lecture", 
             "http://xapi.jisc.ac.uk/event_max_count": "32",
-            "http://xapi.jisc.ac.uk/event_mandatory": "1",
-			"http://xapi.jisc.ac.uk/courseArea": {
-                "http://xapi.jisc.ac.uk/vle_mod_id": "LA101-200-2016S1-0",
-                "id": "http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=4"
-            }
+            "http://xapi.jisc.ac.uk/event_mandatory": "1"
+			
             
         }
     },
@@ -201,6 +186,7 @@ Common entity identifier: Common entity identifier: [ContextD](/common_structure
         "extensions": {
             "http://xapi.jisc.ac.uk/courseArea": {
                 "http://xapi.jisc.ac.uk/vle_mod_id": "LA101-200-2016S1-0",
+				"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0",
                 "id": "http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=4"
             }
         },

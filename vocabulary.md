@@ -253,14 +253,6 @@ Example:
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/vle/file">http://xapi.jisc.ac.uk/vle/file</a> </td></tr>
 </table>
 
-### Timetabled Event
-
-<table>
-<tr><th align="left">Label</th><td>Timetabled Event</td></tr>
-<tr><th align="left">Description</th><td>The statement refers to a scheduled teaching and learning activity. This may be of various types, which can be clarified using object.definition.extensions.</td></tr>
-<tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/event_timetabled">http://xapi.jisc.ac.uk/event_timetabled</a> </td></tr>
-</table>
-
 ### Lecture
 
 <table>
@@ -366,8 +358,20 @@ The following are Jisc profile extensions to be used in [object.definition.exten
 <tr><th align="left">Description</th><td>Indicates if the session is option or not</td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/event_mandatory">http://xapi.jisc.ac.uk/event_mandatory</a> </td></tr>
 <tr><th align="left">Example in Recipe</th><td> <a href="/recipes/attendance/attendance.md#object">attendance</a> </td></tr>
-<tr><th align="left">Data Type</th><td>Integer</td></tr>
+<tr><th align="left">Data Type</th><td>Boolean</td></tr>
 <tr><th align="left">Value Space</th><td>1 for mandatory, 0 for non mandatory</td></tr>
+<tr><th align="left">Sample Value</th><td>1</td></tr>
+</table>
+
+### Timetabled Event
+
+<table>
+<tr><th align="left">Label</th><td>Timetabled Event</td></tr>
+<tr><th align="left">Description</th><td>Indicates if a learning activity was scheduled or not .</td></tr>
+<tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/event_timetabled">http://xapi.jisc.ac.uk/event_timetabled</a> </td></tr>
+<tr><th align="left">Example in Recipe</th><td> <a href="/recipes/attendance/attendance.md#object">attendance</a> </td></tr>
+<tr><th align="left">Data Type</th><td>Boolean</td></tr>
+<tr><th align="left">Value Space</th><td>1 for timetabled events, 0 for non-timetabled events </td></tr>
 <tr><th align="left">Sample Value</th><td>1</td></tr>
 </table>
 
@@ -408,13 +412,6 @@ Was used in older recipes to identify the genre of software application. Best pr
 <tr><th align="left">Sample Value</th><td>http://id.tincanapi.com/activitytype/lms</td></tr>
 </table>
 
-### UDD Module Instance ID
-
-<table>
-<tr><th align="left">Label</th><td>UDD Module Instance ID</td></tr>
-<tr><th align="left">Description</th><td>An identifier for a module instance<br/>The value should correspond to the [UDD module_instance.MOD_INSTANCE_ID](https://github.com/jiscdev/analytics-udd/blob/master/udd/module_instance.md#mod_instance_id) identifier that identifies the relevant module in UDD compliant data.</td></tr>
-<tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/uddModInstanceID">http://xapi.jisc.ac.uk/uddModInstanceID</a> </td></tr>
-</table>
 
 
 ## 4.0 Context
@@ -423,20 +420,21 @@ Was used in older recipes to identify the genre of software application. Best pr
 ## 4.1 Context Extensions
 The following are properties of the [Context extensions property](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#246-context).
 
-### Umbrella course area
+### Course area
 
 For more information see Jisc profile [CourseArea properties](#42-coursearea-properties).
 
 <table>
-<tr><th align="left">Label</th><td>Umbrella course area</td></tr>
-<tr><th align="left">Description</th><td> Umbrella course/parent area by its home page URI </td></tr>
+<tr><th align="left">Label</th><td>course area</td></tr>
+<tr><th align="left">Description</th><td> Course/parent area by its home page URI </td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/courseArea">http://xapi.jisc.ac.uk/courseArea</a> </td></tr>
 <tr><th align="left">Data Type</th><td>A JSON Object</td></tr>
-<tr><th align="left">Value Space</th><td>JSON Object with properties vle_mod_id and/or id </td></tr>
+<tr><th align="left">Value Space</th><td>JSON Object with properties vle_mod_id, id or uddModInstanceID</td></tr>
 <tr><th align="left">Sample Value</th><td> {
-
- "http://xapi.jisc.ac.uk/vle_mod_id": "LA101",
- "id":"http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=4"}"
+<br>
+ "http://xapi.jisc.ac.uk/vle_mod_id": "LA101",<br/>
+ 	"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0",<br/>
+    "id":"http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=4"}"<br/>
  
  </td></tr>
 </table>
@@ -521,9 +519,20 @@ For more information see Jisc profile [CourseArea properties](#42-coursearea-pro
 </table>
 
 ## 4.2 CourseArea properties
-The following are properties of the profile extension context.extensions.courseArea
+CourseArea indicates the coursearea that the learning activity is apart of. The following are properties of the profile extension context.extensions.courseArea
+ 
+### ID
+ 
+<table>
+<tr><th align="left">Label</th><td>id</td></tr>
+<tr><th align="left">Description</th><td>URI identifier of the Course</td></tr>
+</table>
+
+ 
  
 ### VLE Module ID
+
+
 
 http://xapi.jisc.ac.uk/extensions/vle_mod_id is a courseArea identifier. It is used in the module_VLE_map entity of the UDD to link module instances to course areas. Note that several module instances (as identified by their UDD MOD_INSTANCE_ID) can link to one courseArea. 
 
@@ -531,4 +540,12 @@ http://xapi.jisc.ac.uk/extensions/vle_mod_id is a courseArea identifier. It is u
 <tr><th align="left">Label</th><td>VLE Module ID</td></tr>
 <tr><th align="left">Description</th><td><a href="https://github.com/jiscdev/analytics-udd/blob/master/udd/module_vle_map.md">Entity that connects a course area in a VLE with a module</a></td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/vle_mod_id">http://xapi.jisc.ac.uk/vle_mod_id</a> </td></tr>
+</table>
+
+### UDD Module Instance ID
+
+<table>
+<tr><th align="left">Label</th><td>UDD Module Instance ID</td></tr>
+<tr><th align="left">Description</th><td>An identifier for a module instance<br/>The value should correspond to the [UDD module_instance.MOD_INSTANCE_ID](https://github.com/jiscdev/analytics-udd/blob/master/udd/module_instance.md#mod_instance_id) identifier that identifies the relevant module in UDD compliant data.</td></tr>
+<tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/uddModInstanceID">http://xapi.jisc.ac.uk/uddModInstanceID</a> </td></tr>
 </table>

@@ -25,6 +25,8 @@
 
 ### VLE resource viewed
 
+25-05-2017, Spec Change. [UDD Mod ID added to coursearea](https://github.com/jiscdev/xapi/issues/165)
+
 10-05-2017, Spec Change. recipeVersion depricated, replaced with version
 
 3-05-2017, Documentation change [RecipeVersion is the version of the collection of all statements, removed revision number](https://github.com/jiscdev/xapi/issues/154)
@@ -50,6 +52,8 @@
 
 #### Assignment Graded
 
+25-05-2017, Spec Change. [UDD Mod ID added to coursearea](https://github.com/jiscdev/xapi/issues/165)
+
 10-05-2017, Spec Change. recipeVersion depricated, replaced with version
 
 3-05-2017, Documentation change [RecipeVersion is the version of the collection of all statements, removed revision number](https://github.com/jiscdev/xapi/issues/154)
@@ -62,6 +66,8 @@
 
 
 #### Assignment Submitted
+
+25-05-2017, Spec Change. [UDD Mod ID added to coursearea](https://github.com/jiscdev/xapi/issues/165)
 
 10-05-2017, Spec Change. recipeVersion depricated, replaced with version
 
@@ -77,6 +83,14 @@
 ### Attendance Recipes
 
 #### Attended learning activity
+
+25-05-2017, Doc Change. [Removed event_timetabled type from examle, replaced with lecture. subtype changed](https://github.com/jiscdev/xapi/issues/165)
+
+25-05-2017, Spec Change. [added timetabled event extensions](https://github.com/jiscdev/xapi/issues/165)
+
+25-05-2017, Spec Change. [Coursearea added to context.extensions](https://github.com/jiscdev/xapi/issues/165)
+
+25-05-2017, Spec Change. [UDD Mod ID added to coursearea](https://github.com/jiscdev/xapi/issues/165)
 
 19/05/2017, Documentation change. [Remove event_timetabled uri trailing] /(https://github.com/jiscdev/xapi/issues/167)
 
@@ -125,6 +139,8 @@ Documentation change [starttime and end time replace duartion](https://github.co
 ## Student App Recipes
 
 ### Mobile App Content Viewed 
+
+25-05-2017, Spec Change. [UDD Mod ID added to coursearea](https://github.com/jiscdev/xapi/issues/165)
 
 
 # Vocabulary Changes
