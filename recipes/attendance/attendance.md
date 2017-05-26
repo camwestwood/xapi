@@ -123,10 +123,10 @@ Common entity identifier: Common entity identifier: [ContextD](/common_structure
 			},	
 			
 		"http://xapi.jisc.ac.uk/courseArea": {
-                "http://xapi.jisc.ac.uk/vle_mod_id": "LA101-200-2016S1-0",
-				"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0",
-                "id": "http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=4"
-            }	
+                	"http://xapi.jisc.ac.uk/vle_mod_id": "LA101-200-2016S1-0",
+			"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0",
+               		 "id": "http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=4"
+            		}	
 		}
     }
 ```
