@@ -228,10 +228,12 @@ and context.account.homepage gives the URL of the home page of the application f
 <td>
 context.extensions.version [0.1]
 context.extensions.https://xapi.jisc.ac.uk/devicelocation [0.1]
+context.extensions.https://xapi.jisc.ac.uk/courseArea [0.1]
 </td>
 <td>
 The <b>version</b> extension is recommended, and identifies the version of the Jisc xAPI profile found on the ReadMe page.<br/>
-devicelocation is an optional geojson object with  geolocation details of the device used to attend the event.
+devicelocation is an optional geojson object with  geolocation details of the device used to attend the event.<br/>	The <b>courseArea</b> identifies Umbrella course/parent area by its home page URI and / or its identifier. More information can be found on the <a href="vocabulary.md#course-area">vocabularies page</a>.
+
 </td>
 </tr>
 </table>
