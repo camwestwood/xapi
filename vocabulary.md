@@ -2,6 +2,17 @@
 The following terms are in use in the Jisc learning analytics recipes.
 NOTE: The xapi.jisc.ac.uk namespace URI may change.
 
+## Table of Contents
+*	1.0	[Verb](./vocabulary.md#verb)
+*	2.0	[Result](./vocabulary.md#result)
+	*	 2.1 [Result Extensions](./vocabulary.md#result-extensions)
+*	3.0	[Object](./vocabulary.md#object)
+	*	3.1 [Core Activity Types](./vocabulary.md#core-activity-types)
+	*	3.2 [Activity Sub-Types](./vocabulary.md#subtypes)
+*	4.0 [Extensions](./vocabulary.md#extensions)
+*	4.0 [CourseArea](./vocabulary.md#coursearea)
+
+<a name="verb"></a>
 ## 1.0 Verb
 
 Example of a verb entity, this example uses 'en' language tag, but any RFC 5646 language tag can be used: 
@@ -73,6 +84,8 @@ The following [xAPI verbs](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-
 <tr><th align="left">Statement Example</th><td> <a href="/recipes/vle/attended.md#verb">Attended learning activity</a> </td></tr>
 </table>
 
+
+<a name="result"></a>
 ## 2.0 Result
 
 In the Jisc profile, the use of the [result entity](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#result) and any of its properties is optional. Such as in the [recipes/assignment-graded.md#verb](assignment graded recipe#result) Statement Example.
@@ -92,7 +105,7 @@ Example:
 ```
 
 
-
+<a name="resultextensions"></a>
 ### 2.1 Result Extensions
 
 The following are extension properties in the result entity:
@@ -133,12 +146,12 @@ The following are extension properties in the result entity:
 </table>
 
 
-
+<a name="object"></a>
 ## 3.0 Object
 
-
-### 3.1 Activity Types
-The following are types of the [Activity Definition Object](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#activity-definition). 
+<a name="core-activity-types"></a>
+### 3.1 Core Activity Types
+The following are types of the [Activity Definition Object](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#activity-definition). Activity types may have use the [subtype extension]() to further indicate the sub-type of this activity.
 
 Example:
 ``` javascript
@@ -146,13 +159,12 @@ Example:
 	"objectType": "Activity",
 	"id": "http://moodle.data.alpha.jisc.ac.uk/mod/quiz/view.php?id=13" 
 	"definition": {
-		"type": "http://xapi.jisc.ac.uk/define/vle/page",			//  activity type 
+		"type": "http://xapi.jisc.ac.uk/vle/page",			
 		"name": { "en": "Sample page" },			   
 		"description": { "en": "sample page" } 
 	 }
 }
 ```
-
 
 ### Application
 
@@ -161,6 +173,7 @@ Example:
 <tr><th align="left">Description</th><td>Represents any kind of software application</td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://activitystrea.ms/schema/1.0/application">http://activitystrea.ms/schema/1.0/application</a> </td></tr>
 <tr><th align="left">Statement Example</th><td> <a href="recipes/vle/login.md#complete_example">Logged in</a> </td></tr>
+<tr><th align="left">Allowed Subtypes</th><td>  </td></tr>
 </table>
 
 ### Assessment
@@ -170,8 +183,9 @@ Example:
 <tr><th align="left">Description</th><td>An assessment is an activity type that determines a learner’s mastery of a particular subject area. An assessment typically has one or more questions.</td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://adlnet.gov/expapi/activities/assessment">http://adlnet.gov/expapi/activities/assessment</a> </td></tr>
 <tr><th align="left">Statement Example</th><td> <a href="recipes/vle/assignment-submitted.md">assignment-submitted</a> </td></tr>
-</table>
+<tr><th align="left">Allowed Subtypes</th><td>  </td></tr>
 
+</table>
 
 ### Course
 
@@ -179,6 +193,7 @@ Example:
 <tr><th align="left">Label</th><td>Course</td></tr>
 <tr><th align="left">Description</th><td>A course represents an entire “content package” worth of material. The largest level of granularity. Unless flat, a course consists of multiple modules.</td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://adlnet.gov/expapi/activities/course">http://adlnet.gov/expapi/activities/course</a> </td></tr>
+<tr><th align="left">Allowed Subtypes</th><td>  </td></tr>
 </table>
 
 
@@ -189,6 +204,7 @@ Example:
 <tr><th align="left">Description</th><td>A module represents any “content aggregation” at least one level below the course level. Modules of modules can exist for layering purposes. Modules are not content. Modules are one level up from all content. </td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://adlnet.gov/expapi/activities/module">http://adlnet.gov/expapi/activities/module</a> </td></tr>
 <tr><th align="left">Statement Example</th><td> <a href="recipes/vle/Module-View.md#object">Module-View</a> </td></tr>
+<tr><th align="left">Allowed Subtypes</th><td>  </td></tr>
 </table>
 
 ### VLE
@@ -197,6 +213,7 @@ Example:
 <tr><th align="left">Label</th><td>VLE</td></tr>
 <tr><th align="left">Description</th><td>Learning Management System. At it's core, a platform used to launch and track learning experiences.</td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://id.tincanapi.com/activitytype/lms ">http://id.tincanapi.com/activitytype/lms </a> </td></tr>
+<tr><th align="left">Allowed Subtypes</th><td>  </td></tr>
 </table>
 
 ### VLE content
@@ -205,6 +222,7 @@ Example:
 <tr><th align="left">Label</th><td>VLE content</td></tr>
 <tr><th align="left">Description</th><td>Any generic resource in a VLE</td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/vle/content">http://xapi.jisc.ac.uk/vle/content</a> </td></tr>
+<tr><th align="left">Allowed Subtypes</th><td>  </td></tr>
 </table>
 
 ### VLE page
@@ -215,6 +233,7 @@ Example:
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/vle/page">http://xapi.jisc.ac.uk/vle/page</a> </td></tr>
 <tr><th align="left">Example in Recipe</th><td> <a href="recipes/vle/Module-View.md#object">Module-View</a> </td></tr>
 <tr><th align="left">UI Example</th><td> <a href="http://moodle.data.alpha.jisc.ac.uk/mod/page/view.php?id=9">A page on University of Jisc</a> </td></tr>
+<tr><th align="left">Allowed Subtypes</th><td>  </td></tr>
 </table>
 
 ### VLE Quiz
@@ -225,6 +244,7 @@ Example:
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/vle/quiz">http://xapi.jisc.ac.uk/vle/quiz</a> </td></tr>
 <tr><th align="left">Example in Recipe</th><td> <a href="recipes/vle/Module-View.md#object">Module-View</a> </td></tr>
 <tr><th align="left">UI Example</th><td> <a href="http://moodle.data.alpha.jisc.ac.uk/mod/page/view.php?id=13">A quiz on University of Jisc</a> </td></tr>
+<tr><th align="left">Allowed Subtypes</th><td>  </td></tr>
 </table>
 
 ### VLE Forum
@@ -235,6 +255,7 @@ Example:
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/vle/forum">http://xapi.jisc.ac.uk/vle/forum</a> </td></tr>
 <tr><th align="left">UI Example (Moodle)</th><td> <a href="http://moodle.data.alpha.jisc.ac.uk/mod/forum/view.php?id=12">A forum on University of Jisc</a> </td></tr>
 <tr><th align="left">UI Example (Blackboard)</th><td> <a href="https://jisc.blackboard.com/webapps/discussionboard/do/forum?action=list_threads&course_id=_144_1&forum_id=81&nav=discussion_board&conf_id=_164_1&content_id=_218_1&mode=view)">A discussion board on University of Jisc</a> </td></tr>
+<tr><th align="left">Allowed Subtypes</th><td>  </td></tr>
 </table>
 
 ### External URL
@@ -243,6 +264,7 @@ Example:
 <tr><th align="left">Label</th><td>External URL</td></tr>
 <tr><th align="left">Description</th><td>An external URL</td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/externalURL">http://xapi.jisc.ac.uk/externalURL</a> </td></tr>
+<tr><th align="left">Allowed Subtypes</th><td>  </td></tr>
 </table>
 
 ### File
@@ -251,6 +273,7 @@ Example:
 <tr><th align="left">Label</th><td>File</td></tr>
 <tr><th align="left">Description</th><td>Accessing any kind of non-web native file type. e.g. MS office, video or audio. </td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/vle/file">http://xapi.jisc.ac.uk/vle/file</a> </td></tr>
+<tr><th align="left">Allowed Subtypes</th><td>  </td></tr>
 </table>
 
 ### Lecture
@@ -259,6 +282,7 @@ Example:
 <tr><th align="left">Label</th><td>Lecture</td></tr>
 <tr><th align="left">Description</th><td>A learning activity that consists mainly of an expert giving a talk to a number of learners.</td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/lecture">http://xapi.jisc.ac.uk/lecture</a> </td></tr>
+<tr><th align="left">Allowed Subtypes</th><td>  </td></tr>
 </table>
 
 ### Tutor session
@@ -267,6 +291,7 @@ Example:
 <tr><th align="left">Label</th><td>Tutor session</td></tr>
 <tr><th align="left">Description</th><td>This represents a tutoring session.</td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://id.tincanapi.com/activitytype/tutor-session">http://id.tincanapi.com/activitytype/tutor-session</a> </td></tr>
+<tr><th align="left">Allowed Subtypes</th><td>  </td></tr>
 </table>
 
 ### Event
@@ -275,20 +300,47 @@ Example:
 <tr><th align="left">Label</th><td>Event</td></tr>
 <tr><th align="left">Description</th><td>Any event.<br/>The "event" Activity Type should only be used when the type of event is unspecified.</td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://activitystrea.ms/schema/1.0/event">http://activitystrea.ms/schema/1.0/event</a> </td></tr>
+<tr><th align="left">Allowed Subtypes</th><td>  </td></tr>
 </table>
 
-### Event
+### Statistics
 
 <table>
-<tr><th align="left">Label</th><td>stats</td></tr>
-<tr><th align="left">Description</th><td>Statistics on the Study Goal app.</td></tr>
-<tr><th align="left">IRI</th><td> <a href="http://activitystrea.ms/schema/1.0/event">http://activitystrea.ms/schema/1.0/event</a> </td></tr>
+<tr><th align="left">Label</th><td>Study Statistics</td></tr>
+<tr><th align="left">Description</th><td>Statistics for the Studygoal application </td></tr>
+<tr><th align="left">IRI</th><td> <a href="https://jisc.ac.uk/studygoal/stats">https://jisc.ac.uk/studygoal/stats</a> </td></tr>
+<tr><th align="left">Allowed Subtypes</th><td>  </td></tr>
 </table>
 
+### Other
+
+<table>
+<tr><th align="left">Label</th><td>Other</td></tr>
+<tr><th align="left">Description</th><td>Other</td>Other activity types that are defined in the Jisc profile, can be generated by VLE specific plugins</tr>
+<tr><th align="left">IRI</th><td> <a href="https://jisc.ac.uk/other">https://jisc.ac.uk/other</a> </td></tr>
+<tr><th align="left">Allowed Subtypes</th><td>  </td></tr>
+</table>
+
+<a name="subtypes"></a>
+### 3.2 Sub-Types
+
+The following are sub-types of activity types. The subtype extension is used to indicate the sub-type of a core activity type.
+
+Example:
+``` javascript
+"object": {
+	"objectType": "Activity",
+	"id": "http://moodle.data.alpha.jisc.ac.uk/mod/quiz/view.php?id=13" 
+	"definition": {
+		"type": "http://xapi.jisc.ac.uk/vle/page",			
+		"name": { "en": "Sample page" },			   
+		"description": { "en": "sample page" } 
+	 }
+}
 
 
-
-## 3.2 Object Definition Extensions
+<a name="extensions">
+## 4.0 Object Definition and Context Extensions
 The following are Jisc profile extensions to be used in [object.definition.extensions](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#object). See the [Assignment Graded](recipes/assignment-graded.md#verb)
 
 ### Due Date
@@ -388,7 +440,7 @@ The following are Jisc profile extensions to be used in [object.definition.exten
 <tr><th align="left">Sample Value</th><td>PT1H30M0S</td></tr>
 </table>
 
-### Application Type
+### Application Type (Deprecated)
 
 Was used in older recipes to identify the genre of software application. Best practice is to use subType instead.
 
@@ -405,24 +457,16 @@ Was used in older recipes to identify the genre of software application. Best pr
 
 <table>
 <tr><th align="left">Label</th><td>Sub Type </td></tr>
-<tr><th align="left">Description</th><td>Identifies the sub genre of any application </td></tr>
+<tr><th align="left">Description</th><td>Identifies the sub genre of any activity type.  </td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/subType">http://xapi.jisc.ac.uk/subType</a> </td></tr>
 <tr><th align="left">Example in Recipe</th><td> <a href="recipes/vle/login.md#object">Logged in</a> </td></tr>
 <tr><th align="left">Data Type</th><td>IRI or String</td></tr>
 <tr><th align="left">Sample Value</th><td>http://id.tincanapi.com/activitytype/lms</td></tr>
 </table>
 
-
-
-## 4.0 Context
-
-
-## 4.1 Context Extensions
-The following are properties of the [Context extensions property](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#246-context).
-
 ### Course area
 
-For more information see Jisc profile [CourseArea properties](#42-coursearea-properties).
+For more information see Jisc profile [CourseArea properties](#4.0-coursearea-properties).
 
 <table>
 <tr><th align="left">Label</th><td>course area</td></tr>
@@ -460,7 +504,6 @@ For more information see Jisc profile [CourseArea properties](#42-coursearea-pro
 <tr><th align="left">Value Space</th><td>(IP address) in either IPv4 or IPv6 format</td></tr>
 <tr><th align="left">Sample Value</th><td>10.3.3.48</td></tr>
 </table>
-
 
 ### Recipe Version (deprecated since 1.0)
 
@@ -518,7 +561,8 @@ For more information see Jisc profile [CourseArea properties](#42-coursearea-pro
 <tr><th align="left">Value Space</th><td>GeoJSON Object</td></tr>
 </table>
 
-## 4.2 CourseArea properties
+<a name="coursearea"></a>
+## 5.0 CourseArea properties
 CourseArea indicates the coursearea that the learning activity is apart of. The following are properties of the profile extension context.extensions.courseArea
  
 ### ID
@@ -531,7 +575,6 @@ CourseArea indicates the coursearea that the learning activity is apart of. The 
  
  
 ### VLE Module ID
-
 
 
 http://xapi.jisc.ac.uk/extensions/vle_mod_id is a courseArea identifier. It is used in the module_VLE_map entity of the UDD to link module instances to course areas. Note that several module instances (as identified by their UDD MOD_INSTANCE_ID) can link to one courseArea. 
