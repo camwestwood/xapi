@@ -5,12 +5,12 @@ NOTE: The xapi.jisc.ac.uk namespace URI may change.
 ## Table of Contents
 *	1.0	[Verb](./vocabulary.md#verb)
 *	2.0	[Result](./vocabulary.md#result)
-	*	 2.1 [Result Extensions](./vocabulary.md#result-extensions)
+	*	 2.1 [Result Extensions](./vocabulary.md#resultextensions)
 *	3.0	[Object](./vocabulary.md#object)
 	*	3.1 [Core Activity Types](./vocabulary.md#core-activity-types)
 	*	3.2 [Activity Sub-Types](./vocabulary.md#subtypes)
-*	4.0 [Extensions](./vocabulary.md#extensions)
-*	4.0 [CourseArea](./vocabulary.md#coursearea)
+*	4.0 [Object Definition and Context Extensions](./vocabulary.md#extensions)
+*	5.0 [CourseArea](./vocabulary.md#coursearea)
 
 <a name="verb"></a>
 ## 1.0 Verb
@@ -337,9 +337,9 @@ Example:
 		"description": { "en": "sample page" } 
 	 }
 }
+```
 
-
-<a name="extensions">
+<a name="extensions"><a/>
 ## 4.0 Object Definition and Context Extensions
 The following are Jisc profile extensions to be used in [object.definition.extensions](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#object). See the [Assignment Graded](recipes/assignment-graded.md#verb)
 
@@ -572,8 +572,7 @@ CourseArea indicates the coursearea that the learning activity is apart of. The 
 <tr><th align="left">Description</th><td>URI identifier of the Course</td></tr>
 </table>
 
- 
- 
+  
 ### VLE Module ID
 
 
