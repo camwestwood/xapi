@@ -7,7 +7,7 @@ NOTE: The xapi.jisc.ac.uk namespace URI may change.
 *	2.0	[Result](./vocabulary.md#result)
 	*	 2.1 [Result Extensions](./vocabulary.md#resultextensions)
 *	3.0	[Object](./vocabulary.md#object)
-	*	3.1 [Core Activity Types](./vocabulary.md#core-activity-types)
+	*	3.1 [Core Activity Types](./vocabulary.md#activity-types)
 	*	3.2 [Activity Sub-Types](./vocabulary.md#subtypes)
 *	4.0 [Object Definition and Context Extensions](./vocabulary.md#extensions)
 *	5.0 [CourseArea](./vocabulary.md#coursearea)
@@ -149,8 +149,8 @@ The following are extension properties in the result entity:
 <a name="object"></a>
 ## 3.0 Object
 
-<a name="core-activity-types"></a>
-### 3.1 Core Activity Types
+<a name="activity-types"></a>
+### 3.1 Activity Types
 The following are types of the [Activity Definition Object](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#activity-definition). Activity types may have use the [subtype extension]() to further indicate the sub-type of this activity.
 
 Example:
@@ -564,7 +564,17 @@ For more information see Jisc profile [CourseArea properties](#4.0-coursearea-pr
 <a name="coursearea"></a>
 ## 5.0 CourseArea properties
 CourseArea indicates the coursearea that the learning activity is apart of. The following are properties of the profile extension context.extensions.courseArea
- 
+
+Example:
+``` javascript
+      	"http://xapi.jisc.ac.uk/courseArea": {
+			"http://xapi.jisc.ac.uk/vle_mod_id": "LA101",
+			"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0",
+            "id":"http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=4"
+		},
+``
+
+
 ### ID
  
 <table>

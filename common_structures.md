@@ -53,8 +53,7 @@ The Verb structure indicates the action which the statement expresses. The verbs
 	</tr>
 	<tr>
 		<td>verb.display [1]</td>
-		<td>A human readable representation of Verb. It takes a RFC 5646 Language Tag.  
-		The verb.display is "recommended" in the xAPI v1.0.1 specification but is not likely to be of use within the Jisc Learning Analytics architecture.</td>
+		<td>A human readable representation of Verb. It takes a RFC 5646 Language Tag. </td>
 	</tr>
 </table>
 
@@ -70,7 +69,7 @@ The Verb structure indicates the action which the statement expresses. The verbs
 ```
 
 ## Context
-Depending on the recipe, different patterns describe the context of a statement.
+Depending on the recipe, different patterns describe the circumstances that form the setting of the statement, so that it can be better understood.
 
 ### ContextA
 Common entity identifier: ContextA
@@ -85,12 +84,11 @@ This pattern is used across many recipes in the Jisc profile, but there may be a
 		 context.extension.sessionId [0..1]
 		 context.extension.ip-address [1]
 		 </td>
-		<td>Four extensions are provided for, with IRIs as defined on the <a href="vocabulary.md#41-context-extensions">vocabularies page</a>.
+		<td>Three extensions are provided for, with IRIs as defined on the <a href="vocabulary.md#extensions">vocabularies page</a>.
   	  The <b>sessionID</b> extension is the VLE session ID, or a suitably hashed version of it. A value should be provided if this information is available.<br/>
     The <b>ip-address</b> is used to identify the client's IP address. An IPv4 address is recommended.<br/>
     The <b>version</b> extension is recommended, and identifies the version of the Jisc xAPI profile found on the ReadMe page. <br/>
-	The <b>courseArea</b> identifies Umbrella course/parent area by its home page URI. More information can be found on the <a href="vocabulary.md#course-area">vocabularies page</a>.
-		</td></tr></table>
+	</table>
 
 #### Example:
 ``` javascript
@@ -98,8 +96,8 @@ This pattern is used across many recipes in the Jisc profile, but there may be a
   "platform": "Moodle",
   "extensions": {
     "http://xapi.jisc.ac.uk/sessionId": "32456891",
-    "http://id.tincanapi.com/extensions/ip-address": "10.3.3.48",
-    "http://xapi.jisc.ac.uk/version" : "vle_logged_inV1.3"
+    "http://id.tincanapi.com/extension/ip-address": "10.3.3.48",
+    "http://xapi.jisc.ac.uk/version" : "1.0"
   }
 }
 ```
@@ -125,10 +123,9 @@ ContextB pattern is similar to ContextA, but with the addition of a contextActiv
 		<td> context.extensions.courseArea [0..1]<br />
 			context.extensions.sessionId [0..1]<br />
 			context.extensions.ip-address [1]<br />
-			context.extensions.ip-address [1]<br />
-			context.extensions.version [1]
+			context.extensions.version [0..1]
 </td>
-	    <td>Four extensions are provided for, with IRIs as defined on the <a href="vocabulary.md#41-context-extensions">vocabularies page</a>.<br/>
+	    <td>Four extensions are provided for, with IRIs as defined on the <a href="vocabulary.md#extensions">vocabularies page</a>.<br/>
     The <b>sessionID</b> extension is the VLE session ID, or a suitably hashed version of it. A value should be provided if it is available.<br/>
     The <b>ip-address</b> is used to identify the client's IP address. An IPv4 address is recommended.<br/>
     The <b>version</b> extension is recommended, and identifies the version of the Jisc xAPI profile found on the ReadMe page.
@@ -161,14 +158,15 @@ ContextB pattern is similar to ContextA, but with the addition of a contextActiv
         "platform": "Moodle",
         "extensions": {
 		
-      		"http://xapi.jisc.ac.uk/courseArea": {
-      		 	"http://xapi.jisc.ac.uk/vle_mod_id": "LA101",
-                "id": http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=4"
-				},
+			"http://xapi.jisc.ac.uk/courseArea": {
+				"http://xapi.jisc.ac.uk/vle_mod_id": "LA101",
+				"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0",
+				"id":"http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=4"
+			},
 			
- 			"http://xapi.jisc.ac.uk/sessionId":"32456891",
-            "http://id.tincanapi.com/extension/ip-address": "10.3.3.48"
-			"http://xapi.jisc.ac.uk/version" : "vle_assignment_submittedV1.3"
+ 		"http://xapi.jisc.ac.uk/sessionId":"32456891",
+        "http://id.tincanapi.com/extension/ip-address": "10.3.3.48"
+		"http://xapi.jisc.ac.uk/version" : "1.0"
 			}
 		}
 ```
@@ -253,13 +251,11 @@ This object pattern describes the core attributes of Object as used in the Jisc 
 		<td>object.definition.type [1]<br />
 	object.definition.name [0..1]<br />
 	object.definition.extensions.http://xapi.jisc.ac.uk/subType [0..1]<br />
-	object.definition.extensions.http://xapi.jisc.ac.uk/uddModInstanceID [0..1]</td>
 		<td>A JSON object comprising both standard xAPI attributes and the Jisc profile 'subType' and 'uddModInstanceID' extensions.<br/>
     The <b>type</b> indicates the type of the object of the statement. It is required and valid values are listed on the <a href="vocabulary.md#31-activity-types">vocabulary page</a>.<br/>
     The <b>name</b> is optional.<br/>
     The <b>subType</b> extension may be used to indicate the sub-type of this activity, if applicable for the recipe being used to create the statement. This qualifies the object.objectType, and is described on the [vocabularies](vocabulary.md#32-object-definition-extensions) page.<br />
-    The <b>uddModInstanceID</b> extension records the module instance with which the learning activity is associated. It is not usually required and overlaps with context.extension.courseArea. [See issue 140](https://github.com/jiscdev/xapi/issues/140) </td>
-	</tr>
+
 	
 </table>
 
@@ -274,8 +270,7 @@ This object pattern describes the core attributes of Object as used in the Jisc 
       "en": "University of Jisc VLE"
     },
     "extensions": {
-      "http://xapi.jisc.ac.uk/subType": "http://id.tincanapi.com/activitytype/lms",
-      "http://xapi.jisc.ac.uk/uddModInstanceID" : "2016.sem1.psy101"
+      "http://xapi.jisc.ac.uk/subType": "http://id.tincanapi.com/activitytype/lms"
     }
   }
 }
@@ -317,7 +312,7 @@ This object pattern describes an activity that has been completed. Examples of v
 		"objectType":"Activity",
 		"id":"http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=4",
 		"definition":{
-			"type":"http://adlnet.gov/expapi/activities/module",
+			"type":"http://adlnet.gov/expapi/activities/assesment",
 			"name":{
 				"en":"Course Assignment"
 			},
