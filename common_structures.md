@@ -80,28 +80,36 @@ This pattern is used across many recipes in the Jisc profile, but there may be a
 <tr><th>Property</th><th>Description</th></tr>
 	<tr><td>context.platform [1]</td>
 	<td>The platform used in the experience of this learning activity. The value used should not change between platform upgrades and version changes and should typically be a concise name by which the application is commonly known, for example "Moodle" or "Blackboard"</td></tr>
-	<tr><td>context.extensions.version [0..1]
-		 context.extension.sessionId [0..1]
-		 context.extension.ip-address [1]
+	<tr><td>context.extensions.version [0..1]</td>
+		 context.extension.sessionId [0..1]</td>
+		 context.extension.ip-address [1]</td>
+		 context.extension.courseArea [0..1]</td>
 		 </td>
 		<td>Three extensions are provided for, with IRIs as defined on the <a href="vocabulary.md#extensions">vocabularies page</a>.
   	  The <b>sessionID</b> extension is the VLE session ID, or a suitably hashed version of it. A value should be provided if this information is available.<br/>
     The <b>ip-address</b> is used to identify the client's IP address. An IPv4 address is recommended.<br/>
     The <b>version</b> extension is recommended, and identifies the version of the Jisc xAPI profile found on the ReadMe page. <br/>
+	The <b>courseArea</b> identifies Umbrella course/parent area by its home page URI and / or its identifier. More information can be found on the <a href="vocabulary.md#course-area">vocabularies page</a>.
 	</table>
 
 #### Example:
 ``` javascript
 "context": {
-  "platform": "Moodle",
-  "extensions": {
-    "http://xapi.jisc.ac.uk/sessionId": "32456891",
-    "http://id.tincanapi.com/extension/ip-address": "10.3.3.48",
-    "http://xapi.jisc.ac.uk/version" : "1.0"
-  }
-}
-```
-
+        "platform": "Moodle",
+        "extensions": {
+	
+			"http://xapi.jisc.ac.uk/courseArea": {
+				"http://xapi.jisc.ac.uk/vle_mod_id": "LA101",
+				"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0",
+				"id":"http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=4"
+		},
+					
+		"http://xapi.jisc.ac.uk/sessionId": "32456891"  ,
+		"http://id.tincanapi.com/extension/ip-address": "10.3.3.48"
+		"http://xapi.jisc.ac.uk/version" : "1.0"
+			}
+        }
+``` 
 ### ContextB
 Common entity identifier: ContextB
 
