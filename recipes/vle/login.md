@@ -1,6 +1,7 @@
 # vle_logged_in statement template
 
 Based on generic template statement: [Login](/generic/login.md)
+
 [Statement Template Changes](/version_changes.md#logged-in)
 
 ## Purpose

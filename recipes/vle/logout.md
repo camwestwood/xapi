@@ -1,6 +1,7 @@
 # vle_logged_out statement template
 
 Based on generic template statement: [Logout](/generic/logout.md)
+
 [Based on Generic Template Statement](/generic/logout.md)
 
 ## Purpose
