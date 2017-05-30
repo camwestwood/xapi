@@ -5,7 +5,7 @@ This generic statement template describes a user logging out of a VLE.
 
 The entities and properties described here represent a typical statement template. Further properties or constraints could be defined to create a login statement template for a more specific purpose.
 
-Natural language example of a typical login statement: "John Smith logged out of his university Moodle VLE using his mobile phone."
+Natural language example of a typical logout statement: "John Smith logged out of his university Moodle VLE using his mobile phone."
 
 
 ## Statement template and JSON examples in Jisc Profile:
@@ -112,22 +112,20 @@ The object for logout statements identifies what is being logged out of. It uses
 ### Example
 ``` javascript
 "object": {
-  "objectType": "<ObjectType: i.e Activity>",
-  "id": "<id of Object: e.g https://courses.alpha.jisc.ac.uk/moodle>",
+  "objectType": "Activity",
+  "id": "https://courses.alpha.jisc.ac.uk/moodle",
   "definition": {
-    "type": "<type of object: e.g. http://activitystrea.ms/schema/1.0/application>",
+    "type": "http://activitystrea.ms/schema/1.0/application",
     "name": {
-      "en": "<English Description: e.g University of Jisc VLE>"
+      "en": "University of Jisc VLE"
     },
     "extensions": {
-      "http://xapi.jisc.ac.uk/subType": "<Subtype: e.g http://id.tincanapi.com/activitytype/lms>"
+      "http://xapi.jisc.ac.uk/subType": "http://id.tincanapi.com/activitytype/lms"
     }
   }
 }
 
 '''
-
-
 
 
 ### Context

@@ -1,5 +1,6 @@
 # vle_resource_viewed statement template
 
+Based on generic template statement: [Viewed](/generic/view.md)
 [Statement Template Changes](/version_changes.md#vle-resource-viewed)
 
 ## Purpose

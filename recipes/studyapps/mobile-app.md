@@ -1,5 +1,6 @@
 # mobile_app_content_viewed statement template
 
+Based on generic template statement: [Viewed](/generic/view.md)
 [Statement Template Changes](/version_changes.md#mobile-app-content-viewed)
 
 ## Purpose

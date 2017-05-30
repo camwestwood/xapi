@@ -7,7 +7,6 @@ The entities and properties described here represent a typical statement templat
 
 Natural language example of a typical login statement: "John Smith viewed a module in is university Moodle VLE.."
 
-
 This template defines the structure and terms to record the experience of viewing a resource on a platform.
 
 Examples:
@@ -118,7 +117,7 @@ The object for Viewed statements identifies what is being viewed. It uses the Ji
 ``` javascript
 "object": {
   "objectType": "Activity",
-  "id": "<https://courses.alpha.jisc.ac.uk/moodle",
+  "id": "https://courses.alpha.jisc.ac.uk/moodle",
   "definition": {
     "type": "http://activitystrea.ms/schema/1.0/application",
     "name": {

@@ -1,6 +1,7 @@
 # vle_logged_out statement template
 
-[Statement Template Changes](/version_changes.md#logged-out)
+Based on generic template statement: [Logout](/generic/logout.md)
+[Based on Generic Template Statement](/generic/logout.md)
 
 ## Purpose
 This activity records a user logging out of a VLE.
