@@ -144,8 +144,13 @@ Documentation change [starttime and end time replace duartion](https://github.co
 
 
 # Vocabulary Changes
-
 Tracking identifier mappings between changes
+
+
+## v1.0
+
+19/06/07: [/file retired and covered by /content instead]
+
 
 ## v0.2
 

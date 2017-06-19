@@ -8,7 +8,6 @@ NOTE: The xapi.jisc.ac.uk namespace URI may change.
 	*	 2.1 [Result Extensions](./vocabulary.md#resultextensions)
 *	3.0	[Object](./vocabulary.md#object)
 	*	3.1 [Activity Types](./vocabulary.md#activity-types)
-	*	3.2 [Activity Sub-Types](./vocabulary.md#subtypes)
 *	4.0 [Object Definition and Context Extensions](./vocabulary.md#extensions)
 *	5.0 [CourseArea](./vocabulary.md#coursearea)
 
@@ -152,6 +151,8 @@ The following are extension properties in the result entity:
 <a name="activity-types"></a>
 ### 3.1 Activity Types
 The following are types of the [Activity Definition Object](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#activity-definition). Activity types may have use the [subtype extension]() to further indicate the sub-type of this activity.
+Some examples sub-types are included here, however, sub-types are not part of the spec. Therefore, list is not exhaustive and it is the responsibility of the plugin to define the sub-type. 
+Since the vendors do not own the IRI, these subtypes use a Jisc namespace - but not http:/xapi.jisc.ac.uk.
 
 Example:
 ``` javascript
@@ -162,6 +163,9 @@ Example:
 		"type": "http://xapi.jisc.ac.uk/vle/page",			
 		"name": { "en": "Sample page" },			   
 		"description": { "en": "sample page" } 
+		"extensions": {
+				"http://xapi.jisc.ac.uk/subType": "http://bblearn.xapi.jisc.ac.uk/blankpage"
+				}
 	 }
 }
 ```
@@ -173,8 +177,10 @@ Example:
 <tr><th align="left">Description</th><td>Represents any kind of software application</td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://activitystrea.ms/schema/1.0/application">http://activitystrea.ms/schema/1.0/application</a> </td></tr>
 <tr><th align="left">Statement Example</th><td> <a href="recipes/vle/login.md#complete_example">Logged in</a> </td></tr>
-<tr><th align="left">Allowed Subtypes</th><td>  </td></tr>
+<tr><th align="left">Example Subtypes</th><td><ul><li>http://id.tincanapi.com/activitytype/mobile-app</li></ul>  </td></tr>
+
 </table>
+
 
 ### Assessment
 
@@ -183,8 +189,7 @@ Example:
 <tr><th align="left">Description</th><td>An assessment is an activity type that determines a learner’s mastery of a particular subject area. An assessment typically has one or more questions.</td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://adlnet.gov/expapi/activities/assessment">http://adlnet.gov/expapi/activities/assessment</a> </td></tr>
 <tr><th align="left">Statement Example</th><td> <a href="recipes/vle/assignment-submitted.md">assignment-submitted</a> </td></tr>
-<tr><th align="left">Allowed Subtypes</th><td>  </td></tr>
-
+<tr><th align="left">Example Subtypes</th><td><ul><li>http://bblearn.xapi.jisc.ac.uk/selfandpeerassessment</li><li>http://bblearn.xapi.jisc.ac.uk/safeassignment</li><li>http://moodle.xapi.jisc.ac.uk/assignment</li></ul>  </td></tr>
 </table>
 
 ### Course
@@ -193,7 +198,6 @@ Example:
 <tr><th align="left">Label</th><td>Course</td></tr>
 <tr><th align="left">Description</th><td>A course represents an entire “content package” worth of material. The largest level of granularity. Unless flat, a course consists of multiple modules.</td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://adlnet.gov/expapi/activities/course">http://adlnet.gov/expapi/activities/course</a> </td></tr>
-<tr><th align="left">Allowed Subtypes</th><td>  </td></tr>
 </table>
 
 
@@ -204,8 +208,9 @@ Example:
 <tr><th align="left">Description</th><td>A module represents any “content aggregation” at least one level below the course level. Modules of modules can exist for layering purposes. Modules are not content. Modules are one level up from all content. </td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://adlnet.gov/expapi/activities/module">http://adlnet.gov/expapi/activities/module</a> </td></tr>
 <tr><th align="left">Statement Example</th><td> <a href="recipes/vle/Module-View.md#object">Resource viewed</a> </td></tr>
-<tr><th align="left">Allowed Subtypes</th><td>  </td></tr>
+<tr><th align="left">Example Subtypes</th><td><ul><li>http://bblearn.xapi.jisc.ac.uk/learningmodule</li></ul></td></tr>
 </table>
+
 
 ### VLE
 
@@ -213,7 +218,6 @@ Example:
 <tr><th align="left">Label</th><td>VLE</td></tr>
 <tr><th align="left">Description</th><td>Learning Management System. At it's core, a platform used to launch and track learning experiences.</td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://id.tincanapi.com/activitytype/lms ">http://id.tincanapi.com/activitytype/lms </a> </td></tr>
-<tr><th align="left">Allowed Subtypes</th><td>  </td></tr>
 </table>
 
 ### VLE content
@@ -222,8 +226,9 @@ Example:
 <tr><th align="left">Label</th><td>VLE content</td></tr>
 <tr><th align="left">Description</th><td>Any generic resource in a VLE</td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/vle/content">http://xapi.jisc.ac.uk/vle/content</a> </td></tr>
-<tr><th align="left">Allowed Subtypes</th><td>  </td></tr>
+<tr><th align="left">Example Subtypes</th><td><ul><li><li>http://bblearn.xapi.jisc.ac.uk/audio</li><li>http://bblearn.xapi.jisc.ac.uk/video</li><li>http://bblearn.xapi.jisc.ac.uk/image</li><li>http://moodle.xapi.jisc.ac.uk/data</li><li>http://moodle.xapi.jisc.ac.uk/file</li><li>http://moodle.xapi.jisc.ac.uk/glossary</li><li>http://moodle.xapi.jisc.ac.uk/wiki</li><li>http://moodle.xapi.jisc.ac.uk/lesson</li><li>http://bblearn.jisc.xapi.ac.uk/lessonplan</li><li>http://moodle.xapi.jisc.ac.uk/vle/workshop</li></ul></td></tr>
 </table>
+
 
 ### VLE page
 
@@ -233,8 +238,9 @@ Example:
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/vle/page">http://xapi.jisc.ac.uk/vle/page</a> </td></tr>
 <tr><th align="left">Example in Recipe</th><td> <a href="recipes/vle/Module-View.md#object">Resource viewed</a> </td></tr>
 <tr><th align="left">UI Example</th><td> <a href="http://moodle.data.alpha.jisc.ac.uk/mod/page/view.php?id=9">A page on University of Jisc</a> </td></tr>
-<tr><th align="left">Allowed Subtypes</th><td>  </td></tr>
+<tr><th align="left">Example Subtypes</th><td><ul><li>http://moodle.xapi.jisc.ac.uk/page</li><li>http://bblearn.xapi.jisc.ac.uk/blankpage</li><li>http://bblearn.xapi.jisc.ac.uk/modulepage</li></ul></td></tr>
 </table>
+
 
 ### VLE Quiz
 
@@ -244,8 +250,9 @@ Example:
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/vle/quiz">http://xapi.jisc.ac.uk/vle/quiz</a> </td></tr>
 <tr><th align="left">Example in Recipe</th><td> <a href="recipes/vle/Module-View.md#object">Resource viewed</a> </td></tr>
 <tr><th align="left">UI Example</th><td> <a href="http://moodle.data.alpha.jisc.ac.uk/mod/page/view.php?id=13">A quiz on University of Jisc</a> </td></tr>
-<tr><th align="left">Allowed Subtypes</th><td>  </td></tr>
+<tr><th align="left">Example Subtypes</th><td><ul><li><li>http://moodle.xapi.jisc.ac.uk/quiz</li><li>http://moodle.xapi.jisc.ac.uk/survey</li><li>http://moodle.xapi.jisc.ac.uk/choice</li><li>http://bblearn.xapi.jisc.ac.uk/test</li><li>http://bblearn.xapi.jisc.ac.uk/survey</li></ul>  </td></tr>
 </table>
+
 
 ### VLE Forum
 
@@ -255,25 +262,34 @@ Example:
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/vle/forum">http://xapi.jisc.ac.uk/vle/forum</a> </td></tr>
 <tr><th align="left">UI Example (Moodle)</th><td> <a href="http://moodle.data.alpha.jisc.ac.uk/mod/forum/view.php?id=12">A forum on University of Jisc</a> </td></tr>
 <tr><th align="left">UI Example (Blackboard)</th><td> <a href="https://jisc.blackboard.com/webapps/discussionboard/do/forum?action=list_threads&course_id=_144_1&forum_id=81&nav=discussion_board&conf_id=_164_1&content_id=_218_1&mode=view)">A discussion board on University of Jisc</a> </td></tr>
-<tr><th align="left">Allowed Subtypes</th><td>  </td></tr>
 </table>
 
-### External URL
+### External Content
+
+<table>
+<tr><th align="left">Label</th><td>External Content</td></tr>
+<tr><th align="left">Description</th><td>External URL</td></tr>
+<tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/externalContent">http://xapi.jisc.ac.uk/externalContent</a> </td></tr>
+<tr><th align="left">Example Subtypes</th><td><ul><li>http://jisc.xapi.jisc.ac.uk/scorm</li><li>http://jisc.xapi.jisc.ac.uk/lti</li><li>http://bblearn.xapi.jisc.ac.uk/mashup<li></ul></td></tr>
+</table>
+
+### External URL 
 
 <table>
 <tr><th align="left">Label</th><td>External URL</td></tr>
 <tr><th align="left">Description</th><td>An external URL</td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/externalURL">http://xapi.jisc.ac.uk/externalURL</a> </td></tr>
-<tr><th align="left">Allowed Subtypes</th><td>  </td></tr>
+<tr><th align="left">Example Subtypes</th><td><ul><li>http://moodle.xapi.jisc.ac.uk/externalURL</li><li>http://bblearn.xapi.jisc.ac.uk/webLink</li></ul></td></tr>
+
 </table>
 
-### File
+
+### File (Deprecated as of 1.0. Use Content instead )
 
 <table>
 <tr><th align="left">Label</th><td>File</td></tr>
 <tr><th align="left">Description</th><td>Accessing any kind of non-web native file type. e.g. MS office, video or audio. </td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/vle/file">http://xapi.jisc.ac.uk/vle/file</a> </td></tr>
-<tr><th align="left">Allowed Subtypes</th><td>  </td></tr>
 </table>
 
 ### Lecture
@@ -282,7 +298,6 @@ Example:
 <tr><th align="left">Label</th><td>Lecture</td></tr>
 <tr><th align="left">Description</th><td>A learning activity that consists mainly of an expert giving a talk to a number of learners.</td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/lecture">http://xapi.jisc.ac.uk/lecture</a> </td></tr>
-<tr><th align="left">Allowed Subtypes</th><td>  </td></tr>
 </table>
 
 ### Tutor session
@@ -291,7 +306,6 @@ Example:
 <tr><th align="left">Label</th><td>Tutor session</td></tr>
 <tr><th align="left">Description</th><td>This represents a tutoring session.</td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://id.tincanapi.com/activitytype/tutor-session">http://id.tincanapi.com/activitytype/tutor-session</a> </td></tr>
-<tr><th align="left">Allowed Subtypes</th><td>  </td></tr>
 </table>
 
 ### Event
@@ -300,7 +314,6 @@ Example:
 <tr><th align="left">Label</th><td>Event</td></tr>
 <tr><th align="left">Description</th><td>Any event.<br/>The "event" Activity Type should only be used when the type of event is unspecified.</td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://activitystrea.ms/schema/1.0/event">http://activitystrea.ms/schema/1.0/event</a> </td></tr>
-<tr><th align="left">Allowed Subtypes</th><td>  </td></tr>
 </table>
 
 ### Statistics
@@ -309,8 +322,16 @@ Example:
 <tr><th align="left">Label</th><td>Study Statistics</td></tr>
 <tr><th align="left">Description</th><td>Statistics for the Studygoal application </td></tr>
 <tr><th align="left">IRI</th><td> <a href="https://jisc.ac.uk/studygoal/stats">https://jisc.ac.uk/studygoal/stats</a> </td></tr>
-<tr><th align="left">Allowed Subtypes</th><td>  </td></tr>
 </table>
+
+### Chat
+
+<table>
+<tr><th align="left">Label</th><td>Chat</td></tr>
+<tr><th align="left">Description</th><td>A real time chat event, such as a chatroom</td></tr>
+<tr><th align="left">IRI</th><td> <a href="https://jisc.ac.uk/chat">https://jisc.ac.uk/chat</a> </td></tr>
+</table>
+
 
 ### Other
 
@@ -318,26 +339,7 @@ Example:
 <tr><th align="left">Label</th><td>Other</td></tr>
 <tr><th align="left">Description</th><td>Other</td>Other activity types that are defined in the Jisc profile, can be generated by VLE specific plugins</tr>
 <tr><th align="left">IRI</th><td> <a href="https://jisc.ac.uk/other">https://jisc.ac.uk/other</a> </td></tr>
-<tr><th align="left">Allowed Subtypes</th><td>  </td></tr>
 </table>
-
-<a name="subtypes"></a>
-### 3.2 Sub-Types
-
-The following are sub-types of activity types. The subtype extension is used to indicate the sub-type of a core activity type.
-
-Example:
-``` javascript
-"object": {
-	"objectType": "Activity",
-	"id": "http://moodle.data.alpha.jisc.ac.uk/mod/quiz/view.php?id=13" 
-	"definition": {
-		"type": "http://xapi.jisc.ac.uk/vle/page",			
-		"name": { "en": "Sample page" },			   
-		"description": { "en": "sample page" } 
-	 }
-}
-```
 
 <a name="extensions"><a/>
 ## 4.0 Object Definition and Context Extensions
