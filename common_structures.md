@@ -527,7 +527,8 @@ This pattern describes the result and if the actor was on time to the event, if 
 	<tr><th>Property [cardinality]</th><th>Description</th><th>Data type</th></tr>
 	<tr>
 		<td>result.completion [1]</td>
-		<td>When set to "true", result.completion indicates that the learner attended the event. "false"indicates that the learner did not attend the event.</td></td>
+		<td>When set to "true", result.completion indicates that the learner attended the event. "false"indicates that the learner did not attend the event.</td>
+		<td>Boolean</td>
 	</tr>
 	<tr>
 		<td>result.extension.http://xapi.jisc.ac.uk/attendance_late [0..1]</td>
