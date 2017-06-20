@@ -226,7 +226,7 @@ Example:
 <tr><th align="left">Label</th><td>VLE content</td></tr>
 <tr><th align="left">Description</th><td>Any generic resource in a VLE</td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/vle/content">http://xapi.jisc.ac.uk/vle/content</a> </td></tr>
-<tr><th align="left">Example Subtypes</th><td><ul><li><li>http://bblearn.xapi.jisc.ac.uk/audio</li><li>http://bblearn.xapi.jisc.ac.uk/video</li><li>http://bblearn.xapi.jisc.ac.uk/image</li><li>http://moodle.xapi.jisc.ac.uk/data</li><li>http://moodle.xapi.jisc.ac.uk/file</li><li>http://moodle.xapi.jisc.ac.uk/glossary</li><li>http://moodle.xapi.jisc.ac.uk/wiki</li><li>http://moodle.xapi.jisc.ac.uk/lesson</li><li>http://bblearn.jisc.xapi.ac.uk/lessonplan</li><li>http://moodle.xapi.jisc.ac.uk/vle/workshop</li></ul></td></tr>
+<tr><th align="left">Example Subtypes</th><td><ul><li>http://bblearn.xapi.jisc.ac.uk/audio</li><li>http://bblearn.xapi.jisc.ac.uk/video</li><li>http://bblearn.xapi.jisc.ac.uk/image</li><li>http://moodle.xapi.jisc.ac.uk/data</li><li>http://moodle.xapi.jisc.ac.uk/file</li><li>http://moodle.xapi.jisc.ac.uk/glossary</li><li>http://moodle.xapi.jisc.ac.uk/wiki</li><li>http://moodle.xapi.jisc.ac.uk/lesson</li><li>http://bblearn.jisc.xapi.ac.uk/lessonplan</li><li>http://moodle.xapi.jisc.ac.uk/vle/workshop</li></ul></td></tr>
 </table>
 
 
@@ -250,7 +250,7 @@ Example:
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/vle/quiz">http://xapi.jisc.ac.uk/vle/quiz</a> </td></tr>
 <tr><th align="left">Example in Recipe</th><td> <a href="recipes/vle/Module-View.md#object">Resource viewed</a> </td></tr>
 <tr><th align="left">UI Example</th><td> <a href="http://moodle.data.alpha.jisc.ac.uk/mod/page/view.php?id=13">A quiz on University of Jisc</a> </td></tr>
-<tr><th align="left">Example Subtypes</th><td><ul><li><li>http://moodle.xapi.jisc.ac.uk/quiz</li><li>http://moodle.xapi.jisc.ac.uk/survey</li><li>http://moodle.xapi.jisc.ac.uk/choice</li><li>http://bblearn.xapi.jisc.ac.uk/test</li><li>http://bblearn.xapi.jisc.ac.uk/survey</li></ul>  </td></tr>
+<tr><th align="left">Example Subtypes</th><td><ul><li>http://moodle.xapi.jisc.ac.uk/quiz</li><li>http://moodle.xapi.jisc.ac.uk/survey</li><li>http://moodle.xapi.jisc.ac.uk/choice</li><li>http://bblearn.xapi.jisc.ac.uk/test</li><li>http://bblearn.xapi.jisc.ac.uk/survey</li></ul>  </td></tr>
 </table>
 
 
@@ -270,7 +270,7 @@ Example:
 <tr><th align="left">Label</th><td>External Content</td></tr>
 <tr><th align="left">Description</th><td>External URL</td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/externalContent">http://xapi.jisc.ac.uk/externalContent</a> </td></tr>
-<tr><th align="left">Example Subtypes</th><td><ul><li>http://jisc.xapi.jisc.ac.uk/scorm</li><li>http://jisc.xapi.jisc.ac.uk/lti</li><li>http://bblearn.xapi.jisc.ac.uk/mashup<li></ul></td></tr>
+<tr><th align="left">Example Subtypes</th><td><ul><li>http://jisc.xapi.jisc.ac.uk/scorm</li><li>http://jisc.xapi.jisc.ac.uk/lti</li><li>http://bblearn.xapi.jisc.ac.uk/mashup</li></ul></td></tr>
 </table>
 
 ### External URL 
