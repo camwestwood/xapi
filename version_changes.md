@@ -26,6 +26,8 @@
 
 ### VLE resource viewed
 
+25-05-2017, Documentation change. [subType did not make sense](https://github.com/jiscdev/xapi/issues/163)
+
 25-05-2017, Spec Change. [UDD Mod ID added to coursearea](https://github.com/jiscdev/xapi/issues/165)
 
 10-05-2017, Spec Change. recipeVersion depricated, replaced with version

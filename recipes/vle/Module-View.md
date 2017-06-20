@@ -77,13 +77,13 @@ For this recipe the object needs to identify what was viewed. A list of valid va
 ``` javascript
 "object": {
 	"objectType": "Activity",
-	"id": "http://moodle.data.alpha.jisc.ac.uk/mod/quiz/view.php?id=13"   	 	
+	"id": "http://moodle.data.alpha.jisc.ac.uk/mod/page/view.php?id=9   	 	
 	"definition": {
 		"type": "http://xapi.jisc.ac.uk/vle/page",			
 		"name": { "en": "Sample page" },			   
 	 }
 	 "extensions": {
-     		 "http://xapi.jisc.ac.uk/subType": "http://id.tincanapi.com/activitytype/lms"
+     		 "http://xapi.jisc.ac.uk/subType": "http://moodle.xapi.jisc.ac.uk/page"
 	 }
     }
 }
