@@ -437,10 +437,11 @@ Common entity identifier: ResultA
 This result pattern describes the completion of a learning activity and is optional.
 
 <table>
-	<tr><th>Property [cardinality]</th><th>Description</th></tr>
+	<tr><th>Property [cardinality]</th><th>Description</th><th>Data type</th></tr>
 	<tr>
-		<td>result.completion [0..1]</td>
-		<td>"true". Indicates that the Activity was completed</td>
+		<td>result.completion [1]</td>
+		<td>When set to "true", result.completion indicates that the learner attended the event. "false" indicates that the learner did not attend the event.</td>
+		<td>Boolean</td>
 	</tr>
 </table>
 
@@ -457,6 +458,11 @@ This result pattern describes completion and is usually optional. It can include
 
 <table>
 	<tr><th>Property [cardinality]</th><th>Description</th><th>Data type</th></tr>
+	<tr>
+		<td>result.completion [1]</td>
+		<td>When set to "true", result.completion indicates that the learner attended the event. "false"indicates that the learner did not attend the event.</td>
+		<td>Boolean</td>
+	</tr>
 	<tr>
 		<td>result.score.scaled [0..1]</td>
 		<td>The score related to the experience as modified by scaling and/or normalization</td>
@@ -498,17 +504,21 @@ This result pattern describes completion and is usually optional. It can include
 
 ```
 "result": {
-        "score": {
-            "scaled": 0.25,
-            "raw": 25,
-            "min": 0,
-            "max": 100
-        },
+
+	"completion":true,
+	 
+    "score": {
+    "scaled": 0.25,
+        "raw": 25,
+        "min": 0,
+        "max": 100
+     },
 		
-        "success": false,
-        "completion": true,
-        "response": "The cow jumped over the moon."
-         }
+    "success": false,
+    "completion": true,
+    response": "The cow jumped over the moon."
+	
+    }
 
 ````
 
