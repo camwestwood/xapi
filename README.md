@@ -61,13 +61,6 @@ These are platform independent statements related to Virtual Learning Enviroment
 <tr><td> <a href = "recipes/studyapps/mobile-app.md">Mobile content viewed </a></td><td><a href = "recipes/studyapps/mobile-app.md#example">Mobile_app content viewed </a></td> </tr>    
 </table>
 
-## Tracking App
-These will be split into seperate recipe statement templates
-<table>
-<tr><td>Statement Template </td><td>JSON Example</td></tr>
-<tr><td> <a href = "recipes/studyapps/tracker-app.md">Draft tracker activites</a></td><td><a href = "recipes/studyapps/mobile-app.md#example">Draft tracker activites</a></td> </tr>    
-</table>
-
 ## Predictive Model Output
 * [Alerting JSON](/lap/apereo/model_output.js)
 * [Alerting](/lap/apereo/model_output.md)
