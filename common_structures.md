@@ -524,16 +524,24 @@ Common entity identifier: ResultC
 This pattern describes the result and if the actor was on time to the event, if they were late and what category a late
 
 <table>
-	<tr><th>Property [cardinality]</th><th>Description</th></tr>
-	<tr><td>result.completion [1]</td><td>When set to "true", result.completion indicates that the learner attended the event. "false"indicates that the learner did not attend the event.</td>
+	<tr><th>Property [cardinality]</th><th>Description</th><th>Data type</th></tr>
+	<tr>
+		<td>result.completion [1]</td>
+		<td>When set to "true", result.completion indicates that the learner attended the event. "false"indicates that the learner did not attend the event.</td></td>
 	</tr>
-	<tr><td>result.extension.http://xapi.jisc.ac.uk/attendance_late [0..1] <br/>
-		    result.extension.http://xapi.jisc.ac.uk/attendance_category [0..1]
-		</td>
-		<td> <b>http://xapi.jisc.ac.uk/attendance_late</b> indicates whether the person was late.<br/> <b>http://xapi.jisc.ac.uk/attendance_category</b> indicates category for non-attendance or lateness.
-</td>
+	<tr>
+		<td>result.extension.http://xapi.jisc.ac.uk/attendance_late [0..1]</td>
+		<td>When set to 1, indicates the person was late</td>
+<td>Integer 0/1. 1 for late</td>
 	</tr>
+	<tr>
+		<td>result.extension.http://xapi.jisc.ac.uk/attendance_category [0..1]</td>
+		<td>Indicates any given category for non-attendance or lateness. </td>
+		<td>String</td>
+	</tr>		
 </table>
+
+
 
 ### Example
 
@@ -542,7 +550,7 @@ This pattern describes the result and if the actor was on time to the event, if 
         "completion":true,
 		
 		 "extensions":{
-		  "http://xapi.jisc.ac.uk/attendance_late":"1",
+		  "http://xapi.jisc.ac.uk/attendance_late": 1,
 		  "http://xapi.jisc.ac.uk/attendance_category":"1",
 		 }
     }
