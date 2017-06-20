@@ -10,20 +10,32 @@ This entity is required across all recipes in the Jisc profile.
 The actor entity describes the individual that is the subject of the statement.
 
 <table>
-<tr><th>Property</th><th>Description</th></tr>
+<tr><th>Property [cardinality]</th><th>Description</th><th>Value information</th></tr>
 <tr>
-<td>actor.objectType [1]</td><td>Must have the value "Agent". Actors of type "Group" are not supported in the Jisc profile.</td>
+	<td>actor.objectType [1]</td>
+	<td>Must have the value "Agent". Actors of type "Group" are not supported in the Jisc profile.</td>
+	<td>Must have the value "Agent"</td>
 </tr>
 <tr>
-<td>actor.name [0..1]</td><td>Full name of user.</td>
+	<td>actor.name [0..1]</td>
+	<td>Full name of user.</td>
+	<td>string</td>
 </tr>
 <tr>
-<td>	
-actor.account [1] <br/>
-actor.account.name [1] <br/>
-actor.account.homepage [1] <br/>
-</td>
-<td>A JSON Object with <b>account.name</b> giving the login id for the subject of the statement and <b>account.homepage</b> giving the URL of the home page of the application for which the login id applies.</td></tr>
+	<td>actor.account [1]</td> 
+	<td>Account details of agent[1]</td> 
+	<td>JSON Object</td> 
+</tr>	
+<tr>
+	<td>actor.account.name [1]</td> 
+	<td>Login id for the subject</td> 
+	<td>string</td> 
+</tr>
+<tr>
+	<td>actor.account.homepage [1]</td> 
+	<td>URL of the home page of the application for which the login id applies.</td> 
+	<td>url</td> 
+</tr>
 </table>
 
 ### Example
@@ -46,14 +58,17 @@ This entity is required across all recipes in the Jisc profile.
 The Verb structure indicates the action which the statement expresses. The verbs used in the Jisc profile are listed on the [vocabularies](vocabulary.md#verb) page.
 
 <table>
-	<tr><th>Property</th><th>Description</th></tr>
+	<tr><th>Property [cardinality]</th><th>Description</th><th>Value information</</th></tr>
+<tr>
 	<tr>
 		<td>verb.id [1]</td>
 		<td>An IRI that identifies the Verb. Valid IRIs depend on the recipe and are given on the relevant recipe page.</td>
+		<td>IRI</td>
 	</tr>
 	<tr>
 		<td>verb.display [1]</td>
-		<td>A human readable representation of Verb. It takes a RFC 5646 Language Tag. </td>
+		<td>A human readable representation of Verb, takes a RFC 5646 Language Tag. </td>
+		<td>string </td>
 	</tr>
 </table>
 
@@ -74,22 +89,33 @@ Depending on the recipe, different patterns describe the circumstances that form
 ### ContextA
 Common entity identifier: ContextA
 
-This pattern is used across many recipes in the Jisc profile, but there may be additional data elements required for some recipes.
+This pattern is used across many recipes in the Jisc profile, but there may be additional data elements required for some recipes. Three extensions are provided for, with IRIs as defined on the <a href="vocabulary.md#extensions">vocabularies page</a>.
 
 <table>
-<tr><th>Property</th><th>Description</th></tr>
-	<tr><td>context.platform [1]</td>
-	<td>The platform used in the experience of this learning activity. The value used should not change between platform upgrades and version changes and should typically be a concise name by which the application is commonly known, for example "Moodle" or "Blackboard"</td></tr>
-	<tr><td>context.extensions.version [0..1]</td>
-		 context.extension.sessionId [0..1]</td>
-		 context.extension.ip-address [1]</td>
-		 context.extension.courseArea [0..1]</td>
-		 </td>
-		<td>Three extensions are provided for, with IRIs as defined on the <a href="vocabulary.md#extensions">vocabularies page</a>.
-  	  The <b>sessionID</b> extension is the VLE session ID, or a suitably hashed version of it. A value should be provided if this information is available.<br/>
-    The <b>ip-address</b> is used to identify the client's IP address. An IPv4 address is recommended.<br/>
-    The <b>version</b> extension is recommended, and identifies the version of the Jisc xAPI profile found on the ReadMe page. <br/>
-	The <b>courseArea</b> identifies Umbrella course/parent area by its home page URI and / or its identifier. More information can be found on the <a href="vocabulary.md#course-area">vocabularies page</a>.
+	<tr><th>Property [cardinality]</th><th>Description</th><th>Value information</</th></tr>
+	<tr>
+		<td>context.platform [1]</td>
+		<td>The platform used in the experience of this learning activity. The value used should not change between platform upgrades and version changes and should typically be a concise name by which the application is commonly known, for example "Moodle" or "Blackboard"</td></tr>
+		<td>string</td>
+	<tr>
+		<td>context.extensions.version [0..1]</td>
+		<td>Recommended, identifies the version of the Jisc xAPI profile found on the ReadMe page. <br/></td>
+		<td>decimel</td>
+	</tr>
+	<tr>
+		<td>context.extension.sessionId [0..1]</td>
+		<td>The VLE session ID, or a suitably hashed version of it. A value should be provided if this information is available.</td>
+		<td>string</td>
+	<tr> 
+		<td>context.extension.ip-address [1]</td>
+		<td>client's IP address. An IPv4 address is recommended.</td>
+		<td>ip address</td>
+	<tr> 
+		<td>context.extension.courseArea [0..1]</td>
+		<td>Umbrella course/parent area by its home page URI and / or its identifier. More information can be found on the <a href="vocabulary.md#course-area">vocabularies page</a>..</td>
+		<td>JSON object</td>
+	<tr> 
+
 	</table>
 
 #### Example:
