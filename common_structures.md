@@ -115,7 +115,6 @@ This pattern is used across many recipes in the Jisc profile, but there may be a
 		<td>Umbrella course/parent area by its home page URI and / or its identifier. More information can be found on the <a href="vocabulary.md#course-area">vocabularies page</a>..</td>
 		<td>JSON object</td>
 	<tr> 
-
 	</table>
 
 #### Example:
