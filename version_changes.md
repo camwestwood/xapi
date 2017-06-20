@@ -12,6 +12,7 @@
 
 2-05-2016, Documentation change [subType supersedes ApplicationType](https://github.com/jiscdev/xapi/issues/55) in objectA
 
+
 ### Logged out
 
 10-05-2017, Spec Change. recipeVersion depricated, replaced with version
@@ -38,8 +39,9 @@
 2-05-2016, Documentation change [subType supersedes ApplicationType](https://github.com/jiscdev/xapi/issues/55)
 
 
-
 ### Session timeout
+
+20-06-2017, Spec Change. [depricated](https://github.com/jiscdev/xapi/issues/170)
 
 10-05-2017, Spec Change. recipeVersion depricated, replaced with version
 
@@ -51,6 +53,8 @@
 
 
 #### Assignment Graded
+
+20-06-2017, Spec Change. [Context.ContextActivities removed. Template uses contextA instead of A](https://github.com/jiscdev/xapi/issues/168)
 
 25-05-2017, Spec Change. [UDD Mod ID added to coursearea](https://github.com/jiscdev/xapi/issues/165)
 
@@ -67,6 +71,8 @@
 
 #### Assignment Submitted
 
+20-06-2017, Spec Change. [Context.ContextActivities removed. Template uses contextA instead of A](https://github.com/jiscdev/xapi/issues/168)
+
 25-05-2017, Spec Change. [UDD Mod ID added to coursearea](https://github.com/jiscdev/xapi/issues/165)
 
 10-05-2017, Spec Change. recipeVersion depricated, replaced with version
@@ -81,6 +87,8 @@
 
 
 ### Attendance Recipes
+
+
 
 #### Attended learning activity
 

@@ -86,31 +86,12 @@ The object defines the activity that has been evaluated. [Examples of valid obje
 
 
 ### Context
-Common entity context: ContextB, as defined on the [common structures](/common_structures.md#contextb) page.
-
-The context.contextActivities is property with a ‘grouping’ that allows statements to be associated to the activity described in the object entities as part of a larger whole. Different activity types can be found on the vocabulary page.
+Common entity context: ContextA, as defined on the [common structures](/common_structures.md#contexta) page.
 
 ### Example
 
 ``` javascript
 "context": {
-	"contextActivities":{
-            "grouping":[
-                {
-                    "objectType":"Activity",
-                    "id":"http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=4",
-                    "definition":{
-                        "type":"http://xapi.jisc.ac.uk/courseArea",
-                        "name":{
-                            "en":"xAPI Basics"
-                        },
-                    "extensions": {
-     		   	 "http://xapi.jisc.ac.uk/subType": "http://id.tincanapi.com/activitytype/lms"
-			}
-                    }
-                }
-            ]
-        },
 		
 	"instructor": {
             "objectType": "Agent",
@@ -120,16 +101,18 @@ The context.contextActivities is property with a ‘grouping’ that allows stat
                 "homePage": "http://localhost/moodle"
             },
         
-        "platform": "Moodle"
-        "extensions":  {
-      		"http://xapi.jisc.ac.uk/courseArea": {
-				"http://xapi.jisc.ac.uk/vle_mod_id": "LA101",
-				"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0",
-				"id":"http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=4"
-              		},
-			"http://xapi.jisc.ac.uk/sessionId": "32456891" ,
-        	"http://id.tincanapi.com/extension/ip-address": "10.3.3.48"
-			"http://xapi.jisc.ac.uk/version" : "1.0"
+    "platform": "Moodle"
+	
+    "extensions":  {
+      	"http://xapi.jisc.ac.uk/courseArea": {
+			"http://xapi.jisc.ac.uk/vle_mod_id": "LA101",
+			"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0",
+			"id":"http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=4"
+              	},
+				
+		"http://xapi.jisc.ac.uk/sessionId": "32456891" ,
+		"http://id.tincanapi.com/extension/ip-address": "10.3.3.48"
+		"http://xapi.jisc.ac.uk/version" : "1.0"
         }
 ```
 

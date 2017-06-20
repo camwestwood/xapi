@@ -75,34 +75,13 @@ Example:
 
 
 ### Context
-Common entity identifier: ContextB, as defined on the [common structures](/common_structures.md#contextb) page.
-
-The context.contextActivities is property with a ‘grouping’ that allows statements to be associated to the activity described in the object entities as part of a larger whole. Different activity types can be found on the vocabulary page.
-
-The contextActivities.grouping property has an [ObjectA](/common_structures.md#objectb) as its value.
+Common entity identifier: ContextA, as defined on the [common structures](/common_structures.md#contexta) page.
 
 Example:
 
 ``` javascript
 "context": {
-	"contextActivities":{
-            "grouping":[
-                {
-                    "objectType":"Activity",
-                    "id":"http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=4",
-                    "definition":{
-                        "type": "http://xapi.jisc.ac.uk/define/vle/course"
-                        "name":{
-                            "en":"xAPI Basics"
-                       },
-                    "extensions": {
-     		   	 "http://xapi.jisc.ac.uk/subType": "http://id.tincanapi.com/activitytype/lms"
-			}
-                    }
-                }
-            ]
-        },
-        
+	        
         "platform": "Moodle",
         "extensions": {
 		

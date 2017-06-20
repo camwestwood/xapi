@@ -111,7 +111,7 @@ This pattern is used across many recipes in the Jisc profile, but there may be a
         }
 ``` 
 ### ContextB
-Common entity identifier: ContextB
+Common entity identifier: ContextB (Deprecated)
 
 ContextB pattern is similar to ContextA, but with the addition of a contextActivities property with a ‘grouping’ property. This allows statements to be associated to the activity described in the object entities as part of a larger whole.
 
