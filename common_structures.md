@@ -89,7 +89,7 @@ Depending on the recipe, different patterns describe the circumstances that form
 ### ContextA
 Common entity identifier: ContextA
 
-This pattern is used across many recipes in the Jisc profile, but there may be additional data elements required for some recipes. Three extensions are provided for, with IRIs as defined on the <a href="vocabulary.md#extensions">vocabularies page</a>.
+This pattern is used across many recipes in the Jisc profile, but there may be additional data elements required for some recipes. Four extensions are provided for, with IRIs as defined on the <a href="vocabulary.md#extensions">vocabularies page</a>.
 
 <table>
 	<tr><th>Property [cardinality]</th><th>Description</th><th>Value information</</th></tr>
@@ -115,7 +115,6 @@ This pattern is used across many recipes in the Jisc profile, but there may be a
 		<td>Umbrella course/parent area by its home page URI and / or its identifier. More information can be found on the <a href="vocabulary.md#course-area">vocabularies page</a>..</td>
 		<td>JSON object</td>
 	<tr> 
-
 	</table>
 
 #### Example:
@@ -142,30 +141,34 @@ Common entity identifier: ContextB (Deprecated)
 ContextB pattern is similar to ContextA, but with the addition of a contextActivities property with a ‘grouping’ property. This allows statements to be associated to the activity described in the object entities as part of a larger whole.
 
 <table>
-	<tr><th>Property</th><th>Description</th></tr>
+	<tr><th>Property [cardinality]</th><th>Description</th><th>Value information</</th></tr>
 	<tr>
-		<td>context.contextActivities [0..1]<br />
-		context.contextActivities.grouping [1]
-		</td>
-		<td>An optional property that holds a mandatory ‘grouping’ property. It allows statements to be associated with the object entity's activity as part of a larger whole. The example shows a course within the VLE. The 'grouping' property has an <a href="#objecta">ObjectA</a> as its value.</td>
+		<td>context.contextActivities [0..1]</td>
+		<td>An optional property that holds a mandatory ‘grouping’ property. It allows statements to be associated with the object entity's activity as part of a larger whole. The example shows a course within the VLE. 
+		<td>The 'grouping' property has an <a href="#objecta">ObjectA</a> as its value.</td>
 	</tr>
 	<tr>
 		<td>context.platform [1]</td>
-		<td>The platform used in the experience of this learning activity. This is required. The value used should not change between platform upgrades and version changes and should typically be a concise name by which the application is commonly known, for example "Moodle" or "Blackboard"</td>
+		<td>The platform used in the experience of this learning activity. The value used should not change between platform upgrades and version changes and should typically be a concise name by which the application is commonly known, for example "Moodle" or "Blackboard"</td></tr>
+		<td>string</td>
+	<tr>
+		<td>context.extensions.version [0..1]</td>
+		<td>Recommended, identifies the version of the Jisc xAPI profile found on the ReadMe page. <br/></td>
+		<td>decimel</td>
 	</tr>
 	<tr>
-		<td> context.extensions.courseArea [0..1]<br />
-			context.extensions.sessionId [0..1]<br />
-			context.extensions.ip-address [1]<br />
-			context.extensions.version [0..1]
-</td>
-	    <td>Four extensions are provided for, with IRIs as defined on the <a href="vocabulary.md#extensions">vocabularies page</a>.<br/>
-    The <b>sessionID</b> extension is the VLE session ID, or a suitably hashed version of it. A value should be provided if it is available.<br/>
-    The <b>ip-address</b> is used to identify the client's IP address. An IPv4 address is recommended.<br/>
-    The <b>version</b> extension is recommended, and identifies the version of the Jisc xAPI profile found on the ReadMe page.
-	<br/>
-    The <b>courseArea</b> extension is recommended, and identifies umbrella course/parent area by its home page URI. More information can be found on the <a href="vocabulary.md#course-area">vocabularies page</a>.</td>
-		</tr>
+		<td>context.extension.sessionId [0..1]</td>
+		<td>The VLE session ID, or a suitably hashed version of it. A value should be provided if this information is available.</td>
+		<td>string</td>
+	<tr> 
+		<td>context.extension.ip-address [1]</td>
+		<td>client's IP address. An IPv4 address is recommended.</td>
+		<td>ip address</td>
+	<tr> 
+		<td>context.extension.courseArea [0..1]</td>
+		<td>Umbrella course/parent area by its home page URI and / or its identifier. More information can be found on the <a href="vocabulary.md#course-area">vocabularies page</a>..</td>
+		<td>JSON object</td>
+	<tr> 
 </table>
 
 #### Example:
@@ -206,64 +209,45 @@ ContextB pattern is similar to ContextA, but with the addition of a contextActiv
 ```
 
 ### ContextC
-Common entity identifier: ContextC
-
-ContextC pattern is similar to ContextB, but is designed to be used with systems that are not directly controlled by the learner. 
 
 <table>
-	<tr><th>Property</th><th>Description</th></tr>
-	<tr>
-		<td>context.contextActivities [0..1]<br />
-		context.contextActivities.grouping [1]
-		</td>
-		<td>An optional property that holds a mandatory ‘grouping’ property. It allows statements to be associated with the object entity's activity as part of a larger whole. The example shows a course within the VLE. The 'grouping' property has an <a href="#objecta">ObjectA</a> as its value.</td>
-	</tr>
-	<tr>
-		<td>context.platform [1]</td>
-		<td>The platform used to record something about the learning activity. The value used should not change between platform upgrades and version changes and should typically be a concise name by which the application is commonly known, for example "Sentry"</td>
-	</tr>
-	<tr>
-		<td> context.extensions.courseArea [0..1]<br />
-		context.extensions.version [1]<br />
-		context.extension.sessionId [0..1]<br />
-		context.extension.ip-address [1] <br />
-</td>
-		<td>Four extensions are provided for, with IRIs as defined on the <a href="vocabulary.md#41-context-extensions">vocabularies page</a>.<br/>
-    The <b>sessionID</b> extension is the VLE session ID, or a suitably hashed version of it. A value should be provided if it is available.<br/>
-    The <b>ip-address</b> is used to identify the client's IP address. An IPv4 address is recommended.<br/>
-    The <b>version</b> extension is recommended, and identifies the version of the Jisc xAPI profile found on the ReadMe page.
-	<br/>
-    The <b>courseArea</b> extension is recommended, and identifies umbrella course/parent area by its home page URI. More information can be found on the <a href="vocabulary.md#course-area">vocabularies page</a>.</td>
-		</tr>
-</table>
-
-### ContextD
-
-<table>
-<tr><th>Property</th><th>Description</th></tr>
+<tr><th>Property [cardinality]</th><th>Description</th><th>Value information</</th></tr>
 <tr>
-<td>context.instructor [0..1]<br/>
-context.instructor.objectType [1]<br/>
-context.instructor.account.homepage [1] <br/>
-context.instructor.account.name [1] <br/>
-</td>
-<td>
-A JSON Object. object.instructor.objectType has "Agent" as a value. account.name gives the login id for the instructor. <br/>
-and context.account.homepage gives the URL of the home page of the application for which the login id applies.
-</td></tr><tr>
-<td>
-context.extensions.version [0.1]
-context.extensions.https://xapi.jisc.ac.uk/devicelocation [0.1]
-context.extensions.https://xapi.jisc.ac.uk/courseArea [0.1]
-</td>
-<td>
-The <b>version</b> extension is recommended, and identifies the version of the Jisc xAPI profile found on the ReadMe page.<br/>
-devicelocation is an optional geojson object with  geolocation details of the device used to attend the event.<br/>	The <b>courseArea</b> identifies Umbrella course/parent area by its home page URI and / or its identifier. More information can be found on the <a href="vocabulary.md#course-area">vocabularies page</a>.
-
-</td>
+	<td>context.instructor [0..1]</td>
+	<td></td>
+	<td>JSON Object</td>
+</tr>
+<tr>
+	<td>context.instructor.objectType [1]</td>
+	<td>Must be "Agent</td>
+	<td>String, Must be "Agent"</td>
+</tr>
+<tr>
+	<td>context.instructor.account.homepage [1] </td>
+	<td>URL of the home page of the application for which the login id applies.</td>
+	<td>url</td>
+</tr>
+<tr>
+	<td>context.instructor.account.name [1] </td>
+	<td>account.name gives the login id for the instructor.</td>
+	<td>string</td>
+</tr>
+<tr>
+	<td>context.extensions.version [0.1]</td>
+	<td>Recommended,  identifies the version of the Jisc xAPI profile found on the ReadMe page.</td>
+	<td>string</td>
+</tr>
+<tr>
+	<td>context.extensions.https://xapi.jisc.ac.uk/devicelocation [0.1]</td>
+	<td>Devicelocation is an optional geojson object with  geolocation details of the device used to attend the event.</td>
+	<td>JSON object following the geojson spec</td>
+</tr>
+<tr>
+	<td><a href="vocabulary.md#course-area">context.extensions.https://xapi.jisc.ac.uk/courseArea</a> [0.1]</td>
+	<td>Umbrella course/parent area by its home page URI and / or its identifier.</td>
+	<td>JSON object</td>
 </tr>
 </table>
-
 
 ## Object
 Depending on the recipe, different patterns apply to express the object of a statement.
@@ -274,25 +258,32 @@ Common entity identifier: ObjectA
 This object pattern describes the core attributes of Object as used in the Jisc profile.
 
 <table>
-	<tr><th>Property</th><th>Description</th></tr>
+	<tr><th>Property [cardinality]</th><th>Description</th><th>Value information</</th></tr>
 	<tr>
 		<td>object.objectType [1]</td>
 		<td>The value must be "Activity".</td>
+		<td>String, value must be "Activity".</td>
 	</tr>
 	<tr>
 		<td>object.id [1]</td>
 		<td>An identifier for the object of the xAPI statement. This must be unique (within a given platform) across all object types.</td>
+		<td>iri</td>
 	</tr>
-		<tr>
-		<td>object.definition.type [1]<br />
-	object.definition.name [0..1]<br />
-	object.definition.extensions.http://xapi.jisc.ac.uk/subType [0..1]<br />
-		<td>A JSON object comprising both standard xAPI attributes and the Jisc profile 'subType' and 'uddModInstanceID' extensions.<br/>
-    The <b>type</b> indicates the type of the object of the statement. It is required and valid values are listed on the <a href="vocabulary.md#31-activity-types">vocabulary page</a>.<br/>
-    The <b>name</b> is optional.<br/>
-    The <b>subType</b> extension may be used to indicate the sub-type of this activity, if applicable for the recipe being used to create the statement. This qualifies the object.objectType, and is described on the [vocabularies](vocabulary.md#32-object-definition-extensions) page.<br />
-
-	
+	<tr>
+		<td>object.definition.type [1]</td>
+		<td>Indicates the type of the object of the statement. It is required and valid values are listed on the <a href="vocabulary.md#31-activity-types">vocabulary page</a></td>
+		<td>iri</td>
+	</tr>
+	<tr>
+		<td>object.definition.name [0..1]</td>
+		<td>Optional object name</td>
+		<td>string</td>
+	</tr>
+	<tr>
+		<td>object.definition.extensions.http://xapi.jisc.ac.uk/subType [0..1]</td>
+		<td>May be used to indicate the sub-type of this activity, if applicable for the recipe being used to create the statement. This qualifies the object.objectType, and is described on the [vocabularies](vocabulary.md#32-object-definition-extensions) page.</td>
+		<td>iri</td>
+	</tr>
 </table>
 
 #### Example:
@@ -317,29 +308,35 @@ Common entity identifier: ObjectB
 
 This object pattern describes an activity that has been completed. Examples of valid object.definition vocabulary Activity object Types are listed on the [vocabularies](vocabulary.md) page.
 
-
 <table>
-	<tr><th>Property [cardinality]</th><th>Description</th></tr>
+	<tr><th>Property [cardinality]</th><th>Description</th><th>Value information</</th></tr>
 	<tr>
 		<td>object.objectType [1]</td>
 		<td>The value must be "Activity".</td>
+		<td>String, value must be "Activity".</td>
 	</tr>
 	<tr>
 		<td>object.id [1]</td>
-		<td>An identifier for a single unique Activity</td>
+		<td>An identifier for the object of the xAPI statement. This must be unique (within a given platform) across all object types.</td>
+		<td>iri</td>
 	</tr>
 	<tr>
-			<td>object.definition<br/>
-			object.definition.type [1]<br />
-			object.definition.name [0..1]<br />
-			object.definition.extensions.http://xapi.jisc.ac.uk/dueDate [0..1]
-</td>
-		<td>The <b>object.definition.type</b> indicates the type of the object of the statement. Valid values are listed on the <a href="vocabulary.md#31-activity-types">vocabulary page</a>.<br />
-		The <b>object.definition.name</b> holds a human readable name of the object type.<br/>
- <b>"http://xapi.jisc.ac.uk/dueDate"</b> is a ISO 8601 date time that indicates when an assignment is due</td>
-		</td>
+		<td>object.definition.type [1]</td>
+		<td>Indicates the type of the object of the statement. It is required and valid values are listed on the <a href="vocabulary.md#31-activity-types">vocabulary page</a></td>
+		<td>iri</td>
+	</tr>
+	<tr>
+		<td>object.definition.name [0..1]</td>
+		<td>Optional object name</td>
+		<td>string</td>
+	</tr>
+	<tr>
+		<td>object.definition.extensions.http://xapi.jisc.ac.uk/dueDate [0..1]</td>
+		<td>Indicates when an assignment is due</td>
+		<td>ISO 8601 date time</td>
 	</tr>
 </table>
+
 
 #### Example:
 ``` javascript
@@ -368,6 +365,8 @@ This object pattern describes an activity that has been completed. Examples of v
 Common entity identifier: ObjectC
 
 The object pattern defines an activity that has been completed. [Examples of valid object.definition Activity object Types can be found in the vocabulary](../vocabulary.md#30-object).
+
+
 
 <table>
 	<tr><th>Property [cardinality]</th><th>Description</th></tr>
@@ -422,36 +421,63 @@ Example:
 The object pattern defines an event that has been attended.
 
 <table>
-	<tr><th>Property [cardinality]</th><th>Description</th></tr>
+	<tr><th>Property [cardinality]</th><th>Description</th><th>Data type</th></tr>
 	<tr>
 		<td>object.objectType [1]</td>
 		<td>The value must be "Activity".</td>
+		<td>String, value must be "Activity".</td>
 	</tr>
 	<tr>
 		<td>object.id [1]</td>
-		<td>An identifier for a single unique learning event.</td>
+		<td>An identifier for the object of the xAPI statement. This must be unique (within a given platform) across all object types.</td>
+		<td>iri</td>
 	</tr>
 	<tr>
-	   <td>object.definition [1]<br>
-	       object.definition.type [1]<br/>
-	       object.definition.name [0.1]<br/>
-	       object.definition.description [0.1]<br/>
-	       object.definition.extensions.http://xapi.jisc.ac.uk/subType [0.1]<br/>
-	       object.definition.extensions.http://xapi.jisc.ac.uk/event_type_id [0.1]<br/>
-	       object.definition.extensions.http://xapi.jisc.ac.uk/event_type_description [0.1]<br/>
-	       object.definition.extensions.http://xapi.jisc.ac.uk/event_max_count [0.1]<br/>
-	       object.definition.extensions.http://xapi.jisc.ac.uk/event_mandatory [0.1]<br/>
-	       object.definition.extensions.http://xapi.jisc.ac.uk/starttime [0.1]<br/>
-	       object.definition.extensions.http://xapi.jisc.ac.uk/endtime [0.1]<br/>
-	   </td>
-	   <td>The <b>type</b> indicates the type of the object of the statement. It is required and must contain the value "http://xapi.jisc.ac.uk/event_timetabled" (see <a href="vocabulary.md#31-activity-types">vocabulary</a> page).<br/>
-	   The <b>name</b> holds the name of the event.<br/>
-	   The <b>description</b> describes the learning activity.<br/>
-	   The <b>subType</b> may be used to qualify what kind of timetabled event occurred using an IRI given on the <a href="vocabulary.md#31-activity-types">vocabulary</a> page. Permitted values are: "http://xapi.jisc.ac.uk/lecture" or "	http://id.tincanapi.com/activitytype/tutor-session".<br/>
-	   The <a href ="/vocabulary.md#event-type-id">event_type_id</a> requires an identifier for the type of even<br/> <a href="/vocabulary.md#event-type-description">event_type_description</a> is a description of the event type<br/><a href="/vocabulary.md#event-max-count">event_max_count</a><br/> is the maximum number of people that could have attended the event. <a href="/vocabulary.md#event-mandatory">event_mandatory</a>  states if the event was optional or not <br/> <b>object.extensions.http://xapi.jisc.ac.uk/starttime</b> is the planned start time. Uses datetimes for planned end of event. <br/><b>object.extensions.http://xapi.jisc.ac.uk/endtime</b> The planned end time of event. Uses datetimes for planned end time of event.  <br/>
-	    </td>  
-		
+		<td>object.definition.type [1]</td>
+		<td>Indicates the type of the object of the statement. It is required and valid values are listed on the <a href="vocabulary.md#31-activity-types">vocabulary page</a></td>
+		<td>iri</td>
 	</tr>
+	<tr>
+		<td>object.definition.name [0..1]</td>
+		<td>Optional object name</td>
+		<td>string</td>
+	</tr> 
+	<tr>
+	   <td>object.definition.extensions.http://xapi.jisc.ac.uk/subType [0.1]</td>
+	   <td>May be used to qualify what kind of timetabled event occurred using an IRI given on the
+	   <a href="vocabulary.md#31-activity-types">vocabulary</a> page. Permitted values are: "http://xapi.jisc.ac.uk/lecture" or "http://id.tincanapi.com/activitytype/tutor-session".</td>
+	   <td>iri</td>
+	</tr> 
+	<tr>
+	   <td><a href ="/vocabulary.md#event-type-id">object.definition.extensions.http://xapi.jisc.ac.uk/event_type_id </a>[0.1]</td>
+	   <td>Requires an identifier for the type of event</td>
+	   <td></td>
+	</tr> 
+	<tr>
+	   <td><a href="/vocabulary.md#event-type-description">object.definition.extensions.http://xapi.jisc.ac.uk/event_type_description</a> [0.1]</td>
+	   <td>description of the event type</td>
+	   <td></td>
+	</tr> 
+	<tr>
+	   <td><a href="/vocabulary.md#event-max-count">object.definition.extensions.http://xapi.jisc.ac.uk/event_max_count </a>[0.1]</td>
+	   <td>The maximum number of people that could have attended the event. </td>
+	   <td></td>
+	</tr> 
+	<tr>
+	   <td><a href="/vocabulary.md#event-mandatory">object.definition.extensions.http://xapi.jisc.ac.uk/event_mandatory</a>[0.1]</td>
+	   <td>States if the event was optional or not</td>
+	   <td></td>
+	</tr>
+	<tr>
+	   <td>object.definition.extensions.http://xapi.jisc.ac.uk/starttime [0.1]</td>
+	   <td>Planned start time. Uses datetimes for planned end of event.</td>
+	   <td></td>
+	</tr>
+	<tr>
+	<td>object.definition.extensions.http://xapi.jisc.ac.uk/endtime [0.1]</td>
+	   <td>The planned end time of event. Uses datetimes for planned end time of event</td>
+	   <td></td>
+	</tr> 
  </table>
 
 ## Result

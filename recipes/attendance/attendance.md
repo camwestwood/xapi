@@ -93,7 +93,7 @@ The object defines a timetabled event that has been completed. Information on th
 ```
 
 ### Context
-Common entity identifier: Common entity identifier: [ContextD](/common_structures.md#contextd)
+Common entity identifier: Common entity identifier: [ContextC](/common_structures.md#contextc)
 
 
 #### Entity Example:
