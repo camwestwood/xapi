@@ -77,7 +77,7 @@ For this recipe the object needs to identify what was viewed. A list of valid va
 ``` javascript
 "object": {
 	"objectType": "Activity",
-	"id": "http://moodle.data.alpha.jisc.ac.uk/mod/page/view.php?id=9   	 	
+	"id": "http://moodle.data.alpha.jisc.ac.uk/mod/page/view.php?id=9" 	 	
 	"definition": {
 		"type": "http://xapi.jisc.ac.uk/vle/page",			
 		"name": { "en": "Sample page" },			   
