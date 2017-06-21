@@ -593,12 +593,12 @@ This pattern describes the result and if the actor was on time to the event, if 
 		<td>Boolean</td>
 	</tr>
 	<tr>
-		<td>result.extension.http://xapi.jisc.ac.uk/attendance_late [0..1]</td>
+		<td><a href="vocabulary.md#attendance-late">http://result.extension.http://xapi.jisc.ac.uk/attendance_late</a> [0..1]</td>
 		<td>When set to 1, indicates the person was late</td>
 <td>Integer 0/1. 1 for late</td>
 	</tr>
 	<tr>
-		<td>result.extension.http://xapi.jisc.ac.uk/attendance_category [0..1]</td>
+		<td><a href="vocabulary.md#attendance-category">result.extension.http://xapi.jisc.ac.uk/attendance_category [0..1]</a></td>
 		<td>Indicates any given category for non-attendance or lateness. </td>
 		<td>String</td>
 	</tr>		
