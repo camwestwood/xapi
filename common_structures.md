@@ -95,8 +95,9 @@ This pattern is used across many recipes in the Jisc profile, but there may be a
 	<tr><th>Property [cardinality]</th><th>Description</th><th>Value information</</th></tr>
 	<tr>
 		<td>context.platform [1]</td>
-		<td>The platform used in the experience of this learning activity. The value used should not change between platform upgrades and version changes and should typically be a concise name by which the application is commonly known, for example "Moodle" or "Blackboard"</td></tr>
+		<td>The platform used in the experience of this learning activity. The value used should not change between platform upgrades and version changes and should typically be a concise name by which the application is commonly known, for example "Moodle" or "Blackboard"</td>
 		<td>string</td>
+	</tr>	
 	<tr>
 		<td>context.extensions.version [0..1]</td>
 		<td>Recommended, identifies the version of the Jisc xAPI profile found on the ReadMe page. <br/></td>
@@ -149,8 +150,9 @@ ContextB pattern is similar to ContextA, but with the addition of a contextActiv
 	</tr>
 	<tr>
 		<td>context.platform [1]</td>
-		<td>The platform used in the experience of this learning activity. The value used should not change between platform upgrades and version changes and should typically be a concise name by which the application is commonly known, for example "Moodle" or "Blackboard"</td></tr>
+		<td>The platform used in the experience of this learning activity. The value used should not change between platform upgrades and version changes and should typically be a concise name by which the application is commonly known, for example "Moodle" or "Blackboard"</td>
 		<td>string</td>
+		</tr>
 	<tr>
 		<td>context.extensions.version [0..1]</td>
 		<td>Recommended, identifies the version of the Jisc xAPI profile found on the ReadMe page. <br/></td>
