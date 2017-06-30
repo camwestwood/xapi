@@ -80,14 +80,14 @@ The following [xAPI verbs](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-
 <tr><th align="left">Verb</th><td>Attended</td></tr>
 <tr><th align="left">Description</th><td>Indicates the actor was present at a virtual or physical event or activity.</td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://adlnet.gov/expapi/verbs/attended">http://adlnet.gov/expapi/verbs/attended</a> </td></tr>
-<tr><th align="left">Statement Example</th><td> <a href="/recipes/vle/attended.md#verb">Attended learning activity</a> </td></tr>
+<tr><th align="left">Statement Example</th><td> <a href="/recipes/attendance/attended.md#verb">Attended learning activity</a> </td></tr>
 </table>
 
 
 <a name="result"></a>
 ## 2.0 Result
 
-In the Jisc profile, the use of the [result entity](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#result) and any of its properties is optional. Such as in the [recipes/assignment-graded.md#verb](assignment graded recipe#result) Statement Example.
+In the Jisc profile, the use of the [result entity] (https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#result) and any of its properties is optional. Such as in the [recipes/assignment-graded.md#verb](assignment graded recipe#result) Statement Example.
 
 Example:
 
@@ -115,7 +115,7 @@ The following are extension properties in the result entity:
 <tr><th align="left">Label</th><td>Scored</td></tr>
 <tr><th align="left">Description</th><td>A non-numerical assessment result. Data type is string (256)</td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/grade">http://xapi.jisc.ac.uk/grade</a> </td></tr>
-<tr><th align="left">Statement Example</th><td> <a href="recipes/vle/assignment-graded.md#verb">Assignment Graded</a> </td></tr>
+<tr><th align="left">Statement Example</th><td> <a href="recipes/vle/assignment-graded.md#result">Assignment Graded</a> </td></tr>
 <tr><th align="left">Value Space</th><td>String</td></tr>
 <tr><th align="left">Sample Value</th><td>5 Stars</td></tr>
 </table>
@@ -126,7 +126,7 @@ The following are extension properties in the result entity:
 <tr><th align="left">Label</th><td>Attendance Late</td></tr>
 <tr><th align="left">Description</th><td>Indicates if agent had late attendance</td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/event_mandatory">http://xapi.jisc.ac.uk/attendance_late</a> </td></tr>
-<tr><th align="left">Example in Recipe</th><td> <a href="/recipes/attendance/attendance.md#object">attendance</a> </td></tr>
+<tr><th align="left">Example in Recipe</th><td> <a href="/recipes/attendance/attendance.md#result">attendance</a> </td></tr>
 <tr><th align="left">Data Type</th><td>Integer</td></tr>
 <tr><th align="left">Value Space</th><td>1 for late</td></tr>
 <tr><th align="left">Sample Value</th><td>1</td></tr>
@@ -137,8 +137,8 @@ The following are extension properties in the result entity:
 <table>
 <tr><th align="left">Label</th><td>Attendance Category</td></tr>
 <tr><th align="left">Description</th><td>Indicates the category of non-attendance</td></tr>
-<tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/attendance_categoryy">http://xapi.jisc.ac.uk/attendance_category</a> </td></tr>
-<tr><th align="left">Example in Recipe</th><td> <a href="/recipes/attendance/attendance.md#object">attendance</a> </td></tr>
+<tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/attendance_category">http://xapi.jisc.ac.uk/attendance_category</a> </td></tr>
+<tr><th align="left">Example in Recipe</th><td> <a href="/recipes/attendance/attendance.md#result">attendance</a> </td></tr>
 <tr><th align="left">Data Type</th><td>String</td></tr>
 <tr><th align="left">Value Space</th><td>defined by the source system</td></tr>
 <tr><th align="left">Sample Value</th><td>C</td></tr>
@@ -150,8 +150,8 @@ The following are extension properties in the result entity:
 
 <a name="activity-types"></a>
 ### 3.1 Activity Types
-The following are types of the [Activity Definition Object](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#activity-definition). Activity types may have use the [subtype extension]() to further indicate the sub-type of this activity.
-Some examples sub-types are included here, however, sub-types are not part of the spec. Therefore, list is not exhaustive and it is the responsibility of the plugin to define the sub-type. 
+The following are types of the [Activity Definition Object](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#activity-definition). Activity types may have use the [subtype extension](vocabulary.md#sub-type) to further indicate the sub-type of this activity.
+Some examples sub types are included here, however, sub types are not part of the spec. Therefore, list is not exhaustive and it is the responsibility of the plugin to define the sub-type. 
 Since the vendors do not own the IRI, these subtypes use a Jisc namespace - but not http:/xapi.jisc.ac.uk.
 
 Example:
@@ -521,7 +521,7 @@ For more information see Jisc profile [CourseArea properties](#4.0-coursearea-pr
 <tr><th align="left">Sample Value</th><td>1.0</td></tr>
 </table>
 
-### Xapi Profile Version 
+### xAPI Profile Version 
 
 <table>
 <tr><th align="left">Label</th><td>Jisc Profile Version</td></tr>
