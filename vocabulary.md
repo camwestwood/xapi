@@ -54,7 +54,7 @@ The following [xAPI verbs](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-
 ### Session timed out
 <table>
 <tr><th align="left">Verb</th><td>Session timed out</td></tr>
-<tr><th align="left">Description</th><td>IIndicates the activity provider has determined that the session was abnormally terminated either by an actor or due to a system failure. </td></tr>
+<tr><th align="left">Description</th><td>Indicates the activity provider has determined that the session was abnormally terminated either by an actor or due to a system failure. </td></tr>
 <tr><th align="left">IRI</th><td> <a href="https://w3id.org/xapi/adl/verbs/abandoned">https://w3id.org/xapi/adl/verbs/abandoned</a> </td></tr>
 <tr><th align="left">Statement Example</th><td> <a href="/recipes/vle/Session-timeout.md#verb">Session Timeout</a> </td></tr>
 </table>
