@@ -84,9 +84,10 @@ The object defines a timetabled event that has been completed. Information on th
 	    	"http://xapi.jisc.ac.uk/starttime": "2016-02-05T10:00:00.000Z",
           	"http://xapi.jisc.ac.uk/endtime": "2016-02-05T14:00:00.000Z",
             	"http://xapi.jisc.ac.uk/event_type_id": "1",
+		"http://xapi.jisc.ac.uk/event_timetabled": "1",
 	    	"http://xapi.jisc.ac.uk/event_type_description": "Lecture", 
             	"http://xapi.jisc.ac.uk/event_max_count": 32,
-            	"http://xapi.jisc.ac.uk/event_mandatory": 1,
+            	"http://xapi.jisc.ac.uk/event_mandatory": 1
        	 }
     },
 		
