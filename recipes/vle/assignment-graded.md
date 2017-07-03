@@ -46,18 +46,67 @@ Common entity identifier: ResultB, as defined on the [common structures](/common
 
 In the Jisc profile, the use of the result entity and any of its properties is optional. 
 
+<table>
+	<tr><th>Property [cardinality]</th><th>Description</th><th>Data type</th></tr>
+	<tr>
+		<td>result.score.scaled [0..1]</td>
+		<td>The score related to the experience as modified by scaling and/or normalization</td>
+<td>decimal number between -1 and 1, inclusive.</td>
+	</tr>
+	<tr>
+		<td>result.score.raw [0..1]</td>
+		<td>Unmodified score</td>
+<td>decimal number between min and max (if present, otherwise unrestricted), inclusive</td>
+	</tr>
+	<tr>
+		<td>result.score.min [0..1]</td>
+		<td>The lowest possible score</td>
+<td>decimal number less than max (if present)</td>
+	</tr>
+	<tr>
+		<td>result.score.max [0..1]</td>
+		<td>The highest possible score</td>
+		<td>decimal number greater than min (if present)</td>
+	</tr>
+	<tr>
+		<td>result.success [0..1]</td>
+		<td>Indicates whether or not the attempt was successful.</td>
+		<td>true or false</td>
+	</tr>
+	<tr>
+		<td>result.completion [0..1]</td>
+		<td>Indicates whether or not the Activity was completed.</td>
+		<td>true or false</td>
+	</tr
+	>	<tr>
+		<td>result.response [0..1]</td>
+		<td>Instructor's or automatic feedback</td>
+		<td>string (256)</td>
+	</tr>
+	<tr>
+		<td>result.extensions.http://xapi.jisc.ac.uk/grade [0..1]</td>
+		<td>Non-numerical assessment result</td>
+		<td>string (256)</td>
+	</tr>
+</table>
 
 ### Example:
-``` javascript
- "result":{
-        "score":{
-            "raw":8
-                }
-        "extensions": {
-        	"http://xapi.jisc.ac.uk/grade":"5 stars"
-        	}
-    },
+
 ```
+"result": {
+        "score": {
+            "scaled": 0.25,
+            "raw": 25,
+            "min": 0,
+            "max": 100
+        },
+		
+        "success": false,
+        "completion": true,
+        "response": "Your answer should have been: The cow jumped over the moon."
+         }
+
+````
 
 ### Object
 Common entity identifier: ObjectB, as defined on the [common structures](/common_structures.md#objectb) page.
