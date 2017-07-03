@@ -101,7 +101,7 @@ This pattern is used across many recipes in the Jisc profile, but there may be a
 	<tr>
 		<td>context.extensions.version [0..1]</td>
 		<td>Recommended, identifies the version of the Jisc xAPI profile found on the ReadMe page. <br/></td>
-		<td>decimel</td>
+		<td>decimal</td>
 	</tr>
 	<tr>
 		<td>context.extension.sessionId [0..1]</td>
@@ -156,7 +156,7 @@ ContextB pattern is similar to ContextA, but with the addition of a contextActiv
 	<tr>
 		<td>context.extensions.version [0..1]</td>
 		<td>Recommended, identifies the version of the Jisc xAPI profile found on the ReadMe page. <br/></td>
-		<td>decimel</td>
+		<td>decimal</td>
 	</tr>
 	<tr>
 		<td>context.extension.sessionId [0..1]</td>
@@ -221,7 +221,7 @@ ContextB pattern is similar to ContextA, but with the addition of a contextActiv
 </tr>
 <tr>
 	<td>context.instructor.objectType [1]</td>
-	<td>Must be "Agent</td>
+	<td>Must be "Agent"</td>
 	<td>String, Must be "Agent"</td>
 </tr>
 <tr>
@@ -235,17 +235,17 @@ ContextB pattern is similar to ContextA, but with the addition of a contextActiv
 	<td>string</td>
 </tr>
 <tr>
-	<td>context.extensions.version [0.1]</td>
+	<td>context.extensions.version [0..1]</td>
 	<td>Recommended,  identifies the version of the Jisc xAPI profile found on the ReadMe page.</td>
 	<td>string</td>
 </tr>
 <tr>
-	<td>context.extensions.https://xapi.jisc.ac.uk/devicelocation [0.1]</td>
+	<td>context.extensions.https://xapi.jisc.ac.uk/devicelocation [0..1]</td>
 	<td>Devicelocation is an optional geojson object with  geolocation details of the device used to attend the event.</td>
 	<td>JSON object following the geojson spec</td>
 </tr>
 <tr>
-	<td><a href="vocabulary.md#course-area">context.extensions.https://xapi.jisc.ac.uk/courseArea</a> [0.1]</td>
+	<td><a href="vocabulary.md#course-area">context.extensions.https://xapi.jisc.ac.uk/courseArea</a> [0..1]</td>
 	<td>Umbrella course/parent area by its home page URI and / or its identifier.</td>
 	<td>JSON object</td>
 </tr>
@@ -273,7 +273,7 @@ This object pattern describes the core attributes of Object as used in the Jisc 
 	</tr>
 	<tr>
 		<td>object.definition.type [1]</td>
-		<td>Indicates the type of the object of the statement. It is required and valid values are listed on the <a href="vocabulary.md#31-activity-types">vocabulary page</a></td>
+		<td>Indicates the type of the object of the statement. It is required and valid values are listed on the <a href="vocabulary.md#activity-types">vocabulary page</a></td>
 		<td>iri</td>
 	</tr>
 	<tr>
@@ -283,7 +283,7 @@ This object pattern describes the core attributes of Object as used in the Jisc 
 	</tr>
 	<tr>
 		<td>object.definition.extensions.http://xapi.jisc.ac.uk/subType [0..1]</td>
-		<td>May be used to indicate the sub-type of this activity, if applicable for the recipe being used to create the statement. This qualifies the object.objectType, and is described on the [vocabularies](vocabulary.md#32-object-definition-extensions) page.</td>
+		<td>May be used to indicate the sub-type of this activity, if applicable for the recipe being used to create the statement. This qualifies the object.objectType, and is described on the [vocabularies](vocabulary.md#object-definition-extensions) page.</td>
 		<td>iri</td>
 	</tr>
 </table>
