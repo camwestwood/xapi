@@ -150,9 +150,9 @@ The following are extension properties in the result entity:
 
 <a name="activity-types"></a>
 ### 3.1 Activity Types
-The following are types of the [Activity Definition Object](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#activity-definition). Activity types may have use the [subtype extension](vocabulary.md#sub-type) to further indicate the sub-type of this activity.
-Some examples sub types are included here, however, sub types are not part of the spec. Therefore, list is not exhaustive and it is the responsibility of the plugin to define the sub-type. 
-Since the vendors do not own the IRI, these subtypes use a Jisc namespace - but not http:/xapi.jisc.ac.uk.
+The following are types of the [Activity Definition Object](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#activity-definition). Activity types may use the [subType extension](vocabulary.md#sub-type) to further indicate the subType of this activity.
+Some examples of subTypes are included here, however, subTypes are not part of the spec. Therefore, the list is not exhaustive and it is the responsibility of the plugin to define the subType. 
+Since the vendors do not own the IRI, these subTypes use a Jisc namespace - but not http:/xapi.jisc.ac.uk.
 
 Example:
 ``` javascript
