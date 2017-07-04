@@ -3,7 +3,9 @@
 [Statement Template Changes](/version_changes.md#assignment-graded)
 
 ## Purpose
-This activity records a graded assignment
+This activity records a graded assignment.
+Natural language example of a typical statement: "John Smith scored 90% when he completed his ABC assignment in module LA101 (raw score 45), marked by Angela Jones, indicating success on this assignment. Minimum possible score: 0; maximum score: 50.
+
 ## Definition
 ### Actor
 Common entity identifier:  ActorA
@@ -28,7 +30,7 @@ The actor entity describes the individual whose work has been graded.
 ### Verb
 Common entity identifier: VerbA, as defined on the [common structures](/common_structures.md#verba) page.
 
-The Verb, [scored](/vocabulary.md#verbs) describes the action of evaluating a learning activity.
+The Verb, [scored](/vocabulary.md#verbs) describes the student receiving a score for a learning activity.
 
 ### Example:
 
@@ -111,7 +113,7 @@ In the Jisc profile, the use of the result entity and any of its properties is o
 ### Object
 Common entity identifier: ObjectB, as defined on the [common structures](/common_structures.md#objectb) page.
 
-The object defines the activity that has been evaluated. [Examples of valid object.definition vocabulary on Activity objectTypes](/common_statements.md#object) can be found on the vocab page.
+The object defines the activity that has been evaluated. [Examples of valid object.definition vocabulary on Activity objectTypes](/common_structures.md#object) can be found on the vocab page.
 
 
 ### Example:
@@ -132,10 +134,42 @@ The object defines the activity that has been evaluated. [Examples of valid obje
 		
 ```
 
-
-
 ### Context
-Common entity context: ContextA, as defined on the [common structures](/common_structures.md#contexta) page.
+Common entity context: based on ContextC in the [common structures](/common_structures.md#contexta) page.
+
+<table>
+<tr><th>Property [cardinality]</th><th>Description</th><th>Value information</</th></tr>
+<tr>
+	<td>context.instructor [0..1]</td>
+	<td></td>
+	<td>JSON Object</td>
+</tr>
+<tr>
+	<td>context.instructor.objectType [1]</td>
+	<td>Must be "Agent"</td>
+	<td>String, Must be "Agent"</td>
+</tr>
+<tr>
+	<td>context.instructor.account.homepage [1] </td>
+	<td>URL of the home page of the application for which the login id applies.</td>
+	<td>url</td>
+</tr>
+<tr>
+	<td>context.instructor.account.name [1] </td>
+	<td>account.name gives the login id for the instructor.</td>
+	<td>string</td>
+</tr>
+<tr>
+	<td>context.extensions.version [0..1]</td>
+	<td>Recommended,  identifies the version of the Jisc xAPI profile found on the ReadMe page.</td>
+	<td>string</td>
+</tr>
+<tr>
+	<td><a href="vocabulary.md#course-area">context.extensions.https://xapi.jisc.ac.uk/courseArea</a> [0..1]</td>
+	<td>Umbrella course/parent area by its home page URI and / or its identifier.</td>
+	<td>JSON object</td>
+</tr>
+</table>
 
 ### Example
 
@@ -155,8 +189,7 @@ Common entity context: ContextA, as defined on the [common structures](/common_s
     "extensions":  {
       	"http://xapi.jisc.ac.uk/courseArea": {
 			"http://xapi.jisc.ac.uk/vle_mod_id": "LA101",
-			"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0",
-			"id":"http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=4"
+			"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0"
               	},
 				
 		"http://xapi.jisc.ac.uk/sessionId": "32456891" ,
