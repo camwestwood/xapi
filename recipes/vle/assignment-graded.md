@@ -4,6 +4,7 @@
 
 ## Purpose
 This activity records a graded assignment.
+
 Natural language example of a typical statement: "John Smith scored 90% when he completed his ABC assignment in module LA101 (raw score 45), marked by Angela Jones, indicating success on this assignment. Minimum possible score: 0; maximum score: 50.
 
 ## Definition
