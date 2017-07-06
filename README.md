@@ -42,13 +42,6 @@ These are platform independent statements related to Virtual Learning Enviroment
 * [Blackboard VLE samples](vle/blackboard/Examples.md)
 * [Moodle VLE samples](vle/moodle/examples.md)
 
-## Library
-<table>
-<tr><td>Statement Template </td><td>JSON Example</td></tr>
-<tr><td> <a href = "recipes/library/econtent.md">Viewed econtent</a></td> </tr>   
-<tr><td> <a href = "recipes/library/borrowing.md">Borrowing an item</a></td> </tr>    
-</table>
-
 ## Presence and Attendance
 <table>
 <tr><td>Statement Template </td><td>JSON Example</td></tr>
