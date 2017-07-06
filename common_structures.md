@@ -471,6 +471,11 @@ The object pattern defines an event that has been attended.
 	   <td>Integer, 1 for mandatory, 0 for non mandatory</td>
 	</tr>
 	<tr>
+	   <td><a href="/vocabulary.md#event-timetabled">object.definition.extensions.http://xapi.jisc.ac.uk/event_timetabled</a>[0.1]</td>
+	   <td>States if the event was timetabled or not</td>
+	   <td>Integer, 1 for mandatory, 0 for non mandatory</td>
+	</tr>
+	<tr>
 	   <td>object.definition.extensions.http://xapi.jisc.ac.uk/starttime [0.1]</td>
 	   <td>Planned start time. Uses datetimes for planned end of event.</td>
 	   <td>ISO 8601 timestamp</td>
