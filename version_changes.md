@@ -6,7 +6,7 @@
 
 ### Logged in
 
-10-05-2017, Spec Change. recipeVersion depricated, replaced with version
+10-05-2017, Spec Change. recipeVersion depricated, replaced with version.
 
 3-05-2017, Documentation change [RecipeVersion is the version of the collection of all statements, removed revision number](https://github.co7/jiscdev/xapi/issues/154)
 
@@ -25,6 +25,8 @@
 
 
 ### VLE resource viewed
+
+06-07-2017, Spec Change. [id removed from CourseArea](https://github.com/jiscdev/xapi/issues/179)
 
 25-05-2017, Documentation change. [subType did not make sense](https://github.com/jiscdev/xapi/issues/163)
 
@@ -56,6 +58,9 @@
 
 #### Assignment Graded
 
+
+06-07-2017, Spec Change. [id removed from CourseArea](https://github.com/jiscdev/xapi/issues/179)
+
 20-06-2017, Spec Change. [Context.ContextActivities removed. Template uses contextA instead of A](https://github.com/jiscdev/xapi/issues/168)
 
 25-05-2017, Spec Change. [UDD Mod ID added to coursearea](https://github.com/jiscdev/xapi/issues/165)
@@ -72,6 +77,8 @@
 
 
 #### Assignment Submitted
+
+06-07-2017, Spec Change. [id removed from CourseArea](https://github.com/jiscdev/xapi/issues/179)
 
 20-06-2017, Spec Change. [Context.ContextActivities removed. Template uses contextA instead of A](https://github.com/jiscdev/xapi/issues/168)
 
@@ -93,6 +100,8 @@
 
 
 #### Attended learning activity
+
+06-07-2017, Spec Change. [id removed from CourseArea](https://github.com/jiscdev/xapi/issues/179)
 
 25-05-2017, Doc Change. [Removed event_timetabled type from examle, replaced with lecture. subtype changed](https://github.com/jiscdev/xapi/issues/165)
 

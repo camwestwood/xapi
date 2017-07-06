@@ -107,8 +107,7 @@ The object for Viewed statements identifies what is being viewed. It uses the Ji
     The <b>type</b> indicates the type of the object of the statement. It is required and valid values are listed on the <a href="vocabulary.md#31-activity-types">vocabulary page</a>.<br/>
     The <b>name</b> is optional.<br/>
     The <b>subType</b> extension may be used to indicate the sub-type of this activity, if applicable for the recipe being used to create the statement. This qualifies the object.objectType, and is described on the [vocabularies](vocabulary.md#32-object-definition-extensions) page.<br />
-    The <b>uddModInstanceID</b> extension records the module instance with which the learning activity is associated. It is not usually required and overlaps with context.extension.courseArea. [See issue 140](https://github.com/jiscdev/xapi/issues/140) </td>
-	</tr>
+  </tr>
 	
 </table>
 
@@ -153,7 +152,7 @@ Context can be used to describe any surrounding circumstances to the viewed, inc
   	  The <b>sessionID</b> extension is the VLE session ID, or a suitably hashed version of it. A value should be provided if this information is available.<br/>
     The <b>ip-address</b> is used to identify the client's IP address. An IPv4 address is recommended.<br/>
     The <b>version</b> extension is recommended, and identifies the version of the Jisc xAPI profile found on the ReadMe page. <br/>
-	The <b>courseArea</b> identifies Umbrella course/parent area by its home page URI. More information can be found on the <a href="vocabulary.md#umbrella-course-area">vocabularies page</a>.
+	The <b>courseArea</b> identifies Umbrella course/parent area by its UDD Module Instance ID or VLE Module ID. More information can be found on the <a href="vocabulary.md#umbrella-course-area">vocabularies page</a>.
 		</td></tr></table>
 
 ### Example:
@@ -164,9 +163,9 @@ Context can be used to describe any surrounding circumstances to the viewed, inc
         "extensions": {
 	
       	"http://xapi.jisc.ac.uk/courseArea": {
-	    "http://xapi.jisc.ac.uk/vle_mod_id": "LA101",
-            "id":"http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=4"
-		},
+				"http://xapi.jisc.ac.uk/vle_mod_id": "LA101",
+				"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0",
+			},
 					
 	"http://xapi.jisc.ac.uk/sessionId": "32456891"  ,
 	"http://id.tincanapi.com/extension/ip-address": "10.3.3.48"

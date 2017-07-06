@@ -92,7 +92,7 @@ Common entity identifier: [ContextA](../common_structures.md#contextc) page.
   	  The <b>sessionID</b> extension is the VLE session ID, or a suitably hashed version of it. A value should be provided if this information is available.<br/>
     The <b>ip-address</b> is used to identify the client's IP address. An IPv4 address is recommended.<br/>
     The <b>version</b> extension is recommended, and identifies the version of the Jisc xAPI profile found on the ReadMe page. <br/>
-	The <b>courseArea</b> identifies Umbrella course/parent area by its home page URI. More information can be found on the <a href="vocabulary.md#umbrella-course-area">vocabularies page</a>.
+	The <b>courseArea</b> identifies Umbrella course/parent area by a UDD Module Instance ID and/or VLE Module ID. More information can be found on the <a href="vocabulary.md#umbrella-course-area">vocabularies page</a>.
 		</td></tr></table>
 
 ### Example:
@@ -141,8 +141,7 @@ For this statement the object needs to identify what was viewed. A list of valid
     The <b>type</b> indicates the type of the object of the statement. It is required and valid values are listed on the <a href="vocabulary.md#31-activity-types">vocabulary page</a>.<br/>
     The <b>name</b> is optional.<br/>
     The <b>subType</b> extension may be used to indicate the sub-type of this activity, if applicable for the recipe being used to create the statement. This qualifies the object.objectType, and is described on the [vocabularies](vocabulary.md#32-object-definition-extensions) page.<br />
-    The <b>uddModInstanceID</b> extension records the module instance with which the learning activity is associated. It is not usually required and overlaps with context.extension.courseArea. [See issue 140](https://github.com/jiscdev/xapi/issues/140) </td>
-	</tr>
+    </tr>
 	
 </table>
 

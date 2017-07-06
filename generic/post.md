@@ -143,7 +143,7 @@ Common entity identifier: [ContextA](/common_structures.md#contexta)
     The <b>ip-address</b> is used to identify the client's IP address. An IPv4 address is recommended.<br/>
     The <b>version</b> extension is recommended, and identifies the version of the Jisc xAPI profile found on the ReadMe page.
 	<br/>
-    The <b>courseArea</b> extension is recommended, and identifies umbrella course/parent area by its home page URI. More information can be found on the <a href="vocabulary.md#umbrella-course-area">vocabularies page</a>.</td>
+    The <b>courseArea</b> extension is recommended, and identifies umbrella course/parent area by its UDD Module Instance ID or VLE Module ID. More information can be found on the <a href="vocabulary.md#umbrella-course-area">vocabularies page</a>.</td>
 		</tr>
 </table>
 
@@ -155,9 +155,9 @@ Common entity identifier: [ContextA](/common_structures.md#contexta)
         "extensions": {
 	
       	"http://xapi.jisc.ac.uk/courseArea": {
-	    "http://xapi.jisc.ac.uk/vle_mod_id": "<VLE_Mod_idLA101. Example: ",
-            "id":"http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=4"
-		},
+				"http://xapi.jisc.ac.uk/vle_mod_id": "LA101",
+				"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0"
+			},
 					
 	"http://xapi.jisc.ac.uk/sessionId": "32456891"  ,
 	"http://id.tincanapi.com/extension/ip-address": "10.3.3.48"

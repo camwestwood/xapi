@@ -113,7 +113,7 @@ This pattern is used across many recipes in the Jisc profile, but there may be a
 		<td>ip address</td>
 	<tr> 
 		<td>context.extension.courseArea [0..1]</td>
-		<td>Umbrella course/parent area by its home page URI and / or its identifier. More information can be found on the <a href="vocabulary.md#course-area">vocabularies page</a>..</td>
+		<td>Umbrella course/parent area by a UDD Module Instance ID or VLE Module ID. More information can be found on the <a href="vocabulary.md#course-area">vocabularies page</a>..</td>
 		<td>JSON object</td>
 	<tr> 
 	</table>
@@ -126,9 +126,8 @@ This pattern is used across many recipes in the Jisc profile, but there may be a
 	
 			"http://xapi.jisc.ac.uk/courseArea": {
 				"http://xapi.jisc.ac.uk/vle_mod_id": "LA101",
-				"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0",
-				"id":"http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=4"
-		},
+				"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0"
+			},
 					
 		"http://xapi.jisc.ac.uk/sessionId": "32456891"  ,
 		"http://id.tincanapi.com/extension/ip-address": "10.3.3.48"
@@ -168,7 +167,7 @@ ContextB pattern is similar to ContextA, but with the addition of a contextActiv
 		<td>ip address</td>
 	<tr> 
 		<td>context.extension.courseArea [0..1]</td>
-		<td>Umbrella course/parent area by its home page URI and / or its identifier. More information can be found on the <a href="vocabulary.md#course-area">vocabularies page</a>..</td>
+		<td>Umbrella course/parent area by its an UDD Module Instance ID or VLE Module ID. More information can be found on the <a href="vocabulary.md#course-area">vocabularies page</a>..</td>
 		<td>JSON object</td>
 	<tr> 
 </table>
@@ -200,7 +199,6 @@ ContextB pattern is similar to ContextA, but with the addition of a contextActiv
 			"http://xapi.jisc.ac.uk/courseArea": {
 				"http://xapi.jisc.ac.uk/vle_mod_id": "LA101",
 				"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0",
-				"id":"http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=4"
 			},
 			
  		"http://xapi.jisc.ac.uk/sessionId":"32456891",
@@ -246,7 +244,7 @@ ContextB pattern is similar to ContextA, but with the addition of a contextActiv
 </tr>
 <tr>
 	<td><a href="vocabulary.md#course-area">context.extensions.https://xapi.jisc.ac.uk/courseArea</a> [0..1]</td>
-	<td>Umbrella course/parent area by its home page URI and / or its identifier.</td>
+	<td>Umbrella course/parent area by a UDD Module Instance ID or VLE Module ID.</td>
 	<td>JSON object</td>
 </tr>
 </table>
