@@ -450,12 +450,12 @@ The object pattern defines an event that has been attended.
 	</tr> 
 	<tr>
 	   <td><a href ="/vocabulary.md#event-type-id">object.definition.extensions.http://xapi.jisc.ac.uk/event_type_id </a>[0.1]</td>
-	   <td>Requires an identifier for the type of event</td>
+	   <td>An identifier for the type of event. id is from locally-defined list. </td>
 	   <td>Integer related to activity type</td>
 	</tr> 
 	<tr>
 	   <td><a href="/vocabulary.md#event-type-description">object.definition.extensions.http://xapi.jisc.ac.uk/event_type_description</a> [0.1]</td>
-	   <td>description of the event type</td>
+	   <td>Description of the event type. Description is from locally-defined list. </td>
 	   <td>String, description of event</td>
 	</tr> 
 	<tr>
