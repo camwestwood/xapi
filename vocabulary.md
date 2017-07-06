@@ -577,15 +577,6 @@ Example:
             "id":"http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=4"
 		},
 ```
-
-
-### ID
- 
-<table>
-<tr><th align="left">Label</th><td>id</td></tr>
-<tr><th align="left">Description</th><td>URI identifier of the Course</td></tr>
-</table>
-
   
 ### VLE Module ID
 
