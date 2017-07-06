@@ -97,7 +97,6 @@ Common entity identifier: ContextX, as defined on the [common structures](/commo
 		"http://xapi.jisc.ac.uk/courseArea": {
       		 	"http://xapi.jisc.ac.uk/vle_mod_id": "LA101",
 			"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0",
-               		 "id": "http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=4"
 			},
 			
 	"http://xapi.jisc.ac.uk/sessionId":"32456891",
