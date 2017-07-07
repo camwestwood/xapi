@@ -64,7 +64,7 @@ The result.completion must be set true or false, indicating if the actor attende
 Common entity identifier: [ObjectD](/common_structures.md#objectd)
 
 #### Entity Example:
-The object defines a timetabled event that has been completed. Information on the timetabled event can be found in the object.extensions. See the [objectD section in the common structures document](/common_structures.md#objectd).
+The object defines an event that has been attended. Information on the event can be found in the object.extensions. See the [objectD section in the common structures document](/common_structures.md#objectd).
 
 ``` javascript
 
@@ -111,8 +111,8 @@ Common entity identifier: Common entity identifier: [ContextC](/common_structure
 		},
 		
 	 "extensions": {
-        "http://xapi.jisc.ac.uk/version": "1.0",
-			"http://xapi.jisc.ac.uk/deviceLocation": {
+        	"http://xapi.jisc.ac.uk/version": "1.0",
+		"http://xapi.jisc.ac.uk/deviceLocation": {
 			"type": "Feature",
 			"geometry": {
 				"type": "Point",
@@ -125,8 +125,8 @@ Common entity identifier: Common entity identifier: [ContextC](/common_structure
 			
 		"http://xapi.jisc.ac.uk/courseArea": {
                 "http://xapi.jisc.ac.uk/vle_mod_id": "LA101-200-2016S1-0",
-				"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0",
-               	"id": "http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=4"
+			"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0",
+               		"id": "http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=4"
             		}	
 		}
     }
@@ -184,11 +184,36 @@ Common entity identifier: Common entity identifier: [ContextC](/common_structure
     },
 		
     "context": {
-        "extensions": {
-            "http://xapi.jisc.ac.uk/courseArea": {
-                "http://xapi.jisc.ac.uk/vle_mod_id": "LA101-200-2016S1-0",
-				"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0"
+     "instructor": {
+            "objectType": "Agent",
+            "account": {
+                "name": "2",
+                "homePage": "http://localhost/moodle"
             }
+		},
+		
+	 "extensions": {
+        	"http://xapi.jisc.ac.uk/version": "1.0",
+		"http://xapi.jisc.ac.uk/deviceLocation": {
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [51.510531, -0.118930]
+					},
+				"properties": {
+				"name": "University of Jisc"
+				}
+			},	
+			
+		"http://xapi.jisc.ac.uk/courseArea": {
+                "http://xapi.jisc.ac.uk/vle_mod_id": "LA101-200-2016S1-0",
+			"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0",
+               		"id": "http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=4"
+            		}	
+		}
+    }
+```
+
         },
         "instructor": {
             "objectType": "Agent",
