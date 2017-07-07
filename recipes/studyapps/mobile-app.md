@@ -78,7 +78,9 @@ For this recipe the object needs to identify what was viewed. A list of valid va
     },
     "extensions": {
       "http://xapi.jisc.ac.uk/subType": "http://id.tincanapi.com/activitytype/mobile-app",
-      "http://xapi.jisc.ac.uk/uddModInstanceID" : "2016.sem1.psy101"
+      "http://xapi.jisc.ac.uk/courseArea": {
+		"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0"
+	}
     }
   }
 }
@@ -124,7 +126,8 @@ For this recipe the object needs to identify what was viewed. A list of valid va
 			},
 			"extensions": {
 				"http://xapi.jisc.ac.uk/subType": "http://id.tincanapi.com/activitytype/mobile-app",
-				"http://xapi.jisc.ac.uk/uddModInstanceID": "2016.sem1.psy101"
+				"http://xapi.jisc.ac.uk/courseArea": {
+					"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0"
 			}
 		}
 	}
