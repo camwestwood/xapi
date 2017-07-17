@@ -5,8 +5,8 @@ This statement defines the structure and terms to record a post or reply to a fo
 
 There is a hierarchy of items that need to be identified to send this statement  
 
-1. A parent forum. This information is required for the context of the statement
-2. The discussion or thread. This is the object for the statement statements
+1. A parent forum. This information is required for the context of the statement.
+2. The discussion or thread. This is the object for the statement.
 3. Any posts to the discussion, actual content of the post is part of the result entity.
 
 ### Actor
@@ -34,7 +34,7 @@ Common entity identifier: [VerbA](/common_structures.md#verba)
 
 #### Entity Example:
 
-The verb depends on whether the post starts or continues a discussion?.
+The verb depends on whether the post starts or continues a discussion.
 
 - The verb [posted](/vocabulary.md#posted) denotes the action of starting a discussion on a forum.
 - [replied](/vocabulary.md#replied) denotes the action of replying to a discussion topic on a forum.
