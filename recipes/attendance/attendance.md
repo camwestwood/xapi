@@ -31,7 +31,7 @@ Common entity identifier: [VerbA](/common_structures.md#verba)
 
 #### Entity Example:
 
-The verb [attended](/vocabulary.md#attended) denotes the action of the user's browser or app requesting the resource that the user wishes to view.
+The verb used in the attendance statement is "attended" (http://adlnet.gov/expapi/verbs/attended). It indicates the actor was present at a virtual or physical event or activity. It uses the Jisc common entity identifier [VerbA](/common_structures.md#verba).
 
 ``` javascript
 "verb": {
