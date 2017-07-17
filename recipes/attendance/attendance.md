@@ -80,14 +80,14 @@ The object defines an event that has been attended. Information on the event can
                 "en": "The first tutorial of psychology 101"
             },
 	    "extensions": {
-            "http://xapi.jisc.ac.uk/subType": "http://xapi.jisc.ac.uk/workshop"
+            	"http://xapi.jisc.ac.uk/subType": "http://xapi.jisc.ac.uk/workshop"
 	    	"http://xapi.jisc.ac.uk/starttime": "2016-02-05T10:00:00.000Z",
           	"http://xapi.jisc.ac.uk/endtime": "2016-02-05T14:00:00.000Z",
-            "http://xapi.jisc.ac.uk/event_type_id": "1",
-			"http://xapi.jisc.ac.uk/event_timetabled": "1",
+            	"http://xapi.jisc.ac.uk/event_type_id": "1",
+		"http://xapi.jisc.ac.uk/event_timetabled": 1,
 	    	"http://xapi.jisc.ac.uk/event_type_description": "Lecture", 
-            "http://xapi.jisc.ac.uk/event_max_count": 32,
-            "http://xapi.jisc.ac.uk/event_mandatory": 1
+            	"http://xapi.jisc.ac.uk/event_max_count": 32,
+            	"http://xapi.jisc.ac.uk/event_mandatory": 1
        	 }
     },
 		
@@ -159,7 +159,7 @@ Common entity identifier: Common entity identifier: [ContextC](/common_structure
 		 }
     }
 		
-	"object": {
+     "object": {
         "objectType": "Activity",
         "id": "http://wicketkeeper.poppleton.ac.uk/modules/2016/sem1/psy101/qlecture1",
         "definition": {
@@ -171,23 +171,23 @@ Common entity identifier: Common entity identifier: [ContextC](/common_structure
                 "en": "The first tutorial of psychology 101"
             },
 			
-	    "extensions": {
+	"extensions": {
             "http://xapi.jisc.ac.uk/subType": "http://xapi.jisc.ac.uk/workshop"
-	    	"http://xapi.jisc.ac.uk/starttime": "2016-02-05T10:00:00.000Z",
-          	"http://xapi.jisc.ac.uk/endtime": "2016-02-05T14:00:00.000Z",
+	    "http://xapi.jisc.ac.uk/starttime": "2016-02-05T10:00:00.000Z",
+            "http://xapi.jisc.ac.uk/endtime": "2016-02-05T14:00:00.000Z",
             "http://xapi.jisc.ac.uk/event_type_id": "1",
-			"http://xapi.jisc.ac.uk/event_timetabled": "1",
-	    	"http://xapi.jisc.ac.uk/event_type_description": "Lecture", 
+	    "http://xapi.jisc.ac.uk/event_timetabled": 1,
+	    "http://xapi.jisc.ac.uk/event_type_description": "Lecture", 
             "http://xapi.jisc.ac.uk/event_max_count": 32,
             "http://xapi.jisc.ac.uk/event_mandatory": 1
        	 }
     
 	"context": {
 		"instructor": {
-            "objectType": "Agent",
-            "account": {
-                "name": "2",
-                "homePage": "http://localhost/moodle"
+            		"objectType": "Agent",
+            		"account": {
+                		"name": "2",
+                		"homePage": "http://localhost/moodle"
             }
 		},
 		
