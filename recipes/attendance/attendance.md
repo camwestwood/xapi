@@ -80,14 +80,14 @@ The object defines an event that has been attended. Information on the event can
                 "en": "The first tutorial of psychology 101"
             },
 	    "extensions": {
-            	"http://xapi.jisc.ac.uk/subType": "http://xapi.jisc.ac.uk/workshop"
+            "http://xapi.jisc.ac.uk/subType": "http://xapi.jisc.ac.uk/workshop"
 	    	"http://xapi.jisc.ac.uk/starttime": "2016-02-05T10:00:00.000Z",
           	"http://xapi.jisc.ac.uk/endtime": "2016-02-05T14:00:00.000Z",
-            	"http://xapi.jisc.ac.uk/event_type_id": "1",
-		"http://xapi.jisc.ac.uk/event_timetabled": "1",
+            "http://xapi.jisc.ac.uk/event_type_id": "1",
+			"http://xapi.jisc.ac.uk/event_timetabled": "1",
 	    	"http://xapi.jisc.ac.uk/event_type_description": "Lecture", 
-            	"http://xapi.jisc.ac.uk/event_max_count": 32,
-            	"http://xapi.jisc.ac.uk/event_mandatory": 1
+            "http://xapi.jisc.ac.uk/event_max_count": 32,
+            "http://xapi.jisc.ac.uk/event_mandatory": 1
        	 }
     },
 		
@@ -102,7 +102,7 @@ Common entity identifier: Common entity identifier: [ContextC](/common_structure
 
 ``` javascript
  "context": {
-     "instructor": {
+    "instructor": {
             "objectType": "Agent",
             "account": {
                 "name": "2",
@@ -110,8 +110,8 @@ Common entity identifier: Common entity identifier: [ContextC](/common_structure
             }
 		},
 		
-	 "extensions": {
-        	"http://xapi.jisc.ac.uk/version": "1.0",
+	"extensions": {
+        "http://xapi.jisc.ac.uk/version": "1.0",
 		"http://xapi.jisc.ac.uk/deviceLocation": {
 			"type": "Feature",
 			"geometry": {
@@ -121,13 +121,12 @@ Common entity identifier: Common entity identifier: [ContextC](/common_structure
 				"properties": {
 				"name": "University of Jisc"
 				}
-			},	
+		},	
 			
-		"http://xapi.jisc.ac.uk/courseArea": {
-                "http://xapi.jisc.ac.uk/vle_mod_id": "LA101-200-2016S1-0",
-			"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0",
-               		"id": "http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=4"
-            		}	
+	"http://xapi.jisc.ac.uk/courseArea": {
+        "http://xapi.jisc.ac.uk/vle_mod_id": "LA101-200-2016S1-0",
+		"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0",
+            	}	
 		}
     }
 ```
@@ -143,7 +142,7 @@ Common entity identifier: Common entity identifier: [ContextC](/common_structure
         "account": {
             "name": "2",
             "homePage": "https://courses.alpha.jisc.ac.uk/moodle"
-        }
+       }
     },
     "verb": {
         "id": "http://adlnet.gov/expapi/verbs/attended",
@@ -151,14 +150,16 @@ Common entity identifier: Common entity identifier: [ContextC](/common_structure
             "en": "attended"
         }
     },
-    "result": {
-        "completion": true,
-        "extensions": {
-            "http://xapi.jisc.ac.uk/event_late": "1"
-        }
-    },
-	
- "object": {
+    "result":{
+        "completion":true,
+		
+		"extensions":{
+		  "http://xapi.jisc.ac.uk/attendance_late":1,
+		  "http://xapi.jisc.ac.uk/attendance_category":"1",
+		 }
+    }
+		
+	"object": {
         "objectType": "Activity",
         "id": "http://wicketkeeper.poppleton.ac.uk/modules/2016/sem1/psy101/qlecture1",
         "definition": {
@@ -168,23 +169,21 @@ Common entity identifier: Common entity identifier: [ContextC](/common_structure
             },
             "description": {
                 "en": "The first tutorial of psychology 101"
-            }
-		"extensions": {
-            		"http://xapi.jisc.ac.uk/subType": "http://xapi.jisc.ac.uk/workshop"
-			"http://xapi.jisc.ac.uk/starttime": "2016-02-05T10:00:00.000Z",
-            		"http://xapi.jisc.ac.uk/endtime": "2016-02-05T14:00:00.000Z",
-            		"http://xapi.jisc.ac.uk/event_type_id": "1",
-	    		"http://xapi.jisc.ac.uk/event_timetabled": "1",
-			"http://xapi.jisc.ac.uk/event_type_description": "Lecture", 
-            		"http://xapi.jisc.ac.uk/event_max_count": "32",
-            		"http://xapi.jisc.ac.uk/event_mandatory": "1"
+            },
 			
-            
-        }
-    },
-		
-    "context": {
-     "instructor": {
+	    "extensions": {
+            "http://xapi.jisc.ac.uk/subType": "http://xapi.jisc.ac.uk/workshop"
+	    	"http://xapi.jisc.ac.uk/starttime": "2016-02-05T10:00:00.000Z",
+          	"http://xapi.jisc.ac.uk/endtime": "2016-02-05T14:00:00.000Z",
+            "http://xapi.jisc.ac.uk/event_type_id": "1",
+			"http://xapi.jisc.ac.uk/event_timetabled": "1",
+	    	"http://xapi.jisc.ac.uk/event_type_description": "Lecture", 
+            "http://xapi.jisc.ac.uk/event_max_count": 32,
+            "http://xapi.jisc.ac.uk/event_mandatory": 1
+       	 }
+    
+	"context": {
+		"instructor": {
             "objectType": "Agent",
             "account": {
                 "name": "2",
@@ -192,37 +191,23 @@ Common entity identifier: Common entity identifier: [ContextC](/common_structure
             }
 		},
 		
-	 "extensions": {
-        	"http://xapi.jisc.ac.uk/version": "1.0",
-		"http://xapi.jisc.ac.uk/deviceLocation": {
-			"type": "Feature",
-			"geometry": {
-				"type": "Point",
-				"coordinates": [51.510531, -0.118930]
-					},
-				"properties": {
-				"name": "University of Jisc"
-				}
+		"extensions": {
+			"http://xapi.jisc.ac.uk/version": "1.0",
+			"http://xapi.jisc.ac.uk/deviceLocation": {
+				"type": "Feature",
+				"geometry": {
+					"type": "Point",
+					"coordinates": [51.510531, -0.118930]
+						},
+					"properties": {
+					"name": "University of Jisc"
+					}
 			},	
 			
 		"http://xapi.jisc.ac.uk/courseArea": {
-                "http://xapi.jisc.ac.uk/vle_mod_id": "LA101-200-2016S1-0",
+			"http://xapi.jisc.ac.uk/vle_mod_id": "LA101-200-2016S1-0",
 			"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0",
-               		"id": "http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=4"
-            		}	
-		}
-    }
-```
-
-        },
-        "instructor": {
-            "objectType": "Agent",
-            "account": {
-                "name": "2",
-                "homePage": "http://localhost/moodle"
-            }
-        }
-    }
-}
+					}	
+			}
 
 ```
