@@ -44,9 +44,7 @@ The Verb, [scored](/vocabulary.md#verbs) describes the student receiving a score
 ``` 
 
 ### Result
-Common entity identifier: ResultB, as defined on the [common structures](/common_structures.md#resultb) page.
-
-In the Jisc profile, the use of the result entity and any of its properties is optional. 
+Common entity identifier: ResultB, as defined on the [common structures](/common_structures.md#resultb) page. This entity is mandatory for this type of statement.
 
 <table>
 	<tr><th>Property [cardinality]</th><th>Description</th><th>Data type</th></tr>
