@@ -43,11 +43,29 @@ The verb used in the attendance statement is "attended" (http://adlnet.gov/expap
 ```
 
 ### Result
-Common entity identifier: [ResultC](/common_structures.md#resultc)
-
-#### Entity Example:
 The result.completion must be set true or false, indicating if the actor attended the event. The extension [attendance_late](/vocabulary.md#attendance-late) can be set to 1 if the actor did not attend the event on time. [Attendance_category](/vocabulary.md#attendance-category) can be used to express additional detail, for example whether lateness was extreme or condoned, or to provide the source system attendance type code (as might be recorded in a conventional paper register). 
 
+<table>
+	<tr><th>Property [cardinality]</th><th>Description</th><th>Data type</th></tr>
+	<tr>
+		<td>result.completion [1]</td>
+		<td>When set to "true", result.completion indicates that the learner attended the event. "false"indicates that the learner did not attend the event.</td>
+		<td>Boolean</td>
+	</tr>
+	<tr>
+		<td><a href="vocabulary.md#attendance-late">http://result.extension.http://xapi.jisc.ac.uk/attendance_late</a> [0..1]</td>
+		<td>When set to 1, indicates the person was late</td>
+<td>Integer 0/1. 1 for late</td>
+	</tr>
+	<tr>
+		<td><a href="vocabulary.md#attendance-category">result.extension.http://xapi.jisc.ac.uk/attendance_category [0..1]</a></td>
+		<td>Indicates any given category for non-attendance or lateness. </td>
+		<td>String</td>
+	</tr>		
+</table>
+
+
+#### Entity Example:
 
 ``` javascript
  "result":{
@@ -61,7 +79,75 @@ The result.completion must be set true or false, indicating if the actor attende
 ```
 
 ### Object
-Common entity identifier: [ObjectD](/common_structures.md#objectd)
+
+
+The object pattern defines an event that has been attended.
+
+<table>
+	<tr><th>Property [cardinality]</th><th>Description</th><th>Data type</th></tr>
+	<tr>
+		<td>object.objectType [1]</td>
+		<td>The value must be "Activity".</td>
+		<td>String, value must be "Activity".</td>
+	</tr>
+	<tr>
+		<td>object.id [1]</td>
+		<td>An identifier for the object of the xAPI statement. This must be unique (within a given platform) across all object types.</td>
+		<td>iri</td>
+	</tr>
+	<tr>
+		<td>object.definition.type [1]</td>
+		<td>Indicates the type of the object of the statement. It is required and valid values are listed on the <a href="vocabulary.md#31-activity-types">vocabulary page</a></td>
+		<td>iri</td>
+	</tr>
+	<tr>
+		<td>object.definition.name [0..1]</td>
+		<td>Optional object name</td>
+		<td>string</td>
+	</tr> 
+	<tr>
+	   <td>object.definition.extensions.http://xapi.jisc.ac.uk/subType [0.1]</td>
+	   <td>May be used to qualify what kind of timetabled event occurred using an IRI given on the
+	   <a href="vocabulary.md#31-activity-types">vocabulary</a> page. Permitted values are: "http://xapi.jisc.ac.uk/lecture" or "http://id.tincanapi.com/activitytype/tutor-session".</td>
+	   <td>iri</td>
+	</tr> 
+	<tr>
+	   <td><a href ="/vocabulary.md#event-type-id">object.definition.extensions.http://xapi.jisc.ac.uk/event_type_id </a>[0.1]</td>
+	   <td>An identifier for the type of event. id is from locally-defined list. </td>
+	   <td>Integer related to activity type</td>
+	</tr> 
+	<tr>
+	   <td><a href="/vocabulary.md#event-type-description">object.definition.extensions.http://xapi.jisc.ac.uk/event_type_description</a> [0.1]</td>
+	   <td>Description of the event type. Description is from locally-defined list. </td>
+	   <td>String, description of event</td>
+	</tr> 
+	<tr>
+	   <td><a href="/vocabulary.md#event-max-count">object.definition.extensions.http://xapi.jisc.ac.uk/event_max_count </a>[0.1]</td>
+	   <td>The maximum number of people that could have attended the event. </td>
+	   <td>Integer</td>
+	</tr> 
+	<tr>
+	   <td><a href="/vocabulary.md#event-mandatory">object.definition.extensions.http://xapi.jisc.ac.uk/event_mandatory</a>[0.1]</td>
+	   <td>States if the event was optional or not</td>
+	   <td>Integer, 1 for mandatory, 0 for non mandatory</td>
+	</tr>
+	<tr>
+	   <td><a href="/vocabulary.md#timetabled-event">object.definition.extensions.http://xapi.jisc.ac.uk/event_timetabled</a>[0.1]</td>
+	   <td>States if the event was timetabled or not</td>
+	   <td>Integer, 1 for mandatory, 0 for non mandatory</td>
+	</tr>
+	<tr>
+	   <td>object.definition.extensions.http://xapi.jisc.ac.uk/starttime [0.1]</td>
+	   <td>Planned start time. Uses datetimes for planned end of event.</td>
+	   <td>ISO 8601 timestamp</td>
+	</tr>
+	<tr>
+	<td>object.definition.extensions.http://xapi.jisc.ac.uk/endtime [0.1]</td>
+	   <td>The planned end time of event. Uses datetimes for planned end time of event</td>
+	   <td>ISO 8601 timestamp</td>
+	</tr> 
+ </table>
+
 
 #### Entity Example:
 The object defines an event that has been attended. Information on the event can be found in the object.extensions. See the [objectD section in the common structures document](/common_structures.md#objectd).
@@ -94,8 +180,46 @@ The object defines an event that has been attended. Information on the event can
 ```
 
 ### Context
-Common entity identifier: Common entity identifier: [ContextC](/common_structures.md#contextc)
 
+
+<table>
+<tr><th>Property [cardinality]</th><th>Description</th><th>Value information</</th></tr>
+<tr>
+	<td>context.instructor [0..1]</td>
+	<td></td>
+	<td>JSON Object</td>
+</tr>
+<tr>
+	<td>context.instructor.objectType [1]</td>
+	<td>Must be "Agent"</td>
+	<td>String, Must be "Agent"</td>
+</tr>
+<tr>
+	<td>context.instructor.account.homepage [1] </td>
+	<td>URL of the home page of the application for which the login id applies.</td>
+	<td>url</td>
+</tr>
+<tr>
+	<td>context.instructor.account.name [1] </td>
+	<td>account.name gives the login id for the instructor.</td>
+	<td>string</td>
+</tr>
+<tr>
+	<td>context.extensions.version [0..1]</td>
+	<td>Recommended,  identifies the version of the Jisc xAPI profile found on the ReadMe page.</td>
+	<td>string</td>
+</tr>
+<tr>
+	<td>context.extensions.https://xapi.jisc.ac.uk/devicelocation [0..1]</td>
+	<td>Devicelocation is an optional geojson object with  geolocation details of the device used to attend the event.</td>
+	<td>JSON object following the geojson spec</td>
+</tr>
+<tr>
+	<td><a href="vocabulary.md#course-area">context.extensions.https://xapi.jisc.ac.uk/courseArea</a> [0..1]</td>
+	<td>Umbrella course/parent area by a UDD Module Instance ID or VLE Module ID.</td>
+	<td>JSON object</td>
+</tr>
+</table>
 
 #### Entity Example:
 

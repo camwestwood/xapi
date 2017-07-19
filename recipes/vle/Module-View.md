@@ -43,8 +43,7 @@ The Verb, [viewed](/vocabulary.md#verbs) denotes the action of the user's browse
     },
 ```
 ### Context
-Common entity identifier: ContextA, as defined on the [common structures](/common_structures.md#contexta) page.
-The courseArea is required. See the [vocabularies](/vocabulary.md#coursearea) page for more information
+Common entity identifier: ContextA, as defined on the [common structures](/common_structures.md#contexta) page. In the statement, the courseArea is required. See the [vocabularies](/vocabulary.md#coursearea) page for more information
 
 ### Example:
 

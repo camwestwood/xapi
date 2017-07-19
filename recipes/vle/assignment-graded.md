@@ -44,7 +44,8 @@ The Verb, [scored](/vocabulary.md#verbs) describes the student receiving a score
 ``` 
 
 ### Result
-Common entity identifier: ResultB, as defined on the [common structures](/common_structures.md#resultb) page. This entity is mandatory for this type of statement.
+This entity is mandatory for this type of statement. It can include scaled, raw, min and max score, success, and response (the instructor's feedback). See [score](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#Score). See the [vocabulary](https://github.com/jiscdev/xapi/blob/vocabulary.md) page for a definition of the 'http://xapi.jisc.ac.uk/grade' extension.
+
 
 <table>
 	<tr><th>Property [cardinality]</th><th>Description</th><th>Data type</th></tr>
@@ -133,7 +134,7 @@ The object defines the activity that has been evaluated. [Examples of valid obje
 ```
 
 ### Context
-Common entity context: based on ContextC in the [common structures](/common_structures.md#contexta) page.
+The context for assignment graded is based on contextA on the [common structures](/common_structures.md#contexta), except an instructor may be present.
 
 <table>
 <tr><th>Property [cardinality]</th><th>Description</th><th>Value information</</th></tr>
