@@ -30,7 +30,7 @@ The actor entity describes the individual that is viewing a vle resource.
 ### Verb
 Common entity identifier: VerbA, as defined on the [common structures](/common_structures.md#verba) page.
 
-The Verb, [viewed](/vocabulary.md#verbs) denotes the action of the user's browser or app requesting the resource that the user wishes to view.
+The Verb, [viewed](/vocabulary.md#verb) denotes the action of the user's browser or app requesting the resource that the user wishes to view.
 
 ### Example:
 
