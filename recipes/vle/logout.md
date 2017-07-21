@@ -33,7 +33,7 @@ Common entity identifier: VerbA, as defined on the [common structures](/common_s
 
 This statement uses the [logged out](/vocabulary.md#verb) describes the action of logging out of a platform.
 
-Example:
+### Example:
 
 ``` javascript
 "verb": {
