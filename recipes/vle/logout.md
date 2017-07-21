@@ -31,7 +31,7 @@ Common entity identifier: VerbA
 
 Common entity identifier: VerbA, as defined on the [common structures](/common_structures.md#verba) page.
 
-This statement uses the [logged out](/vocabulary.md#verbs) describes the action of logging out of a platform.
+This statement uses the [logged out](/vocabulary.md#verb) describes the action of logging out of a platform.
 
 Example:
 
