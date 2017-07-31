@@ -32,7 +32,7 @@ The following [xAPI verbs](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-
 <tr><th align="left">Verb</th><td>Attended</td></tr>
 <tr><th align="left">Description</th><td>Indicates the actor was present at a virtual or physical event or activity.</td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://adlnet.gov/expapi/verbs/attended">http://adlnet.gov/expapi/verbs/attended</a> </td></tr>
-<tr><th align="left">Statement Example</th><td> <a href="/recipes/attendance/attended.md#verb">Attended learning activity</a> </td></tr>
+<tr><th align="left">Statement Example</th><td> <a href="/recipes/attendance/attendance.md#verb">Attended learning activity</a> </td></tr>
 </table>
 
 ### Completed
@@ -86,7 +86,7 @@ The following [xAPI verbs](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-
 <a name="result"></a>
 ## 2.0 Result
 
-In the Jisc profile, the use of the [result entity](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#result) and any of its properties is optional. Such as in the [assignment graded recipe](recipes/assignment-graded.md#result) Statement Example.
+In the Jisc profile, the use of the [result entity](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#result) and any of its properties is optional. Such as in the [assignment graded recipe](recipes/vle/assignment-graded.md#result) Statement Example.
 
 Example:
 
