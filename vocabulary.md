@@ -86,7 +86,7 @@ The following [xAPI verbs](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-
 <a name="result"></a>
 ## 2.0 Result
 
-In the Jisc profile, the use of the [result entity](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#result) and any of its properties is optional. Such as in the [assignment graded recipe](recipes/assignment-graded.md#result) Statement Example.
+In the Jisc profile, the use of the [result entity](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#result) and any of its properties is optional. Such as in the [assignment graded recipe](recipes/vle/assignment-graded.md#result) Statement Example.
 
 Example:
 
