@@ -7,4 +7,4 @@ Example:
 
 ### Attendance Late
 
-IRI	http://xapi.jisc.ac.uk/attendance_late
+IRI	<a href="https://github.com/jiscdev/xapi/tree/1.0/generic/iri_landing_page.md">http://xapi.jisc.ac.uk/attendance_late</a>
