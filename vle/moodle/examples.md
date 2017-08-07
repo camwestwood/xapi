@@ -2,9 +2,9 @@
 
 ## All examples of currently supported activity events recipes
 
-###Logged in
+### Logged in
 
 Student logged 
 
-* [login.js] (login.js)
+* [login.js](login.js)
 * [moduleview.js](moduleview.js)
