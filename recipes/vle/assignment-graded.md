@@ -30,7 +30,7 @@ The actor entity describes the individual whose work has been graded.
 ### Verb
 Common entity identifier: VerbA, as defined on the [common structures](/common_structures.md#verba) page.
 
-The Verb, [scored](/vocabulary.md#verbs) describes the student receiving a score for a learning activity.
+The verb [scored](/vocabulary.md#verbs) describes the student receiving a score for a learning activity.
 
 ### Example:
 
@@ -44,7 +44,7 @@ The Verb, [scored](/vocabulary.md#verbs) describes the student receiving a score
 ``` 
 
 ### Result
-This entity is mandatory for this type of statement. It can include scaled, raw, min and max score, success, and response (the instructor's feedback). See [score](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#Score). See the [vocabulary](https://github.com/jiscdev/xapi/blob/vocabulary.md) page for a definition of the 'http://xapi.jisc.ac.uk/grade' extension.
+The result entity is mandatory for this type of statement. It can include scaled, raw, min and max score, success, and response (the instructor's feedback). See [score](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#Score). See the [vocabulary](vocabulary.md) page for a definition of the 'http://xapi.jisc.ac.uk/grade' extension.
 
 
 <table>

@@ -108,7 +108,7 @@ The object pattern defines an event that has been attended.
 	<tr>
 	   <td>object.definition.extensions.http://xapi.jisc.ac.uk/subType [0.1]</td>
 	   <td>May be used to qualify what kind of timetabled event occurred using an IRI given on the
-	   <a href="vocabulary.md#31-activity-types">vocabulary</a> page. Permitted values are: "http://xapi.jisc.ac.uk/lecture" or "http://id.tincanapi.com/activitytype/tutor-session".</td>
+	   <a href="vocabulary.md#31-activity-types">vocabulary</a> page.</td>
 	   <td>iri</td>
 	</tr> 
 	<tr>

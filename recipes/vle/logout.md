@@ -31,7 +31,7 @@ Common entity identifier: VerbA
 
 Common entity identifier: VerbA, as defined on the [common structures](/common_structures.md#verba) page.
 
-This statement uses the [logged out](/vocabulary.md#verb) describes the action of logging out of a platform.
+This statement uses the [logged out](/vocabulary.md#verb) verb to describe the action of logging out of a platform.
 
 ### Example:
 
@@ -87,6 +87,6 @@ When the object.definition.type is "http://activitystrea.ms/schema/1.0/applicati
 
 ### Complete VLE Specific Examples
 
-[Moodle](/vle/blackboard/loggedout.js)
+[Moodle](/vle/moodle/logout.js)
 
 [Blackboard](/vle/blackboard/loggedout.json)

@@ -26,7 +26,7 @@ The actor entity describes the individual who has submitted the assignment.
 ### Verb
 Common entity identifier: VerbA, as defined on the [common structures](/common_structures.md#verba) page.
 
-The Verb, [completed](/vocabulary.md#verbs) describes the action of completing an activity - finishing in its entirety.
+The verb [completed](/vocabulary.md#verbs) describes the action of completing an activity - finishing it in its entirety
 
 ``` javascript
 "verb": {

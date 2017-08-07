@@ -1,6 +1,7 @@
 # mobile_app_content_viewed statement template
 
 Based on generic template statement: [Viewed](/generic/view.md)
+
 [Statement Template Changes](/version_changes.md#mobile-app-content-viewed)
 
 ## Purpose
@@ -27,7 +28,7 @@ The actor entity describes the individual that is viewing a vle resource.
 ### Verb
 Common entity identifier: [VerbA](/common_structures.md#verba)
 
-The Verb, [viewed](/vocabulary.md#viewed) denotes the action of the user's browser or app requesting the resource that the user wishes to view.
+The verb [viewed](/vocabulary.md#viewed) denotes the action of the user's browser or app requesting the resource that the user wishes to view.
 
 ### Example:
 
@@ -62,8 +63,9 @@ Common entity identifier: [ContextA](/common_structures.md#contexta) page.
 
 Common entity identifier: [ObjectA](/common_structures.md#objecta) 
 
-For this recipe the courseArea is optional, but should use uddModInstanceID when present. See the [vocabularies](/vocabulary.md#42-coursearea-properties) page for more information
-For this recipe the object needs to identify what was viewed. A list of valid values  for the object definition type can be found at (/vocabulary.md#Object.definition.extension)
+For this recipe the courseArea is optional, but should use uddModInstanceID when present. See the [vocabularies](/vocabulary.md#42-coursearea-properties) page for more information.
+
+In this recipe the object should identify what was viewed. A list of valid values  for the object definition type can be found in the [vocab page](/vocabulary.md#Object.definition.extension)
 
 ### Example
 

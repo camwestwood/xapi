@@ -5,14 +5,14 @@ This generic statement template describes viewing something. Use this template t
 
 The entities and properties described here represent a typical statement template. Further properties or constraints could be defined to create a login statement template for a more specific purpose.
 
-Natural language example of a typical login statement: "John Smith viewed a module in is university Moodle VLE.."
+Natural language example of a typical login statement: "John Smith viewed a module in his university Moodle VLE.."
 
 This template defines the structure and terms to record the experience of viewing a resource on a platform.
 
 Examples:
 
 - [VLE resource viewed](../recipes/vle/Module-View.md)
-- [Mobile app content viewed] (../recipes/studyapps/mobile-app.md)
+- [Mobile app content viewed](../recipes/studyapps/mobile-app.md)
 - [Blackboard course viewed ](../recipes/blackboard/course_access.json)
 - [Moodle module viewed ](../recipes/moodle/moduleview.js)
 
@@ -64,7 +64,7 @@ The verb used in view statements is [viewed](../vocabulary.md#verbs). It denotes
 	</tr>
 	<tr>
 		<td>verb.display [1]</td>
-		<td>A human readable representation of Verb. It takes a RFC 5646 Language Tag. "viewd" in viewed statements </td>
+		<td>A human readable representation of Verb. It takes a RFC 5646 Language Tag. "viewed" in viewed statements </td>
 	</tr>
 </table>
 
@@ -106,7 +106,7 @@ The object for Viewed statements identifies what is being viewed. It uses the Ji
 		<td>A JSON object comprising both standard xAPI attributes and the Jisc profile 'subType' and 'uddModInstanceID' extensions.<br/>
     The <b>type</b> indicates the type of the object of the statement. It is required and valid values are listed on the <a href="vocabulary.md#31-activity-types">vocabulary page</a>.<br/>
     The <b>name</b> is optional.<br/>
-    The <b>subType</b> extension may be used to indicate the sub-type of this activity, if applicable for the recipe being used to create the statement. This qualifies the object.objectType, and is described on the [vocabularies](vocabulary.md#32-object-definition-extensions) page.<br />
+    The <b>subType</b> extension may be used to indicate the sub-type of this activity, if applicable for the recipe being used to create the statement. This qualifies the object.objectType, and is described on the <a href="vocabulary.md#32-object-definition-extensions">vocabularies page</a>.<br />
   </tr>
 	
 </table>
