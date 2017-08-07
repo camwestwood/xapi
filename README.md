@@ -34,7 +34,6 @@ These are platform independent statements related to Virtual Learning Enviroment
 <tr><td> <a href = "/recipes/vle/Module-View.md">VLE resource viewed   </a></td><td><a href = "vle/moodle/moduleview.js">Moodle module viewed </a> <br/> <a href = "vle/blackboard/course_access.json"> Blackboard course acccess  </a> <br/> <a href="vle/blackboard/course_content_access.json">Blackboard content accessed</a></td> </tr>    
 <tr><td> <a href =  "/recipes/vle/assignment-graded.md">Assignment Graded   </a></td><td> <a href = "vle/moodle/asssignment_graded.json">Assignment graded in Moodle</a><br/> <a href="vle/blackboard/asssignment_graded.json">Assignment graded in Blackboard </a>   </td></tr>    
 <tr><td> <a href =  "/recipes/vle/assignment-submitted.md">Assignment Submitted  </a></td><td><a href = "vle/moodle/assignment_submitted.json">Assignment submitted in Moodle</a><br/> <a href="vle/blackboard/assignment_submitted.json">Assignment submitted in Blackboard</a>   </td></tr>                                                             
-  
 </table>
 
 ### All VLE statement examples
@@ -44,7 +43,7 @@ These are platform independent statements related to Virtual Learning Enviroment
 ## Presence and Attendance
 <table>
 <tr><td>Statement Template </td><td>JSON Example</td></tr>
-<tr><td> <a href = "recipes/attendance/attendance.md">Attended learning activity </a></td><td><a href = "recipes/attendance.md#example">Attended learning activity </a></td> </tr>    
+<tr><td> <a href = "recipes/attendance/attendance.md">Attended learning activity </a></td><td><a href = "recipes/attendance/attendance.md#example">Attended learning activity </a></td> </tr>    
 </table>
 
 ## Study App
@@ -54,8 +53,11 @@ These are platform independent statements related to Virtual Learning Enviroment
 </table>
 
 ## Predictive Model Output
-* [Alerting JSON](/lap/apereo/model_output.js)
-* [Alerting](/lap/apereo/model_output.md)
+<table>
+<tr><td>Statement Template </td><td>JSON Example</td></tr>
+<tr><td> <a href = "/lap/apereo/model_output.md">Predictive Model Alerting</a></td><td><a href = "/lap/apereo/model_output.js">Alerting JSON</a></td> </tr>    
+</table>
+
 
 # Deprecated Statements
 

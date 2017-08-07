@@ -95,7 +95,7 @@ This pattern is used across many recipes in the Jisc profile, but there may be a
 	<tr><th>Property [cardinality]</th><th>Description</th><th>Value information</</th></tr>
 	<tr>
 		<td>context.platform [1]</td>
-		<td>The platform used in the experience of this learning activity. The value used should not change between platform upgrades and version changes and should typically be a concise name by which the application is commonly known, for example "Moodle" or "Blackboard"</td>
+		<td>The platform used in the experience of this learning activity. The value used should not change between platform upgrades and version changes and, should typically be a concise name by which the application is commonly known, for example "Moodle" or "Blackboard"</td>
 		<td>string</td>
 	</tr>	
 	<tr>
@@ -113,7 +113,7 @@ This pattern is used across many recipes in the Jisc profile, but there may be a
 		<td>ip address</td>
 	<tr> 
 		<td>context.extension.courseArea [0..1]</td>
-		<td>Umbrella course/parent area by a UDD Module Instance ID or VLE Module ID. More information can be found on the <a href="vocabulary.md#course-area">vocabularies page</a>..</td>
+		<td>The academic context in which this activity is situated (e.g. umbrella course, or parent area). This could be a UDD Module Instance ID or VLE Module ID.. More information can be found on the <a href="vocabulary.md#course-area">vocabularies page</a>..</td>
 		<td>JSON object</td>
 	<tr> 
 	</table>

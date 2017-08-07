@@ -1,4 +1,4 @@
-# Generic login generic statement template
+# Login generic statement template
 
 ## Purpose
 This generic statement template describes a user logging in to something. Use this template to create a specific login statement template, for example for a student logging in to a VLE.
@@ -8,6 +8,8 @@ The entities and properties described here represent a typical statement templat
 Natural language example of a typical login statement: "John Smith logged in to his university Moodle VLE using his mobile phone."
 
 ## Statement template and JSON examples in Jisc Profile:
+
+The following statements follow the generic template:
 
 - [VLE Login](/recipes/vle/login.md)
 - [Blackboard VLE Login](/vle/blackboard/loggedin.json)
