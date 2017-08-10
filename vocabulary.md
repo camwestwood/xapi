@@ -31,7 +31,7 @@ The following [xAPI verbs](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-
 <table>
 <tr><th align="left">Verb</th><td>Attended</td></tr>
 <tr><th align="left">Description</th><td>Indicates the actor was present at a virtual or physical event or activity.</td></tr>
-<tr><th align="left">IRI</th><td> <a href="http://adlnet.gov/expapi/verbs/attended">http://adlnet.gov/expapi/verbs/attended</a> </td></tr>
+<tr><th align="left">IRI</th><td>http://adlnet.gov/expapi/verbs/attended</td></tr>
 <tr><th align="left">Statement Example</th><td> <a href="/recipes/attendance/attendance.md#verb">Attended learning activity</a> </td></tr>
 </table>
 
