@@ -1,11 +1,11 @@
 # Jisc Learning Analytics Common Structures
-The following sections describe common patterns used across several of the recipes.
-Wherever a recipe refers to a "common entity identifier", the example given in the recipe follows one of the patterns given on this page.
+The following sections describe common structures used across several of the statement templates.
+Wherever a statement template refers to a "common entity identifier", the example given in the statement template follows or extends 1 of the structures on this page.
 
 ## ActorA
 Common entity identifier:  ActorA
 
-This entity is required across all recipes in the Jisc profile.
+This entity is required across all statements in the Jisc profile.
 
 The actor entity describes the individual that is the subject of the statement.
 
@@ -53,7 +53,7 @@ The actor entity describes the individual that is the subject of the statement.
 ## VerbA
 Common entity identifier: VerbA
 
-This entity is required across all recipes in the Jisc profile.
+This entity is required across all statements in the Jisc profile.
 
 The Verb structure indicates the action which the statement expresses. The verbs used in the Jisc profile are listed on the [vocabularies](vocabulary.md#verb) page.
 
@@ -62,7 +62,7 @@ The Verb structure indicates the action which the statement expresses. The verbs
 <tr>
 	<tr>
 		<td>verb.id [1]</td>
-		<td>An IRI that identifies the Verb. Valid IRIs depend on the recipe and are given on the relevant recipe page.</td>
+		<td>An IRI that identifies the Verb. Valid IRIs depend on the statement and are given on the relevant statement page.</td>
 		<td>IRI</td>
 	</tr>
 	<tr>
@@ -84,23 +84,24 @@ The Verb structure indicates the action which the statement expresses. The verbs
 ```
 
 ## Context
-Depending on the recipe, different patterns describe the circumstances that form the setting of the statement, so that it can be better understood.
+The significance of data in a statement can be more clearly understood if we describe the circumstances surrounding the statement. These circumstances are described in a statement's Context entity.
+
 
 ### ContextA
 Common entity identifier: ContextA
 
-This pattern is used across many recipes in the Jisc profile, but there may be additional data elements required for some recipes. Four extensions are provided for, with IRIs as defined on the <a href="vocabulary.md#extensions">vocabularies page</a>.
+This pattern is used across many statements in the Jisc profile, but there may be additional data elements required for some statements. Four extensions are provided, with IRIs as defined on the <a href="vocabulary.md#extensions">vocabularies page</a>.
 
 <table>
 	<tr><th>Property [cardinality]</th><th>Description</th><th>Value information</</th></tr>
 	<tr>
 		<td>context.platform [1]</td>
-		<td>The platform used in the experience of this learning activity. The value used should not change between platform upgrades and version changes and, should typically be a concise name by which the application is commonly known, for example "Moodle" or "Blackboard"</td>
+		<td>The platform used in the experience of this learning activity. The value used should not change between platform upgrades and version changes, and should typically be a concise name by which the application is commonly known, for example "Moodle" or "Blackboard"</td>
 		<td>string</td>
 	</tr>	
 	<tr>
 		<td>context.extensions.version [0..1]</td>
-		<td>Recommended, identifies the version of the Jisc xAPI profile found on the ReadMe page. <br/></td>
+		<td>Recommended. Identifies the version of the Jisc xAPI profile found on the ReadMe page. <br/></td>
 		<td>decimal</td>
 	</tr>
 	<tr>
@@ -109,11 +110,11 @@ This pattern is used across many recipes in the Jisc profile, but there may be a
 		<td>string</td>
 	<tr> 
 		<td>context.extension.ip-address [1]</td>
-		<td>client's IP address. An IPv4 address is recommended.</td>
+		<td>Client's IP address. An IPv4 address is recommended.</td>
 		<td>ip address</td>
 	<tr> 
 		<td>context.extension.courseArea [0..1]</td>
-		<td>The academic context in which this activity is situated (e.g. umbrella course, or parent area). This could be a UDD Module Instance ID or VLE Module ID.. More information can be found on the <a href="vocabulary.md#course-area">vocabularies page</a>..</td>
+		<td>The academic context in which this activity is situated (e.g. umbrella course, or parent area). The properties in courseArea must be a UDD Module Instance ID or a VLE Module ID or both. More information can be found on the <a href="vocabulary.md#course-area">vocabularies page</a>.</td>
 		<td>JSON object</td>
 	<tr> 
 	</table>
@@ -163,7 +164,7 @@ ContextB pattern is similar to ContextA, but with the addition of a contextActiv
 		<td>string</td>
 	<tr> 
 		<td>context.extension.ip-address [1]</td>
-		<td>client's IP address. An IPv4 address is recommended.</td>
+		<td>Client's IP address. An IPv4 address is recommended.</td>
 		<td>ip address</td>
 	<tr> 
 		<td>context.extension.courseArea [0..1]</td>
@@ -212,7 +213,7 @@ ContextB pattern is similar to ContextA, but with the addition of a contextActiv
 
 
 ## Object
-Depending on the recipe, different patterns apply to express the object of a statement.
+Depending on the statement, different patterns apply to express the object of a statement.
 
 ### ObjectA
 Common entity identifier: ObjectA
@@ -268,7 +269,7 @@ This object pattern describes the core attributes of Object as used in the Jisc 
 ### ObjectB
 Common entity identifier: ObjectB
 
-This object pattern describes an activity that has been completed. Examples of valid object.definition vocabulary Activity object Types are listed on the [vocabularies](vocabulary.md) page.
+This object pattern describes an activity with a due date.
 
 <table>
 	<tr><th>Property [cardinality]</th><th>Description</th><th>Value information</</th></tr>

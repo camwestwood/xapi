@@ -545,7 +545,7 @@ For more information, see Jisc profile [CourseArea properties](#coursearea).
 
 <a name="coursearea"></a>
 ## 5.0 CourseArea properties
-CourseArea indicates an overall learning opportunity that the learning activity is a part of. The following are properties of the profile extension context.extensions.courseArea:
+CourseArea indicates the academic context in which the activity is situated (e.g. umbrella course, or parent area). The properties in courseArea must be a UDD Module Instance ID or a VLE Module ID or both.
 
 Example:
 ``` javascript

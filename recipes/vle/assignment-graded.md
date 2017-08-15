@@ -146,7 +146,12 @@ The context for assignment graded is based on contextA on the [common structures
 <tr>
 	<td>context.instructor.objectType [1]</td>
 	<td>Must be "Agent"</td>
-	<td>String, Must be "Agent"</td>
+	<td>Must have the value "Agent".</td>
+</tr>
+<tr>
+	<td>context.instructor.name [1]</td>
+	<td>Full name of instructor</td>
+	<td>string</td>
 </tr>
 <tr>
 	<td>context.instructor.account.homepage [1] </td>
@@ -157,16 +162,6 @@ The context for assignment graded is based on contextA on the [common structures
 	<td>context.instructor.account.name [1] </td>
 	<td>account.name gives the login id for the instructor.</td>
 	<td>string</td>
-</tr>
-<tr>
-	<td>context.extensions.version [0..1]</td>
-	<td>Recommended,  identifies the version of the Jisc xAPI profile found on the ReadMe page.</td>
-	<td>string</td>
-</tr>
-<tr>
-	<td><a href="vocabulary.md#course-area">context.extensions.https://xapi.jisc.ac.uk/courseArea</a> [0..1]</td>
-	<td>Umbrella course/parent area by its home page URI and / or its identifier.</td>
-	<td>JSON object</td>
 </tr>
 </table>
 
