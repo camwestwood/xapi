@@ -1,18 +1,18 @@
-# Blank Generic statement template
+# Blank Generic Statement template
 
 ## Purpose
-This generic statement template describes... 
+This generic Statement template describes... 
 
 The entities and properties described here represent....
 
-Natural language example of a typical login statement...
+Natural language example of a typical Statement...
 
 ## Statement template and JSON examples in Jisc Profile:
 
-List examples of statement templates or full JSON statements based on the template
+List examples of Statement templates or full JSON Statements based on the template
 
 ### Actor Entity
-The actor entity is used to identify...
+The Actor entity is used to identify...
 
 #### Actor Entity properties:
 
@@ -26,7 +26,7 @@ The actor entity is used to identify...
 </tr>
 </table>
 
-### Login Actor Example:
+### Actor Example:
 
 ``` javascript
 
@@ -35,7 +35,7 @@ The actor entity is used to identify...
 ```
 
 ###  Verb Entity
-The verb used ..
+The Verb used ..
 
 ####  Verb Entity properties:
 <table>
@@ -57,7 +57,7 @@ The verb used ..
 ```
 
 ### Object Entity
-The object for ...
+The Object for ...
 
 #### Object Entity properties:
 
@@ -80,10 +80,10 @@ The object for ...
 
 ```
 
-### Login Context Entity
+### Context Entity
 Context can be used to describe any surrounding circumstances to the ...
 
-#### Login Context Entity properties:
+#### Context Entity properties:
 
 <table>
 <tr><th>Property</th><th>Description</th></tr>
@@ -95,7 +95,7 @@ Context can be used to describe any surrounding circumstances to the ...
 </tr>
 </table>
 			
-#### Login Context Entity Example:
+#### Context Entity Example:
 
 ``` javascript
 
