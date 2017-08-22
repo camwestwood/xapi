@@ -46,12 +46,6 @@ These are platform independent statements related to Virtual Learning Enviroment
 <tr><td> <a href = "recipes/attendance/attendance.md">Attended learning activity </a></td><td><a href = "recipes/attendance/attendance.md#example">Attended learning activity </a></td> </tr>    
 </table>
 
-## Study App
-<table>
-<tr><td>Statement Template </td><td>JSON Example</td></tr>
-<tr><td> <a href = "recipes/studyapps/mobile-app.md">Mobile content viewed </a></td><td><a href = "recipes/studyapps/mobile-app.md#example">Mobile_app content viewed </a></td> </tr>    
-</table>
-
 ## Predictive Model Output
 <table>
 <tr><td>Statement Template </td><td>JSON Example</td></tr>
