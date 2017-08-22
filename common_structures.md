@@ -1,19 +1,19 @@
 # Jisc Learning Analytics Common Structures
-The following sections describe common structures used across several of the statement templates.
-Wherever a statement template refers to a "common entity identifier", the example given in the statement template follows or extends 1 of the structures on this page.
+The following sections describe common structures used across several of the Statement templates.
+Wherever a Statement template refers to a "common entity identifier", the example given in the Statement template follows or extends 1 of the structures on this page.
 
 ## ActorA
 Common entity identifier:  ActorA
 
-This entity is required across all statements in the Jisc profile.
+This entity is required across all Statements in the Jisc Profile.
 
-The actor entity describes the individual that is the subject of the statement.
+The Actor entity describes the individual that is the Subject of the Statement.
 
 <table>
 <tr><th>Property [cardinality]</th><th>Description</th><th>Value information</th></tr>
 <tr>
 	<td>actor.objectType [1]</td>
-	<td>Must have the value "Agent". Actors of type "Group" are not supported in the Jisc profile.</td>
+	<td>Must have the value "Agent". Actors of type "Group" are not supported in the Jisc Profile.</td>
 	<td>Must have the value "Agent"</td>
 </tr>
 <tr>
@@ -23,12 +23,12 @@ The actor entity describes the individual that is the subject of the statement.
 </tr>
 <tr>
 	<td>actor.account [1]</td> 
-	<td>Account details of agent[1]</td> 
+	<td>Account details of Agent.</td> 
 	<td>JSON Object</td> 
 </tr>	
 <tr>
 	<td>actor.account.name [1]</td> 
-	<td>Login id for the subject</td> 
+	<td>Login id for the Subject</td> 
 	<td>string</td> 
 </tr>
 <tr>
@@ -53,16 +53,16 @@ The actor entity describes the individual that is the subject of the statement.
 ## VerbA
 Common entity identifier: VerbA
 
-This entity is required across all statements in the Jisc profile.
+This entity is required across all Statements in the Jisc Profile.
 
-The Verb structure indicates the action which the statement expresses. The verbs used in the Jisc profile are listed on the [vocabularies](vocabulary.md#verb) page.
+The Verb structure indicates the action which the Statement expresses. The Verbs used in the Jisc Profile are listed on the [vocabularies](vocabulary.md#verb) page.
 
 <table>
 	<tr><th>Property [cardinality]</th><th>Description</th><th>Value information</</th></tr>
 <tr>
 	<tr>
 		<td>verb.id [1]</td>
-		<td>An IRI that identifies the Verb. Valid IRIs depend on the statement and are given on the relevant statement page.</td>
+		<td>An IRI that identifies the Verb. Valid IRIs depend on the Statement and are given on the relevant Statement page.</td>
 		<td>IRI</td>
 	</tr>
 	<tr>
@@ -84,13 +84,12 @@ The Verb structure indicates the action which the statement expresses. The verbs
 ```
 
 ## Context
-The significance of data in a statement can be more clearly understood if we describe the circumstances surrounding the statement. These circumstances are described in a statement's Context entity.
-
+The significance of data in a Statement can be more clearly understood if we describe the circumstances surrounding the Statement. These circumstances are described in a Statement's Context entity.
 
 ### ContextA
 Common entity identifier: ContextA
 
-This pattern is used across many statements in the Jisc profile, but there may be additional data elements required for some statements. Four extensions are provided, with IRIs as defined on the <a href="vocabulary.md#extensions">vocabularies page</a>.
+This pattern is used across many Statements in the Jisc Profile, but there may be additional data elements required for some Statements. Four extensions are provided, with IRIs as defined on the <a href="vocabulary.md#extensions">vocabularies page</a>.
 
 <table>
 	<tr><th>Property [cardinality]</th><th>Description</th><th>Value information</</th></tr>
@@ -101,7 +100,7 @@ This pattern is used across many statements in the Jisc profile, but there may b
 	</tr>	
 	<tr>
 		<td>context.extensions.version [0..1]</td>
-		<td>Recommended. Identifies the version of the Jisc xAPI profile found on the ReadMe page. <br/></td>
+		<td>Recommended. Identifies the version of the Jisc xAPI Profile found on the ReadMe page. <br/></td>
 		<td>decimal</td>
 	</tr>
 	<tr>
@@ -114,7 +113,7 @@ This pattern is used across many statements in the Jisc profile, but there may b
 		<td>ip address</td>
 	<tr> 
 		<td>context.extension.courseArea [0..1]</td>
-		<td>The academic context in which this activity is situated (e.g. umbrella course, or parent area). The properties in courseArea must be a UDD Module Instance ID or a VLE Module ID or both. More information can be found on the <a href="vocabulary.md#course-area">vocabularies page</a>.</td>
+		<td>The academic context in which this Activity is situated (e.g. umbrella course, or parent area). The properties in courseArea must be a UDD Module Instance ID or a VLE Module ID or both. More information can be found on the <a href="vocabulary.md#course-area">vocabularies page</a>.</td>
 		<td>JSON object</td>
 	<tr> 
 	</table>
@@ -139,13 +138,13 @@ This pattern is used across many statements in the Jisc profile, but there may b
 ### ContextB
 Common entity identifier: ContextB (Deprecated)
 
-ContextB pattern is similar to ContextA, but with the addition of a contextActivities property with a ‘grouping’ property. This allows statements to be associated to the activity described in the object entities as part of a larger whole.
+The ContextB pattern is similar to ContextA, but with the addition of a contextActivities property with a ‘grouping’ property. This allows Statements to be associated to the Activity described in the Object entities as part of a larger whole.
 
 <table>
 	<tr><th>Property [cardinality]</th><th>Description</th><th>Value information</</th></tr>
 	<tr>
 		<td>context.contextActivities [0..1]</td>
-		<td>An optional property that holds a mandatory ‘grouping’ property. It allows statements to be associated with the object entity's activity as part of a larger whole. The example shows a course within the VLE. 
+		<td>An optional property that holds a mandatory ‘grouping’ property. It allows Statements to be associated with the Object entity's Activity as part of a larger whole. The example shows a course within the VLE. 
 		<td>The 'grouping' property has an <a href="#objecta">ObjectA</a> as its value.</td>
 	</tr>
 	<tr>
@@ -155,7 +154,7 @@ ContextB pattern is similar to ContextA, but with the addition of a contextActiv
 		</tr>
 	<tr>
 		<td>context.extensions.version [0..1]</td>
-		<td>Recommended, identifies the version of the Jisc xAPI profile found on the ReadMe page. <br/></td>
+		<td>Recommended, identifies the version of the Jisc xAPI Profile found on the ReadMe page. <br/></td>
 		<td>decimal</td>
 	</tr>
 	<tr>
@@ -213,12 +212,12 @@ ContextB pattern is similar to ContextA, but with the addition of a contextActiv
 
 
 ## Object
-Depending on the statement, different patterns apply to express the object of a statement.
+Depending on the Statement, different patterns apply to express the Object of a Statement.
 
 ### ObjectA
 Common entity identifier: ObjectA
 
-This object pattern describes the core attributes of Object as used in the Jisc profile.
+This Object pattern describes the core attributes of Object as used in the Jisc Profile.
 
 <table>
 	<tr><th>Property [cardinality]</th><th>Description</th><th>Value information</</th></tr>
@@ -229,22 +228,22 @@ This object pattern describes the core attributes of Object as used in the Jisc 
 	</tr>
 	<tr>
 		<td>object.id [1]</td>
-		<td>An identifier for the object of the xAPI statement. This must be unique (within a given platform) across all object types.</td>
+		<td>An identifier for the object of the xAPI Statement. This must be unique (within a given platform) across all Object types.</td>
 		<td>iri</td>
 	</tr>
 	<tr>
 		<td>object.definition.type [1]</td>
-		<td>Indicates the type of the object of the statement. It is required and valid values are listed on the <a href="vocabulary.md#activity-types">vocabulary page</a></td>
+		<td>Indicates the type of the Object of the Statement. It is required and valid values are listed on the <a href="vocabulary.md#activity-types">vocabulary page</a></td>
 		<td>iri</td>
 	</tr>
 	<tr>
 		<td>object.definition.name [0..1]</td>
-		<td>Optional object name</td>
+		<td>Optional Object name</td>
 		<td>string</td>
 	</tr>
 	<tr>
 		<td>object.definition.extensions.http://xapi.jisc.ac.uk/subType [0..1]</td>
-		<td>May be used to indicate the sub-type of this activity, if applicable for the recipe being used to create the statement. This qualifies the object.objectType, and is described on the [vocabularies](vocabulary.md#object-definition-extensions) page.</td>
+		<td>May be used to indicate the sub-type of this Activity, if applicable for the recipe being used to create the Statement. This qualifies the object.objectType, and is described on the [vocabularies](vocabulary.md#object-definition-extensions) page.</td>
 		<td>iri</td>
 	</tr>
 </table>
@@ -269,7 +268,7 @@ This object pattern describes the core attributes of Object as used in the Jisc 
 ### ObjectB
 Common entity identifier: ObjectB
 
-This object pattern describes an activity with a due date.
+This Object pattern describes an Activity with a due date.
 
 <table>
 	<tr><th>Property [cardinality]</th><th>Description</th><th>Value information</</th></tr>
@@ -280,17 +279,17 @@ This object pattern describes an activity with a due date.
 	</tr>
 	<tr>
 		<td>object.id [1]</td>
-		<td>An identifier for the object of the xAPI statement. This must be unique (within a given platform) across all object types.</td>
+		<td>An identifier for the Object of the xAPI Statement. This must be unique (within a given platform) across all Object types.</td>
 		<td>iri</td>
 	</tr>
 	<tr>
 		<td>object.definition.type [1]</td>
-		<td>Indicates the type of the object of the statement. It is required and valid values are listed on the <a href="vocabulary.md#31-activity-types">vocabulary page</a></td>
+		<td>Indicates the type of the Object of the Statement. It is required and valid values are listed on the <a href="vocabulary.md#31-activity-types">vocabulary page</a></td>
 		<td>iri</td>
 	</tr>
 	<tr>
 		<td>object.definition.name [0..1]</td>
-		<td>Optional object name</td>
+		<td>Optional Object name</td>
 		<td>string</td>
 	</tr>
 	<tr>
@@ -308,7 +307,7 @@ This object pattern describes an activity with a due date.
 		"objectType":"Activity",
 		"id":"http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=4",
 		"definition":{
-			"type":"http://adlnet.gov/expapi/activities/assesment",
+			"type":"http://adlnet.gov/expapi/activities/assessment",
 			"name":{
 				"en":"Course Assignment"
 			},
