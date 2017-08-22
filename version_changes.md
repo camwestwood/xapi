@@ -8,16 +8,16 @@
 
 10-05-2017, Spec Change. recipeVersion depricated, replaced with version.
 
-3-05-2017, Documentation change [RecipeVersion is the version of the collection of all statements, removed revision number](https://github.co7/jiscdev/xapi/issues/154)
+3-05-2017, Documentation change [RecipeVersion is the version of the collection of all Statements, removed revision number](https://github.co7/jiscdev/xapi/issues/154)
 
 2-05-2016, Documentation change [subType supersedes ApplicationType](https://github.com/jiscdev/xapi/issues/55) in objectA
 
 
 ### Logged out
 
-10-05-2017, Spec Change. recipeVersion depricated, replaced with version
+10-05-2017, Spec Change. recipeVersion deprecated, replaced with version
 
-3-05-2017, Documentation change [RecipeVersion is the version of the collection of all statements, removed revision number](https://github.com/jiscdev/xapi/issues/154)
+3-05-2017, Documentation change [RecipeVersion is the version of the collection of all Statements, removed revision number](https://github.com/jiscdev/xapi/issues/154)
 
 20-03-2017, Spec change. [Description no longer required in ObjectA.](https://github.com/jiscdev/xapi/issues/148)
 
@@ -32,11 +32,11 @@
 
 25-05-2017, Spec Change. [UDD Mod ID added to coursearea](https://github.com/jiscdev/xapi/issues/165)
 
-10-05-2017, Spec Change. recipeVersion depricated, replaced with version
+10-05-2017, Spec Change. recipeVersion deprecated, replaced with version
 
 3-05-2017, Documentation change [RecipeVersion is the version of the collection of all statements, removed revision number](https://github.com/jiscdev/xapi/issues/154)
 
-11-04-2017, Documentation change [added subtype example to documentation]
+11-04-2017, Documentation change [added subType example to documentation]
 
 20-03-2017, Spec change. [Description no longer required in ObjectA.](https://github.com/jiscdev/xapi/issues/148)
 
@@ -45,11 +45,11 @@
 
 ### Session timeout
 
-20-06-2017, Spec Change. [depricated](https://github.com/jiscdev/xapi/issues/170)
+20-06-2017, Spec Change. [deprecated](https://github.com/jiscdev/xapi/issues/170)
 
-10-05-2017, Spec Change. recipeVersion depricated, replaced with version
+10-05-2017, Spec Change. recipeVersion deprecated, replaced with version
 
-3-05-2017, Documentation change [RecipeVersion is the version of the collection of all statements, removed revision number](https://github.com/jiscdev/xapi/issues/154)
+3-05-2017, Documentation change [RecipeVersion is the version of the collection of all Statements, removed revision number](https://github.com/jiscdev/xapi/issues/154)
 
 20-03-2017, Spec Change. [Description no longer required in ObjectA.](https://github.com/jiscdev/xapi/issues/148)
 
@@ -63,13 +63,13 @@
 
 20-06-2017, Spec Change. [Context.ContextActivities removed. Template uses contextA instead of A](https://github.com/jiscdev/xapi/issues/168)
 
-25-05-2017, Spec Change. [UDD Mod ID added to coursearea](https://github.com/jiscdev/xapi/issues/165)
+25-05-2017, Spec Change. [UDD Mod ID added to courseArea](https://github.com/jiscdev/xapi/issues/165)
 
-10-05-2017, Spec Change. recipeVersion depricated, replaced with version
+10-05-2017, Spec Change. recipeVersion deprecated, replaced with version
 
-3-05-2017, Documentation change [RecipeVersion is the version of the collection of all statements, removed revision number](https://github.com/jiscdev/xapi/issues/154)
+3-05-2017, Documentation change [RecipeVersion is the version of the collection of all Statements, removed revision number](https://github.com/jiscdev/xapi/issues/154)
 
-20-04-2017, Documentation Change. SubType example in context.contextActivities (which is an object that fits objectA statement).
+20-04-2017, Documentation Change. SubType example in context.contextActivities (which is an Object that fits ObjectA statement).
 
 11-04-2017, Documentation Change. [Description no longer required in ObjectA or B.](https://github.com/jiscdev/xapi/issues/148)
 
@@ -78,17 +78,17 @@
 
 #### Assignment Submitted
 
-06-07-2017, Spec Change. [id removed from CourseArea](https://github.com/jiscdev/xapi/issues/179)
+06-07-2017, Spec Change. [id removed from courseArea](https://github.com/jiscdev/xapi/issues/179)
 
-20-06-2017, Spec Change. [Context.ContextActivities removed. Template uses contextA instead of A](https://github.com/jiscdev/xapi/issues/168)
+20-06-2017, Spec Change. [Context.ContextActivities removed. Template uses ContextA instead of A](https://github.com/jiscdev/xapi/issues/168)
 
-25-05-2017, Spec Change. [UDD Mod ID added to coursearea](https://github.com/jiscdev/xapi/issues/165)
+25-05-2017, Spec Change. [UDD Mod ID added to courseArea](https://github.com/jiscdev/xapi/issues/165)
 
-10-05-2017, Spec Change. recipeVersion depricated, replaced with version
+10-05-2017, Spec Change. recipeVersion deprecated, replaced with version
 
-3-05-2017, Documentation change [RecipeVersion is the version of the collection of all statements, removed revision number](https://github.com/jiscdev/xapi/issues/154)
+3-05-2017, Documentation change [RecipeVersion is the version of the collection of all Statements, removed revision number](https://github.com/jiscdev/xapi/issues/154)
 
-20-04-2017, Documentation change. SubType example in context.contextActivities (which is an object that fits objectA statement).
+20-04-2017, Documentation change. SubType example in context.contextActivities (which is an Object that fits ObjectA statement).
 
 11-04-2017, Documentation change. [Description no longer required in ObjectA.](https://github.com/jiscdev/xapi/issues/148)
 
@@ -101,23 +101,23 @@
 
 #### Attended learning activity
 
-06-07-2017, Spec Change. [id removed from CourseArea](https://github.com/jiscdev/xapi/issues/179)
+06-07-2017, Spec Change. [id removed from courseArea](https://github.com/jiscdev/xapi/issues/179)
 
-25-05-2017, Doc Change. [Removed event_timetabled type from examle, replaced with lecture. subtype changed](https://github.com/jiscdev/xapi/issues/165)
+25-05-2017, Doc Change. [Removed event_timetabled type from example, replaced with lecture. subType changed](https://github.com/jiscdev/xapi/issues/165)
 
 25-05-2017, Spec Change. [added timetabled event extensions](https://github.com/jiscdev/xapi/issues/165)
 
-25-05-2017, Spec Change. [Coursearea added to context.extensions](https://github.com/jiscdev/xapi/issues/165)
+25-05-2017, Spec Change. [courseArea added to context.extensions](https://github.com/jiscdev/xapi/issues/165)
 
-25-05-2017, Spec Change. [UDD Mod ID added to coursearea](https://github.com/jiscdev/xapi/issues/165)
+25-05-2017, Spec Change. [UDD Mod ID added to courseArea](https://github.com/jiscdev/xapi/issues/165)
 
 19/05/2017, Documentation change. [Remove event_timetabled uri trailing] /(https://github.com/jiscdev/xapi/issues/167)
 
-10-05-2017, Spec Change. recipeVersion depricated, replaced with version10-05-2016, Spec Change. recipeVersion depricated, replaced with version
+10-05-2017, Spec Change. recipeVersion deprecated, replaced with version
 
-9-05-2017, Spec Change. [DeviceLocation added to context](https://github.com/jiscdev/xapi/issues/158)
+9-05-2017, Spec Change. [DeviceLocation added to Context](https://github.com/jiscdev/xapi/issues/158)
 
-3-05-2017, Documentation change [RecipeVersion is the version of the collection of all statements, removed revision number](https://github.com/jiscdev/xapi/issues/154)
+3-05-2017, Documentation Change [RecipeVersion is the version of the collection of all Statements, removed revision number](https://github.com/jiscdev/xapi/issues/154)
 
 
 10-04-2017
@@ -140,7 +140,7 @@ Spec change [http://xapi.jisc.ac.uk/activity_type_description added](https://git
 
 08-02-2017
 
-3-05-2016, Documentation change [RecipeVersion is the version of the collection of all statements, removed revision number](https://github.com/jiscdev/xapi/issues/154)
+3-05-2016, Documentation change [RecipeVersion is the version of the collection of all Statements, removed revision number](https://github.com/jiscdev/xapi/issues/154)
 
 Spec change [Attendance - change context to match VLE](https://github.com/jiscdev/xapi/issues/139)
 
@@ -152,14 +152,14 @@ Spec change [added http://xapi.jisc.ac.uk/activity_type_id, http://xapi.jisc.ac.
 
 Spec change [added http://xapi.jisc.ac.uk/activity_late to result.extensions](https://github.com/jiscdev/xapi/issues/142)
 
-Documentation change [starttime and end time replace duartion](https://github.com/jiscdev/xapi/issues/143)
+Documentation change [start time and end time replace duration](https://github.com/jiscdev/xapi/issues/143)
 
 
 ## Student App Recipes
 
 ### Mobile App Content Viewed 
 
-25-05-2017, Spec Change. [UDD Mod ID added to coursearea](https://github.com/jiscdev/xapi/issues/165)
+25-05-2017, Spec Change. [UDD Mod ID added to courseArea](https://github.com/jiscdev/xapi/issues/165)
 
 
 # Vocabulary Changes
