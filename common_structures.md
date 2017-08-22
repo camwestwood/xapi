@@ -7,7 +7,7 @@ Common entity identifier:  ActorA
 
 This entity is required across all Statements in the Jisc Profile.
 
-The Actor entity describes the individual that is the Subject of the Statement.
+The Actor entity describes the individual that is the subject of the Statement.
 
 <table>
 <tr><th>Property [cardinality]</th><th>Description</th><th>Value information</th></tr>
@@ -28,7 +28,7 @@ The Actor entity describes the individual that is the Subject of the Statement.
 </tr>	
 <tr>
 	<td>actor.account.name [1]</td> 
-	<td>Login id for the Subject</td> 
+	<td>Login id for the subject</td> 
 	<td>string</td> 
 </tr>
 <tr>
