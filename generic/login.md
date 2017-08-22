@@ -1,29 +1,29 @@
-# Login generic statement template
+# Login generic Statement template
 
 ## Purpose
-This generic statement template describes a user logging in to something. Use this template to create a specific login statement template, for example for a student logging in to a VLE.
+This generic Statement template describes a user logging in to something. Use this template to create a specific login Statement template, for example for a student logging in to a VLE.
 
-The entities and properties described here represent a typical statement template. Further properties or constraints could be defined to create a login statement template for a more specific purpose.
+The entities and properties described here represent a typical Statement template. Further properties or constraints could be defined to create a login Statement template for a more specific purpose.
 
-Natural language example of a typical login statement: "John Smith logged in to his university Moodle VLE using his mobile phone."
+Natural language example of a typical login Statement: "John Smith logged in to his university Moodle VLE using his mobile phone."
 
 ## Statement template and JSON examples in Jisc Profile:
 
-The following statements follow the generic template:
+The following Statements follow the generic template:
 
 - [VLE Login](/recipes/vle/login.md)
 - [Blackboard VLE Login](/vle/blackboard/loggedin.json)
 - [Moodle VLE Login](/vle/moodle/login.js)
 
 ### Actor Entity
-The actor entity is used to identify the individual that is logging in. It uses the Jisc profile common entity [ActorA](/common_structures.md#actora).
+The Actor entity is used to identify the individual that is logging in. It uses the Jisc Profile common entity [ActorA](/common_structures.md#actora).
 
 #### Actor Entity properties:
 
 <table>
 <tr><th>Property</th><th>Description</th></tr>
 <tr>
-<td>actor.objectType [1]</td><td>Must have the value "Agent". Actors of type "Group" are not supported in the Jisc profile.</td>
+<td>actor.objectType [1]</td><td>Must have the value "Agent". Actors of type "Group" are not supported in the Jisc Profile.</td>
 </tr>
 <tr>
 <td>actor.name [0..1]</td><td>Full name of user.</td>
@@ -51,18 +51,18 @@ actor.account.homepage [1] <br/>
 ```
 
 ### Verb Entity
-The verb used in login statements is [logged in](../vocabulary.md#logged-in). It describes the action of logging into a platform. It uses the Jisc common entity [VerbA](../common_structures.md#verba). 
+The Verb used in login Statements is [logged in](../vocabulary.md#logged-in). It describes the action of logging into a platform. It uses the Jisc common entity [VerbA](../common_structures.md#verba). 
 
 #### Verb Entity properties:
 <table>
 	<tr><th>Property</th><th>Description</th></tr>
 	<tr>
 		<td>verb.id [1]</td>
-		<td>An IRI that identifies the Verb. For logged in statements the Jisc profile uses https://brindlewaye.com/xAPITerms/verbs/loggedin verb id</td>
+		<td>An IRI that identifies the Verb. For logged in Statements the Jisc Profile uses https://brindlewaye.com/xAPITerms/verbs/loggedin verb id</td>
 	</tr>
 	<tr>
 		<td>verb.display [1]</td>
-		<td>A human readable representation of Verb. It takes a RFC 5646 Language Tag. For logged in statements use "logged in"</td>
+		<td>A human readable representation of Verb. It takes a RFC 5646 Language Tag. For logged in Statements use "logged in"</td>
 	</tr>
 </table>
 
@@ -77,7 +77,7 @@ The verb used in login statements is [logged in](../vocabulary.md#logged-in). It
 ```
 
 ### Object Entity
-The object for Login statements identifies what is being logged in to. It uses the Jisc Profile common entity [ObjectA](../common_structures.md#objecta),
+The Object for Login Statements identifies what is being logged in to. It uses the Jisc Profile common entity [ObjectA](../common_structures.md#objecta),
 
 #### Object Entity properties:
 <table>
@@ -88,13 +88,13 @@ The object for Login statements identifies what is being logged in to. It uses t
 	</tr>
 	<tr>
 		<td>object.id [1]</td>
-		<td>An identifier for the object of the xAPI statement. This must be unique (within a given platform) across all object types.</td>
+		<td>An identifier for the Object of the xAPI Statement. This must be unique (within a given platform) across all Object types.</td>
 	</tr>
 		<tr>
 		<td>object.definition.type [1]<br />
 	object.definition.name [0..1]<br />
 	object.definition.extensions.http://xapi.jisc.ac.uk/subType [0..1]<br /></td>
-		<td>A JSON object comprising both standard xAPI properties and the Jisc profile 'subType' extension.<br/>
+		<td>A JSON Object comprising both standard xAPI properties and the Jisc Profile 'subType' extension.<br/>
     The <b>type</b> classifies generally what is being logged into, for example an application or a platform. Valid values are listed on the <a href="../vocabulary.md#31-activity-types">vocabulary page</a>.<br/>
     The <b>name</b> is optional.<br/>
     The <b>subType</b> extension may be used to further qualify the object.objectType, and is described on the [vocabularies](vocabulary.md#32-object-definition-extensions) page.<br /></tr>
@@ -130,10 +130,10 @@ Context can be used to describe any surrounding circumstances to the login, incl
 		 context.extension.sessionId [0..1]
 		 context.extension.ip-address [1]
 		 </td>
-		<td>Four extensions are provided for, with IRIs as defined on the <a href="../vocabulary.md#41-context-extensions">vocabularies page</a>.
+		<td>Four extensions are provided, with IRIs as defined on the <a href="../vocabulary.md#41-context-extensions">vocabularies page</a>.
   	  The <b>sessionID</b> extension is the identifier of the user's session, or a suitably hashed version of it. A value should be provided if this information is available.<br/>
     The <b>ip-address</b> is used to identify the client's IP address. An IPv4 address is recommended.<br/>
-    The <b>version</b> extension is recommended and identifies the xAPI Profile version. <br/></td></tr></table>
+    The <b>version</b> extension is recommended and identifies the Jisc Profile version. <br/></td></tr></table>
 			
 #### Context Entity Example:
 ``` javascript
