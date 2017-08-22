@@ -125,12 +125,12 @@ The Object entity defines an event that has been attended.
 	   <td>Integer</td>
 	</tr> 
 	<tr>
-	   <td><a href="/vocabulary.md#event-mandatory">object.definition.extensions.http://xapi.jisc.ac.uk/event_mandatory</a>[0.1]</td>
+	   <td><a href="/vocabulary.md#event-mandatory">object.definition.extensions.http://xapi.jisc.ac.uk/event_mandatory</a> [0.1]</td>
 	   <td>States whether or not the event was mandatory.</td>
 	   <td>Integer, 1 for mandatory, 0 for non mandatory</td>
 	</tr>
 	<tr>
-	   <td><a href="/vocabulary.md#timetabled-event">object.definition.extensions.http://xapi.jisc.ac.uk/event_timetabled</a>[0.1]</td>
+	   <td><a href="/vocabulary.md#timetabled-event">object.definition.extensions.http://xapi.jisc.ac.uk/event_timetabled</a> [0.1]</td>
 	   <td>States whether or not the event was timetabled.</td>
 	   <td>Integer, 1 for timetabled, 0 for not timetabled</td>
 	</tr>
