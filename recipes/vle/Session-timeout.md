@@ -1,7 +1,7 @@
-# session_timed_out statement template (Deprecated as of 1.0)
+# session_timed_out Statement template (Deprecated as of 1.0)
 
 ## Purpose
-This activity indicates the activity provider has determined that the session was abnormally terminated either by an actor or due to a system failure.
+This Statement template indicates that the Activity provider has determined that the session was abnormally terminated either by an Actor or due to a system failure.
 
 ## Definition
 ### Actor
@@ -23,7 +23,7 @@ Example:
 ### Verb
 Common entity identifier: VerbA, as defined on the [common structures](/common_structures.md#verba) page.
 
-The Verb,[abandoned](/vocabulary.md#verbs) describes the action of logging out of a platform.
+The Verb,[abandoned](/vocabulary.md#verbs), describes the action of logging out of a platform.
 
 Example:
 
@@ -37,7 +37,8 @@ Example:
 ``` 
 
 ### Context
-Common entity identifier: ContextA, as defined on the [common structures](/common_structures.md#contexta) page. Only the core attributes of context are applicable.
+
+Common entity identifier: ContextA, as defined on the [common structures](/common_structures.md#contexta) page. Only the core attributes of the Context entity are applicable.
 
 Example:
 
@@ -55,9 +56,9 @@ Example:
 ### Object
 Common entity identifier: ObjectA, as defined on the [common structures](/common_structures.md#objecta) page.
 
-The object defines the item that the user has timed out of.  A [Jisc specific extension](common_statements.md#jisc_extensions) details that it is a VLE that is being logged out of. 
+The Object defines the item that the user has timed out of.  A [Jisc specific extension](common_statements.md#jisc_extensions) details that it is a VLE that is being logged out of.
 
-The object.definition.type is "http://activitystrea.ms/schema/1.0/application". The subType (http://xapi.jisc.ac.uk/subType) extension should be used to identify the system type that is being logged into, in this example a Virtual Learning Environment (aka Learning Management System), identified by  http://id.tincanapi.com/activitytype/lms. Different application types should use the relevant subType, as defined on the [vocabularies](vocabulary.md#32-object-definition-extensions) page.
+The object.definition.type is "http://activitystrea.ms/schema/1.0/application". The subType (http://xapi.jisc.ac.uk/subType) extension should be used to identify the system type whose session has been terminated, in this example a Virtual Learning Environment (aka Learning Management System), identified by  http://id.tincanapi.com/activitytype/lms. Different application types should use the relevant subType, as defined on the [vocabularies](vocabulary.md#32-object-definition-extensions) page.
 
 ``` javascript
 

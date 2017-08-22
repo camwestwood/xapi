@@ -1,15 +1,16 @@
-# vle_assignment_submitted statement template
+# vle_assignment_submitted Statement template
 
 [Statement Template Changes](/version_changes.md#assignment-submitted)
 
 ## Purpose
-This activity records a user submitting an assignment
+This Statement template records a user submitting an assignment.
+
 ## Definition
 
 ### Actor
 Common entity identifier:  ActorA, as defined on the [common structures](/common_structures.md#actora) page.
 
-The actor entity describes the individual who has submitted the assignment.
+The Actor entity describes the individual who has submitted the assignment.
 
 ``` Javascript
 {
@@ -26,7 +27,7 @@ The actor entity describes the individual who has submitted the assignment.
 ### Verb
 Common entity identifier: VerbA, as defined on the [common structures](/common_structures.md#verba) page.
 
-The verb [completed](/vocabulary.md#verbs) describes the action of completing an activity - finishing it in its entirety
+The Verb [completed](/vocabulary.md#verbs) describes the action of completing an Activity - finishing it in its entirety.
 
 ``` javascript
 "verb": {
@@ -38,13 +39,13 @@ The verb [completed](/vocabulary.md#verbs) describes the action of completing an
 ``` 
 
 ### Result
-The result entity describes the completion of a learning activity.
+The Result entity describes the completion of a learning activity.
 
 <table>
 	<tr><th>Property [cardinality]</th><th>Description</th><th>Data type</th></tr>
 	<tr>
 		<td>result.completion [1]</td>
-		<td>When set to "true", result.completion indicates that the learner attended the event. "false" indicates that the learner did not attend the event.</td>
+		<td>When set to "true", result.completion indicates that the learner attended the event; "false" indicates that the learner did not attend the event.</td>
 		<td>Boolean</td>
 	</tr>
 </table>
@@ -56,11 +57,8 @@ The result entity describes the completion of a learning activity.
     }
 ```
 
-
-
 ### Object
 Common entity identifier: ObjectB, as defined on the [common structures](/common_structures.md#objectb) page.
-
 
 Example:
 
@@ -79,9 +77,7 @@ Example:
 			}
 			
 		}
-		
 ```
-
 
 ### Context
 Common entity identifier: ContextA, as defined on the [common structures](/common_structures.md#contexta) page.
@@ -105,9 +101,6 @@ Example:
 			}
 		}
 ```
-
-
-
 
 ### Complete VLE Specific Examples
 [Blackboard Assignment Submitted Example](/vle/blackboard/assignment_submitted.json)

@@ -1,16 +1,18 @@
-# vle_logged_out statement template
+# vle_logged_out Statement template
 
-Based on generic template statement: [Logout](/generic/logout.md)
+Based on generic Statement template: [Logout](/generic/logout.md)
 
 [Statement Template Changes](/version_changes.md#logged-out)
 
 ## Purpose
-This activity records a user logging out of a VLE.
+
+This Statement template records a user logging out of a VLE.
+
 ## Definition
 ### Actor
 Common entity identifier:  ActorA, as defined on the [common structures](/common_structures.md#actora) page.
 
-The actor entity describes the individual logging out of the system.
+The Actor entity describes the individual logging out of the system.
 
 ### Example
 ``` Javascript
@@ -27,11 +29,10 @@ The actor entity describes the individual logging out of the system.
 ```
 
 ### Verb
-Common entity identifier: VerbA
 
 Common entity identifier: VerbA, as defined on the [common structures](/common_structures.md#verba) page.
 
-This statement uses the [logged out](/vocabulary.md#verb) verb to describe the action of logging out of a platform.
+This Statement uses the [logged out](/vocabulary.md#verb) Verb to describe the action of logging out of a platform.
 
 ### Example:
 
@@ -42,11 +43,13 @@ This statement uses the [logged out](/vocabulary.md#verb) verb to describe the a
             "en": "logged out of"
         }
     },
-``` 
+```
+
 ### Context
+
 Common entity identifier: ContextA, as defined on the [common structures](/common_structures.md#contexta) page.
 
-Since the logged-in action is not undertaken in the context of a learning activity or course, only the core attributes of context are applicable.
+Since the logged-in action is not undertaken in relation to a particular learning activity or course, only the core attributes of the Context entity are applicable.
 
 ### Example:
 
@@ -63,7 +66,7 @@ Since the logged-in action is not undertaken in the context of a learning activi
 ### Object
 Common entity identifier: ObjectA, as defined on the [common structures](/common_structures.md#objecta) page.
 
-When the object.definition.type is "http://activitystrea.ms/schema/1.0/application".  The subType (http://xapi.jisc.ac.uk/subType) extension should be used to identify the subType of the application that is being logged out of, in this example a Virtual Learning Environment (aka Learning Management System), identified by  http://id.tincanapi.com/activitytype/lms. Different application types should use the relevant subType, as defined on the [vocabularies](/vocabulary.md#extensions) page.
+When the object.definition.type is "http://activitystrea.ms/schema/1.0/application", the subType (http://xapi.jisc.ac.uk/subType) extension should be used to identify the subType of the application that is being logged out of, in this example a Virtual Learning Environment (aka Learning Management System), identified by  http://id.tincanapi.com/activitytype/lms. Different application types should use the relevant subType, as defined on the [vocabularies](/vocabulary.md#extensions) page.
 
 
 ### Example

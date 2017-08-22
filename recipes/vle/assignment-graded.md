@@ -1,18 +1,18 @@
-# vle_assignment_graded statement template
+# vle_assignment_graded Statement template
 
 [Statement Template Changes](/version_changes.md#assignment-graded)
 
 ## Purpose
-This activity records a graded assignment.
+This Statement template records a graded assignment.
 
-Natural language example of a typical statement: "John Smith scored 90% when he completed his ABC assignment in module LA101 (raw score 45), marked by Angela Jones, indicating success on this assignment. Minimum possible score: 0; maximum score: 50."
+Natural language example of a typical Statement: "John Smith scored 90% when he completed his ABC assignment in module LA101 (raw score 45), marked by Angela Jones, indicating success on this assignment. Minimum possible score: 0; maximum score: 50."
 
 ## Definition
 ### Actor
 
 Common entity identifier:  ActorA, as defined on the [common structures](/common_structures.md#actora) page.
 
-The actor entity describes the individual whose work has been graded.
+The Actor entity describes the individual whose work has been graded.
 
 ### Example:
 ``` Javascript
@@ -30,7 +30,7 @@ The actor entity describes the individual whose work has been graded.
 ### Verb
 Common entity identifier: VerbA, as defined on the [common structures](/common_structures.md#verba) page.
 
-The verb [scored](/vocabulary.md#verbs) describes the student receiving a score for a learning activity.
+The Verb [scored](/vocabulary.md#verbs) describes the student receiving a score for a learning activity.
 
 ### Example:
 
@@ -44,7 +44,7 @@ The verb [scored](/vocabulary.md#verbs) describes the student receiving a score 
 ``` 
 
 ### Result
-The result entity is mandatory for this type of statement. It can include scaled, raw, min and max score, success, and response (the instructor's feedback). See [score](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#Score). See the [vocabulary](vocabulary.md) page for a definition of the 'http://xapi.jisc.ac.uk/grade' extension.
+The Result entity is mandatory for this type of Statement. It can include scaled, raw, min and max score, success, and response (the instructor's feedback). See [score](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#Score). See the [vocabulary](vocabulary.md) page for a definition of the 'http://xapi.jisc.ac.uk/grade' extension.
 
 
 <table>
@@ -106,13 +106,12 @@ The result entity is mandatory for this type of statement. It can include scaled
         "completion": true,
         "response": "Your answer should have been: The cow jumped over the moon."
          }
-
 ````
 
 ### Object
 Common entity identifier: ObjectB, as defined on the [common structures](/common_structures.md#objectb) page.
 
-The object defines the activity that has been evaluated. [Examples of valid object.definition vocabulary on Activity objectTypes](/common_structures.md#object) can be found on the vocab page.
+The Object defines the Activity that has been evaluated. [Examples of valid object.definition vocabulary on Activity objectTypes](/common_structures.md#object) can be found on the vocab page.
 
 
 ### Example:
@@ -129,12 +128,11 @@ The object defines the activity that has been evaluated. [Examples of valid obje
 			"extensions":{
 				"http://xapi.jisc.ac.uk/dueDate": "2016-02-05T17:59:45.000Z"
 			}
-		}
-		
+		}	
 ```
 
 ### Context
-The context for assignment graded is based on contextA on the [common structures](/common_structures.md#contexta), except an instructor may be present.
+The Context for assignment graded is based on ContextA on the [common structures](/common_structures.md#contexta) page, except that an instructor may be present.
 
 <table>
 <tr><th>Property [cardinality]</th><th>Description</th><th>Value information</</th></tr>
@@ -146,7 +144,7 @@ The context for assignment graded is based on contextA on the [common structures
 <tr>
 	<td>context.instructor.objectType [1]</td>
 	<td>Must be "Agent"</td>
-	<td>Must have the value "Agent".</td>
+	<td>string. Must have the value "Agent".</td>
 </tr>
 <tr>
 	<td>context.instructor.name [1]</td>

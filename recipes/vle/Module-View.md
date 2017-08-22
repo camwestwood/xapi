@@ -1,6 +1,6 @@
-# vle_resource_viewed statement template
+# vle_resource_viewed Statement template
 
-Based on generic template statement: [Viewed](/generic/view.md)
+Based on generic Statement template: [Viewed](/generic/view.md)
 
 [Statement Template Changes](/version_changes.md#vle-resource-viewed)
 
@@ -10,7 +10,7 @@ This template defines the structure and terms to record the experience of viewin
 ### Actor
 Common entity identifier:  ActorA, as defined on the [common structures](/common_structures.md#actora) page.
 
-The actor entity describes the individual that is viewing a vle resource.
+The Actor entity describes the individual that is viewing a vle resource.
 
 ### Example:
 
@@ -42,8 +42,10 @@ The Verb, [viewed](/vocabulary.md#verb) denotes the action of the user's browser
         }
     },
 ```
+
 ### Context
-Common entity identifier: ContextA, as defined on the [common structures](/common_structures.md#contexta) page. In the statement, the courseArea is required. See the [vocabularies](/vocabulary.md#coursearea) page for more information
+
+Common entity identifier: ContextA, as defined on the [common structures](/common_structures.md#contexta) page. In this Statement, the courseArea extension is required. See the [vocabularies](/vocabulary.md#coursearea) page for more information.
 
 ### Example:
 
@@ -68,7 +70,7 @@ Common entity identifier: ContextA, as defined on the [common structures](/commo
 
 Common entity identifier: ObjectA, as defined on the [common structures](/common_structures.md#objecta) page.
 
-For this recipe the object needs to identify what was viewed. A list of valid values  for the object definition type can be found on the [vocabularies page](/vocabulary.md#activity-types)
+For this Statement the Object needs to identify what was viewed. A list of valid values for the object.definition.type can be found on the [vocabularies page](/vocabulary.md#activity-types)
 
 ### Example
 
