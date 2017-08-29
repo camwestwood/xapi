@@ -1,4 +1,4 @@
-# LAP Predictive Model Risk Assessment Output Recipe
+# LAP Predictive Model Risk Assessment Output Statement
 
 ## Purpose
 
@@ -34,9 +34,9 @@ Account/Name is the UDD Predictive Core STUDENT_ID.
 
 ### Context
 
-Context contains the UDD Predictive Core Module Instance.MOD INSTANCE ID
+Context contains the UDD Predictive Core module_instance.MOD_INSTANCE_ID
 
-context/contextActivities/grouping[0]/id contains the mod instance id
+context/contextActivities/grouping[0]/id contains the mod_instance_id
 
 ```
 	"context": {
