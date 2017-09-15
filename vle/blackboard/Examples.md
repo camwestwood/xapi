@@ -21,12 +21,6 @@ Student manually logged out from BBLearn
 
 * [loggedout.json](loggedout.json)
 
-### Session timeout
-
-Student session expired
-
-* [session_timeout.json](session_timeout.json)
-
 ### Course View
 
 Student accesses course home page
