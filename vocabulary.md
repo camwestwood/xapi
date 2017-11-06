@@ -465,9 +465,9 @@ For more information, see Jisc Profile [CourseArea properties](#coursearea).
 ### Planned End Time
 
 <table>
-<tr><th align="left">Label</th><td>Planned end time</td></tr>
+<tr><th align="left">Label</th><td>End time</td></tr>
 <tr><th align="left">Description</th><td>An ISO8601 timestamp representing the planned end time of a scheduled or planned event.</td></tr>
-<tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/extension/planned-end-time">http://xapi.jisc.ac.uk/extension/planned-end-time</a> </td></tr>
+<tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/endtime">http://xapi.jisc.ac.uk/endtime/a> </td></tr>
 <tr><th align="left">Data Type</th><td>ISO 8601 timestamp</td></tr>
 <tr><th align="left">Value Space</th><td>Timestamp</td></tr>
 <tr><th align="left">Sample Value</th><td>2016-02-05T10:00:00.000Z</td></tr>
@@ -476,9 +476,9 @@ For more information, see Jisc Profile [CourseArea properties](#coursearea).
 ### Planned Start Time
 
 <table>
-<tr><th align="left">Label</th><td>Planned start time</td></tr>
+<tr><th align="left">Label</th><td>Start time</td></tr>
 <tr><th align="left">Description</th><td>An ISO8601 timestamp representing the planned start time of a scheduled or planned event.</td></tr>
-<tr><th align="left">IRI</th><td> <a href="http://id.tincanapi.com/extension/planned-start-time">http://id.tincanapi.com/extension/planned-start-time</a> </td></tr>
+<tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/starttime">http://xapi.jisc.ac.uk/starttime</a> </td></tr>
 <tr><th align="left">Data Type</th><td>ISO 8601 timestamp</td></tr>
 <tr><th align="left">Value Space</th><td>Timestamp</td></tr>
 <tr><th align="left">Sample Value</th><td>2016-02-05T10:00:00.000Z</td></tr>
