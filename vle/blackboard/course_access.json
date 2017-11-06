@@ -1,45 +1,54 @@
-{
-    "actor":{
-        "objectType":"Agent",
-        "name":"Student Name",
-        "account":{
-            "name":"student_username",
-            "homePage":"https://jisc.blackboard.com"
-        }
+ {
+    "authority": {
+      "mbox": "mailto:analytics@jisc.ac.uk",
+      "name": "Moodle",
+      "objectType": "Agent"
     },
-    "verb":{
-        "id":"http://id.tincanapi.com/verb/viewed",
-        "display":{
-            "en":"viewed"
-        }
+    "stored": "2017-11-02T10:55:47.245100+00:00",
+    "context": {
+      "extensions": {
+        "http://blackboard&46;com/extensions/info": {
+          "https://jisc&46;blackboard&46;com/webapps/bbc-xAPI-BBLEARN/": "2.0.0",
+          "https://jisc&46;blackboard&46;com": "9.1.201510"
+        },
+        "http://id&46;tincanapi&46;com/extension/ip-address": "10.3.3.48",
+        "http://xapi&46;jisc&46;ac&46;uk/courseArea": {
+          "id": "https://jisc.blackboard.com/webapps/blackboard/execute/courseMain?course_id=741&sc=",
+          "http://xapi&46;jisc&46;ac&46;uk/vle_mod_id": "test_course11"
+        },
+        "http://xapi&46;jisc&46;ac&46;uk/sessionId": "722602",
+        "http://xapi&46;jisc&46;ac&46;uk/recipeVersion": "1.0"
+      },
+      "platform": "Blackboard"
     },
-    "object":{
-        "objectType":"Activity",
-        "id":"https://jisc.blackboard.com/webapps/blackboard/execute/modulepage/view?course_id=1",
-        "definition":{
-            "type":"http://xapi.jisc.ac.uk/vle/page",
-            "name":{
-                "en":"Course 001"
-            },
-            "description":{
-                "en":"Course 001 description"
-            }
-        }
+    "actor": {
+      "account": {
+        "name": "test_user1",
+        "homePage": "https://jisc.blackboard.com"
+      },
+      "name": "test_user1 test_user1",
+      "objectType": "Agent"
     },
-    "context":{
-        "platform":"Blackboard",
-        "extensions":{
-            "http://xapi.jisc.ac.uk/extensions/courseArea":{
-                "http://xapi.jisc.ac.uk/vle_mod_id":"b-xapi",
-                "id":"https://jisc.blackboard.com/webapps/blackboard/execute/modulepage/view?course_id=1"
-            },
-            "http://xapi.jisc.ac.uk/plugin/info":{
-                "https://jisc.blackboard.com":"9.1.201410",
-                "https://jisc.blackboard.com/webapps/bbc-xAPI-BBLEARN/":"1.0.0"
-            },
-            "http://xapi.jisc.ac.uk/sessionId":"32456891",
-            "http://xapi.jisc.ac.uk/recipeVersion": "1.2",
-            "http://id.tincanapi.com/extension/ip-address":"10.3.3.48"
-        }
+    "timestamp": "2017-08-29T05:32:42.000Z",
+    "version": "1.0.0",
+    "id": "3c3a4e77-3202-4f56-848c-efe86065f9c7",
+    "verb": {
+      "display": {
+        "en": "viewed"
+      },
+      "id": "http://id.tincanapi.com/verb/viewed"
+    },
+    "object": {
+      "definition": {
+        "description": {
+          "en": "test_course11"
+        },
+        "name": {
+          "en": "test_course11"
+        },
+        "type": "http://xapi.jisc.ac.uk/vle/page"
+      },
+      "id": "https://jisc.blackboard.com/webapps/blackboard/execute/courseMain?course_id=741&sc=",
+      "objectType": "Activity"
     }
-}
+  }

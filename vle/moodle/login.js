@@ -1,55 +1,49 @@
-{
-    "version": "1.0.0",
-    "actor": {
-        "objectType": "Agent",
-        "name": "madmin",
-        "account": {
-            "name": "madmin",
-            "homePage": "http://localhost:8080/moodle/moodle"
-        }
-    },
-    "verb": {
-        "id": "https://brindlewaye.com/xAPITerms/verbs/loggedin/",
-        "display": {
-            "en": "logged in to"
-        }
-    },
-    "context": {
-        "platform": "Moodle",
+ {
+      "authority": {
+        "mbox": "mailto:analytics@jisc.ac.uk",
+        "name": "Moodle",
+        "objectType": "Agent"
+      },
+      "stored": "2017-11-06T11:48:23.512700+00:00",
+      "context": {
         "extensions": {
-            "http://xapi.jisc.ac.uk/extensions/sessionId": {
-                "sessionId": "L5t1W93PED"
-            },
-            "http://id.tincanapi.com/extension/ip-address": {
-                "ip-address": "0:0:0:0:0:0:0:1"
-            },
-            "http://lrs.learninglocker.net/define/extensions/info": {
-                "https://moodle.org/": "2.8.11 (Build: 20160314)",
-                "https://github.com/LearningLocker/Moodle-Log-Expander": "1.0.0",
-                "https://github.com/LearningLocker/Moodle-xAPI-Translator": "1.0.0",
-                "https://github.com/JiscDev/xAPI-Recipe-Emitter": "1.0.0"
-            }
-        }
-    },
-    "timestamp": "2016-03-29T07:47:26-07:00",
-    "object": {
-        "objectType": "Activity",
-        "id": "http://localhost:8080/moodle/moodle",
+          "http://xapi&46;jisc&46;ac&46;uk/courseArea": [],
+          "http://id&46;tincanapi&46;com/extension/ip-address": "86.28.112.183",
+          "http://xapi&46;jisc&46;ac&46;uk/version": "1.0",
+          "http://xapi&46;jisc&46;ac&46;uk/sessionId": "Ser0JqGHz2"
+        },
+        "platform": "Moodle"
+      },
+      "actor": {
+        "account": {
+          "homePage": "https://moodle.data.alpha.jisc.ac.uk",
+          "name": "stu1"
+        },
+        "objectType": "Agent"
+      },
+      "timestamp": "2017-11-06T11:48:23+00:00",
+      "version": "1.0.0",
+      "id": "6ee080c5-1626-4216-98cf-16611636b68c",
+      "verb": {
+        "display": {
+          "en": "logged in to"
+        },
+        "id": "https://brindlewaye.com/xAPITerms/verbs/loggedin"
+      },
+      "object": {
         "definition": {
-            "type": "http://activitystrea.ms/schema/1.0/application",
-            "name": {
-                "en": "xAPI Moodle"
-            },
-            "description": {
-                "en": "xAPI Moodle"
-            }
-        }
-    },
-    "authority": {
-        "objectType": "Agent",
-        "name": "New Client",
-        "mbox": "mailto:hello@learninglocker.net"
-    },
-    "stored": "2016-03-29T14:47:26.511000+00:00",
-    "id": "fbdec75a-cef2-4dcf-8b15-55a6b0f0b327"
-}
+          "extensions": {
+            "http://xapi&46;jisc&46;ac&46;uk/subType": "http://id.tincanapi.com/activitytype/lms"
+          },
+          "description": {
+            "en": "University of Jisc Moodle"
+          },
+          "name": {
+            "en": "University of Jisc Moodle"
+          },
+          "type": "http://activitystrea.ms/schema/1.0/application"
+        },
+        "id": "https://moodle.data.alpha.jisc.ac.uk",
+        "objectType": "Activity"
+      }
+    }
