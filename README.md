@@ -25,7 +25,7 @@ Here are descriptions of Statements that can be sent to the Jisc Learning Record
 
 ## VLE
 
-These are platform independent Statements related to Virtual Learning Enviroments.
+These are platform independent Statements related to Virtual Learning Enviroments. JSON examples are generated from plugins. Bug reports can be directed to the [Moodle](https://github.com/jiscdev/jisc-moodle-xapi-plugin) or [BlackBoard](https://github.com/jiscdev/blackboard-xapi-plugin) Github repository.
 
 <table>
 <tr><td>Statement Template </td>   <td>JSON example</td> </tr>
