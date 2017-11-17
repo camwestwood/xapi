@@ -1,5 +1,6 @@
 # session_timed_out Statement template (Deprecated as of 1.0)
 
+
 ## Purpose
 This Statement template indicates that the Activity provider has determined that the session was abnormally terminated either by an Actor or due to a system failure.
 

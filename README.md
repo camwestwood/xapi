@@ -3,6 +3,7 @@
 ## Repository Workflow
 The simplest way of contributing to the xAPI service works as follows:
 
+
 1. Add an issue to the issue tracker to alert everyone to what you are working on and why.
 2. Tag the issue with the version milestone you'd like the patch to be a part of.
 3. If the feature is for this version then make an edit or add a file in this repository, and save it to your own branch. If you prefer, you can fork the whole repository and work in your own repository. Otherwise create a feature-branch to work in.
@@ -36,6 +37,7 @@ These are platform independent Statements related to Virtual Learning Enviroment
 <tr><td> <a href =  "/recipes/vle/assignment-submitted.md">Assignment Submitted  </a></td><td><a href = "vle/moodle/assignment_submitted.json">Assignment submitted in Moodle</a><br/> <a href="vle/blackboard/assignment_submitted.json">Assignment submitted in Blackboard</a>   </td></tr>                                                             
 </table>
 
+
 ### All VLE Statement examples
 * [Blackboard VLE samples](vle/blackboard/Examples.md)
 * [Moodle VLE samples](vle/moodle/examples.md)
@@ -47,6 +49,7 @@ These are platform independent Statements related to Virtual Learning Enviroment
 </table>
 
 ## Predictive Model Output
+
 <table>
 <tr><td>Statement Template </td><td>JSON Example</td></tr>
 <tr><td> <a href = "/lap/apereo/model_output.md">Predictive Model Alerting</a></td><td><a href = "/lap/apereo/model_output.js">Alerting JSON</a></td> </tr>    
@@ -56,3 +59,4 @@ These are platform independent Statements related to Virtual Learning Enviroment
 # Deprecated Statements
 
 - [Session timeout](/recipes/vle/Session-timeout.md)    
+

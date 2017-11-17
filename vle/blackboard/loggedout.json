@@ -25,6 +25,7 @@
       "name": "test_user1 test_user1",
       "objectType": "Agent"
     },
+<<<<<<< HEAD
     "timestamp": "2017-08-28T23:47:57.000Z",
     "version": "1.0.0",
     "id": "c3bcaf1e-b9d9-40c0-b335-36c40519146d",
@@ -49,6 +50,19 @@
       },
       "id": "https://jisc.blackboard.com/webapps/login/",
       "objectType": "Activity"
+=======
+    "context":{
+        "platform":"Blackboard",
+        "extensions":{
+            "http://xapi.jisc.ac.uk/plugin/info":{
+                "https://jisc.blackboard.com":"9.1.201410",
+                "https://jisc.blackboard.com/webapps/bbc-xAPI-BBLEARN/":"1.0.0"
+            },
+            "http://xapi.jisc.ac.uk/sessionId":"32456891",
+            "http://xapi.jisc.ac.uk/recipeVersion": "1.0",
+            "http://id.tincanapi.com/extension/ip-address":"10.3.3.48"
+        }
+>>>>>>> master
     }
   }
 }
