@@ -1,68 +1,73 @@
 {
-    "version":"1.0.0",
-    "id":"1dc6aeab-6cb0-4501-92db-c7d7ca467d00",
-    "timestamp":"2016-02-05T17:59:45.000Z",
-    "actor":{
-        "objectType":"Agent",
-        "name":"test1 test1",
-        "account":{
-            "homePage":"https://jisc.blackboard.com",
-            "name":"test1"
-        }
-    },
-    "verb":{
-        "id":"http://adlnet.gov/expapi/verbs/completed",
-        "display":{
-            "en":"completed"
-        }
-    },
-    "result":{
-        "completion":true
-    },
-    "object":{
-        "objectType":"Activity",
-        "id":"https://jisc.blackboard.com/webapps/gradebook/do/instructor/enterGradeCenter?course_id=_47_1&cvid=fullGC#",
-        "definition":{
-            "type":"http://adlnet.gov/expapi/activities/module",
-            "name":{
-                "en":"Test1"
-            },
-            "description":{
-                "en":"Test1"
-            }
-        }
-    },
-    "context":{
-        "contextActivities":{
-            "grouping":[
-                {
-                    "objectType":"Activity",
-                    "id":"https://jisc.blackboard.com/webapps/blackboard/execute/modulepage/view?course_id=1",
-                    "definition":{
-                        "type":"http://xapi.jisc.ac.uk/courseArea",
-                        "name":{
-                            "en":"xAPI Basics"
-                        },
-                        "description":{
-                            "en":"xAPI Basics course for Learning Analytics enthusiasts"
-                        }
-                    }
-                }
-            ]
+      "authority": {
+        "mbox": "mailto:analytics@jisc.ac.uk",
+        "name": "Moodle",
+        "objectType": "Agent"
+      },
+      "stored": "2017-11-02T12:55:24.343600+00:00",
+      "context": {
+        "extensions": {
+          "http://blackboard&46;com/extensions/info": {
+            "https://jisc&46;blackboard&46;com/webapps/bbc-xAPI-BBLEARN/": "2.0.0",
+            "https://jisc&46;blackboard&46;com": "9.1.201510"
+          },
+          "http://id&46;tincanapi&46;com/extension/ip-address": "10.3.3.48",
+          "http://xapi&46;jisc&46;ac&46;uk/courseArea": {
+            "id": "https://jisc.blackboard.com/webapps/blackboard/execute/courseMain?course_id=461&sc=",
+            "http://xapi&46;jisc&46;ac&46;uk/vle_mod_id": "Offline_Course1"
+          },
+          "http://xapi&46;jisc&46;ac&46;uk/recipeVersion": "1.0"
         },
-        "platform":"Blackboard",
-        "extensions":{
-            "http://xapi.jisc.ac.uk/courseArea":{
-                "http://xapi.jisc.ac.uk/vle_mod_id":"b-xapi",
-                "id":"https://jisc.blackboard.com/webapps/blackboard/execute/modulepage/view?course_id=1"
-            },
-            "http://xapi.jisc.ac.uk/plugin/info":{
-                "https://jisc.blackboard.com":"9.1.201410",
-                "https://jisc.blackboard.com/webapps/bbc-xAPI-BBLEARN/":"1.0.0"
-            },
-            "http://xapi.jisc.ac.uk/sessionId":"32456891",
-            "http://xapi.jisc.ac.uk/recipeVersion": "1.2",
-            "http://id.tincanapi.com/extension/ip-address":"10.3.3.48"
-        }
+        "contextActivities": {
+          "grouping": [
+            {
+              "definition": {
+                "description": {
+                  "en": "Offline_Course1"
+                },
+                "name": {
+                  "en": "Offline_Course1"
+                },
+                "type": "http://xapi.jisc.ac.uk/courseArea"
+              },
+              "id": "https://jisc.blackboard.com/webapps/blackboard/execute/courseMain?course_id=461&sc=",
+              "objectType": "Activity"
+            }
+          ]
+        },
+        "platform": "Blackboard"
+      },
+      "actor": {
+        "account": {
+          "name": "mkratchounov",
+          "homePage": "https://jisc.blackboard.com"
+        },
+        "name": "Miroslav Kratchounov",
+        "objectType": "Agent"
+      },
+      "timestamp": "2017-10-16T12:31:16.000Z",
+      "version": "1.0.0",
+      "id": "9c0fad59-43eb-4a5b-a54d-8ad7d4038d37",
+      "result": {
+        "completion": false
+      },
+      "verb": {
+        "display": {
+          "en": "completed"
+        },
+        "id": "http://adlnet.gov/expapi/verbs/completed"
+      },
+      "object": {
+        "definition": {
+          "description": {
+            "en": "OfflineAssignmentTest_23-11-2016_11:32:32"
+          },
+          "name": {
+            "en": "OfflineAssignmentTest_23-11-2016_11:32:32"
+          },
+          "type": "http://adlnet.gov/expapi/activities/assessment"
+        },
+        "id": "https://jisc.blackboard.com/webapps/gradebook/do/instructor/enterGradeCenter?course_id=_461_1&cvid=fullGC#",
+        "objectType": "Activity"
+      }
     }
-}

@@ -1,81 +1,68 @@
 {
-    "version": "1.0.0",
-    "actor": {
-        "objectType": "Agent",
-        "name": "stutest",
-        "account": {
-            "name": "stutest",
-            "homePage": "http://localhost:8080/moodle/moodle"
-        }
-    },
-    "verb": {
-        "id": "http://adlnet.gov/expapi/verbs/completed",
-        "display": {
-            "en": "completed"
-        }
-    },
-    "context": {
-        "contextActivities": {
-            "grouping": [
-                {
-                    "objectType": "Activity",
-                    "id": "http://localhost:8080/moodle/moodle/course/view.php?id=2",
-                    "definition": {
-                        "type": "http://xapi.jisc.ac.uk/define/vle/course",
-                        "name": {
-                            "en": "Test"
-                        },
-                        "description": {
-                            "en": "A Moodle course"
-                        }
-                    }
-                }
-            ]
+      "authority": {
+        "mbox": "mailto:analytics@jisc.ac.uk",
+        "name": "Moodle",
+        "objectType": "Agent"
+      },
+      "stored": "2017-11-17T10:11:20.971800+00:00",
+      "context": {
+        "extensions": {
+          "http://xapi&46;jisc&46;ac&46;uk/courseArea": {
+            "http://xapi&46;jisc&46;ac&46;uk/vle_mod_id": "LA101"
+          },
+          "http://id&46;tincanapi&46;com/extension/ip-address": "86.28.112.183",
+          "http://xapi&46;jisc&46;ac&46;uk/version": "1.0",
+          "http://xapi&46;jisc&46;ac&46;uk/sessionId": "SlJkVHLpKA"
         },
         "platform": "Moodle",
-        "extensions": {
-            "http://xapi.jisc.ac.uk/extensions/sessionId": {
-                "sessionId": "FYcVzA4iDF"
-            },
-            "http://id.tincanapi.com/extension/ip-address": {
-                "ip-address": "0:0:0:0:0:0:0:1"
-            },
-            "http://lrs.learninglocker.net/define/extensions/info": {
-                "https://moodle.org/": "2.8.11 (Build: 20160314)",
-                "https://github.com/LearningLocker/Moodle-Log-Expander": "1.0.0",
-                "https://github.com/LearningLocker/Moodle-xAPI-Translator": "1.0.0",
-                "https://github.com/JiscDev/xAPI-Recipe-Emitter": "1.0.0"
-            },
-            "http://xapi.jisc.ac.uk/extensions/courseArea": {
-                "id": "http://localhost:8080/moodle/moodle/course/view.php?id=2",
-                "http://xapi.jisc.ac.uk/extensions/vle_mod_id": "Test"
+        "contextActivities": {
+          "grouping": [
+            {
+              "definition": {
+                "description": {
+                  "en": "A Moodle course"
+                },
+                "name": {
+                  "en": "LA101 - Sample Course"
+                },
+                "type": "http://adlnet.gov/expapi/activities/course"
+              },
+              "id": "https://moodle.data.alpha.jisc.ac.uk/course/view.php?id=4",
+              "objectType": "Activity"
             }
+          ]
         }
-    },
-    "timestamp": "2016-04-07T09:03:40-07:00",
-    "object": {
-        "objectType": "Activity",
-        "id": "http://localhost:8080/moodle/moodle/mod/assign/view.php?id=4",
+      },
+      "actor": {
+        "account": {
+          "homePage": "https://moodle.data.alpha.jisc.ac.uk",
+          "name": "stu1"
+        },
+        "objectType": "Agent"
+      },
+      "timestamp": "2017-11-17T10:11:20+00:00",
+      "version": "1.0.0",
+      "id": "68e3c9ff-a5ca-48ff-8abc-6b4394417c31",
+      "verb": {
+        "display": {
+          "en": "completed"
+        },
+        "id": "http://adlnet.gov/expapi/verbs/completed"
+      },
+      "object": {
         "definition": {
-            "type": "http://adlnet.gov/expapi/activities/module",
-            "name": {
-                "en": "Assignment 2"
-            },
-            "description": {
-                "en": "<p>Assignment 2<br></p>"
-            },
-            "extensions": {
-                "http://xapi.jisc.ac.uk/extensions/duedate": {
-                    "duedate": "2016-04-14T00:00:00-07:00"
-                }
-            }
-        }
-    },
-    "authority": {
-        "objectType": "Agent",
-        "name": "New Client",
-        "mbox": "mailto:hello@learninglocker.net"
-    },
-    "stored": "2016-04-07T16:03:41.255200+00:00",
-    "id": "554bdda9-a9eb-4f74-9ae8-aa64d3d589f3"
-}
+          "extensions": {
+            "http://xapi&46;jisc&46;ac&46;uk/dueDate": "2016-04-16T00:00:00+00:00"
+          },
+          "description": {
+            "en": "<p>Assignment 1<br></p>"
+          },
+          "name": {
+            "en": "Assignment 1"
+          },
+          "type": "http://adlnet.gov/expapi/activities/module"
+        },
+        "id": "https://moodle.data.alpha.jisc.ac.uk/mod/assign/view.php?id=16",
+        "objectType": "Activity"
+      }
+    }
