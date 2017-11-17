@@ -1,13 +1,15 @@
 # Blackboard xAPI examples
 
-## All examples of currently supported activity events recipes
 
-### Common for all Blackboard Learn activity event recipes
+## All examples of currently supported activity events Statements
 
-* "timestamp": time of when the event occurred in Blackboard Learn
+### Common for all Blackboard Learn activity event Statements
+
+* "timestamp": time when the event occurred in BBLearn
 * "actor"."name": student first name and last name
-* "actor"."account"."name": student username/user_id, unique for specific Blackboard Learn domain
-* "context": same context object used by all recipes 
+* "actor"."account"."name": student username/user_id, unique for specific BBLearn domain
+* "context": same Context used by all Statements 
+
 
 ### Logged in
 
@@ -21,6 +23,7 @@ Student manually logged out from BBLearn
 
 * [loggedout.json](loggedout.json)
 
+
 ### Course View
 
 Student accesses course home page
@@ -33,14 +36,17 @@ Student accesses course content
 
 * [course_content_access.json](course_content_access.json)
 
-### Attempt started (Not used)
 
-Student starts an attempt for Blackboard assignment/assessment/test/survey
+### Attempt started
+=======
+
 
 * [attempt_started.json](attempt_started.json)
 
-### Attempt completed (Not used)
 
+* [attempt_started.json](attempt_started.json)
+
+### Attempt completed
 
 Student completed an attempt for Blackboard assignment/assessment/test/survey
 
@@ -56,4 +62,6 @@ Student submitted a Blackboard assignment/assessment/test/survey
 
 Student graded for Blackboard assignment/assessment/test/survey
 
+
 * [asssignment_graded.json](asssignment_graded.json)
+
