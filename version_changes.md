@@ -101,6 +101,8 @@
 
 #### Attended learning activity
 
+20-11-2017, Spec & Doc Change. [timestamp to be set to starttime](https://github.com/jiscdev/xapi/issues/195)
+
 06-07-2017, Spec Change. [id removed from courseArea](https://github.com/jiscdev/xapi/issues/179)
 
 25-05-2017, Doc Change. [Removed event_timetabled type from example, replaced with lecture. subType changed](https://github.com/jiscdev/xapi/issues/165)
