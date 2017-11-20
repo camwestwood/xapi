@@ -251,10 +251,19 @@ The Object defines an event that has been attended. Information on the event can
     }
 ```
 
+
+### Timestamp
+In attendance statements the timestamp property must be set to the start time of the timetabled even. It's value is identical to the value found in the starttime extension.
+
+# Example Entity
+
+ "timestamp": "2016-02-05T10:00:00.000Z"
+ 
 # Example
 ``` javascript
 {
     "id": "12345678-1234-5678-1234-567812345678",
+    "timestamp": "2016-02-05T10:00:00.000Z",
     "actor": {
         "objectType": "Agent",
         "name": "John Smith",
