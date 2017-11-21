@@ -161,6 +161,11 @@ The Context for assignment graded is based on ContextA on the [common structures
 	<td>account.name gives the login id for the instructor.</td>
 	<td>string</td>
 </tr>
+<tr> 
+	<td>context.extension.courseArea [0..1]</td>
+	<td>Umbrella course/parent area by its an UDD Module Instance ID or VLE Module ID. More information can be found on the <a href="vocabulary.md#course-area">vocabularies page</a>..</td>
+	<td>JSON object</td>
+<tr> 
 </table>
 
 ### Example
@@ -182,7 +187,7 @@ The Context for assignment graded is based on ContextA on the [common structures
       	"http://xapi.jisc.ac.uk/courseArea": {
 			"http://xapi.jisc.ac.uk/vle_mod_id": "LA101",
 			"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0"
-              	},
+             },
 				
 		"http://xapi.jisc.ac.uk/sessionId": "32456891" ,
 		"http://id.tincanapi.com/extension/ip-address": "10.3.3.48"

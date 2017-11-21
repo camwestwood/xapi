@@ -218,7 +218,7 @@ The Object defines an event that has been attended. Information on the event can
 </tr>
 <tr>
 	<td><a href="vocabulary.md#course-area">context.extensions.https://xapi.jisc.ac.uk/courseArea</a> [0..1]</td>
-	<td>Umbrella course/parent area by a UDD Module Instance ID or VLE Module ID.</td>
+	<td>Umbrella course/parent area by a UDD Course Instance ID and UDD Module ID(If present)</td>
 	<td>JSON Object</td>
 </tr>
 </table>
@@ -249,7 +249,7 @@ The Object defines an event that has been attended. Information on the event can
 		},	
 			
 	"http://xapi.jisc.ac.uk/courseArea": {
-        "http://xapi.jisc.ac.uk/vle_mod_id": "LA101-200-2016S1-0",
+        "http://xapi.jisc.ac.uk/uddCourseInstanceID": "LA101-200",
 		"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0",
             	}	
 		}
