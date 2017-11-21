@@ -103,6 +103,11 @@ The Object entity defines an event that has been attended.
 		<td>Optional Object name</td>
 		<td>string</td>
 	</tr> 
+		<tr>
+		<td>object.definition.description [0..1]</td>
+		<td>Optional description of the Activity</td>
+		<td>string</td>
+	</tr> 
 	<tr>
 	   <td>object.definition.extensions.http://xapi.jisc.ac.uk/subType [0.1]</td>
 	   <td>May be used to qualify what kind of timetabled event occurred using an IRI given on the
