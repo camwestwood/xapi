@@ -44,29 +44,31 @@ The Verb [scored](/vocabulary.md#verbs) describes the student receiving a score 
 ``` 
 
 ### Result
-The Result entity is mandatory for this type of Statement. It can include scaled, raw, min and max score, success, and response (the instructor's feedback). See [score](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#Score). See the [vocabulary](vocabulary.md) page for a definition of the 'http://xapi.jisc.ac.uk/grade' extension.
+The Result entity is mandatory for this type of statement. The entity can include scaled, raw, min and max score, success, and response (the instructor's feedback) if known. See [score](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#Score). See the [vocabulary](vocabulary.md) page for a definition of the 'http://xapi.jisc.ac.uk/grade' extension.
 
+* Either a raw score or grade must be given.  
+* If unknown then a the property should not be set at all, unknown properties should not be set to zero. 
 
 <table>
 	<tr><th>Property [cardinality]</th><th>Description</th><th>Data type</th></tr>
 	<tr>
 		<td>result.score.scaled [0..1]</td>
-		<td>The score related to the experience as modified by scaling and/or normalization</td>
+		<td>The score related to the experience as modified by scaling and/or normalization.  If the raw value can be calculated as a percentage then the scaled may be populated as such. In the example shown, there is a 100 question quiz and a user has 25 questions correct, corresponding to a raw value of ‘25’ and a scaled value of ‘0.25’ (25%). If the data is not scaled then it should not be given and should not be zero</td>
 <td>decimal number between -1 and 1, inclusive.</td>
 	</tr>
 	<tr>
 		<td>result.score.raw [0..1]</td>
-		<td>Unmodified score</td>
+		<td>Unmodified score. If not present then grade must be given.</td>
 <td>decimal number between min and max (if present, otherwise unrestricted), inclusive</td>
 	</tr>
 	<tr>
 		<td>result.score.min [0..1]</td>
-		<td>The lowest possible score</td>
+		<td>The lowest possible score. If known this should be given.</td>
 <td>decimal number less than max (if present)</td>
 	</tr>
 	<tr>
 		<td>result.score.max [0..1]</td>
-		<td>The highest possible score</td>
+		<td>The highest possible score. If known this should be given.</td>
 		<td>decimal number greater than min (if present)</td>
 	</tr>
 	<tr>
@@ -86,7 +88,7 @@ The Result entity is mandatory for this type of Statement. It can include scaled
 	</tr>
 	<tr>
 		<td>result.extensions.http://xapi.jisc.ac.uk/grade [0..1]</td>
-		<td>Non-numerical assessment result</td>
+		<td>Non-numerical assessment result. If not present then score.raw must be given</td>
 		<td>string (256)</td>
 	</tr>
 </table>
@@ -161,6 +163,11 @@ The Context for assignment graded is based on ContextA on the [common structures
 	<td>account.name gives the login id for the instructor.</td>
 	<td>string</td>
 </tr>
+<tr> 
+	<td>context.extension.courseArea [0..1]</td>
+	<td>Umbrella course/parent area by its an UDD Module Instance ID or VLE Module ID. More information can be found on the <a href="vocabulary.md#course-area">vocabularies page</a>..</td>
+	<td>JSON object</td>
+<tr> 
 </table>
 
 ### Example
@@ -182,7 +189,7 @@ The Context for assignment graded is based on ContextA on the [common structures
       	"http://xapi.jisc.ac.uk/courseArea": {
 			"http://xapi.jisc.ac.uk/vle_mod_id": "LA101",
 			"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0"
-              	},
+             },
 				
 		"http://xapi.jisc.ac.uk/sessionId": "32456891" ,
 		"http://id.tincanapi.com/extension/ip-address": "10.3.3.48"

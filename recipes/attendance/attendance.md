@@ -135,17 +135,17 @@ The Object entity defines an event that has been attended.
 	   <td>Integer, 1 for mandatory, 0 for non mandatory</td>
 	</tr>
 	<tr>
-	   <td><a href="/vocabulary.md#timetabled-event">object.definition.extensions.http://xapi.jisc.ac.uk/event_timetabled</a> [0.1]</td>
+	   <td><a href="/vocabulary.md#timetabled-event">object.definition.extensions.http://xapi.jisc.ac.uk/event_timetabled</a> [1]</td>
 	   <td>States whether or not the event was timetabled.</td>
 	   <td>Integer, 1 for timetabled, 0 for not timetabled</td>
 	</tr>
 	<tr>
-	   <td>object.definition.extensions.http://xapi.jisc.ac.uk/starttime [0.1]</td>
+	   <td>object.definition.extensions.http://xapi.jisc.ac.uk/starttime [1]</td>
 	   <td>Planned start time. Uses datetimes for planned start time of event.</td>
 	   <td>ISO8601 timestamp</td>
 	</tr>
 	<tr>
-	<td>object.definition.extensions.http://xapi.jisc.ac.uk/endtime [0.1]</td>
+	<td>object.definition.extensions.http://xapi.jisc.ac.uk/endtime [1]</td>
 	   <td>Planned end time. Uses datetimes for planned end time of event.</td>
 	   <td>ISO8601 timestamp</td>
 	</tr> 
@@ -218,7 +218,7 @@ The Object defines an event that has been attended. Information on the event can
 </tr>
 <tr>
 	<td><a href="vocabulary.md#course-area">context.extensions.https://xapi.jisc.ac.uk/courseArea</a> [0..1]</td>
-	<td>Umbrella course/parent area by a UDD Module Instance ID or VLE Module ID.</td>
+	<td>Umbrella course/parent area by a UDD Course Instance ID and UDD Module ID(If present)</td>
 	<td>JSON Object</td>
 </tr>
 </table>
@@ -249,17 +249,26 @@ The Object defines an event that has been attended. Information on the event can
 		},	
 			
 	"http://xapi.jisc.ac.uk/courseArea": {
-        "http://xapi.jisc.ac.uk/vle_mod_id": "LA101-200-2016S1-0",
+        "http://xapi.jisc.ac.uk/uddCourseInstanceID": "LA101-200",
 		"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0",
             	}	
 		}
     }
 ```
 
-# Example
+
+### Timestamp
+In attendance statements the timestamp property must be set to the start time of the timetabled even. It's value is identical to the value found in the starttime extension.
+
+#### Example Entity
+```
+ "timestamp": "2016-02-05T10:00:00.000Z"
+ ```
+#### Example
 ``` javascript
 {
     "id": "12345678-1234-5678-1234-567812345678",
+    "timestamp": "2016-02-05T10:00:00.000Z",
     "actor": {
         "objectType": "Agent",
         "name": "John Smith",
