@@ -103,7 +103,7 @@ v1.0 20-03-2017, Spec change. [Description no longer required in ObjectA.](https
 #### Attended learning activity
 
 
-v1.0.1 21-11-2017, Spec change [timetable, start and end times are manditory](https://github.com/jiscdev/xapi/issues/198) 
+v1.0.1 21-11-2017, Spec change [timetable, start and end times are manditory or recommended](https://github.com/jiscdev/xapi/issues/198) 
 
 v1.0.1 21-11-2017, Spec change [Added CourseModuleId to CourseArea](https://github.com/jiscdev/xapi/issues/199) 
 
