@@ -1,4 +1,4 @@
-# xAPI recipes for the Jisc Learning Analytics Service v1.0
+# xAPI recipes for the Jisc Learning Analytics Service v1.0.1
 
 ## Repository Workflow
 The simplest way of contributing to the xAPI service works as follows:
