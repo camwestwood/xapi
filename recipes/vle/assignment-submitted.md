@@ -38,25 +38,6 @@ The Verb [completed](/vocabulary.md#verbs) describes the action of completing an
     },
 ``` 
 
-### Result
-The Result entity describes the completion of a learning activity.
-
-<table>
-	<tr><th>Property [cardinality]</th><th>Description</th><th>Data type</th></tr>
-	<tr>
-		<td>result.completion [1]</td>
-		<td>When set to "true", result.completion indicates that the learner attended the event; "false" indicates that the learner did not attend the event.</td>
-		<td>Boolean</td>
-	</tr>
-</table>
-
-#### Example:
-``` javascript
- "result":{
-        "completion":true
-    }
-```
-
 ### Object
 Common entity identifier: ObjectB, as defined on the [common structures](/common_structures.md#objectb) page.
 

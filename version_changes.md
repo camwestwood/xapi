@@ -79,6 +79,8 @@ v1.0 20-03-2017, Spec change. [Description no longer required in ObjectA or B.](
 
 #### Assignment Submitted
 
+v1.1 22-11-2017, Spec Change. [Removed result from assignment submitted statement](https://github.com/jiscdev/xapi/issues/201)
+
 v1.0 06-07-2017, Spec Change. [id removed from courseArea](https://github.com/jiscdev/xapi/issues/179)
 
 v1.0 20-06-2017, Spec Change. [Context.ContextActivities removed. Template uses ContextA instead of A](https://github.com/jiscdev/xapi/issues/168)
