@@ -58,6 +58,7 @@ v0.2 2-05-2016, Documentation change [subType supersedes ApplicationType](https:
 
 #### Assignment Graded
 
+v1.0.1 21-11-2017, Spec change [clear about what is and isn't allowed in result entity](https://github.com/jiscdev/xapi/issues/200) 
 
 v1.0 06-07-2017, Spec Change. [id removed from CourseArea](https://github.com/jiscdev/xapi/issues/179)
 
@@ -100,6 +101,7 @@ v1.0 20-03-2017, Spec change. [Description no longer required in ObjectA.](https
 
 
 #### Attended learning activity
+
 
 v1.0.1 21-11-2017, Spec change [timetable, start and end times are manditory](https://github.com/jiscdev/xapi/issues/198) 
 
