@@ -145,8 +145,8 @@ The Object entity defines an event that has been attended.
 	   <td>ISO8601 timestamp</td>
 	</tr>
 	<tr>
-	<td>object.definition.extensions.http://xapi.jisc.ac.uk/endtime [1]</td>
-	   <td>Planned end time. Uses datetimes for planned end time of event.</td>
+	<td>object.definition.extensions.http://xapi.jisc.ac.uk/endtime [0.1]</td>
+	   <td>Planned end time. Uses datetimes for planned end time of event. Recommended</td>
 	   <td>ISO8601 timestamp</td>
 	</tr> 
  </table>
