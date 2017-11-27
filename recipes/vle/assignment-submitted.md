@@ -39,7 +39,7 @@ The Verb [completed](/vocabulary.md#verbs) describes the action of completing an
 ``` 
 
 ### Result
-The Result entity describes the completion of a learning activity.
+The Result entity describes the completion of a learning activity. The result entity is to be deprecated in assignment submitted statements from version Jisc Profile 1.1
 
 <table>
 	<tr><th>Property [cardinality]</th><th>Description</th><th>Data type</th></tr>
