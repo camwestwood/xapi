@@ -73,7 +73,7 @@ The Result entity is mandatory for this type of statement. The entity can includ
 	</tr>
 	<tr>
 		<td>result.success [0..1]</td>
-		<td>Indicates whether or not the attempt was successful.</td>
+		<td>Indicates whether or not the attempt was successful. To be depricated in 1.1</td>
 		<td>true or false</td>
 	</tr>
 	<tr>
