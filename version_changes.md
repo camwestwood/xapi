@@ -58,7 +58,7 @@ v0.2 2-05-2016, Documentation change [subType supersedes ApplicationType](https:
 
 #### Assignment Graded
 
-v1.1 27-11-2017, Spec change [added  sequencenumber extension](https://github.com/jiscdev/xapi/issues/203) 
+v1.1 27-11-2017, Spec change [removed result.success](https://github.com/jiscdev/xapi/issues/202) 
 
 v1.0.1 21-11-2017, Spec change [clear about what is and isn't allowed in result entity](https://github.com/jiscdev/xapi/issues/200) 
 
@@ -80,6 +80,9 @@ v1.0 20-03-2017, Spec change. [Description no longer required in ObjectA or B.](
 
 
 #### Assignment Submitted
+
+
+v1.1 27-11-2017, Spec change [added  sequencenumber extension](https://github.com/jiscdev/xapi/issues/203) 
 
 v1.1 22-11-2017, Spec Change. [Removed result from assignment submitted statement](https://github.com/jiscdev/xapi/issues/201)
 

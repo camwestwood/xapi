@@ -72,11 +72,6 @@ The Result entity is mandatory for this type of statement. The entity can includ
 		<td>decimal number greater than min (if present)</td>
 	</tr>
 	<tr>
-		<td>result.success [0..1]</td>
-		<td>Indicates whether or not the attempt was successful.</td>
-		<td>true or false</td>
-	</tr>
-	<tr>
 		<td>result.completion [0..1]</td>
 		<td>Indicates whether or not the Activity was completed.</td>
 		<td>true or false</td>
@@ -104,7 +99,6 @@ The Result entity is mandatory for this type of statement. The entity can includ
             "max": 100
         },
 		
-        "success": false,
         "completion": true,
         "response": "Your answer should have been: The cow jumped over the moon."
          }
