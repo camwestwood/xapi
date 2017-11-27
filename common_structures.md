@@ -116,7 +116,14 @@ This pattern is used across many Statements in the Jisc Profile, but there may b
 		<td>The academic context in which this Activity is situated (e.g. umbrella course, or parent area). The properties in courseArea must be a UDD Module Instance ID or a VLE Module ID or both. More information can be found on the <a href="vocabulary.md#course-area">vocabularies page</a>.</td>
 		<td>JSON object</td>
 	<tr> 
+	<tr> 
+		<td>context.extension.sequenceNumber [0..1]</td>
+		<td>If the activity is part of a sequence then SequenceNumber can be used as a counter</td>
+		<td>int</td>
+	<tr> 
 	</table>
+	
+	
 
 #### Example:
 ``` javascript

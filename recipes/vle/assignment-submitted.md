@@ -79,6 +79,7 @@ Example:
 			"http://xapi.jisc.ac.uk/sessionId":"32456891",
          	"http://id.tincanapi.com/extension/ip-address": "10.3.3.48",
 			"http://xapi.jisc.ac.uk/version" : "1.0"
+			"http://xapi.jisc.ac.uk/sequenceNumber" : 1
 			}
 		}
 ```
