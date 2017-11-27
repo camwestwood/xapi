@@ -72,8 +72,8 @@ The Result entity is mandatory for this type of statement. The entity can includ
 		<td>decimal number greater than min (if present)</td>
 	</tr>
 	<tr>
-		<td>result.success [0..1]</td>
-		<td>Indicates whether or not the attempt was successful. To be deprecated in 1.1</td>
+		<td>result.success [0..1] Deprecated</td>
+		<td>Indicates whether or not the attempt was successful. Deprecated</td>
 		<td>true or false</td>
 	</tr>
 	<tr>
