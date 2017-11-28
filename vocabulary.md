@@ -15,7 +15,7 @@ IRIs will not necessarily link to a page in a browser, as these are identifiers 
 <a name="verb"></a>
 ## 1.0 Verb
 
-The following example of a [Verb entity](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#verb) uses the 'en' language tag, but any RFC 5646 language tag can be used: 
+The following example of a [Verb entity](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#verb) uses the 'en' language tag, but any RFC 5646 language tag can be used:
 
 ``` javascript
 "verb": {
@@ -24,7 +24,7 @@ The following example of a [Verb entity](https://github.com/adlnet/xAPI-Spec/blo
             "en" : "logged in to"
         }
     },
-``` 
+```
 
 The following [xAPI Verbs](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#verb) are defined as part of the Jisc Profile:
 
@@ -150,17 +150,17 @@ The following are extension properties in the Result entity:
 ### 3.1 Activity Types
 The following are types of the [Activity Definition Object](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#activity-definition). Activity Types may use the [subType extension](vocabulary.md#sub-type) to further indicate the subType of the Activity.
 
-Some examples of subTypes of Activity Types are included. However sub-types are not defined by the Jisc profile spec and the examples shown are indicative; it is the responsibility of the plugin to define the subType.  Since the vendors do not own the IRI, these subTypes use a Jisc-controlled namespace that relates to the vendor or vendor product (for example: <a href="https://github.com/jiscdev/xapi/tree/1.0/generic/iri_landing_page.md">http://bblearn.xapi.jisc.ac.uk</a>).
+Some example statements make use of subTypes of Activity Types, but sub-types are not defined by the Jisc profile spec and the examples shown are indicative; it is the responsibility of the plugin to define the subType.  Since the vendors do not own the IRI, these subTypes use a Jisc-controlled namespace that relates to the vendor, vendor product, or institution which _de facto_ defines the sub-type (for example: <a href="https://github.com/jiscdev/xapi/tree/1.0/generic/iri_landing_page.md">http://bblearn.xapi.jisc.ac.uk</a>).
 
 Example:
 ``` javascript
 "object": {
 	"objectType": "Activity",
-	"id": "http://moodle.data.alpha.jisc.ac.uk/mod/quiz/view.php?id=13" 
+	"id": "http://moodle.data.alpha.jisc.ac.uk/mod/quiz/view.php?id=13"
 	"definition": {
 		"type": "http://xapi.jisc.ac.uk/vle/page",			
 		"name": { "en": "Sample page" },			   
-		"description": { "en": "sample page" } 
+		"description": { "en": "sample page" }
 		"extensions": {
 				"http://xapi.jisc.ac.uk/subType": "http://bblearn.xapi.jisc.ac.uk/blankpage"
 				}
@@ -210,8 +210,17 @@ Example:
 
 <table>
 <tr><th align="left">Label</th><td>Event</td></tr>
-<tr><th align="left">Description</th><td>Any event.<br/>The "event" Activity Type should only be used when the type of event is unspecified.</td></tr>
+<tr><th align="left">Description</th><td>Any event.<br/>The "event" Activity Type should only be used when a more specific (i.e. narrowly-defined) event type, defined on this page, is not available; this IRI indicates that the type of event is unspecified.</td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://activitystrea.ms/schema/1.0/event">http://activitystrea.ms/schema/1.0/event</a> </td></tr>
+</table>
+
+### Timetabled Event
+
+<table>
+<tr><th align="left">Label</th><td>Timetabled Event</td></tr>
+<tr><th align="left">Description</th><td>Indicates that the event was a scheduled learning activity.</td></tr>
+<tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/event_timetabled">http://xapi.jisc.ac.uk/event_timetabled</a> </td></tr>
+<tr><th align="left">Example in Statement template</th><td> <a href="/recipes/attendance/attendance.md#object">attendance</a> </td></tr>
 </table>
 
 ### External Content
@@ -223,7 +232,7 @@ Example:
 <tr><th align="left">Example Subtypes</th><td><ul><li>http://jisc.xapi.jisc.ac.uk/scorm</li><li>http://jisc.xapi.jisc.ac.uk/lti</li><li>http://bblearn.xapi.jisc.ac.uk/mashup</li></ul></td></tr>
 </table>
 
-### External URL 
+### External URL
 
 <table>
 <tr><th align="left">Label</th><td>External URL</td></tr>
@@ -238,14 +247,6 @@ Example:
 <tr><th align="left">Label</th><td>File</td></tr>
 <tr><th align="left">Description</th><td>Accessing any kind of non-web native file type. e.g. MS office, video or audio. </td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/vle/file">http://xapi.jisc.ac.uk/vle/file</a> </td></tr>
-</table>
-
-### Lecture
-
-<table>
-<tr><th align="left">Label</th><td>Lecture</td></tr>
-<tr><th align="left">Description</th><td>A learning activity that consists mainly of an expert giving a talk to a number of learners.</td></tr>
-<tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/lecture">http://xapi.jisc.ac.uk/lecture</a> </td></tr>
 </table>
 
 ### Module
@@ -279,7 +280,7 @@ Example:
 
 <table>
 <tr><th align="left">Label</th><td>Tutor session</td></tr>
-<tr><th align="left">Description</th><td>This represents a tutoring session.</td></tr>
+<tr><th align="left">Description</th><td>This represents a tutoring session. (not currently used in any statement templates)</td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://id.tincanapi.com/activitytype/tutor-session">http://id.tincanapi.com/activitytype/tutor-session</a> </td></tr>
 </table>
 
@@ -519,19 +520,7 @@ For more information, see Jisc Profile [CourseArea properties](#coursearea).
 <tr><th align="left">Sample Value</th><td>http://id.tincanapi.com/activitytype/lms</td></tr>
 </table>
 
-### Timetabled Event
-
-<table>
-<tr><th align="left">Label</th><td>Timetabled Event</td></tr>
-<tr><th align="left">Description</th><td>Indicates whether or not a learning activity was scheduled.</td></tr>
-<tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/event_timetabled">http://xapi.jisc.ac.uk/event_timetabled</a> </td></tr>
-<tr><th align="left">Example in Statement template</th><td> <a href="/recipes/attendance/attendance.md#object">attendance</a> </td></tr>
-<tr><th align="left">Data Type</th><td>Boolean</td></tr>
-<tr><th align="left">Value Space</th><td>1 for timetabled events, 0 for non-timetabled events </td></tr>
-<tr><th align="left">Sample Value</th><td>1</td></tr>
-</table>
-
-### xAPI Profile Version 
+### xAPI Profile Version
 
 <table>
 <tr><th align="left">Label</th><td>Jisc Profile Version</td></tr>
@@ -554,7 +543,7 @@ Example:
 			"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0",
 		},
 ```
-  
+
 ### UDD Module Instance ID
 
 <table>
@@ -579,5 +568,3 @@ Example:
 <tr><th align="left">Description</th><td>Property that connects a courseArea in a VLE with a module. It is used in the module_VLE_map entity of the UDD to link module instances to course areas. Note that several module instances (as identified by their UDD MOD_INSTANCE_ID) can link to one courseArea.</td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/vle_mod_id">http://xapi.jisc.ac.uk/vle_mod_id</a> </td></tr>
 </table>
-
-
