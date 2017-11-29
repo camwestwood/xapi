@@ -3,7 +3,6 @@
 ## Repository Workflow
 The simplest way of contributing to the xAPI service works as follows:
 
-
 1. Add an issue to the issue tracker to alert everyone to what you are working on and why.
 2. Tag the issue with the version milestone you'd like the patch to be a part of.
 3. If the feature is for this version then make an edit or add a file in this repository, and save it to your own branch. If you prefer, you can fork the whole repository and work in your own repository. Otherwise create a feature-branch to work in.
@@ -35,12 +34,33 @@ These are platform independent Statements related to Virtual Learning Enviroment
 <tr><td> <a href = "/recipes/vle/Module-View.md">VLE resource viewed   </a></td><td><a href = "vle/moodle/moduleview.js">Moodle module viewed </a> <br/> <a href = "vle/blackboard/course_access.json"> Blackboard course acccess  </a> <br/> <a href="vle/blackboard/course_content_access.json">Blackboard content accessed</a></td> </tr>    
 <tr><td> <a href =  "/recipes/vle/assignment-graded.md">Assignment Graded   </a></td><td> <a href = "vle/moodle/asssignment_graded.json">Assignment graded in Moodle</a><br/> <a href="vle/blackboard/asssignment_graded.json">Assignment graded in Blackboard </a>   </td></tr>    
 <tr><td> <a href =  "/recipes/vle/assignment-submitted.md">Assignment Submitted  </a></td><td><a href = "vle/moodle/assignment_submitted.json">Assignment submitted in Moodle</a><br/> <a href="vle/blackboard/assignment_submitted.json">Assignment submitted in Blackboard</a>   </td></tr>                                                             
+<tr><td> <a href =  "/recipes/vle/forum.md">Forum post and reply</a><br/> <a href="vle/blackboard/assignment_submitted.json">Assignment submitted in Blackboard</a>   </td></tr>                                                             
 </table>
-
 
 ### All VLE Statement examples
 * [Blackboard VLE samples](vle/blackboard/Examples.md)
 * [Moodle VLE samples](vle/moodle/examples.md)
+
+## Library
+<table>
+<tr><td>Statement Template </td>   <td>JSON example</td> </tr>                                                         
+<tr><td> <a href = "/recipes/library/reading-list-view.md">Viewed Reading List</a></td><td>   </td> </tr>                                                           
+<tr><td> <a href = "/recipes/library/reading-list-item-view.md">Viewed Reading List item</a></td><td>   </td> </tr>        
+<tr><td> <a href = "/recipes/library/econtent.md">Accessing econtent</a></td><td></td></tr>        
+<tr><td> <a href = "/recipes/library/borrowing.md">Borrowed item</a></td><td></td> </tr>        
+<tr><td> <a href = "/recipes/library/login.md">Login to system</a></td><td>  </td> </tr>        
+</table>
+
+
+## Tracking App
+<table>
+<tr><td>Statement Template </td><td>JSON Example</td></tr>
+<tr><td><a href = "recipes/studyapps/tracker-app.md">Draft tracker activites</a></td><td><a href = "recipes/studyapps/mobile-app.md#example">Draft tracker activites</a></td> </tr>    
+<tr><td><a href = "recipes/studyapps/target-set.md">Set a target</a></td>  <td>  </td></tr>
+<tr><td><a href = "recipes/studyapps/target-activity.md">Record an activity against a target</a> </td><td>  </td></tr>
+<tr><td><a href = "recipes/studyapps/target-reached.md">Reach a target</a></td><td> </td></tr>
+<tr><td><a href = "recipes/studyapps/target-update.md">Post an update</a></td><td> </td></tr> 
+</table>
 
 ## Presence and Attendance
 <table>
@@ -48,12 +68,14 @@ These are platform independent Statements related to Virtual Learning Enviroment
 <tr><td> <a href = "recipes/attendance/attendance.md">Attended learning activity </a></td><td><a href = "recipes/attendance/attendance.md#example">Attended learning activity </a></td> </tr>    
 </table>
 
+
 ## Predictive Model Output
 
 <table>
 <tr><td>Statement Template </td><td>JSON Example</td></tr>
 <tr><td> <a href = "/lap/apereo/model_output.md">Predictive Model Alerting</a></td><td><a href = "/lap/apereo/model_output.js">Alerting JSON</a></td> </tr>    
 </table>
+
 
 
 # Deprecated Statements
