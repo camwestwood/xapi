@@ -21,7 +21,7 @@ If the need arises, particular versions will get their own branches, but until t
 * [Generic Statement Templates](generic/index.md) can be found in this directory.
 
 # Recipes
-Here are descriptions of Statements that can be sent to the Jisc Learning Records Warehouse, full Statement examples, data needed to create the Statement.  As far as possible all entities are the same across all the Statements.
+Here are descriptions of Statements that can be sent to the Jisc Learning Data Hub, full Statement examples, data needed to create the Statement.  As far as possible all entities are the same across all the Statements.
 
 ## VLE
 
