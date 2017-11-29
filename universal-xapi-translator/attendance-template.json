@@ -1,0 +1,67 @@
+{
+  "version": "1.0.0",
+  "actor": {
+    "objectType": "Agent",
+    "account": {
+      "name": "**STUDENT_ID**",
+      "homePage": "**HOMEPAGE**"
+    }
+  },
+  "timestamp":"**ACTIVITY_LOGGED_START**",
+  "verb": {
+        "id": "http://adlnet.gov/expapi/verbs/attended",
+        "display": {
+            "en": "attended"
+        }
+    },
+  "result":{
+        "completion":**CALCULATED_COMPLETE**,
+        "extensions": {
+            "http://xapi.jisc.ac.uk/activity_late" : "**ATTENDANCE_LATE**",
+            "http://xapi.jisc.ac.uk/endtime" : "**END_DATE_TIME**"
+        }
+    },
+  "object": {
+    "objectType": "Activity",
+    "id": "**HOMEPAGE**/event/**EVENT_ID**",
+    "definition": {
+      "type": "http://xapi.jisc.ac.uk/event_timetabled/",
+      "name": {
+        "en": "**EVENT_NAME**"
+        },
+      "description": {
+        "en": "**EVENT_DESCRIPTION**"
+        },
+        "extensions": {
+          "http://xapi.jisc.ac.uk/courseArea": {
+            "http://xapi.jisc.ac.uk/vle_mod_id": "**VLE_MOD_ID**",
+            "http://xapi.jisc.ac.uk/uddModInstanceID": "**MOD_INSTANCE_ID**"
+        },
+          "http://xapi.jisc.ac.uk/subType": "http://xapi.jisc.ac.uk/**EVENT_TYPE**",
+        "http://xapi.jisc.ac.uk/event_type_id": "**EVENT_TYPE_ID**",
+          "http://xapi.jisc.ac.uk/event_type_description": "**EVENT_TYPE_DESCRIPTION**",
+        "http://xapi.jisc.ac.uk/event_max_count": "**EVENT_MAX_COUNT**",
+        "http://xapi.jisc.ac.uk/event_mandatory": "**EVEBT_MANDATORY**",
+        "http://xapi.jisc.ac.uk/starttime": "**START_TIME**",
+        "http://xapi.jisc.ac.uk/endtime": "**END_TIME**",
+        "http://xapi.jisc.ac.uk/recipeVersion": "attendanceV0.1"
+      }
+      }
+    },
+    "context": {
+      "instructor": {
+         "objectType": "Agent",
+         "name": "instructor",
+          "account": {
+            "name": "**STAFF_ID**",
+           "homePage": "**HOMEPAGE**"
+         }
+        },
+       "extensions": {
+          "http://xapi.jisc.ac.uk/recipeVersion": "1.0"
+       },
+        "platform": "UxAPI"
+
+    }
+
+ }

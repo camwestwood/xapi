@@ -35,10 +35,8 @@ These are platform independent Statements related to Virtual Learning Enviroment
 <tr><td> <a href =  "/recipes/vle/assignment-graded.md">Assignment Graded   </a></td><td> <a href = "vle/moodle/asssignment_graded.json">Assignment graded in Moodle</a><br/> <a href="vle/blackboard/asssignment_graded.json">Assignment graded in Blackboard </a>   </td></tr>    
 <tr><td> <a href =  "/recipes/vle/assignment-submitted.md">Assignment Submitted  </a></td><td><a href = "vle/moodle/assignment_submitted.json">Assignment submitted in Moodle</a><br/> <a href="vle/blackboard/assignment_submitted.json">Assignment submitted in Blackboard</a>   </td></tr>                                                             
 <tr><td> <a href =  "/recipes/vle/forum.md">Forum post and reply</a></td><td>   </td></tr>                                                             
-
 <tr><td> <a href =  "/recipes/vle/answered_questions.md">Quiz: Answered Questions</a></td><td>   </td></tr>                                                             
 <tr><td> <a href =  "/recipes/vle/quiz_completed.md">Quiz: Quiz Completed</a><td>   </td></tr>                                                             
-
 </table>
 
 ### All VLE Statement examples
@@ -47,14 +45,13 @@ These are platform independent Statements related to Virtual Learning Enviroment
 
 ## Library
 <table>
-<tr><td>Statement Template </td>   <td>JSON example</td> </tr>                                                         
-<tr><td> <a href = "/recipes/library/reading-list-view.md">Viewed Reading List</a></td><td>   </td> </tr>                                                           
-<tr><td> <a href = "/recipes/library/reading-list-item-view.md">Viewed Reading List item</a></td><td>   </td> </tr>        
-<tr><td> <a href = "/recipes/library/econtent.md">Accessing econtent</a></td><td></td></tr>        
-<tr><td> <a href = "/recipes/library/borrowing.md">Borrowed item</a></td><td></td> </tr>        
-<tr><td> <a href = "/recipes/library/login.md">Login to system</a></td><td>  </td> </tr>        
+<tr><td>Statement Template </td>   <td>JSON example</td> <td>Input TSV definitions</td><td>JSON Template</td></tr>                                                      
+<tr><td> <a href = "/recipes/library/reading-list-view.md">Viewed Reading List</a></td><td>   </td><td>   </td><td>   </td> </tr>                                                           
+<tr><td> <a href = "/recipes/library/reading-list-item-view.md">Viewed Reading List item</a></td><td>   </td> <td>   </td><td>   </td></tr>        
+<tr><td> <a href = "/recipes/library/econtent.md">Accessing econtent</a></td><td></td><td>   </td><td>   </td></tr>        
+<tr><td> <a href = "/recipes/library/borrowing.md">Borrowed item</a></td><td></td> <td>recipes/universal-xapi-translator/library-item-borrowed-input.md</td><td>universal-xapi-input.json</td></tr>        
+<tr><td> <a href = "/recipes/library/login.md">Login to system</a></td><td>  </td> <td>   </td><td>   </td></tr>        
 </table>
-
 
 ## Tracking App
 <table>
@@ -68,8 +65,8 @@ These are platform independent Statements related to Virtual Learning Enviroment
 
 ## Presence and Attendance
 <table>
-<tr><td>Statement Template </td><td>JSON Example</td></tr>
-<tr><td> <a href = "recipes/attendance/attendance.md">Attended learning activity </a></td><td><a href = "recipes/attendance/attendance.md#example">Attended learning activity </a></td> </tr>    
+<tr><td>Statement Template </td><td>JSON Example</td><td>Input TSV definitions</td><td>JSON Template</td></tr>
+<tr><td> <a href = "recipes/attendance/attendance.md">Attended learning activity </a></td><td><a href = "recipes/attendance/attendance.md#example">Attended learning activity </a></td><td>recipes/universal-xapi-translator/attendance-input.md </td> <td>recipes/universal-xapi-translator/attendance-template.json</td>  </tr>    
 </table>
 
 
