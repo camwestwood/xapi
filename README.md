@@ -34,7 +34,11 @@ These are platform independent Statements related to Virtual Learning Enviroment
 <tr><td> <a href = "/recipes/vle/Module-View.md">VLE resource viewed   </a></td><td><a href = "vle/moodle/moduleview.js">Moodle module viewed </a> <br/> <a href = "vle/blackboard/course_access.json"> Blackboard course acccess  </a> <br/> <a href="vle/blackboard/course_content_access.json">Blackboard content accessed</a></td> </tr>    
 <tr><td> <a href =  "/recipes/vle/assignment-graded.md">Assignment Graded   </a></td><td> <a href = "vle/moodle/asssignment_graded.json">Assignment graded in Moodle</a><br/> <a href="vle/blackboard/asssignment_graded.json">Assignment graded in Blackboard </a>   </td></tr>    
 <tr><td> <a href =  "/recipes/vle/assignment-submitted.md">Assignment Submitted  </a></td><td><a href = "vle/moodle/assignment_submitted.json">Assignment submitted in Moodle</a><br/> <a href="vle/blackboard/assignment_submitted.json">Assignment submitted in Blackboard</a>   </td></tr>                                                             
-<tr><td> <a href =  "/recipes/vle/forum.md">Forum post and reply</a><br/> <a href="vle/blackboard/assignment_submitted.json">Assignment submitted in Blackboard</a>   </td></tr>                                                             
+<tr><td> <a href =  "/recipes/vle/forum.md">Forum post and reply</a></td><td>   </td></tr>                                                             
+
+<tr><td> <a href =  "/recipes/vle/answered_questions.md">Quiz: Answered Questions</a></td><td>   </td></tr>                                                             
+<tr><td> <a href =  "/recipes/vle/quiz_completed.md">Quiz: Quiz Completed</a><td>   </td></tr>                                                             
+
 </table>
 
 ### All VLE Statement examples
