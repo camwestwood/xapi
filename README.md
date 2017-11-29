@@ -49,7 +49,7 @@ These are platform independent Statements related to Virtual Learning Enviroment
 <tr><td> <a href = "/recipes/library/reading-list-view.md">Viewed Reading List</a></td><td>   </td><td>   </td><td>   </td> </tr>                                                           
 <tr><td> <a href = "/recipes/library/reading-list-item-view.md">Viewed Reading List item</a></td><td>   </td> <td>   </td><td>   </td></tr>        
 <tr><td> <a href = "/recipes/library/econtent.md">Accessing econtent</a></td><td></td><td>   </td><td>   </td></tr>        
-<tr><td> <a href = "/recipes/library/borrowing.md">Borrowed item</a></td><td></td> <td>recipes/universal-xapi-translator/library-item-borrowed-input.md</td><td>universal-xapi-input.json</td></tr>        
+<tr><td> <a href = "/recipes/library/borrowing.md">Borrowed item</a></td><td></td> <td><a href="recipes/universal-xapi-translator/library-item-borrowed-input.md">library-item-borrowed-input.md</a></td><td><a href="recipes/universal-xapi-translator/universal-xapi-input.json">universal-xapi-input.json</td></tr>        
 <tr><td> <a href = "/recipes/library/login.md">Login to system</a></td><td>  </td> <td>   </td><td>   </td></tr>        
 </table>
 
@@ -66,7 +66,7 @@ These are platform independent Statements related to Virtual Learning Enviroment
 ## Presence and Attendance
 <table>
 <tr><td>Statement Template </td><td>JSON Example</td><td>Input TSV definitions</td><td>JSON Template</td></tr>
-<tr><td> <a href = "recipes/attendance/attendance.md">Attended learning activity </a></td><td><a href = "recipes/attendance/attendance.md#example">Attended learning activity </a></td><td>recipes/universal-xapi-translator/attendance-input.md </td> <td>recipes/universal-xapi-translator/attendance-template.json</td>  </tr>    
+<tr><td> <a href = "recipes/attendance/attendance.md">Attended learning activity </a></td><td><a href = "recipes/attendance/attendance.md#example">Attended learning activity </a></td><td><a href="recipes/universal-xapi-translator/attendance-input.md"> attendance-input.md<a/></td> <td><a href="recipes/universal-xapi-translator/attendance-template.json">attendance-template.json</a></td>  </tr>    
 </table>
 
 
