@@ -1,4 +1,4 @@
-# read-list-viewed statement template
+# read-list-item-viewed statement template
 
 
 This statement template is in draft. 
