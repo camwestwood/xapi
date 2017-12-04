@@ -1,8 +1,8 @@
-This is the input file for an library-viewed-reading-list-item event.
+This is the input file for an library-viewed-econtent event.
 
-Data should be supplied as a UTF-8 Tab Seperated File called attendance.tsv
+Data should be supplied as a UTF-8 Tab Seperated File called econtent.tsv
 
-# library-viewed-reading-list-item
+# library-viewed-econtent
 
 * [USERNAME] (#username) [1]
 * [CLIENT_IP] (#client_ip) [1]
