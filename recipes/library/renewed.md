@@ -1,6 +1,6 @@
-# borrowed statement template
+# renewed statement template
 
-[Statement Template Changes](/version_changes.md#borrowed)
+[Statement Template Changes](/version_changes.md#renewed)
 
 ## Purpose
 This template defines the structure and terms to record the experience of viewing a vle resource such as a Moodle Module or Blackboard building block (eg a page as identified by its url)
@@ -26,36 +26,31 @@ Common entity identifier:  ActorA, as defined on the [common structures](/common
 ### Verb
 Common entity identifier: VerbA, as defined on the [common structures](/common_structures.md#verba) page.
 
-The Verb, [borrowed](), describes the action of borrowing an item.
+The Verb, [renewed](), describes the action of renewing an item.
 
 
 ### Example:
 
 ``` javascript
 "verb": {
-        "id": "http://activitystrea.ms/schema/1.0/borrowed",
+        "id": "http://xapi.jisc.ac.uk/renewed",
         "display": {
-            "en": "borrowed"
+            "en": "renewed"
         }
     },
 ```
 
 
 ### Object
-Draft notes:
 
-While in draft the following iri's have been used:
+(Draft notes the following iri's have been used and need to be in the vocab:)
 
 - Book http://id.tincanapi.com/activitytype/book
 - Resource: http://id.tincanapi.com/activitytype/resource 
 - Journal http://xapi.jisc.ac.uk/journal 
 
- 
-We need to work out what object.definition type is
+- Do we want to use a resource activity type and make use of a subtype?
 
-- Do we want to use resource with subtype?
-- Currently the iri is the organisation domain + barcode. This is since, barcodes at organisations are different for each copy of the book.
-- This means that the object is the exact copy of the book. For example an exact copy of 'Intro to Java' not just any copy of "intro to Java".
 
 
 <table>
@@ -103,15 +98,14 @@ We need to work out what object.definition type is
 </table>
 
 
-
 ### Example
 
 ``` javascript
 "object": {
 	"objectType": "Activity",
-	"id": "http://library.universityofjisc.ac.uk/0123456789"   	(what would the iri of a book look like? http://classify.oclc.org/classify2/ClassifyDemo?owi=13447796) 	
+	"id": "http://library.universityofjisc.ac.uk/0123456789"   	
 	"definition": {
-		"type": "http://id.tincanapi.com/activitytype/book",	(How do we work out from the data the type?)		
+		"type": "http://id.tincanapi.com/activitytype/book",	
 		"name": { "en": "Intro to Java" },			   
 	 }
 	
@@ -129,7 +123,6 @@ We need to work out what object.definition type is
 ```
 
 ### Timestamp
-
 
 An ISO 8601 format timestamp that corresponds to the time of when the item was borrowed.
 
@@ -187,12 +180,12 @@ An ISO 8601 format timestamp that corresponds to the time of when the item was b
  
   "extensions": {
   
-	"http://xapi.jisc.ac.uk/library_borrower_category": "UG", // should this be a code
-    	"http://xapi.jisc.ac.uk/library_loan_policy": "short", // should this be a code
-    	"http://xapi.jisc.ac.uk/library_branch" : "Main library",  // should this be a code
+	"http://xapi.jisc.ac.uk/library_borrower_category": "UG",
+    	"http://xapi.jisc.ac.uk/library_loan_policy": "short", 
+    	"http://xapi.jisc.ac.uk/library_branch" : "Main library", 
 	"http://xapi.jisc.ac.uk/library_return_date" : "2015-09-18T01:54:51.484Z"  
 	"http://xapi.jisc.ac.uk/library_renew_count" : 3 
-	"http://xapi.jisc.ac.uk/version": "x-ignore"
+	"http://xapi.jisc.ac.uk/version": "1.0.1"
 	
   }
 }
@@ -211,16 +204,16 @@ An ISO 8601 format timestamp that corresponds to the time of when the item was b
         }
     },
 	"verb": {
-        "id": "http://activitystrea.ms/schema/1.0/borrowed",
+        "id": "http://activitystrea.ms/schema/1.0/renewed",
         "display": {
             "en": "borrowed"
         }
     },
 	"object": {
 		"objectType": "Activity",
-		"id": "http://library.universityofjisc.ac.uk/0123456789"   	(what would the iri of a book look like? http://classify.oclc.org/classify2/ClassifyDemo?owi=13447796) 	
+		"id": "http://library.universityofjisc.ac.uk/0123456789"   
 		"definition": {
-			"type": "http://id.tincanapi.com/activitytype/book",	(How do we work out from the data the type?)		
+			"type": "http://id.tincanapi.com/activitytype/book",	
 			"name": { "en": "Intro to Java" },			   
 		 }
 		
@@ -230,7 +223,7 @@ An ISO 8601 format timestamp that corresponds to the time of when the item was b
 			"http://xapi.jisc.ac.uk/item_location": {
 					"http://id.tincanapi.com/extension/location": "ITEM_BRANCH_NAME",
 					"http://xapi.jisc.ac.uk/permanent_shelving": "ITEM_PERMANENT_SHELVING_LOCATION",
-					"http://xapi.jisc.ac.uk": "ITEM_TEMPORARY_SHELVING_LOCATION"
+					"http://xapi.jisc.ac.uk/temporary_shelving": "ITEM_TEMPORARY_SHELVING_LOCATION"
 				},
 				
 			}
@@ -240,12 +233,12 @@ An ISO 8601 format timestamp that corresponds to the time of when the item was b
  
 		"extensions": {
   
-			"http://xapi.jisc.ac.uk/library_borrower_category": "UG", // should this be a code
-			"http://xapi.jisc.ac.uk/library_loan_policy": "short", // should this be a code
-			"http://xapi.jisc.ac.uk/library_branch" : "Main library",  // should this be a code
+			"http://xapi.jisc.ac.uk/library_borrower_category": "UG", 
+			"http://xapi.jisc.ac.uk/library_loan_policy": "short", 
+			"http://xapi.jisc.ac.uk/library_branch" : "Main library", 
 			"http://xapi.jisc.ac.uk/library_return_date" : "2015-09-18T01:54:51.484Z"  
 			"http://xapi.jisc.ac.uk/library_renew_count" : 3 
-			"http://xapi.jisc.ac.uk/version": "x-ignore"
+			"http://xapi.jisc.ac.uk/version": "1.0.1"
 	
   }
 }

@@ -1,14 +1,11 @@
 # read-list-item-viewed statement template
 
-
-This statement template is in draft. 
-
 Based on generic template statement: [Viewed](/generic/view.md)
 
 [Statement Template Changes](/version_changes.md#library-resource-viewed)
 
 ## Purpose
-This template defines the structure and terms to record the experience of viewing a reading list
+This template defines the structure and terms to record the experience of viewing an item on a  reading list
 
 ### Actor
 Common entity identifier:  ActorA, as defined on the [common structures](/common_structures.md#actora) page.
@@ -22,10 +19,9 @@ The actor entity describes the individual that is viewing the reading list.
     "version": "1.0.0",
     "actor": {
         "objectType": "Agent",
-        "name": "John Smith",
         "account": {
-            "name": "2",
-            "homePage": "<iri of homepage>"
+            "name": "stu1",
+            "homePage": "https://library.alpha.jisc.ac.uk/"
         }
     },
 ```
@@ -45,28 +41,8 @@ The Verb,[viewed](/vocabulary.md#verbs) denotes the action of the user's browser
         }
     },
 ```
-### Context
-Common entity identifier: ContextA, as defined on the [common structures](/common_structures.md#contexta) page.
-The courseArea is required and gives information reguarding the module the reading list belongs to. See the [vocabularies](../vocabulary.md#coursearea-properties) page for more information
 
-### Example:
 
-``` javascript
-"context": {
-    "platform": "Moodle",
-    "extensions": {
-	
-      	"http://xapi.jisc.ac.uk/courseArea": {
-		"http://xapi.jisc.ac.uk/vle_mod_id": "LA101",
-		"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0",
-           	 "id":"http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=4"
-		},
-					
-	"http://xapi.jisc.ac.uk/sessionId": "32456891"  ,
-	"http://id.tincanapi.com/extension/ip-address": "10.3.3.48"
-	"http://xapi.jisc.ac.uk/version" : "1.0"
-			}
-        }
 ```
 
 ### Object
@@ -92,4 +68,26 @@ For this recipe the object needs to identify what was viewed. A list of valid va
 }
 ```
 
+### Timestamp
+
+### Result
+
+
+### Context
+Common entity identifier: ContextA, as defined on the [common structures](/common_structures.md#contexta) page.
+The courseArea is required and gives information reguarding the module the reading list belongs to. See the [vocabularies](../vocabulary.md#coursearea-properties) page for more information
+
+### Example:
+
+``` javascript
+"context": {
+"platform": "UxAPI",
+"extensions": {
+"http://xapi.jisc.ac.uk/sessionId": "SESSION_ID",
+"http://id.tincanapi.com/extensions/ip-address": "IP",
+"http://id.tincanapi.com/extension/referrer": "HTTP_REFERRER",
+"http://id.tincanapi.com/extension/browser-info": "HTTP_BROWSER_INFO",
+"http://xapi.jisc.ac.uk/recipeVersion": "attendanceV0.1"
+//bytes?
+}
 

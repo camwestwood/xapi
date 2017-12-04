@@ -1,11 +1,5 @@
 # e-content viewed statement template
 
-## Notes for next call
-
-- Headers given by Lee and notes
-- no proposed new iris have been placed into vocab yet
-
-This statement template is in draft. 
 Based on generic template statement: [Viewed](/generic/view.md)
 
 [Statement Template Changes](/version_changes.md#econtent)
@@ -25,7 +19,7 @@ The actor entity describes the individual that is accessing econtent.
     "version": "1.0.0",
     "actor": {
         "objectType": "Agent",
-        "name": "John Smith#",
+        "name": "John Smith",
         "account": {
             "name": "john-smith",
             "homePage": "http://ezproxy.jisc.ac.uk"

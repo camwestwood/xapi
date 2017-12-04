@@ -1,4 +1,4 @@
-# borrowed statement template
+# renewed statement template
 
 [Statement Template Changes](/version_changes.md#borrowed)
 
@@ -26,8 +26,11 @@ Common entity identifier:  ActorA, as defined on the [common structures](/common
 ### Verb
 Common entity identifier: VerbA, as defined on the [common structures](/common_structures.md#verba) page.
 
-The Verb, [borrowed](), describes the action of borrowing an item.
+The Verb depends upon the action that is taking place. The following are allowed verbs in  borrwed statements.
 
+-  http://activitystrea.ms/schema/1.0/borrowed [borrowed](/vocabulary.md#verbs), indicates that the actor has borrowed the object.
+-  http://xapi.jisc.ac.uk/renewed [renewed](/vocabulary.md#verbs), indicates that the actor has renewed the object.
+-  http://activitystrea.ms/schema/1.0/return [returned](/vocabulary.md#verbs), indicates that the actor has returned the object.
 
 ### Example:
 
@@ -67,7 +70,7 @@ We need to work out what object.definition type is
 	</tr>
 	<tr>
 		<td>object.id [1]</td>
-		<td>An identifier for the object of the xAPI statement. This must be unique across all object types. In library item statements this is often a domain + barcode</td>
+		<td>An identifier for the object of the xAPI statement. This must be unique across all object types.</td>
 		<td>iri</td>
 	</tr>
 	<tr>
@@ -103,7 +106,6 @@ We need to work out what object.definition type is
 </table>
 
 
-
 ### Example
 
 ``` javascript
@@ -130,6 +132,8 @@ We need to work out what object.definition type is
 
 ### Timestamp
 
+- Event Date (timestamp)
+- Event Day Name of Week e.g. Tuesday (timestamp)
 
 An ISO 8601 format timestamp that corresponds to the time of when the item was borrowed.
 
