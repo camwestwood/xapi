@@ -1,6 +1,6 @@
 This is the input file for an library-borrowed event.
 
-Data should be supplied as a UTF-8 Tab Seperated File called attendance.tsv
+Data should be supplied as a UTF-8 Tab Seperated File called borrowing.tsv
 
 # library-borrowed
 

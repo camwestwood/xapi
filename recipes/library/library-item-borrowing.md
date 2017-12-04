@@ -28,9 +28,13 @@ Common entity identifier: VerbA, as defined on the [common structures](/common_s
 
 The Verb depends upon the action that is taking place. The following are allowed verbs in  borrwed statements.
 
--  http://activitystrea.ms/schema/1.0/borrowed [borrowed](/vocabulary.md#verbs), indicates that the actor has borrowed the object.
--  http://xapi.jisc.ac.uk/renewed [renewed](/vocabulary.md#verbs), indicates that the actor has renewed the object.
--  http://activitystrea.ms/schema/1.0/return [returned](/vocabulary.md#verbs), indicates that the actor has returned the object.
+<table>
+<td>Verb</td><td>usage</td>
+<td>http://activitystrea.ms/schema/1.0/borrowed</td><td>Indicates that the actor has borrowed the object.</td>
+<td>http://xapi.jisc.ac.uk/renewed [renewed](/vocabulary.md#verbs)</td><td>Indicates that the actor has renewed the object</td>
+<td>http://activitystrea.ms/schema/1.0/return </td><td>Indicates that the actor has returned the object.</td>
+</table>
+
 
 ### Example:
 
@@ -45,20 +49,14 @@ The Verb depends upon the action that is taking place. The following are allowed
 
 
 ### Object
-Draft notes:
+Draft notes: While in draft the following iri's have been used: and will be added to the vocab
 
-While in draft the following iri's have been used:
-
-- Book http://id.tincanapi.com/activitytype/book
-- Resource: http://id.tincanapi.com/activitytype/resource 
-- Journal http://xapi.jisc.ac.uk/journal 
-
- 
-We need to work out what object.definition type is
-
-- Do we want to use resource with subtype?
-- Currently the iri is the organisation domain + barcode. This is since, barcodes at organisations are different for each copy of the book.
-- This means that the object is the exact copy of the book. For example an exact copy of 'Intro to Java' not just any copy of "intro to Java".
+<table>
+<td>ActivityType</td><td>usage</td>
+<td>http://id.tincanapi.com/activitytype/book</td><td>Book.</td>
+<td>http://id.tincanapi.com/activitytype/resource </td><td>Resource</td>
+<td>http://xapi.jisc.ac.uk/journal</td><td>Journal</td>
+</table>
 
 
 <table>
@@ -111,9 +109,9 @@ We need to work out what object.definition type is
 ``` javascript
 "object": {
 	"objectType": "Activity",
-	"id": "http://library.universityofjisc.ac.uk/0123456789"   	(what would the iri of a book look like? http://classify.oclc.org/classify2/ClassifyDemo?owi=13447796) 	
+	"id": "http://library.universityofjisc.ac.uk/0123456789" 	
 	"definition": {
-		"type": "http://id.tincanapi.com/activitytype/book",	(How do we work out from the data the type?)		
+		"type": "http://id.tincanapi.com/activitytype/book",	
 		"name": { "en": "Intro to Java" },			   
 	 }
 	
@@ -191,12 +189,12 @@ An ISO 8601 format timestamp that corresponds to the time of when the item was b
  
   "extensions": {
   
-	"http://xapi.jisc.ac.uk/library_borrower_category": "UG", // should this be a code
-    	"http://xapi.jisc.ac.uk/library_loan_policy": "short", // should this be a code
-    	"http://xapi.jisc.ac.uk/library_branch" : "Main library",  // should this be a code
-	"http://xapi.jisc.ac.uk/library_return_date" : "2015-09-18T01:54:51.484Z"  
+	"http://xapi.jisc.ac.uk/library_borrower_category": "UG", 
+    	"http://xapi.jisc.ac.uk/library_loan_policy": "short", 
+    	"http://xapi.jisc.ac.uk/library_branch" : "Main library", 
+		"http://xapi.jisc.ac.uk/library_return_date" : "2015-09-18T01:54:51.484Z"  
 	"http://xapi.jisc.ac.uk/library_renew_count" : 3 
-	"http://xapi.jisc.ac.uk/version": "x-ignore"
+	"http://xapi.jisc.ac.uk/version": "1.0.1"
 	
   }
 }
@@ -222,9 +220,9 @@ An ISO 8601 format timestamp that corresponds to the time of when the item was b
     },
 	"object": {
 		"objectType": "Activity",
-		"id": "http://library.universityofjisc.ac.uk/0123456789"   	(what would the iri of a book look like? http://classify.oclc.org/classify2/ClassifyDemo?owi=13447796) 	
+		"id": "http://library.universityofjisc.ac.uk/0123456789"   	
 		"definition": {
-			"type": "http://id.tincanapi.com/activitytype/book",	(How do we work out from the data the type?)		
+			"type": "http://id.tincanapi.com/activitytype/book",	
 			"name": { "en": "Intro to Java" },			   
 		 }
 		
@@ -244,12 +242,12 @@ An ISO 8601 format timestamp that corresponds to the time of when the item was b
  
 		"extensions": {
   
-			"http://xapi.jisc.ac.uk/library_borrower_category": "UG", // should this be a code
-			"http://xapi.jisc.ac.uk/library_loan_policy": "short", // should this be a code
-			"http://xapi.jisc.ac.uk/library_branch" : "Main library",  // should this be a code
+			"http://xapi.jisc.ac.uk/library_borrower_category": "UG",
+			"http://xapi.jisc.ac.uk/library_loan_policy": "short", 
+			"http://xapi.jisc.ac.uk/library_branch" : "Main library", 
 			"http://xapi.jisc.ac.uk/library_return_date" : "2015-09-18T01:54:51.484Z"  
 			"http://xapi.jisc.ac.uk/library_renew_count" : 3 
-			"http://xapi.jisc.ac.uk/version": "x-ignore"
+			"http://xapi.jisc.ac.uk/version": "1.0.1"
 	
   }
 }
