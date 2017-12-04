@@ -54,7 +54,8 @@ Library Reading List Statements:
 
 Library Borrowing and Access Statements: 
 <table>
-<tr><td> <a href = "/recipes/library/econtent.md">Library Item Accessing econtent</a></td><td></td><td><a href="recipes/universal-xapi-translator/library-viewed-econtent-input.md">library-viewed-econtent-input.md</a></td><a href="recipes/universal-xapi-translator/library-viewed-econtent-template.md">library-viewed-econtent-template.md</a></tr>        
+<tr><td>Statement Template</td><td>JSON example</td><td>Input TSV definitions</td><td>JSON Template</td></tr>  
+<tr><td> <a href = "/recipes/library/econtent.md">Library Item Accessing econtent</a></td><td></td><td><a href="recipes/universal-xapi-translator/library-viewed-econtent-input.md">library-viewed-econtent-input.md</a></td><td><a href="recipes/universal-xapi-translator/library-viewed-econtent-template.json">library-viewed-econtent-template.json</a></td></tr>        
 <tr><td> <a href = "/recipes/library/borrowing.md">Library item: Borrowed item</a></td><td></td> <td><a href="recipes/universal-xapi-translator/library-item-borrowed-input.md">library-item-borrowed-input.md</a></td><td><a href="recipes/universal-xapi-translator/universal-xapi-input.json">universal-xapi-input.json</td></tr>    
 <tr><td> <a href = "/recipes/library/returned.md">Library item: Returned item</a></td><td></td> <td><a href="recipes/universal-xapi-translator/library-item-returned-input.md">library-item-borrowed-input.md</a></td><td><a href="recipes/universal-xapi-translator/universal-xapi-input.json">universal-xapi-input.json</td></tr>    
 <tr><td> <a href = "/recipes/library/renewed.md">Library item: Renewed item</a></td><td></td> <td><a href="recipes/universal-xapi-translator/Renewed-item-returned-input.md">library-item-borrowed-input.md</a></td><td><a href="recipes/universal-xapi-translator/universal-xapi-input.json">universal-xapi-input.json</td></tr>       
@@ -63,6 +64,7 @@ Library Borrowing and Access Statements:
 Library System Access Statements:
 
 <table>
+<tr><td>Statement Template</td><td>JSON example</td><td>Input TSV definitions</td><td>JSON Template</td></tr>  
 <tr><td> <a href = "/recipes/library/login.md">Login to system</a></td><td>  </td> <td>   </td><td>   </td></tr>        
 </table>
 
