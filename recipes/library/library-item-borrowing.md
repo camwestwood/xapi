@@ -29,10 +29,10 @@ Common entity identifier: VerbA, as defined on the [common structures](/common_s
 The Verb depends upon the action that is taking place. The following are allowed verbs in  borrwed statements.
 
 <table>
-<td>Verb</td><td>usage</td>
-<td>http://activitystrea.ms/schema/1.0/borrowed</td><td>Indicates that the actor has borrowed the object.</td>
-<td>http://xapi.jisc.ac.uk/renewed [renewed](/vocabulary.md#verbs)</td><td>Indicates that the actor has renewed the object</td>
-<td>http://activitystrea.ms/schema/1.0/return </td><td>Indicates that the actor has returned the object.</td>
+<tr><td>Verb</td><td>usage</td></tr>
+<tr><td>http://activitystrea.ms/schema/1.0/borrowed</td><td>Indicates that the actor has borrowed the object.</td></tr>
+<tr><td>http://xapi.jisc.ac.uk/renewed</td><td>Indicates that the actor has renewed the object</td></tr>
+<tr><td>http://activitystrea.ms/schema/1.0/return </td><td>Indicates that the actor has returned the object.</td></tr>
 </table>
 
 
@@ -53,9 +53,9 @@ Draft notes: While in draft the following iri's have been used: and will be adde
 
 <table>
 <td>ActivityType</td><td>usage</td>
-<td>http://id.tincanapi.com/activitytype/book</td><td>Book.</td>
-<td>http://id.tincanapi.com/activitytype/resource </td><td>Resource</td>
-<td>http://xapi.jisc.ac.uk/journal</td><td>Journal</td>
+<tr><td>http://id.tincanapi.com/activitytype/book</td><td>Book.</td></tr>
+<tr><td>http://id.tincanapi.com/activitytype/resource </td><td>Resource</td></tr>
+<tr><td>http://xapi.jisc.ac.uk/journal</td><td>Journal</td></tr>
 </table>
 
 
