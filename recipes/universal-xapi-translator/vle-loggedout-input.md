@@ -1,8 +1,8 @@
 This is the input file for an attendance event.
 
-Data should be supplied as a UTF-8 Tab Seperated File called logout.tsv
+Data should be supplied as a UTF-8 Tab Seperated File called login.tsv
 
-# logout
+# login
 
 * [USERNAME](#username) [1]
 * [HOMEPAGE](#homepage) [1]
@@ -10,8 +10,8 @@ Data should be supplied as a UTF-8 Tab Seperated File called logout.tsv
 * [PLATFORM](#platform) [1]
 * [TIMESTAMP](#timestamp) [1]
 * [SESSION_ID](#session_id) [0..1]
-* [VLE_ID](#vle_id) [1]
-* [VLE_NAME](#vle_name) [0..1]
+* [OBJECT_ID](#object_id) [1]
+* [OBJECT_NAME](#object_name) [0..1]
 * [SUBTYPE](#subtype) [0..1]
 
 ## USERNAME 
@@ -62,7 +62,7 @@ Data should be supplied as a UTF-8 Tab Seperated File called logout.tsv
 ### Format
 ### Notes
 
-## VLE_ID 
+## OBJECT_ID 
 ### Description
 ### Purpose
 ### Derivation
@@ -70,7 +70,7 @@ Data should be supplied as a UTF-8 Tab Seperated File called logout.tsv
 ### Format
 ### Notes
 
-## VLE_NAME 
+## _NAME 
 ### Description
 ### Purpose
 ### Derivation

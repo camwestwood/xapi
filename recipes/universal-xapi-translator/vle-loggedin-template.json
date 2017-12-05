@@ -24,11 +24,11 @@
 	},
 	"object": {
 		"objectType": "Activity",
-		"id": "**VLE_ID**",
+		"id": "**OBJECT_ID**",
 		"definition": {
 			"type": "http://activitystrea.ms/schema/1.0/application",
 			"name": {
-				"en": "**VLE_NAME"
+				"en": "**OBJECT_NAME"
 			},
 			"extensions": {
 				"http://xapi.jisc.ac.uk/subType": "**SUBTYPE**"
