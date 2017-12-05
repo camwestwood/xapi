@@ -17,22 +17,6 @@ Data should be supplied as a UTF-8 Tab Seperated File called resourceviewed.tsv
 * [VLE_MOD_ID](#vle_mod_id) [0..1]
 * [UDD_MOD_INST_ID](#udd_mod_inst_id) [0..1]
 
-## VLE_MOD_ID 
-### Description
-### Purpose
-### Derivation
-### Valid Values
-### Format
-### Notes
-
-## UDD_MOD_INST_ID 
-### Description
-### Purpose
-### Derivation
-### Valid Values
-### Format
-### Notes
-
 ## USERNAME 
 ### Description
 ### Purpose
@@ -106,6 +90,22 @@ Data should be supplied as a UTF-8 Tab Seperated File called resourceviewed.tsv
 ### Notes
 
 ## SUBTYPE 
+### Description
+### Purpose
+### Derivation
+### Valid Values
+### Format
+### Notes
+
+## VLE_MOD_ID 
+### Description
+### Purpose
+### Derivation
+### Valid Values
+### Format
+### Notes
+
+## UDD_MOD_INST_ID 
 ### Description
 ### Purpose
 ### Derivation
