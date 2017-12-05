@@ -16,20 +16,10 @@ Data should be supplied as a UTF-8 Tab Seperated File called login.tsv
 
 ## USERNAME 
 ### Description
-
-A unique identifier for that event
 ### Purpose
-
-
 ### Derivation
-Jisc
-
 ### Valid Values
-Any
-
 ### Format
-String (255)
-
 ### Notes
 
 ## HOMEPAGE 
