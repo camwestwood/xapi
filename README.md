@@ -68,7 +68,7 @@ Library System Access Statements:
 ## Tracking App
 <table>
 <tr><td>Statement Template </td><td>JSON Example</td></tr>
-<tr><td><a href = "recipes/studyapps/tracker-app.md">Draft tracker activites</a></td><td><a href = "recipes/studyapps/mobile-app.md#example">Draft tracker activites</a></td> </tr>    
+<tr><td><a href = "recipes/studyapps/mobile-app.md">Mobile App content Viewed</a></td><td><a href = "recipes/studyapps/mobile-app.md#example">Mobile App content viewed</a></td> </tr>    
 <tr><td><a href = "recipes/studyapps/target-set.md">Set a target</a></td>  <td>  </td></tr>
 <tr><td><a href = "recipes/studyapps/target-recording-activity.md">Record an activity against a target</a> </td><td>  </td></tr>
 <tr><td><a href = "recipes/studyapps/target-reached-completed.md">Reach a target</a></td><td> </td></tr>
