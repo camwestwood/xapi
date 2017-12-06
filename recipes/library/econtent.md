@@ -130,7 +130,7 @@ Common entity identifier: ObjectA
  "context": {
 		"platform": "UxAPI",
 		"extensions": {
-			"http://xapi.jisc.ac.uk/sessionId": "SESSION_ID",
+			"http://xapi.jisc.ac.uk/sessionId": "A438L",
 			"http://id.tincanapi.com/extensions/ip-address": "IP",
 			"http://id.tincanapi.com/extension/referrer": "HTTP_REFERRER",
 			"http://id.tincanapi.com/extension/browser-info": "HTTP_BROWSER_INFO",
