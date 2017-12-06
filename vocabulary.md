@@ -544,31 +544,48 @@ For more information, see Jisc Profile [CourseArea properties](#coursearea).
 </table>
 
 <a name="coursearea"></a>
-## 5.0 CourseArea properties
-CourseArea indicates the academic context in which the Activity is situated (for example umbrella course, or parent area). In VLE statements the properties in courseArea must be a UDD Module Instance ID or a VLE Module ID or both. In attendance statements the course instance id must be provided, module instance id should be provided if available.
+## 5.0 Properties of courseArea extension
+The courseArea extension indicates the academic context in which the Activity is situated (for example umbrella course or parent area). In VLE statements the properties in courseArea must be a UDD Module Instance ID or a VLE Module ID or both. In attendance statements the course instance id must be provided, module instance id should be provided if available.
 
-Example:
+Example of courseArea usage in VLE statement:
 ``` javascript
-      	"http://xapi.jisc.ac.uk/courseArea": {
+      	"extensions":	{
+      		"http://xapi.jisc.ac.uk/courseArea": {
 			"http://xapi.jisc.ac.uk/vle_mod_id": "LA101",
 			"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0",
 		},
+	}
 ```
-  
-### UDD Module Instance ID
 
-<table>
-<tr><th align="left">Label</th><td>UDD Module Instance ID</td></tr>
-<tr><th align="left">Description</th><td>An identifier for a module instance<br/>The value should correspond to the <a href="https://github.com/jiscdev/analytics-udd/blob/master/udd/module_instance.md#mod_instance_id">UDD module_instance.MOD_INSTANCE_ID</a> identifier that identifies the relevant module in UDD compliant data.</td></tr>
-<tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/uddModInstanceID">http://xapi.jisc.ac.uk/uddModInstanceID</a> </td></tr>
-</table>
+Example of courseArea usage in attendance statement:
+``` javascript
+      	"extensions":	{
+		"http://xapi.jisc.ac.uk/courseArea": {
+        		"http://xapi.jisc.ac.uk/uddCourseInstanceID": "LA101-200",
+			"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0",
+            	},
+	}
+```
 
 ### UDD Course Instance ID
 
 <table>
 <tr><th align="left">Label</th><td>UDD Course Instance ID</td></tr>
-<tr><th align="left">Description</th><td>An identifier for a course instance<br/>The value should correspond to the <a href="https://github.com/jiscdev/analytics-udd/blob/master/udd/course_instance.md#course_instance_id">UDD course_instance.COURSE_INSTANCE_ID</a> identifier that identifies the relevant course in UDD compliant data.</td></tr>
+<tr><th align="left">Description</th><td>An identifier for a course instance<br/>The value should correspond to the <a href="https://github.com/jiscdev/analytics-udd/blob/master/udd/course_instance.md#course_instance_id">UDD course_instance.COURSE_INSTANCE_ID</a> identifier for the relevant course instance in the UDD data.</td></tr>
+<tr><th align="left">Cardinality</th><td>VLE statements: optional<br/>attendance statements: mandatory</td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/uddCourseInstanceID">http://xapi.jisc.ac.uk/uddCourseInstanceID</a> </td></tr>
+</table>
+
+
+### UDD Module Instance ID
+
+<table>
+<tr><th align="left">Label</th><td>UDD Module Instance ID</td></tr>
+<tr><th align="left">Description</th><td>An identifier for a module instance<br/>The value should correspond to the <a href="https://github.com/jiscdev/analytics-udd/blob/master/udd/module_instance.md#mod_instance_id">UDD module_instance.MOD_INSTANCE_ID</a> identifier for the relevant module in the UDD data.</td></tr>
+<tr><th align="left">Cardinality</th><td>VLE statements: mandatory if vle_mod_id not present, else optional<br/>
+attendance statements: optional
+</td></tr>
+<tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/uddModInstanceID">http://xapi.jisc.ac.uk/uddModInstanceID</a> </td></tr>
 </table>
 
 
@@ -576,7 +593,7 @@ Example:
 
 <table>
 <tr><th align="left">Label</th><td>VLE Module ID</td></tr>
-<tr><th align="left">Description</th><td>Property that connects a courseArea in a VLE with a module. It is used in the module_VLE_map entity of the UDD to link module instances to course areas. Note that several module instances (as identified by their UDD MOD_INSTANCE_ID) can link to one courseArea.</td></tr>
+<tr><th align="left">Description</th><td>An identifier for a course area in a VLE. It is used in conjunction with uddModInstanceID to link module instances to course areas. Note that several module instances identified by their uddModInstanceID can link to one vle_mod_id in the VLE.</td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/vle_mod_id">http://xapi.jisc.ac.uk/vle_mod_id</a> </td></tr>
 </table>
 
