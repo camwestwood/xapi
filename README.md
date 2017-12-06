@@ -68,11 +68,11 @@ Library System Access Statements:
 ## Tracking App
 <table>
 <tr><td>Statement Template </td><td>JSON Example</td></tr>
-<tr><td><a href = "recipes/studyapps/mobile-app.md">Viewed mobile app content</a></td><td><a href = "recipes/studyapps/mobile-app.md#example">Draft tracker activites</a></td> </tr>    
-<tr><td><a href = "recipes/studyapps/target-set.md">Tracking: Set a target</a></td>  <td>  </td></tr>
-<tr><td><a href = "recipes/studyapps/target-recording-activity.md">Tracking: Record an activity against a target</a> </td><td>  </td></tr>
-<tr><td><a href = "recipes/studyapps/target-reached-completed.md">Tracking: Reach a target</a></td><td> </td></tr>
-<tr><td><a href = "recipes/studyapps/target-update.md">Tracking: Post an update</a></td><td> </td></tr> 
+<tr><td><a href = "recipes/studyapps/mobile-app.md">Mobile App content Viewed</a></td><td><a href = "recipes/studyapps/mobile-app.md#example">Mobile App content viewed</a></td> </tr>    
+<tr><td><a href = "recipes/studyapps/target-set.md">Set a target</a></td>  <td>  </td></tr>
+<tr><td><a href = "recipes/studyapps/target-recording-activity.md">Record an activity against a target</a> </td><td>  </td></tr>
+<tr><td><a href = "recipes/studyapps/target-reached-completed.md">Reach a target</a></td><td> </td></tr>
+<tr><td><a href = "recipes/studyapps/target-update.md">Post an update</a></td><td> </td></tr> 
 </table>
 
 ## Presence and Attendance

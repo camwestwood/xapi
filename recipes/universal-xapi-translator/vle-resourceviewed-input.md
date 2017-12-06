@@ -19,96 +19,203 @@ Data should be supplied as a UTF-8 Tab Seperated File called resourceviewed.tsv
 
 ## USERNAME 
 ### Description
+
+A unique identifier for that user
+
 ### Purpose
+
+Analytics - to identify that user
+
 ### Derivation
+Jisc
+
 ### Valid Values
+Any
+
 ### Format
-### Notes
+String (255)
 
 ## HOMEPAGE 
+
 ### Description
+
+URL of the home page of the application for which the login id applies.
+
 ### Purpose
+
+Analytics
+
 ### Derivation
+Jisc
+
 ### Valid Values
+Any
+
 ### Format
-### Notes
+String (255)
 
 ## CLIENT_IP 
 ### Description
+
+Client's IP address. An IPv4 address is recommended.
+
 ### Purpose
+
+Analytics
+
 ### Derivation
+Jisc
+
 ### Valid Values
+Any
+
 ### Format
-### Notes
+String (255)
 
 ## PLATFORM 
 ### Description
+
+The platform used in the experience of this learning activity. The value used should not change between platform upgrades and version changes and should typically be a concise name by which the application is commonly known, for example "Moodle" or "Blackboard"
+
+
 ### Purpose
+
+Analytics
+
 ### Derivation
+Jisc
+
 ### Valid Values
+Any
+
 ### Format
-### Notes
+String (255)
+
 
 ## TIMESTAMP 
 ### Description
+
+The time in which the user logged in to the platform
+
 ### Purpose
+
+Analytics
+
 ### Derivation
+Jisc
+
 ### Valid Values
+Any
+
 ### Format
-### Notes
+ISO 8601 date time
 
 ## SESSION_ID 
 ### Description
+
+The VLE session ID, or a suitably hashed version of it. A value should be provided if this information is available.
+
 ### Purpose
+
+Analytics
+
 ### Derivation
+Jisc
+
 ### Valid Values
+Any
+
 ### Format
-### Notes
+String (255)
 
 ## OBJECT_ID 
 ### Description
-### Purpose
-### Derivation
-### Valid Values
-### Format
-### Notes
 
-## OBJECT_TYPE
-### Description
+An identifier for the application being logged in to.
+
 ### Purpose
+
+Analytics
+
 ### Derivation
+Jisc
+
 ### Valid Values
+Any
+
 ### Format
-### Notes
+iri
 
 ## NAME 
 ### Description
+
+Optional name of application being logged in to.
+
 ### Purpose
+
+Analytics
+
 ### Derivation
+Jisc
+
 ### Valid Values
+Any
+
 ### Format
-### Notes
+String (255)
 
 ## SUBTYPE 
 ### Description
+
+sed to identify the subType of the application that is being logged into
+
 ### Purpose
+
+Analytics
+
 ### Derivation
+Jisc
+
 ### Valid Values
+Any
+
 ### Format
-### Notes
+iri
 
 ## VLE_MOD_ID 
 ### Description
+
+Property that connects a courseArea in a VLE with a module. It is used in the module_VLE_map entity of the UDD to link module instances to course areas. Note that several module instances (as identified by their UDD MOD_INSTANCE_ID) can link to one courseArea.
+
 ### Purpose
+
+Analytics
+
 ### Derivation
+Jisc
+
 ### Valid Values
+Any
+
 ### Format
-### Notes
+String (255)
+
 
 ## UDD_MOD_INST_ID 
 ### Description
+
+An identifier for a module instance
+The value should correspond to the UDD module_instance.MOD_INSTANCE_ID identifier that identifies the relevant module in UDD compliant data.
+
 ### Purpose
+
+Analytics
+
 ### Derivation
+Jisc
+
 ### Valid Values
+Any
+
 ### Format
-### Notes
+String (255)
