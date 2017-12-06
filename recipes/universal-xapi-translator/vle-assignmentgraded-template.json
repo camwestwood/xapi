@@ -15,15 +15,15 @@
 
 	"result": {
 		"score": {
-			"scaled": 0.25,
-			"raw": 25,
-			"min": 0,
-			"max": 100
+			"scaled": **SCORE_SCALED**,
+			"raw": **SCORE_RAW**,
+			"min": **SCORE_MIN**,
+			"max": **SCORE_MAX**
 		},
 
 		"success": false,
 		"completion": true,
-		"response": "Your answer should have been: The cow jumped over the moon."
+		"response": "**SCORE_RESPONSE**"
 	},
 	"object": {
 		"objectType": "Activity",
