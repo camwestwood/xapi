@@ -594,6 +594,9 @@ attendance statements: optional
 <table>
 <tr><th align="left">Label</th><td>VLE Module ID</td></tr>
 <tr><th align="left">Description</th><td>An identifier for a course area in a VLE. It is used in conjunction with uddModInstanceID to link module instances to course areas. Note that several module instances identified by their uddModInstanceID can link to one vle_mod_id in the VLE.</td></tr>
+<tr><th align="left">Cardinality</th><td>VLE statements: mandatory if uddModInstanceID not present, else optional<br/>
+attendance statements: optional
+</td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/vle_mod_id">http://xapi.jisc.ac.uk/vle_mod_id</a> </td></tr>
 </table>
 
