@@ -310,7 +310,7 @@ Only 1 of SCORE_RAW or GRADE should be given.
 ## DUE_DATE
 ### Description
 
-Indicates when an assignment is due
+Indicates when the assignment is due
 
 ### Purpose
 
