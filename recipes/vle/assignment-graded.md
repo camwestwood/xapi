@@ -206,7 +206,7 @@ The Context for assignment graded is based on ContextA on the [common structures
 </tr>
 <tr> 
 	<td>context.extension.courseArea [0..1]</td>
-	<td>Umbrella course/parent area by its an UDD Module Instance ID or VLE Module ID. More information can be found on the <a href="vocabulary.md#course-area">vocabularies page</a>..</td>
+	<td>Umbrella course/parent area by its an UDD Module Instance ID or VLE Module ID. More information can be found on the [vocabularies page](/vocabulary.md#coursearea).</td>
 	<td>JSON object</td>
 <tr> 
 </table>

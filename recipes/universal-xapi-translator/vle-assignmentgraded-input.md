@@ -1,6 +1,6 @@
-This is the specification for an input TSV file for attendance events.
+This is the specification for an input TSV file for assignment graded events.
 
-Data should be supplied as a UTF-8 Tab Seperated File called assignmentgraded.tsv
+Data should be supplied as a UTF-8 Tab Separated File called assignmentgraded.tsv
 
 # assignmentgraded
 
@@ -20,7 +20,7 @@ Data should be supplied as a UTF-8 Tab Seperated File called assignmentgraded.ts
 * [SCORE_MAX](#score_max) [0..1]
 * [SCORE_RESPONSE](#score_response) [0..1]
 * [GRADE](#grade) [0..1]
-* [DUE_DATE](#due_date) [o.1]
+* [DUE_DATE](#due_date) [0..1]
 * [INSTRUCTOR_USERNAME](#instructor_username) [1]
 * [INSTRUCTOR_HOMEPAGE](#instructor_homepage) [1]
 
@@ -28,11 +28,11 @@ Data should be supplied as a UTF-8 Tab Seperated File called assignmentgraded.ts
 ## USERNAME 
 ### Description
 
-A unique identifier for that user
+A unique identifier for individual whose work has been graded.
 
 ### Purpose
 
-Analytics - to identify that user
+Analytics - to identify the user
 
 ### Derivation
 Jisc
@@ -41,7 +41,7 @@ Jisc
 Any
 
 ### Format
-String (255)
+String (256)
 
 ## HOMEPAGE 
 
@@ -60,7 +60,7 @@ Jisc
 Any
 
 ### Format
-String (255)
+String (256)
 
 ## CLIENT_IP 
 ### Description
@@ -78,13 +78,12 @@ Jisc
 Any
 
 ### Format
-String (255)
+ip address
 
 ## PLATFORM 
 ### Description
 
-The platform used in the experience of this learning activity. The value used should not change between platform upgrades and version changes and should typically be a concise name by which the application is commonly known, for example "Moodle" or "Blackboard"
-
+The platform used in the experience of this learning activity. The value used should not change between platform upgrades and version changes and should typically be a concise name by which the application is commonly known, for example "Moodle" or "Blackboard".
 
 ### Purpose
 
@@ -97,7 +96,7 @@ Jisc
 Any
 
 ### Format
-String (255)
+String (256)
 
 ## SESSION_ID 
 ### Description
@@ -105,7 +104,6 @@ String (255)
 The VLE session ID, or a suitably hashed version of it. A value should be provided if this information is available.
 
 ### Purpose
-
 Analytics
 
 ### Derivation
@@ -115,7 +113,7 @@ Jisc
 Any
 
 ### Format
-String (255)
+String (256)
 
 ## OBJECT_ID 
 ### Description
@@ -138,7 +136,7 @@ iri
 ## OBJECT_NAME 
 ### Description
 
-Optional name the assignment being graded.
+Optional name for the assignment being graded.
 
 ### Purpose
 
@@ -151,12 +149,12 @@ Jisc
 Any
 
 ### Format
-String (255)
+String (256)
 
 ## VLE_MOD_ID 
 ### Description
 
-Property that connects a courseArea in a VLE with a module. It is used in the module_VLE_map entity of the UDD to link module instances to course areas. Note that several module instances (as identified by their UDD MOD_INSTANCE_ID) can link to one courseArea.
+An identifier for a course area in a VLE. It is used in conjunction with UDD_MOD_INST_ID to link module instances to course areas. Note that several module instances identified by their UDD_MOD_INST_ID can link to one VLE_MOD_ID in the VLE.
 
 ### Purpose
 
@@ -169,14 +167,17 @@ Jisc
 Any
 
 ### Format
-String (255)
+String (256)
+
+###Notes
+Mandatory if UDD_MOD_INST_ID not present.
 
 
 ## UDD_MOD_INST_ID 
 ### Description
 
 An identifier for a module instance
-The value should correspond to the UDD module_instance.MOD_INSTANCE_ID identifier that identifies the relevant module in UDD compliant data.
+The value should correspond to the UDD module_instance.MOD_INSTANCE_ID identifier for the relevant module in the UDD data.
 
 ### Purpose
 
@@ -190,6 +191,9 @@ Any
 
 ### Format
 String (255)
+
+###Notes
+Mandatory if VLE_MOD_ID not present.
 
 ## SCORE_SCALED 
 ### Description
@@ -227,6 +231,9 @@ Decimal number between min and max
 ### Format
 single
 
+### Notes
+Only 1 of SCORE_RAW or GRADE should be given.
+
 
 ## SCORE_MIN
 ### Description
@@ -246,10 +253,10 @@ Decimal number less than max
 ### Format
 single
 
-## SCORE_MIN
+## SCORE_MAX
 ### Description
 
-The lowest possible score. If known this should be given.
+The highest possible score. If known this should be given.
 
 ### Purpose
 
@@ -276,7 +283,7 @@ Analytics
 Jisc
 
 ### Valid Values
-Decimal number greater than min
+Any
 
 ### Format
 String (256)
@@ -297,6 +304,8 @@ String (256)
 ### Format
 single
 
+### Notes
+Only 1 of SCORE_RAW or GRADE should be given.
 
 ## DUE_DATE
 ### Description
@@ -311,7 +320,7 @@ Analytics
 Jisc
 
 ### Valid Values
-Decimal number greater than min
+Any
 
 ### Format
 ISO 8601 date time
@@ -319,7 +328,7 @@ ISO 8601 date time
 ## INSTRUCTOR_USERNAME
 ### Description
 
-ID of marking instructor
+Login ID for the instructor
 
 ### Purpose
 
@@ -329,25 +338,23 @@ Analytics
 Jisc
 
 ### Valid Values
-Decimal number greater than min
+Any
 
 ### Format
-ISO 8601 date time
+String (256)
 
 ## INSTRUCTOR_HOMEPAGE
 ### Description
-
-ID of marking instructor
+URL of the home page of the application for which the login id applies.
 
 ### Purpose
-
 Analytics
 
 ### Derivation
 Jisc
 
 ### Valid Values
-Decimal number greater than min
+Any
 
 ### Format
-ISO 8601 date time
+String (256)
