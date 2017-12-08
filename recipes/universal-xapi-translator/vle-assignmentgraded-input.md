@@ -12,7 +12,6 @@ Data should be supplied as a UTF-8 Tab Seperated File called assignmentgraded.ts
 * [SESSION_ID](#session_id) [0..1]
 * [OBJECT_ID](#object_id) [1]
 * [OBJECT_NAME](#object_name) [0..1]
-* [OBJECT_TYPE](#object_type) [1]
 * [VLE_MOD_ID](#vle_mod_id) [0..1]
 * [UDD_MOD_INST_ID](#udd_mod_inst_id) [0..1]
 * [SCORE_SCALED](#score_scaled) [0..1]
@@ -121,7 +120,7 @@ String (255)
 ## OBJECT_ID 
 ### Description
 
-An identifier for the application being logged in to.
+An identifier for the assignment being graded.
 
 ### Purpose
 
@@ -136,10 +135,10 @@ Any
 ### Format
 iri
 
-## NAME 
+## OBJECT_NAME 
 ### Description
 
-Optional name of application being logged in to.
+Optional name the assignment being graded.
 
 ### Purpose
 
