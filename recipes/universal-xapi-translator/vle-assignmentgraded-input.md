@@ -28,7 +28,7 @@ Data should be supplied as a UTF-8 Tab Separated File called assignmentgraded.ts
 ## USERNAME 
 ### Description
 
-A unique identifier for individual whose work has been graded.
+A unique identifier for the individual whose work has been graded.
 
 ### Purpose
 
@@ -169,7 +169,7 @@ Any
 ### Format
 String (256)
 
-###Notes
+### Notes
 Mandatory if UDD_MOD_INST_ID not present.
 
 
