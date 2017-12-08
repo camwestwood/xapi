@@ -7,7 +7,7 @@
 		}
 	},
 	"verb": {
-		"id": "http://adlnet.gov/expapi/verbs/scored ",
+		"id": "http://adlnet.gov/expapi/verbs/scored",
 		"display": {
 			"en": "scored"
 		}
@@ -41,7 +41,6 @@
 		}
 	},
 	"context": {
-
 		"instructor": {
 			"objectType": "Agent",
 			"account": {
@@ -49,7 +48,7 @@
 				"homePage": "**INSTRUCTOR_HOMEPAGE**"
 			}
 		},
-		"platform": "**PLATFORM",
+		"platform": "**PLATFORM**",
 		"extensions": {
 			"http://xapi.jisc.ac.uk/courseArea": {
                 		"http://xapi.jisc.ac.uk/vle_mod_id": "**VLE_MOD_ID**",
