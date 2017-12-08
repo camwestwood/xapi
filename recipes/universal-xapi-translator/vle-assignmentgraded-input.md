@@ -1,4 +1,4 @@
-This is the input file for an attendance event.
+This is the specification for an input TSV file for attendance events.
 
 Data should be supplied as a UTF-8 Tab Seperated File called assignmentgraded.tsv
 
@@ -20,6 +20,7 @@ Data should be supplied as a UTF-8 Tab Seperated File called assignmentgraded.ts
 * [SCORE_MIN](#score_min) [0..1]
 * [SCORE_MAX](#score_max) [0..1]
 * [SCORE_RESPONSE](#score_response) [0..1]
+* [GRADE](#grade) [0..1]
 * [DUE_DATE](#due_date) [o.1]
 * [INSTRUCTOR_USERNAME](#instructor_username) [1]
 * [INSTRUCTOR_HOMEPAGE](#instructor_homepage) [1]
@@ -279,7 +280,24 @@ Jisc
 Decimal number greater than min
 
 ### Format
-String (255)
+String (256)
+
+## GRADE
+### Description
+Non-numerical assessment result. If not present then score_raw must be given.
+
+### Purpose
+Analytics
+
+### Derivation
+Jisc
+
+### Valid Values
+String (256)
+
+### Format
+single
+
 
 ## DUE_DATE
 ### Description

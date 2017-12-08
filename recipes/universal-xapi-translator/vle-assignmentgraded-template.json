@@ -23,13 +23,16 @@
 
 		"success": false,
 		"completion": true,
-		"response": "**SCORE_RESPONSE**"
+		"response": "**SCORE_RESPONSE**",
+		"extensions": {
+			"http://xapi.jisc.ac.uk/grade": "**GRADE**"
+		},
 	},
 	"object": {
 		"objectType": "Activity",
 		"id": "**OBJECT_ID**",
 		"definition": {
-			"type": "**OBJECT_TYPE**",
+			"type": "http://adlnet.gov/expapi/activities/assessment",
 			"name": {
 				"en": "**OBJECT_NAME**"
 			},

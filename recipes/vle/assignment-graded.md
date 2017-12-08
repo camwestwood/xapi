@@ -93,7 +93,7 @@ The Result entity is mandatory for this type of statement. The entity can includ
 	</tr>
 </table>
 
-### Example:
+### Example of score that can be calculated as a percentage:
 
 ```
 "result": {
@@ -102,6 +102,20 @@ The Result entity is mandatory for this type of statement. The entity can includ
             "raw": 25,
             "min": 0,
             "max": 100
+        },
+		
+        "success": false,
+        "completion": true,
+        "response": "Your answer should have been: The cow jumped over the moon."
+         }
+````
+
+### Example of grade result:
+
+```
+"result": {
+        "extensions": {
+        	"http://xapi.jisc.ac.uk/grade": "E"
         },
 		
         "success": false,
