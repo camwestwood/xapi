@@ -28,7 +28,7 @@
 		"definition": {
 			"type": "http://activitystrea.ms/schema/1.0/application",
 			"name": {
-				"en": "**OBJECT_NAME"
+				"en": "**OBJECT_NAME**"
 			},
 			"extensions": {
 				"http://xapi.jisc.ac.uk/subType": "**SUBTYPE**"
