@@ -1,13 +1,8 @@
-This is the input file for an attendance event.
+This is the specification for an input TSV file for logging out events.
 
 Data should be supplied as a UTF-8 Tab Seperated File called logout.tsv
 
 # logout
-
-This is the input file for an attendance event.
-
-Data should be supplied as a UTF-8 Tab Seperated File called login.tsv
-
 
 * [USERNAME](#username) [1]
 * [HOMEPAGE](#homepage) [1]
@@ -19,14 +14,13 @@ Data should be supplied as a UTF-8 Tab Seperated File called login.tsv
 * [OBJECT_NAME](#object_name) [0..1]
 * [SUBTYPE](#subtype) [0..1]
 
+
 ## USERNAME 
 ### Description
-
-A unique identifier for that user
+A unique identifier for the individual logging out.
 
 ### Purpose
-
-Analytics - to identify that user
+Analytics - to identify the user
 
 ### Derivation
 Jisc
@@ -35,16 +29,14 @@ Jisc
 Any
 
 ### Format
-String (255)
+String (256)
+
 
 ## HOMEPAGE 
-
 ### Description
-
-URL of the home page of the application for which the login id applies.
+URL of the home page of the application for which the logout id applies.
 
 ### Purpose
-
 Analytics
 
 ### Derivation
@@ -54,15 +46,14 @@ Jisc
 Any
 
 ### Format
-String (255)
+String (256)
+
 
 ## CLIENT_IP 
 ### Description
-
 Client's IP address. An IPv4 address is recommended.
 
 ### Purpose
-
 Analytics
 
 ### Derivation
@@ -72,16 +63,15 @@ Jisc
 Any
 
 ### Format
-String (255)
+String (256)
+
 
 ## PLATFORM 
 ### Description
 
-The platform used in the experience of this learning activity. The value used should not change between platform upgrades and version changes and should typically be a concise name by which the application is commonly known, for example "Moodle" or "Blackboard"
-
+The platform used in the experience of this learning activity. The value used should not change between platform upgrades and version changes and should typically be a concise name by which the application is commonly known, for example "Moodle" or "Blackboard".
 
 ### Purpose
-
 Analytics
 
 ### Derivation
@@ -91,16 +81,14 @@ Jisc
 Any
 
 ### Format
-String (255)
+String (256)
 
 
 ## TIMESTAMP 
 ### Description
-
-The time in which the user logged in to the platform
+The time at which the user logged out of the platform
 
 ### Purpose
-
 Analytics
 
 ### Derivation
@@ -112,13 +100,12 @@ Any
 ### Format
 ISO 8601 date time
 
+
 ## SESSION_ID 
 ### Description
-
 The VLE session ID, or a suitably hashed version of it. A value should be provided if this information is available.
 
 ### Purpose
-
 Analytics
 
 ### Derivation
@@ -128,15 +115,13 @@ Jisc
 Any
 
 ### Format
-String (255)
+String (256)
 
 ## OBJECT_ID 
 ### Description
-
-An identifier for the application being logged in to.
+An identifier for the application being logged out of.
 
 ### Purpose
-
 Analytics
 
 ### Derivation
@@ -148,13 +133,12 @@ Any
 ### Format
 iri
 
-## NAME 
-### Description
 
-Optional name of application being logged in to.
+## OBJECT_NAME 
+### Description
+Optional name of application being logged out of.
 
 ### Purpose
-
 Analytics
 
 ### Derivation
@@ -164,15 +148,14 @@ Jisc
 Any
 
 ### Format
-String (255)
+String (256)
+
 
 ## SUBTYPE 
 ### Description
-
-sed to identify the subType of the application that is being logged into
+Used to identify the subType of the application that is being logged out of.
 
 ### Purpose
-
 Analytics
 
 ### Derivation
