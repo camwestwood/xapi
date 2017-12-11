@@ -89,10 +89,9 @@ String (256)
 
 ## TIMESTAMP 
 ### Description
-The time in which the user logged in to the platform
+The time at which the user viewed the resource.
 
 ### Purpose
-
 Analytics
 
 ### Derivation
@@ -107,7 +106,6 @@ ISO 8601 date time
 
 ## SESSION_ID 
 ### Description
-
 The VLE session ID, or a suitably hashed version of it. A value should be provided if this information is available.
 
 ### Purpose
