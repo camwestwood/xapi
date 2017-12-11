@@ -176,13 +176,13 @@ Any
 ### Format
 iri
 
+
 ## VLE_MOD_ID 
 ### Description
 
-Property that connects a courseArea in a VLE with a module. It is used in the module_VLE_map entity of the UDD to link module instances to course areas. Note that several module instances (as identified by their UDD MOD_INSTANCE_ID) can link to one courseArea.
+An identifier for a course area in a VLE. It is used in conjunction with UDD_MOD_INST_ID to link module instances to course areas. Note that several module instances identified by their UDD_MOD_INST_ID can link to one VLE_MOD_ID in the VLE.
 
 ### Purpose
-
 Analytics
 
 ### Derivation
@@ -192,17 +192,18 @@ Jisc
 Any
 
 ### Format
-String (255)
+String (256)
+
+### Notes
+Mandatory if UDD_MOD_INST_ID not present.
 
 
 ## UDD_MOD_INST_ID 
 ### Description
-
 An identifier for a module instance
 The value should correspond to the UDD module_instance.MOD_INSTANCE_ID identifier that identifies the relevant module in UDD compliant data.
 
 ### Purpose
-
 Analytics
 
 ### Derivation
@@ -212,4 +213,7 @@ Jisc
 Any
 
 ### Format
-String (255)
+String (256)
+
+### Notes
+Mandatory if VLE_MOD_ID not present.
