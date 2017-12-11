@@ -12,7 +12,6 @@ Data should be supplied as a UTF-8 Tab Seperated File called resourceviewed.tsv
 * [SESSION_ID](#session_id) [0..1]
 * [OBJECT_ID](#object_id) [1]
 * [OBJECT_NAME](#object_name) [0..1]
-* [OBJECT_TYPE](#object_type) [1]
 * [SUBTYPE](#subtype) [0..1]
 * [VLE_MOD_ID](#vle_mod_id) [0..1]
 * [UDD_MOD_INST_ID](#udd_mod_inst_id) [0..1]
@@ -158,11 +157,9 @@ String (256)
 
 ## SUBTYPE 
 ### Description
-
-sed to identify the subType of the application that is being logged into
+Used to identify the subType of the resource being viewed.
 
 ### Purpose
-
 Analytics
 
 ### Derivation
@@ -177,7 +174,6 @@ iri
 
 ## VLE_MOD_ID 
 ### Description
-
 An identifier for a course area in a VLE. It is used in conjunction with UDD_MOD_INST_ID to link module instances to course areas. Note that several module instances identified by their UDD_MOD_INST_ID can link to one VLE_MOD_ID in the VLE.
 
 ### Purpose
