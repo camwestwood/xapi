@@ -34,7 +34,7 @@ String (256)
 
 ## HOMEPAGE 
 ### Description
-URL of the home page of the application for which the logout id applies.
+URL of the home page of the application for which the login id applies.
 
 ### Purpose
 Analytics

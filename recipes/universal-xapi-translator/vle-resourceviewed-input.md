@@ -1,4 +1,4 @@
-This is the input file for an attendance event.
+This is the specification for an input TSV file for viewing a vle resource.
 
 Data should be supplied as a UTF-8 Tab Seperated File called resourceviewed.tsv
 
@@ -17,14 +17,13 @@ Data should be supplied as a UTF-8 Tab Seperated File called resourceviewed.tsv
 * [VLE_MOD_ID](#vle_mod_id) [0..1]
 * [UDD_MOD_INST_ID](#udd_mod_inst_id) [0..1]
 
+
 ## USERNAME 
 ### Description
-
-A unique identifier for that user
+A unique identifier for the individual viewing the resource.
 
 ### Purpose
-
-Analytics - to identify that user
+Analytics - to identify the user
 
 ### Derivation
 Jisc
@@ -33,12 +32,11 @@ Jisc
 Any
 
 ### Format
-String (255)
+String (256)
+
 
 ## HOMEPAGE 
-
 ### Description
-
 URL of the home page of the application for which the login id applies.
 
 ### Purpose
@@ -54,13 +52,12 @@ Any
 ### Format
 String (255)
 
+
 ## CLIENT_IP 
 ### Description
-
 Client's IP address. An IPv4 address is recommended.
 
 ### Purpose
-
 Analytics
 
 ### Derivation
@@ -70,16 +67,14 @@ Jisc
 Any
 
 ### Format
-String (255)
+String (256)
+
 
 ## PLATFORM 
 ### Description
-
-The platform used in the experience of this learning activity. The value used should not change between platform upgrades and version changes and should typically be a concise name by which the application is commonly known, for example "Moodle" or "Blackboard"
-
+The platform used in the experience of this learning activity. The value used should not change between platform upgrades and version changes and should typically be a concise name by which the application is commonly known, for example "Moodle" or "Blackboard".
 
 ### Purpose
-
 Analytics
 
 ### Derivation
@@ -89,12 +84,11 @@ Jisc
 Any
 
 ### Format
-String (255)
+String (256)
 
 
 ## TIMESTAMP 
 ### Description
-
 The time in which the user logged in to the platform
 
 ### Purpose
@@ -109,6 +103,7 @@ Any
 
 ### Format
 ISO 8601 date time
+
 
 ## SESSION_ID 
 ### Description
@@ -126,15 +121,14 @@ Jisc
 Any
 
 ### Format
-String (255)
+String (256)
+
 
 ## OBJECT_ID 
 ### Description
-
-An identifier for the application being logged in to.
+An identifier for the resource being viewed.
 
 ### Purpose
-
 Analytics
 
 ### Derivation
@@ -146,13 +140,12 @@ Any
 ### Format
 iri
 
-## NAME 
-### Description
 
-Optional name of application being logged in to.
+## OBJECT_NAME 
+### Description
+Optional name for resource being viewed.
 
 ### Purpose
-
 Analytics
 
 ### Derivation
@@ -162,7 +155,8 @@ Jisc
 Any
 
 ### Format
-String (255)
+String (256)
+
 
 ## SUBTYPE 
 ### Description
