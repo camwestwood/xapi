@@ -93,7 +93,7 @@ The Result entity is mandatory for this type of statement. The entity can includ
 	</tr>
 </table>
 
-### Example:
+### Example of score that can be calculated as a percentage:
 
 ```
 "result": {
@@ -110,10 +110,51 @@ The Result entity is mandatory for this type of statement. The entity can includ
          }
 ````
 
-### Object
-Common entity identifier: ObjectB, as defined on the [common structures](/common_structures.md#objectb) page.
+### Example of grade result:
 
-The Object defines the Activity that has been evaluated. [Examples of valid object.definition vocabulary on Activity objectTypes](/common_structures.md#object) can be found on the vocab page.
+```
+"result": {
+        "extensions": {
+        	"http://xapi.jisc.ac.uk/grade": "E"
+        },
+		
+        "success": false,
+        "completion": true,
+        "response": "Your answer should have been: The cow jumped over the moon."
+         }
+````
+
+### Object
+Common entity identifier: uses a refinement of ObjectB, as defined on the [common structures](/common_structures.md#objectb) page.
+
+<table>
+	<tr><th>Property [cardinality]</th><th>Description</th><th>Value information</</th></tr>
+	<tr>
+		<td>object.objectType [1]</td>
+		<td>The value must be "Activity".</td>
+		<td>String, value must be "Activity".</td>
+	</tr>
+	<tr>
+		<td>object.id [1]</td>
+		<td>An identifier for the Object of the xAPI Statement. This must be unique (within a given platform) across all Object types.</td>
+		<td>iri</td>
+	</tr>
+	<tr>
+		<td>object.definition.type [1]</td>
+		<td>Indicates the type of the Object of the Statement. It is required and must have the value "http://adlnet.gov/expapi/activities/assessment".</td>
+		<td>iri: "http://adlnet.gov/expapi/activities/assessment"</td>
+	</tr>
+	<tr>
+		<td>object.definition.name [0..1]</td>
+		<td>Optional Object name describing the assignment</td>
+		<td>string</td>
+	</tr>
+	<tr>
+		<td>object.definition.extensions.http://xapi.jisc.ac.uk/dueDate [0..1]</td>
+		<td>Indicates when the assignment is due.</td>
+		<td>ISO 8601 date time</td>
+	</tr>
+</table>
 
 
 ### Example:
@@ -165,7 +206,7 @@ The Context for assignment graded is based on ContextA on the [common structures
 </tr>
 <tr> 
 	<td>context.extension.courseArea [0..1]</td>
-	<td>Umbrella course/parent area by its an UDD Module Instance ID or VLE Module ID. More information can be found on the <a href="vocabulary.md#course-area">vocabularies page</a>..</td>
+	<td>Umbrella course/parent area by its an UDD Module Instance ID or VLE Module ID. More information can be found on the [vocabularies page](/vocabulary.md#coursearea).</td>
 	<td>JSON object</td>
 <tr> 
 </table>

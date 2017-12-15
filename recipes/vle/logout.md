@@ -87,6 +87,15 @@ When the object.definition.type is "http://activitystrea.ms/schema/1.0/applicati
         },
 ```
 
+### Timestamp
+
+In logged out statements the timestamp property must be set to the date and time of logging out.
+
+#### Example:
+
+ "timestamp": "2016-02-05T10:00:00.000Z"
+
+
 
 ### Complete VLE Specific Examples
 
