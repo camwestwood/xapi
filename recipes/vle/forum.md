@@ -67,6 +67,15 @@ The result.response entity contains plain text from the post encoded as per the 
     }
 ```
 
+### Timestamp
+
+In forum statements the timestamp property must be set to the date and time the post or reply was created.
+
+#### Example:
+
+ "timestamp": "2016-02-05T10:00:00.000Z"
+
+
 ### Object
 Common entity identifier: [ObjectD](/common_structures.md#objectd)
 
@@ -99,7 +108,7 @@ The object defines the discussion or thread. The first example is a first post i
 ```
 
 ### Context
-The Context describes the parent forum of the thread, and optionally, the courseArea (with module identifiers).
+The Context describes the parent forum of the thread, and optionally, the courseArea (with module identifiers). The ForumArea extension is used to identify the parent forum via a uri.
 
 #### Entity Example:
 
@@ -120,3 +129,51 @@ The Context describes the parent forum of the thread, and optionally, the course
 			}
 		}
 ```
+
+
+### Full Example
+
+{
+	"actor": {
+		"objectType": "Agent",
+		"name": "John Smith",
+		"account": {
+			"name": "2",
+			"homePage": "https://courses.alpha.jisc.ac.uk/moodle"
+		}
+	},
+	"verb": {
+		"id": "http://activitystrea.ms/schema/1.0/create",
+		"display": {
+			"en": "created"
+		}
+	},
+	"result": {
+		"response": "Does anybody have any good links to this subject?"
+	},
+	"object": {
+		"objectType": "Activity",
+		"id": "test",
+		"definition": {
+			"type": "http://id.tincanapi.com/activitytype/forum-topic",
+			"name": {
+				"en": "Forum topic"
+			}
+		}
+	},
+	"context": {
+		"platform": "Moodle",
+		"extensions": {
+			"http://jisc.ac.uk/forumArea": "http://moodle.data.alpha.jisc.ac.uk/mod/forum/view.php?id=138371",
+
+			"http://xapi.jisc.ac.uk/courseArea": {
+				"http://xapi.jisc.ac.uk/vle_mod_id": "LA101",
+				"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0"
+			},
+
+			"http://xapi.jisc.ac.uk/sessionId": "32456891",
+			"http://id.tincanapi.com/extension/ip-address": "10.3.3.48",
+			"http://xapi.jisc.ac.uk/version": "1.0"
+		}
+    }
+}
