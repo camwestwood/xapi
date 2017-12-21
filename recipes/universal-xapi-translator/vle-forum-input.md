@@ -1,6 +1,6 @@
 This is the specification for an input TSV file for logging in events.
 
-Data should be supplied as a UTF-8 Tab Separated File called login.tsv
+Data should be supplied as a UTF-8 Tab Separated File called forum.tsv
 
 # login
 
