@@ -43,43 +43,6 @@ The Verb used in the attendance Statement is "attended" (http://adlnet.gov/expap
     },
 ```
 
-### Result
-The `result` component is used to indicate facts about the agent's attendance or non-attendance.
-
-The result.completion must be set to true if the Actor attended the event, or false otherwise. The extension [attendance_late](/vocabulary.md#attendance-late) can be set to 1 if the Actor did not attend the event on time. [Attendance_category](/vocabulary.md#attendance-category) can be used to express additional detail, for example whether lateness was extreme or condoned, or to provide the source system attendance type code (as might be recorded in a conventional paper register). The values which may be used for the attendance_category are not constrained, and may be those used in the source system.
-
-<table>
-	<tr><th>Property [cardinality]</th><th>Description</th><th>Data type</th></tr>
-	<tr>
-		<td>result.completion [1]</td>
-		<td>When set to "true", result.completion indicates that the learner attended the event, "false" indicates that the learner did not attend the event.</td>
-		<td>Boolean</td>
-	</tr>
-	<tr>
-		<td><a href="vocabulary.md#attendance-late">http://result.extension.http://xapi.jisc.ac.uk/attendance_late</a> [0..1]</td>
-		<td>When set to 1, indicates the person was recorded as being late.</td>
-<td>Integer 0/1. 1 for late</td>
-	</tr>
-	<tr>
-		<td><a href="vocabulary.md#attendance-category">result.extension.http://xapi.jisc.ac.uk/attendance_category [0..1]</a></td>
-		<td>Indicates any given category for non-attendance or lateness. </td>
-		<td>String</td>
-	</tr>		
-</table>
-
-
-#### Entity Example:
-
-``` javascript
-"result":{
-	"completion": true,
-	"extensions": {
-		  "http://xapi.jisc.ac.uk/attendance_late": 1,
-		  "http://xapi.jisc.ac.uk/attendance_category": "L"
-	}
-}
-```
-
 ### Object
 
 The Object entity defines an event that has been attended. Only one value for object.definition.type is permitted; see the documented purpose of this statement template.
@@ -171,6 +134,42 @@ The Object defines an event that has been attended. Information on the event can
 		}
 }
 ```
+### Result
+The `result` component is used to indicate facts about the agent's attendance or non-attendance.
+
+The result.completion must be set to true if the Actor attended the event, or false otherwise. The extension [attendance_late](/vocabulary.md#attendance-late) can be set to 1 if the Actor did not attend the event on time. [Attendance_category](/vocabulary.md#attendance-category) can be used to express additional detail, for example whether lateness was extreme or condoned, or to provide the source system attendance type code (as might be recorded in a conventional paper register). The values which may be used for the attendance_category are not constrained, and may be those used in the source system.
+
+<table>
+	<tr><th>Property [cardinality]</th><th>Description</th><th>Data type</th></tr>
+	<tr>
+		<td>result.completion [1]</td>
+		<td>When set to "true", result.completion indicates that the learner attended the event, "false" indicates that the learner did not attend the event.</td>
+		<td>Boolean</td>
+	</tr>
+	<tr>
+		<td><a href="vocabulary.md#attendance-late">http://result.extension.http://xapi.jisc.ac.uk/attendance_late</a> [0..1]</td>
+		<td>When set to 1, indicates the person was recorded as being late. Not used when result.completion is false.</td>
+<td>Integer 0/1. 1 for late</td>
+	</tr>
+	<tr>
+		<td><a href="vocabulary.md#attendance-category">result.extension.http://xapi.jisc.ac.uk/attendance_category [0..1]</a></td>
+		<td>Indicates any given category for non-attendance or lateness. </td>
+		<td>String</td>
+	</tr>		
+</table>
+
+
+#### Entity Example:
+
+``` javascript
+"result":{
+	"completion": true,
+	"extensions": {
+		  "http://xapi.jisc.ac.uk/attendance_late": 1,
+		  "http://xapi.jisc.ac.uk/attendance_category": "L"
+	}
+}
+```
 
 ### Context
 
@@ -197,7 +196,7 @@ The Object defines an event that has been attended. Information on the event can
 	<td>string</td>
 </tr>
 <tr>
-	<td>context.extensions.version [0..1]</td>
+	<td>context.extensions.http://xapi.jisc.ac.uk/version [0..1]</td>
 	<td>Recommended, identifies the version of the Jisc Profile found on the ReadMe page.</td>
 	<td>string</td>
 </tr>
@@ -270,14 +269,6 @@ In attendance statements the timestamp property must be set to the start time of
             "en": "attended"
         }
     },
-    "result":{
-        "completion":true,
-
-		"extensions":{
-		  "http://xapi.jisc.ac.uk/attendance_late":1,
-		  "http://xapi.jisc.ac.uk/attendance_category":"1",
-		 }
-	 },
 	 "object": {
 		 "objectType": "Activity",
 		 "id": "http://wicketkeeper.poppleton.ac.uk/modules/2016/sem1/psy101/qlecture1",
@@ -299,6 +290,13 @@ In attendance statements the timestamp property must be set to the start time of
 			 }
 		 }
 	},
+  "result":{
+      "completion":true,
+      "extensions":{
+        "http://xapi.jisc.ac.uk/attendance_late":1,
+        "http://xapi.jisc.ac.uk/attendance_category":"1",
+      }
+ },
 	"context": {
 		"instructor": {
 			"objectType": "Agent",
