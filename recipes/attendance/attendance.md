@@ -148,7 +148,7 @@ The result.completion must be set to true if the Actor attended the event, or fa
 	</tr>
 	<tr>
 		<td><a href="vocabulary.md#attendance-late">http://result.extension.http://xapi.jisc.ac.uk/attendance_late</a> [0..1]</td>
-		<td>When set to 1, indicates the person was recorded as being late.</td>
+		<td>When set to 1, indicates the person was recorded as being late. Not used when result.completion is false.</td>
 <td>Integer 0/1. 1 for late</td>
 	</tr>
 	<tr>
@@ -196,7 +196,7 @@ The result.completion must be set to true if the Actor attended the event, or fa
 	<td>string</td>
 </tr>
 <tr>
-	<td>context.extensions.version [0..1]</td>
+	<td>context.extensions.http://xapi.jisc.ac.uk/version [0..1]</td>
 	<td>Recommended, identifies the version of the Jisc Profile found on the ReadMe page.</td>
 	<td>string</td>
 </tr>
