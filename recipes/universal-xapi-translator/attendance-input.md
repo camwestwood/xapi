@@ -215,8 +215,8 @@ Analytics
 Jisc
 
 ### Valid Values
-0   NO
-1   YES
+0 - NO  
+1 - YES
 
 ### Format
 INTEGER
@@ -234,7 +234,7 @@ Analytics
 Jisc
 
 ### Valid Values
-0 - NOT LATE
+0 - NOT LATE  
 1 - LATE (ANY)
 
 ### Notes
