@@ -40,7 +40,7 @@ actor.account.homepage [1] <br/>
 ```
 
 ### Verb
-The verb used in quiz_assessed statement is [scored](/vocabulary.md#verbs). It describes the action of receiving an evaluation of an activity. It uses the Jisc common entity [VerbA](../common_structures.md#verba).
+The verb used in quiz_assessed statement is [completed](/vocabulary.md#verbs). It describes the action of receiving an evaluation of an activity. It uses the Jisc common entity [VerbA](../common_structures.md#verba).
 
 #### Entity properties:
 
@@ -48,7 +48,7 @@ The verb used in quiz_assessed statement is [scored](/vocabulary.md#verbs). It d
 	<tr><th>Property</th><th>Description</th></tr>
 	<tr>
 		<td>verb.id [1]</td>
-		<td>An IRI that identifies the Verb. http://adlnet.gov/expapi/verbs/scored in this statement.</td>
+		<td>An IRI that identifies the Verb. "http://adlnet.gov/expapi/verbs/completed"in this statement.</td>
 	</tr>
 	<tr>
 		<td>verb.display [1]</td>
@@ -58,9 +58,9 @@ The verb used in quiz_assessed statement is [scored](/vocabulary.md#verbs). It d
 
 ``` javascript
 "verb": {
-        "id": "http://adlnet.gov/expapi/verbs/scored",
+        "id": "http://adlnet.gov/expapi/verbs/completed",
         "display": {
-            "en": "scored"
+            "en": "completed"
         }
     },
 ``` 
@@ -193,24 +193,26 @@ Context is used to describe the module within which the quiz sits. If the device
       }
     },
     "verb": {
+      "id": "http://adlnet.gov/expapi/verbs/completed"
       "display": {
         "en": "completed"
       },
-      "id": "http://adlnet.gov/expapi/verbs/completed"
+      
     },
     "object": {
-      "definition": {
-        "description": {
-          "en": "A module"
-        },
-        "name": {
-          "en": "mquiz"
-        },
-        "type": "http://xapi.jisc.ac.uk/vle/quiz"
-      },
+	  "objectType": "Activity",
       "id": "http://localhost/moodle/mod/quiz/view.php?id=10",
-      "objectType": "Activity"
+		  "definition": {
+			"description": {
+			  "en": "A module"
+			},
+			"name": {
+			  "en": "mquiz"
+			},
+			"type": "http://xapi.jisc.ac.uk/vle/quiz"
+		  }
     },
+		
 	"context": {
       "extensions": {
         "http://xapi.jisc.ac.uk/attempt": "Attempt 26",
