@@ -4,16 +4,16 @@ Data should be supplied as a UTF-8 Tab Seperated File called econtent.tsv
 
 # library-viewed-econtent
 
-* [USERNAME] (#username) [1]
-* [CLIENT_IP] (#client_ip) [1]
-* [SESSION_ID] (#session_id) [1]
-* [TIMESTAMP] (#timestamp) [1]
-* [HTTP_REQUEST] (#http_request) [1]
-* [HTTP_RESPONSE] (#http_response) [0..1]
-* [BYTES_DOWNLOADED] (#bytes_downloaded) [0..1]
-* [EZPROXY_GROUP_MEMBERSHIP] (#ezproxy_group_membership) [0..1]
-* [HTTP_REFERRER] (#http_referrer) [0..1]
-* [HTTP_BROWSER_INFO] (#http_browser_info) [0..1]
+* [USERNAME](#username) [1]
+* [CLIENT_IP](#client_ip) [1]
+* [SESSION_ID](#session_id) [1]
+* [TIMESTAMP](#timestamp) [1]
+* [HTTP_REQUEST](#http_request) [1]
+* [HTTP_RESPONSE](#http_response) [0..1]
+* [BYTES_DOWNLOADED](#bytes_downloaded) [0..1]
+* [EZPROXY_GROUP_MEMBERSHIP](#ezproxy_group_membership) [0..1]
+* [HTTP_REFERRER](#http_referrer) [0..1]
+* [HTTP_BROWSER_INFO](#http_browser_info) [0..1]
 
 
 ## USERNAME 
