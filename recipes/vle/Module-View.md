@@ -89,6 +89,15 @@ For this Statement the Object needs to identify what was viewed. The object.defi
 }
 ```
 
+### Timestamp
+
+In viewed statements the timestamp property must be set to the date and time at which the user viewed the resource.
+
+#### Example:
+
+ "timestamp": "2016-02-05T10:00:00.000Z"
+
+
 ### Complete VLE Specific Examples
 [Moodle Example](/vle/moodle/moduleview.js)
 
