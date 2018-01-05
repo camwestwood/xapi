@@ -20,11 +20,11 @@
 	},
 	"object": {
 		"objectType": "Activity",
-		"id": "HTTP_REQUEST",
+		"id": "**HTTP_REQUEST**",
 		"definition": {
-			"type": "http://id.tincanapi.com/activitytype/resource",
+			"type": "http://xapi.jisc.ac.uk/reading-list",
 			"name": {
-				"en": "eResource"
+				"en": "reading-list"
 			},
 			"description": {
 				"en": "an eResource made available via a proxy service"
