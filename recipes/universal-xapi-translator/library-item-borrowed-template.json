@@ -43,7 +43,7 @@
 			"http://xapi.jisc.ac.uk/library_branch" : "**BRANCH**",  
 			"http://xapi.jisc.ac.uk/library_return_date" : 
 			"http://xapi.jisc.ac.uk/library_renew_count" : **RENEWAL_COUNT** 
-			"http://xapi.jisc.ac.uk/version": "x-ignore"
+			"http://xapi.jisc.ac.uk/version": "1.0.1"
 	
   }
 }
