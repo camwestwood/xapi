@@ -375,9 +375,9 @@ For more information, see Jisc Profile [CourseArea properties](#coursearea).
 ### Device Location
 
 <table>
-<tr><th align="left">Label</th><td>GeoJSON</td></tr>
+<tr><th align="left">Label</th><td>Device Location</td></tr>
 <tr><th align="left">Description</th><td>Value should be a GeoJSON Object as defined by the GeoJSON specification. GeoJSON can be used to represent GPS coordinates, as well as other geometric entities. See http://www.geojson.org/ for more information.</td></tr>
-<tr><th align="left">IRI</th><td> <a href="http://id.tincanapi.com/extension/geojson">http://id.tincanapi.com/extension/geojson</a> </td></tr>
+<tr><th align="left">IRI</th><td> <a href="https://xapi.jisc.ac.uk/devicelocation">https://xapi.jisc.ac.uk/devicelocation</a> </td></tr>
 <tr><th align="left">Data Type</th><td>JSON Object</td></tr>
 <tr><th align="left">Value Space</th><td>GeoJSON Object</td></tr>
 </table>
