@@ -47,9 +47,9 @@ These are platform independent Statements related to Virtual Learning Enviroment
 Library Reading List Statements: 
 
 <table>
-<tr><td>Statement Template</td><td>JSON example</td><td>Input TSV definitions</td><td>JSON Template</td></tr>                        
-<tr><td><a href = "recipes/library/reading-list-view.md">Reading List: Viewed List</a></td><td><a href="recipes/universal-xapi-translator/library-viewed-reading-list-input.md">library-viewed-econtent-input.md</a></td><td><a href="recipes/universal-xapi-translator/library-viewed-reading-list-template.json">library-viewed-econtent-template.json</a></td></tr>             
-<tr><td> <a href = "recipes/library/reading-list-item-view.md">Reading List: Viewed List Item</a></td><td><a href="recipes/universal-xapi-translator/library-viewed-reading-list-item-input.md">library-viewed-econtent-input.md</a></td><td><a href="recipes/universal-xapi-translator/library-viewed-reading-list-item-template.json">library-viewed-econtent-template.json</a></td></tr>  
+    <tr><td>Statement Template</td><td>JSON example</td><td>Input TSV definitions</td><td>JSON Template</td></tr>
+    <tr><td><a href = "recipes/library/reading-list-view.md">Reading List: Viewed List</a></td><td></td><td><a href="recipes/universal-xapi-translator/library-viewed-reading-list-input.md">library-viewed-econtent-input.md</a></td><td><a href="recipes/universal-xapi-translator/library-viewed-reading-list-template.json">library-viewed-econtent-template.json</a></td></tr> 
+    <tr><td> <a href = "recipes/library/reading-list-item-view.md">Reading List: Viewed List Item</a></td><td></td><td><a href="recipes/universal-xapi-translator/library-viewed-reading-list-item-input.md">library-viewed-econtent-input.md</a></td><td><a href="recipes/universal-xapi-translator/library-viewed-reading-list-item-template.json">library-viewed-econtent-template.json</a></td></tr>  
 </table>
 
 Library Borrowing and Access Statements: 
