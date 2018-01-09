@@ -18,7 +18,6 @@ Common entity identifier:  ActorA, as defined on the [common structures](/common
 ``` Javascript
 "actor": {
   "objectType": "Agent",
-  "name": "John Smith",
   "account": {
     "name": "jsmith12",
     "homePage": "https://courses.alpha.jisc.ac.uk/moodle"
