@@ -532,6 +532,19 @@ For more information, see Jisc Profile [CourseArea properties](#coursearea).
 <tr><th align="left">Sample Value</th><td>1.0</td></tr>
 </table>
 
+### Bytes Downloaded
+
+<table>
+<tr><th align="left">Label</th><td>Jisc Profile Version</td></tr>
+<tr><th align="left">Description</th><td>Bytes downloaded by the client when making a request for electronic content
+</td></tr>
+<tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/version">http://xapi.jisc.ac.uk/BytesDownloaded</a> </td></tr>
+<tr><th align="left">Data Type</th><td>Integer</td></tr>
+<tr><th align="left">Value Space</th><td>Any Integer representing the number of bytes downloaded</td></tr>
+<tr><th align="left">Sample Value</th><td>1200</td></tr>
+</table>
+
+
 <a name="coursearea"></a>
 ## 5.0 Properties of courseArea extension
 The courseArea extension indicates the academic context in which the Activity is situated (for example umbrella course or parent area). In VLE statements the properties in courseArea must be a UDD Module Instance ID or a VLE Module ID or both. In attendance statements the course instance id must be provided, module instance id should be provided if available.
