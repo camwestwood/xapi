@@ -38,7 +38,8 @@
 			"http://id.tincanapi.com/extensions/ip-address": "**CLIENT_IP**",
 			"http://id.tincanapi.com/extension/referrer": "**HTTP_REFERRER**",
 			"http://id.tincanapi.com/extension/browser-info": "**HTTP_BROWSER_INFO**",
-			"http://xapi.jisc.ac.uk/version": "1.0.1"
+			"http://xapi.jisc.ac.uk/version": "1.0.1",
+			"http://xapi.jisc.ac.uk/bytesDownloaded": "12800"
 		}
 
 	}

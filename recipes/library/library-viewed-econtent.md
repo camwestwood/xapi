@@ -134,7 +134,8 @@ Common entity identifier: ObjectA
 			"http://id.tincanapi.com/extensions/ip-address": "IP",
 			"http://id.tincanapi.com/extension/referrer": "HTTP_REFERRER",
 			"http://id.tincanapi.com/extension/browser-info": "HTTP_BROWSER_INFO",
-			"http://xapi.jisc.ac.uk/version": "x-ignore"
+			"http://xapi.jisc.ac.uk/bytesDownloaded": "12800"
+			"http://xapi.jisc.ac.uk/version": "1.0.1"
 		}
 	}
 }

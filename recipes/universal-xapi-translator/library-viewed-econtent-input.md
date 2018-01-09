@@ -11,7 +11,6 @@ Data should be supplied as a UTF-8 Tab Seperated File called econtent.tsv
 * [HTTP_REQUEST](#http_request) [1]
 * [HTTP_RESPONSE](#http_response) [0..1]
 * [BYTES_DOWNLOADED](#bytes_downloaded) [0..1]
-* [EZPROXY_GROUP_MEMBERSHIP](#ezproxy_group_membership) [0..1]
 * [HTTP_REFERRER](#http_referrer) [0..1]
 * [HTTP_BROWSER_INFO](#http_browser_info) [0..1]
 
@@ -127,25 +126,6 @@ String (255)
 
 
 ## BYTES_DOWNLOADED
-### Description
-
-tbc
-
-### Purpose
-
-tbc
-
-### Derivation
-Jisc
-
-### Valid Values
-Any
-
-### Format
-String (255)
-
-
-## EZPROXY_GROUP_MEMBERSHIP
 ### Description
 
 tbc
