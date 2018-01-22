@@ -67,10 +67,9 @@ Common entity identifier: ContextA, as defined on the [common structures](/commo
 ```
 
 ### Object
-
 Common entity identifier: ObjectA, as defined on the [common structures](/common_structures.md#objecta) page.
 
-For this Statement the Object needs to identify what was viewed. The object.definition.type defines the object as VLE content using the mandatory type http://xapi.jisc.ac.uk/vle/content. The subType extension supplies the detail of that content drawn from a list of values maintained with respect to the platform.
+For this Statement the Object needs to identify what was viewed. A list of valid values for the object.definition.type can be found on the [vocabularies page](/vocabulary.md#activity-types)
 
 ### Example
 
