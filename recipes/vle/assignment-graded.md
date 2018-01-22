@@ -221,7 +221,7 @@ The Context for assignment graded is based on ContextA on the [common structures
             "name": "Ray Keenan",
             "account": {
                 "name": "RKeenan",
-                "homePage": "http://localhost/moodle"
+                "homePage": "https://courses.alpha.jisc.ac.uk/moodle""
             },
         
     "platform": "Moodle"

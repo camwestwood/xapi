@@ -69,7 +69,10 @@ Common entity identifier: ContextA, as defined on the [common structures](/commo
 ### Object
 Common entity identifier: ObjectA, as defined on the [common structures](/common_structures.md#objecta) page.
 
-For this Statement the Object needs to identify what was viewed. A list of valid values for the object.definition.type can be found on the [vocabularies page](/vocabulary.md#activity-types)
+For this Statement the Object needs to identify what was viewed. A list of valid values for the object.definition.type can be found on the [vocabularies page](/vocabulary.md#activity-types).
+
+Some statements may make use of subTypes of Activity Types. These sub-types are not defined by the Jisc profile spec, but for guidance examples can be found on the [vocabularies page](/vocabulary.md#activity-types) within the description of each valid activity type. It is the responsibility of the plugin to define the subType but the vendors do not own the IRI since these subTypes use a Jisc-controlled namespace that relates to the vendor, vendor product, or institution which de facto defines the sub-type.
+
 
 ### Example
 
