@@ -19,7 +19,6 @@ The Actor entity describes the individual whose work has been graded.
 {
     "actor": {
         "objectType": "Agent",
-        "name": "John Smith",
         "account": {
             "name": "jsmith12",
             "homePage": "https://courses.alpha.jisc.ac.uk/moodle"

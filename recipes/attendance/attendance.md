@@ -18,9 +18,8 @@ The Actor entity describes the individual who has attended the event.
 {
     "actor": {
         "objectType": "Agent",
-        "name": "John Smith",
         "account": {
-            "name": "2",
+            "name": "jsmith12",
             "homePage": "https://courses.alpha.jisc.ac.uk/moodle"
         }
     },

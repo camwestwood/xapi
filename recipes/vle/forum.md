@@ -14,9 +14,8 @@ The actor entity describes the individual who is making the reply.
 {
     "actor": {
         "objectType": "Agent",
-        "name": "John Smith",
         "account": {
-            "name": "2",
+            "name": "jsmith12",
             "homePage": "https://courses.alpha.jisc.ac.uk/moodle"
         }
     },

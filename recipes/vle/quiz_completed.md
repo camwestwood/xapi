@@ -31,7 +31,6 @@ actor.account.homepage [1] <br/>
 ``` Javascript
 "actor": {
   "objectType": "Agent",
-  "name": "John Smith",
   "account": {
     "name": "jsmith12",
     "homePage": "https://courses.alpha.jisc.ac.uk/moodle"

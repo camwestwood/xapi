@@ -19,9 +19,8 @@ The Actor entity describes the individual that is viewing a vle resource.
     "version": "1.0.0",
     "actor": {
         "objectType": "Agent",
-        "name": "John Smith",
         "account": {
-            "name": "2",
+            "name": "jsmith12",
             "homePage": "https://courses.alpha.jisc.ac.uk/moodle"
         }
     },
@@ -42,30 +41,6 @@ The Verb, [viewed](/vocabulary.md#verb) denotes the action of the user's browser
         }
     },
 ```
-
-### Context
-
-Common entity identifier: ContextA, as defined on the [common structures](/common_structures.md#contexta) page. In this Statement, the courseArea extension is required. See the [vocabularies](/vocabulary.md#coursearea) page for more information.
-
-### Example:
-
-``` javascript
-"context": {
-        "platform": "Moodle",
-        "extensions": {
-	
-      	"http://xapi.jisc.ac.uk/courseArea": {
-			"http://xapi.jisc.ac.uk/vle_mod_id": "LA101",
-			"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0"
-		},
-					
-	"http://xapi.jisc.ac.uk/sessionId": "32456891"  ,
-	"http://id.tincanapi.com/extension/ip-address": "10.3.3.48"
-	"http://xapi.jisc.ac.uk/version" : "1.0"
-			}
-        }
-```
-
 ### Object
 Common entity identifier: ObjectA, as defined on the [common structures](/common_structures.md#objecta) page.
 
@@ -89,6 +64,29 @@ Some statements may make use of subTypes of Activity Types. These sub-types are 
 	 }
     }
 }
+```
+
+### Context
+
+Common entity identifier: ContextA, as defined on the [common structures](/common_structures.md#contexta) page. In this Statement, the courseArea extension is required. See the [vocabularies](/vocabulary.md#coursearea) page for more information.
+
+### Example:
+
+``` javascript
+"context": {
+        "platform": "Moodle",
+        "extensions": {
+	
+      	"http://xapi.jisc.ac.uk/courseArea": {
+			"http://xapi.jisc.ac.uk/vle_mod_id": "LA101",
+			"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0"
+		},
+					
+	"http://xapi.jisc.ac.uk/sessionId": "32456891"  ,
+	"http://id.tincanapi.com/extension/ip-address": "10.3.3.48"
+	"http://xapi.jisc.ac.uk/version" : "1.0"
+			}
+        }
 ```
 
 ### Timestamp

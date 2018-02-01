@@ -16,7 +16,6 @@ The Actor entity describes the individual who has submitted the assignment.
 {
     "actor": {
         "objectType": "Agent",
-        "name": "John Smith",
         "account": {
             "name": "jsmith12",
             "homePage": "https://courses.alpha.jisc.ac.uk/moodle"

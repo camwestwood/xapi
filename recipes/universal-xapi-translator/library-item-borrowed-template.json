@@ -2,7 +2,6 @@
     "version": "1.0.0",
     "actor": {
         "objectType": "Agent",
-        "name": "John Smith",
         "account": {
             "name": "**USER_ID**",
             "homePage": "**HOMEPAGE**" 

@@ -16,7 +16,6 @@ The Actor entity identifies the individual that is logging in to the system.
 ``` Javascript
 "actor": {
   "objectType": "Agent",
-  "name": "John Smith",
   "account": {
     "name": "jsmith12",
     "homePage": "https://courses.alpha.jisc.ac.uk/moodle"

@@ -12,7 +12,7 @@
 		"objectType": "Activity",
 		"id": "**OBJECT_ID**",
 		"definition": {
-			"type": "http://xapi.jisc.ac.uk/vle/content",
+			"type": "**OBJECT_ID**",
 			"name": {
 				"en": "**OBJECT_NAME**"
 			}
