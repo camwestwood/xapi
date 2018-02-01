@@ -24,13 +24,6 @@ Data should be supplied as a UTF-8 Tab Seperated File called borrowing.tsv
 
 A unique identifier for that user
 
-### Purpose
-
-Analytics - to identify that user
-
-### Derivation
-Jisc
-
 ### Valid Values
 Any
 
@@ -42,19 +35,11 @@ String (255)
 
 A unique identifier for that item
 
-### Purpose
-
-Analytics - to identify that item
-
-### Derivation
-Jisc
-
 ### Valid Values
 Any
 
 ### Format
 String (255)
-
 
 
 ## ITEM_TYPE
@@ -62,19 +47,11 @@ String (255)
 
 tbc
 
-### Purpose
-
-tvc
-
-### Derivation
-Jisc
-
 ### Valid Values
 Any
 
 ### Format
 String (255)
-
 
 
 ## ITEM_NAME
@@ -86,12 +63,6 @@ A name identifier for that item
 
 tbc
 
-### Derivation
-Jisc
-
-### Valid Values
-Any
-
 ### Format
 String (255)
 
@@ -101,12 +72,6 @@ String (255)
 
 tbc
 
-### Purpose
-
-tbc
-
-### Derivation
-Jisc
 
 ### Valid Values
 Any
@@ -115,21 +80,9 @@ Any
 String (255)
 
 
-
 ## BRANCH_NAME
-### Description
 
-tbc
 
-### Purpose
-
-tbc
-
-### Derivation
-Jisc
-
-### Valid Values
-Any
 
 ### Format
 String (255)
@@ -139,13 +92,6 @@ String (255)
 ### Description
 
 tbc
-
-### Purpose
-
-tbc
-
-### Derivation
-Jisc
 
 ### Valid Values
 Any
@@ -159,13 +105,6 @@ String (255)
 
 tbc
 
-### Purpose
-
-tbc
-
-### Derivation
-Jisc
-
 ### Valid Values
 Any
 
@@ -177,12 +116,6 @@ String (255)
 
 tbc
 
-### Purpose
-
-tbc
-
-### Derivation
-Jisc
 
 ### Valid Values
 Any
@@ -195,12 +128,6 @@ String (255)
 
 tbc
 
-### Purpose
-
-tbc
-
-### Derivation
-Jisc
 
 ### Valid Values
 Any
@@ -213,12 +140,6 @@ String (255)
 
 A unique identifier for that brancg
 
-### Purpose
-
-Analytics - to identify that branch
-
-### Derivation
-Jisc
 
 ### Valid Values
 Any
@@ -234,12 +155,6 @@ tbc
 ### Purpose
 
 tbc
-
-### Derivation
-Jisc
-
-### Valid Values
-Any
 
 ### Format
 integer

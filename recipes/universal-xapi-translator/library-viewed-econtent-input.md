@@ -20,12 +20,6 @@ Data should be supplied as a UTF-8 Tab Seperated File called econtent.tsv
 
 A unique identifier for that user
 
-### Purpose
-
-Analytics - to identify that user
-
-### Derivation
-Jisc
 
 ### Valid Values
 Any
@@ -37,13 +31,6 @@ String (255)
 ### Description
 
 Client's address location on internet
-
-### Purpose
-
-Analytics - to identify the access location
-
-### Derivation
-Jisc
 
 ### Valid Values
 Any
@@ -57,12 +44,6 @@ String (255)
 
 tbc
 
-### Purpose
-
-tvc
-
-### Derivation
-Jisc
 
 ### Valid Values
 Any
@@ -75,12 +56,6 @@ String (255)
 
 Timestamp representing time
 
-### Purpose
-
-Analytics - Identify time in which resources are accessed.
-
-### Derivation
-Jisc
 
 ### Valid Values
 Any
@@ -93,12 +68,6 @@ ISO 8601 timestamp
 ### Description
 
 tbc
-### Purpose
-
-tbc
-
-### Derivation
-Jisc
 
 ### Valid Values
 Any
@@ -110,13 +79,6 @@ String (255)
 ### Description
 
 tbc
-
-### Purpose
-
-tbc
-
-### Derivation
-Jisc
 
 ### Valid Values
 Any
@@ -130,12 +92,6 @@ String (255)
 
 tbc
 
-### Purpose
-
-tbc
-
-### Derivation
-Jisc
 
 ### Valid Values
 Any
@@ -147,13 +103,6 @@ String (255)
 ### Description
 
 tbc
-
-### Purpose
-
-tbc
-
-### Derivation
-Jisc
 
 ### Valid Values
 Any

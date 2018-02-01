@@ -30,13 +30,6 @@ Data should be supplied as a UTF-8 Tab Separated File called assignmentgraded.ts
 
 A unique identifier for the individual whose work has been graded.
 
-### Purpose
-
-Analytics - to identify the user
-
-### Derivation
-Jisc
-
 ### Valid Values
 Any
 
@@ -49,13 +42,6 @@ String (256)
 
 URL of the home page of the application for which the login id applies.
 
-### Purpose
-
-Analytics
-
-### Derivation
-Jisc
-
 ### Valid Values
 Any
 
@@ -66,13 +52,6 @@ String (256)
 ### Description
 
 Client's IP address. An IPv4 address is recommended.
-
-### Purpose
-
-Analytics
-
-### Derivation
-Jisc
 
 ### Valid Values
 Any
@@ -85,13 +64,6 @@ ip address
 
 The platform used in the experience of this learning activity. The value used should not change between platform upgrades and version changes and should typically be a concise name by which the application is commonly known, for example "Moodle" or "Blackboard".
 
-### Purpose
-
-Analytics
-
-### Derivation
-Jisc
-
 ### Valid Values
 Any
 
@@ -102,12 +74,6 @@ String (256)
 ### Description
 
 The VLE session ID, or a suitably hashed version of it. A value should be provided if this information is available.
-
-### Purpose
-Analytics
-
-### Derivation
-Jisc
 
 ### Valid Values
 Any
@@ -120,13 +86,6 @@ String (256)
 
 An identifier for the assignment being graded.
 
-### Purpose
-
-Analytics
-
-### Derivation
-Jisc
-
 ### Valid Values
 Any
 
@@ -138,13 +97,6 @@ iri
 
 Optional name for the assignment being graded.
 
-### Purpose
-
-Analytics
-
-### Derivation
-Jisc
-
 ### Valid Values
 Any
 
@@ -155,13 +107,6 @@ String (256)
 ### Description
 
 An identifier for a course area in a VLE. It is used in conjunction with UDD_MOD_INST_ID to link module instances to course areas. Note that several module instances identified by their UDD_MOD_INST_ID can link to one VLE_MOD_ID in the VLE.
-
-### Purpose
-
-Analytics
-
-### Derivation
-Jisc
 
 ### Valid Values
 Any
@@ -179,13 +124,6 @@ Mandatory if UDD_MOD_INST_ID not present.
 An identifier for a module instance
 The value should correspond to the UDD module_instance.MOD_INSTANCE_ID identifier for the relevant module in the UDD data.
 
-### Purpose
-
-Analytics
-
-### Derivation
-Jisc
-
 ### Valid Values
 Any
 
@@ -200,13 +138,6 @@ Mandatory if VLE_MOD_ID not present.
 
 The score related to the experience as modified by scaling and/or normalization. If the raw value can be calculated as a percentage then the scaled may be populated as such. In the example shown, there is a 100 question quiz and a user has 25 questions correct, corresponding to a raw value of ‘25’ and a scaled value of ‘0.25’ (25%). If the data is not scaled then it should not be given and should not be zero
 
-### Purpose
-
-Analytics
-
-### Derivation
-Jisc
-
 ### Valid Values
 Decimal number between -1 and 1, inclusive.
 
@@ -217,13 +148,6 @@ single
 ### Description
 
 Unmodified score. If not present then grade must be given.
-
-### Purpose
-
-Analytics
-
-### Derivation
-Jisc
 
 ### Valid Values
 Decimal number between min and max
@@ -240,13 +164,6 @@ Only 1 of SCORE_RAW or GRADE should be given.
 
 The lowest possible score. If known this should be given.
 
-### Purpose
-
-Analytics
-
-### Derivation
-Jisc
-
 ### Valid Values
 Decimal number less than max
 
@@ -258,13 +175,6 @@ single
 
 The highest possible score. If known this should be given.
 
-### Purpose
-
-Analytics
-
-### Derivation
-Jisc
-
 ### Valid Values
 Decimal number greater than min
 
@@ -275,12 +185,6 @@ single
 ### Description
 
 Instructor's or automatic feedback
-### Purpose
-
-Analytics
-
-### Derivation
-Jisc
 
 ### Valid Values
 Any
@@ -291,12 +195,6 @@ String (256)
 ## GRADE
 ### Description
 Non-numerical assessment result. If not present then score_raw must be given.
-
-### Purpose
-Analytics
-
-### Derivation
-Jisc
 
 ### Valid Values
 String (256)
@@ -312,13 +210,6 @@ Only 1 of SCORE_RAW or GRADE should be given.
 
 Indicates when the assignment is due
 
-### Purpose
-
-Analytics
-
-### Derivation
-Jisc
-
 ### Valid Values
 Any
 
@@ -330,12 +221,6 @@ ISO 8601 date time
 
 Login ID for the instructor
 
-### Purpose
-
-Analytics
-
-### Derivation
-Jisc
 
 ### Valid Values
 Any
@@ -346,12 +231,6 @@ String (256)
 ## INSTRUCTOR_HOMEPAGE
 ### Description
 URL of the home page of the application for which the login id applies.
-
-### Purpose
-Analytics
-
-### Derivation
-Jisc
 
 ### Valid Values
 Any

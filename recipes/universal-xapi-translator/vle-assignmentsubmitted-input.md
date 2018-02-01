@@ -180,12 +180,6 @@ Mandatory if UDD_MOD_INST_ID not present.
 An identifier for a module instance
 The value should correspond to the UDD module_instance.MOD_INSTANCE_ID identifier that identifies the relevant module in UDD compliant data.
 
-### Purpose
-Analytics
-
-### Derivation
-Jisc
-
 ### Valid Values
 Any
 

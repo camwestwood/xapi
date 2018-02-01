@@ -24,12 +24,6 @@ Data should be supplied as a UTF-8 Tab Seperated File called attendance.tsv
 ### Description
 The institutions identifier for the student
 
-### Purpose
-To link the student to the UDD
-
-### Derivation
-Jisc
-
 ### Valid Values
 Any
 
@@ -42,12 +36,6 @@ This will match the identifiers used in the Student Record System.
 ## EVENT_ID
 ### Description
 A unique identifier for that event, as known in the source system.
-
-### Purpose
-Analytics - to allow groups of all attendees at an event.
-
-### Derivation
-Jisc
 
 ### Valid Values
 Any
@@ -62,12 +50,6 @@ This is normally the attendance recording system primary key for an attendance r
 ### Description
 A name for that event
 
-### Purpose
-For display purposes
-
-### Derivation
-Jisc
-
 ### Valid Values
 Any
 
@@ -80,12 +62,6 @@ String (255)
 ### Description
 Longer desciption of the event 'eg Lecture on XXX'
 
-### Purpose
-Display
-
-### Derivation
-Jisc
-
 ### Valid Values
 Any
 
@@ -97,12 +73,6 @@ String (255)
 ## EVENT_TYPE
 ### Description
 A code for the event type eg. 1 = LECTURE, 2 = TUTORIAL etc
-
-### Purpose
-Analytics
-
-### Derivation
-Institution
 
 ### Valid Values
 Any
@@ -117,12 +87,6 @@ Only populate this if event types are distinguished in the source database; leav
 ### Description
 The name/ description of the actitivity type eg. LECTURE, TUTORIAL etc. This is the user-facing counterpart to EVENT_TYPE
 
-### Purpose
-Display
-
-### Derivation
-Jisc
-
 ### Valid Values
 Any
 
@@ -134,12 +98,6 @@ String (255)
 ## EVENT_MAX_COUNT
 ### Description
 Number of students who could attend this event
-
-### Purpose
-Analytics
-
-### Derivation
-Jisc
 
 ### Valid Values
 Any
@@ -153,12 +111,6 @@ Integer
 ### Description
 Indicates whether attendance was compulsory. May be used to decide whether or not to count in the attendance statistics.
 
-### Purpose
-Analytics
-
-### Derivation
-Jisc
-
 ### Valid Values
 Any
 
@@ -170,12 +122,6 @@ Integer
 ## START_TIME
 ### Description
 The prescribed start date and time for this activity instance (as per the timetable provision).
-
-### Purpose
-Analytics
-
-### Derivation
-Jisc
 
 ### Valid Values
 Date and time to at least hour precision.
@@ -190,12 +136,6 @@ A time component must be included for events starting other than at 00:00.
 ### Description
 The prescribed end date and time for this activity instance (as per the timetable provision).
 
-### Purpose
-ANALYTICS
-
-### Derivation
-Jisc
-
 ### Valid Values
 Date and time to at least hour precision.
 
@@ -207,12 +147,6 @@ ISO Date (eg 2015-05-24T09:45)
 ## EVENT_ATTENDED
 ### Description
 Whether the activity has been attended.
-
-### Purpose
-Analytics
-
-### Derivation
-Jisc
 
 ### Valid Values
 0 - NO  
@@ -226,12 +160,6 @@ INTEGER
 ## ATTENDANCE_LATE
 ### Description
 Optional flag to confirm if this activity has been attended late or not.
-
-### Purpose
-Analytics
-
-### Derivation
-Jisc
 
 ### Valid Values
 0 - NOT LATE  
@@ -263,12 +191,6 @@ Usually a short code such as "L", "X", "A"
 ### Description
 The institutions identifier for the staff
 
-### Purpose
-To link the staff to the UDD
-
-### Derivation
-Jisc
-
 ### Valid Values
 Any
 
@@ -282,12 +204,6 @@ This will match the identifiers used in the Student Record System.
 ### Description
 The module instance id this activity instance belongs/ refers to
 
-### Purpose
-To allow for granularity in analysis below student level.
-
-### Derivation
-Jisc
-
 ### Valid Values
 Any
 
@@ -297,16 +213,9 @@ String (255)
 ### Notes
 This must match a UDD MOD_INSTANCE_ID. If this identifier is not generally available, it may be appropriate to omit it and to use COURSE_INSTANCE_ID instead.
 
-
 ## COURSE_INSTANCE_ID
 ### Description
 The course instance id this activity instance belongs/ refers to. t
-
-### Purpose
-To allow for granularity in analysis below student level.
-
-### Derivation
-Jisc
 
 ### Valid Values
 Any

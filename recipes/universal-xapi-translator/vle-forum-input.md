@@ -28,11 +28,6 @@ The time at which the user logged in to the platform
 ### Purpose
 Analytics
 
-### Derivation
-Jisc
-
-### Valid Values
-Any
 
 ### Format
 ISO 8601 date time
@@ -44,12 +39,6 @@ A unique identifier for the individual logging in.
 ### Purpose
 Analytics - to identify the user
 
-### Derivation
-Jisc
-
-### Valid Values
-Any
-
 ### Format
 String (256)
 
@@ -57,12 +46,6 @@ String (256)
 ## HOMEPAGE 
 ### Description
 URL of the home page of the application for which the login id applies.
-
-### Purpose
-Analytics
-
-### Derivation
-Jisc
 
 ### Valid Values
 Any
@@ -74,12 +57,6 @@ String (256)
 ## CLIENT_IP 
 ### Description
 Client's IP address. An IPv4 address is recommended.
-
-### Purpose
-Analytics
-
-### Derivation
-Jisc
 
 ### Valid Values
 Any
@@ -93,13 +70,6 @@ String (256)
 
 The platform used in the experience of this learning activity. The value used should not change between platform upgrades and version changes and should typically be a concise name by which the application is commonly known, for example "Moodle" or "Blackboard".
 
-
-### Purpose
-Analytics
-
-### Derivation
-Jisc
-
 ### Valid Values
 Any
 
@@ -110,12 +80,6 @@ String (256)
 ## TIMESTAMP 
 ### Description
 The time at which the user logged in to the platform
-
-### Purpose
-Analytics
-
-### Derivation
-Jisc
 
 ### Valid Values
 Any
@@ -129,13 +93,6 @@ ISO 8601 date time
 
 The VLE session ID, or a suitably hashed version of it. A value should be provided if this information is available.
 
-### Purpose
-
-Analytics
-
-### Derivation
-Jisc
-
 ### Valid Values
 Any
 
@@ -147,13 +104,6 @@ String (256)
 ### Description
 An identifier for the forum post.
 
-### Purpose
-
-Analytics
-
-### Derivation
-Jisc
-
 ### Valid Values
 Any
 
@@ -163,12 +113,6 @@ iri
 ## OBJECT_NAME 
 ### Description
 Optional name of application being logged in to.
-
-### Purpose
-Analytics
-
-### Derivation
-Jisc
 
 ### Valid Values
 Any
@@ -180,11 +124,6 @@ String (256)
 ### Description
 Identifies the parent forum via uri.
 
-### Purpose
-Analytics
-
-### Derivation
-Jisc
 
 ### Valid Values
 Any
@@ -196,13 +135,6 @@ uri
 ### Description
 
 An identifier for a course area in a VLE. It is used in conjunction with UDD_MOD_INST_ID to link module instances to course areas. Note that several module instances identified by their UDD_MOD_INST_ID can link to one VLE_MOD_ID in the VLE.
-
-### Purpose
-
-Analytics
-
-### Derivation
-Jisc
 
 ### Valid Values
 Any
@@ -219,13 +151,6 @@ Mandatory if UDD_MOD_INST_ID not present.
 
 An identifier for a module instance
 The value should correspond to the UDD module_instance.MOD_INSTANCE_ID identifier for the relevant module in the UDD data.
-
-### Purpose
-
-Analytics
-
-### Derivation
-Jisc
 
 ### Valid Values
 Any

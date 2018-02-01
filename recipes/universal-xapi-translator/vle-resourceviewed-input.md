@@ -102,17 +102,9 @@ Any
 ### Format
 ISO 8601 date time
 
-
 ## SESSION_ID 
 ### Description
 The VLE session ID, or a suitably hashed version of it. A value should be provided if this information is available.
-
-### Purpose
-
-Analytics
-
-### Derivation
-Jisc
 
 ### Valid Values
 Any
@@ -125,12 +117,6 @@ String (256)
 ### Description
 An identifier for the resource being viewed.
 
-### Purpose
-Analytics
-
-### Derivation
-Jisc
-
 ### Valid Values
 Any
 
@@ -141,12 +127,6 @@ iri
 ## OBJECT_NAME 
 ### Description
 Optional name for resource being viewed.
-
-### Purpose
-Analytics
-
-### Derivation
-Jisc
 
 ### Valid Values
 Any
@@ -159,12 +139,6 @@ String (256)
 ### Description
 Used to identify the subType of the resource being viewed.
 
-### Purpose
-Analytics
-
-### Derivation
-Jisc
-
 ### Valid Values
 Any
 
@@ -175,12 +149,6 @@ iri
 ## VLE_MOD_ID 
 ### Description
 An identifier for a course area in a VLE. It is used in conjunction with UDD_MOD_INST_ID to link module instances to course areas. Note that several module instances identified by their UDD_MOD_INST_ID can link to one VLE_MOD_ID in the VLE.
-
-### Purpose
-Analytics
-
-### Derivation
-Jisc
 
 ### Valid Values
 Any
@@ -196,12 +164,6 @@ Mandatory if UDD_MOD_INST_ID not present.
 ### Description
 An identifier for a module instance
 The value should correspond to the UDD module_instance.MOD_INSTANCE_ID identifier that identifies the relevant module in UDD compliant data.
-
-### Purpose
-Analytics
-
-### Derivation
-Jisc
 
 ### Valid Values
 Any
