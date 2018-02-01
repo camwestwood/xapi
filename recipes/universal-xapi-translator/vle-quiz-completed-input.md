@@ -9,10 +9,8 @@ Data should be supplied as a UTF-8 Tab Separated File called forum.tsv
 * [HOMEPAGE](#homepage) [1]
 * [ACTION](#action) [1]
 * [ACTION_DISPLAY](#action_display) [1]
-* [CLIENT_IP](#client_ip) [1]
 * [PLATFORM](#platform) [1]
 * [TIMESTAMP](#timestamp) [1]
-* [SESSION_ID](#session_id) [0..1]
 * [OBJECT_ID](#object_id) [1]
 * [OBJECT_NAME](#object_name) [0..1]
 * [ATTEMPT_NUMBER](#attempt_number) [0..1]
@@ -22,6 +20,8 @@ Data should be supplied as a UTF-8 Tab Separated File called forum.tsv
 * [SCORE_RAW](#score_raw) [0..1]
 * [SCORE_MIN](#score_min) [0..1]
 * [SCORE_MAX](#score_max) [0..1]
+* [SESSION_ID](#session_id) [0..1]
+* [CLIENT_IP](#client_ip) [1]
 
 
 
@@ -57,15 +57,6 @@ Any
 String (256)
 
 
-## CLIENT_IP 
-### Description
-Client's IP address. An IPv4 address is recommended.
-
-### Valid Values
-Any
-
-### Format
-String (256)
 
 ## ATTEMPT_NUMBER 
 ### Description
@@ -101,17 +92,6 @@ Any
 ### Format
 ISO 8601 date time
 
-
-## SESSION_ID 
-### Description
-
-The VLE session ID, or a suitably hashed version of it. A value should be provided if this information is available.
-
-### Valid Values
-Any
-
-### Format
-String (256)
 
 
 ## OBJECT_ID 
@@ -227,3 +207,24 @@ Decimal number greater than min
 
 ### Format
 single
+
+## CLIENT_IP 
+### Description
+Client's IP address. An IPv4 address is recommended.
+
+### Valid Values
+Any
+
+### Format
+String (256)
+
+## SESSION_ID 
+### Description
+
+The VLE session ID, or a suitably hashed version of it. A value should be provided if this information is available.
+
+### Valid Values
+Any
+
+### Format
+String (256)s

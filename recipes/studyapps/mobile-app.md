@@ -11,13 +11,12 @@ This recipe defines the structure and terms to record the experience of viewing 
 Common entity identifier: [ActorA](/common_structures.md#actora)
 
 ### Entity Example:
-The actor entity describes the individual that is viewing a vle resource.
+The actor entity describes the individual that is viewing an app resource.
 
 
 ``` Javascript
     "actor": {
         "objectType": "Agent",
-        "name": "John Smith",
         "account": {
             "name": "jsmith12",
             "homePage": "https://courses.alpha.jisc.ac.uk/moodle"
@@ -95,9 +94,8 @@ In this recipe the object should identify what was viewed. A list of valid value
 	"version": "1.0.0",
 	"actor": {
 		"objectType": "Agent",
-		"name": "John Smith",
 		"account": {
-			"name": "2",
+			"name": "jsmith12",
 			"homePage": "https://jisc.ac.uk"
 		}
 	},

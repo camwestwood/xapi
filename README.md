@@ -45,6 +45,7 @@ These are platform independent Statements related to Virtual Learning Enviroment
 
 ## Library
 
+
 <table>
 <tr><td>Statement Template</td><td>JSON example</td><td>Input TSV definitions</td><td>JSON Template</td></tr>  
 <tr><td> <a href = "/recipes/library/library-viewed-econtent.md">Library Item Accessing econtent</a></td><td></td><td><a href="recipes/universal-xapi-translator/library-viewed-econtent-input.md">library-viewed-econtent-input.md</a></td><td><a href="recipes/universal-xapi-translator/library-viewed-econtent-template.json">library-viewed-econtent-template.json</a></td></tr>       <tr><td> <a href = "/recipes/library/library-item-borrowing.md">Library item: Borrowed item</a></td><td></td> <td><a href="recipes/universal-xapi-translator/library-item-borrowed-input.md">library-item-borrowed-input.md</a></td><td><a href="recipes/universal-xapi-translator/library-item-borrowed-template.json">library-item-template.json</td></tr>    
@@ -52,13 +53,14 @@ These are platform independent Statements related to Virtual Learning Enviroment
 
 
 ## Tracking App
+
 <table>
-<tr><td>Statement Template </td><td>JSON Example</td></tr>
-<tr><td><a href = "recipes/studyapps/mobile-app.md">Mobile App content Viewed</a></td><td><a href = "recipes/studyapps/mobile-app.md#example">Mobile App content viewed</a></td> </tr>    
-<tr><td><a href = "recipes/studyapps/target-set.md">Set a target</a></td>  <td>  </td></tr>
-<tr><td><a href = "recipes/studyapps/target-recording-activity.md">Record an activity against a target</a> </td><td>  </td></tr>
-<tr><td><a href = "recipes/studyapps/target-reached-completed.md">Reach a target</a></td><td> </td></tr>
-<tr><td><a href = "recipes/studyapps/target-update.md">Post an update</a></td><td> </td></tr> 
+<tr><td>Statement Template</td><td>JSON example</td><td>Input TSV definitions</td><td>JSON Template</td></tr>  
+<tr><td><a href = "recipes/studyapps/mobile-app.md">Mobile App content Viewed</a></td><td><a href = "recipes/studyapps/mobile-app.md#full-example">Mobile App content viewed</a></td> <td></td><td></td></tr>    
+<tr><td><a href = "recipes/studyapps/target-set.md">Set a target</a></td>  <td><a href = "recipes/studyapps/target-set.md.md#full-example">Attended learning activity </a></td><td></td><td></td></tr>
+<tr><td><a href = "recipes/studyapps/target-recording-activity.md">Record an activity against a target</a> </td><td>  </td><td></td><td></td></tr>
+<tr><td><a href = "recipes/studyapps/target-reached-completed.md">Reach a target</a></td><td> </td><td></td><td></td></tr>
+<tr><td><a href = "recipes/studyapps/target-update.md">Post an update</a></td><td> </td><td></td><td></td></tr> 
 </table>
 
 ## Presence and Attendance
