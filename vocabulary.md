@@ -446,7 +446,7 @@ For more information, see Jisc Profile [CourseArea properties](#coursearea).
 <table>
 <tr><th align="left">Label</th><td>Event Type ID</td></tr>
 <tr><th align="left">Description</th><td>Value representing an Activity Type (for example 1 for lecture, 2 for seminar)</td></tr>
-<tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/activity_type_id">http://xapi.jisc.ac.uk/activity_type_id</a> </td></tr>
+<tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/activity_type_id">http://xapi.jisc.ac.uk/activity_type_description</a> </td></tr>
 <tr><th align="left">Example in Statement template</th><td> <a href="/recipes/attendance/attendance.md#object">attendance</a> </td></tr>
 <tr><th align="left">Data Type</th><td>Integer</td></tr>
 <tr><th align="left">Value Space</th><td>Related to activity type.</td></tr>
