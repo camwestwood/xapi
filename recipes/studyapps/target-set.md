@@ -37,7 +37,7 @@ The verb created created denotes the action of creating a target.
 
 ### Object
 
-The object should be the target.
+The object should be the target that has been completed.
 
 ### Example
 
