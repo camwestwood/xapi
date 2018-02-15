@@ -76,7 +76,7 @@ The Object entity defines an event that has been attended. Only one value for ob
 	<tr>
 	   <td>object.definition.extensions.http://xapi.jisc.ac.uk/subType [0.1]</td>
 	   <td>May be used to qualify what kind of timetabled event occurred - for example whether it was a lecture, lab-work, a group tutorial, etc - using the approach documented on the
-	   <a href="vocabulary.md#31-activity-types">vocabulary</a> page.</td>
+	   <a href="/vocabulary.md#31-activity-types">vocabulary</a> page.</td>
 	   <td>iri</td>
 	</tr>
 	<tr>
