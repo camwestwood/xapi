@@ -1,7 +1,7 @@
 #tracking app. Reached/completed a target. 
 
 ## Purpose
-This statement defines the structure and terms to record the experience of compling a target. 
+This statement defines the structure and terms to record the experience of completing a target. 
 
 ### Actor
 Common entity identifier: [ActorA](/common_structures.md#actora)
@@ -27,7 +27,7 @@ Common entity identifier: [VerbA](/common_structures.md#verba)
 
 The verb completed  denotes the action of completing a target.
 
-### Verb
+### Entity Example:
 
 ``` javascript
 "verb": {
@@ -42,7 +42,7 @@ The verb completed  denotes the action of completing a target.
 
 The object is the target that has been completed.
 
-### Example
+### Entity Example:
 
 ``` javascript
 "object": {
@@ -52,13 +52,6 @@ The object is the target that has been completed.
     "type": "https://xapi.jisc.ac.uk/target",
     "name": {
       "en": "Target"
-    },
-    "extensions": {
-      "http://xapi.jisc.ac.uk/uddModInstanceID" : "2016.sem1.psy101"
-      "http://xapi.jisc.ac.uk/target_name" : "Reading for exams "
-      "http://xapi.jisc.ac.uk/target_catergory" : "Reading"
-      "http://xapi.jisc.ac.uk/target_value" : "120"
-      "http://xapi.jisc.ac.uk/target_time_period" : "Week"	
     }
   }
 }

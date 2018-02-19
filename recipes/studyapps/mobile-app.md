@@ -29,7 +29,7 @@ Common entity identifier: [VerbA](/common_structures.md#verba)
 
 The verb [viewed](/vocabulary.md#viewed) denotes the action of the user's browser or app requesting the resource that the user wishes to view.
 
-### Example:
+### Entity Example:
 
 ``` javascript
 "verb": {
@@ -66,8 +66,7 @@ For this recipe the courseArea is optional, but should use uddModInstanceID when
 
 In this recipe the object should identify what was viewed. A list of valid values  for the object definition type can be found in the [vocab page](/vocabulary.md#Object.definition.extension)
 
-### Example
-
+### Entity Example:
 ``` javascript
 "object": {
   "objectType": "Activity",
@@ -87,7 +86,7 @@ In this recipe the object should identify what was viewed. A list of valid value
 }
 ```
 
-### Statement Example
+### Example
 
 ``` javascript
 {

@@ -1,4 +1,4 @@
-#tracking app set a target statement
+# Tracking app set a target statement
 
 ## Purpose
 This statement defines the structure and terms to record the experience of setting a target in the tracking app. 
@@ -26,6 +26,8 @@ Common entity identifier: [VerbA](/common_structures.md#verba)
 
 The verb created created denotes the action of creating a target.
 
+### Entity Example:
+
 ``` javascript
 "verb": {
         "id": "http://adlnet.gov/expapi/verbs/created",
@@ -39,7 +41,7 @@ The verb created created denotes the action of creating a target.
 
 The object should be the target that has been completed.
 
-### Example
+### Entity Example:
 
 ``` javascript
 "object": {
@@ -60,7 +62,10 @@ The object should be the target that has been completed.
   }
 }
 
-### Statement Example
+```
+
+
+### Example
 
 ``` javascript
 
