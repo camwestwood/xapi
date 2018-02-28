@@ -167,11 +167,11 @@ String (255)
 ## STATEMENT_CAT
 ### Description
 
-tbc
+The tyoe of statement. For example, "Library"
 
 
 ### Format
-integer
+string
 
 
 ## Notes
