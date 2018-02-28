@@ -32,7 +32,7 @@ The basic actions to consider are:
 
 ### Object
 
-The object should be the target.  What should the object type defintion be though?   
+The object should be the target.   
 
 ### Example
 

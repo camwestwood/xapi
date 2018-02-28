@@ -39,7 +39,7 @@ The verb created created denotes the action of creating a target.
 
 ### Object
 
-The object should be the target that has been completed.
+The object should be the target that has been set. Target options are set in the objects extensions
 
 ### Entity Example:
 

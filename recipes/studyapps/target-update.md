@@ -1,8 +1,8 @@
-#tracking app. Post an update to a target.
+# Mobileg app. Post an update to a target.
 
 
 ## Purpose
-This recipe defines the structure and terms to record the experience of updating a target on the tracking app. 
+This recipe defines the structure and terms to record the experience of updating a target on the Mobile app.
 
 ### Actor
 Common entity identifier: [ActorA](/common_structures.md#actora)
@@ -26,11 +26,12 @@ Common entity identifier: [VerbA](/common_structures.md#verba)
 
 The verb created created denotes the action of updating a target.
 
+### Entity Example:
 ``` javascript
 "verb": {
         "id": "http://activitystrea.ms/schema/1.0/update,
         "display": {
-            "en": "created"
+            "en": "update"
         }
     },
 ```
@@ -38,9 +39,9 @@ The verb created created denotes the action of updating a target.
 
 ### Object
 
-The object should be the target that has been completed.
+The object should be the target that is being updated, extensions carry new or updated values.
 
-### Example
+### Entity Example:
 
 ``` javascript
 "object": {
@@ -52,13 +53,12 @@ The object should be the target that has been completed.
       "en": "Target"
     },
     "extensions": {
-      "http://xapi.jisc.ac.uk/uddModInstanceID" : "2016.sem1.psy101"
-      "http://xapi.jisc.ac.uk/target_name" : "Reading for exams "
-      "http://xapi.jisc.ac.uk/target_catergory" : "Reading"
+
       "http://xapi.jisc.ac.uk/target_value" : "120"
-      "http://xapi.jisc.ac.uk/target_time_period" : "Week"	
+
     }
   }
 }
 
 
+### Example:
