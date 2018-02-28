@@ -179,9 +179,10 @@ An ISO 8601 format timestamp that corresponds to the time of when the item was b
 	</tr>
 		<tr>
 		<td>context.extensions.statementCat version [0..1]</td>
-		<td>Recommended For querying lookup <br/></td>
+		<td>Recommended For querying lookup. Set to "library" in library templates <br/></td>
 		<td>string</td>
 	</tr>
+
 </table>
 
 
@@ -193,7 +194,7 @@ An ISO 8601 format timestamp that corresponds to the time of when the item was b
 "context": {
  
   "extensions": {
-  
+	"http://xapi.jisc.ac.uk/statementCat": "Library",
 	"http://xapi.jisc.ac.uk/library_borrower_category": "UG", 
     	"http://xapi.jisc.ac.uk/library_loan_policy": "short", 
     	"http://xapi.jisc.ac.uk/library_branch" : "Main library", 
@@ -246,7 +247,7 @@ An ISO 8601 format timestamp that corresponds to the time of when the item was b
 	"context": {
  
 		"extensions": {
-			"http://xapi.jisc.ac.uk/statementCat": "**STATEMENT_CAT**",
+			"http://xapi.jisc.ac.uk/statementCat": "library",
 			"http://xapi.jisc.ac.uk/library_borrower_category": "UG",
 			"http://xapi.jisc.ac.uk/library_loan_policy": "short", 
 			"http://xapi.jisc.ac.uk/library_branch" : "Main library", 
