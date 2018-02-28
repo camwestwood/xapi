@@ -3,7 +3,7 @@
 	"actor": {
 		"objectType": "Agent",
 		"account": {
-			"name": "**UNAME**",
+			"name": "**USERNAME**",
 			"homePage": "**HOMEPAGE**"
 		}
 	},
@@ -20,7 +20,7 @@
 	},
 	"object": {
 		"objectType": "Activity",
-		"id": "HTTP_REQUEST",
+		"id": "**HTTP_REQUEST**",
 		"definition": {
 			"type": "http://id.tincanapi.com/activitytype/resource",
 			"name": {
@@ -39,7 +39,7 @@
 			"http://id.tincanapi.com/extension/referrer": "**HTTP_REFERRER**",
 			"http://id.tincanapi.com/extension/browser-info": "**HTTP_BROWSER_INFO**",
 			"http://xapi.jisc.ac.uk/version": "1.0.1",
-			"http://xapi.jisc.ac.uk/bytesDownloaded": "12800"
+			"http://xapi.jisc.ac.uk/bytesDownloaded": **BYTES_DOWNLOADED**
 		}
 
 	}
