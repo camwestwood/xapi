@@ -164,22 +164,6 @@ Any
 ### Format
 String (255)
 
-## STATEMENT_CAT
-### Description
-
-The tyoe of statement. For example, "Library"
-
-
-### Format
-string
-
-
-## Notes
-
-For ease of querying
-
-
-
 
 
 
