@@ -17,6 +17,7 @@ Data should be supplied as a UTF-8 Tab Seperated File called borrowing.tsv
 * [LOAN_POLICY](#loan_policy) [0..1]
 * [BRANCH](#branch) [0..1]
 * [RENEWAL_COUNT](#renewal_count) [0..1]
+* [STATEMENT_CAT](#statement_cat) [0..1]
 
 
 ## USER_ID 
@@ -152,16 +153,30 @@ String (255)
 
 tbc
 
-### Purpose
-
-tbc
 
 ### Format
 integer
 
 
+### Valid Values
+Any
+
+### Format
+String (255)
+
+## STATEMENT_CAT
+### Description
+
+tbc
 
 
+### Format
+integer
+
+
+## Notes
+
+For ease of querying
 
 
 

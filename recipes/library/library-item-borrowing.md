@@ -177,6 +177,11 @@ An ISO 8601 format timestamp that corresponds to the time of when the item was b
 		<td>Recommended, identifies the version of the Jisc xAPI profile found on the ReadMe page. <br/></td>
 		<td>string</td>
 	</tr>
+		<tr>
+		<td>context.extensions.statementCat version [0..1]</td>
+		<td>Recommended For querying lookup <br/></td>
+		<td>string</td>
+	</tr>
 </table>
 
 
@@ -241,11 +246,10 @@ An ISO 8601 format timestamp that corresponds to the time of when the item was b
 	"context": {
  
 		"extensions": {
-  
+			"http://xapi.jisc.ac.uk/statementCat": "**STATEMENT_CAT**",
 			"http://xapi.jisc.ac.uk/library_borrower_category": "UG",
 			"http://xapi.jisc.ac.uk/library_loan_policy": "short", 
 			"http://xapi.jisc.ac.uk/library_branch" : "Main library", 
-			"http://xapi.jisc.ac.uk/library_return_date" : "2015-09-18T01:54:51.484Z"  
 			"http://xapi.jisc.ac.uk/library_renew_count" : 3 
 			"http://xapi.jisc.ac.uk/version": "1.0.1"
 	
