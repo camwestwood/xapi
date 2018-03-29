@@ -18,6 +18,7 @@ Data should be supplied as a UTF-8 Tab Seperated File called borrowing.tsv
 * [BRANCH](#branch) [0..1]
 * [RENEWAL_COUNT](#renewal_count) [0..1]
 * [STATEMENT_CAT](#statement_cat) [0..1]
+* [TIMESTAMP](#timestamp) [0..1]
 
 
 ## USER_ID 
@@ -163,6 +164,16 @@ Any
 
 ### Format
 String (255)
+
+## TIMESTAMP 
+### Description
+The time at which the library item was borrowed
+
+### Valid Values
+Any
+
+### Format
+ISO 8601 date time
 
 
 
