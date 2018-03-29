@@ -19,7 +19,7 @@
 		"definition": {
 			"type": "**HOMEPAGE**/library/**ITEM_TYPE**",
 			"name": {
-				"en": "**ITEM_NAME"
+				"en": "**ITEM_NAME**"
 			},
 		"extensions": {
 			"http://oclc.com/number": "**OCLC_NUMBER**",
