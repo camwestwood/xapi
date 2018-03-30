@@ -89,7 +89,7 @@ Example 1: Create a discussion
 
 
 Example 2
-'''
+ ``` javascript
 
 "object": {
 	"objectType": "Activity",
