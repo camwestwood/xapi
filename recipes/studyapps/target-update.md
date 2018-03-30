@@ -29,7 +29,7 @@ The verb created created denotes the action of updating a target.
 ### Entity Example:
 ``` javascript
 "verb": {
-        "id": "http://activitystrea.ms/schema/1.0/update,
+        "id": "http://activitystrea.ms/schema/1.0/update",
         "display": {
             "en": "update"
         }
