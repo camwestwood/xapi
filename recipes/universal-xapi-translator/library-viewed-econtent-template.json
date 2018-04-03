@@ -15,20 +15,19 @@
 		}
 	},
 	"result": {
-		"completion": "COMPLETED",
-		"response": "**HTTP_RESPONSE**"
+		"completion": "**COMPLETED**"
 	},
 	"object": {
 		"objectType": "Activity",
-		"id": "**HTTP_REQUEST**",
+		"id": "**ITEM_ID**",
 		"definition": {
 			"type": "http://id.tincanapi.com/activitytype/resource",
 			"name": {
 				"en": "eResource"
 			},
-			"description": {
-				"en": "an eResource made available via a proxy service"
-			}
+		"extensions": {
+				"http://xapi.jisc.ac.uk/subType": "**ITEM_TYPE**"
+			}	
 		}
 	},
 	"context": {
@@ -36,10 +35,7 @@
 		"extensions": {
 			"http://xapi.jisc.ac.uk/sessionId": "**SESSION_ID**",
 			"http://id.tincanapi.com/extensions/ip-address": "**CLIENT_IP**",
-			"http://id.tincanapi.com/extension/referrer": "**HTTP_REFERRER**",
-			"http://id.tincanapi.com/extension/browser-info": "**HTTP_BROWSER_INFO**",
-			"http://xapi.jisc.ac.uk/version": "1.0.1",
-			"http://xapi.jisc.ac.uk/bytesDownloaded": **BYTES_DOWNLOADED**
+			"http://xapi.jisc.ac.uk/version": "1.0.1"
 		}
 
 	}

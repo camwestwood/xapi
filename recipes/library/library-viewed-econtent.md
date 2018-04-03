@@ -54,15 +54,14 @@ An ISO 8601 format timestamp that corresponds to the time of when the content wa
 ```
 
 ### Result
-The result entity containts the http response code
+The result entity describes if the request for the resource was completed.
 
 
 ### Example
 
 ``` javascript
 "result":{
-"completion": COMPLETED,
-"response": "HTTP_RESPONSE"
+	"completion": COMPLETED
 },
 ``` 
 
@@ -80,7 +79,7 @@ Common entity identifier: ObjectA
 		"name": { "en": "The Condition of the Working Class in England" },			   
 	 }
 	 "extensions": {
-     		 "http://xapi.jisc.ac.uk/subType": "http://xapi.jisc.ac.uk/externalURL"
+     		 "http://xapi.jisc.ac.uk/subType": "http://xapi.jisc.ac.uk/journal"
 	 }
     }
 }
@@ -112,16 +111,6 @@ Common entity identifier: ObjectA
 		<td>context.extension.ip-address [1]</td>
 		<td>client's IP address. An IPv4 address is recommended.</td>
 		<td>ip address</td>
-	<tr> 
-		<td>context.extension.referrer [0..1]</td>
-		<td>refering url</td>
-		<td>URL</td>
-	<tr> 
-	<tr> 
-		<td>context.extension.browser_info [0..1]</td>
-		<td></td>
-		<td></td>
-	<tr> 
 </table>
 
 ### Example:
@@ -132,9 +121,6 @@ Common entity identifier: ObjectA
 		"extensions": {
 			"http://xapi.jisc.ac.uk/sessionId": "A438L",
 			"http://id.tincanapi.com/extensions/ip-address": "IP",
-			"http://id.tincanapi.com/extension/referrer": "HTTP_REFERRER",
-			"http://id.tincanapi.com/extension/browser-info": "HTTP_BROWSER_INFO",
-			"http://xapi.jisc.ac.uk/bytesDownloaded": "12800"
 			"http://xapi.jisc.ac.uk/version": "1.0.1"
 		}
 	}
@@ -149,11 +135,11 @@ Common entity identifier: ObjectA
 	"actor": {
 		"objectType": "Agent",
 		"account": {
-			"name": "UNAME",
-			"homePage": "HOMEPAGE"
+			"name": "Jsmith12",
+			"homePage": "http://ezproxy.jisc.ac.uk"
 		}
 	},
-	"timestamp": "TIMESTAMP",
+	"timestamp": "2015-09-18T01:54:51.484Z",
 	"verb": {
 		"id": "http://id.tincanapi.com/verb/viewed",
 		"display": {
@@ -161,20 +147,19 @@ Common entity identifier: ObjectA
 		}
 	},
 	"result": {
-		"completion": "COMPLETED",
-		"response": "HTTP_RESPONSE"
+		"completion": "COMPLETED"
 	},
 	"object": {
 		"objectType": "Activity",
-		"id": "HTTP_URL",
+		"id": "http://onlinelibrary.jisc.ac.uk/doi/10.1111",
 		"definition": {
 			"type": "http://id.tincanapi.com/activitytype/resource",
 			"name": {
 				"en": "eResource"
 			},
-			"description": {
-				"en": "an eResource made available via a proxy service"
-			}
+			"extensions": {
+						"http://xapi.jisc.ac.uk/subType": "http://xapi.jisc.ac.uk/journal"
+				}
 		}
 	},	
 	"context": {
@@ -182,9 +167,7 @@ Common entity identifier: ObjectA
 		"extensions": {
 			"http://xapi.jisc.ac.uk/sessionId": "SESSION_ID",
 			"http://id.tincanapi.com/extensions/ip-address": "IP",
-			"http://id.tincanapi.com/extension/referrer": "HTTP_REFERRER",
-			"http://id.tincanapi.com/extension/browser-info": "HTTP_BROWSER_INFO",
-			"http://xapi.jisc.ac.uk/version": "x-ignore"
+			"http://xapi.jisc.ac.uk/version": "1.0.1"
 		}
 	}
 }
