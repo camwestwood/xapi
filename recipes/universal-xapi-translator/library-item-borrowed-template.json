@@ -17,20 +17,22 @@
 		"objectType": "Activity",
 		"id": "**HOMEPAGE**/library/**ITEM_ID**",
 		"definition": {
-			"type": "**HOMEPAGE**/library/**ITEM_TYPE**",
+			"type": "http://xapi.jisc.ac.uk/library/resource",
 			"name": {
 				"en": "**ITEM_NAME**"
 			},
 		"extensions": {
-			"http://oclc.com/number": "**OCLC_NUMBER**",
+			"http://xapi.jisc.ac.uk/subType": "**ITEM_TYPE**",
+			"http://oclc.com/number": "**OCLC_NUMBER**"
 		}
 	},
 	
 	"timestamp": "**TIMESTAMP**",
-	
+
 	"context": {
 		"extensions": {
-			"http://xapi.jisc.ac.uk/statementCat": "**STATEMENT_CAT**"
+			"http://xapi.jisc.ac.uk/statementCat": "**STATEMENT_CAT**",
+			"http://xapi.jisc.ac.uk/version": "1.0.1"
 		}
 	}
 }
