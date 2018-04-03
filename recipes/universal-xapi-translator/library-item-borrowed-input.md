@@ -39,7 +39,7 @@ String (255)
 ## ITEM_TYPE
 ### Description
 
-tbc
+The type of item being borrowed
 
 ### Valid Values
 Any
@@ -73,7 +73,7 @@ ISO 8601 date time
 ## OCLC_NUMBER
 ### Description
 
-tbc
+OLCL NUmber
 
 
 ### Valid Values
