@@ -56,7 +56,7 @@ Some statements may make use of subTypes of Activity Types. These sub-types are 
 	"objectType": "Activity",
 	"id": "http://moodle.data.alpha.jisc.ac.uk/mod/page/view.php?id=9" 	 	
 	"definition": {
-		"type": ""http://xapi.jisc.ac.uk/vle/page",			
+		"type": "http://xapi.jisc.ac.uk/vle/page",			
 		"name": { "en": "Sample page" },			   
 	 }
 	 "extensions": {
