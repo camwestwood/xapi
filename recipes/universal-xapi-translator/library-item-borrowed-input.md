@@ -8,17 +8,9 @@ Data should be supplied as a UTF-8 Tab Seperated File called borrowing.tsv
 * [ITEM_ID](#item_id) [1]
 * [ITEM_TYPE](#item_type) [1]
 * [ITEM_NAME](#item_name) [1]
-* [OCLC_NUMBER](#oclc_number) [1]
-* [CALL_NUMBER](#call_number) [0..1]
-* [BRANCH_NAME](#branch_name) [0..1]
-* [PERMANENT_SHELVING_LOCATION](#PERMANENT_SHELVING_LOCATION) [0..1]
-* [TEMPORARY_SHELVING_LOCATION](#iTEMPORARY_SHELVING_LOCATION) [0..1]
-* [BORROWER_CAT](#borrower_cat) [0..1]
-* [LOAN_POLICY](#loan_policy) [0..1]
-* [BRANCH](#branch) [0..1]
-* [RENEWAL_COUNT](#renewal_count) [0..1]
-* [STATEMENT_CAT](#statement_cat) [0..1]
-* [TIMESTAMP](#timestamp) [0..1]
+* [TIMESTAMP](#timestamp) [1]
+* [OCLC_NUMBER](#oclc_number) [0..1]
+
 
 
 ## USER_ID 
@@ -68,6 +60,15 @@ tbc
 ### Format
 String (255)
 
+## TIMESTAMP 
+### Description
+The time at which the library item was borrowed
+
+### Valid Values
+Any
+
+### Format
+ISO 8601 date time
 
 ## OCLC_NUMBER
 ### Description
@@ -82,98 +83,7 @@ Any
 String (255)
 
 
-## BRANCH_NAME
 
-
-
-### Format
-String (255)
-
-
-## PERMANENT_SHELVING_LOCATION
-### Description
-
-tbc
-
-### Valid Values
-Any
-
-### Format
-String (255)
-
-
-## TEMPORARY_SHELVING_LOCATION
-### Description
-
-tbc
-
-### Valid Values
-Any
-
-### Format
-String (255)
-
-## BORROWER_CAT
-### Description
-
-tbc
-
-
-### Valid Values
-Any
-
-### Format
-String (255)
-
-## LOAN_POLICY
-### Description
-
-tbc
-
-
-### Valid Values
-Any
-
-### Format
-String (255)
-
-## BRANCH
-### Description
-
-A unique identifier for that brancg
-
-
-### Valid Values
-Any
-
-### Format
-String (255)
-
-## RENEWAL_COUNT
-### Description
-
-tbc
-
-
-### Format
-integer
-
-
-### Valid Values
-Any
-
-### Format
-String (255)
-
-## TIMESTAMP 
-### Description
-The time at which the library item was borrowed
-
-### Valid Values
-Any
-
-### Format
-ISO 8601 date time
 
 
 
