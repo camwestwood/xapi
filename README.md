@@ -69,6 +69,13 @@ These are platform independent Statements related to Virtual Learning Enviroment
 <tr><td> <a href = "recipes/attendance/attendance.md">Attended learning activity </a></td><td><a href = "recipes/attendance/attendance.md#example">Attended learning activity </a></td><td><a href="recipes/universal-xapi-translator/attendance-input.md"> attendance-input.md<a/><br/><a href="recipes/TSV/attendance.tsv"> Example TSV<a/></td> <td><a href="recipes/universal-xapi-translator/attendance-template.json">attendance-template.json</a></td>  </tr>    
 </table>
 
+## Intervention
+<table>
+<tr><td>Statement Template </td><td>JSON Example</td><td>Input TSV  definitions</td><td>JSON Template</td></tr>
+<tr><td> Create activity </td><td> </td><td></td> <td></td></tr>
+<tr><td> Update activity </td><td> </td><td></td> <td></td></tr>       
+<tr><td> Closed activity </td><td> </td><td></td> <td></td></tr>   
+</table>
 
 ## Predictive Model Output
 
