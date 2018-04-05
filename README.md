@@ -68,9 +68,9 @@ These are platform independent Statements related to Virtual Learning Enviroment
 ## Intervention
 <table>
 <tr><td>Statement Template </td><td>JSON Example</td><td>Input TSV  definitions</td><td>JSON Template</td></tr>
-<tr><td> Create activity </td><td> </td><td> <a href="recipes/universal-xapi-translator/intervention-create-activity-input.md">intervention-create-activity-input.md </a>  </td> <td></td></tr>
-<tr><td> Update activity </td><td>   </td><td><a href="recipes/universal-xapi-translator/intervention-update-activity-input.md">intervention-update-activity-input.md </a>   </td> <td>  </td></tr>       
-<tr><td> Close activity </td><td>   </td><td><a href="recipes/universal-xapi-translator/intervention-close-activity-input.md">intervention-close-activity-input.md </a>   </td> <td></td></tr>   
+<tr><td> Create activity </td><td> </td><td> <a href="recipes/universal-xapi-translator/intervention-create-activity-input.md">intervention-create-activity-input.md </a>  </td> <td><a href="recipes/universal-xapi-translator/intervention-create-activity-input.json">intervention-create-activity-input.json</a></td></tr>
+<tr><td> Update activity </td><td>   </td><td><a href="recipes/universal-xapi-translator/intervention-update-activity-input.md">intervention-update-activity-input.md </a>   </td> <td><a href="recipes/universal-xapi-translator/intervention-create-update-input.json">intervention-update-activity-input.json </a>  </td></tr>      
+<tr><td> Close activity </td><td>   </td><td><a href="recipes/universal-xapi-translator/intervention-close-activity-input.md">intervention-close-activity-input.md </a>   </td> <td><a href="recipes/universal-xapi-translator/intervention-close-activity-input.json">intervention-close-activity-input.json </a></td></tr>   
 </table>
 
 ## Predictive Model Output
