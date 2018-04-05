@@ -1,15 +1,11 @@
 This is the input file for an intervention-create-activity event.
 
-Data should be supplied as a UTF-8 Tab Seperated File called intervention-create.tsv
+Data should be supplied as a UTF-8 Tab Seperated File called intervention_close.tsv
 
 # intervention-create-activity
 
-* [USERNAME](#username) [1]
-* [TIMESTAMP](#timestamp) [1]
-* [MODE](#mode) [1]
-* [REASON](#reason) [1]
-* [WEIGHTING](#weighting) [1]
 * [TUTOR_ID](#tutor_id) [1]
+* [ITEM_ID](#item_id) [1]
 
 
 ## USERNAME 
@@ -31,7 +27,7 @@ Tutor's reason for intervention/activity
 
 ### Valid Values
 
-TBD
+String (255)
 
 ### Format
 String (255)
@@ -39,7 +35,7 @@ String (255)
 ## TIMESTAMP
 ### Description
 
-Timestamp representing time that intervention was created on system
+Timestamp representing time
 
 
 ### Valid Values
@@ -78,7 +74,7 @@ String (255)
 int (1)
 
 
-## TUTOR_ID
+## TUTOR
 ### Description
 
 id of Tutor creating activity or intervention
