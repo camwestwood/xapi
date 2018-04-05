@@ -34,3 +34,52 @@ Any
 
 ### Format
 String (255)
+
+## TIMESTAMP
+### Description
+
+Timestamp representing time that intervention was updated on system
+
+
+### Valid Values
+Any
+
+### Format
+ISO 8601 timestamp
+
+## NOTE
+### Description
+
+If the update is a note, the notes contents
+
+
+### Valid Values
+Any
+
+### Format
+String (255)
+
+## WEIGHTING
+### Description
+
+If the update is a weighting change, 1-5 severity weighting
+
+### Valid Values
+
+1 - 5
+
+### Format
+int (1)
+
+## TYPE
+### Description
+
+The type of input, weight change or note
+
+### Valid Values
+
+weight
+note
+
+### Format
+string(255)
