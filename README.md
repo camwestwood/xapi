@@ -68,9 +68,9 @@ These are platform independent Statements related to Virtual Learning Enviroment
 ## Intervention
 <table>
 <tr><td>Statement Template </td><td>JSON Example</td><td>Input TSV  definitions</td><td>JSON Template</td></tr>
-<tr><td> Create activity </td><td> </td><td></td> <td></td></tr>
-<tr><td> Update activity </td><td> </td><td></td> <td></td></tr>       
-<tr><td> Closed activity </td><td> </td><td></td> <td></td></tr>   
+<tr><td> Create activity </td><td> </td><td> <a href="recipes/universal-xapi-translator/intervention-create-activity-input.md">intervention-create-activity-input.md </a>  </td> <td></td></tr>
+<tr><td> Update activity </td><td> </td><td>   </td> <td></td></tr>       
+<tr><td> Closed activity </td><td> </td><td>   </td> <td></td></tr>   
 </table>
 
 ## Predictive Model Output
