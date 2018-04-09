@@ -10,7 +10,8 @@ Data should be supplied as a UTF-8 Tab Seperated File called resourceviewed.tsv
 * [TIMESTAMP](#timestamp) [1]
 * [OBJECT_ID](#object_id) [1]
 * [OBJECT_NAME](#object_name) [0..1]
-* [SUBTYPE](#subtype) [0..1]
+* [ITEM_TYPE](#subtype) [1]
+* [ITEM_SUBTYPE](#subtype) [0..1]
 * [VLE_MOD_ID](#vle_mod_id) [0..1]
 * [SESSION_ID](#session_id) [0..1]
 * [CLIENT_IP](#client_ip) [1]
@@ -88,9 +89,20 @@ Any
 String (256)
 
 
-## SUBTYPE 
+## ITEM_TYPE 
 ### Description
-Used to identify the subType of the resource being viewed.
+Used to identify the type of the object being viewed.
+
+### Valid Values
+Any
+
+### Format
+iri
+
+
+## ITEM_SUBTYPE 
+### Description
+Used to identify the subType of the object being viewed.
 
 ### Valid Values
 Any

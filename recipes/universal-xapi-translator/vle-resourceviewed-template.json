@@ -18,13 +18,13 @@
 		"objectType": "Activity",
 		"id": "**OBJECT_ID**",
 		"definition": {
-			"type": "**OBJECT_ID**",
+			"type": "**ITEM_TYPE**",
 			"name": {
 				"en": "**OBJECT_NAME**"
 			}
 		},
 		"extensions": {
-			"http://xapi.jisc.ac.uk/subType": "**SUBTYPE**"
+			"http://xapi.jisc.ac.uk/subType": "**ITEM_SUBTYPE**"
 		}
 
 	},
