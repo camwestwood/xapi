@@ -99,7 +99,7 @@ Any
 String (255)
 
 
-## ITEM_TYPE
+## ITEM_SUBTYPE
 ### Description
 
 The type of item being borrowed
