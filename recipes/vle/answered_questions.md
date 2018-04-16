@@ -182,6 +182,11 @@ The Object identifies the question or questions.
 		<td>Set to Parent, since this is a statement about a question it has a quiz as its parent Activity. </td>
 		<td>JSON object</td>
 	<tr> 	
+	<tr>
+		<td<a href="vocabulary.md#statement-category">context.extensions.https://xapi.jisc.ac.uk/statementCat [0..1]</a></td>
+		<td>Recommended For querying lookup. Set to "VLE" in vle statements <br/></td>
+		<td>string</td>
+	</tr>
 </table>
 
 #### Example:
@@ -189,8 +194,9 @@ The Object identifies the question or questions.
   "context": {
     
       "platform": "Moodle",
-      	  
+      
       "extensions": {
+				"http://xapi.jisc.ac.uk/statementCat": "VLE",
 	"http://xapi&46;jisc&46;ac&46;uk/version": "x-2017-05-16",
 	"http://xapi&46;jisc&46;ac&46;uk/sessionId": "Iye9OqwM9O", 
         "http://id&46;tincanapi&46;com/extension/ip-address": "0:0:0:0:0:0:0:1", 
@@ -273,7 +279,10 @@ The Object identifies the question or questions.
      
      "context": {
      	"platform": "Moodle",
+
+
      	"extensions": {
+				"http://xapi.jisc.ac.uk/statementCat": "VLE",
      		"http://xapi.jisc.ac.uk/version": "x-2017-05-16",
      		"http://xapi.jisc.ac.uk/sessionId": "Iye9OqwM9O",
      		"http://id.tincanapi.com/extension/ip-address": "0:0:0:0:0:0:0:1",

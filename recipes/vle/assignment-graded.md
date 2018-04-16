@@ -92,9 +92,9 @@ The Result entity is mandatory for this type of statement. The entity can includ
 	</tr>
 </table>
 
-### Example of score that can be calculated as a percentage:
+### Example of score that can be calculated as a percentage
 
-```
+javascript ```
 "result": {
         "score": {
             "scaled": 0.25,
@@ -208,6 +208,11 @@ The Context for assignment graded is based on ContextA on the [common structures
 	<td>Umbrella course/parent area by its an UDD Module Instance ID or VLE Module ID. More information can be found on the [vocabularies page](/vocabulary.md#coursearea).</td>
 	<td>JSON object</td>
 <tr> 
+	<tr>
+		<td<a href="vocabulary.md#statement-category">context.extensions.https://xapi.jisc.ac.uk/statementCat [0..1]</a></td>
+		<td>Recommended For querying lookup. Set to "VLE" in vle statements <br/></td>
+		<td>string</td>
+	</tr>
 </table>
 
 ### Example
@@ -231,6 +236,7 @@ The Context for assignment graded is based on ContextA on the [common structures
 			"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0"
              },
 				
+		"http://xapi.jisc.ac.uk/statementCat": "VLE",		
 		"http://xapi.jisc.ac.uk/sessionId": "32456891" ,
 		"http://id.tincanapi.com/extension/ip-address": "10.3.3.48"
 		"http://xapi.jisc.ac.uk/version" : "1.0"

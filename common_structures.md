@@ -116,6 +116,11 @@ This pattern is used across many Statements in the Jisc Profile, but there may b
 		<td>The academic context in which this Activity is situated (e.g. umbrella course, or parent area). The properties in courseArea must be a UDD Module Instance ID or a VLE Module ID or both. More information can be found on the <a href="vocabulary.md#course-area">vocabularies page</a>.</td>
 		<td>JSON object</td>
 	<tr> 
+		<tr>
+		<td>context.extensions.https://xapi.jisc.ac.uk/statementCat [0..1]</td>
+		<td>Recommended For querying lookup. Set to category of statement. Attendance, VLE, Library <br/></td>
+		<td>string</td>
+	</tr>
 	</table>
 
 #### Example:
@@ -161,15 +166,23 @@ The ContextB pattern is similar to ContextA, but with the addition of a contextA
 		<td>context.extension.sessionId [0..1]</td>
 		<td>The VLE session ID, or a suitably hashed version of it. A value should be provided if this information is available.</td>
 		<td>string</td>
+		</tr>
 	<tr> 
 		<td>context.extension.ip-address [1]</td>
 		<td>Client's IP address. An IPv4 address is recommended.</td>
 		<td>ip address</td>
+		</tr>
 	<tr> 
 		<td>context.extension.courseArea [0..1]</td>
 		<td>Umbrella course/parent area by its an UDD Module Instance ID or VLE Module ID. More information can be found on the <a href="vocabulary.md#course-area">vocabularies page</a>..</td>
 		<td>JSON object</td>
+		</tr>
 	<tr> 
+		<tr>
+		<td>context.extensions.https://xapi.jisc.ac.uk/statementCat [0..1]</td>
+		<td>Recommended For querying lookup. Set to category of statement. Attendance, VLE, Library <br/></td>
+		<td>string</td>
+	</tr>
 </table>
 
 #### Example:

@@ -505,8 +505,20 @@ For more information, see Jisc Profile [CourseArea properties](#coursearea).
 <tr><th align="left">Description</th><td>Local identifier for the internet session</td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/sessionId">http://xapi.jisc.ac.uk/sessionId</a> </td></tr>
 <tr><th align="left">Data Type</th><td>String</td></tr>
-<tr><th align="left">Value Space</th><td>Session id as reported by the VLE</td></tr
+<tr><th align="left">Value Space</th><td>Session id as reported by the VLE</td></tr>
 <tr><th align="left">Sample Value</th><td>32456891</td></tr>
+</table>
+
+### Statement Category
+
+<table>
+<tr><th align="left">Label</th><td>Statement Category </td></tr>
+<tr><th align="left">Description</th><td>Identifies the statement category for querying lookup. </td></tr>
+<tr><th align="left">string</th><td> <a href="https://xapi.jisc.ac.uk/statementCat">https://xapi.jisc.ac.uk/statementCat</a> </td></tr>
+<tr><th align="left">Example in Statement template</th><td> <a href="recipes/vle/login.md#context">Logged in</a> </td></tr>
+<tr><th align="left">Data Type</th><td>String</td></tr>
+<tr><th align="left">Value Space</th><td>Attendance, VLE, Library </td></tr>
+<tr><th align="left">Sample Value</th><td>Attendance</td></tr>
 </table>
 
 ### Sub Type

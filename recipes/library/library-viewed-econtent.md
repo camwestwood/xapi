@@ -111,6 +111,12 @@ Common entity identifier: ObjectA
 		<td>context.extension.ip-address [1]</td>
 		<td>client's IP address. An IPv4 address is recommended.</td>
 		<td>ip address</td>
+	</tr>
+	<tr>
+		<td>context.extensions.statementCat version [0..1]</td>
+		<td>Recommended For querying lookup. Set to "library" in library statements <br/></td>
+		<td>string</td>
+	</tr>
 </table>
 
 ### Example:

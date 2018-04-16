@@ -17,6 +17,7 @@
 	"context": {
 		"platform": "**PLATFORM**",
 		"extensions": {
+			"http://xapi.jisc.ac.uk/statementCat": "VLE",
 			"http://xapi.jisc.ac.uk/sessionId": "**SESSION_ID**",
 			"http://id.tincanapi.com/extensions/ip-address": "**CLIENT_IP**",
 			"http://xapi.jisc.ac.uk/version": "1.0"

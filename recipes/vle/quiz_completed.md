@@ -105,9 +105,9 @@ The verb used in quiz_assessed statement is [completed](/vocabulary.md#verbs). I
 	</tr>
 </table>
 
-### Example:
+### Example
 
-```
+``` javascript 
 
  "result": {
       "duration": "PT9S",
@@ -119,7 +119,7 @@ The verb used in quiz_assessed statement is [completed](/vocabulary.md#verbs). I
       }
     },
 
-````
+```
 
 ### Object
 
@@ -159,6 +159,7 @@ Context is used to describe the module within which the quiz sits. If the device
 ``` javascript
 "context": {
       "extensions": {
+        "http://xapi.jisc.ac.uk/statementCat": "lib",
         "http://xapi,jisc.ac.uk/attempt": "Attempt 26",
         "http://xapi,jisc.ac.uk/courseArea": {
           "http://xapi.jisc.ac.uk/vle_mod_id": "Test1"
@@ -214,6 +215,7 @@ Context is used to describe the module within which the quiz sits. If the device
 		
 	"context": {
       "extensions": {
+        "http://xapi.jisc.ac.uk/statementCat": "VLE",
         "http://xapi.jisc.ac.uk/attempt": "Attempt 26",
         "http://xapi.jisc.ac.uk/courseArea": {
           "http://xapi.jisc.ac.uk/vle_mod_id": "Test1"

@@ -26,6 +26,7 @@
 				"en": "eResource"
 			},
 		"extensions": {
+				"http://xapi.jisc.ac.uk/statementCat": "Library",
 				"http://xapi.jisc.ac.uk/subType": "**ITEM_SUBTYPE**"
 			}	
 		}

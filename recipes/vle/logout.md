@@ -57,7 +57,8 @@ Since the logged-in action is not undertaken in relation to a particular learnin
         "platform": "Moodle",
         "extensions": {
  			"http://xapi.jisc.ac.uk/sessionId":"32456891",
-        		"http://id.tincanapi.com/extension/ip-address": "10.3.3.48",
+            "http://xapi.jisc.ac.uk/statementCat": "VLE",
+        	"http://id.tincanapi.com/extension/ip-address": "10.3.3.48",
 			"http://xapi.jisc.ac.uk/version" : "1.0"
 			}
 ```

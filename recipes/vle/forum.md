@@ -111,7 +111,9 @@ The Context describes the parent forum of the thread, and optionally, the course
 ``` javascript
 "context": {
     "platform": "Moodle",
+	
     "extensions": {
+			"http://xapi.jisc.ac.uk/statementCat": "VLE",
     		"http://jisc.ac.uk/forumArea": "http://moodle.data.alpha.jisc.ac.uk/mod/forum/view.php?id=138371",
 			
 		"http://xapi.jisc.ac.uk/courseArea": {
