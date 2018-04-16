@@ -209,7 +209,7 @@ The Context for assignment graded is based on ContextA on the [common structures
 	<td>JSON object</td>
 <tr> 
 	<tr>
-		<td><a href="vocabulary.md#statement-category">context.extensions.https://xapi.jisc.ac.uk/statementCat [0..1]</a></td>
+		<td><a href="vocabulary.md#statement-category">context.extensions.https://xapi.jisc.ac.uk/statementCat</a> [0..1]</td>
 		<td>Recommended For querying lookup. Set to "VLE" in vle statements <br/></td>
 		<td>string</td>
 	</tr>
