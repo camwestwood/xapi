@@ -8,7 +8,7 @@ This statement defines the structure and terms to record a post or reply to a fo
 Common entity identifier: [ActorA](../common_structures.md#actora)
 
 #### Entity Example:
-The actor entity describes the individual who is making the reply.
+The actor entity describes the individual who is making the post.
 
 ``` Javascript
 {
@@ -30,7 +30,6 @@ Common entity identifier: [VerbA](/common_structures.md#verba)
 The verb depends on whether the post starts or continues a discussion.
 
 - The verb [create](/vocabulary.md#create) denotes the action of creating an object, in this case starting a discussion on a forum.
-- [replied](/vocabulary.md#replied) denotes the action of replying, in this case replying to a discussion topic on a forum.
 
 ``` javascript
 "verb": {
@@ -40,12 +39,6 @@ The verb depends on whether the post starts or continues a discussion.
         }
     },
 
-"verb": {
-        "id": "http://id.tincanapi.com/verb/replied",
-        "display": {
-            "en": "replied"
-        }
-    },
 ```
 
 ### Result
@@ -72,36 +65,21 @@ Common entity identifier: [ObjectD](/common_structures.md#objectd)
 The object definition type depends on whether the statement is about a first post initiating a thread (http://id.tincanapi.com/activitytype/forum-topic), or a reply to an existing thread (http://id.tincanapi.com/activitytype/forum-reply).
 
 #### Entity Example:
-The object defines the discussion or thread. The first example is a first post initiating a thread, the second is a reply to an existing thread.
+The object defines the discussion or thread that was posted.
 
 Example 1: Create a discussion
  ``` javascript
 "object": {
 	"objectType": "Activity",
-	"id": "http://moodle2.bolton.ac.uk/mod/forum/discuss.php?d=19474"	
+	"id": "http://moodle.jisc.ac.uk/mod/forum/discuss.php?d=19474"	
 	"definition": {
-		"type": "http://id.tincanapi.com/activitytype/forum-topic",			
-		"name": { "en": "Forum topic" },			   
+		"type": "http://xapi.jisc.ac.uk/post",			
+		"name": { "en": "Post" },			   
 	 }
     }
 }
 ```
 
-
-Example 2
- ``` javascript
-
-"object": {
-	"objectType": "Activity",
-	"id": "http://moodle2.bolton.ac.uk/mod/forum/discuss.php?d=19474"	
-	"definition": {
-		"type": "http://id.tincanapi.com/activitytype/forum-reply",			
-		"name": { "en": "Forum reply" },			   
-	 }
-    }
-}
-
-```
 
 ### Context
 The Context describes the parent forum of the thread, and optionally, the courseArea (with module identifiers).
