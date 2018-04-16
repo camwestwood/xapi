@@ -210,7 +210,7 @@ The result.completion must be set to true if the Actor attended the event, or fa
 	<td>JSON Object</td>
 </tr>
 	<tr>
-		<td<a href="vocabulary.md#StatementCategory">context.extensions.https://xapi.jisc.ac.uk/statementCat [0..1]</a></td>
+		<td><a href="vocabulary.md#StatementCategory">context.extensions.https://xapi.jisc.ac.uk/statementCat [0..1]</a></td>
 		<td>Recommended For querying lookup. Set to "attendance" in attendance templates <br/></td>
 		<td>string</td>
 	</tr>

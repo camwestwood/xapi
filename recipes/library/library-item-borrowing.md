@@ -117,7 +117,7 @@ An ISO 8601 format timestamp that corresponds to the time of when the item was b
 		<td>string</td>
 	</tr>
 	<tr>
-		<td<a href="vocabulary.md#statement-category">context.extensions.https://xapi.jisc.ac.uk/statementCat [0..1]</a></td>
+		<td><a href="vocabulary.md#statement-category">context.extensions.https://xapi.jisc.ac.uk/statementCat [0..1]</a></td>
 		<td>Recommended For querying lookup. Set to "library" in library statements <br/></td>
 		<td>string</td>
 	</tr>
