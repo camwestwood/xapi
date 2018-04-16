@@ -52,13 +52,15 @@
          }
         },
        "extensions": {
-		   "http://xapi.jisc.ac.uk/courseArea": {
-				"http://xapi.jisc.ac.uk/udddCourseInstanceId": "**COURSE_INSTANCE_ID**",
-				"http://xapi.jisc.ac.uk/uddModInstanceID": "**MOD_INSTANCE_ID**"
+         "http://xapi.jisc.ac.uk/statementCat": "Attendance",
+
+		    "http://xapi.jisc.ac.uk/courseArea": {
+				  "http://xapi.jisc.ac.uk/udddCourseInstanceId": "**COURSE_INSTANCE_ID**",
+			  	"http://xapi.jisc.ac.uk/uddModInstanceID": "**MOD_INSTANCE_ID**"
       },
       
       "http://xapi.jisc.ac.uk/version": "1.0.1",
-      "http://xapi.jisc.ac.uk/statementCat": "Attendance"
+   
     },
       
 
