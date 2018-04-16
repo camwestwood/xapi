@@ -60,9 +60,7 @@ The result.response entity contains plain text from the post encoded as per the 
 ```
 
 ### Object
-Common entity identifier: [ObjectD](/common_structures.md#objectd)
-
-The object definition type depends on whether the statement is about a first post initiating a thread (http://id.tincanapi.com/activitytype/forum-topic), or a reply to an existing thread (http://id.tincanapi.com/activitytype/forum-reply).
+Common entity identifier: [ObjectD](/common_structures.md#objectd). The object.definition.type is http://xapi.jisc.ac.uk/post
 
 #### Entity Example:
 The object defines the discussion or thread that was posted.
@@ -71,7 +69,7 @@ Example 1: Create a discussion
  ``` javascript
 "object": {
 	"objectType": "Activity",
-	"id": "http://moodle.jisc.ac.uk/mod/forum/discuss.php?d=19474"	
+	"id": "https://courses.alpha.jisc.ac.uk/mod/forum/discuss.php?d=19474"	
 	"definition": {
 		"type": "http://xapi.jisc.ac.uk/post",			
 		"name": { "en": "Post" },			   
@@ -82,7 +80,7 @@ Example 1: Create a discussion
 
 
 ### Context
-The Context describes the parent forum of the thread, and optionally, the courseArea (with module identifiers).
+The Context may describe the parent forum of the thread in context.contextActivies, and optionally, the courseArea (with module identifiers).
 
 #### Entity Example:
 
@@ -90,18 +88,26 @@ The Context describes the parent forum of the thread, and optionally, the course
 "context": {
     "platform": "Moodle",
 	
+  	"contextActivities": {
+        "parent": [
+        {
+            "id" : "https://courses.alpha.jisc.ac.uk/mod/forum/view.php?id=138371"
+        }
+		 ]
+	  },
+
     "extensions": {
 			"http://xapi.jisc.ac.uk/statementCat": "VLE",
-    		"http://jisc.ac.uk/forumArea": "http://moodle.data.alpha.jisc.ac.uk/mod/forum/view.php?id=138371",
+    		"http://jisc.ac.uk/forumArea": "https://courses.alpha.jisc.ac.uk/mod/forum/view.php?id=138371",
 			
-		"http://xapi.jisc.ac.uk/courseArea": {
+			"http://xapi.jisc.ac.uk/courseArea": {
       		 	"http://xapi.jisc.ac.uk/vle_mod_id": "LA101",
 				"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0",
 			},
 			
-	"http://xapi.jisc.ac.uk/sessionId":"32456891",
-	"http://id.tincanapi.com/extension/ip-address": "10.3.3.48",
-	"http://xapi.jisc.ac.uk/version" : "1.0"
+			"http://xapi.jisc.ac.uk/sessionId":"32456891",
+			"http://id.tincanapi.com/extension/ip-address": "10.3.3.48"
+			"http://xapi.jisc.ac.uk/version" : "1.0.1"
 			}
 		}
 ```
