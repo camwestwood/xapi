@@ -35,7 +35,7 @@ The verb depends on whether the post starts or continues a discussion.
 "verb": {
         "id": "http://activitystrea.ms/schema/1.0/create",
         "display": {
-            "en": "created"
+            "en": ""
         }
     },
 

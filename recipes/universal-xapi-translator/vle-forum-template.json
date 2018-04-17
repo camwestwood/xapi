@@ -9,9 +9,9 @@
 		}
 	},
 	"verb": {
-		"id": "**ACTION**",
+		"id": "http://activitystrea.ms/schema/1.0/create",
 		"display": {
-			"en": "**ACTION_DISPLAY**"
+			"en": "created"
 		}
 	},
 	"result": {
@@ -21,14 +21,24 @@
 		"objectType": "Activity",
 		"id": "**OBJECT_ID",
 		"definition": {
-			"type": "http://id.tincanapi.com/activitytype/forum-topic",
+			"type": "http://xapi.jisc.ac.uk/post",
 			"name": {
-				"en": "**OBJECT_NAME"
+				"en": "**Post"
 			}
 		}
 	},
 	"context": {
 		"platform": "**PLATFORM**",
+
+		"contextActivities": {
+			"parent": [
+			{
+				"id" : "**PARENT_ID**"
+			}
+			 ]
+		  },
+
+
 		"extensions": {
 			"http://jisc.ac.uk/forumArea": "**FORUM_AREA**",
 

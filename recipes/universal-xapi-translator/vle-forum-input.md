@@ -7,8 +7,6 @@ Data should be supplied as a UTF-8 Tab Separated File called forum.tsv
 * [TIMESTAMP](#timestamp) [1]
 * [USERNAME](#username) [1]
 * [HOMEPAGE](#homepage) [1]
-* [ACTION](#action) [1]
-* [ACTION_DISPLAY](#action_display) [1]
 * [CLIENT_IP](#client_ip) [1]
 * [PLATFORM](#platform) [1]
 * [TIMESTAMP](#timestamp) [1]
@@ -18,6 +16,8 @@ Data should be supplied as a UTF-8 Tab Separated File called forum.tsv
 * [FORUM_AREA](#object_id) [1]
 * [VLE_MOD_ID](#vle_mod_id) [0..1]
 * [UDD_MOD_INST_ID](#udd_mod_inst_id) [0..1]
+* [PARENT_ID](#udd_mod_inst_id) [0..1]
+
 
 
 
@@ -40,7 +40,7 @@ A unique identifier for the individual logging in.
 Analytics - to identify the user
 
 ### Format
-String (256)
+String (255)
 
 
 ## HOMEPAGE 
@@ -51,7 +51,7 @@ URL of the home page of the application for which the login id applies.
 Any
 
 ### Format
-String (256)
+String (255)
 
 
 ## CLIENT_IP 
@@ -62,7 +62,7 @@ Client's IP address. An IPv4 address is recommended.
 Any
 
 ### Format
-String (256)
+String (255)
 
 
 ## PLATFORM 
@@ -74,7 +74,7 @@ The platform used in the experience of this learning activity. The value used sh
 Any
 
 ### Format
-String (256)
+String (255)
 
 
 ## TIMESTAMP 
@@ -97,7 +97,7 @@ The VLE session ID, or a suitably hashed version of it. A value should be provid
 Any
 
 ### Format
-String (256)
+String (255)
 
 
 ## OBJECT_ID 
@@ -118,7 +118,7 @@ Optional name of application being logged in to.
 Any
 
 ### Format
-String (256)
+String (255)
 
 ## FORUM_AREA 
 ### Description
@@ -140,7 +140,7 @@ An identifier for a course area in a VLE. It is used in conjunction with UDD_MOD
 Any
 
 ### Format
-String (256)
+String (255)
 
 ### Notes
 Mandatory if UDD_MOD_INST_ID not present.
@@ -154,6 +154,20 @@ The value should correspond to the UDD module_instance.MOD_INSTANCE_ID identifie
 
 ### Valid Values
 Any
+
+### Format
+String (255)
+
+### Notes
+Mandatory if VLE_MOD_ID not present.
+
+## PARENT_ID 
+### Description
+
+ID of parent forum post
+
+### Valid Values
+uri
 
 ### Format
 String (255)
