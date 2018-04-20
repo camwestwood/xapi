@@ -67,7 +67,7 @@ The result.response entity contains plain text from the post encoded as per the 
 ```
 
 ### Object
-Common entity identifier: [ObjectA](/common_structures.md#objecta). The object.definition.type is http://xapi.jisc.ac.uk/post
+Common entity identifier: [ObjectA](/common_structures.md#objecta). The object.definition.type is http://xapi.jisc.ac.uk/forum-post
 
 #### Entity Example:
 The object defines the discussion or thread that was posted.
@@ -105,7 +105,6 @@ The Context may describe the parent forum of the thread in context.contextActivi
 
     "extensions": {
 			"http://xapi.jisc.ac.uk/statementCat": "VLE",
-    		"http://jisc.ac.uk/forumArea": "https://courses.alpha.jisc.ac.uk/mod/forum/view.php?id=138371",
 			
 			"http://xapi.jisc.ac.uk/courseArea": {
       		 	"http://xapi.jisc.ac.uk/vle_mod_id": "LA101",
@@ -145,8 +144,8 @@ The Context may describe the parent forum of the thread in context.contextActivi
    "objectType": "Activity",
    "id": "https://courses.alpha.jisc.ac.uk/mod/forum/discuss.php?d=19474",	
    "definition": {
-   	"type": "http://xapi.jisc.ac.uk/post",			
-   	"name": { "en": "Post" }   
+   	"type": "http://xapi.jisc.ac.uk/forum-post",			
+   	"name": { "en": "Forum Post" }   
     }
    },
 
@@ -163,7 +162,6 @@ The Context may describe the parent forum of the thread in context.contextActivi
 
     "extensions": {
 			"http://xapi.jisc.ac.uk/statementCat": "VLE",
-    		"http://jisc.ac.uk/forumArea": "https://courses.alpha.jisc.ac.uk/mod/forum/view.php?id=138371",
 			
 			"http://xapi.jisc.ac.uk/courseArea": {
       		 	"http://xapi.jisc.ac.uk/vle_mod_id": "LA101",
