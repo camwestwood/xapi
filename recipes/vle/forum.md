@@ -67,12 +67,11 @@ The result.response entity contains plain text from the post encoded as per the 
 ```
 
 ### Object
-Common entity identifier: [ObjectA](/common_structures.md#objecta). The object.definition.type is http://xapi.jisc.ac.uk/forum-post
+Common entity identifier: [ObjectA](/common_structures.md#objecta)
 
 #### Entity Example:
-The object defines the discussion or thread that was posted.
+The object.definition.type is http://xapi.jisc.ac.uk/forum-post
 
-Example 1: Create a discussion
  ``` javascript
 "object": {
 	"objectType": "Activity",
@@ -87,9 +86,10 @@ Example 1: Create a discussion
 
 
 ### Context
-The Context may describe the parent forum of the thread in context.contextActivies, and optionally, the courseArea (with module identifiers).
+Common entity identifier: [ContextB](/common_structures.md#objectb)
 
 #### Entity Example:
+The Context may describe the parent forum of the thread in context.contextActivies, and optionally, the courseArea (with module identifiers).
 
 ``` javascript
 "context": {

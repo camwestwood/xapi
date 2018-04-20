@@ -68,6 +68,16 @@ The following [xAPI Verbs](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-
 <tr><th align="left">Statement Example</th><td> In <a href="/recipes/vle/assignment-graded.md#verb">Assignment Graded</a> Statement template</td></tr>
 </table>
 
+### Answered
+<table>
+<tr><th align="left">Verb</th><td>Answered</td></tr>
+<tr><th align="left">Description</th><td>  Indicates the actor replied to a question, where the object is generally an activity representing the question. result.Activity.</td></tr>
+<tr><th align="left">IRI</th><td> <a href="http://adlnet.gov/expapi/verbs/answered">http://adlnet.gov/expapi/verbs/answered</a> </td></tr>
+<tr><th align="left">Statement Example</th><td> In <a href="/recipes/answered_questions.md#verb">Answered Questions</a> Statement template</td></tr>
+</table>
+
+
+
 ### Session timed out
 <table>
 <tr><th align="left">Verb</th><td>Session timed out</td></tr>

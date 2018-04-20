@@ -8,10 +8,10 @@ Use this template to create a specific Statement for a student answering 1 or mo
 ## Definition
 
 ### Actor
-The Actor entity is used to identify the individual that answered the question or questions.
+Common entity identifier: [ActorA](../common_structures.md#actora)
 
 #### Entity properties:
-Common entity identifier:  ActorA, as defined on the [common structures](/common_structures.md#actora) page.
+The actor entity describes the individual who is making the post.
 
 ### Example:
 
@@ -26,10 +26,10 @@ Common entity identifier:  ActorA, as defined on the [common structures](/common
 ```
 
 ### Verb
-The Verb [answered](/vocabulary.md#verbs). It denotes the action of the Actor answering a question, where the Object is generally an activity representing the question or questions.
+Common entity identifier: [VerbA](/common_structures.md#verba)
 
-#### Entity properties:
-Common entity identifier:  VerbA, as defined on the [common structures](/common_structures.md#verba) page.
+#### Entity Example:
+The Verb [answered](/vocabulary.md#verbs#answered). It denotes the action of the Actor answering a question, where the Object is generally an activity representing the question or questions.
 
 ### Example:
 
@@ -43,8 +43,9 @@ Common entity identifier:  VerbA, as defined on the [common structures](/common_
 ```
 
 ### Object
+Common entity identifier: ObjectA, as defined on the [common structures](/common_structures.md#objectc) page
 
-The Object identifies the question or questions.
+The Correct Responses Pattern contains an array of response patterns. A learner's response will be considered correct if it matches any of the response patterns in that array. See the <a href="https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#response-patterns">xAPI spec for more details
 
 ### Entity properties:
 <table>
@@ -82,7 +83,7 @@ The Object identifies the question or questions.
 ``` javascript
 "object": {
   "id": "http://localhost/moodle/mod/quiz/view.php?id=10",
-  "objectType": "Activity"
+  "objectType": "Activity",
   "definition": {
 		"correctResponsesPattern": [
 			"false"
@@ -94,8 +95,8 @@ The Object identifies the question or questions.
 		"name": {
 			"en": "Greener is a color"
 		},
-		"type": "http://adlnet.gov/expapi/activities/module"
-	},
+		"type": "http://activitystrea.ms/schema/1.0/question"
+	}
 
 }
 
@@ -104,36 +105,6 @@ The Object identifies the question or questions.
 ### Result
 
 ### Entity properties:
-
-<table>
-	<tr><th>Property [cardinality]</th><th>Description</th><th>Value information</</th></tr>
-	<tr>
-		<td>result.score.max [0..1]</td>
-		<td>The highest possible score</td>
-		<td>decimal number greater than min (if present)</td>
-	</tr>
-	<tr>
-		<td>result.success [0..1]</td>
-		<td>Indicates whether or not the attempt was successful.</td>
-		<td>true or false</td>
-	</tr>
-	<tr>
-		<td>result.completion [0..1]</td>
-		<td>Indicates whether or not the Activity was completed.</td>
-		<td>true or false</td>
-	</tr
-	>	<tr>
-		<td>result.response [0..1]</td>
-		<td>Instructor's or automatic feedback</td>
-		<td>string (256)</td>
-	</tr>
-	<tr>
-		<td>result.extensions.http://xapi.jisc.ac.uk/grade [0..1]</td>
-		<td>Non-numerical assessment result</td>
-		<td>string (256)</td>
-	</tr>
-</table>
-
 
 ### Example
 
@@ -149,45 +120,11 @@ The Object identifies the question or questions.
 ```
 	
 ### Context
+Common entity identifier: [ContextB]
 
-#### Entity properties:
+#### Entity Example:
+The Context may describe the parent forum of the thread in context.contextActivies, and optionally, the courseArea (with module identifiers).
 
-<table>
-	<tr><th>Property [cardinality]</th><th>Description</th><th>Value information</</th></tr>
-	<tr>
-		<td>context.platform [1]</td>
-		<td>The platform used in the experience of this learning activity. The value used should not change between platform upgrades and version changes and, should typically be a concise name by which the application is commonly known, for example "Moodle" or "Blackboard"</td>
-		<td>string</td>
-	</tr>	
-	<tr>
-		<td>context.extensions.version [0..1]</td>
-		<td>Recommended, identifies the version of the Jisc xAPI profile found on the ReadMe page. <br/></td>
-		<td>decimal</td>
-	</tr>
-	<tr>
-		<td>context.extension.sessionId [0..1]</td>
-		<td>The VLE session ID, or a suitably hashed version of it. A value should be provided if this information is available.</td>
-		<td>string</td>
-	<tr> 
-		<td>context.extension.ip-address [1]</td>
-		<td>client's IP address. An IPv4 address is recommended.</td>
-		<td>ip address</td>
-	<tr> 
-		<td>context.extension.courseArea [0..1]</td>
-		<td>The academic context in which this activity is situated (e.g. umbrella course, or parent area). This could be a UDD Module Instance ID or VLE Module ID.. More information can be found on the [vocabularies page](/vocabulary.md#course-area).</td>
-		<td>JSON object</td>
-	<tr>
-	<tr> 
-		<td>context.contextActivities [0..1]</td>
-		<td>Set to Parent, since this is a statement about a question it has a quiz as its parent Activity. </td>
-		<td>JSON object</td>
-	<tr> 	
-	<tr>
-		<td<a href="vocabulary.md#statement-category">context.extensions.https://xapi.jisc.ac.uk/statementCat</a> [0..1]</td>
-		<td>Recommended For querying lookup. Set to "VLE" in vle statements <br/></td>
-		<td>string</td>
-	</tr>
-</table>
 
 #### Example:
 ``` javascript
@@ -197,31 +134,18 @@ The Object identifies the question or questions.
       
       "extensions": {
 				"http://xapi.jisc.ac.uk/statementCat": "VLE",
-	"http://xapi&46;jisc&46;ac&46;uk/version": "x-2017-05-16",
-	"http://xapi&46;jisc&46;ac&46;uk/sessionId": "Iye9OqwM9O", 
-        "http://id&46;tincanapi&46;com/extension/ip-address": "0:0:0:0:0:0:0:1", 
-        "http://xapi&46;jisc&46;ac&46;uk/courseArea": {
-		"http://xapi&46;jisc&46;ac&46;uk/vle_mod_id": "Test1"
-        	},
+				"http://xapi.jisc.ac.uk/version": "x-2017-05-16",
+				"http://xapi.jisc.ac.uk/sessionId": "Iye9OqwM9O", 
+        "http://id.tincanapi.com/extension/ip-address": "193.24.14.15", 
+        "http://xapi.jisc.ac.uk/courseArea": {
+		"http://xapi.jisc.ac.uk/vle_mod_id": "Test1"
+        	}
         },
         
       "contextActivities": {
         "parent": [
           {
-            "id": "http://localhost/moodle/mod/quiz/view.php?id=10",
-            "objectType": "Activity",
-            "description": {
-              "en": "A quiz"
-              },
-            "name": {
-              "en": "mquiz"
-              },
-            "type": "http://xapi.jisc.ac.uk/vle/quiz"
-              },
-            "definition": {
-              "extensions": {
-                "http://xapi&46;jisc&46;ac&46;uk/subType": "http://xapi.jisc.ac.uk/vle/quiz"
-              },
+            "id": "http://localhost/moodle/mod/quiz/view.php?id=10"
           }
         ]
       }
@@ -233,82 +157,68 @@ The Object identifies the question or questions.
 ``` javascript
 
 {
-  "statement": {
-     "actor": {
-       "objectType": "Agent",
-       "name": "John Smith",
-       "account": {
-         "name": "jsmith12",
-         "homePage": "https://courses.alpha.jisc.ac.uk/moodle"
-       }
-     },
-     
-     "verb": {
-       "id": "http://adlnet.gov/expapi/verbs/answered",
-       "display": {
-         "en" : "answered"
-       }
-     },
-     
-     "object": {
-       "id": "http://localhost/moodle/mod/quiz/view.php?id=10",
-       "objectType": "Activity"
-       "definition": {
-     		"correctResponsesPattern": [
-     			"false"
-     			],
-     		"interactionType": "true-false",
-     		"description": {
-     			"en": "Greener is a color"
-     		},
-     		"name": {
-     			"en": "Greener is a color"
-     		},
-     		"type": "http://adlnet.gov/expapi/activities/module"
-     	}
-     },
-     
-     "result": {
-       "response": "true",
-       "completion": true,
-       "success": false,
-       "score": {
-         "max": 1
-         }
-     },
-     
-     "context": {
-     	"platform": "Moodle",
+	"actor": {
+	"objectType": "Agent",
+	"account": {
+		"name": "jsmith12",
+		"homePage": "https://courses.alpha.jisc.ac.uk/moodle"
+	}
+},
+"verb": {
+	"id": "http://adlnet.gov/expapi/verbs/answered",
+	"display": {
+		"en" : "answered"
+	}
+},
+"object": {
+	"id": "http://localhost/moodle/mod/quiz/view.php?id=10",
+	"objectType": "Activity",
+	"definition": {
+				"correctResponsesPattern": [
+						"false"
+						],
+				"interactionType": "true-false",
+				"description": {
+						"en": "Greener is a color"
+				},
+				"name": {
+						"en": "Greener is a color"
+				},
+				"type": "http://activitystrea.ms/schema/1.0/question"
+		}
+},
 
+ "result": {
+			"response": "true",
+			"completion": true,
+			"success": false,
+			"score": {
+				"max": 1
+			}
+		},
 
-     	"extensions": {
-				"http://xapi.jisc.ac.uk/statementCat": "VLE",
-     		"http://xapi.jisc.ac.uk/version": "x-2017-05-16",
-     		"http://xapi.jisc.ac.uk/sessionId": "Iye9OqwM9O",
-     		"http://id.tincanapi.com/extension/ip-address": "0:0:0:0:0:0:0:1",
-     		"http://xapi.jisc.ac.uk/courseArea": {
-     			"http://xapi.jisc.ac.uk/vle_mod_id": "Test1"
-     		},
-     	},
-     	"contextActivities": {
-     		"parent": [{
-     				definition: {
-     					"id": "http://localhost/moodle/mod/quiz/view.php?id=10",
-     					"objectType": "Activity",
-     					"description": {
-     						"en": "A quiz"
-     					},
-     					"name": {
-     						"en": "mquiz"
-     					},
-     					"type": "http://xapi.jisc.ac.uk/vle/quiz",
+	"context": {
+		
+			"platform": "Moodle",
+			
+			"extensions": {
+					"http://xapi.jisc.ac.uk/statementCat": "VLE",
+					"http://xapi.jisc.ac.uk/version": "x-2017-05-16",
+					"http://xapi.jisc.ac.uk/sessionId": "Iye9OqwM9O", 
+					"http://id.tincanapi.com/extension/ip-address": "193.24.14.15", 
+					"http://xapi.jisc.ac.uk/courseArea": {
+							"http://xapi.jisc.ac.uk/vle_mod_id": "Test1"
+						}
+				},
+				
+			"contextActivities": {
+				"parent": [
+					{
+						"id": "http://localhost/moodle/mod/quiz/view.php?id=10"
+					}
+				]
+			}
+		}
+}
 
-
-     					"extensions": {
-     						"http://xapi.jisc.ac.uk/subType": "http://xapi.jisc.ac.uk/vle/quiz"
-     					}
-     				}
-     			]
-     		}
-     	}
 ```

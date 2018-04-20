@@ -141,16 +141,16 @@ This pattern is used across many Statements in the Jisc Profile, but there may b
         }
 ``` 
 ### ContextB
-Common entity identifier: ContextB (Deprecated)
+Common entity identifier: ContextB
 
-The ContextB pattern is similar to ContextA, but with the addition of a contextActivities property with a ‘grouping’ property. This allows Statements to be associated to the Activity described in the Object entities as part of a larger whole.
+The ContextB pattern is similar to ContextA, but with the addition of a contextActivities property with a ‘parent’ property. This allows statements to be associated to the Activity described in the Object entities as part of a larger whole. In the Jisc profile all ContextActivities arrays must be an array with only 1 value.
 
 <table>
 	<tr><th>Property [cardinality]</th><th>Description</th><th>Value information</</th></tr>
 	<tr>
 		<td>context.contextActivities [0..1]</td>
-		<td>An optional property that holds a mandatory ‘grouping’ property. It allows Statements to be associated with the Object entity's Activity as part of a larger whole. The example shows a course within the VLE. 
-		<td>The 'grouping' property has an <a href="#objecta">ObjectA</a> as its value.</td>
+		<td>An optional property that holds a mandatory parent property. It allows statements to be associated with the Object entity's Activity as part of a larger whole. The example shows a course within the VLE. 
+		<td>The 'property' property has a object as its value, typically just the object.id.</td>
 	</tr>
 	<tr>
 		<td>context.platform [1]</td>
@@ -189,19 +189,11 @@ The ContextB pattern is similar to ContextA, but with the addition of a contextA
 ``` javascript
 "context": {
 	"contextActivities":{
-            "grouping":[
+            "parent":[
                 {
-                    "objectType":"Activity",
-                    "id":"http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=4",
-                    "definition":{
-                        "type":"http://xapi.jisc.ac.uk/courseArea",
-                        "name":{
-                            "en":"xAPI Basics"
-                        },
-                        "description":{
-                            "en":"xAPI Basics course for Learning Analytics enthusiasts"
-                        }
-                    }
+                    
+                    "id":"http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=4"
+                    
                 }
             ]
         },
