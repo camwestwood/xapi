@@ -33,7 +33,7 @@ These are platform independent Statements related to Virtual Learning Enviroment
 <tr><td> <a href = "/recipes/vle/uxapi/Module-View.md">VLE resource viewed   </a></td><td><a href="recipes/vle/uxapi/vle-resourceviewed-input.md">vle-resourceviewed-input.md</a></td><td><a href="recipes/vle/uxapi/vle-resourceviewed-template.json">vle-resourceviewed-template.json</a></td></tr>    
 <tr><td> <a href =  "/recipes/vle/assignment-graded.md">Assignment Graded   </a></td> <td><a href="recipes/vle/uxapi/vle-assignmentgraded-input.md">vle-assignmentgraded-input.md</a></td><td><a href="recipes/vle/uxapi/vle-assignmentgraded-template.json">vle-assignmentgraded-template.json</a></td></tr>    
 <tr><td> <a href =  "/recipes/vle/assignment-submitted.md">Assignment Submitted  </a></td><td><a href="recipes/vle/uxapi/vle-assignmentsubmitted-input.md">vle-assignmentsubmitted-input.md</a></td><td><a href="recipes/vle/uxapi/vle-assignmentsubmitted-template.json">vle-assignmentsubmitted-template.json</a></td></tr>                                                             
-<tr><td><a href="recipes/vle/uxapi/vle-forum-input.md">vle-forum-input.md</a></td><td><a href="recipes/vle/uxapi/vle-forum-template.json">vle-forum-template.json</a></td> </tr>                                                             
+<tr><a href =  "/recipes/vle/forum.md">Created a forum post</a></td><td><a href="recipes/vle/uxapi/vle-forum-input.md">vle-forum-input.md</a></td><td><a href="recipes/vle/uxapi/vle-forum-template.json">vle-forum-template.json</a></td> </tr>                                                             
 <tr><td> <a href =  "/recipes/vle/answered_questions.md">Quiz: Answered Questions</a></td><td><a href="recipes/vle/uxapi/vle-answered-questions-input.md">vle-answered-questions-input.md</a></td><td><a href="recipes/vle/uxapi/vle-quiz-completed-template.json">vle-answered-questions-template.json</a></td></tr>                                                             
 <tr><td> <a href =  "/recipes/vle/quiz_completed.md">Quiz: Quiz Completed</a> <td><a href="recipes/vle/uxapi/vle-quiz-completed-input.md">vle-quiz-completed-input.md</a></td><td><a href="recipes/vle/uxapi/vle-quiz-completed-template.json">vle-quiz-completed-template.json</a></td> </tr>                                                             
 </table>
@@ -63,8 +63,8 @@ The following JSON samples are recent exampless generated from plugins. Bug repo
 
 ## Presence and Attendance
 <table>
-<tr><td>Statement Template </td><td>Input TSV and definitions</td><td>JSON Template</td></tr>
-<tr><td> <a href = "recipes/attendance/attendance.md">Attended learning activity </a></td><td><a href="recipes/universal-xapi-translator/attendance-input.md"> attendance-input.md<a/><br/><a href="recipes/TSV/attendance.tsv"> Example TSV<a/></td> <td><a href="recipes/universal-xapi-translator/attendance-template.json">attendance-template.json</a></td>  </tr>    
+<tr><td>Statement Template </td><td>Input TSV definitions</td><td>JSON Template</td><td>Example Input</td></tr>
+<tr><td> <a href = "recipes/attendance/attendance.md">Attended learning activity </a></td><td><a href="recipes/universal-xapi-translator/attendance-input.md"> attendance-input.md</a></td> <td><a href="recipes/universal-xapi-translator/attendance-template.json">attendance-template.json</a></td><td><a href="recipes/TSV/attendance.tsv">TSV</a></td>  </tr>    
 </table>
 
 ## Intervention
