@@ -60,7 +60,7 @@ The result.response entity contains plain text from the post encoded as per the 
 ```
 
 ### Object
-Common entity identifier: [ObjectD](/common_structures.md#objectd). The object.definition.type is http://xapi.jisc.ac.uk/post
+Common entity identifier: [ObjectA](/common_structures.md#objecta). The object.definition.type is http://xapi.jisc.ac.uk/post
 
 #### Entity Example:
 The object defines the discussion or thread that was posted.
