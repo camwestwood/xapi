@@ -58,7 +58,7 @@ The following JSON samples are recent exampless generated from plugins. Bug repo
 
 <table>
 <tr><td>Statement Template</td><td>Input TSV definitions</td><td>JSON Template</td></tr>  
-<tr><td><a href = "recipes/studyapps/mobile-app.md">Mobile app content viewed</a></td> <td><a href = "recipes/studyapps/uxapi/app-content-viewed.md">/app-content-viewed.md</a></td><td><a href = "recipes/studyapps/uxapi/app-content-viewed.json">/app-content-viewed.json</td></tr>     
+<tr><td><a href = "recipes/studyapps/mobile-app.md">Mobile app content viewed</a></td> <td><a href = "recipes/studyapps/uxapi/app-content-viewed.md">app-content-viewed.md</a></td><td><a href = "recipes/studyapps/uxapi/app-content-viewed.json">app-content-viewed.json</td></tr>     
 </table>
 
 ## Presence and Attendance
@@ -70,9 +70,9 @@ The following JSON samples are recent exampless generated from plugins. Bug repo
 ## Intervention
 <table>
 <tr><td>Statement Template </td><td>Input TSV  definitions</td><td>JSON Template</td></tr>
-<tr><td> Create activity </td><td> <a href="recipes/universal-xapi-translator/intervention-create-activity-input.md">intervention-create-activity-input.md </a>  </td> <td><a href="recipes/universal-xapi-translator/intervention-create-activity-input.json">intervention-create-activity-input.json</a></td></tr>
-<tr><td> Update activity </td><td><a href="recipes/universal-xapi-translator/intervention-update-activity-input.md">intervention-update-activity-input.md </a>   </td> <td><a href="recipes/universal-xapi-translator/intervention-create-update-input.json">intervention-update-activity-input.json </a>  </td></tr>      
-<tr><td> Close activity </td><td><a href="recipes/universal-xapi-translator/intervention-close-activity-input.md">intervention-close-activity-input.md </a>   </td> <td><a href="recipes/universal-xapi-translator/intervention-close-activity-input.json">intervention-close-activity-input.json </a></td></tr>   
+<tr><td> Create activity </td><td> <a href="recipes/intervention/uxapi/intervention-create-activity-input.md">intervention-create-activity-input.md </a>  </td> <td><a href="recipes/intervention/uxapi//intervention-create-activity-input.json">intervention-create-activity-input.json</a></td></tr>
+<tr><td> Update activity </td><td><a href="recipes/intervention/uxapi/intervention-update-activity-input.md">intervention-update-activity-input.md </a>   </td> <td><a href="recipes/intervention/uxapi/intervention-create-update-input.json">intervention-update-activity-input.json </a>  </td></tr>      
+<tr><td> Close activity </td><td><a href="recipes/intervention/uxapi/intervention-close-activity-input.md">intervention-close-activity-input.md </a>   </td> <td><a href="recipes/intervention/uxapi/intervention-close-activity-input.json">intervention-close-activity-input.json </a></td></tr>   
 </table>
 
 ## Predictive Model Output
