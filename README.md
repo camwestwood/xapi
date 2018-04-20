@@ -21,25 +21,27 @@ If the need arises, particular versions will get their own branches, but until t
 * [Generic Statement Templates](generic/index.md) can be found in this directory.
 
 # Recipes
-Here are descriptions of Statements that can be sent to the Jisc Learning Data Hub, full Statement examples, data needed to create the Statement.  As far as possible all entities are the same across all the Statements.
+Here are descriptions of statements that can be sent to the Jisc Learning Data Hub, full Statement examples, data needed to create the Statement.  As far as possible all entities are the same across all the statements, these reusable statements are linked from templates and can be found in the [Common Structures](common_structures.md) page which contains all common patterns used across different recipes. If a entity is not reusable then properties are described in the statement template.
 
 ## VLE
-
-These are platform independent Statements related to Virtual Learning Enviroments. JSON examples are generated from plugins. Bug reports can be directed to the [Moodle](https://github.com/jiscdev/jisc-moodle-xapi-plugin) or [BlackBoard](https://github.com/jiscdev/blackboard-xapi-plugin) Github repository.
+These are platform independent Statements related to Virtual Learning Enviroments. 
 
 <table>
-<tr><td>Statement Template </td>   <td>JSON example</td><td>Input TSV definitions</td><td>JSON Template</td></tr>
-<tr><td> <a href = "/recipes/vle/login.md">Logged in</a></td><td> <a href = "vle/moodle/login.js">Logged in Moodle </a> <br/><a href = "vle/blackboard/loggedin.json"> Logged In Blackboard</a>   </td>  <td><a href="recipes/universal-xapi-translator/vle-loggedin-input.md">vle-loggedin-input.md</a></td><td><a href="recipes/universal-xapi-translator/vle-loggedin-template.json">vle-loggedin-template.json</a></td> </tr>                                                           
-<tr><td> <a href = "/recipes/vle/logout.md">Logged out</a></td><td> <a href = "vle/moodle/logout.js">Logged out Moodle </a>  <br/> <a href = "vle/blackboard/loggedout.json"> Logged out Blackboard   </a>    </td>   <td><a href="recipes/universal-xapi-translator/vle-loggedout-input.md">vle-loggedout-input.md</a></td><td><a href="recipes/universal-xapi-translator/vle-loggedout-template.json">vle-loggedout-template.json</a></td> </tr>    
-<tr><td> <a href = "/recipes/vle/Module-View.md">VLE resource viewed   </a></td><td><a href = "vle/moodle/moduleview.js">Moodle module viewed </a> <br/> <a href = "vle/blackboard/course_access.json"> Blackboard course acccess  </a> <br/> <a href="vle/blackboard/course_content_access.json">Blackboard content accessed</a></td> <td><a href="recipes/universal-xapi-translator/vle-resourceviewed-input.md">vle-resourceviewed-input.md</a></td><td><a href="recipes/universal-xapi-translator/vle-resourceviewed-template.json">vle-resourceviewed-template.json</a></td></td></tr>    
-<tr><td> <a href =  "/recipes/vle/assignment-graded.md">Assignment Graded   </a></td><td> <a href = "vle/moodle/asssignment_graded.json">Assignment graded in Moodle</a><br/> <a href="vle/blackboard/asssignment_graded.json">Assignment graded in Blackboard </a>    <td><a href="recipes/universal-xapi-translator/vle-assignmentgraded-input.md">vle-assignmentgraded-input.md</a></td><td><a href="recipes/universal-xapi-translator/vle-assignmentgraded-template.json">vle-assignmentgraded-template.json</a></td></td></tr>    
-<tr><td> <a href =  "/recipes/vle/assignment-submitted.md">Assignment Submitted  </a></td><td><a href = "vle/moodle/assignment_submitted.json">Assignment submitted in Moodle</a><br/> <a href="vle/blackboard/assignment_submitted.json">Assignment submitted in Blackboard</a>   </td>  <td><a href="recipes/universal-xapi-translator/vle-assignmentsubmitted-input.md">vle-assignmentsubmitted-input.md</a></td><td><a href="recipes/universal-xapi-translator/vle-assignmentsubmitted-template.json">vle-assignmentsubmitted-template.json</a></td></tr>                                                             
-<tr><td> <a href =  "/recipes/vle/forum.md">Forum post and reply</a></td><td>   </td> <td><a href="recipes/universal-xapi-translator/vle-forum-input.md">vle-forum-input.md</a></td><td><a href="recipes/universal-xapi-translator/vle-forum-template.json">vle-forum-template.json</a></td> </tr>                                                             
-<tr><td> <a href =  "/recipes/vle/answered_questions.md">Quiz: Answered Questions</a></td><td>   </td> <td><a href="recipes/universal-xapi-translator/vle-answered-questions-input.md">vle-answered-questions-input.md</a></td><td><a href="recipes/universal-xapi-translator/vle-quiz-completed-template.json">vle-answered-questions-template.json</a></td></tr>                                                             
-<tr><td> <a href =  "/recipes/vle/quiz_completed.md">Quiz: Quiz Completed</a><td>   </td> <td><a href="recipes/universal-xapi-translator/vle-quiz-completed-input.md">vle-quiz-completed-input.md</a></td><td><a href="recipes/universal-xapi-translator/vle-quiz-completed-template.json">vle-quiz-completed-template.json</a></td> </tr>                                                             
+<tr><td>Statement Template </td> <td>Input TSV definitions</td><td>JSON Template</td></tr>
+<tr><td> <a href = "/recipes/vle/login.md">Logged in</a></td>  <td><a href="recipes/vle/uxapi/vle-loggedin-input.md">vle-loggedin-input.md</a></td><td><a href="recipes/vle/uxapi/vle-loggedin-template.json">vle-loggedin-template.json</a></td> </tr>                                                           
+<tr><td> <a href = "/recipes/vle/logout.md">Logged out</a></td><td><a href="recipes/vle/uxapi/vle-loggedout-input.md">vle-loggedout-input.md</a></td><td><a href="recipes/vle/uxapi/vle-loggedout-template.json">vle-loggedout-template.json</a></td> </tr>    
+<tr><td> <a href = "/recipes/vle/uxapi/Module-View.md">VLE resource viewed   </a></td><td><a href="recipes/vle/uxapi/vle-resourceviewed-input.md">vle-resourceviewed-input.md</a></td><td><a href="recipes/vle/uxapi/vle-resourceviewed-template.json">vle-resourceviewed-template.json</a></td></td></tr>    
+<tr><td> <a href =  "/recipes/vle/assignment-graded.md">Assignment Graded   </a></td><td> <a href = "vle/moodle/asssignment_graded.json">Assignment graded in Moodle</a><br/> <a href="vle/blackboard/asssignment_graded.json">Assignment graded in Blackboard </a>    <td><a href="recipes/vle/uxapi/vle-assignmentgraded-input.md">vle-assignmentgraded-input.md</a></td><td><a href="recipes/vle/uxapi/vle-assignmentgraded-template.json">vle-assignmentgraded-template.json</a></td></td></tr>    
+<tr><td> <a href =  "/recipes/vle/assignment-submitted.md">Assignment Submitted  </a></td><td><a href="recipes/vle/uxapi/vle-assignmentsubmitted-input.md">vle-assignmentsubmitted-input.md</a></td><td><a href="recipes/vle/uxapi/vle-assignmentsubmitted-template.json">vle-assignmentsubmitted-template.json</a></td></tr>                                                             
+<tr><td><a href="recipes/vle/uxapi/vle-forum-input.md">vle-forum-input.md</a></td><td><a href="recipes/vle/uxapi/vle-forum-template.json">vle-forum-template.json</a></td> </tr>                                                             
+<tr><td> <a href =  "/recipes/vle/answered_questions.md">Quiz: Answered Questions</a></td><td><a href="recipes/vle/uxapi/vle-answered-questions-input.md">vle-answered-questions-input.md</a></td><td><a href="recipes/vle/uxapi/vle-quiz-completed-template.json">vle-answered-questions-template.json</a></td></tr>                                                             
+<tr><td> <a href =  "/recipes/vle/quiz_completed.md">Quiz: Quiz Completed</a> <td><a href="recipes/vle/uxapi/vle-quiz-completed-input.md">vle-quiz-completed-input.md</a></td><td><a href="recipes/vle/uxapi/vle-quiz-completed-template.json">vle-quiz-completed-template.json</a></td> </tr>                                                             
 </table>
 
 ### All VLE Statement examples
+
+The following JSON samples are recent exampless generated from plugins. Bug reports can be directed to the [Moodle](https://github.com/jiscdev/jisc-moodle-xapi-plugin) or [BlackBoard](https://github.com/jiscdev/blackboard-xapi-plugin) Github repository.
+
 * [Blackboard VLE samples](vle/blackboard/Examples.md)
 * [Moodle VLE samples](vle/moodle/examples.md)
 
@@ -47,37 +49,37 @@ These are platform independent Statements related to Virtual Learning Enviroment
 
 
 <table>
-<tr><td>Statement Template</td><td>JSON example</td><td>Input TSV definitions</td><td>JSON Template</td></tr>  
-<tr><td> <a href = "/recipes/library/library-viewed-econtent.md">Library Item Accessing econtent</a></td><td></td><td><a href="recipes/universal-xapi-translator/library-viewed-econtent-input.md">library-viewed-econtent-input.md</a></td><td><a href="recipes/universal-xapi-translator/library-viewed-econtent-template.json">library-viewed-econtent-template.json</a></td></tr>       <tr><td> <a href = "/recipes/library/library-item-borrowing.md">Library item: Borrowed item</a></td><td></td> <td><a href="recipes/universal-xapi-translator/library-item-borrowed-input.md">library-item-borrowed-input.md</a></td><td><a href="recipes/universal-xapi-translator/library-item-borrowed-template.json">library-item-template.json</td></tr>    
+<tr><td>Statement Template</td><td>Input TSV definitions</td><td>JSON Template</td></tr>  
+<tr><td> <a href = "/recipes/library/library-viewed-econtent.md">Library Item Accessing econtent</a></td><td><a href="recipes/library/xapi/library-viewed-econtent-input.md">library-viewed-econtent-input.md</a></td><td><a href="recipes/library/xapi/library-viewed-econtent-template.json">library-viewed-econtent-template.json</a></td></tr>       <tr><td> <a href = "/recipes/library/library-item-borrowing.md">Library item: Borrowed item</a></td><td><a href="recipes/library/xapi/library-item-borrowed-input.md">library-item-borrowed-input.md</a></td><td><a href="recipes/library/xapi/library-item-borrowed-template.json">library-item-template.json</td></tr>    
 </table>
 
 
 ## Tracking App
 
 <table>
-<tr><td>Statement Template</td><td>JSON example</td><td>Input TSV definitions</td><td>JSON Template</td></tr>  
-<tr><td><a href = "recipes/studyapps/mobile-app.md">Mobile app content viewed</a></td><td><a href = "recipes/studyapps/mobile-app.md#full-example">Mobile App content viewed</a></td> <td><a href = "recipes/universal-xapi-translator/app-content-viewed.md">/app-content-viewed.md</a></td><td><a href = "recipes/universal-xapi-translator/app-content-viewed.json">/app-content-viewed.json</td></tr>     
+<tr><td>Statement Template</td><td>Input TSV definitions</td><td>JSON Template</td></tr>  
+<tr><td><a href = "recipes/studyapps/mobile-app.md">Mobile app content viewed</a></td> <td><a href = "recipes/studyapps/uxapi/app-content-viewed.md">/app-content-viewed.md</a></td><td><a href = "recipes/studyapps/uxapi/app-content-viewed.json">/app-content-viewed.json</td></tr>     
 </table>
 
 ## Presence and Attendance
 <table>
-<tr><td>Statement Template </td><td>JSON Example</td><td>Input TSV and definitions</td><td>JSON Template</td></tr>
-<tr><td> <a href = "recipes/attendance/attendance.md">Attended learning activity </a></td><td><a href = "recipes/attendance/attendance.md#example">Attended learning activity </a></td><td><a href="recipes/universal-xapi-translator/attendance-input.md"> attendance-input.md<a/><br/><a href="recipes/TSV/attendance.tsv"> Example TSV<a/></td> <td><a href="recipes/universal-xapi-translator/attendance-template.json">attendance-template.json</a></td>  </tr>    
+<tr><td>Statement Template </td><td>Input TSV and definitions</td><td>JSON Template</td></tr>
+<tr><td> <a href = "recipes/attendance/attendance.md">Attended learning activity </a></td><td><a href="recipes/universal-xapi-translator/attendance-input.md"> attendance-input.md<a/><br/><a href="recipes/TSV/attendance.tsv"> Example TSV<a/></td> <td><a href="recipes/universal-xapi-translator/attendance-template.json">attendance-template.json</a></td>  </tr>    
 </table>
 
 ## Intervention
 <table>
-<tr><td>Statement Template </td><td>JSON Example</td><td>Input TSV  definitions</td><td>JSON Template</td></tr>
-<tr><td> Create activity </td><td> </td><td> <a href="recipes/universal-xapi-translator/intervention-create-activity-input.md">intervention-create-activity-input.md </a>  </td> <td><a href="recipes/universal-xapi-translator/intervention-create-activity-input.json">intervention-create-activity-input.json</a></td></tr>
-<tr><td> Update activity </td><td>   </td><td><a href="recipes/universal-xapi-translator/intervention-update-activity-input.md">intervention-update-activity-input.md </a>   </td> <td><a href="recipes/universal-xapi-translator/intervention-create-update-input.json">intervention-update-activity-input.json </a>  </td></tr>      
-<tr><td> Close activity </td><td>   </td><td><a href="recipes/universal-xapi-translator/intervention-close-activity-input.md">intervention-close-activity-input.md </a>   </td> <td><a href="recipes/universal-xapi-translator/intervention-close-activity-input.json">intervention-close-activity-input.json </a></td></tr>   
+<tr><td>Statement Template </td><td>Input TSV  definitions</td><td>JSON Template</td></tr>
+<tr><td> Create activity </td><td> <a href="recipes/universal-xapi-translator/intervention-create-activity-input.md">intervention-create-activity-input.md </a>  </td> <td><a href="recipes/universal-xapi-translator/intervention-create-activity-input.json">intervention-create-activity-input.json</a></td></tr>
+<tr><td> Update activity </td><td><a href="recipes/universal-xapi-translator/intervention-update-activity-input.md">intervention-update-activity-input.md </a>   </td> <td><a href="recipes/universal-xapi-translator/intervention-create-update-input.json">intervention-update-activity-input.json </a>  </td></tr>      
+<tr><td> Close activity </td><td><a href="recipes/universal-xapi-translator/intervention-close-activity-input.md">intervention-close-activity-input.md </a>   </td> <td><a href="recipes/universal-xapi-translator/intervention-close-activity-input.json">intervention-close-activity-input.json </a></td></tr>   
 </table>
 
 ## Predictive Model Output
 
 <table>
-<tr><td>Statement Template </td><td>JSON Example</td></tr>
-<tr><td> <a href = "/lap/apereo/model_output.md">Predictive Model Alerting</a></td><td><a href = "/lap/apereo/model_output.js">Alerting JSON</a></td> </tr>    
+<tr><td>Statement Template </td></tr>
+<tr><td> <a href = "/lap/apereo/model_output.md">Predictive Model Alerting</a></td> </tr>    
 </table>
 
 
