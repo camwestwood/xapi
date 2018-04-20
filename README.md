@@ -50,7 +50,7 @@ The following JSON samples are recent exampless generated from plugins. Bug repo
 
 <table>
 <tr><td>Statement Template</td><td>Input TSV definitions</td><td>JSON Template</td></tr>  
-<tr><td> <a href = "/recipes/library/library-viewed-econtent.md">Library Item Accessing econtent</a></td><td><a href="recipes/library/xapi/library-viewed-econtent-input.md">library-viewed-econtent-input.md</a></td><td><a href="recipes/library/xapi/library-viewed-econtent-template.json">library-viewed-econtent-template.json</a></td></tr>       <tr><td> <a href = "/recipes/library/library-item-borrowing.md">Library item: Borrowed item</a></td><td><a href="recipes/library/xapi/library-item-borrowed-input.md">library-item-borrowed-input.md</a></td><td><a href="recipes/library/xapi/library-item-borrowed-template.json">library-item-template.json</td></tr>    
+<tr><td> <a href = "/recipes/library/library-viewed-econtent.md">Library Item Accessing econtent</a></td><td><a href="recipes/library/uxapi/library-viewed-econtent-input.md">library-viewed-econtent-input.md</a></td><td><a href="recipes/library/uxapi/library-viewed-econtent-template.json">library-viewed-econtent-template.json</a></td></tr>       <tr><td> <a href = "/recipes/library/library-item-borrowing.md">Library item: Borrowed item</a></td><td><a href="recipes/library/uxapi/library-item-borrowed-input.md">library-item-borrowed-input.md</a></td><td><a href="recipes/library/uxapi/library-item-borrowed-template.json">library-item-template.json</td></tr>    
 </table>
 
 
@@ -64,7 +64,7 @@ The following JSON samples are recent exampless generated from plugins. Bug repo
 ## Presence and Attendance
 <table>
 <tr><td>Statement Template </td><td>Input TSV definitions</td><td>JSON Template</td><td>Example Input</td></tr>
-<tr><td> <a href = "recipes/attendance/attendance.md">Attended learning activity </a></td><td><a href="recipes/universal-xapi-translator/attendance-input.md"> attendance-input.md</a></td> <td><a href="recipes/universal-xapi-translator/attendance-template.json">attendance-template.json</a></td><td><a href="recipes/TSV/attendance.tsv">TSV</a></td>  </tr>    
+<tr><td> <a href = "recipes/attendance/attendance.md">Attended learning activity </a></td><td><a href="recipes/attendance/uxapi/attendance-input.md"> attendance-input.md</a></td> <td><a href="recipes/attendance/uxapi/attendance-template.json">attendance-template.json</a></td><td><a href="recipes/TSV/attendance.tsv">TSV</a></td>  </tr>    
 </table>
 
 ## Intervention
