@@ -5,11 +5,12 @@
 ## Definition
 
 ### Actor
+Common entity identifier:  ActorA, as defined on the [common structures](/common_structures.md#actora) page.
 
-Common entity identifier: [ActorA](../common_structures.md#actora)
+The actor entity describes the individual who is making the post.
 
 #### Entity Example:
-The actor entity describes the individual who is making the post.
+
 
 ``` Javascript
 {
@@ -23,7 +24,7 @@ The actor entity describes the individual who is making the post.
 ```
 
 ### Verb
-Common entity identifier: [VerbA](/common_structures.md#verba)
+Common entity identifier: VerbA, as defined on the [common structures](/common_structures.md#verba) page.
 
 #### Entity properties:
 The verb used in quiz_assessed statement is [completed](/vocabulary.md#verbs).
@@ -56,7 +57,8 @@ The verb used in quiz_assessed statement is [completed](/vocabulary.md#verbs).
 ```
 
 ### Object
-Common entity identifier: [ObjectA](/common_structures.md#objecta)
+Common entity identifier: ObjectA, as defined on the [common structures](/common_structures.md#objecta) page.
+
 
 #### Entity Example:
 
@@ -82,13 +84,9 @@ Common entity identifier: [ObjectA](/common_structures.md#objecta)
 ```
 
 ### Context
-Common entity identifier: [ContextB](/common_structures.md#objectb)
+Common entity identifier: ContextA, as defined on the [common structures](/common_structures.md#contexta) page. 
 
 #### Entity Example:
-The Context may describe the parent forum of the thread in context.contextActivies, and optionally, the courseArea (with module identifiers).
-
-
-#### Entity properties:
 
 
 ### Example:
@@ -108,7 +106,7 @@ The Context may describe the parent forum of the thread in context.contextActivi
 
 ## Full Example
 
- 
+ ``` javascript
     "actor": {
       "account": {
         "homePage": "http://localhost/moodle",

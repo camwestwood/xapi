@@ -1,8 +1,8 @@
-This is the specification for an input TSV file for logging in events.
+This is the specification for an input TSV file for quiz completed activities.
 
-Data should be supplied as a UTF-8 Tab Separated File called forum.tsv
+Data should be supplied as a UTF-8 Tab Separated File called quiz-completed.tsv
 
-# login
+# Quiz Completed
 
 * [TIMESTAMP](#timestamp) [1]
 * [USERNAME](#username) [1]
@@ -10,7 +10,6 @@ Data should be supplied as a UTF-8 Tab Separated File called forum.tsv
 * [TIMESTAMP](#timestamp) [1]
 * [OBJECT_ID](#object_id) [1]
 * [OBJECT_NAME](#object_name) [0..1]
-* [ATTEMPT_NUMBER](#attempt_number) [0..1]
 * [VLE_MOD_ID](#vle_mod_id) [0..1]
 * [UDD_MOD_INST_ID](#udd_mod_inst_id) [0..1]
 * [SCORE_SCALED](#score_scaled) [0..1]
