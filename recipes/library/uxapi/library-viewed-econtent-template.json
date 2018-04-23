@@ -14,16 +14,13 @@
 			"en": "viewed"
 		}
 	},
-	"result": {
-		"completion": "**COMPLETED**"
-	},
 	"object": {
 		"objectType": "Activity",
 		"id": "**ITEM_ID**",
 		"definition": {
 			"type": "http://id.tincanapi.com/activitytype/resource",
 			"name": {
-				"en": "eResource"
+				"en": "Resource"
 			},
 		"extensions": {
 				"http://xapi.jisc.ac.uk/statementCat": "Library",

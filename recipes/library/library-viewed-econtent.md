@@ -51,19 +51,7 @@ An ISO 8601 format timestamp that corresponds to the time of when the content wa
 
 ``` javascript
 "timestamp": "2015-09-18T01:54:51.484Z",
-```
-
-### Result
-The result entity describes if the request for the resource was completed.
-
-
-### Example
-
-``` javascript
-"result":{
-	"completion": COMPLETED
-},
-``` 
+`````` 
 
 ### Object
 Common entity identifier: ObjectA
@@ -151,9 +139,6 @@ Common entity identifier: ObjectA
 		"display": {
 			"en": "viewed"
 		}
-	},
-	"result": {
-		"completion": "COMPLETED"
 	},
 	"object": {
 		"objectType": "Activity",

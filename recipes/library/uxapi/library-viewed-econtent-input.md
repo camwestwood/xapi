@@ -11,7 +11,6 @@ Data should be supplied as a UTF-8 Tab Seperated File called econtent.tsv
 * [ITEM_TYPE](#item_type) [1]
 * [ITEM_NAME](#item_name) [1]
 * [TIMESTAMP](#timestamp) [1]
-* [COMPLETED](#completed) [1]
 
 ## USERNAME 
 ### Description
@@ -134,15 +133,3 @@ Any
 
 ### Format
 ISO 8601 timestamp
-
-
-## COMPLETED
-### Description
-
-Was the request completed
-
-### Valid Values
-Any
-
-### Format
-String (255)
