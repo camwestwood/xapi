@@ -64,7 +64,7 @@ The following JSON samples are recent exampless generated from plugins. Bug repo
 ## Presence and Attendance
 <table>
 <tr><td>Statement Template </td><td>Input TSV definitions</td><td>JSON Template</td><td>Example Input</td></tr>
-<tr><td> <a href = "recipes/attendance/attendance.md">Attended learning activity </a></td><td><a href="recipes/attendance/uxapi/attendance-input.md"> attendance-input.md</a></td> <td><a href="recipes/attendance/uxapi/attendance-template.json">attendance-template.json</a></td><td><a href="recipes/TSV/attendance.tsv">TSV</a></td>  </tr>    
+<tr><td> <a href = "recipes/attendance/attendance.md">Attended learning activity </a></td><td><a href="recipes/attendance/uxapi/attendance-input.md"> attendance-input.md</a></td> <td><a href="recipes/attendance/uxapi/attendance-template.json">attendance-template.json</a></td><td><a href="recipes/tsv/attendance.tsv">TSV</a></td>  </tr>    
 </table>
 
 ## Intervention
