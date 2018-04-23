@@ -8,6 +8,7 @@ Data should be supplied as a UTF-8 Tab Separated File called assignmentgraded.ts
 * [USERNAME](#username) [1]
 * [HOMEPAGE](#homepage) [1]
 * [CLIENT_IP](#client_ip) [1]
+* [INTERACTION-TYPE](#interaction_type) [1]
 * [SESSION_ID](#session_id) [0..1]
 * [OBJECT_ID](#object_id) [1]
 * [OBJECT_NAME](#object_name) [0..1]
@@ -53,6 +54,17 @@ Any
 
 ### Format
 ip address
+
+## INTERACTION_TYPE 
+### Description
+
+The type of interaction
+
+### Valid Values
+Possible values are: true-false, choice, fill-in, long-fill-in, matching, performance, sequencing, likert, numeric or other. 
+
+### Format
+String
 
 ## SESSION_ID 
 ### Description
