@@ -7,9 +7,6 @@ Data should be supplied as a UTF-8 Tab Separated File called forum.tsv
 * [TIMESTAMP](#timestamp) [1]
 * [USERNAME](#username) [1]
 * [HOMEPAGE](#homepage) [1]
-* [ACTION](#action) [1]
-* [ACTION_DISPLAY](#action_display) [1]
-* [PLATFORM](#platform) [1]
 * [TIMESTAMP](#timestamp) [1]
 * [OBJECT_ID](#object_id) [1]
 * [OBJECT_NAME](#object_name) [0..1]
@@ -58,33 +55,9 @@ String (256)
 
 
 
-## ATTEMPT_NUMBER 
-### Description
-Attempt at the 
-
-### Valid Values
-Any
-
-### Format
-String (256)
-
-
-
-## PLATFORM 
-### Description
-
-The platform used in the experience of this learning activity. The value used should not change between platform upgrades and version changes and should typically be a concise name by which the application is commonly known, for example "Moodle" or "Blackboard".
-
-### Valid Values
-Any
-
-### Format
-String (256)
-
-
 ## TIMESTAMP 
 ### Description
-The time at which the user logged in to the platform
+The time at which the user completed the quiz
 
 ### Valid Values
 Any
@@ -96,7 +69,7 @@ ISO 8601 date time
 
 ## OBJECT_ID 
 ### Description
-An identifier for the forum post.
+An identifier for the quiz.
 
 ### Valid Values
 Any
@@ -106,7 +79,7 @@ iri
 
 ## OBJECT_NAME 
 ### Description
-Optional name of application being logged in to.
+Optional name of quiz
 
 ### Purpose
 Analytics
@@ -120,15 +93,6 @@ Any
 ### Format
 String (256)
 
-## FORUM_AREA 
-### Description
-Identifies the parent forum via uri.
-
-### Valid Values
-Any
-
-### Format
-uri
 
 ## VLE_MOD_ID 
 ### Description

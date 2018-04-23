@@ -49,7 +49,7 @@
 		"http://id.tincanapi.com/extension/ip-address": "**CLIENT_IP**",
 		"http://xapi.jisc.ac.uk/version": "1.0.1"
 	},
-	"platform": "**PLATFORM"
+	"platform": "**UxAPI"
   }
 }
 }
