@@ -59,19 +59,6 @@ Any
 ### Format
 String (255)
 
-## ITEM_NAME
-### Description
-
-A name identifier for that item
-
-### Purpose
-
-tbc
-
-### Format
-String (255)
-
-
 ## SESSION_ID
 ### Description
 
@@ -95,8 +82,6 @@ Any
 
 ### Format
 String (255)
-
-
 
 ## ITEM_NAME
 ### Description
