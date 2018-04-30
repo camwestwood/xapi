@@ -5,7 +5,7 @@ Based on generic template statement: [Viewed](/generic/view.md)
 [Statement Template Changes](/version_changes.md#econtent)
 
 ## Purpose
-This template defines the structure and terms to record the experience of viewing a reading list.
+This template defines the structure and terms to record the experience of viewing econtent.
 
 ### Actor
 Common entity identifier:  ActorA, as defined on the [common structures](/common_structures.md#actora) page.
