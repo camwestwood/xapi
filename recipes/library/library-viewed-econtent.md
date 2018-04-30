@@ -27,6 +27,15 @@ The actor entity describes the individual that is accessing econtent.
     },
 ```
 
+### Timestamp
+An ISO 8601 format timestamp that corresponds to the time when the content was accessed.
+
+### Example:
+
+``` javascript
+"timestamp": "2015-09-18T01:54:51.484Z",
+`````` 
+
 ### Verb
 Common entity identifier: VerbA, as defined on the [common structures](/common_structures.md#verba) page.
 
@@ -43,15 +52,6 @@ The Verb, [viewed](/vocabulary.md#verbs), denotes the action of the user's brows
     },
 ```
 
-
-### Timestamp
-An ISO 8601 format timestamp that corresponds to the time when the content was accessed.
-
-### Example:
-
-``` javascript
-"timestamp": "2015-09-18T01:54:51.484Z",
-`````` 
 
 ### Object
 Common entity identifier: ObjectA, as defined on the [common structures](/common_structures.md#objecta) page.
@@ -148,7 +148,7 @@ Common entity identifier: ObjectA, as defined on the [common structures](/common
 		"definition": {
 			"type": "http://id.tincanapi.com/activitytype/resource",
 			"name": {
-				"en": "eResource"
+				"en": "The Condition of the Working Class in England"
 			},
 			"extensions": {
 				"http://xapi.jisc.ac.uk/subType": "http://xapi.jisc.ac.uk/journal"
