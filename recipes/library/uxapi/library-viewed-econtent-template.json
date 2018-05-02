@@ -22,7 +22,7 @@
 			"name": {
 				"en": "**ITEM_NAME**"
 			},
-		"extensions": {
+		    "extensions": {
 				"http://xapi.jisc.ac.uk/statementCat": "Library",
 				"http://xapi.jisc.ac.uk/subType": "**ITEM_SUBTYPE**"
 			}	
