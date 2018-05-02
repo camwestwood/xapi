@@ -64,12 +64,12 @@ Common entity identifier: ObjectA, as defined on the [common structures](/common
 	"id": "http://onlinelibrary.jisc.ac.uk/doi/10.1111"   	 	
 	"definition": {
 		"type": "http://id.tincanapi.com/activitytype/resource",			
-		"name": { "en": "The Condition of the Working Class in England" },			   
-	 }
-	 "extensions": {
+		"name": { "en": "The Condition of the Working Class in England"
+		},
+		"extensions": {
      		 "http://xapi.jisc.ac.uk/subType": "http://xapi.jisc.ac.uk/journal"
-	 }
-    }
+	 	}
+    	}
 }
 ```
 
