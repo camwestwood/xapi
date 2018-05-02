@@ -21,9 +21,10 @@
 			"name": {
 				"en": "**ITEM_NAME**"
 			},
-		"extensions": {
-			"http://xapi.jisc.ac.uk/subType": "**ITEM_TYPE**",
-			"http://oclc.com/number": "**OCLC_NUMBER**"
+		    "extensions": {
+			    "http://xapi.jisc.ac.uk/subType": "**ITEM_SUBTYPE**",
+			    "http://oclc.com/number": "**OCLC_NUMBER**"
+		    }
 		}
 	},
 	
