@@ -238,7 +238,7 @@ This Object pattern describes the core attributes of Object as used in the Jisc 
 	</tr>
 	<tr>
 		<td>object.definition.type [1]</td>
-		<td>Indicates the type of the Object of the Statement. It is required and valid values are listed on the <a href="vocabulary.md#activity-types">vocabulary page</a></td>
+		<td>Indicates the type of the Object of the Statement. It is required and valid values are listed on the [vocabularies](vocabulary.md#activity-types) page.</td>
 		<td>iri</td>
 	</tr>
 	<tr>

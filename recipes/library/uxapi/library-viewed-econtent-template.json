@@ -20,9 +20,9 @@
 		"definition": {
 			"type": "http://id.tincanapi.com/activitytype/resource",
 			"name": {
-				"en": "Resource"
+				"en": "**ITEM_NAME**"
 			},
-		"extensions": {
+		        "extensions": {
 				"http://xapi.jisc.ac.uk/statementCat": "Library",
 				"http://xapi.jisc.ac.uk/subType": "**ITEM_SUBTYPE**"
 			}	

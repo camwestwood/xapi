@@ -1,11 +1,11 @@
-# e-content viewed statement template
+# econtent viewed statement template
 
 Based on generic template statement: [Viewed](/generic/view.md)
 
 [Statement Template Changes](/version_changes.md#econtent)
 
 ## Purpose
-This template defines the structure and terms to record the experience of viewing a reading list
+This template defines the structure and terms to record the experience of viewing econtent.
 
 ### Actor
 Common entity identifier:  ActorA, as defined on the [common structures](/common_structures.md#actora) page.
@@ -27,10 +27,19 @@ The actor entity describes the individual that is accessing econtent.
     },
 ```
 
+### Timestamp
+An ISO 8601 format timestamp that corresponds to the time when the content was accessed.
+
+### Example:
+
+``` javascript
+"timestamp": "2015-09-18T01:54:51.484Z",
+`````` 
+
 ### Verb
 Common entity identifier: VerbA, as defined on the [common structures](/common_structures.md#verba) page.
 
-The Verb,[viewed](/vocabulary.md#verbs) denotes the action of the user's browser or app requesting the econtent.
+The Verb, [viewed](/vocabulary.md#verbs), denotes the action of the user's browser or app requesting the econtent.
 
 ### Example:
 
@@ -44,17 +53,8 @@ The Verb,[viewed](/vocabulary.md#verbs) denotes the action of the user's browser
 ```
 
 
-### Timestamp
-An ISO 8601 format timestamp that corresponds to the time of when the content was accessed.
-
-### Example:
-
-``` javascript
-"timestamp": "2015-09-18T01:54:51.484Z",
-`````` 
-
 ### Object
-Common entity identifier: ObjectA
+Common entity identifier: ObjectA, as defined on the [common structures](/common_structures.md#objecta) page.
 
 ### Example
 
@@ -64,12 +64,12 @@ Common entity identifier: ObjectA
 	"id": "http://onlinelibrary.jisc.ac.uk/doi/10.1111"   	 	
 	"definition": {
 		"type": "http://id.tincanapi.com/activitytype/resource",			
-		"name": { "en": "The Condition of the Working Class in England" },			   
-	 }
-	 "extensions": {
+		"name": { "en": "The Condition of the Working Class in England"
+		},
+		"extensions": {
      		 "http://xapi.jisc.ac.uk/subType": "http://xapi.jisc.ac.uk/journal"
-	 }
-    }
+	 	}
+    	}
 }
 ```
 
@@ -83,7 +83,7 @@ Common entity identifier: ObjectA
 	<tr><th>Property [cardinality]</th><th>Description</th><th>Value information</</th></tr>
 	<tr>
 		<td>context.platform [1]</td>
-		<td>The platform used in the experience of this learning activity. The value used should not change between platform upgrades and version changes and should typically be a concise name by which the application is commonly known</td>
+		<td>The platform used in the experience of this learning activity. The value used should not change between platform upgrades and version changes and should typically be a concise name by which the application is commonly known.</td>
 		<td>string</td>
 	</tr>	
 	<tr>
@@ -102,7 +102,7 @@ Common entity identifier: ObjectA
 	</tr>
 	<tr>
 		<td>context.extensions.statementCat version [0..1]</td>
-		<td>Recommended For querying lookup. Set to "library" in library statements <br/></td>
+		<td>Recommended for querying lookup. Set to "Library" in library statements <br/></td>
 		<td>string</td>
 	</tr>
 </table>
@@ -113,9 +113,11 @@ Common entity identifier: ObjectA
  "context": {
 		"platform": "UxAPI",
 		"extensions": {
+			"http://xapi.jisc.ac.uk/version": "1.0.1"
 			"http://xapi.jisc.ac.uk/sessionId": "A438L",
 			"http://id.tincanapi.com/extensions/ip-address": "IP",
-			"http://xapi.jisc.ac.uk/version": "1.0.1"
+			"https://xapi.jisc.ac.uk/statementCat": "Library"
+			
 		}
 	}
 }
@@ -146,19 +148,20 @@ Common entity identifier: ObjectA
 		"definition": {
 			"type": "http://id.tincanapi.com/activitytype/resource",
 			"name": {
-				"en": "eResource"
+				"en": "The Condition of the Working Class in England"
 			},
 			"extensions": {
-						"http://xapi.jisc.ac.uk/subType": "http://xapi.jisc.ac.uk/journal"
-				}
+				"http://xapi.jisc.ac.uk/subType": "http://xapi.jisc.ac.uk/journal"
+			}
 		}
 	},	
 	"context": {
 		"platform": "UxAPI",
 		"extensions": {
-			"http://xapi.jisc.ac.uk/sessionId": "SESSION_ID",
-			"http://id.tincanapi.com/extensions/ip-address": "IP",
-			"http://xapi.jisc.ac.uk/version": "1.0.1"
+			"http://xapi.jisc.ac.uk/version": "1.0.1",
+			"http://xapi.jisc.ac.uk/sessionId": "32456891",
+			"http://id.tincanapi.com/extensions/ip-address": "10.3.3.48",
+			"https://xapi.jisc.ac.uk/statementCat": "Library"
 		}
 	}
 }

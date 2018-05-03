@@ -17,7 +17,7 @@ Common entity identifier:  ActorA, as defined on the [common structures](/common
         "objectType": "Agent",
         "account": {
             "name": "jsmith20",
-            "homePage": "HOMEPAGE" 
+            "homePage": "http://library.universityofjisc.ac.uk/" 
         }
     },
 ```
@@ -70,7 +70,7 @@ The Verb depends [borrowed](http://activitystrea.ms/schema/1.0/borrowed) indicat
 		<td>iri</td>
 	</tr>
 	<tr>
-		<td>extensions.http://oclc.com/number</td>
+		<td>object.definition.extensions.http://oclc.com/number [0..1]</td>
 		<td>OCLC Number</td>
 		<td>string</td>
 	<tr>
@@ -86,12 +86,10 @@ The Verb depends [borrowed](http://activitystrea.ms/schema/1.0/borrowed) indicat
 	"definition": {
 		"type": "http://xapi.jisc.ac.uk/library/resource",	
 		"name": { "en": "Intro to Java" },			   
-	 }
-	
-	"extensions": {
-		"http://xapi.jisc.ac.uk/subType":"http://id.tincanapi.com/activitytype/book",
-		"http://oclc.com/number": "OCLC_NUMBER",
-			
+	        }
+		"extensions": {
+			"http://xapi.jisc.ac.uk/subType":"http://id.tincanapi.com/activitytype/book",
+			"http://oclc.com/number": "1234567890",
 		}
 }
 ```
@@ -118,7 +116,7 @@ An ISO 8601 format timestamp that corresponds to the time of when the item was b
 	</tr>
 	<tr>
 		<td><a href="vocabulary.md#statement-category">context.extensions.https://xapi.jisc.ac.uk/statementCat</a> [0..1]</td>
-		<td>Recommended For querying lookup. Set to "library" in library statements <br/></td>
+		<td>Recommended For querying lookup. Set to "Library" in library statements <br/></td>
 		<td>string</td>
 	</tr>
 </table>
@@ -147,7 +145,7 @@ An ISO 8601 format timestamp that corresponds to the time of when the item was b
         "objectType": "Agent",
         "account": {
             "name": "jsmith12",
-            "homePage": "HOMEPAGE" 
+            "homePage": "http://library.universityofjisc.ac.uk/" 
         }
     },
 	"verb": {
@@ -156,7 +154,7 @@ An ISO 8601 format timestamp that corresponds to the time of when the item was b
             "en": "borrowed"
         }
     },
-		"object": {
+	"object": {
 		"objectType": "Activity",
 		"id": "http://library.universityofjisc.ac.uk/0123456789",
 		"definition": {
@@ -164,9 +162,10 @@ An ISO 8601 format timestamp that corresponds to the time of when the item was b
 			"name": {
 				"en": "Intro to Java"
 			},
-		"extensions": {
-			"http://xapi.jisc.ac.uk/subType": "http://id.tincanapi.com/activitytype/book",
-			"http://oclc.com/number": "ocn123456789",
+			"extensions": {
+				"http://xapi.jisc.ac.uk/subType": "http://id.tincanapi.com/activitytype/book",
+				"http://oclc.com/number": "ocn123456789"
+			}
 		}
 	},
 	
@@ -178,6 +177,7 @@ An ISO 8601 format timestamp that corresponds to the time of when the item was b
 			"http://xapi.jisc.ac.uk/statementCat": "library",
 			"http://xapi.jisc.ac.uk/version": "1.0.1"
 	
-  }
+  		}
+  	}
 }
 ```
