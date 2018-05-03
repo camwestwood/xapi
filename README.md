@@ -67,12 +67,12 @@ The following JSON samples are recent exampless generated from plugins. Bug repo
 <tr><td> <a href = "recipes/attendance/attendance.md">Attended learning activity </a></td><td><a href="recipes/attendance/uxapi/attendance-input.md"> attendance-input.md</a></td> <td><a href="recipes/attendance/uxapi/attendance-template.json">attendance-template.json</a></td><td><a href="recipes/attendance/tsv/attendance.tsv">TSV</a></td>  </tr>    
 </table>
 
-## Intervention
+## Notes
 <table>
 <tr><td>Statement Template </td><td>Input TSV  definitions</td><td>JSON Template</td></tr>
-<tr><td> Create activity </td><td> <a href="recipes/intervention/uxapi/intervention-create-activity-input.md">intervention-create-activity-input.md </a>  </td> <td><a href="recipes/intervention/uxapi//intervention-create-activity-input.json">intervention-create-activity-input.json</a></td></tr>
-<tr><td> Update activity </td><td><a href="recipes/intervention/uxapi/intervention-update-activity-input.md">intervention-update-activity-input.md </a>   </td> <td><a href="recipes/intervention/uxapi/intervention-create-update-input.json">intervention-update-activity-input.json </a>  </td></tr>      
-<tr><td> Close activity </td><td><a href="recipes/intervention/uxapi/intervention-close-activity-input.md">intervention-close-activity-input.md </a>   </td> <td><a href="recipes/intervention/uxapi/intervention-close-activity-input.json">intervention-close-activity-input.json </a></td></tr>   
+<tr><td> Create activity </td><td> <a href="recipes/note/uxapi/note-create-activity-input.md">note-create-activity-input.md </a>  </td> <td><a href="recipes/note/uxapi//note-create-activity-input.json">note-create-activity-input.json</a></td></tr>
+<tr><td> Update activity </td><td><a href="recipes/note/uxapi/note-update-activity-input.md">note-update-activity-input.md </a>   </td> <td><a href="recipes/note/uxapi/note-create-update-input.json">note-update-activity-input.json </a>  </td></tr>      
+<tr><td> Close activity </td><td><a href="recipes/note/uxapi/note-close-activity-input.md">note-close-activity-input.md </a>   </td> <td><a href="recipes/note/uxapi/note-close-activity-input.json">note-close-activity-input.json </a></td></tr>   
 </table>
 
 ## Predictive Model Output

@@ -1,10 +1,12 @@
-This is the input file for an intervention-create-activity event.
+This is the input file for an note-create-activity event.
 
-Data should be supplied as a UTF-8 Tab Seperated File called intervention-create.tsv
+Data should be supplied as a UTF-8 Tab Seperated File called notes-create.tsv
 
-# intervention-create-activity
+# note-create-activity
+
 
 * [USERNAME](#username) [1]
+* [HOMEPAGE](#homepage) [1]
 * [TIMESTAMP](#timestamp) [1]
 * [MODE](#mode) [1]
 * [REASON](#reason) [1]
@@ -15,7 +17,7 @@ Data should be supplied as a UTF-8 Tab Seperated File called intervention-create
 ## USERNAME 
 ### Description
 
-A unique identifier for the user who is the target of the intervention
+A unique identifier for the user who is the target of the note
 
 
 ### Valid Values
@@ -24,22 +26,22 @@ Any
 ### Format
 String (255)
 
-## REASON 
-### Description
 
-Tutor's reason for intervention/activity
+## HOMEPAGE 
+### Description
+URL of the home page of the application
 
 ### Valid Values
-
-TBD
+Any
 
 ### Format
 String (255)
 
+
 ## TIMESTAMP
 ### Description
 
-Timestamp representing time that intervention was created on system
+Timestamp representing time that note was created on system
 
 
 ### Valid Values
@@ -48,11 +50,23 @@ Any
 ### Format
 ISO 8601 timestamp
 
+## REASON 
+### Description
+
+Tutor's reason for note/activity
+
+### Valid Values
+
+TBD
+
+### Format
+String (255)
+
 
 ## MODE 
 ### Description
 
-The mode of intervention.
+The mode of note.
 
 ### Valid Values
 
@@ -81,7 +95,7 @@ int (1)
 ## TUTOR_ID
 ### Description
 
-id of Tutor creating activity or intervention
+id of Tutor creating activity or note
 
 
 ### Valid Values

@@ -2,7 +2,7 @@ This is the specification for an input TSV file for logging in events.
 
 Data should be supplied as a UTF-8 Tab Separated File called forum.tsv
 
-# login
+# forum
 
 * [TIMESTAMP](#timestamp) [1]
 * [USERNAME](#username) [1]
