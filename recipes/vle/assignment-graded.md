@@ -126,36 +126,6 @@ The Result entity is mandatory for this type of statement. The entity can includ
 ### Object
 Common entity identifier: uses a refinement of ObjectB, as defined on the [common structures](/common_structures.md#objectb) page.
 
-<table>
-	<tr><th>Property [cardinality]</th><th>Description</th><th>Value information</</th></tr>
-	<tr>
-		<td>object.objectType [1]</td>
-		<td>The value must be "Activity".</td>
-		<td>String, value must be "Activity".</td>
-	</tr>
-	<tr>
-		<td>object.id [1]</td>
-		<td>An identifier for the Object of the xAPI Statement. This must be unique (within a given platform) across all Object types.</td>
-		<td>iri</td>
-	</tr>
-	<tr>
-		<td>object.definition.type [1]</td>
-		<td>Indicates the type of the Object of the Statement. It is required and must have the value "http://adlnet.gov/expapi/activities/assessment".</td>
-		<td>iri: "http://adlnet.gov/expapi/activities/assessment"</td>
-	</tr>
-	<tr>
-		<td>object.definition.name [0..1]</td>
-		<td>Optional Object name describing the assignment</td>
-		<td>string</td>
-	</tr>
-	<tr>
-		<td>object.definition.extensions.http://xapi.jisc.ac.uk/dueDate [0..1]</td>
-		<td>Indicates when the assignment is due.</td>
-		<td>ISO 8601 date time</td>
-	</tr>
-</table>
-
-
 ### Example:
 ``` javascript
 
