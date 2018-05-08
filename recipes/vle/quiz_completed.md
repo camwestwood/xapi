@@ -38,7 +38,9 @@ The verb used in quiz_assessed statement is [completed](/vocabulary.md#verbs).
     },
 ``` 
 
+
 ### Result
+Common entity identifier: ResultA [common structures](/common_structures.md#resulta) page.
 
 ### Example
 

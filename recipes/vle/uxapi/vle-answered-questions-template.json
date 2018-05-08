@@ -22,7 +22,7 @@
 },
 
 "result": {
-	"response": "**REPONSE**",
+	"response": "**SCORE_REPONSE**",
 	"completion": **COMPLETION**,
 	"score": {
 		"max": **SCORE_MAX**,
