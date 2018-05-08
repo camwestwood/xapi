@@ -73,7 +73,7 @@ Common entity identifier: ObjectA, as defined on the [common structures](/common
 "result":{
 	"response": "**NOTE**"
 },
-'''
+```
 
 ### Context
 Common entity identifier: Context*, 
@@ -104,13 +104,15 @@ Note contexts..
 
 
 }
+```
 
 ### Timestamp
 
 
 
 #### Example:
+``` javascript
 
  "timestamp": "2016-02-05T10:00:00.000Z"
 
-
+```
