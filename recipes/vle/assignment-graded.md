@@ -94,7 +94,7 @@ The Result entity is mandatory for this type of statement. The entity can includ
 
 ### Example of score that can be calculated as a percentage
 
-javascript ```
+``` javascript 
 "result": {
         "score": {
             "scaled": 0.25,
