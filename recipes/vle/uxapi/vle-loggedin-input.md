@@ -7,7 +7,6 @@ Data should be supplied as a UTF-8 Tab Separated File called login.tsv
 * [USERNAME](#username) [1]
 * [HOMEPAGE](#homepage) [1]
 * [CLIENT_IP](#client_ip) [1]
-* [PLATFORM](#platform) [1]
 * [TIMESTAMP](#timestamp) [1]
 * [SESSION_ID](#session_id) [0..1]
 * [OBJECT_ID](#object_id) [1]
@@ -22,7 +21,7 @@ A unique identifier for the individual logging in.
 Any
 
 ### Format
-String (256)
+String (255)
 
 
 ## HOMEPAGE 
@@ -34,7 +33,7 @@ URL of the home page of the application for which the login id applies.
 Any
 
 ### Format
-String (256)
+String (255)
 
 
 ## CLIENT_IP 
@@ -45,19 +44,7 @@ Client's IP address. An IPv4 address is recommended.
 Any
 
 ### Format
-String (256)
-
-
-## PLATFORM 
-### Description
-
-The platform used in the experience of this learning activity. The value used should not change between platform upgrades and version changes and should typically be a concise name by which the application is commonly known, for example "Moodle" or "Blackboard".
-
-### Valid Values
-Any
-
-### Format
-String (256)
+String (255)
 
 
 ## TIMESTAMP 
@@ -80,7 +67,7 @@ The VLE session ID, or a suitably hashed version of it. A value should be provid
 Any
 
 ### Format
-String (256)
+String (255)
 
 
 ## OBJECT_ID 
@@ -101,7 +88,7 @@ Optional name of application being logged in to.
 Any
 
 ### Format
-String (256)
+String (255)
 
 ## SUBTYPE 
 ### Description

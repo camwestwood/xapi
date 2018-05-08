@@ -32,7 +32,7 @@
 		}
     },
     "context": {
-		"platform": "Study-Goal",
+		"platform": "**PLATFORM**",
 		"extensions": {
 			"http://xapi.jisc.ac.uk/statementCat": "App",
 			"http://xapi.jisc.ac.uk/sessionId": "**SESSION_ID**",

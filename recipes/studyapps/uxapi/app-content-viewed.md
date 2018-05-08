@@ -6,7 +6,6 @@ Data should be supplied as a UTF-8 Tab Seperated File called resourceviewed.tsv
 
 * [USERNAME](#username) [1]
 * [HOMEPAGE](#homepage) [1]
-* [PLATFORM](#platform) [1]
 * [TIMESTAMP](#timestamp) [1]
 * [SUBTYPE](#subtype) [0..1]
 * [VLE_MOD_ID](#vle_mod_id) [0..1]
@@ -29,7 +28,7 @@ Jisc
 Any
 
 ### Format
-String (256)
+String (255)
 
 
 ## HOMEPAGE 
@@ -41,16 +40,6 @@ Any
 
 ### Format
 String (255)
-
-## PLATFORM 
-### Description
-The platform used in the experience of this learning activity. The value used should not change between platform upgrades and version changes and should typically be a concise name by which the application is commonly known, for example "Moodle" or "Blackboard".
-
-### Valid Values
-Any
-
-### Format
-String (256)
 
 
 ## TIMESTAMP 
@@ -83,7 +72,7 @@ Optional name for resource being viewed.
 Any
 
 ### Format
-String (256)
+String (255)
 
 
 ## SUBTYPE 
@@ -105,7 +94,7 @@ Client's IP address. An IPv4 address is recommended.
 Any
 
 ### Format
-String (256)
+String (255)
 
 ## SESSION_ID 
 ### Description
@@ -115,7 +104,7 @@ The VLE session ID, or a suitably hashed version of it. A value should be provid
 Any
 
 ### Format
-String (256)
+String (255)
 
 
 ## VLE_MOD_ID 
@@ -126,7 +115,7 @@ An identifier for a course area in a VLE. It is used in conjunction with UDD_MOD
 Any
 
 ### Format
-String (256)
+String (255)
 
 ### Notes
 Mandatory if UDD_MOD_INST_ID not present.
@@ -141,7 +130,7 @@ The value should correspond to the UDD module_instance.MOD_INSTANCE_ID identifie
 Any
 
 ### Format
-String (256)
+String (255)
 
 ### Notes
 Mandatory if VLE_MOD_ID not present.

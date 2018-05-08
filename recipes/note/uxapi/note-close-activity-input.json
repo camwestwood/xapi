@@ -17,7 +17,7 @@
 
 
 "context": {
-	"platform": "UxAPI",
+	"platform": "**PLATFORM**",
 	
 	"instructor": {
 		"objectType": "Agent",

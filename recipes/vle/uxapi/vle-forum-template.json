@@ -27,7 +27,7 @@
    },
 
 "context": {
-    "platform": "UxAPI",
+    "platform": "**PLATFORM**",
 	
   	"contextActivities": {
         "parent": [

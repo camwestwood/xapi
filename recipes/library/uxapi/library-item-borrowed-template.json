@@ -31,6 +31,7 @@
 	"timestamp": "**TIMESTAMP**",
 
 	"context": {
+		"platform": "**PLATFORM**",
 		"extensions": {
 			"http://xapi.jisc.ac.uk/statementCat": "Library",
 			"http://xapi.jisc.ac.uk/version": "1.0.1"

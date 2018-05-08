@@ -34,7 +34,7 @@
 
 	"context": {
 		
-			"platform": "UxAPI",
+			"platform": "**PLATFORM**",
 			
 			"extensions": {
 					"http://xapi.jisc.ac.uk/statementCat": "VLE",

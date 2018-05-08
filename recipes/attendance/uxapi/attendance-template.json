@@ -42,7 +42,7 @@
         }
     },
     "context": {
-      "platform": "UxAPI",
+      "platform": "**PLATFORM**",
       "instructor": {
          "objectType": "Agent",
          "name": "instructor",
