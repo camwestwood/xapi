@@ -71,13 +71,7 @@ Common entity identifier: ObjectA, as defined on the [common structures](/common
 	  "objectType": "Activity",
       "id": "http://localhost/moodle/mod/quiz/view.php?id=10",
 		  "definition": {
-			"description": {
-			  "en": "A quiz"
-			},
-			"name": {
-			  "en": "mquiz"
-			},
-			"type": "http://xapi.jisc.ac.uk/vle/quiz"
+			     "type": "http://xapi.jisc.ac.uk/vle/quiz"
 		  }
     }
 		

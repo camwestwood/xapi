@@ -85,9 +85,6 @@ The Correct Responses Pattern contains an array of response patterns. A learner'
   "id": "http://localhost/moodle/mod/quiz/view.php?id=10",
   "objectType": "Activity",
   "definition": {
-		"correctResponsesPattern": [
-			"false"
-			],
 		"interactionType": "true-false",
 		"description": {
 			"en": "Greener is a color"
@@ -174,16 +171,7 @@ The Context may describe the parent forum of the thread in context.contextActivi
 	"id": "http://localhost/moodle/mod/quiz/view.php?id=10",
 	"objectType": "Activity",
 	"definition": {
-				"correctResponsesPattern": [
-						"false"
-						],
 				"interactionType": "true-false",
-				"description": {
-						"en": "Greener is a color"
-				},
-				"name": {
-						"en": "Greener is a color"
-				},
 				"type": "http://activitystrea.ms/schema/1.0/question"
 		}
 },
