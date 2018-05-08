@@ -86,7 +86,7 @@ The object.definition.type is http://xapi.jisc.ac.uk/forum-post
 
 
 ### Context
-Common entity identifier: [ContextB](/common_structures.md#objectb)
+Common entity identifier: [ContextB](/common_structures.md#contextb)
 
 #### Entity Example:
 The Context may describe the parent forum of the thread in context.contextActivies, and optionally, the courseArea (with module identifiers).
@@ -150,9 +150,9 @@ The Context may describe the parent forum of the thread in context.contextActivi
    },
 
 "context": {
-    "platform": "Moodle",
+  "platform": "Moodle",
 	
-  	"contextActivities": {
+  "contextActivities": {
         "parent": [
         {
             "id" : "https://courses.alpha.jisc.ac.uk/mod/forum/view.php?id=138371"
@@ -160,20 +160,17 @@ The Context may describe the parent forum of the thread in context.contextActivi
 		 ]
 	  },
 
-    "extensions": {
-			"http://xapi.jisc.ac.uk/statementCat": "VLE",
+   "extensions": {
+	 "http://xapi.jisc.ac.uk/statementCat": "VLE",
+	 "http://xapi.jisc.ac.uk/courseArea": {
+      		 "http://xapi.jisc.ac.uk/vle_mod_id": "LA101",
+		 "http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0"
+		},
 			
-			"http://xapi.jisc.ac.uk/courseArea": {
-      		 	"http://xapi.jisc.ac.uk/vle_mod_id": "LA101",
-				"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0"
-			},
-			
-			"http://xapi.jisc.ac.uk/sessionId":"32456891",
-			"http://id.tincanapi.com/extension/ip-address": "10.3.3.48",
-			"http://xapi.jisc.ac.uk/version" : "1.0.1"
-			}
-		}
-
-
+	"http://xapi.jisc.ac.uk/sessionId":"32456891",
+	"http://id.tincanapi.com/extension/ip-address": "10.3.3.48",
+	"http://xapi.jisc.ac.uk/version" : "1.0.1"
+	}
+  }
 }
 ``` 
