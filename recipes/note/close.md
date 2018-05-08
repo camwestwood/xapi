@@ -1,4 +1,4 @@
-# vle_logged_in Statement template
+# Note_Closed Statement template
 
 
 
