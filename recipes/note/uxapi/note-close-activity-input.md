@@ -2,7 +2,7 @@ This is the input file for an note-close-activity event.
 
 Data should be supplied as a UTF-8 Tab Seperated File called notes_close.tsv
 
-# note-create-activity
+# note-close-activity
 
 * [USERNAME](#username) [1]
 * [HOMEPAGE](#homepage) [1]
