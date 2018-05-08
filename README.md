@@ -71,7 +71,7 @@ The following JSON samples are recent exampless generated from plugins. Bug repo
 <table>
 <tr><td>Statement Template </td><td>Input TSV  definitions</td><td>JSON Template</td></tr>
 <tr><td> <a href="recipes/note/create.md"> Create activity</a> </td><td> <a href="recipes/note/uxapi/note-create-activity-input.md">note-create-activity-input.md </a>  </td> <td><a href="recipes/note/uxapi//note-create-activity-input.json">note-create-activity-input.json</a></td></tr>
-<tr><td><a href="recipes/note/update.md"> Update activity</a> </td><td><a href="recipes/note/uxapi/note-update-activity-input.md">note-update-activity-input.md </a>   </td> <td><a href="recipes/note/uxapi/note-create-update-input.json">note-update-activity-input.json </a>  </td></tr>      
+<tr><td><a href="recipes/note/update.md"> Update activity</a> </td><td><a href="recipes/note/uxapi/note-update-activity-input.md">note-update-activity-input.md </a>   </td> <td><a href="recipes/note/uxapi/note-update-activity-input.json">note-update-activity-input.json </a>  </td></tr>      
 <tr><td> <a href="recipes/note/close.md" > Close activity</a> </td><td><a href="recipes/note/uxapi/note-close-activity-input.md">note-close-activity-input.md </a>   </td> <td><a href="recipes/note/uxapi/note-close-activity-input.json">note-close-activity-input.json </a></td></tr>   
 </table>
 
