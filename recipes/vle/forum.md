@@ -27,7 +27,7 @@ Common entity identifier: [VerbA](/common_structures.md#verba)
 
 #### Entity Example:
 
-The verb [create](/vocabulary.md#create) denotes the action of creating an object, in this case starting a discussion on a forum.
+The verb [create](/vocabulary.md#create) denotes the action of creating an object,
 
 ``` javascript
 "verb": {
