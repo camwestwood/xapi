@@ -11,7 +11,7 @@ Use this template to create a specific Statement for a student answering 1 or mo
 Common entity identifier: [ActorA](../common_structures.md#actora)
 
 #### Entity properties:
-The actor entity describes the individual who is making the post.
+The actor entity describes the individual who answered the question.
 
 ### Example:
 
@@ -88,9 +88,7 @@ The Correct Responses Pattern contains an array of response patterns. A learner'
 		"description": {
 			"en": "Greener is a color"
 		},
-		"name": {
-			"en": "Greener is a color"
-		},
+
 		"type": "http://activitystrea.ms/schema/1.0/question"
 	}
 
@@ -99,14 +97,16 @@ The Correct Responses Pattern contains an array of response patterns. A learner'
 ```
 
 ### Result
+Common entity identifier: ResultA [common structures](/common_structures.md#resulta) page.
 
-### Entity properties:
+### Example of grade result:
+
 
 ### Example
 
 ``` javascript
  "result": {
-      "response": "true",
+      "response": "false",
       "completion": true,
       "success": false,
       "score": {
@@ -115,6 +115,7 @@ The Correct Responses Pattern contains an array of response patterns. A learner'
     },
 ```
 	
+
 ### Context
 Common entity identifier: [ContextB](/common_structures.md#contextb)
 
@@ -134,7 +135,7 @@ The Context may describe the parent quiz of the question in context.contextActiv
 				"http://xapi.jisc.ac.uk/sessionId": "Iye9OqwM9O", 
         "http://id.tincanapi.com/extension/ip-address": "193.24.14.15", 
         "http://xapi.jisc.ac.uk/courseArea": {
-		"http://xapi.jisc.ac.uk/vle_mod_id": "Test1"
+						"http://xapi.jisc.ac.uk/vle_mod_id": "Test1"
         	}
         },
         

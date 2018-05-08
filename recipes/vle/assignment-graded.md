@@ -43,75 +43,13 @@ The Verb [scored](/vocabulary.md#verbs) describes the student receiving a score 
 ``` 
 
 ### Result
-The Result entity is mandatory for this type of statement. The entity can include scaled, raw, min and max score, success, and response (the instructor's feedback) if known. See [score](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#Score). See the [vocabulary](vocabulary.md) page for a definition of the 'http://xapi.jisc.ac.uk/grade' extension.
+Common entity identifier: ResultA [common structures](/common_structures.md#resulta) page.
 
-* Either a raw score or grade must be given.  
-* If unknown then a the property should not be set at all, unknown properties should not be set to zero. 
-
-<table>
-	<tr><th>Property [cardinality]</th><th>Description</th><th>Data type</th></tr>
-	<tr>
-		<td>result.score.scaled [0..1]</td>
-		<td>The score related to the experience as modified by scaling and/or normalization.  If the raw value can be calculated as a percentage then the scaled may be populated as such. In the example shown, there is a 100 question quiz and a user has 25 questions correct, corresponding to a raw value of ‘25’ and a scaled value of ‘0.25’ (25%). If the data is not scaled then it should not be given and should not be zero</td>
-<td>decimal number between -1 and 1, inclusive.</td>
-	</tr>
-	<tr>
-		<td>result.score.raw [0..1]</td>
-		<td>Unmodified score. If not present then grade must be given.</td>
-<td>decimal number between min and max (if present, otherwise unrestricted), inclusive</td>
-	</tr>
-	<tr>
-		<td>result.score.min [0..1]</td>
-		<td>The lowest possible score. If known this should be given.</td>
-<td>decimal number less than max (if present)</td>
-	</tr>
-	<tr>
-		<td>result.score.max [0..1]</td>
-		<td>The highest possible score. If known this should be given.</td>
-		<td>decimal number greater than min (if present)</td>
-	</tr>
-	<tr>
-		<td>result.success [0..1] Deprecated</td>
-		<td>Indicates whether or not the attempt was successful. Deprecated</td>
-		<td>true or false</td>
-	</tr>
-	<tr>
-		<td>result.completion [0..1]</td>
-		<td>Indicates whether or not the Activity was completed.</td>
-		<td>true or false</td>
-	</tr
-	>	<tr>
-		<td>result.response [0..1]</td>
-		<td>Instructor's or automatic feedback</td>
-		<td>string (256)</td>
-	</tr>
-	<tr>
-		<td>result.extensions.http://xapi.jisc.ac.uk/grade [0..1]</td>
-		<td>Non-numerical assessment result. If not present then score.raw must be given</td>
-		<td>string (256)</td>
-	</tr>
-</table>
-
-### Example of score that can be calculated as a percentage
-
-``` javascript 
-"result": {
-        "score": {
-            "scaled": 0.25,
-            "raw": 25,
-            "min": 0,
-            "max": 100
-        },
-		
-        "success": false,
-        "completion": true,
-        "response": "Your answer should have been: The cow jumped over the moon."
-         }
-````
+The result entity is required for this kind of statement.
 
 ### Example of grade result:
 
-```
+``` javascript 
 "result": {
         "extensions": {
         	"http://xapi.jisc.ac.uk/grade": "E"
