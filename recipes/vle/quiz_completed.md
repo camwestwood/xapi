@@ -92,7 +92,7 @@ Common entity identifier: ContextA, as defined on the [common structures](/commo
         "http://xapi,jisc.ac.uk/courseArea": {
           "http://xapi.jisc.ac.uk/vle_mod_id": "Test1"
         },
-        "http://id&46;tincanapi&46;com/extension/ip-address": "0:0:0:0:0:0:0:1",
+        "http://id.tincanapi.com/extension/ip-address": "143.32.45.1",
         "http://xapi.jisc.ac.uk/version": "x-2017-05-16",
         "http://xapi.jisc.ac.uk/sessionId": "Iye9OqwM9O"
       },
@@ -147,7 +147,7 @@ Common entity identifier: ContextA, as defined on the [common structures](/commo
         "http://xapi.jisc.ac.uk/courseArea": {
           "http://xapi.jisc.ac.uk/vle_mod_id": "Test1"
         },
-        "http://id&46;tincanapi&46;com/extension/ip-address": "0:0:0:0:0:0:0:1",
+        "http://id.tincanapi.com/extension/ip-address": "143.32.45.1",
         "http://xapi.jisc.ac.uk/version": "x-2017-05-16",
         "http://xapi.jisc.ac.uk/sessionId": "Iye9OqwM9O"
       },
