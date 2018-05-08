@@ -116,10 +116,10 @@ The Correct Responses Pattern contains an array of response patterns. A learner'
 ```
 	
 ### Context
-Common entity identifier: [ContextB]
+Common entity identifier: [ContextB](/common_structures.md#contextb)
 
 #### Entity Example:
-The Context may describe the parent forum of the thread in context.contextActivies, and optionally, the courseArea (with module identifiers).
+The Context may describe the parent quiz of the question in context.contextActivies, and optionally, the courseArea (with module identifiers).
 
 
 #### Example:
