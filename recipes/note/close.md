@@ -67,9 +67,9 @@ This Verb, [closed](/vocabulary.md#closed), describes the action of closing the 
 ### Timestamp
 
 #### Example:
-
+``` javascript
  "timestamp": "2016-02-05T10:00:00.000Z"
-
+```
 
 ### Context
 
