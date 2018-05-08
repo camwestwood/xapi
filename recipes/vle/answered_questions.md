@@ -43,7 +43,6 @@ The Verb [answered](/vocabulary.md#verbs#answered). It denotes the action of the
 ```
 
 ### Object
-Common entity identifier: ObjectA, as defined on the [common structures](/common_structures.md#objectc) page
 
 The Correct Responses Pattern contains an array of response patterns. A learner's response will be considered correct if it matches any of the response patterns in that array. See the <a href="https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#response-patterns">xAPI spec for more details
 
@@ -71,8 +70,8 @@ The Correct Responses Pattern contains an array of response patterns. A learner'
 		<td>string</td>
 	</tr>
 	<tr>
-		<td>object.definition.correctResponsesPattern [1]</td>
-		<td>The Correct Responses Pattern contains an array of response patterns. A learner's response will be considered correct if it matches any of the response patterns in that array. See the <a href="https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#response-patterns">xAPI spec for more details</a>.</td>
+		<td>object.definition.interactionType [0..1]</td>
+		<td>The type of interaction. Possible values are: true-false, choice, fill-in, long-fill-in, matching, performance, sequencing, likert, numeric or other. <a href="https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#interaction-types">xAPI spec for more details</a>.</td>
 		<td>iri</td>
 	</tr>
 </table>
