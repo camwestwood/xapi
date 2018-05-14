@@ -2,6 +2,14 @@
 The following sections describe common structures used across several of the Statement templates.
 Wherever a Statement template refers to a "common entity identifier", the example given in the Statement template follows or extends 1 of the structures on this page.
 
+For each common structure there is a table that lists:
+
+- the name of each property contained in the entity; whether mandatory, indicated by [1], or optional, indicated by [0..1]
+- a human-readable description of each property
+- the format of the content of the property.
+
+An example is supplied for each structure and its common variants.
+
 ## ActorA
 Common entity identifier:  ActorA
 
