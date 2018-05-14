@@ -180,7 +180,7 @@ single
 ## SCORE_RESPONSE
 ### Description
 
-Instructor's or automatic feedback
+Students answer to question
 
 ### Valid Values
 Any

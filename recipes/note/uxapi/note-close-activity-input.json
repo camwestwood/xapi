@@ -1,0 +1,37 @@
+{
+	"timestamp": "**TIMESTAMP**",
+    "actor": {
+        "objectType": "Agent",
+        "account": {
+			"name": "**USERNAME**",
+			"homePage": "**HOMEPAGE**"
+        }
+    },
+  "verb": {
+        "id": "http://xapi.jisc.ac.uk/close",
+        "display": {
+            "en": "Close"
+        }
+    },
+
+
+
+"context": {
+	"platform": "**PLATFORM**",
+	
+	"instructor": {
+		"objectType": "Agent",
+		"account": {
+			"name": "**TUTOR_ID**",
+			"homePage": "**HOMEPAGE**"
+		},
+	
+
+    "extensions": {
+			"http://xapi.jisc.ac.uk/statementCat": "Note",
+			"http://xapi.jisc.ac.uk/version" : "1.0.1"
+			}
+		}
+
+
+}

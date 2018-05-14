@@ -2,7 +2,7 @@ This is the specification for an input TSV file for logging in events.
 
 Data should be supplied as a UTF-8 Tab Separated File called forum.tsv
 
-# login
+# forum
 
 * [TIMESTAMP](#timestamp) [1]
 * [USERNAME](#username) [1]
@@ -13,7 +13,6 @@ Data should be supplied as a UTF-8 Tab Separated File called forum.tsv
 * [SESSION_ID](#session_id) [0..1]
 * [OBJECT_ID](#object_id) [1]
 * [OBJECT_NAME](#object_name) [0..1]
-* [FORUM_AREA](#object_id) [1]
 * [VLE_MOD_ID](#vle_mod_id) [0..1]
 * [UDD_MOD_INST_ID](#udd_mod_inst_id) [0..1]
 * [PARENT_ID](#udd_mod_inst_id) [0..1]
@@ -119,17 +118,6 @@ Any
 
 ### Format
 String (255)
-
-## FORUM_AREA 
-### Description
-Identifies the parent forum via uri.
-
-
-### Valid Values
-Any
-
-### Format
-uri
 
 ## VLE_MOD_ID 
 ### Description

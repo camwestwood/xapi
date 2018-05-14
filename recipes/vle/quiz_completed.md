@@ -38,7 +38,9 @@ The verb used in quiz_assessed statement is [completed](/vocabulary.md#verbs).
     },
 ``` 
 
+
 ### Result
+Common entity identifier: ResultA [common structures](/common_structures.md#resulta) page.
 
 ### Example
 
@@ -71,13 +73,7 @@ Common entity identifier: ObjectA, as defined on the [common structures](/common
 	  "objectType": "Activity",
       "id": "http://localhost/moodle/mod/quiz/view.php?id=10",
 		  "definition": {
-			"description": {
-			  "en": "A quiz"
-			},
-			"name": {
-			  "en": "mquiz"
-			},
-			"type": "http://xapi.jisc.ac.uk/vle/quiz"
+			     "type": "http://xapi.jisc.ac.uk/vle/quiz"
 		  }
     }
 		
@@ -98,7 +94,7 @@ Common entity identifier: ContextA, as defined on the [common structures](/commo
         "http://xapi,jisc.ac.uk/courseArea": {
           "http://xapi.jisc.ac.uk/vle_mod_id": "Test1"
         },
-        "http://id&46;tincanapi&46;com/extension/ip-address": "0:0:0:0:0:0:0:1",
+        "http://id.tincanapi.com/extension/ip-address": "143.32.45.1",
         "http://xapi.jisc.ac.uk/version": "x-2017-05-16",
         "http://xapi.jisc.ac.uk/sessionId": "Iye9OqwM9O"
       },
@@ -153,7 +149,7 @@ Common entity identifier: ContextA, as defined on the [common structures](/commo
         "http://xapi.jisc.ac.uk/courseArea": {
           "http://xapi.jisc.ac.uk/vle_mod_id": "Test1"
         },
-        "http://id&46;tincanapi&46;com/extension/ip-address": "0:0:0:0:0:0:0:1",
+        "http://id.tincanapi.com/extension/ip-address": "143.32.45.1",
         "http://xapi.jisc.ac.uk/version": "x-2017-05-16",
         "http://xapi.jisc.ac.uk/sessionId": "Iye9OqwM9O"
       },

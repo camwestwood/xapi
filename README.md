@@ -30,7 +30,7 @@ These are platform independent Statements related to Virtual Learning Enviroment
 <tr><td>Statement Template</td> <td>Input TSV definitions</td>   <td>JSON Template</td></tr>
 <tr><td><a href = "/recipes/vle/login.md">Logged in</a></td><td><a href="recipes/vle/uxapi/vle-loggedin-input.md">vle-loggedin-input.md</a></td><td><a href="recipes/vle/uxapi/vle-loggedin-template.json">vle-loggedin-template.json</a></td> </tr>                                                           
 <tr><td> <a href = "/recipes/vle/logout.md">Logged out</a></td><td><a href="recipes/vle/uxapi/vle-loggedout-input.md">vle-loggedout-input.md</a></td><td><a href="recipes/vle/uxapi/vle-loggedout-template.json">vle-loggedout-template.json</a></td> </tr>    
-<tr><td> <a href = "/recipes/vle/uxapi/Module-View.md">VLE resource viewed   </a></td><td><a href="recipes/vle/uxapi/vle-resourceviewed-input.md">vle-resourceviewed-input.md</a></td><td><a href="recipes/vle/uxapi/vle-resourceviewed-template.json">vle-resourceviewed-template.json</a></td></tr>    
+<tr><td> <a href = "/recipes/vle/Module-View.md">VLE resource viewed   </a></td><td><a href="recipes/vle/uxapi/vle-resourceviewed-input.md">vle-resourceviewed-input.md</a></td><td><a href="recipes/vle/uxapi/vle-resourceviewed-template.json">vle-resourceviewed-template.json</a></td></tr>    
 <tr><td> <a href =  "/recipes/vle/assignment-graded.md">Assignment Graded   </a></td> <td><a href="recipes/vle/uxapi/vle-assignmentgraded-input.md">vle-assignmentgraded-input.md</a></td><td><a href="recipes/vle/uxapi/vle-assignmentgraded-template.json">vle-assignmentgraded-template.json</a></td></tr>    
 <tr><td> <a href =  "/recipes/vle/assignment-submitted.md">Assignment Submitted  </a></td><td><a href="recipes/vle/uxapi/vle-assignmentsubmitted-input.md">vle-assignmentsubmitted-input.md</a></td><td><a href="recipes/vle/uxapi/vle-assignmentsubmitted-template.json">vle-assignmentsubmitted-template.json</a></td></tr>                                                             
 <tr><td><a href =  "/recipes/vle/forum.md">Create a forum post</a></td><td><a href="recipes/vle/uxapi/vle-forum-input.md">vle-forum-input.md</a></td><td><a href="recipes/vle/uxapi/vle-forum-template.json">vle-forum-template.json</a></td> </tr>                                                             
@@ -67,12 +67,15 @@ The following JSON samples are recent exampless generated from plugins. Bug repo
 <tr><td> <a href = "recipes/attendance/attendance.md">Attended learning activity </a></td><td><a href="recipes/attendance/uxapi/attendance-input.md"> attendance-input.md</a></td> <td><a href="recipes/attendance/uxapi/attendance-template.json">attendance-template.json</a></td><td><a href="recipes/attendance/tsv/attendance.tsv">TSV</a></td>  </tr>    
 </table>
 
-## Intervention
+## Intervention Case
 <table>
 <tr><td>Statement Template </td><td>Input TSV  definitions</td><td>JSON Template</td></tr>
-<tr><td> Create activity </td><td> <a href="recipes/intervention/uxapi/intervention-create-activity-input.md">intervention-create-activity-input.md </a>  </td> <td><a href="recipes/intervention/uxapi//intervention-create-activity-input.json">intervention-create-activity-input.json</a></td></tr>
-<tr><td> Update activity </td><td><a href="recipes/intervention/uxapi/intervention-update-activity-input.md">intervention-update-activity-input.md </a>   </td> <td><a href="recipes/intervention/uxapi/intervention-create-update-input.json">intervention-update-activity-input.json </a>  </td></tr>      
-<tr><td> Close activity </td><td><a href="recipes/intervention/uxapi/intervention-close-activity-input.md">intervention-close-activity-input.md </a>   </td> <td><a href="recipes/intervention/uxapi/intervention-close-activity-input.json">intervention-close-activity-input.json </a></td></tr>   
+<tr><td> <a href="recipes/note/open-case.md"> Open a case </a> </td><td> <a href="recipes/note/uxapi/note-create-activity-input.md">note-create-activity-input.md </a>  </td> <td><a href="recipes/note/uxapi//note-create-activity-input.json">note-create-activity-input.json</a></td></tr>
+<tr><td><a href="recipes/note/update-case.md"> Update a case</a> </td><td><a href="recipes/note/uxapi/note-update-activity-input.md">note-update-activity-input.md </a>   </td> <td><a href="recipes/note/uxapi/note-update-activity-input.json">note-update-activity-input.json </a>  </td></tr>      
+<tr><td> <a href="recipes/note/close-case.md" > Close a case </a> </td><td><a href="recipes/note/uxapi/note-close-activity-input.md">note-close-activity-input.md </a>   </td> <td><a href="recipes/note/uxapi/note-close-activity-input.json">note-close-activity-input.json </a></td></tr>  
+
+<tr><td><a href="recipes/note/update-case.md"> Create a note</a> </td><td><a href="recipes/note/uxapi/note-update-activity-input.md">note-update-activity-input.md </a>   </td> <td><a href="recipes/note/uxapi/note-update-activity-input.json">note-update-activity-input.json </a>  </td></tr>
+
 </table>
 
 ## Predictive Model Output

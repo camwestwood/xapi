@@ -1,18 +1,22 @@
-This is the input file for an intervention-update-activity event.
+This is the input file for an notes-update-activity event.
 
-Data should be supplied as a UTF-8 Tab Seperated File called intevention-update.tsv
+Data should be supplied as a UTF-8 Tab Seperated File called notes-update.tsv
 
-# intervention-create-activity
+# notes-create-activity
 
-* [ITEM_ID](#item_id) [1]
+* [USERNAME](#username) [1]
+* [HOMEPAGE](#homepage) [1]
+* [TIMESTAMP](#timestamp) [1]
+* [OBJECT_ID](#item_id) [1]
 * [TUTOR_ID](#tutor_id) [1]
+* [STUDENT_ID](#student_id) [1]
 * [TIMESTAMP](#timestamp) [1]
 * [NOTE](#note) [0..1]
 * [WEIGHTING](#weighting) [0..1]
 * [TYPE](#type) [1]
 
 
-## ITEM_ID 
+## OBJECT_ID 
 ### Description
 
 A unique identifier for the item being updated
@@ -26,7 +30,7 @@ String (255)
 ## TUTOR_ID
 ### Description
 
-id of Tutor updating activity/intervention
+id of Tutor updating activity/note
 
 
 ### Valid Values
@@ -35,10 +39,11 @@ Any
 ### Format
 String (255)
 
+
 ## TIMESTAMP
 ### Description
 
-Timestamp representing time that intervention was updated on system
+Timestamp representing time that note was updated on system
 
 
 ### Valid Values

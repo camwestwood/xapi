@@ -11,7 +11,7 @@ Use this template to create a specific Statement for a student answering 1 or mo
 Common entity identifier: [ActorA](../common_structures.md#actora)
 
 #### Entity properties:
-The actor entity describes the individual who is making the post.
+The actor entity describes the individual who answered the question.
 
 ### Example:
 
@@ -43,7 +43,6 @@ The Verb [answered](/vocabulary.md#verbs#answered). It denotes the action of the
 ```
 
 ### Object
-Common entity identifier: ObjectA, as defined on the [common structures](/common_structures.md#objectc) page
 
 The Correct Responses Pattern contains an array of response patterns. A learner's response will be considered correct if it matches any of the response patterns in that array. See the <a href="https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#response-patterns">xAPI spec for more details
 
@@ -71,8 +70,8 @@ The Correct Responses Pattern contains an array of response patterns. A learner'
 		<td>string</td>
 	</tr>
 	<tr>
-		<td>object.definition.correctResponsesPattern [1]</td>
-		<td>The Correct Responses Pattern contains an array of response patterns. A learner's response will be considered correct if it matches any of the response patterns in that array. See the <a href="https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#response-patterns">xAPI spec for more details</a>.</td>
+		<td>object.definition.interactionType [0..1]</td>
+		<td>The type of interaction. Possible values are: true-false, choice, fill-in, long-fill-in, matching, performance, sequencing, likert, numeric or other. <a href="https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#interaction-types">xAPI spec for more details</a>.</td>
 		<td>iri</td>
 	</tr>
 </table>
@@ -85,16 +84,11 @@ The Correct Responses Pattern contains an array of response patterns. A learner'
   "id": "http://localhost/moodle/mod/quiz/view.php?id=10",
   "objectType": "Activity",
   "definition": {
-		"correctResponsesPattern": [
-			"false"
-			],
 		"interactionType": "true-false",
 		"description": {
 			"en": "Greener is a color"
 		},
-		"name": {
-			"en": "Greener is a color"
-		},
+
 		"type": "http://activitystrea.ms/schema/1.0/question"
 	}
 
@@ -103,14 +97,13 @@ The Correct Responses Pattern contains an array of response patterns. A learner'
 ```
 
 ### Result
-
-### Entity properties:
+Common entity identifier: ResultA [common structures](/common_structures.md#resulta) page.
 
 ### Example
 
 ``` javascript
  "result": {
-      "response": "true",
+      "response": "false",
       "completion": true,
       "success": false,
       "score": {
@@ -119,11 +112,12 @@ The Correct Responses Pattern contains an array of response patterns. A learner'
     },
 ```
 	
+
 ### Context
-Common entity identifier: [ContextB]
+Common entity identifier: [ContextB](/common_structures.md#contextb)
 
 #### Entity Example:
-The Context may describe the parent forum of the thread in context.contextActivies, and optionally, the courseArea (with module identifiers).
+The Context may describe the parent quiz of the question in context.contextActivies, and optionally, the courseArea (with module identifiers).
 
 
 #### Example:
@@ -138,7 +132,7 @@ The Context may describe the parent forum of the thread in context.contextActivi
 				"http://xapi.jisc.ac.uk/sessionId": "Iye9OqwM9O", 
         "http://id.tincanapi.com/extension/ip-address": "193.24.14.15", 
         "http://xapi.jisc.ac.uk/courseArea": {
-		"http://xapi.jisc.ac.uk/vle_mod_id": "Test1"
+						"http://xapi.jisc.ac.uk/vle_mod_id": "Test1"
         	}
         },
         
@@ -174,16 +168,7 @@ The Context may describe the parent forum of the thread in context.contextActivi
 	"id": "http://localhost/moodle/mod/quiz/view.php?id=10",
 	"objectType": "Activity",
 	"definition": {
-				"correctResponsesPattern": [
-						"false"
-						],
 				"interactionType": "true-false",
-				"description": {
-						"en": "Greener is a color"
-				},
-				"name": {
-						"en": "Greener is a color"
-				},
 				"type": "http://activitystrea.ms/schema/1.0/question"
 		}
 },

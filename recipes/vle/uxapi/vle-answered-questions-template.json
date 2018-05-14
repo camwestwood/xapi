@@ -16,16 +16,13 @@
 	"id": "**OBJECT_ID**",
 	"objectType": "Activity",
 	"definition": {
-				"correctResponsesPattern": [
-						"**RESPONSE_PATTERN**"
-						],
 				"interactionType": "**INTERACTION_TYPE**",
 				"type": "http://activitystrea.ms/schema/1.0/question"
 		}
 },
 
 "result": {
-	"duration": "**DURATION**",
+	"response": "**SCORE_REPONSE**",
 	"completion": **COMPLETION**,
 	"score": {
 		"max": **SCORE_MAX**,
@@ -37,7 +34,7 @@
 
 	"context": {
 		
-			"platform": "UxAPI",
+			"platform": "**PLATFORM**",
 			
 			"extensions": {
 					"http://xapi.jisc.ac.uk/statementCat": "VLE",

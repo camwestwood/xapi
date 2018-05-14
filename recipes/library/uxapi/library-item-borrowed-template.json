@@ -21,16 +21,17 @@
 			"name": {
 				"en": "**ITEM_NAME**"
 			},
-		    "extensions": {
-			    "http://xapi.jisc.ac.uk/subType": "**ITEM_SUBTYPE**",
-			    "http://oclc.com/number": "**OCLC_NUMBER**"
-		    }
+		    	"extensions": {
+			    	"http://xapi.jisc.ac.uk/subType": "**ITEM_SUBTYPE**",
+			    	"http://oclc.com/number": "**OCLC_NUMBER**"
+		    	}
 		}
 	},
 	
 	"timestamp": "**TIMESTAMP**",
 
 	"context": {
+		"platform": "**PLATFORM**",
 		"extensions": {
 			"http://xapi.jisc.ac.uk/statementCat": "Library",
 			"http://xapi.jisc.ac.uk/version": "1.0.1"

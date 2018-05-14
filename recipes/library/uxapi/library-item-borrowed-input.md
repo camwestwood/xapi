@@ -6,7 +6,7 @@ Data should be supplied as a UTF-8 Tab Separated File called borrowing.tsv
 
 * [USER_ID](#user_id) [1]
 * [ITEM_ID](#item_id) [1]
-* [ITEM_NAME](#item_name) [1]
+* [ITEM_NAME](#item_name) [0..1]
 * [ITEM_SUBTYPE](#item_subtype) [1]
 * [OCLC_NUMBER](#oclc_number) [0..1]
 * [TIMESTAMP](#timestamp) [1]
@@ -40,10 +40,6 @@ String (255)
 ### Description
 
 A name identifier for that item
-
-### Purpose
-
-tbc
 
 ### Format
 String (255)
