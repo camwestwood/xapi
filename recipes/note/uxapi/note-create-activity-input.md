@@ -7,11 +7,13 @@ Data should be supplied as a UTF-8 Tab Seperated File called notes-create.tsv
 
 * [USERNAME](#username) [1]
 * [HOMEPAGE](#homepage) [1]
+* [CASE_ID](#case_id) [1]
 * [TIMESTAMP](#timestamp) [1]
 * [MODE](#mode) [1]
 * [REASON](#reason) [1]
 * [WEIGHTING](#weighting) [1]
 * [TUTOR_ID](#tutor_id) [1]
+* [STUDENT_ID](#tutor_id) [1]
 
 
 ## USERNAME 
@@ -36,6 +38,17 @@ Any
 
 ### Format
 String (255)
+
+## HOMEPAGE 
+### Description
+Unique ID of the case
+
+### Valid Values
+Any
+
+### Format
+String (255)
+
 
 
 ## TIMESTAMP
@@ -96,6 +109,18 @@ int (1)
 ### Description
 
 id of Tutor creating activity or note
+
+
+### Valid Values
+Any
+
+### Format
+String (255)
+
+## STUDENT_ID
+### Description
+
+id of student that the case is about
 
 
 ### Valid Values

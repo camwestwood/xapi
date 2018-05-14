@@ -1,17 +1,15 @@
-# Note_Closed Statement template
+# note_update Statement template
 
-
-
-[Statement Template Changes](/version_changes.md#close-note)
+[Statement Template Changes](/version_changes.md#create-note)
 
 ## Purpose
-This Statement template records a note being close by a tutor.
+This Statement template records a note being created about a student by a tutor. The note is attached to a case.
 
 ### Actor
 Common entity identifier: [ActorA](/common_structures.md#actora)
 
 #### Entity Example:
-The Actor entity identifies the individual that a note is  about
+The Actor entity identifies the individual that is creating the note
 
 ``` Javascript
 "actor": {
@@ -27,13 +25,13 @@ The Actor entity identifies the individual that a note is  about
 Common entity identifier: [VerbA](/common_structures.md#verba)
 
 #### Entity Example:
-This Verb, [closed](/vocabulary.md#closed), describes the action of closing the object
+This Verb, [created](/vocabulary.md#created), describes the action of creating the object
 
 ``` javascript
 "verb": {
-  "id": "http://activitystrea.ms/schema/1.0/create",
+  "id": "http://xapi.jisc.ac.uk/create",
   "display": {
-    "en" : "logged in to"
+    "en" : "create"
   }
 }
 ```
@@ -41,34 +39,55 @@ This Verb, [closed](/vocabulary.md#closed), describes the action of closing the 
 
 ### Object
 
+``` javascript
+
+"object": {
+   "objectType": "Activity",
+   "id": "**HOMEPAGE**/**CASE_ID**",	
+   "definition": {
+   		"type": "http://xapi.jisc.ac.uk/note",			
+   		"name": { "en": "Case" }   
+    }
+   },
+
+
+```
+
+
+### Context
+
+
 
 #### Example:
-
 ``` javascript
+
 "context": {
 	"platform": "UxAPI",
-	
-	"instructor": {
-		"objectType": "Agent",
-		"account": {
-			"name": "**TUTOR_ID**",
-			"homePage": "**HOMEPAGE**"
-		},
-	
 
     "extensions": {
 			"http://xapi.jisc.ac.uk/statementCat": "Note",
+			"http://xapi.jisc.ac.uk/type": "**TYPE**",
+			"http://xapi.jisc.ac.uk/weighting" : **WEIGHTING**
 			"http://xapi.jisc.ac.uk/version" : "1.0.1"
 			}
 		}
 
-```		
+
+```
 
 ### Timestamp
 
 #### Example:
-``` javascript
+
  "timestamp": "2016-02-05T10:00:00.000Z"
+
+
+
+## Result
+``` javascript
+"result":{
+	"response": "**NOTE**"
+},
 ```
 
 ### Context
@@ -84,15 +103,20 @@ This Verb, [closed](/vocabulary.md#closed), describes the action of closing the 
 		"account": {
 			"name": "**TUTOR_ID**",
 			"homePage": "**HOMEPAGE**"
-		},
+		}
 	
 
     "extensions": {
 			"http://xapi.jisc.ac.uk/statementCat": "Note",
+			"http://xapi.jisc.ac.uk/mode" : "**MODE**",
+			"http://xapi.jisc.ac.uk/weighting" : **WEIGHTING**,
 			"http://xapi.jisc.ac.uk/version" : "1.0.1"
 			}
 		}
 
 
+}
+
+```
 
 

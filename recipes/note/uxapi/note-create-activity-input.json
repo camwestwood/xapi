@@ -18,7 +18,7 @@
    "objectType": "Activity",
    "id": "**HOMEPAGE**/**OBJECT_ID**",	
    "definition": {
-   		"type": "http://xapi.jisc.ac.uk/intervention/note",			
+   		"type": "http://xapi.jisc.ac.uk/case",			
    		"name": { "en": "Note" }   
     }
    },
