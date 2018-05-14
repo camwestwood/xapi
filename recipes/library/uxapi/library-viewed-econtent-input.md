@@ -75,7 +75,7 @@ String (255)
 ## SESSION_ID
 ### Description
 
-tbc
+The local version of an identifier for the VLE session currently in use by the actor. A value should be provided if this information is available.
 
 
 ### Valid Values
