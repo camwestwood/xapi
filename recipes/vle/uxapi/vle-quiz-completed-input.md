@@ -4,7 +4,7 @@ Data should be supplied as a UTF-8 Tab Separated File called quiz-completed.tsv
 
 # Quiz Completed
 
-* [TIMESTAMP](#timestamp) [1]
+
 * [USERNAME](#username) [1]
 * [HOMEPAGE](#homepage) [1]
 * [TIMESTAMP](#timestamp) [1]
@@ -21,15 +21,8 @@ Data should be supplied as a UTF-8 Tab Separated File called quiz-completed.tsv
 
 
 
-## TIMESTAMP 
-### Description
-The time at which the user completed the quiz
 
-### Valid Values
-Any
 
-### Format
-ISO 8601 date time
 
 ## USERNAME 
 ### Description
@@ -51,7 +44,6 @@ Any
 
 ### Format
 String (256)
-
 
 
 ## TIMESTAMP 
