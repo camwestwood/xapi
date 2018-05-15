@@ -4,7 +4,7 @@ Data should be supplied as a UTF-8 Tab Separated File called forum.tsv
 
 # forum
 
-* [TIMESTAMP](#timestamp) [1]
+
 * [USERNAME](#username) [1]
 * [HOMEPAGE](#homepage) [1]
 * [CLIENT_IP](#client_ip) [1]
@@ -74,17 +74,6 @@ Any
 
 ### Format
 String (255)
-
-
-## TIMESTAMP 
-### Description
-The time at which the user logged in to the platform
-
-### Valid Values
-Any
-
-### Format
-ISO 8601 date time
 
 
 ## SESSION_ID 
