@@ -21,6 +21,8 @@
 		}
 },
 
+"timestamp": "**TIMESTAMP**",
+
 "result": {
 	"response": "**SCORE_REPONSE**",
 	"completion": **COMPLETION**,

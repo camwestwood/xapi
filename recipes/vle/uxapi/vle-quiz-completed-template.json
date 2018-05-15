@@ -7,15 +7,17 @@
 		"homePage": "**HOMEPAGE**"
 	  }
 	},
-  "timestamp":"**TIMESTAMP**",
+
+	"timestamp":"**TIMESTAMP**",
+	
   "result": {
-	"duration": "**DURATION**",
-	"completion": **COMPLETION**,
-	"score": {
-	  "max": **SCORE_MAX**,
-	  "min": **SCORE_MIN**,
-	  "raw": **SCORE_RAW**,
-	  "scaled": **SCORE_SCALED**
+		"duration": "**DURATION**",
+		"completion": **COMPLETION**,
+			"score": {
+	  		"max": **SCORE_MAX**,
+	  		"min": **SCORE_MIN**,
+	  		"raw": **SCORE_RAW**,
+	  		"scaled": **SCORE_SCALED**
 	}
   },
   "verb": {

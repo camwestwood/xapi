@@ -42,6 +42,14 @@ The Verb [answered](/vocabulary.md#verbs#answered). It denotes the action of the
 }
 ```
 
+### Timestamp
+
+In quiz answered statements the timestamp property is set to the time the questions were answered.
+
+#### Example:
+
+ "timestamp": "2016-02-05T10:00:00.000Z"
+
 ### Object
 
 The Correct Responses Pattern contains an array of response patterns. A learner's response will be considered correct if it matches any of the response patterns in that array. See the <a href="https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#response-patterns">xAPI spec for more details

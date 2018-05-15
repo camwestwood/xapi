@@ -23,7 +23,7 @@ Data should be supplied as a UTF-8 Tab Separated File called quiz-completed.tsv
 
 ## TIMESTAMP 
 ### Description
-The time at which the user logged in to the platform
+The time at which the user completed the quiz
 
 ### Valid Values
 Any

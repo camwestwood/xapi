@@ -7,6 +7,7 @@ Data should be supplied as a UTF-8 Tab Separated File called assignmentgraded.ts
 
 * [USERNAME](#username) [1]
 * [HOMEPAGE](#homepage) [1]
+* [TIMESTAMP](#timestamp) [0..1]
 * [CLIENT_IP](#client_ip) [1]
 * [INTERACTION-TYPE](#interaction_type) [1]
 * [SESSION_ID](#session_id) [0..1]
@@ -43,6 +44,18 @@ Any
 
 ### Format
 String (256)
+
+
+## TIMESTAMP 
+### Description
+The time at which the user answered the questions
+
+### Purpose
+Analytics
+
+
+### Format
+ISO 8601 date time
 
 ## CLIENT_IP 
 ### Description

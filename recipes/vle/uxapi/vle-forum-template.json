@@ -1,5 +1,5 @@
 {
-	"timestamp": "**TIMESTAMP**",
+	
     "actor": {
         "objectType": "Agent",
         "account": {
@@ -25,6 +25,8 @@
    		"name": { "en": "Forum post" }   
     }
    },
+
+"timestamp": "**TIMESTAMP**",
 
 "context": {
     "platform": "**PLATFORM**",
