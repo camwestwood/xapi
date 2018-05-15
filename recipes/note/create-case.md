@@ -5,7 +5,7 @@
 [Statement Template Changes](/version_changes.md#create-note)
 
 ## Purpose
-This Statement template records an intervention case being created about a student by a tutor.
+This Statement template records an intervention case being created by a tutor.
 
 ### Actor
 Common entity identifier: [ActorA](/common_structures.md#actora)
@@ -15,7 +15,7 @@ The Actor entity identifies the individual that note is creating the case
 
 
 ``` Javascript
-actor": {
+"actor": {
 		"objectType": "Agent",
 		"account": {
 			"name": "**TUTOR_ID**",
@@ -61,7 +61,7 @@ The object is a case that has been opened
 ```
 
 ## Result
-The result may contain the inital note attached to the case
+The result may contain the case text
 
 ``` javascript
 "result":{
@@ -86,6 +86,8 @@ Common entity identifier: Context*
 			"http://xapi.jisc.ac.uk/version" : "1.0.1"
 			}
 		}
+
+```
 
 }
 ```

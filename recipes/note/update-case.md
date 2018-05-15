@@ -3,7 +3,7 @@
 [Statement Template Changes](/version_changes.md#create-note)
 
 ## Purpose
-This Statement template records a note being created about a student by a tutor.
+This Statement template records a case being updated, for example the weighting being changed.
 
 ### Actor
 Common entity identifier: [ActorA](/common_structures.md#actora)
@@ -43,7 +43,7 @@ This Verb, [created](/vocabulary.md#created), describes the action of creating t
 ``` javascript
 
 "context": {
-	"platform": "UxAPI",
+	"platform": "Jisc Notes",
 	
 	"instructor": {
 		"objectType": "Agent",

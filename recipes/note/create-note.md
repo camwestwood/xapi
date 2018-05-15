@@ -62,7 +62,7 @@ This Verb, [created](/vocabulary.md#created), describes the action of creating t
 ``` javascript
 
 "context": {
-	"platform": "UxAPI",
+	"platform": "**PLATFORM**",
 
     "extensions": {
 			"http://xapi.jisc.ac.uk/statementCat": "Note",
@@ -76,6 +76,8 @@ This Verb, [created](/vocabulary.md#created), describes the action of creating t
 ```
 
 ### Timestamp
+
+An ISO 8601 format timestamp that corresponds to the time of when the note was created
 
 #### Example:
 
@@ -96,14 +98,7 @@ This Verb, [created](/vocabulary.md#created), describes the action of creating t
 ``` javascript
 
 "context": {
-	"platform": "UxAPI",
-	
-	"instructor": {
-		"objectType": "Agent",
-		"account": {
-			"name": "**TUTOR_ID**",
-			"homePage": "**HOMEPAGE**"
-		}
+	"platform": "Jisc Notes",
 	
 
     "extensions": {
