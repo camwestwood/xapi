@@ -88,7 +88,7 @@ String (255)
 ## CLIENT_IP 
 ### Description
 
-Client's address location on internet
+Client's address location on internet. The IP address that has made the request to view the content.
 
 ### Valid Values
 Any
