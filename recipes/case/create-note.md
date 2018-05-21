@@ -69,6 +69,7 @@ This Verb, [created](/vocabulary.md#created), describes the action of creating t
 			"http://xapi.jisc.ac.uk/type": "**TYPE**",
 			"http://xapi.jisc.ac.uk/weighting" : **WEIGHTING**
 			"http://xapi.jisc.ac.uk/version" : "1.0.1"
+			"http://xapi.jisc.ac.uk/case": "**CASE_ID**"
 			}
 		}
 
@@ -85,7 +86,14 @@ An ISO 8601 format timestamp that corresponds to the time of when the note was c
 
 
 
-## Result
+
+### Result
+The result.response entity contains plain text from the note encoded as per the encoding of the rest of the statement. There must be no markup,  HTML entity encodings or invalid characters.
+
+
+
+### Example:
+
 ``` javascript
 "result":{
 	"response": "**NOTE**"
@@ -94,17 +102,24 @@ An ISO 8601 format timestamp that corresponds to the time of when the note was c
 
 ### Context
 
+The Context describea the parent case of the note in context.contextActivies
+
 #### Example:
 ``` javascript
 
 "context": {
 	"platform": "Jisc Notes",
 	
+	"contextActivities": {
+        "parent": [
+        {
+            "id" : "https://notes.jisc.ac.uk/138371"
+        }
+		 ]
+	  },
 
     "extensions": {
 			"http://xapi.jisc.ac.uk/statementCat": "Note",
-			"http://xapi.jisc.ac.uk/mode" : "**MODE**",
-			"http://xapi.jisc.ac.uk/weighting" : **WEIGHTING**,
 			"http://xapi.jisc.ac.uk/version" : "1.0.1"
 			}
 		}
