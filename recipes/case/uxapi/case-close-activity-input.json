@@ -3,7 +3,7 @@
     "actor": {
         "objectType": "Agent",
         "account": {
-			"name": "**USERNAME**",
+			"name": "**TUTOR_ID**",
 			"homePage": "**HOMEPAGE**"
         }
     },
@@ -14,24 +14,11 @@
         }
     },
 
-
-
-"context": {
-	"platform": "**PLATFORM**",
-	
-	"instructor": {
-		"objectType": "Agent",
-		"account": {
-			"name": "**TUTOR_ID**",
-			"homePage": "**HOMEPAGE**"
-		},
-	
-
     "extensions": {
 			"http://xapi.jisc.ac.uk/statementCat": "Note",
 			"http://xapi.jisc.ac.uk/version" : "1.0.1"
 			}
 		}
-
+	
 
 }

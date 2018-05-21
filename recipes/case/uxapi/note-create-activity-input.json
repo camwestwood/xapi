@@ -8,9 +8,9 @@
         }
     },
   "verb": {
-        "id": "http://xapi.jisc.ac.uk/update",
+        "id": "http://xapi.jisc.ac.uk/create",
         "display": {
-            "en": "Update"
+            "en": "crate"
         }
     },
 
@@ -25,14 +25,15 @@
     }
    },
 
+   "result":{
+	"response": "**NOTE**"
+},
 
 "context": {
 	"platform": "**PLATFORM**",
 	
     "extensions": {
 			"http://xapi.jisc.ac.uk/statementCat": "Note",
-			"http://xapi.jisc.ac.uk/type": "**TYPE**",
-			"http://xapi.jisc.ac.uk/weighting" : **WEIGHTING**
 			"http://xapi.jisc.ac.uk/version" : "1.0.1"
 			}
 		}
