@@ -88,10 +88,10 @@ String (255)
 ## CLIENT_IP 
 ### Description
 
-Client's address location on internet. The IP address that has made the request to view the content.
+Client's address location on internet, the IP address that has made the request to view the content.
 
 ### Valid Values
-Any
+Value is a string representing an Internet Protocol address (IP address) in either IPv4 or IPv6 format.
 
 ### Format
 String (255)
