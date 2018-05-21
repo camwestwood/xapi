@@ -1,6 +1,4 @@
-# note_update Statement template
-
-[Statement Template Changes](/version_changes.md#create-note)
+# Case_Update Statement template
 
 ## Purpose
 This Statement template records a case being updated, for example the weighting being changed.
@@ -38,74 +36,51 @@ This Verb, [created](/vocabulary.md#created), describes the action of creating t
 
 
 ### Object
+Common entity identifier: [ObjectA](/common_structures.md#objecta)
+
+#### Example Example
+The object is the case is being updated
+
+
+``` javascript
+"object": {
+   "objectType": "Activity",
+   "id": "**HOMEPAGE**/**CASE_ID**",	
+   "definition": {
+   		"type": "http://xapi.jisc.ac.uk/case",			
+   		"name": { "en": "Case" }   
+    }
+   },
+
+```
+
+
+### Timestamp
+
+In create statements the Timestamp property must be set to the date and time that the case was updated.
+
+#### Example:
+
+"timestamp": "2016-02-05T10:00:00.000Z"
+
+### Context
+
+#### Entity Example:
+The Context must describe extensions that describe the updates. A mode of intervention and the weighting may also be added.
 
 #### Example:
 ``` javascript
 
 "context": {
 	"platform": "Jisc Notes",
-	
-	"instructor": {
-		"objectType": "Agent",
-		"account": {
-			"name": "**TUTOR_ID**",
-			"homePage": "**HOMEPAGE**"
-		},
-	
 
     "extensions": {
 			"http://xapi.jisc.ac.uk/statementCat": "Note",
-			"http://xapi.jisc.ac.uk/type": "**TYPE**",
-			"http://xapi.jisc.ac.uk/weighting" : **WEIGHTING**
+			"http://xapi.jisc.ac.uk/mode" : "email",
+			"http://xapi.jisc.ac.uk/weighting" : 7 ,
 			"http://xapi.jisc.ac.uk/version" : "1.0.1"
 			}
 		}
-
-
-```
-
-### Timestamp
-
-#### Example:
-
- "timestamp": "2016-02-05T10:00:00.000Z"
-
-
-
-## Result
-``` javascript
-"result":{
-	"response": "**NOTE**"
-},
-```
-
-### Context
-
-#### Example:
-``` javascript
-
-"context": {
-	"platform": "UxAPI",
-	
-	"instructor": {
-		"objectType": "Agent",
-		"account": {
-			"name": "**TUTOR_ID**",
-			"homePage": "**HOMEPAGE**"
-		}
-	
-
-    "extensions": {
-			"http://xapi.jisc.ac.uk/statementCat": "Note",
-			"http://xapi.jisc.ac.uk/mode" : "**MODE**",
-			"http://xapi.jisc.ac.uk/weighting" : **WEIGHTING**,
-			"http://xapi.jisc.ac.uk/version" : "1.0.1"
-			}
-		}
-
-
 }
 
 ```
-
-

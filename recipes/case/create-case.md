@@ -55,7 +55,7 @@ The object is the case that has been opened.
 
 ### Timestamp
 
-In create statements the timestamp property must be set to the date and time that the case was created
+In create statements the Timestamp property must be set to the date and time that the case was created
 
 #### Example:
 ``` javascript
@@ -76,7 +76,7 @@ The Context must describe the target of the case. A mode of intervention and the
 	"platform": "**PLATFORM**",
     "extensions": {
 			"http://xapi.jisc.ac.uk/statementCat": "Case",
-			"http://xapi.jisc.ac.uk/mode" : "e-mail",
+			"http://xapi.jisc.ac.uk/mode" : "email",
 			"http://xapi.jisc.ac.uk/weighting" : 3 ,
 			"http://xapi.jisc.ac.uk/version" : "1.0.1"
 
