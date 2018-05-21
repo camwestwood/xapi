@@ -1,9 +1,5 @@
 # Create note Statement template
 
-
-
-[Statement Template Changes](/version_changes.md#create-note)
-
 ## Purpose
 This Statement template records an intervention case being created by a tutor.
 
@@ -38,13 +34,12 @@ This Verb, [created](/vocabulary.md#created), describes the action of creating t
 }
 ```
 
-
 ### Object
-Common entity identifier: ObjectA, as defined on the [common structures](/common_structures.md#objecta) page.
+Common entity identifier: [ObjectA](/common_structures.md#objecta)
 
+#### Example Example
 The object is the case that has been opened.
 
-#### Example:
 ``` javascript
 
 "object": {
@@ -58,20 +53,31 @@ The object is the case that has been opened.
 
 ```
 
+### Timestamp
 
-### Context
-Common entity identifier: Context*
-
+In create statements the timestamp property must be set to the date and time that the case was created
 
 #### Example:
 ``` javascript
 
+ "timestamp": "2016-02-05T10:00:00.000Z"
+
+```
+
+
+### Context
+
+#### Entity Example:
+The Context must describe the target of the case. A mode of intervention and the weighting may also be added.
+
+
+``` javascript
 "context": {
 	"platform": "**PLATFORM**",
     "extensions": {
 			"http://xapi.jisc.ac.uk/statementCat": "Case",
-			"http://xapi.jisc.ac.uk/mode" : "**MODE**",
-			"http://xapi.jisc.ac.uk/weighting" : **WEIGHTING**,
+			"http://xapi.jisc.ac.uk/mode" : "e-mail",
+			"http://xapi.jisc.ac.uk/weighting" : 3 ,
 			"http://xapi.jisc.ac.uk/version" : "1.0.1"
 
 			"http://xapi.jisc.ac.uk/case-target" {
@@ -87,18 +93,6 @@ Common entity identifier: Context*
 			}
 		}
 
-```
-
 }
 ```
 
-### Timestamp
-
-
-
-#### Example:
-``` javascript
-
- "timestamp": "2016-02-05T10:00:00.000Z"
-
-```
