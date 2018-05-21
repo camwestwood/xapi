@@ -61,7 +61,11 @@ In create statements the Timestamp property must be set to the date and time tha
 
 #### Example:
 
+``` javascript
+
 "timestamp": "2016-02-05T10:00:00.000Z"
+
+```
 
 ### Context
 

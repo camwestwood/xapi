@@ -1,11 +1,7 @@
-# Note_Closed Statement template
-
-
-
-[Statement Template Changes](/version_changes.md#close-note)
+# Case_Closed Statement template
 
 ## Purpose
-This Statement template records a note being close by a tutor.
+This Statement template records a case being closed.
 
 ### Actor
 Common entity identifier: [ActorA](/common_structures.md#actora)
@@ -31,65 +27,58 @@ This Verb, [closed](/vocabulary.md#closed), describes the action of closing the 
 
 ``` javascript
 "verb": {
-  "id": "http://activitystrea.ms/schema/1.0/create",
+  "id": "http://xapi.jisc.ac.uk",
   "display": {
-    "en" : "logged in to"
+    "en" : "closed"
   }
 }
 ```
 
 
 ### Object
+Common entity identifier: [ObjectA](/common_structures.md#objecta)
 
+#### Example Example
+The object is the case is being closed
 
-#### Example:
 
 ``` javascript
-"context": {
-	"platform": "UxAPI",
-	
-	"instructor": {
-		"objectType": "Agent",
-		"account": {
-			"name": "**TUTOR_ID**",
-			"homePage": "**HOMEPAGE**"
-		},
-	
-
-    "extensions": {
-			"http://xapi.jisc.ac.uk/statementCat": "Note",
-			"http://xapi.jisc.ac.uk/version" : "1.0.1"
-			}
-		}
+"object": {
+   "objectType": "Activity",
+   "id": "**HOMEPAGE**/**CASE_ID**",	
+   "definition": {
+   		"type": "http://xapi.jisc.ac.uk/case",			
+   		"name": { "en": "Case" }   
+    }
+   },
 
 ```		
 
 ### Timestamp
 
+In create statements the Timestamp property must be set to the date and time that the case was closed.
+
 #### Example:
+
 ``` javascript
+
  "timestamp": "2016-02-05T10:00:00.000Z"
+
 ```
 
 ### Context
 
-#### Example:
+#### Entity Example:
+
+
+
 ``` javascript
 
 "context": {
-	"platform": "UxAPI",
-	
-	"instructor": {
-		"objectType": "Agent",
-		"account": {
-			"name": "**TUTOR_ID**",
-			"homePage": "**HOMEPAGE**"
-		},
-	
-
-    "extensions": {
-			"http://xapi.jisc.ac.uk/statementCat": "Note",
-			"http://xapi.jisc.ac.uk/version" : "1.0.1"
+	"platform": "Jisc Notes",
+	    "extensions": {
+				"http://xapi.jisc.ac.uk/statementCat": "Note",
+				"http://xapi.jisc.ac.uk/version" : "1.0.1"
 			}
 		}
 
