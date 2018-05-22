@@ -238,7 +238,7 @@ Example:
 <tr><th align="left">Label</th><td>External Content</td></tr>
 <tr><th align="left">Description</th><td>External URL</td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/externalContent">http://xapi.jisc.ac.uk/externalContent</a> </td></tr>
-<tr><th align="left">Example Subtypes</th><td><ul><li>http://jisc.xapi.jisc.ac.uk/scorm</li><li>http://jisc.xapi.jisc.ac.uk/lti</li><li>http://bblearn.xapi.jisc.ac.uk/mashup</li></ul></td></tr>
+<tr><th align="left">Example Subtypes</th><td><ul><li>http://moodle.xapi.jisc.ac.uk/scorm</li><li>http://moodle.xapi.jisc.ac.uk/lti</li><li>http://bblearn.xapi.jisc.ac.uk/mashup</li></ul></td></tr>
 </table>
 
 ### External URL
