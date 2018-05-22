@@ -7,7 +7,7 @@ This Statement template records a case being updated, for example the weighting 
 Common entity identifier: [ActorA](/common_structures.md#actora)
 
 #### Entity Example:
-The Actor entity identifies the individual that a note is created about
+The Actor entity identifies the individual that created the update
 
 ``` Javascript
 "actor": {
@@ -23,7 +23,7 @@ The Actor entity identifies the individual that a note is created about
 Common entity identifier: [VerbA](/common_structures.md#verba)
 
 #### Entity Example:
-This Verb, [created](/vocabulary.md#created), describes the action of creating the object
+This Verb, [created](/vocabulary.md#created), describes the action of updating the object
 
 ``` javascript
 "verb": {

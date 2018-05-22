@@ -39,7 +39,7 @@ This Verb, [closed](/vocabulary.md#closed), describes the action of closing the 
 Common entity identifier: [ObjectA](/common_structures.md#objecta)
 
 #### Example Example
-The object is the case is being closed
+The Object is the case is being closed
 
 
 ``` javascript

@@ -2,18 +2,17 @@ This is the input file for an note-create-activity event.
 
 Data should be supplied as a UTF-8 Tab Seperated File called notes-create.tsv
 
-# note-create-activity
+# case-create-activity
 
 
 * [USERNAME](#username) [1]
 * [HOMEPAGE](#homepage) [1]
-* [CASE_ID](#case_id) [1]
 * [TIMESTAMP](#timestamp) [1]
+* [OBJECT_ID](#item_id) [1]
 * [MODE](#mode) [1]
 * [REASON](#reason) [1]
 * [WEIGHTING](#weighting) [1]
 * [TUTOR_ID](#tutor_id) [1]
-* [STUDENT_ID](#tutor_id) [1]
 
 
 ## USERNAME 
@@ -49,7 +48,13 @@ Any
 ### Format
 String (255)
 
+## OBJECT_ID 
+### Description
 
+A unique identifier for the case being updated
+
+### Valid Values
+Any
 
 ## TIMESTAMP
 ### Description
@@ -109,18 +114,6 @@ int (1)
 ### Description
 
 id of Tutor creating activity or note
-
-
-### Valid Values
-Any
-
-### Format
-String (255)
-
-## STUDENT_ID
-### Description
-
-id of student that the case is about
 
 
 ### Valid Values

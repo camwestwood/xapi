@@ -4,12 +4,11 @@ Data should be supplied as a UTF-8 Tab Seperated File called notes-update.tsv
 
 # notes-create-activity
 
-* [USERNAME](#username) [1]
+
 * [HOMEPAGE](#homepage) [1]
 * [TIMESTAMP](#timestamp) [1]
 * [OBJECT_ID](#item_id) [1]
 * [TUTOR_ID](#tutor_id) [1]
-* [STUDENT_ID](#student_id) [1]
 * [TIMESTAMP](#timestamp) [1]
 * [NOTE](#note) [0..1]
 * [WEIGHTING](#weighting) [0..1]
@@ -19,7 +18,7 @@ Data should be supplied as a UTF-8 Tab Seperated File called notes-update.tsv
 ## OBJECT_ID 
 ### Description
 
-A unique identifier for the item being updated
+A unique identifier for the case being updated
 
 ### Valid Values
 Any

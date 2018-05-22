@@ -1,5 +1,5 @@
 {
-	"timestamp": "**TIMESTAMP**",
+	
     "actor": {
         "objectType": "Agent",
         "account": {
@@ -13,6 +13,21 @@
             "en": "Close"
         }
     },
+
+
+
+"object": {
+   "objectType": "Activity",
+   "id": "**HOMEPAGE**/**OBJECT_ID**",	
+   "definition": {
+   		"type": "http://xapi.jisc.ac.uk/case",			
+   		"name": { "en": "Case" }   
+    }
+   },
+	
+
+
+    "timestamp": "**TIMESTAMP**",
 
     "extensions": {
 			"http://xapi.jisc.ac.uk/statementCat": "Note",

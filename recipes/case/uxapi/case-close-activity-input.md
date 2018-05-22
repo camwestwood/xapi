@@ -4,7 +4,7 @@ Data should be supplied as a UTF-8 Tab Seperated File called notes_close.tsv
 
 # note-close-activity
 
-* [USERNAME](#username) [1]
+
 * [HOMEPAGE](#homepage) [1]
 * [TIMESTAMP](#timestamp) [1]
 * [TUTOR_ID](#tutor_id) [1]

@@ -26,8 +26,8 @@
    },
 
    "result":{
-	"response": "**NOTE**"
-},
+	    "response": "**NOTE**"
+    },
 
 "context": {
 	"platform": "**PLATFORM**",

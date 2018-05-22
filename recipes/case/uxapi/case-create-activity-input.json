@@ -1,9 +1,9 @@
 {
-	"timestamp": "**TIMESTAMP**",
+	
     "actor": {
         "objectType": "Agent",
         "account": {
-			"name": "**USERNAME**",
+			"name": "**TUTOR_ID**",
 			"homePage": "**HOMEPAGE**"
         }
     },
@@ -19,9 +19,11 @@
    "id": "**HOMEPAGE**/**OBJECT_ID**",	
    "definition": {
    		"type": "http://xapi.jisc.ac.uk/case",			
-   		"name": { "en": "Note" }   
+   		"name": { "en": "Case" }   
     }
    },
+
+"timestamp": "**TIMESTAMP**",
 
 "context": {
 	"platform": "**PLATFORM**",
@@ -30,9 +32,23 @@
 			"http://xapi.jisc.ac.uk/statementCat": "Note",
 			"http://xapi.jisc.ac.uk/mode" : "**MODE**",
 			"http://xapi.jisc.ac.uk/weighting" : **WEIGHTING**,
-			"http://xapi.jisc.ac.uk/version" : "1.0.1"
+            "http://xapi.jisc.ac.uk/version" : "1.0.1",
+            
+            "http://xapi.jisc.ac.uk/case-target": {
+				"actor": {
+					"objectType": "Agent",
+					"account": {
+						"name": "**USERNAME**",
+						"homePage": "**HOMEPAGE**"
+				}
+				
 			}
-		}
+
+
+			}
+        }
+        
+
 
 
 }
