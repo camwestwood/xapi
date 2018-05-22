@@ -170,7 +170,6 @@ Example:
 	"definition": {
 		"type": "http://xapi.jisc.ac.uk/vle/page",			
 		"name": { "en": "Sample page" },			   
-		"description": { "en": "sample page" }
 		"extensions": {
 				"http://xapi.jisc.ac.uk/subType": "http://bblearn.xapi.jisc.ac.uk/blankpage"
 				}
