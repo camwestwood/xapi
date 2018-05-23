@@ -8,7 +8,6 @@ Change in Version - Date - Change
 
 v1.0.1 13-04-2018, Spec Change. [Statement category added as optional](https://github.co7/jiscdev/xapi/issues/225)
 
-
 v1.0 10-05-2017, Spec Change. recipeVersion depricated, replaced with version.
 
 v1.0 3-05-2017, Documentation change [RecipeVersion is the version of the collection of all Statements, removed revision number](https://github.co7/jiscdev/xapi/issues/154)
@@ -108,9 +107,20 @@ v1.0 11-04-2017, Documentation change. [Description no longer required in Object
 
 v1.0 20-03-2017, Spec change. [Description no longer required in ObjectA.](https://github.com/jiscdev/xapi/issues/148). Removed from ObjectA in Context.
 
+#### Forum post 
+
+v1.0.1 Statement Added To Repository
+
+
+#### Quiz: Answered Questions
+
+v1.0.1 Statement Added To Repository
+
+#### Quiz: Quiz Completed
+
+v1.0.1 Statement Added To Repository
 
 ### Attendance Recipes
-
 
 
 #### Attended learning activity
@@ -183,6 +193,39 @@ Documentation change [start time and end time replace duration](https://github.c
 v1.0.1 13-04-2018, Spec Change. [Statement category added as optional](https://github.co7/jiscdev/xapi/issues/225)
 
 v1.0 25-05-2017, Spec Change. [UDD Mod ID added to courseArea](https://github.com/jiscdev/xapi/issues/165)
+
+## Library App Recipes
+
+#### Library item Accessing econtent 
+
+v1.0.1 Statement Added To Repository
+
+#### Library item Borrowed Item
+
+v1.0.1 Statement Added To Repository
+
+## Intervention/Case
+
+#### Open a case
+
+v1.0.1 Statement Added To Repository
+
+#### Update a case
+
+v1.0.1 Statement Added To Repository
+
+#### Close a case
+
+v1.0.1 Statement Added To Repository
+
+#### Create a note
+
+v1.0.1 Statement Added To Repository
+
+
+### Attendance Recipes
+
+
 
 
 # Vocabulary Changes
