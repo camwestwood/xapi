@@ -27,7 +27,7 @@ This Verb, [created](/vocabulary.md#created), describes the action of creating t
 
 ``` javascript
 "verb": {
-  "id": "http://xapi.jisc.ac.uk/create",
+  "id": "http://activitystrea.ms/schema/1.0/create",
   "display": {
     "en" : "create"
   }
