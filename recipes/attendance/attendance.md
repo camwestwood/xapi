@@ -151,7 +151,7 @@ The result.completion must be set to true if the Actor attended the event, or fa
 <td>Integer 0/1. 1 for late</td>
 	</tr>
 	<tr>
-		<td><a href="vocabulary.md#attendance-category">result.extension.http://xapi.jisc.ac.uk/attendance_category [0..1]</a></td>
+		<td><a href="vocabulary.md#attendance-category">result.extension.http://xapi.jisc.ac.uk/attendance_category</a> [0..1]</td>
 		<td>Indicates any given category for non-attendance or lateness. </td>
 		<td>String</td>
 	</tr>		
@@ -209,6 +209,11 @@ The result.completion must be set to true if the Actor attended the event, or fa
 	<td>Standard container for the UDD Course Instance ID and/or the UDD Module Instance ID which the attendance is related to.</td>
 	<td>JSON Object</td>
 </tr>
+	<tr>
+		<td><a href="vocabulary.md#StatementCategory">context.extensions.https://xapi.jisc.ac.uk/statementCat</a>[0..1]</td>
+		<td>Recommended For querying lookup. Set to "attendance" in attendance templates <br/></td>
+		<td>string</td>
+	</tr>
 </table>
 
 #### Entity Example:
@@ -224,6 +229,7 @@ The result.completion must be set to true if the Actor attended the event, or fa
 		},
 	"extensions": {
         "http://xapi.jisc.ac.uk/version": "1.0",
+		"http://xapi.jisc.ac.uk/statementCat": "Attendance",
 		"http://xapi.jisc.ac.uk/deviceLocation": {
 			"type": "Feature",
 			"geometry": {
@@ -306,6 +312,7 @@ In attendance statements the timestamp property must be set to the start time of
 		},
 		"extensions": {
 			"http://xapi.jisc.ac.uk/version": "1.0",
+			"http://xapi.jisc.ac.uk/statementCat": "Attendance",
 			"http://xapi.jisc.ac.uk/deviceLocation": {
 				"type": "Feature",
 				"geometry": {

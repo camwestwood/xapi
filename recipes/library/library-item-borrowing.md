@@ -15,10 +15,9 @@ Common entity identifier:  ActorA, as defined on the [common structures](/common
     "version": "1.0.0",
     "actor": {
         "objectType": "Agent",
-        "name": "John Smith",
         "account": {
-            "name": "PATRON_BARCODE",
-            "homePage": "HOMEPAGE" 
+            "name": "jsmith20",
+            "homePage": "http://library.universityofjisc.ac.uk/" 
         }
     },
 ```
@@ -26,14 +25,7 @@ Common entity identifier:  ActorA, as defined on the [common structures](/common
 ### Verb
 Common entity identifier: VerbA, as defined on the [common structures](/common_structures.md#verba) page.
 
-The Verb depends upon the action that is taking place. The following are allowed verbs in  borrwed statements.
-
-<table>
-<tr><td>Verb</td><td>usage</td></tr>
-<tr><td>http://activitystrea.ms/schema/1.0/borrowed</td><td>Indicates that the actor has borrowed the object.</td></tr>
-<tr><td>http://xapi.jisc.ac.uk/renewed</td><td>Indicates that the actor has renewed the object</td></tr>
-<tr><td>http://activitystrea.ms/schema/1.0/return </td><td>Indicates that the actor has returned the object.</td></tr>
-</table>
+The Verb depends [borrowed](http://activitystrea.ms/schema/1.0/borrowed) indicates that the actor has borrowed the object.
 
 
 ### Example:
@@ -49,15 +41,6 @@ The Verb depends upon the action that is taking place. The following are allowed
 
 
 ### Object
-Draft notes: While in draft the following iri's have been used: and will be added to the vocab
-
-<table>
-<td>ActivityType</td><td>usage</td>
-<tr><td>http://id.tincanapi.com/activitytype/book</td><td>Book.</td></tr>
-<tr><td>http://id.tincanapi.com/activitytype/resource </td><td>Resource</td></tr>
-<tr><td>http://xapi.jisc.ac.uk/journal</td><td>Journal</td></tr>
-</table>
-
 
 <table>
 	<tr><th>Property [cardinality]</th><th>Description</th><th>Value information</</th></tr>
@@ -87,20 +70,10 @@ Draft notes: While in draft the following iri's have been used: and will be adde
 		<td>iri</td>
 	</tr>
 	<tr>
-		<td>extensions.http://oclc.com/number</td>
+		<td>object.definition.extensions.http://oclc.com/number [0..1]</td>
 		<td>OCLC Number</td>
 		<td>string</td>
-	</tr>
-		<tr>
-		<td>extensions.http://xapi.jisc.ac.uk/dewey_code"</td>
-		<td>Dewey Decimal Code</td>
-		<td>string</td>
-	</tr>
 	<tr>
-		<td>extensions.http://xapi.jisc.ac.uk/item_location</td>
-		<td>Item locatition contains 3 properties, all of which are strings: http://id.tincanapi.com/extension/location , http://xapi.jisc.ac.uk/permanent_shelving" and http://xapi.jisc.ac.uk/temporary_shelving"</td>
-		<td>JSON Object</td>
-	</tr>
 </table>
 
 
@@ -111,28 +84,17 @@ Draft notes: While in draft the following iri's have been used: and will be adde
 	"objectType": "Activity",
 	"id": "http://library.universityofjisc.ac.uk/0123456789" 	
 	"definition": {
-		"type": "http://id.tincanapi.com/activitytype/book",	
+		"type": "http://xapi.jisc.ac.uk/library/resource",	
 		"name": { "en": "Intro to Java" },			   
-	 }
-	
-	"extensions": {
-		"http://oclc.com/number": "OCLC_NUMBER",
-		"http://xapi.jisc.ac.uk/dewey_code": "CALL_NUMBER"
-		"http://xapi.jisc.ac.uk/item_location": {
-				"http://id.tincanapi.com/extension/location": "ITEM_BRANCH_NAME",
-				"http://xapi.jisc.ac.uk/permanent_shelving": "ITEM_PERMANENT_SHELVING_LOCATION",
-				"http://xapi.jisc.ac.uk/temporary_shelving": "ITEM_TEMPORARY_SHELVING_LOCATION"
-			},
-			
+	        }
+		"extensions": {
+			"http://xapi.jisc.ac.uk/subType":"http://id.tincanapi.com/activitytype/book",
+			"http://oclc.com/number": "1234567890",
 		}
 }
 ```
 
 ### Timestamp
-
-- Event Date (timestamp)
-- Event Day Name of Week e.g. Tuesday (timestamp)
-
 An ISO 8601 format timestamp that corresponds to the time of when the item was borrowed.
 
 ### Example:
@@ -148,41 +110,15 @@ An ISO 8601 format timestamp that corresponds to the time of when the item was b
 <table>
 	<tr><th>Property [cardinality]</th><th>Description</th><th>Value information</</th></tr>
 	<tr>
-		<td>context.extensions.http://xapi.jisc.ac.uk/library_borrower_category</td>
-		<td>Borrower category, from institutional defined list</td>
-		<td>string</td>
-	</tr>
-	<tr>
-		<td>context.extensions.http://xapi.jisc.ac.uk/library_loan_policy</td>
-		<td>Loan policy, from institutional defined list</td>
-		<td>string</td>
-	</tr>
-		<tr>
-		<td>context.extensions.http://xapi.jisc.ac.uk/library_branch</td>
-		<td>Library branch</td>
-		<td>string</td>
-	</tr>
-	<tr>
-		<td>context.extensions.http://xapi.jisc.ac.uk/library_return_date</td>
-		<td>ISO 8601 date time</td>
-		<td>string</td>
-	</tr>
-	<tr>
-		<td>context.extensions.http://xapi.jisc.ac.uk/library_renew_count</td>
-		<td>Renew count</td>
-		<td>string</td>
-	</tr>
-	<tr>
 		<td>context.extensions.version [0..1]</td>
 		<td>Recommended, identifies the version of the Jisc xAPI profile found on the ReadMe page. <br/></td>
 		<td>string</td>
 	</tr>
-		<tr>
-		<td>context.extensions.statementCat version [0..1]</td>
-		<td>Recommended For querying lookup. Set to "library" in library templates <br/></td>
+	<tr>
+		<td><a href="vocabulary.md#statement-category">context.extensions.https://xapi.jisc.ac.uk/statementCat</a> [0..1]</td>
+		<td>Recommended For querying lookup. Set to "Library" in library statements <br/></td>
 		<td>string</td>
 	</tr>
-
 </table>
 
 
@@ -195,11 +131,6 @@ An ISO 8601 format timestamp that corresponds to the time of when the item was b
  
   "extensions": {
 	"http://xapi.jisc.ac.uk/statementCat": "Library",
-	"http://xapi.jisc.ac.uk/library_borrower_category": "UG", 
-    	"http://xapi.jisc.ac.uk/library_loan_policy": "short", 
-    	"http://xapi.jisc.ac.uk/library_branch" : "Main library", 
-		"http://xapi.jisc.ac.uk/library_return_date" : "2015-09-18T01:54:51.484Z"  
-	"http://xapi.jisc.ac.uk/library_renew_count" : 3 
 	"http://xapi.jisc.ac.uk/version": "1.0.1"
 	
   }
@@ -212,10 +143,9 @@ An ISO 8601 format timestamp that corresponds to the time of when the item was b
     "version": "1.0.0",
     "actor": {
         "objectType": "Agent",
-        "name": "John Smith",
         "account": {
-            "name": "PATRON_BARCODE",
-            "homePage": "HOMEPAGE" 
+            "name": "jsmith12",
+            "homePage": "http://library.universityofjisc.ac.uk/" 
         }
     },
 	"verb": {
@@ -226,34 +156,28 @@ An ISO 8601 format timestamp that corresponds to the time of when the item was b
     },
 	"object": {
 		"objectType": "Activity",
-		"id": "http://library.universityofjisc.ac.uk/0123456789"   	
+		"id": "http://library.universityofjisc.ac.uk/0123456789",
 		"definition": {
-			"type": "http://id.tincanapi.com/activitytype/book",	
-			"name": { "en": "Intro to Java" },			   
-		 }
-		
-		"extensions": {
-			"http://oclc.com/number": "OCLC_NUMBER",
-			"http://xapi.jisc.ac.uk/dewey_code": "CALL_NUMBER"
-			"http://xapi.jisc.ac.uk/item_location": {
-					"http://id.tincanapi.com/extension/location": "ITEM_BRANCH_NAME",
-					"http://xapi.jisc.ac.uk/permanent_shelving": "ITEM_PERMANENT_SHELVING_LOCATION",
-					"http://xapi.jisc.ac.uk": "ITEM_TEMPORARY_SHELVING_LOCATION"
-				},
-				
+			"type": "http://xapi.jisc.ac.uk/library/resource",
+			"name": {
+				"en": "Intro to Java"
+			},
+			"extensions": {
+				"http://xapi.jisc.ac.uk/subType": "http://id.tincanapi.com/activitytype/book",
+				"http://oclc.com/number": "ocn123456789"
 			}
+		}
 	},
+	
 	"timestamp": "2015-09-18T01:54:51.484Z",
+	
 	"context": {
  
 		"extensions": {
 			"http://xapi.jisc.ac.uk/statementCat": "library",
-			"http://xapi.jisc.ac.uk/library_borrower_category": "UG",
-			"http://xapi.jisc.ac.uk/library_loan_policy": "short", 
-			"http://xapi.jisc.ac.uk/library_branch" : "Main library", 
-			"http://xapi.jisc.ac.uk/library_renew_count" : 3 
 			"http://xapi.jisc.ac.uk/version": "1.0.1"
 	
-  }
+  		}
+  	}
 }
 ```

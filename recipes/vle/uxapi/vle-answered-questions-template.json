@@ -1,0 +1,60 @@
+{
+	"actor": {
+	"objectType": "Agent",
+	"account": {
+		"name": "**USERNAME**",
+		"homePage": "**HOMEPAGE**"
+	}
+},
+"verb": {
+	"id": "http://adlnet.gov/expapi/verbs/answered",
+	"display": {
+		"en" : "answered"
+	}
+},
+"object": {
+	"id": "**OBJECT_ID**",
+	"objectType": "Activity",
+	"definition": {
+				"interactionType": "**INTERACTION_TYPE**",
+				"type": "http://activitystrea.ms/schema/1.0/question"
+		}
+},
+
+"timestamp": "**TIMESTAMP**",
+
+"result": {
+	"response": "**SCORE_REPONSE**",
+	"completion": **COMPLETION**,
+	"score": {
+		"max": **SCORE_MAX**,
+		"min": **SCORE_MIN**,
+		"raw": **SCORE_RAW**,
+		"scaled": **SCORE_SCALED**
+		}
+	},
+
+	"context": {
+		
+			"platform": "**PLATFORM**",
+			
+			"extensions": {
+					"http://xapi.jisc.ac.uk/statementCat": "VLE",
+					"http://xapi.jisc.ac.uk/version": "1.0.1",
+					"http://xapi.jisc.ac.uk/sessionId": "**SESSION_ID**", 
+					"http://id.tincanapi.com/extension/ip-address": "**CLIENT_IP**", 
+					"http://xapi.jisc.ac.uk/courseArea": {
+						"http://xapi.jisc.ac.uk/vle_mod_id": "**VLE_MOD_ID**",
+						"http://xapi.jisc.ac.uk/uddModInstanceID": "**UDD_MOD_INST_ID**"
+					}
+				},
+				
+			"contextActivities": {
+				"parent": [
+					{
+						"id": "http://localhost/moodle/mod/quiz/view.php?id=10"
+					}
+				]
+			}
+		}
+}

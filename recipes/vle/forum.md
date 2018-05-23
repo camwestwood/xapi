@@ -8,7 +8,7 @@ This statement defines the structure and terms to record a post or reply to a fo
 Common entity identifier: [ActorA](../common_structures.md#actora)
 
 #### Entity Example:
-The actor entity describes the individual who is making the reply.
+The actor entity describes the individual who is making the post.
 
 ``` Javascript
 {
@@ -27,26 +27,26 @@ Common entity identifier: [VerbA](/common_structures.md#verba)
 
 #### Entity Example:
 
-The verb depends on whether the post starts or continues a discussion.
-
-- The verb [create](/vocabulary.md#create) denotes the action of creating an object, in this case starting a discussion on a forum.
-- [replied](/vocabulary.md#replied) denotes the action of replying, in this case replying to a discussion topic on a forum.
+The verb [create](/vocabulary.md#create) denotes the action of creating an object,
 
 ``` javascript
 "verb": {
         "id": "http://activitystrea.ms/schema/1.0/create",
         "display": {
-            "en": "created"
+            "en": "create"
         }
     },
 
-"verb": {
-        "id": "http://id.tincanapi.com/verb/replied",
-        "display": {
-            "en": "replied"
-        }
-    },
 ```
+
+### Timestamp
+
+In forum post statements the timestamp property must be set to the date and time of the post.
+
+#### Example:
+
+ "timestamp": "2016-02-05T10:00:00.000Z"
+
 
 ### Result
 The result.response entity contains plain text from the post encoded as per the encoding of the rest of the statement. There must be no markup,  HTML entity encodings or invalid characters.
@@ -67,63 +67,110 @@ The result.response entity contains plain text from the post encoded as per the 
 ```
 
 ### Object
-Common entity identifier: [ObjectD](/common_structures.md#objectd)
-
-The object definition type depends on whether the statement is about a first post initiating a thread (http://id.tincanapi.com/activitytype/forum-topic), or a reply to an existing thread (http://id.tincanapi.com/activitytype/forum-reply).
+Common entity identifier: [ObjectA](/common_structures.md#objecta)
 
 #### Entity Example:
-The object defines the discussion or thread. The first example is a first post initiating a thread, the second is a reply to an existing thread.
+The object.definition.type is http://xapi.jisc.ac.uk/forum-post
 
-Example 1: Create a discussion
  ``` javascript
 "object": {
 	"objectType": "Activity",
-	"id": "http://moodle2.bolton.ac.uk/mod/forum/discuss.php?d=19474"	
+	"id": "https://courses.alpha.jisc.ac.uk/mod/forum/discuss.php?d=19474"	
 	"definition": {
-		"type": "http://id.tincanapi.com/activitytype/forum-topic",			
-		"name": { "en": "Forum topic" },			   
+		"type": "http://xapi.jisc.ac.uk/post",			
+		"name": { "en": "Post" },			   
 	 }
     }
 }
 ```
 
-
-Example 2
- ``` javascript
-
-"object": {
-	"objectType": "Activity",
-	"id": "http://moodle2.bolton.ac.uk/mod/forum/discuss.php?d=19474"	
-	"definition": {
-		"type": "http://id.tincanapi.com/activitytype/forum-reply",			
-		"name": { "en": "Forum reply" },			   
-	 }
-    }
-}
-
-```
 
 ### Context
-The Context describes the parent forum of the thread, and optionally, the courseArea (with module identifiers).
+Common entity identifier: [ContextB](/common_structures.md#contextb)
 
 #### Entity Example:
+The Context may describe the parent forum of the thread in context.contextActivies, and optionally, the courseArea (with module identifiers).
 
 ``` javascript
 "context": {
     "platform": "Moodle",
+	
+  	"contextActivities": {
+        "parent": [
+        {
+            "id" : "https://courses.alpha.jisc.ac.uk/mod/forum/view.php?id=138371"
+        }
+		 ]
+	  },
+
     "extensions": {
-    		"http://jisc.ac.uk/forumArea": "http://moodle.data.alpha.jisc.ac.uk/mod/forum/view.php?id=138371",
+			"http://xapi.jisc.ac.uk/statementCat": "VLE",
 			
-		"http://xapi.jisc.ac.uk/courseArea": {
+			"http://xapi.jisc.ac.uk/courseArea": {
       		 	"http://xapi.jisc.ac.uk/vle_mod_id": "LA101",
-				"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0",
+				"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0"
 			},
 			
-	"http://xapi.jisc.ac.uk/sessionId":"32456891",
-	"http://id.tincanapi.com/extension/ip-address": "10.3.3.48",
-	"http://xapi.jisc.ac.uk/version" : "1.0"
+			"http://xapi.jisc.ac.uk/sessionId":"32456891",
+			"http://id.tincanapi.com/extension/ip-address": "10.3.3.48"
+			"http://xapi.jisc.ac.uk/version" : "1.0.1"
 			}
 		}
 ```
 
 #### Example
+
+``` javascript
+{
+	"timestamp": "2016-02-05T10:00:00.000Z",
+    "actor": {
+        "objectType": "Agent",
+        "account": {
+            "name": "jsmith12",
+            "homePage": "https://courses.alpha.jisc.ac.uk/moodle"
+        }
+    },
+  "verb": {
+        "id": "http://activitystrea.ms/schema/1.0/create",
+        "display": {
+            "en": "create"
+        }
+    },
+ "result":{
+        "response":"Does anybody have any good links to this subject?"
+    },
+
+"object": {
+   "objectType": "Activity",
+   "id": "https://courses.alpha.jisc.ac.uk/mod/forum/discuss.php?d=19474",	
+   "definition": {
+   	"type": "http://xapi.jisc.ac.uk/forum-post",			
+   	"name": { "en": "Forum Post" }   
+    }
+   },
+
+"context": {
+  "platform": "Moodle",
+	
+  "contextActivities": {
+        "parent": [
+        {
+            "id" : "https://courses.alpha.jisc.ac.uk/mod/forum/view.php?id=138371"
+        }
+		 ]
+	  },
+
+   "extensions": {
+	 "http://xapi.jisc.ac.uk/statementCat": "VLE",
+	 "http://xapi.jisc.ac.uk/courseArea": {
+      		 "http://xapi.jisc.ac.uk/vle_mod_id": "LA101",
+		 "http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0"
+		},
+			
+	"http://xapi.jisc.ac.uk/sessionId":"32456891",
+	"http://id.tincanapi.com/extension/ip-address": "10.3.3.48",
+	"http://xapi.jisc.ac.uk/version" : "1.0.1"
+	}
+  }
+}
+``` 

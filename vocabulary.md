@@ -68,6 +68,16 @@ The following [xAPI Verbs](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-
 <tr><th align="left">Statement Example</th><td> In <a href="/recipes/vle/assignment-graded.md#verb">Assignment Graded</a> Statement template</td></tr>
 </table>
 
+### Answered
+<table>
+<tr><th align="left">Verb</th><td>Answered</td></tr>
+<tr><th align="left">Description</th><td>  Indicates the actor replied to a question, where the object is generally an activity representing the question. result.Activity.</td></tr>
+<tr><th align="left">IRI</th><td> <a href="http://adlnet.gov/expapi/verbs/answered">http://adlnet.gov/expapi/verbs/answered</a> </td></tr>
+<tr><th align="left">Statement Example</th><td> In <a href="/recipes/answered_questions.md#verb">Answered Questions</a> Statement template</td></tr>
+</table>
+
+
+
 ### Session timed out
 <table>
 <tr><th align="left">Verb</th><td>Session timed out</td></tr>
@@ -160,7 +170,6 @@ Example:
 	"definition": {
 		"type": "http://xapi.jisc.ac.uk/vle/page",			
 		"name": { "en": "Sample page" },			   
-		"description": { "en": "sample page" }
 		"extensions": {
 				"http://xapi.jisc.ac.uk/subType": "http://bblearn.xapi.jisc.ac.uk/blankpage"
 				}
@@ -229,7 +238,7 @@ Example:
 <tr><th align="left">Label</th><td>External Content</td></tr>
 <tr><th align="left">Description</th><td>External URL</td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/externalContent">http://xapi.jisc.ac.uk/externalContent</a> </td></tr>
-<tr><th align="left">Example Subtypes</th><td><ul><li>http://jisc.xapi.jisc.ac.uk/scorm</li><li>http://jisc.xapi.jisc.ac.uk/lti</li><li>http://bblearn.xapi.jisc.ac.uk/mashup</li></ul></td></tr>
+<tr><th align="left">Example Subtypes</th><td><ul><li>http://moodle.xapi.jisc.ac.uk/scorm</li><li>http://moodle.xapi.jisc.ac.uk/lti</li><li>http://bblearn.xapi.jisc.ac.uk/mashup</li></ul></td></tr>
 </table>
 
 ### External URL
@@ -505,8 +514,20 @@ For more information, see Jisc Profile [CourseArea properties](#coursearea).
 <tr><th align="left">Description</th><td>Local identifier for the internet session</td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/sessionId">http://xapi.jisc.ac.uk/sessionId</a> </td></tr>
 <tr><th align="left">Data Type</th><td>String</td></tr>
-<tr><th align="left">Value Space</th><td>Session id as reported by the VLE</td></tr
+<tr><th align="left">Value Space</th><td>Session id as reported by the VLE</td></tr>
 <tr><th align="left">Sample Value</th><td>32456891</td></tr>
+</table>
+
+### Statement Category
+
+<table>
+<tr><th align="left">Label</th><td>Statement Category </td></tr>
+<tr><th align="left">Description</th><td>Identifies the statement category for querying lookup. </td></tr>
+<tr><th align="left">string</th><td> <a href="https://xapi.jisc.ac.uk/statementCat">https://xapi.jisc.ac.uk/statementCat</a> </td></tr>
+<tr><th align="left">Example in Statement template</th><td> <a href="recipes/vle/login.md#context">Logged in</a> </td></tr>
+<tr><th align="left">Data Type</th><td>String</td></tr>
+<tr><th align="left">Value Space</th><td>Attendance, VLE, Library </td></tr>
+<tr><th align="left">Sample Value</th><td>Attendance</td></tr>
 </table>
 
 ### Sub Type

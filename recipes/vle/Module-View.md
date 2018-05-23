@@ -56,7 +56,7 @@ Some statements may make use of subTypes of Activity Types. These sub-types are 
 	"objectType": "Activity",
 	"id": "http://moodle.data.alpha.jisc.ac.uk/mod/page/view.php?id=9" 	 	
 	"definition": {
-		"type": "http://xapi.jisc.ac.uk/vle/content",			
+		"type": "http://xapi.jisc.ac.uk/vle/page",			
 		"name": { "en": "Sample page" },			   
 	 }
 	 "extensions": {
@@ -81,7 +81,8 @@ Common entity identifier: ContextA, as defined on the [common structures](/commo
 			"http://xapi.jisc.ac.uk/vle_mod_id": "LA101",
 			"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0"
 		},
-					
+
+    "http://xapi.jisc.ac.uk/statementCat": "VLE",				
 	"http://xapi.jisc.ac.uk/sessionId": "32456891"  ,
 	"http://id.tincanapi.com/extension/ip-address": "10.3.3.48"
 	"http://xapi.jisc.ac.uk/version" : "1.0"

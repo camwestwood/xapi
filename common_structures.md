@@ -2,6 +2,14 @@
 The following sections describe common structures used across several of the Statement templates.
 Wherever a Statement template refers to a "common entity identifier", the example given in the Statement template follows or extends 1 of the structures on this page.
 
+For each common structure there is a table that lists:
+
+- the name of each property contained in the entity; whether mandatory, indicated by [1], or optional, indicated by [0..1]
+- a human-readable description of each property
+- the format of the content of the property.
+
+An example is supplied for each structure and its common variants.
+
 ## ActorA
 Common entity identifier:  ActorA
 
@@ -116,6 +124,11 @@ This pattern is used across many Statements in the Jisc Profile, but there may b
 		<td>The academic context in which this Activity is situated (e.g. umbrella course, or parent area). The properties in courseArea must be a UDD Module Instance ID or a VLE Module ID or both. More information can be found on the <a href="vocabulary.md#course-area">vocabularies page</a>.</td>
 		<td>JSON object</td>
 	<tr> 
+		<tr>
+		<td>context.extensions.https://xapi.jisc.ac.uk/statementCat [0..1]</td>
+		<td>Recommended For querying lookup. Set to category of statement. Attendance, VLE, Library <br/></td>
+		<td>string</td>
+	</tr>
 	</table>
 
 #### Example:
@@ -136,16 +149,16 @@ This pattern is used across many Statements in the Jisc Profile, but there may b
         }
 ``` 
 ### ContextB
-Common entity identifier: ContextB (Deprecated)
+Common entity identifier: ContextB
 
-The ContextB pattern is similar to ContextA, but with the addition of a contextActivities property with a ‘grouping’ property. This allows Statements to be associated to the Activity described in the Object entities as part of a larger whole.
+The ContextB pattern is similar to ContextA, but with the addition of a contextActivities property with a ‘parent’ property. This allows statements to be associated to the Activity described in the Object entities as part of a larger whole. In the Jisc profile all ContextActivities arrays must be an array with only 1 value.
 
 <table>
 	<tr><th>Property [cardinality]</th><th>Description</th><th>Value information</</th></tr>
 	<tr>
 		<td>context.contextActivities [0..1]</td>
-		<td>An optional property that holds a mandatory ‘grouping’ property. It allows Statements to be associated with the Object entity's Activity as part of a larger whole. The example shows a course within the VLE. 
-		<td>The 'grouping' property has an <a href="#objecta">ObjectA</a> as its value.</td>
+		<td>An optional property that holds a mandatory parent property. It allows statements to be associated with the Object entity's Activity as part of a larger whole. The example shows a course within the VLE. 
+		<td>The 'property' property has a object as its value, typically just the object.id.</td>
 	</tr>
 	<tr>
 		<td>context.platform [1]</td>
@@ -161,34 +174,34 @@ The ContextB pattern is similar to ContextA, but with the addition of a contextA
 		<td>context.extension.sessionId [0..1]</td>
 		<td>The VLE session ID, or a suitably hashed version of it. A value should be provided if this information is available.</td>
 		<td>string</td>
+		</tr>
 	<tr> 
 		<td>context.extension.ip-address [1]</td>
 		<td>Client's IP address. An IPv4 address is recommended.</td>
 		<td>ip address</td>
+		</tr>
 	<tr> 
 		<td>context.extension.courseArea [0..1]</td>
 		<td>Umbrella course/parent area by its an UDD Module Instance ID or VLE Module ID. More information can be found on the <a href="vocabulary.md#course-area">vocabularies page</a>..</td>
 		<td>JSON object</td>
+		</tr>
 	<tr> 
+		<tr>
+		<td>context.extensions.https://xapi.jisc.ac.uk/statementCat [0..1]</td>
+		<td>Recommended For querying lookup. Set to category of statement. Attendance, VLE, Library <br/></td>
+		<td>string</td>
+	</tr>
 </table>
 
 #### Example:
 ``` javascript
 "context": {
 	"contextActivities":{
-            "grouping":[
+            "parent":[
                 {
-                    "objectType":"Activity",
-                    "id":"http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=4",
-                    "definition":{
-                        "type":"http://xapi.jisc.ac.uk/courseArea",
-                        "name":{
-                            "en":"xAPI Basics"
-                        },
-                        "description":{
-                            "en":"xAPI Basics course for Learning Analytics enthusiasts"
-                        }
-                    }
+                    
+                    "id":"http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=4"
+                    
                 }
             ]
         },
@@ -233,7 +246,7 @@ This Object pattern describes the core attributes of Object as used in the Jisc 
 	</tr>
 	<tr>
 		<td>object.definition.type [1]</td>
-		<td>Indicates the type of the Object of the Statement. It is required and valid values are listed on the <a href="vocabulary.md#activity-types">vocabulary page</a></td>
+		<td>Indicates the type of the Object of the Statement. It is required and valid values are listed on the [vocabularies](vocabulary.md#activity-types) page.</td>
 		<td>iri</td>
 	</tr>
 	<tr>
@@ -323,3 +336,81 @@ This Object pattern describes an Activity with a due date.
 			
 		}
 ```
+## Result A
+
+The entity can include scaled, raw, min and max score, success, and response (the instructor's feedback) if known. See [score](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#Score). See the [vocabulary](vocabulary.md) page for a definition of the 'http://xapi.jisc.ac.uk/grade' extension.
+
+<table>
+	<tr><th>Property [cardinality]</th><th>Description</th><th>Data type</th></tr>
+	<tr>
+		<td>result.score.scaled [0..1]</td>
+		<td>The score related to the experience as modified by scaling and/or normalization.  If the raw value can be calculated as a percentage then the scaled may be populated as such. In the example shown, there is a 100 question quiz and a user has 25 questions correct, corresponding to a raw value of ‘25’ and a scaled value of ‘0.25’ (25%). If the data is not scaled then it should not be given and should not be zero</td>
+<td>decimal number between -1 and 1, inclusive.</td>
+	</tr>
+	<tr>
+		<td>result.score.raw [0..1]</td>
+		<td>Unmodified score. If not present then grade must be given.</td>
+<td>decimal number between min and max (if present, otherwise unrestricted), inclusive</td>
+	</tr>
+	<tr>
+		<td>result.score.min [0..1]</td>
+		<td>The lowest possible score. If known this should be given.</td>
+<td>decimal number less than max (if present)</td>
+	</tr>
+	<tr>
+		<td>result.score.max [0..1]</td>
+		<td>The highest possible score. If known this should be given.</td>
+		<td>decimal number greater than min (if present)</td>
+	</tr>
+	<tr>
+		<td>result.success [0..1] Deprecated</td>
+		<td>Indicates whether or not the attempt was successful. Deprecated</td>
+		<td>true or false</td>
+	</tr>
+	<tr>
+		<td>result.completion [0..1]</td>
+		<td>Indicates whether or not the Activity was completed.</td>
+		<td>true or false</td>
+	</tr
+	>	<tr>
+		<td>result.response [0..1]</td>
+		<td>Instructor's or automatic feedback</td>
+		<td>string (256)</td>
+	</tr>
+	<tr>
+		<td>result.extensions.http://xapi.jisc.ac.uk/grade [0..1]</td>
+		<td>Non-numerical assessment result. If not present then score.raw must be given</td>
+		<td>string (256)</td>
+	</tr>
+</table>
+
+### Example of score that can be calculated as a percentage
+
+``` javascript 
+"result": {
+        "score": {
+            "scaled": 0.25,
+            "raw": 25,
+            "min": 0,
+            "max": 100
+        },
+		
+        "success": false,
+        "completion": true,
+        "response": "Your answer should have been: The cow jumped over the moon."
+         }
+````
+
+### Example of grade result:
+
+```
+"result": {
+        "extensions": {
+        	"http://xapi.jisc.ac.uk/grade": "E"
+        },
+		
+        "success": false,
+        "completion": true,
+        "response": "Your answer should have been: The cow jumped over the moon."
+         }
+````
