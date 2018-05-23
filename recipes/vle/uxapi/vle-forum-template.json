@@ -1,0 +1,57 @@
+{
+	
+    "actor": {
+        "objectType": "Agent",
+        "account": {
+			"name": "**USERNAME**",
+			"homePage": "**HOMEPAGE**"
+        }
+    },
+  "verb": {
+        "id": "http://activitystrea.ms/schema/1.0/create",
+        "display": {
+            "en": "create"
+        }
+    },
+ "result":{
+		"response": "**RESULT**"
+    },
+
+"object": {
+   "objectType": "Activity",
+   "id": "**OBJECT_ID**",	
+   "definition": {
+   		"type": "http://xapi.jisc.ac.uk/forum-post",			
+   		"name": { "en": "Forum post" }   
+    }
+   },
+
+"timestamp": "**TIMESTAMP**",
+
+"context": {
+    "platform": "**PLATFORM**",
+	
+  	"contextActivities": {
+        "parent": [
+        {
+            "id" : "**PARENT_ID**"
+        }
+		 ]
+	  },
+
+    "extensions": {
+			"http://xapi.jisc.ac.uk/statementCat": "VLE",
+			
+			"http://xapi.jisc.ac.uk/courseArea": {
+      		 	"http://xapi.jisc.ac.uk/vle_mod_id": "**VLE_MOD**",
+				"http://xapi.jisc.ac.uk/uddModInstanceID": "**MOD_INSTANCE_ID"
+			},
+			
+			"http://xapi.jisc.ac.uk/sessionId":"**SESSION_ID**",
+			"http://id.tincanapi.com/extension/ip-address": "**CLIENT_IP**",
+			"http://xapi.jisc.ac.uk/version" : "1.0.1"
+			}
+		}
+
+
+}

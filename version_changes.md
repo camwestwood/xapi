@@ -6,6 +6,8 @@ Change in Version - Date - Change
 
 ### Logged in
 
+v1.0.1 13-04-2018, Spec Change. [Statement category added as optional](https://github.co7/jiscdev/xapi/issues/225)
+
 v1.0 10-05-2017, Spec Change. recipeVersion depricated, replaced with version.
 
 v1.0 3-05-2017, Documentation change [RecipeVersion is the version of the collection of all Statements, removed revision number](https://github.co7/jiscdev/xapi/issues/154)
@@ -14,6 +16,8 @@ v0.2 2-05-2016, Documentation change [subType supersedes ApplicationType](https:
 
 
 ### Logged out
+
+v1.0.1 13-04-2018, Spec Change. [Statement category added as optional](https://github.co7/jiscdev/xapi/issues/225)
 
 v1.0 10-05-2017, Spec Change. recipeVersion deprecated, replaced with version
 
@@ -25,6 +29,8 @@ v0.2 2-05-2016, Documentation change [subType supersedes ApplicationType](https:
 
 
 ### VLE resource viewed
+
+v1.0.1 13-04-2018, Spec Change. [Statement category added as optional](https://github.co7/jiscdev/xapi/issues/225)
 
 v1.0 06-07-2017, Spec Change. [id removed from CourseArea](https://github.com/jiscdev/xapi/issues/179)
 
@@ -60,6 +66,8 @@ v0.2 2-05-2016, Documentation change [subType supersedes ApplicationType](https:
 
 v1.1 27-11-2017, Spec change [removed result.success](https://github.com/jiscdev/xapi/issues/202) 
 
+v1.0.1 13-04-2018, Spec Change. [Statement category added as optional](https://github.co7/jiscdev/xapi/issues/225)
+
 v1.0.1 21-11-2017, Spec change [clear about what is and isn't allowed in result entity](https://github.com/jiscdev/xapi/issues/200) 
 
 v1.0 06-07-2017, Spec Change. [id removed from CourseArea](https://github.com/jiscdev/xapi/issues/179)
@@ -86,6 +94,10 @@ v1.1 27-11-2017, Spec change [added  sequencenumber extension](https://github.co
 
 v1.1 22-11-2017, Spec Change. [Removed result from assignment submitted statement](https://github.com/jiscdev/xapi/issues/201)
 
+v1.0.1 13-04-2018, Spec Change. [Statement category added as optional](https://github.co7/jiscdev/xapi/issues/225)
+
+v1.0.1 27-11-2017, Doc Change. [Documentation to reflect removel of submitted in 1.1](https://github.com/jiscdev/xapi/issues/201)
+
 v1.0 06-07-2017, Spec Change. [id removed from courseArea](https://github.com/jiscdev/xapi/issues/179)
 
 v1.0 20-06-2017, Spec Change. [Context.ContextActivities removed. Template uses ContextA instead of A](https://github.com/jiscdev/xapi/issues/168)
@@ -102,13 +114,25 @@ v1.0 11-04-2017, Documentation change. [Description no longer required in Object
 
 v1.0 20-03-2017, Spec change. [Description no longer required in ObjectA.](https://github.com/jiscdev/xapi/issues/148). Removed from ObjectA in Context.
 
+#### Forum post 
+
+v1.0.1 Statement Added To Repository
+
+
+#### Quiz: Answered Questions
+
+v1.0.1 Statement Added To Repository
+
+#### Quiz: Quiz Completed
+
+v1.0.1 Statement Added To Repository
 
 ### Attendance Recipes
 
 
-
 #### Attended learning activity
 
+v1.0.1 13-04-2018, Spec Change. [Statement category added as optional](https://github.co7/jiscdev/xapi/issues/225)
 
 v1.0.1 21-11-2017, Spec change [timetable, start and end times are manditory or recommended](https://github.com/jiscdev/xapi/issues/198) 
 
@@ -136,7 +160,6 @@ v1.0 3-05-2017, Documentation Change [RecipeVersion is the version of the collec
 
 
 v1.0 10-04-2017
-
 Spec change [Most context.extensions moved to object.extensions](https://github.com/jiscdev/xapi/issues/151)
 
 Spec change [event_late and activity_category renamed to activity_late and attendance_category](https://github.com/jiscdev/xapi/issues/151)
@@ -174,7 +197,42 @@ Documentation change [start time and end time replace duration](https://github.c
 
 ### Mobile App Content Viewed 
 
+v1.0.1 13-04-2018, Spec Change. [Statement category added as optional](https://github.co7/jiscdev/xapi/issues/225)
+
 v1.0 25-05-2017, Spec Change. [UDD Mod ID added to courseArea](https://github.com/jiscdev/xapi/issues/165)
+
+## Library App Recipes
+
+#### Library item Accessing econtent 
+
+v1.0.1 Statement Added To Repository
+
+#### Library item Borrowed Item
+
+v1.0.1 Statement Added To Repository
+
+## Intervention/Case
+
+#### Open a case
+
+v1.0.1 Statement Added To Repository
+
+#### Update a case
+
+v1.0.1 Statement Added To Repository
+
+#### Close a case
+
+v1.0.1 Statement Added To Repository
+
+#### Create a note
+
+v1.0.1 Statement Added To Repository
+
+
+### Attendance Recipes
+
+
 
 
 # Vocabulary Changes

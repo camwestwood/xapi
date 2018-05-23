@@ -1,0 +1,19 @@
+USERNAME	HOMEPAGE	TIMESTAMP	CLIENT_IP	INTERACTION_TYPE	SESSION_ID	OBJECT_ID	OBJECT_NAME	VLE_MOD_ID	UDD_MOD_INST_ID	SCORE_SCALED	SCORE_RAW	SCORE_MIN	SCORE_MAX 	SCORE_RESPONSE
+STUDENT_12345	https://courses.alpha.jisc.ac.uk/moodle	2017-10-24T23:55:00+01:00	10.3.3.48	true-false	32456891	http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=4	xapi Assignment	VLEMOD_123	UDDMOD_123	0.74	74	0	100	An enlightening piece of work
+STUDENT_12346	https://courses.alpha.jisc.ac.uk/moodle	2017-10-24T23:55:00+01:01	10.3.3.49	fill-in	32456892	http://moodle.jisc.ac.uk/mod/assign/view.php?id=698116	MOD_123 Post session exericise	VLEMOD_124		0.8	80	0	100	
+STUDENT_12347	https://courses.alpha.jisc.ac.uk/moodle	2017-10-24T23:55:00+01:02	10.3.3.50	choice	32456893	http://moodle.jisc.ac.uk/mod/assign/view.php?id=698117	Financial mathematics excel test	VLEMOD_125	UDDMOD_125	0.65	65	0	100	
+STUDENT_12348	https://courses.alpha.jisc.ac.uk/moodle	2017-10-24T23:55:00+01:03	10.3.3.51	long-fill-in	32456894	http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=8	Organic chemistry review	VLEMOD_126		0.4	40	0	100	Please review lecture notes
+STUDENT_12349	https://courses.alpha.jisc.ac.uk/moodle	2017-10-24T23:55:00+01:04	10.3.3.52	matching	32456895	http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=5	xapi Assignment	VLEMOD_127		0.9	90	0	100	
+STUDENT_12350	https://courses.alpha.jisc.ac.uk/moodle	2017-10-24T23:55:00+01:05	10.3.3.53	performance	32456896	http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=6	Statistics in python quiz	VLEMOD_128	UDDMOD_128	0.88	88	0	100	
+STUDENT_12351	https://courses.alpha.jisc.ac.uk/moodle	2017-10-24T23:55:00+01:06	10.3.3.54	sequencing	32456897	http://moodle.jisc.ac.uk/mod/assign/view.php?id=698118	MOD_123 Post session exericise	VLEMOD_129	UDDMOD_129	0.72	72	0	100	
+STUDENT_12352	https://courses.alpha.jisc.ac.uk/moodle	2017-10-24T23:55:00+01:07	10.3.3.55	numeric	32456898	http://moodle.jisc.ac.uk/mod/assign/view.php?id=698119	Organic chemistry review	VLEMOD_130		0.56	56	0	100	
+														
+														
+														
+														
+														
+														
+														
+														
+														
+				 										

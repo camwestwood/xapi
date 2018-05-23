@@ -19,7 +19,6 @@ The Actor entity describes the individual whose work has been graded.
 {
     "actor": {
         "objectType": "Agent",
-        "name": "John Smith",
         "account": {
             "name": "jsmith12",
             "homePage": "https://courses.alpha.jisc.ac.uk/moodle"
@@ -44,10 +43,9 @@ The Verb [scored](/vocabulary.md#verbs) describes the student receiving a score 
 ``` 
 
 ### Result
-The Result entity is mandatory for this type of statement. The entity can include scaled, raw, min and max score, success, and response (the instructor's feedback) if known. See [score](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#Score). See the [vocabulary](vocabulary.md) page for a definition of the 'http://xapi.jisc.ac.uk/grade' extension.
+Common entity identifier: ResultA [common structures](/common_structures.md#resulta) page.
 
-* Either a raw score or grade must be given.  
-* If unknown then a the property should not be set at all, unknown properties should not be set to zero. 
+The result entity is required for this kind of statement.
 
 <table>
 	<tr><th>Property [cardinality]</th><th>Description</th><th>Data type</th></tr>
@@ -90,13 +88,10 @@ The Result entity is mandatory for this type of statement. The entity can includ
 
 ### Example:
 
-```
+``` javascript 
 "result": {
-        "score": {
-            "scaled": 0.25,
-            "raw": 25,
-            "min": 0,
-            "max": 100
+        "extensions": {
+        	"http://xapi.jisc.ac.uk/grade": "E"
         },
 		
         "completion": true,
@@ -105,10 +100,7 @@ The Result entity is mandatory for this type of statement. The entity can includ
 ````
 
 ### Object
-Common entity identifier: ObjectB, as defined on the [common structures](/common_structures.md#objectb) page.
-
-The Object defines the Activity that has been evaluated. [Examples of valid object.definition vocabulary on Activity objectTypes](/common_structures.md#object) can be found on the vocab page.
-
+Common entity identifier: uses a refinement of ObjectB, as defined on the [common structures](/common_structures.md#objectb) page.
 
 ### Example:
 ``` javascript
@@ -159,9 +151,14 @@ The Context for assignment graded is based on ContextA on the [common structures
 </tr>
 <tr> 
 	<td>context.extension.courseArea [0..1]</td>
-	<td>Umbrella course/parent area by its an UDD Module Instance ID or VLE Module ID. More information can be found on the <a href="vocabulary.md#course-area">vocabularies page</a>..</td>
+	<td>Umbrella course/parent area by its an UDD Module Instance ID or VLE Module ID. More information can be found on the [vocabularies page](/vocabulary.md#coursearea).</td>
 	<td>JSON object</td>
 <tr> 
+	<tr>
+		<td><a href="vocabulary.md#statement-category">context.extensions.https://xapi.jisc.ac.uk/statementCat</a> [0..1]</td>
+		<td>Recommended For querying lookup. Set to "VLE" in vle statements <br/></td>
+		<td>string</td>
+	</tr>
 </table>
 
 ### Example
@@ -174,7 +171,7 @@ The Context for assignment graded is based on ContextA on the [common structures
             "name": "Ray Keenan",
             "account": {
                 "name": "RKeenan",
-                "homePage": "http://localhost/moodle"
+                "homePage": "https://courses.alpha.jisc.ac.uk/moodle"
             },
         
     "platform": "Moodle"
@@ -185,6 +182,7 @@ The Context for assignment graded is based on ContextA on the [common structures
 			"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0"
              },
 				
+		"http://xapi.jisc.ac.uk/statementCat": "VLE",		
 		"http://xapi.jisc.ac.uk/sessionId": "32456891" ,
 		"http://id.tincanapi.com/extension/ip-address": "10.3.3.48"
 		"http://xapi.jisc.ac.uk/version" : "1.0"
