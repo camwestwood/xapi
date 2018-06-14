@@ -29,7 +29,7 @@ The actor entity describes the individual who answered the question.
 Common entity identifier: [VerbA](/common_structures.md#verba)
 
 #### Entity Example:
-The Verb [answered](/vocabulary.md#verbs#answered). It denotes the action of the Actor answering a question, where the Object is generally an activity representing the question or questions.
+The Verb [answered](/vocabulary.md#answered). It denotes the action of the Actor answering a question, where the Object is generally an activity representing the question or questions.
 
 ### Example:
 
@@ -69,7 +69,7 @@ The Correct Responses Pattern contains an array of response patterns. A learner'
 	</tr>
 	<tr>
 		<td>object.definition.type [1]</td>
-		<td>Indicates the type of the Object of the Statement. It is required and valid values are listed on the [vocabulary page](vocabulary.md#activity-types).</td>
+		<td>Indicates the type of the Object of the Statement. It is required and valid values are listed on the vocabulary page.</td>
 		<td>iri</td>
 	</tr>
 	<tr>
