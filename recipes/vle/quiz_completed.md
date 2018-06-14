@@ -161,6 +161,6 @@ Common entity identifier: ContextA, as defined on the [common structures](/commo
         "http://xapi.jisc.ac.uk/sessionId": "Iye9OqwM9O"
       },
       "platform": "Moodle"
-    },
+    }
   }
-}```
+```
