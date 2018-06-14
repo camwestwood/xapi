@@ -89,15 +89,14 @@ The Correct Responses Pattern contains an array of response patterns. A learner'
 
 ``` javascript
 "object": {
-  "id": "http://localhost/moodle/mod/quiz/view.php?id=10",
   "objectType": "Activity",
+  "id": "http://localhost/moodle/mod/quiz/view.php?id=10",
   "definition": {
+		"type": "http://activitystrea.ms/schema/1.0/question"
 		"interactionType": "true-false",
 		"description": {
 			"en": "Greener is a color"
 		},
-
-		"type": "http://activitystrea.ms/schema/1.0/question"
 	}
 
 }
