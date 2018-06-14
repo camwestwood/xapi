@@ -77,8 +77,8 @@ The object.definition.type is http://xapi.jisc.ac.uk/forum-post
 	"objectType": "Activity",
 	"id": "https://courses.alpha.jisc.ac.uk/mod/forum/discuss.php?d=19474"	
 	"definition": {
-		"type": "http://xapi.jisc.ac.uk/post",			
-		"name": { "en": "Post" },			   
+		"type": "http://xapi.jisc.ac.uk/forum-post",			
+		"name": { "en": "Forum Post" },			   
 	 }
     }
 }
