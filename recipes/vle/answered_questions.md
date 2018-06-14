@@ -92,11 +92,11 @@ The Correct Responses Pattern contains an array of response patterns. A learner'
   "objectType": "Activity",
   "id": "http://localhost/moodle/mod/quiz/view.php?id=10",
   "definition": {
-		"type": "http://activitystrea.ms/schema/1.0/question"
+		"type": "http://activitystrea.ms/schema/1.0/question",
 		"interactionType": "true-false",
 		"description": {
 			"en": "Greener is a color"
-		},
+		}
 	}
 
 }
