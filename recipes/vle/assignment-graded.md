@@ -43,7 +43,7 @@ The Verb [scored](/vocabulary.md#verbs) describes the student receiving a score 
 ``` 
 
 ### Result
-Common entity identifier: ResultA [common structures](/common_structures.md#resulta) page.
+Common entity identifier: ResultA [common structures](/common_structures.md#result-a) page.
 
 The result entity is required for this kind of statement.
 
