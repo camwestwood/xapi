@@ -104,7 +104,8 @@ The Correct Responses Pattern contains an array of response patterns. A learner'
 ```
 
 ### Result
-Common entity identifier: ResultA [common structures](/common_structures.md#resulta) page.
+
+Common entity identifier: ResultA [common structures](/common_structures.md#result-a) page.
 
 ### Example
 
