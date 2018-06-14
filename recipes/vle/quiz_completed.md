@@ -47,7 +47,7 @@ In quiz completed statements the timestamp property must be set to the date and 
  "timestamp": "2016-02-05T10:00:00.000Z"
 
 ### Result
-Common entity identifier: ResultA [common structures](/common_structures.md#resulta) page.
+Common entity identifier: ResultA [common structures](/common_structures.md#result-a) page.
 
 ### Example
 
