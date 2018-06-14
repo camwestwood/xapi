@@ -8,7 +8,7 @@ Use this template to create a specific Statement for a student answering 1 or mo
 ## Definition
 
 ### Actor
-Common entity identifier: [ActorA](../common_structures.md#actora)
+Common entity identifier: [ActorA](/common_structures.md#actora)
 
 #### Entity properties:
 The actor entity describes the individual who answered the question.
