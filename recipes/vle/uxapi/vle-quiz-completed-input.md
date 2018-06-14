@@ -163,16 +163,6 @@ Decimal number greater than min
 ### Format
 single
 
-## CLIENT_IP 
-### Description
-Client's IP address. An IPv4 address is recommended.
-
-### Valid Values
-Any
-
-### Format
-String (256)
-
 ## SESSION_ID 
 ### Description
 
@@ -182,4 +172,14 @@ The VLE session ID, or a suitably hashed version of it. A value should be provid
 Any
 
 ### Format
-String (256)s
+String (256)
+
+## CLIENT_IP 
+### Description
+Client's IP address. An IPv4 address is recommended.
+
+### Valid Values
+Any
+
+### Format
+String (256)
