@@ -24,7 +24,7 @@
 "timestamp": "**TIMESTAMP**",
 
 "result": {
-	"response": "**SCORE_REPONSE**",
+	"response": "**SCORE_RESPONSE**",
 	"completion": **COMPLETION**,
 	"score": {
 		"max": **SCORE_MAX**,
