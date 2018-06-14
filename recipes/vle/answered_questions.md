@@ -92,13 +92,12 @@ The Correct Responses Pattern contains an array of response patterns. A learner'
   "objectType": "Activity",
   "id": "http://localhost/moodle/mod/quiz/view.php?id=10",
   "definition": {
-		"type": "http://activitystrea.ms/schema/1.0/question",
-		"interactionType": "true-false",
-		"description": {
-			"en": "Greener is a color"
+	"type": "http://activitystrea.ms/schema/1.0/question",
+	"interactionType": "true-false",
+	"description": {
+		"en": "Greener is a color"
 		}
 	}
-
 }
 
 ```
@@ -135,20 +134,20 @@ The Context may describe the parent quiz of the question in context.contextActiv
       "platform": "Moodle",
       
       "extensions": {
-				"http://xapi.jisc.ac.uk/statementCat": "VLE",
-				"http://xapi.jisc.ac.uk/version": "x-2017-05-16",
-				"http://xapi.jisc.ac.uk/sessionId": "Iye9OqwM9O", 
+	"http://xapi.jisc.ac.uk/statementCat": "VLE",
+	"http://xapi.jisc.ac.uk/version": "x-2017-05-16",
+	"http://xapi.jisc.ac.uk/sessionId": "Iye9OqwM9O", 
         "http://id.tincanapi.com/extension/ip-address": "193.24.14.15", 
         "http://xapi.jisc.ac.uk/courseArea": {
-						"http://xapi.jisc.ac.uk/vle_mod_id": "Test1"
+		"http://xapi.jisc.ac.uk/vle_mod_id": "Test1"
         	}
         },
         
       "contextActivities": {
-        "parent": [
-          {
-            "id": "http://localhost/moodle/mod/quiz/view.php?id=10"
-          }
+        "parent": [ 
+		{
+          	"id": "http://localhost/moodle/mod/quiz/view.php?id=10"
+          	}
         ]
       }
     },
@@ -159,7 +158,7 @@ The Context may describe the parent quiz of the question in context.contextActiv
 ``` javascript
 
 {
-	"actor": {
+"actor": {
 	"objectType": "Agent",
 	"account": {
 		"name": "jsmith12",
@@ -176,42 +175,41 @@ The Context may describe the parent quiz of the question in context.contextActiv
 	"id": "http://localhost/moodle/mod/quiz/view.php?id=10",
 	"objectType": "Activity",
 	"definition": {
-				"interactionType": "true-false",
-				"type": "http://activitystrea.ms/schema/1.0/question"
-		}
+		"interactionType": "true-false",
+		"type": "http://activitystrea.ms/schema/1.0/question"
+	}
 },
 
  "result": {
-			"response": "true",
-			"completion": true,
-			"success": false,
-			"score": {
-				"max": 1
-			}
-		},
+	"response": "true",
+	"completion": true,
+	"success": false,
+	"score": {
+		"max": 1
+	}
+},
 
-	"context": {
-		
-			"platform": "Moodle",
-			
-			"extensions": {
-					"http://xapi.jisc.ac.uk/statementCat": "VLE",
-					"http://xapi.jisc.ac.uk/version": "x-2017-05-16",
-					"http://xapi.jisc.ac.uk/sessionId": "Iye9OqwM9O", 
-					"http://id.tincanapi.com/extension/ip-address": "193.24.14.15", 
-					"http://xapi.jisc.ac.uk/courseArea": {
-							"http://xapi.jisc.ac.uk/vle_mod_id": "Test1"
-						}
-				},
-				
-			"contextActivities": {
-				"parent": [
-					{
-						"id": "http://localhost/moodle/mod/quiz/view.php?id=10"
-					}
-				]
+"context": {
+       "platform": "Moodle",
+	    
+	"extensions": {
+	    	"http://xapi.jisc.ac.uk/statementCat": "VLE",
+		"http://xapi.jisc.ac.uk/version": "x-2017-05-16",
+		"http://xapi.jisc.ac.uk/sessionId": "Iye9OqwM9O", 
+		"http://id.tincanapi.com/extension/ip-address": "193.24.14.15", 
+		"http://xapi.jisc.ac.uk/courseArea": {
+			"http://xapi.jisc.ac.uk/vle_mod_id": "Test1"
 			}
+	},
+				
+	"contextActivities": {
+	        "parent": [
+	        {
+		"id": "http://localhost/moodle/mod/quiz/view.php?id=10"
 		}
+		]
+	}
+}
 }
 
 ```
