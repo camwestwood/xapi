@@ -5,7 +5,7 @@ This statement defines the structure and terms to record a post or reply to a fo
 
 ### Actor
 
-Common entity identifier: [ActorA](../common_structures.md#actora)
+Common entity identifier: [ActorA](/common_structures.md#actora)
 
 #### Entity Example:
 The actor entity describes the individual who is making the post.
