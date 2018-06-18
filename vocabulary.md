@@ -549,7 +549,7 @@ For more information, see Jisc Profile [CourseArea properties](#coursearea).
 </td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/version">http://xapi.jisc.ac.uk/version</a> </td></tr>
 <tr><th align="left">Data Type</th><td>String</td></tr>
-<tr><th align="left">Value Space</th><td>A version number as specified on homepage the Github homepage for the Jisc xAPI, for example "1.0".</td></tr>
+<tr><th align="left">Value Space</th><td>A version number as specified on homepage the Github homepage for the Jisc xAPI, for example "1.0.1".</td></tr>
 <tr><th align="left">Sample Value</th><td>1.0</td></tr>
 </table>
 

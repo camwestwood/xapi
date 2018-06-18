@@ -228,7 +228,7 @@ The result.completion must be set to true if the Actor attended the event, or fa
             }
 		},
 	"extensions": {
-        "http://xapi.jisc.ac.uk/version": "1.0",
+        "http://xapi.jisc.ac.uk/version": "1.0.1",
 		"http://xapi.jisc.ac.uk/statementCat": "Attendance",
 		"http://xapi.jisc.ac.uk/deviceLocation": {
 			"type": "Feature",
@@ -311,7 +311,7 @@ In attendance statements the timestamp property must be set to the start time of
 			}
 		},
 		"extensions": {
-			"http://xapi.jisc.ac.uk/version": "1.0",
+			"http://xapi.jisc.ac.uk/version": "1.0.1",
 			"http://xapi.jisc.ac.uk/statementCat": "Attendance",
 			"http://xapi.jisc.ac.uk/deviceLocation": {
 				"type": "Feature",
