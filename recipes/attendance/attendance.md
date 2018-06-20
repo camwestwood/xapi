@@ -146,12 +146,12 @@ The result.completion must be set to true if the Actor attended the event, or fa
 		<td>Boolean</td>
 	</tr>
 	<tr>
-		<td><a href="vocabulary.md#attendance-late">result.extension.http://xapi.jisc.ac.uk/attendance_late</a> [0..1]</td>
+		<td><a href="vocabulary.md#attendance-late">result.extensions.http://xapi.jisc.ac.uk/attendance_late</a> [0..1]</td>
 		<td>When set to 1, indicates the person was recorded as being late. Not used when result.completion is false.</td>
 <td>Integer 0/1. 1 for late</td>
 	</tr>
 	<tr>
-		<td><a href="vocabulary.md#attendance-category">result.extension.http://xapi.jisc.ac.uk/attendance_category</a> [0..1]</td>
+		<td><a href="vocabulary.md#attendance-category">result.extensions.http://xapi.jisc.ac.uk/attendance_category</a> [0..1]</td>
 		<td>Indicates any given category for non-attendance or lateness. </td>
 		<td>String</td>
 	</tr>		
