@@ -17,6 +17,9 @@
 	"objectType": "Activity",
 	"definition": {
 		"interactionType": "**INTERACTION_TYPE**",
+		"name": {
+			"en": "**OBJECT_NAME**"
+			},
 		"type": "http://activitystrea.ms/schema/1.0/question"
 	}
 },

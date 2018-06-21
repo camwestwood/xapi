@@ -94,8 +94,8 @@ The Correct Responses Pattern contains an array of response patterns. A learner'
   "definition": {
 	"type": "http://activitystrea.ms/schema/1.0/question",
 	"interactionType": "true-false",
-	"description": {
-		"en": "Greener is a color"
+	"name": {
+		"en": "colour question"
 		}
 	}
 }
