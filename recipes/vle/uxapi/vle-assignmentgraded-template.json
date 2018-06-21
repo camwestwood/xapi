@@ -20,7 +20,6 @@
 			"min": "**SCORE_MIN**",
 			"max": "**SCORE_MAX**"
 		},
-		"success": false,
 		"completion": true,
 		"response": "**SCORE_RESPONSE**",
 		"extensions": {
