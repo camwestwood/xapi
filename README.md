@@ -63,11 +63,12 @@ Bug reports can be directed to the [Moodle](https://github.com/jiscdev/jisc-mood
 
 ## Setting and Reaching Targets
 <table>
-<tr><td>Statement Template</td><td>JSON example</td><td>Input TSV definitions</td><td>JSON Template</td></tr>  
-<tr><td><a href = "recipes/studyapps/target-set.md">Set a target</a></td>  <td><a href = "recipes/studyapps/target-set.md.md#example">Set a target </a></td><td></td><td></td></tr>
-<tr><td><a href = "recipes/studyapps/target-recording-activity.md">Record an activity against a target</a> </td><td><a href = "recipes/studyapps/target-recording-activity.md#example">Record an activity against a target</a></td><td></td><td></td></tr>
-<tr><td><a href = "recipes/studyapps/target-reached-completed.md">Reach a target</a></td><td><a href = "recipes/studyapps/target-reached-completed.md#example">Reach a target</a> </td><td></td><td></td></tr>
-<tr><td><a href = "recipes/studyapps/target-update.md">Post an update</a></td><td><a href = "recipes/studyapps/target-update.md#example">Post an update</a> </td><td></td><td></td></tr> 
+<tr><td>Statement Template</td><td>Input TSV definitions</td><td>JSON Template</td></tr>  
+
+<tr><td><a href = "recipes/studyapps/target-set.md">Set a target</a></td> <td></td> <td></td></tr>
+<tr><td><a href = "recipes/studyapps/target-recording-activity.md">Record an activity against a target</a> </td><td></td><td></td></tr>
+<tr><td><a href = "recipes/studyapps/target-reached-completed.md">Reach a target</a></td><td></td><td></td></tr>
+<tr><td><a href = "recipes/studyapps/target-update.md">Post an update</a></td><td> </td><td></td></tr> 
 </table>
 
 ## Presence and Attendance
