@@ -39,7 +39,9 @@ These are platform independent Statements related to Virtual Learning Enviroment
 
 ### All VLE Statement examples
 
-The following JSON samples are recent examples generated from plugins. Bug reports can be directed to the [Moodle](https://github.com/jiscdev/jisc-moodle-xapi-plugin) or [BlackBoard](https://github.com/jiscdev/blackboard-xapi-plugin) Github repository.
+The following JSON samples are recent examples generated from plugins. They may not match the specification.
+
+Bug reports can be directed to the [Moodle](https://github.com/jiscdev/jisc-moodle-xapi-plugin) or [BlackBoard](https://github.com/jiscdev/blackboard-xapi-plugin) Github repository.
 
 * [Blackboard VLE samples](vle/blackboard/Examples.md)
 * [Moodle VLE samples](vle/moodle/examples.md)
