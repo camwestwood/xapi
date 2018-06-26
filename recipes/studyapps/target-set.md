@@ -92,11 +92,10 @@ The object should be the target that has been set. Target options are set in the
 		"definition": {
 			"type": "https://xapi.jisc.ac.uk/target",
 			"name": {
-				"en": "Target"
+				"en": "Reading for Exams"
 			},
 			"extensions": {
 				"http://xapi.jisc.ac.uk/uddModInstanceID": "2016.sem1.psy101",
-				"http://xapi.jisc.ac.uk/target_name": "Reading for exams ",
 				"http://xapi.jisc.ac.uk/target_catergory": "Reading",
 				"http://xapi.jisc.ac.uk/target_value": "120",
 				"http://xapi.jisc.ac.uk/target_time_period": "Week"
