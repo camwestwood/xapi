@@ -1,8 +1,8 @@
-# Mobileg app. Post an update to a target.
+# Post an update to a target.
 
 
 ## Purpose
-This recipe defines the structure and terms to record the experience of updating a target on the Mobile app.
+This recipe defines the structure and terms to record the experience of updating a target.
 
 ### Actor
 Common entity identifier: [ActorA](/common_structures.md#actora)
