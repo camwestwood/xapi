@@ -144,7 +144,7 @@ This pattern is used across many Statements in the Jisc Profile, but there may b
 					
 		"http://xapi.jisc.ac.uk/sessionId": "32456891"  ,
 		"http://id.tincanapi.com/extension/ip-address": "10.3.3.48"
-		"http://xapi.jisc.ac.uk/version" : "1.0"
+		"http://xapi.jisc.ac.uk/version" : "1.0.1"
 			}
         }
 ``` 
@@ -216,7 +216,7 @@ The ContextB pattern is similar to ContextA, but with the addition of a contextA
 			
  		"http://xapi.jisc.ac.uk/sessionId":"32456891",
         "http://id.tincanapi.com/extension/ip-address": "10.3.3.48"
-		"http://xapi.jisc.ac.uk/version" : "1.0"
+		"http://xapi.jisc.ac.uk/version" : "1.0.1"
 			}
 		}
 ```

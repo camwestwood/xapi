@@ -8,7 +8,7 @@ Use this template to create a specific Statement for a student answering 1 or mo
 ## Definition
 
 ### Actor
-Common entity identifier: [ActorA](../common_structures.md#actora)
+Common entity identifier: [ActorA](/common_structures.md#actora)
 
 #### Entity properties:
 The actor entity describes the individual who answered the question.
@@ -29,7 +29,7 @@ The actor entity describes the individual who answered the question.
 Common entity identifier: [VerbA](/common_structures.md#verba)
 
 #### Entity Example:
-The Verb [answered](/vocabulary.md#verbs#answered). It denotes the action of the Actor answering a question, where the Object is generally an activity representing the question or questions.
+The Verb [answered](/vocabulary.md#answered). It denotes the action of the Actor answering a question, where the Object is generally an activity representing the question or questions.
 
 ### Example:
 
@@ -69,7 +69,7 @@ The Correct Responses Pattern contains an array of response patterns. A learner'
 	</tr>
 	<tr>
 		<td>object.definition.type [1]</td>
-		<td>Indicates the type of the Object of the Statement. It is required and valid values are listed on the [vocabulary page](vocabulary.md#activity-types).</td>
+		<td>Indicates the type of the Object of the Statement. It is required and valid values are listed on the vocabulary page.</td>
 		<td>iri</td>
 	</tr>
 	<tr>
@@ -89,23 +89,22 @@ The Correct Responses Pattern contains an array of response patterns. A learner'
 
 ``` javascript
 "object": {
-  "id": "http://localhost/moodle/mod/quiz/view.php?id=10",
   "objectType": "Activity",
+  "id": "http://localhost/moodle/mod/quiz/view.php?id=10",
   "definition": {
-		"interactionType": "true-false",
-		"description": {
-			"en": "Greener is a color"
-		},
-
-		"type": "http://activitystrea.ms/schema/1.0/question"
+	"type": "http://activitystrea.ms/schema/1.0/question",
+	"interactionType": "true-false",
+	"name": {
+		"en": "colour question"
+		}
 	}
-
 }
 
 ```
 
 ### Result
-Common entity identifier: ResultA [common structures](/common_structures.md#resulta) page.
+
+Common entity identifier: ResultA [common structures](/common_structures.md#result-a) page.
 
 ### Example
 
@@ -135,20 +134,20 @@ The Context may describe the parent quiz of the question in context.contextActiv
       "platform": "Moodle",
       
       "extensions": {
-				"http://xapi.jisc.ac.uk/statementCat": "VLE",
-				"http://xapi.jisc.ac.uk/version": "x-2017-05-16",
-				"http://xapi.jisc.ac.uk/sessionId": "Iye9OqwM9O", 
+	"http://xapi.jisc.ac.uk/statementCat": "VLE",
+	"http://xapi.jisc.ac.uk/version": "x-2017-05-16",
+	"http://xapi.jisc.ac.uk/sessionId": "Iye9OqwM9O", 
         "http://id.tincanapi.com/extension/ip-address": "193.24.14.15", 
         "http://xapi.jisc.ac.uk/courseArea": {
-						"http://xapi.jisc.ac.uk/vle_mod_id": "Test1"
+		"http://xapi.jisc.ac.uk/vle_mod_id": "Test1"
         	}
         },
         
       "contextActivities": {
-        "parent": [
-          {
-            "id": "http://localhost/moodle/mod/quiz/view.php?id=10"
-          }
+        "parent": [ 
+		{
+          	"id": "http://localhost/moodle/mod/quiz/view.php?id=10"
+          	}
         ]
       }
     },
@@ -159,7 +158,7 @@ The Context may describe the parent quiz of the question in context.contextActiv
 ``` javascript
 
 {
-	"actor": {
+"actor": {
 	"objectType": "Agent",
 	"account": {
 		"name": "jsmith12",
@@ -176,42 +175,41 @@ The Context may describe the parent quiz of the question in context.contextActiv
 	"id": "http://localhost/moodle/mod/quiz/view.php?id=10",
 	"objectType": "Activity",
 	"definition": {
-				"interactionType": "true-false",
-				"type": "http://activitystrea.ms/schema/1.0/question"
-		}
+		"interactionType": "true-false",
+		"type": "http://activitystrea.ms/schema/1.0/question"
+	}
 },
 
  "result": {
-			"response": "true",
-			"completion": true,
-			"success": false,
-			"score": {
-				"max": 1
-			}
-		},
+	"response": "true",
+	"completion": true,
+	"success": false,
+	"score": {
+		"max": 1
+	}
+},
 
-	"context": {
-		
-			"platform": "Moodle",
-			
-			"extensions": {
-					"http://xapi.jisc.ac.uk/statementCat": "VLE",
-					"http://xapi.jisc.ac.uk/version": "x-2017-05-16",
-					"http://xapi.jisc.ac.uk/sessionId": "Iye9OqwM9O", 
-					"http://id.tincanapi.com/extension/ip-address": "193.24.14.15", 
-					"http://xapi.jisc.ac.uk/courseArea": {
-							"http://xapi.jisc.ac.uk/vle_mod_id": "Test1"
-						}
-				},
-				
-			"contextActivities": {
-				"parent": [
-					{
-						"id": "http://localhost/moodle/mod/quiz/view.php?id=10"
-					}
-				]
+"context": {
+       "platform": "Moodle",
+	    
+	"extensions": {
+	    	"http://xapi.jisc.ac.uk/statementCat": "VLE",
+		"http://xapi.jisc.ac.uk/version": "x-2017-05-16",
+		"http://xapi.jisc.ac.uk/sessionId": "Iye9OqwM9O", 
+		"http://id.tincanapi.com/extension/ip-address": "193.24.14.15", 
+		"http://xapi.jisc.ac.uk/courseArea": {
+			"http://xapi.jisc.ac.uk/vle_mod_id": "Test1"
 			}
+	},
+				
+	"contextActivities": {
+	        "parent": [
+	        {
+		"id": "http://localhost/moodle/mod/quiz/view.php?id=10"
 		}
+		]
+	}
+}
 }
 
 ```

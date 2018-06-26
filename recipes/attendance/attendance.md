@@ -146,12 +146,12 @@ The result.completion must be set to true if the Actor attended the event, or fa
 		<td>Boolean</td>
 	</tr>
 	<tr>
-		<td><a href="vocabulary.md#attendance-late">http://result.extension.http://xapi.jisc.ac.uk/attendance_late</a> [0..1]</td>
+		<td><a href="vocabulary.md#attendance-late">result.extensions.http://xapi.jisc.ac.uk/attendance_late</a> [0..1]</td>
 		<td>When set to 1, indicates the person was recorded as being late. Not used when result.completion is false.</td>
 <td>Integer 0/1. 1 for late</td>
 	</tr>
 	<tr>
-		<td><a href="vocabulary.md#attendance-category">result.extension.http://xapi.jisc.ac.uk/attendance_category</a> [0..1]</td>
+		<td><a href="vocabulary.md#attendance-category">result.extensions.http://xapi.jisc.ac.uk/attendance_category</a> [0..1]</td>
 		<td>Indicates any given category for non-attendance or lateness. </td>
 		<td>String</td>
 	</tr>		
@@ -228,7 +228,7 @@ The result.completion must be set to true if the Actor attended the event, or fa
             }
 		},
 	"extensions": {
-        "http://xapi.jisc.ac.uk/version": "1.0",
+        "http://xapi.jisc.ac.uk/version": "1.0.1",
 		"http://xapi.jisc.ac.uk/statementCat": "Attendance",
 		"http://xapi.jisc.ac.uk/deviceLocation": {
 			"type": "Feature",
@@ -311,7 +311,7 @@ In attendance statements the timestamp property must be set to the start time of
 			}
 		},
 		"extensions": {
-			"http://xapi.jisc.ac.uk/version": "1.0",
+			"http://xapi.jisc.ac.uk/version": "1.0.1",
 			"http://xapi.jisc.ac.uk/statementCat": "Attendance",
 			"http://xapi.jisc.ac.uk/deviceLocation": {
 				"type": "Feature",
