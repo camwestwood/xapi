@@ -112,7 +112,8 @@ Integer
 Indicates whether attendance was compulsory. May be used to decide whether or not to count in the attendance statistics.
 
 ### Valid Values
-Any
+0 - NO
+1 - YES
 
 ### Format
 Integer
