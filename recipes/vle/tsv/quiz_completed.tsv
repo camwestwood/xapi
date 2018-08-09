@@ -1,4 +1,4 @@
-USERNAME	HOMEPAGE	TIMESTAMP	OBJECT_ID	OBJECT_NAME	VLE_MOD_ID	UDD_MOD_INST_ID	SCORE_SCALED	SCORE_RAW	SCORE_MIN	SCORE_MAX 	SESSION_ID	CLIENT_IP
+USERNAME	HOMEPAGE	TIMESTAMP	OBJECT_ID	OBJECT_NAME	VLE_MOD_ID	UDD_MOD_INST_ID	SCORE_SCALED	SCORE_RAW	SCORE_MIN	SCORE_MAX	SESSION_ID	CLIENT_IP
 STUDENT_12345	https://courses.alpha.jisc.ac.uk/moodle	2017-10-24T23:55:00+01:00	http://moodle.data.alpha.jisc.ac.uk/mod/quiz/view.php?id=10	xapi Assignment	VLEMOD_123	UDDMOD_123	0.74	74	0	100	32456891	10.3.3.48
 STUDENT_12346	https://courses.alpha.jisc.ac.uk/moodle	2017-10-24T23:55:00+01:01	http://moodle.data.alpha.jisc.ac.uk/mod/quiz/view.php?id=11	MOD_123 Post session exericise	VLEMOD_124		0.8	80	0	100	32456892	10.3.3.49
 STUDENT_12347	https://courses.alpha.jisc.ac.uk/moodle	2017-10-24T23:55:00+01:02	http://moodle.data.alpha.jisc.ac.uk/mod/quiz/view.php?id=12	Financial mathematics excel test	VLEMOD_125	UDDMOD_125	0.65	65	0	100	32456893	10.3.3.50
