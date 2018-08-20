@@ -1,9 +1,9 @@
-USERNAME	HOMEPAGE	TIMESTAMP	OBJECT_ID	OBJECT_NAME	VLE_MOD_ID	UDD_MOD_INST_ID	SCORE_SCALED	SCORE_RAW	SCORE_MIN	SCORE_MAX	SESSION_ID	CLIENT_IP
-STUDENT_12345	https://courses.alpha.jisc.ac.uk/moodle	2017-10-24T23:55:00+01:00	http://moodle.data.alpha.jisc.ac.uk/mod/quiz/view.php?id=10	xapi Assignment	VLEMOD_123	UDDMOD_123	0.74	74	0	100	32456891	10.3.3.48
-STUDENT_12346	https://courses.alpha.jisc.ac.uk/moodle	2017-10-24T23:55:00+01:01	http://moodle.data.alpha.jisc.ac.uk/mod/quiz/view.php?id=11	MOD_123 Post session exericise	VLEMOD_124		0.8	80	0	100	32456892	10.3.3.49
-STUDENT_12347	https://courses.alpha.jisc.ac.uk/moodle	2017-10-24T23:55:00+01:02	http://moodle.data.alpha.jisc.ac.uk/mod/quiz/view.php?id=12	Financial mathematics excel test	VLEMOD_125	UDDMOD_125	0.65	65	0	100	32456893	10.3.3.50
-STUDENT_12348	https://courses.alpha.jisc.ac.uk/moodle	2017-10-24T23:55:00+01:03	http://moodle.data.alpha.jisc.ac.uk/mod/quiz/view.php?id=13	Organic chemistry review	VLEMOD_126		0.4	40	0	100	32456894	10.3.3.51
-STUDENT_12349	https://courses.alpha.jisc.ac.uk/moodle	2017-10-24T23:55:00+01:04	http://moodle.data.alpha.jisc.ac.uk/mod/quiz/view.php?id=14	xapi Assignment	VLEMOD_127		0.9	90	0	100	32456895	10.3.3.52
-STUDENT_12350	https://courses.alpha.jisc.ac.uk/moodle	2017-10-24T23:55:00+01:05	http://moodle.data.alpha.jisc.ac.uk/mod/quiz/view.php?id=15	Statistics in python quiz	VLEMOD_128	UDDMOD_128	0.88	88	0	100	32456896	10.3.3.53
-STUDENT_12351	https://courses.alpha.jisc.ac.uk/moodle	2017-10-24T23:55:00+01:06	http://moodle.data.alpha.jisc.ac.uk/mod/quiz/view.php?id=16	MOD_123 Post session exericise	VLEMOD_129	UDDMOD_129	0.72	72	0	100	32456897	10.3.3.54
-STUDENT_12352	https://courses.alpha.jisc.ac.uk/moodle	2017-10-24T23:55:00+01:07	http://moodle.data.alpha.jisc.ac.uk/mod/quiz/view.php?id=17	Organic chemistry review	VLEMOD_130		0.56	56	0	100	32456898	10.3.3.55
+USERNAME	TIMESTAMP	OBJECT_ID	OBJECT_NAME	VLE_MOD_ID	UDD_MOD_INST_ID	SCORE_SCALED	SCORE_RAW	SCORE_MIN	SCORE_MAX	SESSION_ID	CLIENT_IP
+STUDENT_12345	2017-10-24T23:55:00+01:00	http://moodle.data.alpha.jisc.ac.uk/mod/quiz/view.php?id=10	xapi Assignment	VLEMOD_123	UDDMOD_123	0.74	74	0	100	32456891	10.3.3.48
+STUDENT_12346	2017-10-24T23:55:00+01:01	http://moodle.data.alpha.jisc.ac.uk/mod/quiz/view.php?id=11	MOD_123 Post session exericise	VLEMOD_124		0.8	80	0	100	32456892	10.3.3.49
+STUDENT_12347	2017-10-24T23:55:00+01:02	http://moodle.data.alpha.jisc.ac.uk/mod/quiz/view.php?id=12	Financial mathematics excel test	VLEMOD_125	UDDMOD_125	0.65	65	0	100	32456893	10.3.3.50
+STUDENT_12348	2017-10-24T23:55:00+01:03	http://moodle.data.alpha.jisc.ac.uk/mod/quiz/view.php?id=13	Organic chemistry review	VLEMOD_126		0.4	40	0	100	32456894	10.3.3.51
+STUDENT_12349	2017-10-24T23:55:00+01:04	http://moodle.data.alpha.jisc.ac.uk/mod/quiz/view.php?id=14	xapi Assignment	VLEMOD_127		0.9	90	0	100	32456895	10.3.3.52
+STUDENT_12350	2017-10-24T23:55:00+01:05	http://moodle.data.alpha.jisc.ac.uk/mod/quiz/view.php?id=15	Statistics in python quiz	VLEMOD_128	UDDMOD_128	0.88	88	0	100	32456896	10.3.3.53
+STUDENT_12351	2017-10-24T23:55:00+01:06	http://moodle.data.alpha.jisc.ac.uk/mod/quiz/view.php?id=16	MOD_123 Post session exericise	VLEMOD_129	UDDMOD_129	0.72	72	0	100	32456897	10.3.3.54
+STUDENT_12352	2017-10-24T23:55:00+01:07	http://moodle.data.alpha.jisc.ac.uk/mod/quiz/view.php?id=17	Organic chemistry review	VLEMOD_130		0.56	56	0	100	32456898	10.3.3.55

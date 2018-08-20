@@ -1,10 +1,10 @@
-USERNAME	HOMEPAGE	CLIENT_IP	PLATFORM	TIMESTAMP	SESSION_ID	OBJECT_ID	OBJECT_NAME	VLE_MOD_ID	UDD_MOD_INST_ID	PARENT_ID
-STUDENT_123	http://moodle.jisc.ac.uk	10.3.3.48	Moodle	2017-10-24T23:55:00+01:00	32456891	https://courses.alpha.jisc.ac.uk/mod/forum/discuss.php?d=19474	LEC_123 Lecture Discussion	VLEMOD_132	UDDMOD_456	https://courses.alpha.jisc.ac.uk/mod/forum/view.php?id=138371
-STUDENT_124	http://moodle.jisc.ac.uk	10.3.3.49	Moodle	2017-10-24T23:55:00+01:01	32456891	https://courses.alpha.jisc.ac.uk/mod/forum/discuss.php?d=19475	LEC_987 Lecture Discussion	VLEMOD_133		
-STUDENT_125	http://moodle.jisc.ac.uk	10.3.3.50	Moodle	2017-10-24T23:55:00+01:02	32456891	https://courses.alpha.jisc.ac.uk/mod/forum/discuss.php?d=19476	LEC_123 Lecture Discussion	VLEMOD_134		https://courses.alpha.jisc.ac.uk/mod/forum/view.php?id=138371
-STUDENT_126	http://moodle.jisc.ac.uk	10.3.3.51	Moodle	2017-10-24T23:55:00+01:03	32456891	https://courses.alpha.jisc.ac.uk/mod/forum/discuss.php?d=19477	LEC_64 Lecture Discussion	VLEMOD_135	UDDMOD_459	https://courses.alpha.jisc.ac.uk/mod/forum/view.php?id=138371
-STUDENT_127	http://moodle.jisc.ac.uk	10.3.3.52	Moodle	2017-10-24T23:55:00+01:04	32456891	https://courses.alpha.jisc.ac.uk/mod/forum/discuss.php?d=19478	LEC_123 Lecture Discussion	VLEMOD_136		
-STUDENT_128	http://moodle.jisc.ac.uk	10.3.3.53	Moodle	2017-10-24T23:55:00+01:05	32456891	https://courses.alpha.jisc.ac.uk/mod/forum/discuss.php?d=19479	LEC_459 Lecture Discussion	VLEMOD_137	UDDMOD_461	
-STUDENT_129	http://moodle.jisc.ac.uk	10.3.3.54	Moodle	2017-10-24T23:55:00+01:06	32456891	https://courses.alpha.jisc.ac.uk/mod/forum/discuss.php?d=19480	LEC_123 Lecture Discussion	VLEMOD_138		https://courses.alpha.jisc.ac.uk/mod/forum/view.php?id=138371
-STUDENT_130	http://moodle.jisc.ac.uk	10.3.3.55	Moodle	2017-10-24T23:55:00+01:07	32456891	https://courses.alpha.jisc.ac.uk/mod/forum/discuss.php?d=19481	LEC_654 Lecture Discussion	VLEMOD_139	UDDMOD_463	https://courses.alpha.jisc.ac.uk/mod/forum/view.php?id=138371
-STUDENT_131	http://moodle.jisc.ac.uk	10.3.3.56	Moodle	2017-10-24T23:55:00+01:08	32456891	https://courses.alpha.jisc.ac.uk/mod/forum/discuss.php?d=19482	LEC_123 Lecture Discussion	VLEMOD_140		
+USERNAME    CLIENT_IP	PLATFORM	TIMESTAMP	SESSION_ID	OBJECT_ID	OBJECT_NAME	VLE_MOD_ID	UDD_MOD_INST_ID	PARENT_ID
+STUDENT_123 10.3.3.48	Moodle	2017-10-24T23:55:00+01:00	32456891	https://courses.alpha.jisc.ac.uk/mod/forum/discuss.php?d=19474	LEC_123 Lecture Discussion	VLEMOD_132	UDDMOD_456	https://courses.alpha.jisc.ac.uk/mod/forum/view.php?id=138371
+STUDENT_124 10.3.3.49	Moodle	2017-10-24T23:55:00+01:01	32456891	https://courses.alpha.jisc.ac.uk/mod/forum/discuss.php?d=19475	LEC_987 Lecture Discussion	VLEMOD_133		
+STUDENT_125 10.3.3.50	Moodle	2017-10-24T23:55:00+01:02	32456891	https://courses.alpha.jisc.ac.uk/mod/forum/discuss.php?d=19476	LEC_123 Lecture Discussion	VLEMOD_134		https://courses.alpha.jisc.ac.uk/mod/forum/view.php?id=138371
+STUDENT_126 10.3.3.51	Moodle	2017-10-24T23:55:00+01:03	32456891	https://courses.alpha.jisc.ac.uk/mod/forum/discuss.php?d=19477	LEC_64 Lecture Discussion	VLEMOD_135	UDDMOD_459	https://courses.alpha.jisc.ac.uk/mod/forum/view.php?id=138371
+STUDENT_127 10.3.3.52	Moodle	2017-10-24T23:55:00+01:04	32456891	https://courses.alpha.jisc.ac.uk/mod/forum/discuss.php?d=19478	LEC_123 Lecture Discussion	VLEMOD_136		
+STUDENT_128	10.3.3.53	Moodle	2017-10-24T23:55:00+01:05	32456891	https://courses.alpha.jisc.ac.uk/mod/forum/discuss.php?d=19479	LEC_459 Lecture Discussion	VLEMOD_137	UDDMOD_461	
+STUDENT_129	10.3.3.54	Moodle	2017-10-24T23:55:00+01:06	32456891	https://courses.alpha.jisc.ac.uk/mod/forum/discuss.php?d=19480	LEC_123 Lecture Discussion	VLEMOD_138		https://courses.alpha.jisc.ac.uk/mod/forum/view.php?id=138371
+STUDENT_130	10.3.3.55	Moodle	2017-10-24T23:55:00+01:07	32456891	https://courses.alpha.jisc.ac.uk/mod/forum/discuss.php?d=19481	LEC_654 Lecture Discussion	VLEMOD_139	UDDMOD_463	https://courses.alpha.jisc.ac.uk/mod/forum/view.php?id=138371
+STUDENT_131	10.3.3.56	Moodle	2017-10-24T23:55:00+01:08	32456891	https://courses.alpha.jisc.ac.uk/mod/forum/discuss.php?d=19482	LEC_123 Lecture Discussion	VLEMOD_140		
