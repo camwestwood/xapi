@@ -11,7 +11,7 @@
 "timestamp":"**TIMESTAMP**",
 	
 "result": {
-	"completion": "**COMPLETION**",
+	"completion": true,
 	"score": {
 		"max": "**SCORE_MAX**",
 	  	"min": "**SCORE_MIN**",
