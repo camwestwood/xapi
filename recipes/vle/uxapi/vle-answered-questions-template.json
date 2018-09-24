@@ -28,7 +28,7 @@
 
 "result": {
 	"response": "**SCORE_RESPONSE**",
-	"completion": **COMPLETION**,
+	"completion": true,
 	"score": {
 		"max": **SCORE_MAX**,
 		"min": **SCORE_MIN**,
