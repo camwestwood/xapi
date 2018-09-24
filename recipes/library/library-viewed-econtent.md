@@ -63,8 +63,7 @@ Common entity identifier: ObjectA, as defined on the [common structures](/common
 	"objectType": "Activity",
 	"id": "http://onlinelibrary.jisc.ac.uk/doi/10.1111"   	 	
 	"definition": {
-		"type": "http://id.tincanapi.com/activitytype/resource",			
-		"name": { "en": "The Condition of the Working Class in England"
+		"type": "http://id.tincanapi.com/activitytype/resource"
 		},
 		"extensions": {
      		 "http://xapi.jisc.ac.uk/subType": "http://xapi.jisc.ac.uk/journal"
@@ -79,48 +78,16 @@ Common entity identifier: ObjectA, as defined on the [common structures](/common
 
 ### Context
 
-<table>
-	<tr><th>Property [cardinality]</th><th>Description</th><th>Value information</</th></tr>
-	<tr>
-		<td>context.platform [1]</td>
-		<td>The platform used in the experience of this learning activity. The value used should not change between platform upgrades and version changes and should typically be a concise name by which the application is commonly known.</td>
-		<td>string</td>
-	</tr>	
-	<tr>
-		<td>context.extensions.version [0..1]</td>
-		<td>Recommended, identifies the version of the Jisc xAPI profile found on the ReadMe page. <br/></td>
-		<td>decimal</td>
-	</tr>
-	<tr>
-		<td>context.extension.sessionId [0..1]</td>
-		<td>The VLE session ID, or a suitably hashed version of it. A value should be provided if this information is available.</td>
-		<td>string</td>
-	<tr> 
-		<td>context.extension.ip-address [1]</td>
-		<td>client's IP address. An IPv4 address is recommended.</td>
-		<td>ip address</td>
-	</tr>
-	<tr>
-		<td>context.extensions.statementCat version [0..1]</td>
-		<td>Recommended for querying lookup. Set to "Library" in library statements <br/></td>
-		<td>string</td>
-	</tr>
-</table>
-
 ### Example:
 
 ``` javascript
- "context": {
+	"context": {
 		"platform": "UxAPI",
 		"extensions": {
-			"http://xapi.jisc.ac.uk/version": "1.0.1"
-			"http://xapi.jisc.ac.uk/sessionId": "A438L",
-			"http://id.tincanapi.com/extensions/ip-address": "IP",
+			"http://xapi.jisc.ac.uk/version": "1.0.1",
 			"https://xapi.jisc.ac.uk/statementCat": "Library"
-			
 		}
 	}
-}
 ```
 
 
@@ -147,20 +114,12 @@ Common entity identifier: ObjectA, as defined on the [common structures](/common
 		"id": "http://onlinelibrary.jisc.ac.uk/doi/10.1111",
 		"definition": {
 			"type": "http://id.tincanapi.com/activitytype/resource",
-			"name": {
-				"en": "The Condition of the Working Class in England"
-			},
-			"extensions": {
-				"http://xapi.jisc.ac.uk/subType": "http://xapi.jisc.ac.uk/journal"
-			}
 		}
 	},	
 	"context": {
 		"platform": "UxAPI",
 		"extensions": {
 			"http://xapi.jisc.ac.uk/version": "1.0.1",
-			"http://xapi.jisc.ac.uk/sessionId": "32456891",
-			"http://id.tincanapi.com/extensions/ip-address": "10.3.3.48",
 			"https://xapi.jisc.ac.uk/statementCat": "Library"
 		}
 	}

@@ -7,10 +7,8 @@ Data should be supplied as a UTF-8 Tab Separated File called econtent.tsv.
 * [USERNAME](#username) [1]
 * [TIMESTAMP](#timestamp) [1]
 * [ITEM_ID](#item_id) [1]
-* [ITEM_NAME](#item_name) [1]
-* [ITEM_SUBTYPE](#item_subtype) [1]
-* [SESSION_ID](#session_id) [1]
-* [CLIENT_IP](#client_ip) [0..1]
+* [HOMEPAGE](#HOMPAGE) [0..1]
+
 
 
 
@@ -60,41 +58,4 @@ tbc
 
 ### Format
 String (255)
-
-## ITEM_SUBTYPE
-### Description
-
-The type of item being viewed
-
-### Valid Values
-Any
-
-### Format
-String (255)
-
-## SESSION_ID
-### Description
-
-The local version of an identifier for the session currently in use by the actor. A value should be provided if this information is available from the source system.
-
-
-### Valid Values
-Any
-
-### Format
-String (255)
-
-
-## CLIENT_IP 
-### Description
-
-Client's address location on internet, the IP address that has made the request to view the content.
-
-### Valid Values
-Value is a string representing an Internet Protocol address (IP address) in either IPv4 or IPv6 format.
-
-### Format
-String (255)
-
-
 
