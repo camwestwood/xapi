@@ -154,7 +154,14 @@ The result.completion must be set to true if the Actor attended the event, or fa
 		<td><a href="vocabulary.md#attendance-category">result.extensions.http://xapi.jisc.ac.uk/attendance_category</a> [0..1]</td>
 		<td>Indicates any given category for non-attendance or lateness. </td>
 		<td>String</td>
-	</tr>		
+	</tr>
+
+	<tr>
+		<td><a href="vocabulary.md#capture-time">result.extensions.http://xapi.jisc.ac.uk/capture_time</a> [0..1]</td>
+		<td>Indicates the time the actor recorded their attendance</td>
+		<td>ISO8601 timestamp</td>
+	</tr>	
+
 </table>
 
 
@@ -165,6 +172,7 @@ The result.completion must be set to true if the Actor attended the event, or fa
 	"completion": true,
 	"extensions": {
 		  "http://xapi.jisc.ac.uk/attendance_late": 1,
+		  "http://xapi.jisc.ac.uk/capture_time": 1,
 		  "http://xapi.jisc.ac.uk/attendance_category": "L"
 	}
 }
