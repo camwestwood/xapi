@@ -56,7 +56,7 @@ The Verb depends [borrowed](http://activitystrea.ms/schema/1.0/borrowed) indicat
 	</tr>
 	<tr>
 		<td>object.definition.type [1]</td>
-		<td>Indicates the type of the object of the statement. It is required and valid values are listed on the <a href="vocabulary.md#activity-types">vocabulary page</a></td>
+		<td>Indicates the type of the object of the statement. It is required and valid values are listed on the <a href="../../vocabulary.md#activity-types">vocabulary page</a></td>
 		<td>iri</td>
 	</tr>
 	<tr>
