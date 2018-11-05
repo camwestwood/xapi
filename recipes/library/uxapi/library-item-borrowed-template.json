@@ -23,7 +23,7 @@
 			},
 		    	"extensions": {
 			    	"http://xapi.jisc.ac.uk/subType": "**ITEM_SUBTYPE**",
-				"http://xapi.jisc.ac.uk/dewey_code": "**DEWEY_NUMBER**"
+				"http://xapi.jisc.ac.uk/dewey_code": "**DEWEY_CODE**",
 				"http://oclc.com/number": "**OCLC_NUMBER**"
 		    	}
 		}
