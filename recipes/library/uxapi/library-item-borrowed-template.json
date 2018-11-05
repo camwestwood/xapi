@@ -23,7 +23,8 @@
 			},
 		    	"extensions": {
 			    	"http://xapi.jisc.ac.uk/subType": "**ITEM_SUBTYPE**",
-					"http://oclc.com/number": "**OCLC_NUMBER**"
+				"http://xapi.jisc.ac.uk/dewey_code": "**DEWEY_NUMBER**"
+				"http://oclc.com/number": "**OCLC_NUMBER**"
 		    	}
 		}
 	},
@@ -34,7 +35,6 @@
 		"platform": "**PLATFORM**",
 		"extensions": {
 			"http://xapi.jisc.ac.uk/statementCat": "Library",
-			"http://xapi.jisc.ac.uk/library_borrower_category": "**LIBRARY_BORROWER_CATEGORY**",
 			"http://xapi.jisc.ac.uk/library_branch": "**LIBRARY_BRANCH**",
 			"http://xapi.jisc.ac.uk/version": "1.0.2"
 		}
