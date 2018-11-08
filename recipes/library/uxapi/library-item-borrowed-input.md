@@ -79,6 +79,25 @@ Any
 ### Format
 ISO 8601 date time
 
+## BORROWING_SITE 
+### Description
+The site that the item was borrowed from.
+
+### Valid Values
+Any
+
+### Format
+String (255)
+
+## SUBJECT_AREA 
+### Description
+The subject area of the item.
+
+### Valid Values
+Any
+
+### Format
+String (255)
 
 
 
