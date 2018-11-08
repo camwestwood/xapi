@@ -1,4 +1,4 @@
-# econtent viewed statement template
+# econtent accessed statement template
 
 Based on generic template statement: [Viewed](/generic/view.md)
 
@@ -39,7 +39,7 @@ An ISO 8601 format timestamp that corresponds to the time when the content was a
 ### Verb
 Common entity identifier: VerbA, as defined on the [common structures](/common_structures.md#verba) page.
 
-The Verb, [viewed](/vocabulary.md#verbs), denotes the action of the user's browser or app requesting the econtent.
+The Verb, [access](/vocabulary.md#verbs), denotes the action of the user's browser or app requesting the econtent.
 
 ### Example:
 
