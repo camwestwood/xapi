@@ -158,7 +158,7 @@ The result.completion must be set to true if the Actor attended the event, or fa
 
 	<tr>
 		<td><a href="vocabulary.md#capture-time">result.extensions.http://xapi.jisc.ac.uk/capture_time</a> [0..1]</td>
-		<td>Indicates the time the actor recorded their attendance</td>
+		<td>Indicates the time the result was captured</td>
 		<td>ISO8601 timestamp</td>
 	</tr>	
 
@@ -172,7 +172,7 @@ The result.completion must be set to true if the Actor attended the event, or fa
 	"completion": true,
 	"extensions": {
 		  "http://xapi.jisc.ac.uk/attendance_late": 1,
-		  "http://xapi.jisc.ac.uk/capture_time": 1,
+		  "http://xapi.jisc.ac.uk/capture_time": "2015-05-24T09:00",
 		  "http://xapi.jisc.ac.uk/attendance_category": "L"
 	}
 }
