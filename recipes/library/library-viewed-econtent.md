@@ -10,7 +10,7 @@ This template defines the structure and terms to record the experience of viewin
 ### Actor
 Common entity identifier:  ActorA, as defined on the [common structures](/common_structures.md#actora) page.
 
-The actor entity describes the individual that is accessing econtent.
+The actor entity describes the individual that is viewing econtent.
 
 ### Example:
 
@@ -28,7 +28,7 @@ The actor entity describes the individual that is accessing econtent.
 ```
 
 ### Timestamp
-An ISO 8601 format timestamp that corresponds to the time when the content was accessed.
+An ISO 8601 format timestamp that corresponds to the time when the content was viewed.
 
 ### Example:
 
