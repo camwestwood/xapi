@@ -69,23 +69,6 @@ Bug reports can be directed to the [Moodle](https://github.com/jiscdev/jisc-mood
 <tr><td>Statement Template</td><td>JSON example</td><td>Input TSV definitions</td><td>JSON Template</td></tr>  
 <tr><td><a href = "recipes/studyapps/mobile-app.md">Mobile app content viewed</a></td><td><a href = "recipes/studyapps/mobile-app.md#full-example">Mobile App content viewed</a></td> <td><a href = "recipes/universal-xapi-translator/app-content-viewed.md">/app-content-viewed.md</a></td><td><a href = "recipes/universal-xapi-translator/app-content-viewed.json">/app-content-viewed.json</td></tr></table>    
 
-## Setting and Reaching Targets
-All target statements currently use the
-<table>
-<tr><td>Statement Template</td><td>Input TSV definitions</td><td>JSON Template</td></tr>  
-
-<tr><td><a href = "recipes/studyapps/target-set.md">Set a target</a></td> <td><a href="recipes/studyapps/uxapi/target-set-input.md">target-set-input.md</a></td> <td></td></tr>
-<tr><td><a href = "recipes/studyapps/target-recording-activity.md">Record an activity against a target</a> </td><td><a href="recipes/studyapps/uxapi/target-set-input.md">target-set-input.md</a></td><td></td></tr>
-<tr><td><a href = "recipes/studyapps/target-reached-completed.md">Reach a target</a></td><td><a href="recipes/studyapps/uxapi/target-set-input.md">target-set-input.md</a></td><td></td></tr>
-<tr><td><a href = "recipes/studyapps/target-update.md">Post an update</a></td><td><a href="recipes/studyapps/uxapi/target-set-input.md">target-set-input.md</a> </td><td></td></tr> 
-</table>
-
-## Presence and Attendance
-<table>
-<tr><td>Statement Template </td><td>Input TSV definitions</td><td>JSON Template</td><td>Example Input</td></tr>
-<tr><td> <a href = "recipes/attendance/attendance.md">Attended learning activity </a></td><td><a href="recipes/attendance/uxapi/attendance-input.md"> attendance-input.md</a></td> <td><a href="recipes/attendance/uxapi/attendance-template.json">attendance-template.json</a></td><td><a href="recipes/attendance/tsv/attendance.tsv">TSV</a></td>  </tr>    
-</table>
-
 ## Intervention Case
 <table>
 <tr><td>Statement Template </td><td>Input TSV  definitions</td><td>JSON Template</td></tr>
@@ -103,10 +86,4 @@ All target statements currently use the
 <tr><td>Statement Template </td></tr>
 <tr><td> <a href = "/lap/apereo/model_output.md">Predictive Model Alerting</a></td> </tr>    
 </table>
-
-
-
-# Deprecated Statements
-
-- [Session timeout](/recipes/vle/Session-timeout.md)    
 

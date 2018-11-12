@@ -51,6 +51,8 @@ v0.2 2-05-2016, Documentation change [subType supersedes ApplicationType](https:
 
 ### Session timeout
 
+v1.1 Spec Change. [removed](https://github.com/jiscdev/xapi/issues/170)
+
 v1.0 20-06-2017, Spec Change. [deprecated](https://github.com/jiscdev/xapi/issues/170)
 
 v1.0 10-05-2017, Spec Change. recipeVersion deprecated, replaced with version
@@ -89,10 +91,7 @@ v1.0 20-03-2017, Spec change. [Description no longer required in ObjectA or B.](
 
 #### Assignment Submitted
 
-
-v1.1 27-11-2017, Spec change [added  sequencenumber extension](https://github.com/jiscdev/xapi/issues/203) 
-
-v1.1 22-11-2017, Spec Change. [Removed result from assignment submitted statement](https://github.com/jiscdev/xapi/issues/201)
+v1.1  Spec Change. [Added Sequence Number]()
 
 v1.0.1 13-04-2018, Spec Change. [Statement category added as optional](https://github.co7/jiscdev/xapi/issues/225)
 
@@ -123,9 +122,13 @@ v1.0.1 Statement Added To Repository
 
 #### Quiz: Answered Questions
 
+v1.0.2 20-09-2018, Spec Change. [remove homepage from VLE TSV examples] (https://github.co7/jiscdev/xapi/issues/268)
+
 v1.0.1 Statement Added To Repository
 
 #### Quiz: Quiz Completed
+
+v1.0.2 20-09-2018, Spec Change. [removed duration from quiz completed  ](https://github.co7/jiscdev/xapi/issues/254)
 
 v1.0.1 Statement Added To Repository
 
