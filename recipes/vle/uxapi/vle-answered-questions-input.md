@@ -9,7 +9,7 @@ Data should be supplied as a UTF-8 Tab Separated File called assignmentgraded.ts
 * [HOMEPAGE](#homepage) [1]
 * [TIMESTAMP](#timestamp) [0..1]
 * [CLIENT_IP](#client_ip) [1]
-* [INTERACTION-TYPE](#interaction_type) [1]
+* [INTERACTION_TYPE](#interaction_type) [1]
 * [SESSION_ID](#session_id) [0..1]
 * [OBJECT_ID](#object_id) [1]
 * [OBJECT_NAME](#object_name) [0..1]

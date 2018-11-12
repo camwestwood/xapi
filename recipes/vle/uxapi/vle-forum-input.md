@@ -16,7 +16,7 @@ Data should be supplied as a UTF-8 Tab Separated File called forum.tsv
 * [VLE_MOD_ID](#vle_mod_id) [0..1]
 * [UDD_MOD_INST_ID](#udd_mod_inst_id) [0..1]
 * [PARENT_ID](#udd_mod_inst_id) [0..1]
-
+* [RESPONSE](#response) [1]
 
 
 
@@ -148,6 +148,20 @@ uri
 
 ### Format
 String (255)
+
+### Notes
+Mandatory if VLE_MOD_ID not present.
+
+## RESPONSE 
+### Description
+
+The result.response entity contains plain text from the post encoded as per the encoding of the rest of the statement. There must be no markup,  HTML entity encodings or invalid characters.
+
+### Valid Values
+Text
+
+### Format
+String (2047)
 
 ### Notes
 Mandatory if VLE_MOD_ID not present.

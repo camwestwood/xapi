@@ -59,7 +59,7 @@ String (255)
 ## OCLC_NUMBER
 ### Description
 
-OLCL Number
+OLCL Number. See the [the OCLC help site for more information](https://help.oclc.org/Metadata_Services/WorldShare_Collection_Manager/Choose_your_Collection_Manager_workflow/Data_sync_collections/Prepare_your_data/035_field_and_OCLC_control_numbers)
 
 
 ### Valid Values
@@ -79,6 +79,25 @@ Any
 ### Format
 ISO 8601 date time
 
+## BORROWING_SITE 
+### Description
+The site that the item was borrowed from.
+
+### Valid Values
+Any
+
+### Format
+String (255)
+
+## SUBJECT_AREA 
+### Description
+The subject area of the item.
+
+### Valid Values
+Any
+
+### Format
+String (255)
 
 
 

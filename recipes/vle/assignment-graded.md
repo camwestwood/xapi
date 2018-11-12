@@ -43,7 +43,7 @@ The Verb [scored](/vocabulary.md#verbs) describes the student receiving a score 
 ``` 
 
 ### Result
-Common entity identifier: ResultA [common structures](/common_structures.md#resulta) page.
+Common entity identifier: ResultA [common structures](/common_structures.md#result-a) page.
 
 The result entity is required for this kind of statement.
 
@@ -185,7 +185,7 @@ The Context for assignment graded is based on ContextA on the [common structures
 		"http://xapi.jisc.ac.uk/statementCat": "VLE",		
 		"http://xapi.jisc.ac.uk/sessionId": "32456891" ,
 		"http://id.tincanapi.com/extension/ip-address": "10.3.3.48"
-		"http://xapi.jisc.ac.uk/version" : "1.0"
+		"http://xapi.jisc.ac.uk/version" : "1.0.1"
         }
 ```
 

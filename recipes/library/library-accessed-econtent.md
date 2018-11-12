@@ -1,4 +1,4 @@
-# econtent viewed statement template
+# econtent accessed statement template
 
 Based on generic template statement: [Viewed](/generic/view.md)
 
@@ -10,7 +10,7 @@ This template defines the structure and terms to record the experience of viewin
 ### Actor
 Common entity identifier:  ActorA, as defined on the [common structures](/common_structures.md#actora) page.
 
-The actor entity describes the individual that is viewing econtent.
+The actor entity describes the individual that is accessing econtent.
 
 ### Example:
 
@@ -28,7 +28,7 @@ The actor entity describes the individual that is viewing econtent.
 ```
 
 ### Timestamp
-An ISO 8601 format timestamp that corresponds to the time when the content was viewed.
+An ISO 8601 format timestamp that corresponds to the time when the content was accessed.
 
 ### Example:
 
@@ -39,15 +39,15 @@ An ISO 8601 format timestamp that corresponds to the time when the content was v
 ### Verb
 Common entity identifier: VerbA, as defined on the [common structures](/common_structures.md#verba) page.
 
-The Verb, [viewed](/vocabulary.md#verbs), denotes the action of the user's browser or app requesting the econtent.
+The Verb, [access](/vocabulary.md#verbs), denotes the action of the user's browser or app requesting the econtent.
 
 ### Example:
 
 ``` javascript
 "verb": {
-        "id": "http://id.tincanapi.com/verb/viewed",
+        "id": "http://activitystrea.ms/schema/1.0/access",
         "display": {
-            "en": "viewed"
+            "en": "access"
         }
     },
 ```
@@ -63,11 +63,10 @@ Common entity identifier: ObjectA, as defined on the [common structures](/common
 	"objectType": "Activity",
 	"id": "http://onlinelibrary.jisc.ac.uk/doi/10.1111"   	 	
 	"definition": {
-		"type": "http://id.tincanapi.com/activitytype/resource"
-		},
-		"extensions": {
-     		 "http://xapi.jisc.ac.uk/subType": "http://xapi.jisc.ac.uk/journal"
-	 	}
+		"type": "http://id.tincanapi.com/activitytype/resource",
+			"extensions": {
+     		 "http://xapi.jisc.ac.uk/hostname": "http://www.contenthost.com"
+	 		}
     	}
 }
 ```

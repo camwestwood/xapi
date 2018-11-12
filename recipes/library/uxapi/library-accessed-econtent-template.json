@@ -1,0 +1,37 @@
+{
+	"version": "1.0.0",
+	"actor": {
+		"objectType": "Agent",
+		"account": {
+			"name": "**USERNAME**",
+			"homePage": "**HOMEPAGE**" 
+		}
+	},
+	"timestamp": "**TIMESTAMP**",
+	"verb": {
+		"id": "http://activitystrea.ms/schema/1.0/access",
+		"display": {
+			"en": "accessed"
+		}
+	},
+	"object": {
+		"objectType": "Activity",
+		"id": "**ITEM_ID**",
+		"definition": {
+			"type": "http://id.tincanapi.com/activitytype/resource",
+			"extensions": {
+				"http://xapi.jisc.ac.uk/hostname": "**HOSTNAME**"
+			}
+		}
+	},
+	"context": {
+		"platform": "**PLATFORM**", 
+		"extensions": {
+				"http://xapi.jisc.ac.uk/version": "1.0.2",
+				"https://xapi.jisc.ac.uk/statementCat": "Library"
+				
+		}
+
+	}
+
+}

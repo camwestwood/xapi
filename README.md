@@ -1,10 +1,10 @@
 # xAPI recipes for the Jisc Learning Analytics Service v1.1
 
 ## Repository Workflow
-The simplest way of contributing to the xAPI service works as follows:
+The simplest way to contribute to the xAPI service is as follows:
 
 1. Add an issue to the issue tracker to alert everyone to what you are working on and why.
-2. Tag the issue with the version milestone you'd like the patch to be a part of.
+2. Tag the issue with the version milestone you'd like the patch to be part of.
 3. If the feature is for this version then make an edit or add a file in this repository, and save it to your own branch. If you prefer, you can fork the whole repository and work in your own repository. Otherwise create a feature-branch to work in.
 4. If you are creating a new Statement in a recipe then check if a generic template will help. If you are creating a new Statement then consider creating a generic one first.
 4. Send a pull request once you're done.
@@ -16,12 +16,12 @@ If the need arises, particular versions will get their own branches, but until t
 
 ## Statement Vocabulary and Common Structures
 
-* [Vocabulary](vocabulary.md) gives the IRIs and definitions for Verbs, Activity types, and so on, as well as for extensions used in the recipes.
-* [Common Structures](common_structures.md) outlines common patterns used across different recipes.
+* [Vocabulary](vocabulary.md) gives the IRIs and definitions for Verbs, Activity types, and so on, as well as for extensions used in the Statements.
+* [Common Structures](common_structures.md) outlines common patterns used across different Statements.
 * [Generic Statement Templates](generic/index.md) can be found in this directory.
 
 # Recipes
-Here are descriptions of statements that can be sent to the Jisc Learning Data Hub, full Statement examples, data needed to create the Statement.  As far as possible all entities are the same across all the statements, these reusable statements are linked from templates and can be found in the [Common Structures](common_structures.md) page which contains all common patterns used across different recipes. If a entity is not reusable then properties are described in the statement template.
+Here are descriptions of Statements that can be sent to the Jisc Learning Data Hub, full Statement examples, and data needed to create the Statement. As far as possible all entities are the same across all the Statements, these reusable parts of Statements are linked from templates and can be found in the [Common Structures](common_structures.md) page which contains all common patterns used across different Statements. If an entity is not reusable then properties are described in the Statement template.
 
 ## VLE
 These are platform independent Statements related to Virtual Learning Enviroments. 
@@ -39,17 +39,27 @@ These are platform independent Statements related to Virtual Learning Enviroment
 
 ### All VLE Statement examples
 
-The following JSON samples are recent exampless generated from plugins. Bug reports can be directed to the [Moodle](https://github.com/jiscdev/jisc-moodle-xapi-plugin) or [BlackBoard](https://github.com/jiscdev/blackboard-xapi-plugin) Github repository.
+The following JSON samples are recent examples generated from plugins. They may not match the specification.
+
+Bug reports can be directed to the [Moodle](https://github.com/jiscdev/jisc-moodle-xapi-plugin) or [BlackBoard](https://github.com/jiscdev/blackboard-xapi-plugin) Github repository.
 
 * [Blackboard VLE samples](vle/blackboard/Examples.md)
 * [Moodle VLE samples](vle/moodle/examples.md)
 
-## Library
+## Econtent
 
 
 <table>
 <tr><td>Statement Template</td><td>Input TSV definitions</td><td>JSON Template</td></tr>  
-<tr><td> <a href = "/recipes/library/library-viewed-econtent.md">Library Item Accessing econtent</a></td><td><a href="recipes/library/uxapi/library-viewed-econtent-input.md">library-viewed-econtent-input.md</a></td><td><a href="recipes/library/uxapi/library-viewed-econtent-template.json">library-viewed-econtent-template.json</a></td></tr>       <tr><td> <a href = "/recipes/library/library-item-borrowing.md">Library item: Borrowed item</a></td><td><a href="recipes/library/uxapi/library-item-borrowed-input.md">library-item-borrowed-input.md</a></td><td><a href="recipes/library/uxapi/library-item-borrowed-template.json">library-item-template.json</td></tr>    
+<tr><td> <a href = "/recipes/library/library-viewed-econtent.md">Viewing econtent</a></td><td><a href="recipes/library/uxapi/library-viewed-econtent-input.md">library-viewed-econtent-input.md</a></td><td><a href="recipes/library/uxapi/library-viewed-econtent-template.json">library-viewed-econtent-template.json</a></td></tr>  
+<tr><td> <a href = "/recipes/library/library-accessed-econtent.md">Accessed econtent</a></td><td><a href="recipes/library/uxapi/library-accessed-econtent-input.md">library-accessed-econtent-input.md</a></td><td><a href="recipes/library/uxapi/library-accessed-econtent-template.json">library-accessed-econtent-template.json</a></td></tr>  
+</table>
+
+
+## Library
+<table>
+<tr><td>Statement Template</td><td>Input TSV definitions</td><td>JSON Template</td></tr>  
+     <tr><td> <a href = "/recipes/library/library-item-borrowing.md">Library item: Borrowed item</a></td><td><a href="recipes/library/uxapi/library-item-borrowed-input.md">library-item-borrowed-input.md</a></td><td><a href="recipes/library/uxapi/library-item-borrowed-template.json">library-item-template.json</td></tr>    
 </table>
 
 
@@ -60,12 +70,14 @@ The following JSON samples are recent exampless generated from plugins. Bug repo
 <tr><td><a href = "recipes/studyapps/mobile-app.md">Mobile app content viewed</a></td><td><a href = "recipes/studyapps/mobile-app.md#full-example">Mobile App content viewed</a></td> <td><a href = "recipes/universal-xapi-translator/app-content-viewed.md">/app-content-viewed.md</a></td><td><a href = "recipes/universal-xapi-translator/app-content-viewed.json">/app-content-viewed.json</td></tr></table>    
 
 ## Setting and Reaching Targets
+All target statements currently use the
 <table>
-<tr><td>Statement Template</td><td>JSON example</td><td>Input TSV definitions</td><td>JSON Template</td></tr>  
-<tr><td><a href = "recipes/studyapps/target-set.md">Set a target</a></td>  <td><a href = "recipes/studyapps/target-set.md.md#example">Set a target </a></td><td></td><td></td></tr>
-<tr><td><a href = "recipes/studyapps/target-recording-activity.md">Record an activity against a target</a> </td><td><a href = "recipes/studyapps/target-recording-activity.md#example">Record an activity against a target</a></td><td></td><td></td></tr>
-<tr><td><a href = "recipes/studyapps/target-reached-completed.md">Reach a target</a></td><td><a href = "recipes/studyapps/target-reached-completed.md#example">Reach a target</a> </td><td></td><td></td></tr>
-<tr><td><a href = "recipes/studyapps/target-update.md">Post an update</a></td><td><a href = "recipes/studyapps/target-update.md#example">Post an update</a> </td><td></td><td></td></tr> 
+<tr><td>Statement Template</td><td>Input TSV definitions</td><td>JSON Template</td></tr>  
+
+<tr><td><a href = "recipes/studyapps/target-set.md">Set a target</a></td> <td><a href="recipes/studyapps/uxapi/target-set-input.md">target-set-input.md</a></td> <td></td></tr>
+<tr><td><a href = "recipes/studyapps/target-recording-activity.md">Record an activity against a target</a> </td><td><a href="recipes/studyapps/uxapi/target-set-input.md">target-set-input.md</a></td><td></td></tr>
+<tr><td><a href = "recipes/studyapps/target-reached-completed.md">Reach a target</a></td><td><a href="recipes/studyapps/uxapi/target-set-input.md">target-set-input.md</a></td><td></td></tr>
+<tr><td><a href = "recipes/studyapps/target-update.md">Post an update</a></td><td><a href="recipes/studyapps/uxapi/target-set-input.md">target-set-input.md</a> </td><td></td></tr> 
 </table>
 
 ## Presence and Attendance

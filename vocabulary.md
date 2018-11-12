@@ -142,6 +142,17 @@ The following are extension properties in the Result entity:
 <tr><th align="left">Sample Value</th><td>C</td></tr>
 </table>
 
+### Capture Time
+
+<table>
+<tr><th align="left">Label</th><td>Capture Time</td></tr>
+<tr><th align="left">Description</th><td>The time at which the result was captured</td></tr>
+<tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/attendance_category">http://xapi.jisc.ac.uk/capture_time</a> </td></tr>
+<tr><th align="left">Example in Statement template</th><td> <a href="/recipes/attendance/attendance.md#result">attendance</a> </td></tr>
+<tr><th align="left">Data Type</th><td>String</td></tr>
+<tr><th align="left">Sample Value</th><td>eg 2015-05-24T09:00</td></tr>
+</table>
+
 ### Grade
 
 <table>
@@ -198,6 +209,16 @@ Example:
 <tr><th align="left">Statement Example</th><td> <a href="recipes/vle/assignment-submitted.md">assignment-submitted</a> </td></tr>
 <tr><th align="left">Example Subtypes</th><td><ul><li>http://bblearn.xapi.jisc.ac.uk/selfandpeerassessment</li><li>http://bblearn.xapi.jisc.ac.uk/safeassignment</li><li>http://moodle.xapi.jisc.ac.uk/assignment</li></ul>  </td></tr>
 </table>
+
+### Borrowing Site
+
+<table>
+<tr><th align="left">Label</th><td>Borrowing Site</td></tr>
+<tr><th align="left">Description</th><td>The site that the item was borrowed from.</td></tr>
+<tr><th align="left">IRI</th><td>http://xapi.jisc.ac.uk/borrowingSite</td></tr>
+<tr><th align="left">Statement Example</th><td> <a href="recipes/library/library-item-borrowing.md">Item borrowed</a> </td></tr>
+</table>
+
 
 ### Chat
 
@@ -284,6 +305,16 @@ Example:
 <tr><th align="left">Description</th><td>Statistics for the Study Goal application </td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/studygoal/stats">http://xapi.jisc.ac.uk/studygoal/stats</a> </td></tr>
 </table>
+
+### Subject Area
+
+<table>
+<tr><th align="left">Label</th><td>Subject Area</td></tr>
+<tr><th align="left">Description</th><td>The subject area of the object.</td></tr>
+<tr><th align="left">IRI</th><td>http://xapi.jisc.ac.uk/subjectArea</td></tr>
+<tr><th align="left">Statement Example</th><td> <a href="recipes/library/library-item-borrowing.md">Item borrowed</a> </td></tr>
+</table>
+
 
 ### Tutor session
 
@@ -549,7 +580,7 @@ For more information, see Jisc Profile [CourseArea properties](#coursearea).
 </td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/version">http://xapi.jisc.ac.uk/version</a> </td></tr>
 <tr><th align="left">Data Type</th><td>String</td></tr>
-<tr><th align="left">Value Space</th><td>A version number as specified on homepage the Github homepage for the Jisc xAPI, for example "1.0".</td></tr>
+<tr><th align="left">Value Space</th><td>A version number as specified on homepage the Github homepage for the Jisc xAPI, for example "1.0.1".</td></tr>
 <tr><th align="left">Sample Value</th><td>1.0</td></tr>
 </table>
 

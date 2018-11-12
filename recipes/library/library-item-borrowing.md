@@ -3,7 +3,7 @@
 [Statement Template Changes](/version_changes.md#borrowed)
 
 ## Purpose
-This template defines the structure and terms to record the experience of viewing a vle resource such as a Moodle Module or Blackboard building block (eg a page as identified by its url)
+This template defines the structure and terms to record the experience of borrowing an item from the library.
 
 ### Actor
 Common entity identifier:  ActorA, as defined on the [common structures](/common_structures.md#actora) page.
@@ -56,7 +56,7 @@ The Verb depends [borrowed](http://activitystrea.ms/schema/1.0/borrowed) indicat
 	</tr>
 	<tr>
 		<td>object.definition.type [1]</td>
-		<td>Indicates the type of the object of the statement. It is required and valid values are listed on the <a href="vocabulary.md#activity-types">vocabulary page</a></td>
+		<td>Indicates the type of the object of the statement. It is required and valid values are listed on the <a href="../../vocabulary.md#activity-types">vocabulary page</a></td>
 		<td>iri</td>
 	</tr>
 	<tr>
@@ -72,6 +72,11 @@ The Verb depends [borrowed](http://activitystrea.ms/schema/1.0/borrowed) indicat
 	<tr>
 		<td>object.definition.extensions.http://oclc.com/number [0..1]</td>
 		<td>OCLC Number</td>
+		<td>string</td>
+	<tr>
+	<tr>
+		<td>object.definition.extensions.http://xapi.jisc.ac.uk/subjectArea [0..1]</td>
+		<td>The subject area of the item.</td>
 		<td>string</td>
 	<tr>
 </table>
@@ -90,6 +95,7 @@ The Verb depends [borrowed](http://activitystrea.ms/schema/1.0/borrowed) indicat
 		"extensions": {
 			"http://xapi.jisc.ac.uk/subType":"http://id.tincanapi.com/activitytype/book",
 			"http://oclc.com/number": "1234567890",
+			"http://xapi.jisc.ac.uk/subjectArea": "Mathamatics"
 		}
 }
 ```
@@ -116,7 +122,12 @@ An ISO 8601 format timestamp that corresponds to the time of when the item was b
 	</tr>
 	<tr>
 		<td><a href="vocabulary.md#statement-category">context.extensions.https://xapi.jisc.ac.uk/statementCat</a> [0..1]</td>
-		<td>Recommended For querying lookup. Set to "Library" in library statements <br/></td>
+		<td>Recommended, For querying lookup. Set to "Library" in library statements <br/></td>
+		<td>string</td>
+	</tr>
+	<tr>
+		<td><a href="vocabulary.md#borrowing-site">context.extensions.http://xapi.jisc.ac.uk/borrowingSite</a> [0..1]</td>
+		<td>Optional, the site that the item was borrowed from. <br/></td>
 		<td>string</td>
 	</tr>
 </table>
@@ -131,6 +142,7 @@ An ISO 8601 format timestamp that corresponds to the time of when the item was b
  
   "extensions": {
 	"http://xapi.jisc.ac.uk/statementCat": "Library",
+	"http://xapi.jisc.ac.uk/borrowingSite": "Main Library",
 	"http://xapi.jisc.ac.uk/version": "1.0.1"
 	
   }
@@ -164,7 +176,8 @@ An ISO 8601 format timestamp that corresponds to the time of when the item was b
 			},
 			"extensions": {
 				"http://xapi.jisc.ac.uk/subType": "http://id.tincanapi.com/activitytype/book",
-				"http://oclc.com/number": "ocn123456789"
+				"http://oclc.com/number": "ocn123456789",
+				"http://xapi.jisc.ac.uk/subjectArea": "Mathamatics"
 			}
 		}
 	},
@@ -175,6 +188,7 @@ An ISO 8601 format timestamp that corresponds to the time of when the item was b
  
 		"extensions": {
 			"http://xapi.jisc.ac.uk/statementCat": "library",
+			"http://xapi.jisc.ac.uk/borrowingSite": "Main Library",
 			"http://xapi.jisc.ac.uk/version": "1.0.1"
 	
   		}
