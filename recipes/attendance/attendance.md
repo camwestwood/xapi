@@ -60,7 +60,7 @@ The Object entity defines an event that has been attended. Only one value for ob
 	</tr>
 	<tr>
 		<td>object.definition.type [1]</td>
-		<td>Indicates the type of the Object of the Statement. It is required and must be http://xapi.jisc.ac.uk/event_timetabled (see the <a href="vocabulary.md#31-activity-types">vocabulary page</a> for the definition)</td>
+		<td>Indicates the type of the Object of the Statement. It is required and must be either http://xapi.jisc.ac.uk/event_timetabled or http://xapi.jisc.ac.uk/event_nontimetabled  (see the <a href="vocabulary.md#31-activity-types">vocabulary page</a> for the definition)</td>
 		<td>iri</td>
 	</tr>
 	<tr>
