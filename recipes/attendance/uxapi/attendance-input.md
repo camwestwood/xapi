@@ -245,7 +245,7 @@ String (255)
 ### Notes
 This must match a UDD COURSE_INSTANCE_ID. If this identifier is not generally available, it may be appropriate to omit it. In this case, attendance will only be analysable at student level.
 
-## CAPTURE_TIME
+## SUBMISSION_TIME
 ### Description
 The time at which the result was captured
 

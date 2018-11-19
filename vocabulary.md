@@ -142,16 +142,6 @@ The following are extension properties in the Result entity:
 <tr><th align="left">Sample Value</th><td>C</td></tr>
 </table>
 
-### Capture Time
-
-<table>
-<tr><th align="left">Label</th><td>Capture Time</td></tr>
-<tr><th align="left">Description</th><td>The time at which the result was captured</td></tr>
-<tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/attendance_category">http://xapi.jisc.ac.uk/capture_time</a> </td></tr>
-<tr><th align="left">Example in Statement template</th><td> <a href="/recipes/attendance/attendance.md#result">attendance</a> </td></tr>
-<tr><th align="left">Data Type</th><td>String</td></tr>
-<tr><th align="left">Sample Value</th><td>eg 2015-05-24T09:00</td></tr>
-</table>
 
 ### Grade
 
@@ -162,6 +152,17 @@ The following are extension properties in the Result entity:
 <tr><th align="left">Statement Example</th><td> <a href="recipes/vle/assignment-graded.md#result">Assignment Graded</a> </td></tr>
 <tr><th align="left">Value Space</th><td>String</td></tr>
 <tr><th align="left">Sample Value</th><td>5 Stars</td></tr>
+</table>
+
+### Submission Time
+
+<table>
+<tr><th align="left">Label</th><td>Capture Time</td></tr>
+<tr><th align="left">Description</th><td>The time at which the result was submitted</td></tr>
+<tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/attendance_category">http://xapi.jisc.ac.uk/capture_time</a> </td></tr>
+<tr><th align="left">Example in Statement template</th><td> <a href="/recipes/attendance/attendance.md#result">attendance</a> </td></tr>
+<tr><th align="left">Data Type</th><td>String</td></tr>
+<tr><th align="left">Sample Value</th><td>eg 2015-05-24T09:00</td></tr>
 </table>
 
 <a name="object"></a>
