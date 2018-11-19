@@ -247,7 +247,7 @@ This must match a UDD COURSE_INSTANCE_ID. If this identifier is not generally av
 
 ## SUBMISSION_TIME
 ### Description
-The time at which the result was captured
+The time at which the result was submitted
 
 ### Valid Values
 Any
