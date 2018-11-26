@@ -73,9 +73,31 @@ Common entity identifier: ObjectA, as defined on the [common structures](/common
 
 
 
-
-
 ### Context
+
+<table>
+	<tr><th>Property [cardinality]</th><th>Description</th><th>Value information</</th></tr>
+	<tr>
+		<td>context.platform [1]</td>
+		<td>The platform used in the experience of this learning activity. The value used should not change between platform upgrades and version changes and should typically be a concise name by which the application is commonly known.</td>
+		<td>string</td>
+	</tr>	
+	<tr>
+		<td>context.extensions.version [0..1]</td>
+		<td>Recommended, identifies the version of the Jisc xAPI profile found on the ReadMe page. <br/></td>
+		<td>decimal</td>
+	</tr>
+		<td>context.extension.ip-address [1]</td>
+		<td>client's IP address. An IPv4 address is recommended.</td>
+		<td>ip address</td>
+	</tr>
+	<tr>
+		<td>context.extensions.statementCat version [0..1]</td>
+		<td>Recommended for querying lookup. Set to "Library" in library statements <br/></td>
+		<td>string</td>
+	</tr>
+</table>
+
 
 ### Example:
 
@@ -84,6 +106,7 @@ Common entity identifier: ObjectA, as defined on the [common structures](/common
 		"platform": "UxAPI",
 		"extensions": {
 			"http://xapi.jisc.ac.uk/version": "1.0.1",
+			"http://id.tincanapi.com/extensions/ip-address": "165.154.154.1",
 			"https://xapi.jisc.ac.uk/statementCat": "Library"
 		}
 	}
@@ -119,6 +142,7 @@ Common entity identifier: ObjectA, as defined on the [common structures](/common
 		"platform": "UxAPI",
 		"extensions": {
 			"http://xapi.jisc.ac.uk/version": "1.0.1",
+			"http://id.tincanapi.com/extensions/ip-address": "165.154.154.1",
 			"https://xapi.jisc.ac.uk/statementCat": "Library"
 		}
 	}

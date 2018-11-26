@@ -9,7 +9,7 @@ Data should be supplied as a UTF-8 Tab Separated File called econtent.tsv.
 * [ITEM_ID](#item_id) [1]
 * [HOMEPAGE](#HOMPAGE) [0..1]
 * [HOSTNAME](#HOSTNAME) [0..1]
-
+* [CLIENT_IP](#client_ip) [0..1]
 
 
 
@@ -72,3 +72,13 @@ tbc
 ### Format
 String (255)
 
+## CLIENT_IP 
+### Description
+
+Client's address location on internet, the IP address that has made the request to view the content.
+
+### Valid Values
+Value is a string representing an Internet Protocol address (IP address) in either IPv4 or IPv6 format.
+
+### Format
+String (255)

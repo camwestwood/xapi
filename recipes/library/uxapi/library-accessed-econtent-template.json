@@ -28,6 +28,7 @@
 		"platform": "**PLATFORM**", 
 		"extensions": {
 				"http://xapi.jisc.ac.uk/version": "1.0.2",
+				"http://id.tincanapi.com/extensions/ip-address": "**CLIENT_IP**",
 				"https://xapi.jisc.ac.uk/statementCat": "Library"
 				
 		}
