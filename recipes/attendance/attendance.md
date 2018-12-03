@@ -3,9 +3,17 @@
 [Statement Template Changes](/version_changes.md#attendance)
 
 ## Purpose
-This Statement defines the structure and terms to record a learner's attendance of an event such as a lecture or other learning activity. The expectation is that the source data will be collected by a system designed to explicitly record attendance via some action of the learner, such as swiping a card, or of the teacher, such as completing an electronic register.
 
-The template described here is __not__ intended for use to record participation, or non-participation, in events which are of a pastoral nature or otherwise do not focus on the subject of study. There is currently no specified template for these kinds of event, and if statements are to be created for them, then these statements __must not__ use the object.definition.type indicated below.
+This Statement defines the structure and terms to record a learner's attendance at an event such as a lecture or other learning activity. The expectation is that the source data will be collected by a system designed to record attendance explicitly via some action of the learner, such as swiping a card, or of the teacher, such as completing an electronic register.
+
+Attendance at either timetabled events or non-timetabled events can be recorded in an attendance statement. It is vital that the correct object.definition.type is used to differentiate them:
+
+- timetabled event - object.definition.type: http://xapi.jisc.ac.uk/event_timetabled
+- non-timetabled event - object.definition.type: http://xapi.jisc.ac.uk/event_non-timetabled
+
+A **timetabled event** is a learning activity that is specifically recorded in the provider's timetabling system for students to attend usually but not exclusively within the context of a module or course; for example, a lecture, seminar or practical. These events will usually have fixed start and end times.
+
+A **non-timetabled event** is an event not contained within the provider's timetabling system, for example an ad hoc learning activity, pastoral activity or a non-teaching activity. These events may or may not have fixed start and end times, and may or may not be within the context of a module or course. Most importantly, they are not covered by the timetabled event definition.
 
 ### Actor
 
@@ -60,7 +68,7 @@ The Object entity defines an event that has been attended. Only one value for ob
 	</tr>
 	<tr>
 		<td>object.definition.type [1]</td>
-		<td>Indicates the type of the Object of the Statement. It is required and must be either http://xapi.jisc.ac.uk/event_timetabled or http://xapi.jisc.ac.uk/event_nontimetabled  (see the <a href="vocabulary.md#31-activity-types">vocabulary page</a> for the definition)</td>
+		<td>Indicates the type of the Object of the Statement. It is required and must be either http://xapi.jisc.ac.uk/event_timetabled or http://xapi.jisc.ac.uk/event_non-timetabled  (see above for the definitions).</td>
 		<td>iri</td>
 	</tr>
 	<tr>
@@ -75,8 +83,8 @@ The Object entity defines an event that has been attended. Only one value for ob
 	</tr>
 	<tr>
 	   <td>object.definition.extensions.http://xapi.jisc.ac.uk/subType [0.1]</td>
-	   <td>May be used to qualify what kind of timetabled event occurred - for example whether it was a lecture, lab-work, a group tutorial, etc - using the approach documented on the
-	   <a href="/vocabulary.md#31-activity-types">vocabulary</a> page.</td>
+	   <td>May be used to qualify what kind of event occurred - for example, for a timetabled event whether it was a lecture, practical, a group tutorial, etc - using the approach documented on the
+	   <a href="/vocabulary.md#31-activity-types">vocabulary</a> page. Separate subType lists for timetabled and non-timetabled events may be used.</td>
 	   <td>iri</td>
 	</tr>
 	<tr>
