@@ -16,7 +16,7 @@ Data should be supplied as a UTF-8 Tab Seperated File called attendance.tsv
 * [EVENT_ATTENDED](#event_attended) [1]
 * [ATTENDANCE_LATE](#attendance_late) [0..1]
 * [ATTENDANCE_CATEGORY](#attendance_category) [0..1]
-* [CAPTURE_TIME](#capture_category) [0..1]
+* [SUBMISSION_TIME](#SUBMISSION_TIME) [0..1]
 * [STAFF_ID](#staff_id) [0..1]
 * [MOD_INSTANCE_ID](#mod_instance_id) [0..1]
 * [COURSE_INSTANCE_ID](#course_instance_id) [0..1]
@@ -188,23 +188,6 @@ String(255)
 
 ### Notes
 Usually a short code such as "L", "X", "A"
-
-## CAPTURE_TIME
-### Description
-Capture_time is used to record the time that the agent recorded their attendance.
-
-### Purpose
-Analytics
-
-### Derivation
-Jisc
-
-### Valid Values
-Date and time to at least hour precision.
-
-### Format
-ISO Date (eg 2015-05-24T09:00)
-
 
 ## STAFF_ID
 ### Description
