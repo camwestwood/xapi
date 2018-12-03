@@ -249,12 +249,22 @@ Example:
 
 <table>
 <tr><th align="left">Label</th><td>Timetabled Event</td></tr>
-<tr><th align="left">Description</th><td>Indicates that the event was a scheduled learning activity.</td></tr>
+<tr><th align="left">Description</th><td>Indicates a learning activity that is specifically recorded in the provider's timetabling system for students to attend usually but not exclusively within the context of a module or course; for example, a lecture, seminar or practical. These events will usually have fixed start and end time.</td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/event_timetabled">http://xapi.jisc.ac.uk/event_timetabled</a> </td></tr>
 <tr><th align="left">Example in Statement template</th><td> <a href="/recipes/attendance/attendance.md#object">attendance</a> </td></tr>
 </table>
 
 ### External Content
+
+### None-Timetabled Event
+
+<table>
+<tr><th align="left">Label</th><td>Timetabled Event</td></tr>
+<tr><th align="left">Description</th><td>An event not contained within the provider's timetabling system, for example an ad hoc learning activity, pastoral activity or a non-teaching activity. These events may or may not have fixed start and end times, and may or may not be within the context of a module or course. Most importantly, they are not covered by the timetabled event definition.</td></tr>
+<tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/event_non-timetable">http://xapi.jisc.ac.uk/event_non-timetable</a> </td></tr>
+<tr><th align="left">Example in Statement template</th><td> <a href="/recipes/attendance/attendance.md#object">attendance</a> </td></tr>
+</table>
+
 
 <table>
 <tr><th align="left">Label</th><td>External Content</td></tr>
