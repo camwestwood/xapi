@@ -208,9 +208,9 @@ v1.0.1 Statement Added To Repository
 
 #### Library item Borrowed Item
 
-v1.0.2 08-11-2018, Spec Change. [Added SubjectArea](https://github.com/jiscdev/xapi/issues/275)
+v1.0.2 08-11-2018, Spec Change. [Added subject_area](https://github.com/jiscdev/xapi/issues/275)
 
-v1.0.2 08-11-2018, Spec Change. [Added BorrowingSite](https://github.com/jiscdev/xapi/issues/275)
+v1.0.2 08-11-2018, Spec Change. [Added borrowing_site](https://github.com/jiscdev/xapi/issues/275)
 
 v1.0.1 Statement Added To Repository
 

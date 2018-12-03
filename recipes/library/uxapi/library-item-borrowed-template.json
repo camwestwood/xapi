@@ -23,7 +23,7 @@
 			},
 		    	"extensions": {
 			    	"http://xapi.jisc.ac.uk/subType": "**ITEM_SUBTYPE**",
-					"http://xapi.jisc.ac.uk/subjectArea": "**SUBJECT_AREA**",
+					"http://xapi.jisc.ac.uk/subject_area": "**SUBJECT_AREA**",
 					"http://oclc.com/number": "**OCLC_NUMBER**"
 		    	}
 		}
@@ -35,7 +35,7 @@
 		"platform": "**PLATFORM**",
 		"extensions": {
 			"http://xapi.jisc.ac.uk/statementCat": "Library",
-			"http://xapi.jisc.ac.uk/borrowingSite": "**BORROWING_SITE**",
+			"http://xapi.jisc.ac.uk/borrowing_site": "**BORROWING_SITE**",
 			"http://xapi.jisc.ac.uk/version": "1.0.2"
 		}
 	}

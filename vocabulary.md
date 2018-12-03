@@ -216,7 +216,7 @@ Example:
 <table>
 <tr><th align="left">Label</th><td>Borrowing Site</td></tr>
 <tr><th align="left">Description</th><td>The site that the item was borrowed from.</td></tr>
-<tr><th align="left">IRI</th><td>http://xapi.jisc.ac.uk/borrowingSite</td></tr>
+<tr><th align="left">IRI</th><td>http://xapi.jisc.ac.uk/borrowing_site</td></tr>
 <tr><th align="left">Statement Example</th><td> <a href="recipes/library/library-item-borrowing.md">Item borrowed</a> </td></tr>
 </table>
 
@@ -312,7 +312,7 @@ Example:
 <table>
 <tr><th align="left">Label</th><td>Subject Area</td></tr>
 <tr><th align="left">Description</th><td>The subject area of the object.</td></tr>
-<tr><th align="left">IRI</th><td>http://xapi.jisc.ac.uk/subjectArea</td></tr>
+<tr><th align="left">IRI</th><td>http://xapi.jisc.ac.uk/subject_area</td></tr>
 <tr><th align="left">Statement Example</th><td> <a href="recipes/library/library-item-borrowing.md">Item borrowed</a> </td></tr>
 </table>
 

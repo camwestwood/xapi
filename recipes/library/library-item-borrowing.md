@@ -75,7 +75,7 @@ The Verb depends [borrowed](http://activitystrea.ms/schema/1.0/borrowed) indicat
 		<td>string</td>
 	<tr>
 	<tr>
-		<td>object.definition.extensions.http://xapi.jisc.ac.uk/subjectArea [0..1]</td>
+		<td>object.definition.extensions.http://xapi.jisc.ac.uk/subject_area [0..1]</td>
 		<td>The subject area of the item.</td>
 		<td>string</td>
 	<tr>
@@ -95,7 +95,7 @@ The Verb depends [borrowed](http://activitystrea.ms/schema/1.0/borrowed) indicat
 		"extensions": {
 			"http://xapi.jisc.ac.uk/subType":"http://id.tincanapi.com/activitytype/book",
 			"http://oclc.com/number": "1234567890",
-			"http://xapi.jisc.ac.uk/subjectArea": "Mathamatics"
+			"http://xapi.jisc.ac.uk/subject_area": "Mathamatics"
 		}
 }
 ```
@@ -126,7 +126,7 @@ An ISO 8601 format timestamp that corresponds to the time of when the item was b
 		<td>string</td>
 	</tr>
 	<tr>
-		<td><a href="vocabulary.md#borrowing-site">context.extensions.http://xapi.jisc.ac.uk/borrowingSite</a> [0..1]</td>
+		<td><a href="vocabulary.md#borrowing-site">context.extensions.http://xapi.jisc.ac.uk/borrowing_site</a> [0..1]</td>
 		<td>Optional, the site that the item was borrowed from. <br/></td>
 		<td>string</td>
 	</tr>
@@ -142,7 +142,7 @@ An ISO 8601 format timestamp that corresponds to the time of when the item was b
  
   "extensions": {
 	"http://xapi.jisc.ac.uk/statementCat": "Library",
-	"http://xapi.jisc.ac.uk/borrowingSite": "Main Library",
+	"http://xapi.jisc.ac.uk/borrowing_site": "Main Library",
 	"http://xapi.jisc.ac.uk/version": "1.0.1"
 	
   }
@@ -177,7 +177,7 @@ An ISO 8601 format timestamp that corresponds to the time of when the item was b
 			"extensions": {
 				"http://xapi.jisc.ac.uk/subType": "http://id.tincanapi.com/activitytype/book",
 				"http://oclc.com/number": "ocn123456789",
-				"http://xapi.jisc.ac.uk/subjectArea": "Mathamatics"
+				"http://xapi.jisc.ac.uk/subject_area": "Mathamatics"
 			}
 		}
 	},
@@ -188,7 +188,7 @@ An ISO 8601 format timestamp that corresponds to the time of when the item was b
  
 		"extensions": {
 			"http://xapi.jisc.ac.uk/statementCat": "library",
-			"http://xapi.jisc.ac.uk/borrowingSite": "Main Library",
+			"http://xapi.jisc.ac.uk/borrowing_site": "Main Library",
 			"http://xapi.jisc.ac.uk/version": "1.0.1"
 	
   		}
