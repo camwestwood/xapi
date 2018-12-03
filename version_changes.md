@@ -127,6 +127,8 @@ v1.0.1 Statement Added To Repository
 
 #### Attended learning activity
 
+v1.0.2 03-121-2018, Spec Change. [Added new object type for non timetabled](https://github.co7/jiscdev/xapi/issues/270)
+
 v1.0.2 08-11-2018, Spec Change. [Added Capture Time](https://github.co7/jiscdev/xapi/issues/273)
 
 v1.0.1 13-04-2018, Spec Change. [Statement category added as optional](https://github.co7/jiscdev/xapi/issues/225)
