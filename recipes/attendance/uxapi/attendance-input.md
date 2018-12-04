@@ -20,6 +20,8 @@ Data should be supplied as a UTF-8 Tab Seperated File called attendance.tsv
 * [STAFF_ID](#staff_id) [0..1]
 * [MOD_INSTANCE_ID](#mod_instance_id) [0..1]
 * [COURSE_INSTANCE_ID](#course_instance_id) [0..1]
+* [CAPTURED_FROM](#captured_from) [0..1]
+
 
 ## STUDENT_ID
 ### Description
@@ -239,5 +241,17 @@ Any
 ISO Date (eg 2015-05-24T09:00)
 
 ### Notes
+
+## CAPTURED_FROM
+### Description
+The system or device that attendance was recorded by.
+
+### Valid Values
+Any
+
+### Format
+string (255)
+
+
 
 

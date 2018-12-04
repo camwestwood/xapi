@@ -27,10 +27,10 @@
         "extensions": {
           "http://xapi.jisc.ac.uk/subType": "**HOMEPAGE**/event_type/**EVENT_TYPE**",
           "http://xapi.jisc.ac.uk/event_type_description": "**EVENT_TYPE_DESCRIPTION**",
-        "http://xapi.jisc.ac.uk/event_max_count": "**EVENT_MAX_COUNT**",
-        "http://xapi.jisc.ac.uk/event_mandatory": "**EVENT_MANDATORY**",
-        "http://xapi.jisc.ac.uk/starttime": "**START_TIME**",
-        "http://xapi.jisc.ac.uk/endtime": "**END_TIME**"
+          "http://xapi.jisc.ac.uk/event_max_count": "**EVENT_MAX_COUNT**",
+         "http://xapi.jisc.ac.uk/event_mandatory": "**EVENT_MANDATORY**",
+         "http://xapi.jisc.ac.uk/starttime": "**START_TIME**",
+         "http://xapi.jisc.ac.uk/endtime": "**END_TIME**"
       }
       }
     },
@@ -43,6 +43,7 @@
         }
     },
     "context": {
+      "http://xapi.jisc.ac.uk/captured_from": "**CAPTURED_FROM**",
       "platform": "**PLATFORM**",
       "instructor": {
          "objectType": "Agent",

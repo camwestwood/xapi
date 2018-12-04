@@ -235,6 +235,11 @@ The result.completion must be set to true if the Actor attended the event, or fa
 		<td>Recommended For querying lookup. Set to "attendance" in attendance templates <br/></td>
 		<td>string</td>
 	</tr>
+	<tr>
+		<td><a href="vocabulary.md#captured_from">context.extensions.https://xapi.jisc.ac.uk/captured_from</a>[0..1]</td>
+		<td>The application type that captured the attendance. Excamples Web.Android.iOS <br/></td>
+	<td>string</td>
+	</tr>
 </table>
 
 #### Entity Example:
@@ -250,7 +255,8 @@ The result.completion must be set to true if the Actor attended the event, or fa
             }
 		},
 	"extensions": {
-        "http://xapi.jisc.ac.uk/version": "1.0.1",
+        "http://xapi.jisc.ac.uk/captured_from": "ios",
+		"http://xapi.jisc.ac.uk/version": "1.0.2",
 		"http://xapi.jisc.ac.uk/statementCat": "Attendance",
 		"http://xapi.jisc.ac.uk/deviceLocation": {
 			"type": "Feature",
