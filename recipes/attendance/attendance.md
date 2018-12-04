@@ -241,6 +241,7 @@ The result.completion must be set to true if the Actor attended the event, or fa
 
 ``` javascript
  "context": {
+	"platform" :"Study-Goal",
     "instructor": {
             "objectType": "Agent",
             "account": {
@@ -325,6 +326,7 @@ In attendance statements the timestamp property must be set to the start time of
       }
  },
 	"context": {
+		"platform" :"Study-Goal",
 		"instructor": {
 			"objectType": "Agent",
 			"account": {

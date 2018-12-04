@@ -116,6 +116,11 @@ An ISO 8601 format timestamp that corresponds to the time of when the item was b
 <table>
 	<tr><th>Property [cardinality]</th><th>Description</th><th>Value information</</th></tr>
 	<tr>
+		<td>context.platform [0..1]</td>
+		<td>The platform used in the experience of this learning activity. The value used should not change between platform upgrades and version changes, and should typically be a concise name by which the application is commonly known, for example "Moodle" or "Blackboard"</td>
+		<td>string</td>
+	</tr>
+	<tr>
 		<td>context.extensions.version [0..1]</td>
 		<td>Recommended, identifies the version of the Jisc xAPI profile found on the ReadMe page. <br/></td>
 		<td>string</td>
@@ -139,7 +144,7 @@ An ISO 8601 format timestamp that corresponds to the time of when the item was b
 
 ``` javascript
 "context": {
- 
+  "platform" :"WorldShare",
   "extensions": {
 	"http://xapi.jisc.ac.uk/statementCat": "Library",
 	"http://xapi.jisc.ac.uk/borrowing_site": "Main Library",
@@ -185,7 +190,7 @@ An ISO 8601 format timestamp that corresponds to the time of when the item was b
 	"timestamp": "2015-09-18T01:54:51.484Z",
 	
 	"context": {
- 
+		"platform" :"WorldShare",
 		"extensions": {
 			"http://xapi.jisc.ac.uk/statementCat": "library",
 			"http://xapi.jisc.ac.uk/borrowing_site": "Main Library",
