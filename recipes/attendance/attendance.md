@@ -196,6 +196,11 @@ The result.completion must be set to true if the Actor attended the event, or fa
 	<td>JSON Object</td>
 </tr>
 <tr>
+	<td>context.platform [0..1]</td>
+	<td>The platform used in the experience of this learning activity. The value used should not change between platform upgrades and version changes, and should typically be a concise name by which the application is commonly known, for example "Moodle" or "Blackboard"</td>
+	<td>string</td>
+</tr>
+<tr>
 	<td>context.instructor.objectType [1]</td>
 	<td>Must be "Agent"</td>
 	<td>String, must be "Agent"</td>
