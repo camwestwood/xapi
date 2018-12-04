@@ -61,12 +61,9 @@ Common entity identifier: ObjectA, as defined on the [common structures](/common
 ``` javascript
 "object": {
 	"objectType": "Activity",
-	"id": "http://onlinelibrary.jisc.ac.uk/doi/10.1111"   	 	
+	"id": "http://www.contenthost.com"   	 	
 	"definition": {
-		"type": "http://id.tincanapi.com/activitytype/resource",
-			"extensions": {
-     		 "http://xapi.jisc.ac.uk/hostname": "http://www.contenthost.com"
-	 		}
+		"type": "http://activitystrea.ms/schema/1.0/service"
     	}
 }
 ```
@@ -125,18 +122,23 @@ Common entity identifier: ObjectA, as defined on the [common structures](/common
 		}
 	},
 	"timestamp": "2015-09-18T01:54:51.484Z",
-	"verb": {
-		"id": "http://id.tincanapi.com/verb/viewed",
-		"display": {
-			"en": "viewed"
-		}
+		"verb": {
+        	"id": "http://activitystrea.ms/schema/1.0/access"	,
+       		 "display": {
+            "en": "access"
+        }
+    },}
 	},
 	"object": {
 		"objectType": "Activity",
-		"id": "http://onlinelibrary.jisc.ac.uk/doi/10.1111",
+		"id": "http://onlinelibrary.jisc.ac.uk/",
 		"definition": {
-			"type": "http://id.tincanapi.com/activitytype/resource",
+			"type": "http://activitystrea.ms/schema/1.0/service",
+			 "extensions": {
+				"http://xapi.jisc.ac.uk/full-url": "http://onlinelibrary.jisc.ac.uk/doi/10.1111"
+			}
 		}
+
 	},	
 	"context": {
 		"platform": "UxAPI",

@@ -6,9 +6,9 @@ Data should be supplied as a UTF-8 Tab Separated File called econtent.tsv.
 
 * [USERNAME](#username) [1]
 * [TIMESTAMP](#timestamp) [1]
-* [ITEM_ID](#item_id) [1]
-* [HOMEPAGE](#HOMPAGE) [0..1]
-* [HOSTNAME](#HOSTNAME) [0..1]
+* [URL](#URL) [1]
+* [HOMEPAGE](#homepage) [0..1]
+* [HOSTNAME](#hostname) [1]
 * [CLIENT_IP](#client_ip) [0..1]
 
 
@@ -36,16 +36,16 @@ Any
 ### Format
 ISO 8601 timestamp
 
-## ITEM_ID 
+## URL 
 ### Description
 
-A unique identifier for that item
+A full URL for this resource
 
 ### Valid Values
 Any
 
 ### Format
-String (255)
+String (1023)
 
 
 ## ITEM_NAME
