@@ -116,7 +116,7 @@ The Object entity defines an event that has been attended. Only one value for ob
 
 
 #### Entity Example:
-The Object defines an event that has been attended. Information on the event can be found in the object.extensions. See the [objectD section in the common structures document](/common_structures.md#objectd).
+The Object defines an event that has been attended. Information on the event can be found in the object.extensions.
 
 ``` javascript
  "object": {
@@ -163,7 +163,6 @@ The result.completion must be set to true if the Actor attended the event, or fa
 		<td>Indicates any given category for non-attendance or lateness. </td>
 		<td>String</td>
 	</tr>
-
 	<tr>
 		<td><a href="vocabulary.md#Submission-time">result.extensions.http://xapi.jisc.ac.uk/submission_time</a> [0..1]</td>
 		<td>Indicates the time the result was submitted</td>
@@ -191,14 +190,14 @@ The result.completion must be set to true if the Actor attended the event, or fa
 <table>
 <tr><th>Property [cardinality]</th><th>Description</th><th>Value information</</th></tr>
 <tr>
-	<td>context.instructor [0..1]</td>
-	<td></td>
-	<td>JSON Object</td>
+	<td>context.platform [0..1]</td>
+	<td>The platform used by the student or member of staff to record the student's attendance. The value used should not change between platform upgrades and version changes and should typically be a concise name by which the application is commonly known, for example "Study Goal".</td>
+	<td>string</td>
 </tr>
 <tr>
-	<td>context.platform [0..1]</td>
-	<td>The platform used in the experience of this learning activity. The value used should not change between platform upgrades and version changes, and should typically be a concise name by which the application is commonly known, for example "Moodle" or "Blackboard"</td>
-	<td>string</td>
+	<td>context.instructor [0..1]</td>
+	<td>Tutor or other member of staff involved</td>
+	<td>JSON Object</td>
 </tr>
 <tr>
 	<td>context.instructor.objectType [1]</td>
@@ -232,12 +231,12 @@ The result.completion must be set to true if the Actor attended the event, or fa
 </tr>
 	<tr>
 		<td><a href="vocabulary.md#StatementCategory">context.extensions.https://xapi.jisc.ac.uk/statementCat</a>[0..1]</td>
-		<td>Recommended For querying lookup. Set to "attendance" in attendance templates <br/></td>
+		<td>Recommended For querying lookup. Set to "attendance" in attendance templates.<br/></td>
 		<td>string</td>
 	</tr>
 	<tr>
 		<td><a href="vocabulary.md#captured_from">context.extensions.https://xapi.jisc.ac.uk/captured_from</a>[0..1]</td>
-		<td>The application type that captured the attendance. Excamples Web.Android.iOS <br/></td>
+		<td>The application or device type that captured the attendance; for example, Web, Android, iOS.<br/></td>
 	<td>string</td>
 	</tr>
 </table>
@@ -246,25 +245,23 @@ The result.completion must be set to true if the Actor attended the event, or fa
 
 ``` javascript
  "context": {
-	"platform" :"Study-Goal",
+	"platform" :"Study Goal",
     "instructor": {
             "objectType": "Agent",
             "account": {
-                "name": "2",
-                "homePage": "http://localhost/moodle"
+                "name": "RKeenan",
+                "homePage": "https://courses.alpha.jisc.ac.uk/moodle"
             }
 		},
 	"extensions": {
-        "http://xapi.jisc.ac.uk/captured_from": "ios",
-		"http://xapi.jisc.ac.uk/version": "1.0.2",
-		"http://xapi.jisc.ac.uk/statementCat": "Attendance",
+        	"http://xapi.jisc.ac.uk/version": "1.0.2",
 		"http://xapi.jisc.ac.uk/deviceLocation": {
 			"type": "Feature",
 			"geometry": {
 				"type": "Point",
 				"coordinates": [51.510531, -0.118930]
 					},
-				"properties": {
+			"properties": {
 				"name": "University of Jisc"
 				}
 		},
@@ -272,12 +269,13 @@ The result.completion must be set to true if the Actor attended the event, or fa
 			"http://xapi.jisc.ac.uk/uddCourseInstanceID": "LA101-200",
 			"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0"
 		}
+		"http://xapi.jisc.ac.uk/statementCat": "Attendance",
+		"http://xapi.jisc.ac.uk/captured_from": "ios"
   }
 ```
 
-
 ### Timestamp
-In attendance statements the timestamp property must be set to the start time of the timetabled even; the value must be identical to the value found in the starttime extension.
+In attendance statements the timestamp property must be set to the start time of the timetabled event; the value must be identical to the value found in the starttime extension.
 
 #### Example Entity
 ```
@@ -328,36 +326,37 @@ In attendance statements the timestamp property must be set to the start time of
       "extensions":{
         "http://xapi.jisc.ac.uk/attendance_late":1,
         "http://xapi.jisc.ac.uk/attendance_category":"1",
-		"http://xapi.jisc.ac.uk/submission_time": "2015-05-24T09:00"
+	"http://xapi.jisc.ac.uk/submission_time": "2015-05-24T09:00"
       }
  },
-	"context": {
-		"platform" :"Study-Goal",
-		"instructor": {
-			"objectType": "Agent",
-			"account": {
-				"name": "2",
-				"homePage": "http://localhost/moodle"
+  "context": {
+  	"platform" :"Study Goal",
+	"instructor": {
+		"objectType": "Agent",
+		"account": {
+			"name": "RKeenan",
+			"homePage": "https://courses.alpha.jisc.ac.uk/moodle"
+			}
+	},
+	"extensions": {
+		"http://xapi.jisc.ac.uk/version": "1.0.1",
+		"http://xapi.jisc.ac.uk/deviceLocation": {
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [51.510531, -0.118930]
+			},
+			"properties": {
+				"name": "University of Jisc"
 			}
 		},
-		"extensions": {
-			"http://xapi.jisc.ac.uk/version": "1.0.1",
-			"http://xapi.jisc.ac.uk/statementCat": "Attendance",
-			"http://xapi.jisc.ac.uk/deviceLocation": {
-				"type": "Feature",
-				"geometry": {
-					"type": "Point",
-					"coordinates": [51.510531, -0.118930]
-						},
-					"properties": {
-					"name": "University of Jisc"
-					}
-			},
-		   "http://xapi.jisc.ac.uk/courseArea": {
-				 "http://xapi.jisc.ac.uk/vle_mod_id": "LA101-200-2016S1-0",
-				 "http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0",
-			 }
-		 }
+		"http://xapi.jisc.ac.uk/courseArea": {
+			"http://xapi.jisc.ac.uk/vle_mod_id": "LA101-200-2016S1-0",
+			"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0",
+		},
+		"http://xapi.jisc.ac.uk/statementCat": "Attendance",
+		"http://xapi.jisc.ac.uk/captured_from": "ios"
+		}
 	 }
 }
 ```
