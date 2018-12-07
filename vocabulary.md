@@ -399,6 +399,16 @@ Was used in older recipes to identify the genre of software application. Best pr
 <tr><th align="left">Sample Value</th><td>http://id.tincanapi.com/activitytype/lms</td></tr>
 </table>
 
+### Captured From
+
+<table>
+<tr><th align="left">Label</th><td>Captured From/td></tr>
+<tr><th align="left">Description</th><td>The application or device type that captured the attendance; for example, Web, Android, iOS</td></tr>
+<tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/captured_from">http://xapi.jisc.ac.uk/captured_from"</a> </td></tr>
+<tr><th align="left">Data Type</th><td>string </td></tr>
+<tr><th align="left">Sample Value</th><td>ios</td></tr>
+</table>
+
 ### Course area
 
 For more information, see Jisc Profile [CourseArea properties](#coursearea).
