@@ -206,8 +206,6 @@ v1.0 25-05-2017, Spec Change. [UDD Mod ID added to courseArea](https://github.co
 
 #### Library item viewed econtent 
 
-v1.0.2 Access Statement reworded (removed access word, changed to viewed)
-
 v1.0.1 Statement Added To Repository
 
 #### Library item Borrowed Item
@@ -220,7 +218,7 @@ v1.0.2 08-11-2018, Spec Change. [Added borrowing_site](https://github.com/jiscde
 
 v1.0.1 Statement Added To Repository
 
-#### Library item access Item
+#### access service
 
 v1.0.2 New Access statement Added To Repository
 

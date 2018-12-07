@@ -1,11 +1,9 @@
 # econtent accessed statement template
 
-Based on generic template statement: [Viewed](/generic/view.md)
-
-[Statement Template Changes](/version_changes.md#econtent)
+[Statement Template Changes](/version_changes.md#access_service)
 
 ## Purpose
-This template defines the structure and terms to record the experience of viewing econtent.
+This template defines the structure and terms to record the experience of accessing a service.
 
 ### Actor
 Common entity identifier:  ActorA, as defined on the [common structures](/common_structures.md#actora) page.
@@ -54,7 +52,9 @@ The Verb, [access](/vocabulary.md#verbs), denotes the action of the user's brows
 
 
 ### Object
-Common entity identifier: ObjectA, as defined on the [common structures](/common_structures.md#objecta) page.
+Common entity identifier: ObjectA, as defined on the [common structures](/common_structures.md#objecta) page. 
+
+An object type of http://activitystrea.ms/schema/1.0/service is required for this statement,
 
 ### Example
 
@@ -133,17 +133,14 @@ Common entity identifier: ObjectA, as defined on the [common structures](/common
 		"objectType": "Activity",
 		"id": "http://onlinelibrary.jisc.ac.uk/",
 		"definition": {
-			"type": "http://activitystrea.ms/schema/1.0/service",
-			 "extensions": {
-				"http://xapi.jisc.ac.uk/full-url": "http://onlinelibrary.jisc.ac.uk/doi/10.1111"
-			}
+			"type": "http://activitystrea.ms/schema/1.0/service"
 		}
 
 	},	
 	"context": {
-		"platform": "UxAPI",
+		"platform": "ezproxy",
 		"extensions": {
-			"http://xapi.jisc.ac.uk/version": "1.0.1",
+			"http://xapi.jisc.ac.uk/version": "1.0.2",
 			"http://id.tincanapi.com/extensions/ip-address": "165.154.154.1",
 			"https://xapi.jisc.ac.uk/statementCat": "Library"
 		}

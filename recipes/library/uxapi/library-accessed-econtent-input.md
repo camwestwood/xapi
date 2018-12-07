@@ -6,9 +6,7 @@ Data should be supplied as a UTF-8 Tab Separated File called econtent.tsv.
 
 * [USERNAME](#username) [1]
 * [TIMESTAMP](#timestamp) [1]
-* [URL](#URL) [1]
-* [HOMEPAGE](#homepage) [0..1]
-* [HOSTNAME](#hostname) [1]
+* [URL](#url) [1]
 * [CLIENT_IP](#client_ip) [0..1]
 
 
@@ -17,7 +15,6 @@ Data should be supplied as a UTF-8 Tab Separated File called econtent.tsv.
 ### Description
 
 A unique identifier for that user
-
 
 ### Valid Values
 Any
@@ -47,30 +44,6 @@ Any
 ### Format
 String (1023)
 
-
-## ITEM_NAME
-### Description
-
-A name identifier for that item
-
-### Purpose
-
-tbc
-
-### Format
-String (255)
-
-## HOSTNAME
-### Description
-
-A host of the object
-
-### Purpose
-
-tbc
-
-### Format
-String (255)
 
 ## CLIENT_IP 
 ### Description
