@@ -100,7 +100,7 @@ An object type of http://activitystrea.ms/schema/1.0/service is required for thi
 
 ``` javascript
 	"context": {
-		"platform": "UxAPI",
+		"platform": "ezproxy",
 		"extensions": {
 			"http://xapi.jisc.ac.uk/version": "1.0.1",
 			"http://id.tincanapi.com/extensions/ip-address": "165.154.154.1",

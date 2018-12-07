@@ -18,10 +18,7 @@
 		"objectType": "Activity",
 		"id": "**HOSTNAME**",
 		"definition": {
-			"type": "http://activitystrea.ms/schema/1.0/service",
-			"extensions": {
-				"http://xapi.jisc.ac.uk/full-url": "**URL**"
-			}
+			"type": "http://activitystrea.ms/schema/1.0/service"
 		}
 	},
 	"context": {
