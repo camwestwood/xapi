@@ -3,7 +3,7 @@
 	"actor": {
 		"objectType": "Agent",
 		"account": {
-			"name": "**USER_ID**",
+			"name": "**USERNAME**",
 			"homePage": "**HOMEPAGE**"
 		}
 	},

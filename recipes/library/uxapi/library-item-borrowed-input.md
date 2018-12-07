@@ -5,11 +5,12 @@ Data should be supplied as a UTF-8 Tab Separated File called borrowing.tsv
 # library-borrowed
 
 * [USER_ID](#user_id) [1]
-* [PLATFORM](#platform) [0..1]
 * [ITEM_ID](#item_id) [1]
 * [ITEM_NAME](#item_name) [0..1]
 * [ITEM_SUBTYPE](#item_subtype) [1]
 * [OCLC_NUMBER](#oclc_number) [0..1]
+* [SUBJECT_AREA](#subject_area) [0..1]
+* [BORROWING_SITE](#borrowing_site) [0..1]
 * [TIMESTAMP](#timestamp) [1]
 
 
@@ -18,17 +19,6 @@ Data should be supplied as a UTF-8 Tab Separated File called borrowing.tsv
 ### Description
 
 A unique identifier for that user
-
-### Valid Values
-Any
-
-### Format
-String (255)
-
-## PLATFORM 
-### Description
-
-The platform used in the experience of this learning activity. The value used should not change between platform upgrades and version changes, and should typically be a concise name by which the application is commonly known, for example "Moodle" or "Blackboard"
 
 ### Valid Values
 Any
