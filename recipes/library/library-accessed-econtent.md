@@ -122,12 +122,12 @@ An object type of http://activitystrea.ms/schema/1.0/service is required for thi
 		}
 	},
 	"timestamp": "2015-09-18T01:54:51.484Z",
-		"verb": {
+	
+	"verb": {
         	"id": "http://activitystrea.ms/schema/1.0/access"	,
        		 "display": {
-            "en": "access"
-        }
-    },}
+           		"en": "access"
+        		}
 	},
 	"object": {
 		"objectType": "Activity",
