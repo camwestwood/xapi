@@ -113,7 +113,7 @@ The Context may describe the parent forum of the thread in context.contextActivi
 			
 			"http://xapi.jisc.ac.uk/sessionId":"32456891",
 			"http://id.tincanapi.com/extension/ip-address": "10.3.3.48"
-			"http://xapi.jisc.ac.uk/version" : "1.0.1"
+			"http://xapi.jisc.ac.uk/version" : "1.0.2"
 			}
 		}
 ```
@@ -169,7 +169,7 @@ The Context may describe the parent forum of the thread in context.contextActivi
 			
 	"http://xapi.jisc.ac.uk/sessionId":"32456891",
 	"http://id.tincanapi.com/extension/ip-address": "10.3.3.48",
-	"http://xapi.jisc.ac.uk/version" : "1.0.1"
+	"http://xapi.jisc.ac.uk/version" : "1.0.2"
 	}
   }
 }

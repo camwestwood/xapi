@@ -148,7 +148,7 @@ An ISO 8601 format timestamp that corresponds to the time of when the item was b
   "extensions": {
 	"http://xapi.jisc.ac.uk/statementCat": "Library",
 	"http://xapi.jisc.ac.uk/borrowing_site": "Main Library",
-	"http://xapi.jisc.ac.uk/version": "1.0.1"
+	"http://xapi.jisc.ac.uk/version": "1.0.2"
 	
   }
 }
@@ -194,7 +194,7 @@ An ISO 8601 format timestamp that corresponds to the time of when the item was b
 		"extensions": {
 			"http://xapi.jisc.ac.uk/statementCat": "library",
 			"http://xapi.jisc.ac.uk/borrowing_site": "Main Library",
-			"http://xapi.jisc.ac.uk/version": "1.0.1"
+			"http://xapi.jisc.ac.uk/version": "1.0.2"
 	
   		}
   	}
