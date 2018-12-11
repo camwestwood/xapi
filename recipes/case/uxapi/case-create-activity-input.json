@@ -32,7 +32,7 @@
 			"http://xapi.jisc.ac.uk/statementCat": "Note",
 			"http://xapi.jisc.ac.uk/mode" : "**MODE**",
 			"http://xapi.jisc.ac.uk/weighting" : **WEIGHTING**,
-            "http://xapi.jisc.ac.uk/version" : "1.0.1",
+            "http://xapi.jisc.ac.uk/version" : "1.0.2",
             
             "http://xapi.jisc.ac.uk/case-target": {
 				"actor": {

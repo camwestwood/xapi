@@ -9,6 +9,8 @@ Data should be supplied as a UTF-8 Tab Separated File called borrowing.tsv
 * [ITEM_NAME](#item_name) [0..1]
 * [ITEM_SUBTYPE](#item_subtype) [1]
 * [OCLC_NUMBER](#oclc_number) [0..1]
+* [SUBJECT_AREA](#subject_area) [0..1]
+* [BORROWING_SITE](#borrowing_site) [0..1]
 * [TIMESTAMP](#timestamp) [1]
 
 

@@ -1,4 +1,4 @@
-This is the specification for an input TSV file for viewing a vle resource.
+This is the specification for an input TSV file for viewing a resource through the studygoal app.
 
 Data should be supplied as a UTF-8 Tab Seperated File called resourceviewed.tsv
 

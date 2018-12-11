@@ -59,7 +59,7 @@ Since the logged-in action is not undertaken in relation to a particular learnin
  		"http://xapi.jisc.ac.uk/sessionId":"32456891",
         	"http://xapi.jisc.ac.uk/statementCat": "VLE",
         	"http://id.tincanapi.com/extension/ip-address": "10.3.3.48",
-		"http://xapi.jisc.ac.uk/version" : "1.0.1"
+		"http://xapi.jisc.ac.uk/version" : "1.0.2"
 			}
 ```
 

@@ -142,16 +142,6 @@ The following are extension properties in the Result entity:
 <tr><th align="left">Sample Value</th><td>C</td></tr>
 </table>
 
-### Capture Time
-
-<table>
-<tr><th align="left">Label</th><td>Capture Time</td></tr>
-<tr><th align="left">Description</th><td>The time at which the result was captured</td></tr>
-<tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/attendance_category">http://xapi.jisc.ac.uk/capture_time</a> </td></tr>
-<tr><th align="left">Example in Statement template</th><td> <a href="/recipes/attendance/attendance.md#result">attendance</a> </td></tr>
-<tr><th align="left">Data Type</th><td>String</td></tr>
-<tr><th align="left">Sample Value</th><td>eg 2015-05-24T09:00</td></tr>
-</table>
 
 ### Grade
 
@@ -162,6 +152,17 @@ The following are extension properties in the Result entity:
 <tr><th align="left">Statement Example</th><td> <a href="recipes/vle/assignment-graded.md#result">Assignment Graded</a> </td></tr>
 <tr><th align="left">Value Space</th><td>String</td></tr>
 <tr><th align="left">Sample Value</th><td>5 Stars</td></tr>
+</table>
+
+### Submission Time
+
+<table>
+<tr><th align="left">Label</th><td>Submission Time</td></tr>
+<tr><th align="left">Description</th><td>The time at which the result was submitted</td></tr>
+<tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/submission_time">http://xapi.jisc.ac.uk/submission_time</a> </td></tr>
+<tr><th align="left">Example in Statement template</th><td> <a href="/recipes/attendance/attendance.md#result">attendance</a> </td></tr>
+<tr><th align="left">Data Type</th><td>String</td></tr>
+<tr><th align="left">Sample Value</th><td>eg 2015-05-24T09:00</td></tr>
 </table>
 
 <a name="object"></a>
@@ -215,7 +216,7 @@ Example:
 <table>
 <tr><th align="left">Label</th><td>Borrowing Site</td></tr>
 <tr><th align="left">Description</th><td>The site that the item was borrowed from.</td></tr>
-<tr><th align="left">IRI</th><td>http://xapi.jisc.ac.uk/borrowingSite</td></tr>
+<tr><th align="left">IRI</th><td>http://xapi.jisc.ac.uk/borrowing_site</td></tr>
 <tr><th align="left">Statement Example</th><td> <a href="recipes/library/library-item-borrowing.md">Item borrowed</a> </td></tr>
 </table>
 
@@ -248,12 +249,22 @@ Example:
 
 <table>
 <tr><th align="left">Label</th><td>Timetabled Event</td></tr>
-<tr><th align="left">Description</th><td>Indicates that the event was a scheduled learning activity.</td></tr>
+<tr><th align="left">Description</th><td>Indicates a learning activity that is specifically recorded in the provider's timetabling system for students to attend usually but not exclusively within the context of a module or course; for example, a lecture, seminar or practical. These events will usually have fixed start and end time.</td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/event_timetabled">http://xapi.jisc.ac.uk/event_timetabled</a> </td></tr>
 <tr><th align="left">Example in Statement template</th><td> <a href="/recipes/attendance/attendance.md#object">attendance</a> </td></tr>
 </table>
 
 ### External Content
+
+### None-Timetabled Event
+
+<table>
+<tr><th align="left">Label</th><td>Timetabled Event</td></tr>
+<tr><th align="left">Description</th><td>An event not contained within the provider's timetabling system, for example an ad hoc learning activity, pastoral activity or a non-teaching activity. These events may or may not have fixed start and end times, and may or may not be within the context of a module or course. Most importantly, they are not covered by the timetabled event definition.</td></tr>
+<tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/event_non-timetable">http://xapi.jisc.ac.uk/event_non-timetable</a> </td></tr>
+<tr><th align="left">Example in Statement template</th><td> <a href="/recipes/attendance/attendance.md#object">attendance</a> </td></tr>
+</table>
+
 
 <table>
 <tr><th align="left">Label</th><td>External Content</td></tr>
@@ -311,7 +322,7 @@ Example:
 <table>
 <tr><th align="left">Label</th><td>Subject Area</td></tr>
 <tr><th align="left">Description</th><td>The subject area of the object.</td></tr>
-<tr><th align="left">IRI</th><td>http://xapi.jisc.ac.uk/subjectArea</td></tr>
+<tr><th align="left">IRI</th><td>http://xapi.jisc.ac.uk/subject_area</td></tr>
 <tr><th align="left">Statement Example</th><td> <a href="recipes/library/library-item-borrowing.md">Item borrowed</a> </td></tr>
 </table>
 
@@ -386,6 +397,16 @@ Was used in older recipes to identify the genre of software application. Best pr
 <tr><th align="left">Example in Statement template</th><td> <a href="recipes/vle/login.md#object">Logged in</a> </td></tr>
 <tr><th align="left">Data Type</th><td>IRI</td></tr>
 <tr><th align="left">Sample Value</th><td>http://id.tincanapi.com/activitytype/lms</td></tr>
+</table>
+
+### Captured From
+
+<table>
+<tr><th align="left">Label</th><td>Captured From/td></tr>
+<tr><th align="left">Description</th><td>The application or device type that captured the attendance; for example, Web, Android, iOS</td></tr>
+<tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/captured_from">http://xapi.jisc.ac.uk/captured_from"</a> </td></tr>
+<tr><th align="left">Data Type</th><td>string </td></tr>
+<tr><th align="left">Sample Value</th><td>ios</td></tr>
 </table>
 
 ### Course area
@@ -580,7 +601,7 @@ For more information, see Jisc Profile [CourseArea properties](#coursearea).
 </td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/version">http://xapi.jisc.ac.uk/version</a> </td></tr>
 <tr><th align="left">Data Type</th><td>String</td></tr>
-<tr><th align="left">Value Space</th><td>A version number as specified on homepage the Github homepage for the Jisc xAPI, for example "1.0.1".</td></tr>
+<tr><th align="left">Value Space</th><td>A version number as specified on homepage the Github homepage for the Jisc xAPI, for example "1.0.2".</td></tr>
 <tr><th align="left">Sample Value</th><td>1.0</td></tr>
 </table>
 

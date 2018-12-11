@@ -16,18 +16,16 @@
 	},
 	"object": {
 		"objectType": "Activity",
-		"id": "**ITEM_ID**",
+		"id": "**HOSTNAME**",
 		"definition": {
-			"type": "http://id.tincanapi.com/activitytype/resource",
-			"extensions": {
-				"http://xapi.jisc.ac.uk/hostname": "**HOSTNAME**"
-			}
+			"type": "http://activitystrea.ms/schema/1.0/service"
 		}
 	},
 	"context": {
 		"platform": "**PLATFORM**", 
 		"extensions": {
 				"http://xapi.jisc.ac.uk/version": "1.0.2",
+				"http://id.tincanapi.com/extensions/ip-address": "**CLIENT_IP**",
 				"https://xapi.jisc.ac.uk/statementCat": "Library"
 				
 		}

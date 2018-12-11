@@ -78,7 +78,7 @@ In create statements the Timestamp property must be set to the date and time tha
 	"platform": "Jisc Notes",
 	    "extensions": {
 				"http://xapi.jisc.ac.uk/statementCat": "Note",
-				"http://xapi.jisc.ac.uk/version" : "1.0.1"
+				"http://xapi.jisc.ac.uk/version" : "1.0.2"
 			}
 		}
 

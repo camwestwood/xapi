@@ -1,4 +1,4 @@
-This is the input file for a library-viewed-econtent event.
+This is the input file for a library-accessed-service event.
 
 Data should be supplied as a UTF-8 Tab Separated File called econtent.tsv.
 
@@ -6,10 +6,8 @@ Data should be supplied as a UTF-8 Tab Separated File called econtent.tsv.
 
 * [USERNAME](#username) [1]
 * [TIMESTAMP](#timestamp) [1]
-* [ITEM_ID](#item_id) [1]
-* [HOMEPAGE](#HOMPAGE) [0..1]
-* [HOSTNAME](#HOSTNAME) [0..1]
-
+* [URL](#url) [1]
+* [CLIENT_IP](#client_ip) [0..1]
 
 
 
@@ -17,7 +15,6 @@ Data should be supplied as a UTF-8 Tab Separated File called econtent.tsv.
 ### Description
 
 A unique identifier for that user
-
 
 ### Valid Values
 Any
@@ -36,39 +33,25 @@ Any
 ### Format
 ISO 8601 timestamp
 
-## ITEM_ID 
+## URL 
 ### Description
 
-A unique identifier for that item
+A full URL for this resource
 
 ### Valid Values
 Any
 
 ### Format
-String (255)
+String (1023)
 
 
-## ITEM_NAME
+## CLIENT_IP 
 ### Description
 
-A name identifier for that item
+Client's address location on internet, the IP address that has made the request to view the content.
 
-### Purpose
-
-tbc
+### Valid Values
+Value is a string representing an Internet Protocol address (IP address) in either IPv4 or IPv6 format.
 
 ### Format
 String (255)
-
-## HOSTNAME
-### Description
-
-A host of the object
-
-### Purpose
-
-tbc
-
-### Format
-String (255)
-

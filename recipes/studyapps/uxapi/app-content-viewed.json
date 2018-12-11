@@ -37,7 +37,7 @@
 			"http://xapi.jisc.ac.uk/statementCat": "App",
 			"http://xapi.jisc.ac.uk/sessionId": "**SESSION_ID**",
 			"http://id.tincanapi.com/extension/ip-address": "**CLIENT_IP**",
-			"http://xapi.jisc.ac.uk/version": "1.0.1"
+			"http://xapi.jisc.ac.uk/version": "1.0.2"
 		}
 
 	}

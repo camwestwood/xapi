@@ -137,6 +137,10 @@ v1.0.1 Statement Added To Repository
 
 #### Attended learning activity
 
+v1.0.2 08-11-2018, Spec Change. [Context.platform is optional](https://github.com/jiscdev/xapi/issues/281)
+
+v1.0.2 03-121-2018, Spec Change. [Added new object type for non timetabled](https://github.co7/jiscdev/xapi/issues/270)
+
 v1.0.2 08-11-2018, Spec Change. [Added Capture Time](https://github.co7/jiscdev/xapi/issues/273)
 
 v1.0.1 13-04-2018, Spec Change. [Statement category added as optional](https://github.co7/jiscdev/xapi/issues/225)
@@ -212,19 +216,19 @@ v1.0 25-05-2017, Spec Change. [UDD Mod ID added to courseArea](https://github.co
 
 #### Library item viewed econtent 
 
-v1.0.2 Access Statement reworded (removed access word, changed to viewed)
-
 v1.0.1 Statement Added To Repository
 
 #### Library item Borrowed Item
 
-v1.0.2 08-11-2018, Spec Change. [Added SubjectArea](https://github.com/jiscdev/xapi/issues/275)
+v1.0.2 08-11-2018, Spec Change. [Context.platform is optional](https://github.com/jiscdev/xapi/issues/279)
 
-v1.0.2 08-11-2018, Spec Change. [Added BorrowingSite](https://github.com/jiscdev/xapi/issues/275)
+v1.0.2 08-11-2018, Spec Change. [Added subject_area](https://github.com/jiscdev/xapi/issues/275)
+
+v1.0.2 08-11-2018, Spec Change. [Added borrowing_site](https://github.com/jiscdev/xapi/issues/275)
 
 v1.0.1 Statement Added To Repository
 
-#### Library item access Item
+#### access service
 
 v1.0.2 New Access statement Added To Repository
 

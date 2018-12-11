@@ -18,15 +18,23 @@
 		"objectType": "Activity",
 		"id": "**ITEM_ID**",
 		"definition": {
-			"type": "http://id.tincanapi.com/activitytype/resource"
+			"type": "http://id.tincanapi.com/activitytype/resource",
+			"name": {
+				"en": "**ITEM_NAME**"
+			},
+		        "extensions": {
+				"http://xapi.jisc.ac.uk/subType": "**ITEM_SUBTYPE**"
+			}	
 		}
 	},
 	"context": {
 		"platform": "**PLATFORM**", 
 		"extensions": {
-				"http://xapi.jisc.ac.uk/version": "1.1",
-				"https://xapi.jisc.ac.uk/statementCat": "Library"
-				
+			"http://xapi.jisc.ac.uk/sessionId": "**SESSION_ID**",
+			"http://xapi.jisc.ac.uk/statementCat": "Library",
+			"http://id.tincanapi.com/extensions/ip-address": "**CLIENT_IP**",
+			"http://xapi.jisc.ac.uk/version": "1.1"
+
 		}
 
 	}

@@ -52,7 +52,7 @@ Bug reports can be directed to the [Moodle](https://github.com/jiscdev/jisc-mood
 <table>
 <tr><td>Statement Template</td><td>Input TSV definitions</td><td>JSON Template</td></tr>  
 <tr><td> <a href = "/recipes/library/library-viewed-econtent.md">Viewing econtent</a></td><td><a href="recipes/library/uxapi/library-viewed-econtent-input.md">library-viewed-econtent-input.md</a></td><td><a href="recipes/library/uxapi/library-viewed-econtent-template.json">library-viewed-econtent-template.json</a></td></tr>  
-<tr><td> <a href = "/recipes/library/library-accessed-econtent.md">Accessed econtent</a></td><td><a href="recipes/library/uxapi/library-accessed-econtent-input.md">library-accessed-econtent-input.md</a></td><td><a href="recipes/library/uxapi/library-accessed-econtent-template.json">library-accessed-econtent-template.json</a></td></tr>  
+<tr><td> <a href = "/recipes/library/library-accessed-econtent.md">Accessed service</a></td><td><a href="recipes/library/uxapi/library-accessed-econtent-input.md">library-accessed-econtent-input.md</a></td><td><a href="recipes/library/uxapi/library-accessed-econtent-template.json">library-accessed-econtent-template.json</a></td></tr>  
 </table>
 
 
@@ -68,6 +68,12 @@ Bug reports can be directed to the [Moodle](https://github.com/jiscdev/jisc-mood
 <table>
 <tr><td>Statement Template</td><td>JSON example</td><td>Input TSV definitions</td><td>JSON Template</td></tr>  
 <tr><td><a href = "recipes/studyapps/mobile-app.md">Mobile app content viewed</a></td><td><a href = "recipes/studyapps/mobile-app.md#full-example">Mobile App content viewed</a></td> <td><a href = "recipes/universal-xapi-translator/app-content-viewed.md">/app-content-viewed.md</a></td><td><a href = "recipes/universal-xapi-translator/app-content-viewed.json">/app-content-viewed.json</td></tr></table>    
+
+## Presence and Attendance
+<table>
+<tr><td>Statement Template </td><td>Input TSV definitions</td><td>JSON Template</td><td>Example Input</td></tr>
+<tr><td> <a href = "recipes/attendance/attendance.md">Attended learning activity </a></td><td><a href="recipes/attendance/uxapi/attendance-input.md"> attendance-input.md</a></td> <td><a href="recipes/attendance/uxapi/attendance-template.json">attendance-template.json</a></td><td><a href="recipes/attendance/tsv/attendance.tsv">TSV</a></td>  </tr>    
+</table>
 
 ## Intervention Case
 <table>

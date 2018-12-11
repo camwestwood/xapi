@@ -84,7 +84,10 @@ Common entity identifier: ObjectA, as defined on the [common structures](/common
 	"context": {
 		"platform": "UxAPI",
 		"extensions": {
+
 			"http://xapi.jisc.ac.uk/version": "1.0.1",
+			"http://xapi.jisc.ac.uk/sessionId": "A438L",
+			"http://id.tincanapi.com/extensions/ip-address": "10.3.3.48",
 			"https://xapi.jisc.ac.uk/statementCat": "Library"
 		}
 	}
@@ -119,7 +122,9 @@ Common entity identifier: ObjectA, as defined on the [common structures](/common
 	"context": {
 		"platform": "UxAPI",
 		"extensions": {
-			"http://xapi.jisc.ac.uk/version": "1.0.1",
+			"http://xapi.jisc.ac.uk/version": "1.1",
+			"http://xapi.jisc.ac.uk/sessionId": "32456891",
+			"http://id.tincanapi.com/extensions/ip-address": "10.3.3.48",
 			"https://xapi.jisc.ac.uk/statementCat": "Library"
 		}
 	}
