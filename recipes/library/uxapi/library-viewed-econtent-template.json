@@ -23,18 +23,17 @@
 				"en": "**ITEM_NAME**"
 			},
 		        "extensions": {
-				
-				"http://xapi.jisc.ac.uk/subType": "**ITEM_SUBTYPE**"
+					"http://xapi.jisc.ac.uk/subType": "**ITEM_SUBTYPE**"
 			}	
 		}
 	},
 	"context": {
 		"platform": "**PLATFORM**",
 		"extensions": {
-			"http://xapi.jisc.ac.uk/statementCat": "Library",
 			"http://xapi.jisc.ac.uk/sessionId": "**SESSION_ID**",
+			"http://xapi.jisc.ac.uk/statementCat": "Library",
 			"http://id.tincanapi.com/extensions/ip-address": "**CLIENT_IP**",
-			"http://xapi.jisc.ac.uk/version": "1.0.1"
+			"http://xapi.jisc.ac.uk/version": "1.0.2"
 		}
 
 	}

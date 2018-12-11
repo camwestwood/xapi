@@ -3,9 +3,17 @@
 [Statement Template Changes](/version_changes.md#attendance)
 
 ## Purpose
-This Statement defines the structure and terms to record a learner's attendance of an event such as a lecture or other learning activity. The expectation is that the source data will be collected by a system designed to explicitly record attendance via some action of the learner, such as swiping a card, or of the teacher, such as completing an electronic register.
 
-The template described here is __not__ intended for use to record participation, or non-participation, in events which are of a pastoral nature or otherwise do not focus on the subject of study. There is currently no specified template for these kinds of event, and if statements are to be created for them, then these statements __must not__ use the object.definition.type indicated below.
+This Statement defines the structure and terms to record a learner's attendance at an event such as a lecture or other learning activity. The expectation is that the source data will be collected by a system designed to record attendance explicitly via some action of the learner, such as swiping a card, or of the teacher, such as completing an electronic register.
+
+Attendance at either timetabled events or non-timetabled events can be recorded in an attendance statement. It is vital that the correct object.definition.type is used to differentiate them:
+
+- timetabled event - object.definition.type: http://xapi.jisc.ac.uk/event_timetabled
+- non-timetabled event - object.definition.type: http://xapi.jisc.ac.uk/event_non-timetabled
+
+A **timetabled event** is a learning activity that is specifically recorded in the provider's timetabling system for students to attend usually but not exclusively within the context of a module or course; for example, a lecture, seminar or practical. These events will usually have fixed start and end times.
+
+A **non-timetabled event** is an event not contained within the provider's timetabling system, for example an ad hoc learning activity, pastoral activity or a non-teaching activity. These events may or may not have fixed start and end times, and may or may not be within the context of a module or course. Most importantly, they are not covered by the timetabled event definition.
 
 ### Actor
 
@@ -60,7 +68,7 @@ The Object entity defines an event that has been attended. Only one value for ob
 	</tr>
 	<tr>
 		<td>object.definition.type [1]</td>
-		<td>Indicates the type of the Object of the Statement. It is required and must be http://xapi.jisc.ac.uk/event_timetabled (see the <a href="vocabulary.md#31-activity-types">vocabulary page</a> for the definition)</td>
+		<td>Indicates the type of the Object of the Statement. It is required and must be either http://xapi.jisc.ac.uk/event_timetabled or http://xapi.jisc.ac.uk/event_non-timetabled  (see above for the definitions).</td>
 		<td>iri</td>
 	</tr>
 	<tr>
@@ -75,8 +83,8 @@ The Object entity defines an event that has been attended. Only one value for ob
 	</tr>
 	<tr>
 	   <td>object.definition.extensions.http://xapi.jisc.ac.uk/subType [0.1]</td>
-	   <td>May be used to qualify what kind of timetabled event occurred - for example whether it was a lecture, lab-work, a group tutorial, etc - using the approach documented on the
-	   <a href="/vocabulary.md#31-activity-types">vocabulary</a> page.</td>
+	   <td>May be used to qualify what kind of event occurred - for example, for a timetabled event whether it was a lecture, practical, a group tutorial, etc - using the approach documented on the
+	   <a href="/vocabulary.md#31-activity-types">vocabulary</a> page. Separate subType lists for timetabled and non-timetabled events may be used.</td>
 	   <td>iri</td>
 	</tr>
 	<tr>
@@ -108,7 +116,7 @@ The Object entity defines an event that has been attended. Only one value for ob
 
 
 #### Entity Example:
-The Object defines an event that has been attended. Information on the event can be found in the object.extensions. See the [objectD section in the common structures document](/common_structures.md#objectd).
+The Object defines an event that has been attended. Information on the event can be found in the object.extensions.
 
 ``` javascript
  "object": {
@@ -154,7 +162,13 @@ The result.completion must be set to true if the Actor attended the event, or fa
 		<td><a href="vocabulary.md#attendance-category">result.extensions.http://xapi.jisc.ac.uk/attendance_category</a> [0..1]</td>
 		<td>Indicates any given category for non-attendance or lateness. </td>
 		<td>String</td>
-	</tr>		
+	</tr>
+	<tr>
+		<td><a href="vocabulary.md#Submission-time">result.extensions.http://xapi.jisc.ac.uk/submission_time</a> [0..1]</td>
+		<td>Indicates the time the result was submitted</td>
+		<td>ISO8601 timestamp</td>
+	</tr>	
+
 </table>
 
 
@@ -165,6 +179,7 @@ The result.completion must be set to true if the Actor attended the event, or fa
 	"completion": true,
 	"extensions": {
 		  "http://xapi.jisc.ac.uk/attendance_late": 1,
+		  "http://xapi.jisc.ac.uk/submission_time": "2015-05-24T09:00",
 		  "http://xapi.jisc.ac.uk/attendance_category": "L"
 	}
 }
@@ -175,8 +190,13 @@ The result.completion must be set to true if the Actor attended the event, or fa
 <table>
 <tr><th>Property [cardinality]</th><th>Description</th><th>Value information</</th></tr>
 <tr>
+	<td>context.platform [0..1]</td>
+	<td>The platform used by the student or member of staff to record the student's attendance. The value used should not change between platform upgrades and version changes and should typically be a concise name by which the application is commonly known, for example "Study Goal".</td>
+	<td>string</td>
+</tr>
+<tr>
 	<td>context.instructor [0..1]</td>
-	<td></td>
+	<td>Tutor or other member of staff involved</td>
 	<td>JSON Object</td>
 </tr>
 <tr>
@@ -211,8 +231,13 @@ The result.completion must be set to true if the Actor attended the event, or fa
 </tr>
 	<tr>
 		<td><a href="vocabulary.md#StatementCategory">context.extensions.https://xapi.jisc.ac.uk/statementCat</a>[0..1]</td>
-		<td>Recommended For querying lookup. Set to "attendance" in attendance templates <br/></td>
+		<td>Recommended For querying lookup. Set to "attendance" in attendance templates.<br/></td>
 		<td>string</td>
+	</tr>
+	<tr>
+		<td><a href="vocabulary.md#captured_from">context.extensions.https://xapi.jisc.ac.uk/captured_from</a>[0..1]</td>
+		<td>The application or device type that captured the attendance; for example, Web, Android, iOS.<br/></td>
+	<td>string</td>
 	</tr>
 </table>
 
@@ -220,23 +245,23 @@ The result.completion must be set to true if the Actor attended the event, or fa
 
 ``` javascript
  "context": {
+	"platform" :"Study Goal",
     "instructor": {
             "objectType": "Agent",
             "account": {
-                "name": "2",
-                "homePage": "http://localhost/moodle"
+                "name": "RKeenan",
+                "homePage": "https://courses.alpha.jisc.ac.uk/moodle"
             }
 		},
 	"extensions": {
-        "http://xapi.jisc.ac.uk/version": "1.0.1",
-		"http://xapi.jisc.ac.uk/statementCat": "Attendance",
+        	"http://xapi.jisc.ac.uk/version": "1.0.2",
 		"http://xapi.jisc.ac.uk/deviceLocation": {
 			"type": "Feature",
 			"geometry": {
 				"type": "Point",
 				"coordinates": [51.510531, -0.118930]
 					},
-				"properties": {
+			"properties": {
 				"name": "University of Jisc"
 				}
 		},
@@ -244,12 +269,13 @@ The result.completion must be set to true if the Actor attended the event, or fa
 			"http://xapi.jisc.ac.uk/uddCourseInstanceID": "LA101-200",
 			"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0"
 		}
+		"http://xapi.jisc.ac.uk/statementCat": "Attendance",
+		"http://xapi.jisc.ac.uk/captured_from": "ios"
   }
 ```
 
-
 ### Timestamp
-In attendance statements the timestamp property must be set to the start time of the timetabled even; the value must be identical to the value found in the starttime extension.
+In attendance statements the timestamp property must be set to the start time of the timetabled event; the value must be identical to the value found in the starttime extension.
 
 #### Example Entity
 ```
@@ -300,34 +326,37 @@ In attendance statements the timestamp property must be set to the start time of
       "extensions":{
         "http://xapi.jisc.ac.uk/attendance_late":1,
         "http://xapi.jisc.ac.uk/attendance_category":"1",
+	"http://xapi.jisc.ac.uk/submission_time": "2015-05-24T09:00"
       }
  },
-	"context": {
-		"instructor": {
-			"objectType": "Agent",
-			"account": {
-				"name": "2",
-				"homePage": "http://localhost/moodle"
+  "context": {
+  	"platform" :"Study Goal",
+	"instructor": {
+		"objectType": "Agent",
+		"account": {
+			"name": "RKeenan",
+			"homePage": "https://courses.alpha.jisc.ac.uk/moodle"
+			}
+	},
+	"extensions": {
+		"http://xapi.jisc.ac.uk/version": "1.0.1",
+		"http://xapi.jisc.ac.uk/deviceLocation": {
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [51.510531, -0.118930]
+			},
+			"properties": {
+				"name": "University of Jisc"
 			}
 		},
-		"extensions": {
-			"http://xapi.jisc.ac.uk/version": "1.0.1",
-			"http://xapi.jisc.ac.uk/statementCat": "Attendance",
-			"http://xapi.jisc.ac.uk/deviceLocation": {
-				"type": "Feature",
-				"geometry": {
-					"type": "Point",
-					"coordinates": [51.510531, -0.118930]
-						},
-					"properties": {
-					"name": "University of Jisc"
-					}
-			},
-		   "http://xapi.jisc.ac.uk/courseArea": {
-				 "http://xapi.jisc.ac.uk/vle_mod_id": "LA101-200-2016S1-0",
-				 "http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0",
-			 }
-		 }
+		"http://xapi.jisc.ac.uk/courseArea": {
+			"http://xapi.jisc.ac.uk/vle_mod_id": "LA101-200-2016S1-0",
+			"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0",
+		},
+		"http://xapi.jisc.ac.uk/statementCat": "Attendance",
+		"http://xapi.jisc.ac.uk/captured_from": "ios"
+		}
 	 }
 }
 ```

@@ -3,7 +3,7 @@
 	"actor": {
 		"objectType": "Agent",
 		"account": {
-			"name": "**USER_ID**",
+			"name": "**USERNAME**",
 			"homePage": "**HOMEPAGE**"
 		}
 	},
@@ -23,7 +23,8 @@
 			},
 		    	"extensions": {
 			    	"http://xapi.jisc.ac.uk/subType": "**ITEM_SUBTYPE**",
-			    	"http://oclc.com/number": "**OCLC_NUMBER**"
+					"http://xapi.jisc.ac.uk/subject_area": "**SUBJECT_AREA**",
+					"http://oclc.com/number": "**OCLC_NUMBER**"
 		    	}
 		}
 	},
@@ -34,7 +35,8 @@
 		"platform": "**PLATFORM**",
 		"extensions": {
 			"http://xapi.jisc.ac.uk/statementCat": "Library",
-			"http://xapi.jisc.ac.uk/version": "1.0.1"
+			"http://xapi.jisc.ac.uk/borrowing_site": "**BORROWING_SITE**",
+			"http://xapi.jisc.ac.uk/version": "1.0.2"
 		}
 	}
 }

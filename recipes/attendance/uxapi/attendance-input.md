@@ -16,13 +16,16 @@ Data should be supplied as a UTF-8 Tab Seperated File called attendance.tsv
 * [EVENT_ATTENDED](#event_attended) [1]
 * [ATTENDANCE_LATE](#attendance_late) [0..1]
 * [ATTENDANCE_CATEGORY](#attendance_category) [0..1]
+* [SUBMISSION_TIME](#SUBMISSION_TIME) [0..1]
 * [STAFF_ID](#staff_id) [0..1]
 * [MOD_INSTANCE_ID](#mod_instance_id) [0..1]
 * [COURSE_INSTANCE_ID](#course_instance_id) [0..1]
 
+
+
 ## STUDENT_ID
 ### Description
-The institutions identifier for the student
+The institution's identifier for the student
 
 ### Valid Values
 Any
@@ -44,7 +47,7 @@ Any
 String (255)
 
 ### Notes
-This is normally the attendance recording system primary key for an attendance record. It **should not** be a URI, as defined in the Statement Template.
+This is normally the attendance recording system primary key for an attendance record. It **should not** be a URI, as defined in the Statement Template, because the URI will be constructed from data components submitted.
 
 ## EVENT_NAME
 ### Description
@@ -60,7 +63,7 @@ String (255)
 
 ## EVENT_DESCRIPTION
 ### Description
-Longer desciption of the event 'eg Lecture on XXX'
+Longer description of the event, for example, 'Lecture on XXX'
 
 ### Valid Values
 Any
@@ -72,7 +75,7 @@ String (255)
 
 ## EVENT_TYPE
 ### Description
-A code for the event type eg. 1 = LECTURE, 2 = TUTORIAL etc
+A code for the event type, for example, 1 = LECTURE, 2 = TUTORIAL, and so on
 
 ### Valid Values
 Any
@@ -85,7 +88,7 @@ Only populate this if event types are distinguished in the source database; leav
 
 ## EVENT_TYPE_DESCRIPTION
 ### Description
-The name/ description of the actitivity type eg. LECTURE, TUTORIAL etc. This is the user-facing counterpart to EVENT_TYPE
+The name or description of the actitivity type, for example, LECTURE, TUTORIAL, and so on. This is the user-facing counterpart to EVENT_TYPE.
 
 ### Valid Values
 Any
@@ -128,10 +131,10 @@ The prescribed start date and time for this activity instance (as per the timeta
 Date and time to at least hour precision.
 
 ### Format
-ISO Date (eg 2015-05-24T09:00)
+ISO 8601 Datetime (eg 2015-05-24T09:00Z)
 
 ### Notes
-A time component must be included for events starting other than at 00:00.
+A time component must be included.
 
 ## END_TIME
 ### Description
@@ -141,7 +144,7 @@ The prescribed end date and time for this activity instance (as per the timetabl
 Date and time to at least hour precision.
 
 ### Format
-ISO Date (eg 2015-05-24T09:45)
+ISO 8601 Datetime (eg 2015-05-24T09:00Z)
 
 ### Notes
 
@@ -190,7 +193,7 @@ Usually a short code such as "L", "X", "A"
 
 ## STAFF_ID
 ### Description
-The institutions identifier for the staff
+The institution's identifier for the staff
 
 ### Valid Values
 Any
@@ -203,7 +206,7 @@ This will match the identifiers used in the Student Record System.
 
 ## MOD_INSTANCE_ID
 ### Description
-The module instance id this activity instance belongs/ refers to
+The module instance id this activity instance belongs or refers to.
 
 ### Valid Values
 Any
@@ -216,7 +219,7 @@ This must match a UDD MOD_INSTANCE_ID. If this identifier is not generally avail
 
 ## COURSE_INSTANCE_ID
 ### Description
-The course instance id this activity instance belongs/ refers to. t
+The course instance id this activity instance belongs or refers to.
 
 ### Valid Values
 Any
@@ -226,3 +229,16 @@ String (255)
 
 ### Notes
 This must match a UDD COURSE_INSTANCE_ID. If this identifier is not generally available, it may be appropriate to omit it. In this case, attendance will only be analysable at student level.
+
+## SUBMISSION_TIME
+### Description
+The time at which the result was submitted
+
+### Valid Values
+Any
+
+### Format
+ISO 8601 Datetime (eg 2015-05-24T09:00Z)
+
+### Notes
+

@@ -1,4 +1,4 @@
-# xAPI recipes for the Jisc Learning Analytics Service v1.0.1
+# xAPI recipes for the Jisc Learning Analytics Service v1.0.2
 
 ## Repository Workflow
 The simplest way to contribute to the xAPI service is as follows:
@@ -46,21 +46,28 @@ Bug reports can be directed to the [Moodle](https://github.com/jiscdev/jisc-mood
 * [Blackboard VLE samples](vle/blackboard/Examples.md)
 * [Moodle VLE samples](vle/moodle/examples.md)
 
-## Library
+## Econtent
 
 
 <table>
 <tr><td>Statement Template</td><td>Input TSV definitions</td><td>JSON Template</td></tr>  
-<tr><td> <a href = "/recipes/library/library-viewed-econtent.md">Library Item Accessing econtent</a></td><td><a href="recipes/library/uxapi/library-viewed-econtent-input.md">library-viewed-econtent-input.md</a></td><td><a href="recipes/library/uxapi/library-viewed-econtent-template.json">library-viewed-econtent-template.json</a></td></tr>       <tr><td> <a href = "/recipes/library/library-item-borrowing.md">Library item: Borrowed item</a></td><td><a href="recipes/library/uxapi/library-item-borrowed-input.md">library-item-borrowed-input.md</a></td><td><a href="recipes/library/uxapi/library-item-borrowed-template.json">library-item-template.json</td></tr>    
+<tr><td> <a href = "/recipes/library/library-viewed-econtent.md">Viewing econtent</a></td><td><a href="recipes/library/uxapi/library-viewed-econtent-input.md">library-viewed-econtent-input.md</a></td><td><a href="recipes/library/uxapi/library-viewed-econtent-template.json">library-viewed-econtent-template.json</a></td></tr>  
+<tr><td> <a href = "/recipes/library/library-accessed-econtent.md">Accessed service</a></td><td><a href="recipes/library/uxapi/library-accessed-econtent-input.md">library-accessed-econtent-input.md</a></td><td><a href="recipes/library/uxapi/library-accessed-econtent-template.json">library-accessed-econtent-template.json</a></td></tr>  
+</table>
+
+
+## Library
+<table>
+<tr><td>Statement Template</td><td>Input TSV definitions</td><td>JSON Template</td></tr>  
+     <tr><td> <a href = "/recipes/library/library-item-borrowing.md">Library item: Borrowed item</a></td><td><a href="recipes/library/uxapi/library-item-borrowed-input.md">library-item-borrowed-input.md</a></td><td><a href="recipes/library/uxapi/library-item-borrowed-template.json">library-item-template.json</td></tr>    
 </table>
 
 
 ## Tracking App
 
 <table>
-<tr><td>Statement Template</td><td>Input TSV definitions</td><td>JSON Template</td></tr>  
-<tr><td><a href = "recipes/studyapps/mobile-app.md">Mobile app content viewed</a></td> <td><a href = "recipes/studyapps/uxapi/app-content-viewed.md">app-content-viewed.md</a></td><td><a href = "recipes/studyapps/uxapi/app-content-viewed.json">app-content-viewed.json</td></tr>     
-</table>
+<tr><td>Statement Template</td><td>JSON example</td><td>Input TSV definitions</td><td>JSON Template</td></tr>  
+<tr><td><a href = "recipes/studyapps/mobile-app.md">Mobile app content viewed</a></td><td><a href = "recipes/studyapps/mobile-app.md#full-example">Mobile App content viewed</a></td> <td><a href = "recipes/universal-xapi-translator/app-content-viewed.md">/app-content-viewed.md</a></td><td><a href = "recipes/universal-xapi-translator/app-content-viewed.json">/app-content-viewed.json</td></tr></table>    
 
 ## Presence and Attendance
 <table>
