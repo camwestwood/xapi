@@ -1,4 +1,4 @@
-# econtent accessed statement template
+# accessed service statement template
 
 [Statement Template Changes](/version_changes.md#access_service)
 
@@ -26,7 +26,7 @@ The actor entity describes the individual that is accessing econtent.
 ```
 
 ### Timestamp
-An ISO 8601 format timestamp that corresponds to the time when the content was accessed.
+An ISO 8601 format timestamp that corresponds to the time when the service was accessed.
 
 ### Example:
 
