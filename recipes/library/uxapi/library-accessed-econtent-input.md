@@ -1,4 +1,4 @@
-This is the input file for a library-viewed-econtent event.
+This is the input file for a library-accessed-service event.
 
 Data should be supplied as a UTF-8 Tab Separated File called econtent.tsv.
 
