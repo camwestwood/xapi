@@ -127,7 +127,9 @@ v1.0.1 Statement Added To Repository
 
 #### Attended learning activity
 
-v1.0.2 08-11-2018, Spec Change. [Context.platform is optional](https://github.com/jiscdev/xapi/issues/281)
+v1.0.2 08-11-2018, Spec Change. [added captured from field](https://github.com/jiscdev/xapi/issues/281)
+
+v1.0.2 08-11-2018, Spec Change. [Context.platform is optional](https://github.com/jiscdev/xapi/issues/279)
 
 v1.0.2 03-121-2018, Spec Change. [Added new object type for non timetabled](https://github.co7/jiscdev/xapi/issues/270)
 
@@ -197,6 +199,8 @@ Documentation change [start time and end time replace duration](https://github.c
 ## Student App Recipes
 
 ### Mobile App Content Viewed 
+
+v1.0.2 13-04-2018, Doc Change. [Statement cat added to markdow](https://github.co7/jiscdev/xapi/issues/278)
 
 v1.0.1 13-04-2018, Spec Change. [Statement category added as optional](https://github.co7/jiscdev/xapi/issues/225)
 
