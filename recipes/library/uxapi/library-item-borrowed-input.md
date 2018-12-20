@@ -4,7 +4,7 @@ Data should be supplied as a UTF-8 Tab Separated File called borrowing.tsv
 
 # library-borrowed
 
-* [USER_ID](#user_id) [1]
+* [USERNAME](#USERNAME) [1]
 * [ITEM_ID](#item_id) [1]
 * [ITEM_NAME](#item_name) [0..1]
 * [ITEM_SUBTYPE](#item_subtype) [1]
@@ -15,7 +15,7 @@ Data should be supplied as a UTF-8 Tab Separated File called borrowing.tsv
 
 
 
-## USER_ID 
+## USERNAME 
 ### Description
 
 A unique identifier for that user

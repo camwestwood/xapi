@@ -1,4 +1,4 @@
-# econtent accessed statement template
+# accessed service statement template
 
 [Statement Template Changes](/version_changes.md#access_service)
 
@@ -26,7 +26,7 @@ The actor entity describes the individual that is accessing econtent.
 ```
 
 ### Timestamp
-An ISO 8601 format timestamp that corresponds to the time when the content was accessed.
+An ISO 8601 format timestamp that corresponds to the time when the service was accessed.
 
 ### Example:
 
@@ -122,12 +122,12 @@ An object type of http://activitystrea.ms/schema/1.0/service is required for thi
 		}
 	},
 	"timestamp": "2015-09-18T01:54:51.484Z",
-		"verb": {
+	
+	"verb": {
         	"id": "http://activitystrea.ms/schema/1.0/access"	,
        		 "display": {
-            "en": "access"
-        }
-    },}
+           		"en": "access"
+        		}
 	},
 	"object": {
 		"objectType": "Activity",

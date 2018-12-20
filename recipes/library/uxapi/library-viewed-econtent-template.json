@@ -23,7 +23,7 @@
 				"en": "**ITEM_NAME**"
 			},
 		        "extensions": {
-				"http://xapi.jisc.ac.uk/subType": "**ITEM_SUBTYPE**"
+					"http://xapi.jisc.ac.uk/subType": "**ITEM_SUBTYPE**"
 			}	
 		}
 	},
