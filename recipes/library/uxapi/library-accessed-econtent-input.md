@@ -1,8 +1,8 @@
-This is the input file for a library-accessed-service event.
+This is the input file for a library-accessed-econtent event.
 
 Data should be supplied as a UTF-8 Tab Separated File called econtent.tsv.
 
-# library-viewed-econtent
+# library-accessed-econtent
 
 * [USERNAME](#username) [1]
 * [TIMESTAMP](#timestamp) [1]
