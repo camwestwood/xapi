@@ -229,6 +229,14 @@ Example:
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/chat">http://xapi.jisc.ac.uk/chat</a> </td></tr>
 </table>
 
+### Collaboration Space
+
+<table>
+<tr><th align="left">Label</th><td>Collaboration Space</td></tr>
+<tr><th align="left">Description</th><td>An collaboration space.<br/> A collaborative space where students can work together on group projects and assignments. For example <a href="https://community.canvaslms.com/docs/DOC-10717">Cavas Groups</a></td></tr>
+<tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/collaboration_space">http://xapi.jisc.ac.uk/collaboration_space</a> </td></tr>
+</table>
+
 ### Course
 
 <table>
@@ -244,6 +252,8 @@ Example:
 <tr><th align="left">Description</th><td>Any event.<br/>The "event" Activity Type should only be used when a more specific (i.e. narrowly-defined) event type, defined on this page, is not available; this IRI indicates that the type of event is unspecified.</td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://activitystrea.ms/schema/1.0/event">http://activitystrea.ms/schema/1.0/event</a> </td></tr>
 </table>
+
+
 
 ### Timetabled Event
 
