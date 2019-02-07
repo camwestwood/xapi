@@ -1,0 +1,41 @@
+{
+	"version": "1.0.0",
+	"timestamp": "**TIMESTAMP**",
+	"actor": {
+		"objectType": "Agent",
+		"account": {
+			"name": "**USERNAME**",
+			"homePage": "**HOMEPAGE**"
+		}
+	},
+	"verb": {
+		"id": "http://id.tincanapi.com/verb/viewed",
+		"display": {
+			"en": "viewed"
+		},
+
+	"object": {
+		"objectType": "Activity",
+		"id": "**OBJECT_ID**",
+		"definition": {
+			"type": "**https://w3id.org/xapi/video/activity-type/video"
+		}
+	},
+
+	"result": {
+        "extensions": {
+            "https://jisc.ac.uk/minutes-watched": **MINUTES_WATCHED**
+        }
+    },
+
+	"context": {
+
+		"extensions": {
+
+			"http://xapi.jisc.ac.uk/statementCat": "Video",
+			"http://xapi.jisc.ac.uk/sessionId": "**SESSION_ID**",
+			"http://id.tincanapi.com/extension/ip-address": "**CLIENT_IP**",
+			"http://xapi.jisc.ac.uk/version": "1.0.3"
+		}
+	}
+}
