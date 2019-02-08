@@ -1,0 +1,38 @@
+{
+	"version": "1.0.0",
+	"timestamp": "**EVENT_TIMESTAMP**",
+	"actor": {
+		"objectType": "Agent",
+		"account": {
+			"name": "**USERNAME**",
+			"homePage": "**HOMEPAGE**"
+		}
+	},
+	"verb": {
+		"id": "http://id.tincanapi.com/verb/viewed",
+		"display": {
+			"en": "viewed"
+		},
+
+	"object": {
+		"objectType": "Activity",
+		"id": "**LIST_URL**",
+		"definition": {
+			"type": "http://jisc.ac.uk/reading-list",
+			"name": {
+				"en": "**lists.title**"
+			}
+		}
+
+	},
+
+	"context": {
+		"platform": "**AUTHORITY_NAME**",
+		"extensions": {
+
+			"http://xapi.jisc.ac.uk/statementCat": "Readinglist",
+			"http://xapi.jisc.ac.uk/sessionId": "**EVENT_ID**",
+			"http://xapi.jisc.ac.uk/version": "1.0.3"
+		}
+	}
+}

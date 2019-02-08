@@ -31,7 +31,15 @@
 
 "context": {
 	"platform": "**PLATFORM**",
-	
+    
+    "contextActivities": {
+        "parent": [
+        {
+            "id" : "**PARENT_ID**"
+        }
+		 ]
+      },
+      
     "extensions": {
 			"http://xapi.jisc.ac.uk/statementCat": "Note",
 			"http://xapi.jisc.ac.uk/version" : "1.0.2"
