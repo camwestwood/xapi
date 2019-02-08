@@ -18,13 +18,14 @@
 		"objectType": "Activity",
 		"id": "**OBJECT_ID**",
 		"definition": {
-			"type": "**https://w3id.org/xapi/video/activity-type/video"
+			"type": "https://w3id.org/xapi/video/activity-type/video"
 		}
 	},
 
 	"result": {
         "extensions": {
-            "https://jisc.ac.uk/minutes-watched": **MINUTES_WATCHED**
+			"https://jisc.ac.uk/minutes-watched": **MINUTES_WATCHED**,
+			"https://jisc.ac.uk/views": **VIEWS**
         }
     },
 

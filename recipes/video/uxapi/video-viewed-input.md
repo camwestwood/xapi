@@ -76,7 +76,7 @@ String (255)
 ## VIEWS
 ### Description
 
-The view count for the 
+The view count for the video
 
 ### Valid Values
 Any

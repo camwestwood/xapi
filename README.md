@@ -77,6 +77,12 @@ Bug reports can be directed to the [Moodle](https://github.com/jiscdev/jisc-mood
 <tr><td>Statement Template</td><td>JSON example</td><td>Input TSV definitions</td><td>JSON Template</td></tr>  
 <tr><td><a href = "recipes/studyapps/mobile-app.md">Mobile app content viewed</a></td><td><a href = "recipes/studyapps/mobile-app.md#full-example">Mobile App content viewed</a></td> <td><a href = "recipes/universal-xapi-translator/app-content-viewed.md">/app-content-viewed.md</a></td><td><a href = "recipes/universal-xapi-translator/app-content-viewed.json">/app-content-viewed.json</td></tr></table>    
 
+## Video
+<table>
+<tr><td>Statement Template</td><td>Input TSV definitions</td><td>JSON Template</td></tr>  
+     <tr><td> <a href = "recipes/video/video-viewed.md">Video Viewed</a></td><td><a href="recipes/video/uxapi/video-viewed-input.md">readinglist-itemviewed-input.md</a></td><td><a href="recipes/video/uxapi/video-viewed-template.json">readinglist-itemviewed-template.json</td></tr>    
+</table>
+
 ## Setting and Reaching Targets
 
 <table>
