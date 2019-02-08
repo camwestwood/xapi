@@ -4,7 +4,7 @@
 
 
 ### Actor
-The Actor entity is used to identify the individual that is viewing the readibg list item. It uses the Jisc Profile common entity [ActorA](/common_structures.md#actora).
+The Actor entity is used to identify the individual that is viewing the reading list item. It uses the Jisc Profile common entity [ActorA](/common_structures.md#actora).
 
 #### Entity properties:
 
@@ -124,7 +124,9 @@ The Object for viewed Statements identifies what is being viewed. It uses the Ji
 
 
 ### Context
-The Context entity can be used to describe any surrounding circumstances, including for example the device used and id of the module. If the device supports it, session Ids and ip-addresses can be recorded. Common entity identifier: ContextB, as defined on the [common structures](/common_structures.md#contextb) page. 
+The Context entity can be used to describe any surrounding circumstances, including for example the device used and id of the module. If the device supports it, session Ids and ip-addresses can be recorded. The contextActivities parent contains the id of the list the item belongs to.
+
+ Common entity identifier: ContextB, as defined on the [common structures](/common_structures.md#contextb) page. 
 
 
 ### Example:
@@ -134,9 +136,7 @@ The Context entity can be used to describe any surrounding circumstances, includ
 	"contextActivities":{
             "parent":[
                 {
-                    
                     "id":"http://reading.jisc.ac.uk/page/4"
-                    
                 }
             ]
         },

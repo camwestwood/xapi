@@ -3,7 +3,11 @@
 [Statement Template Changes](/version_changes.md#access_service)
 
 ## Purpose
-This template defines the structure and terms to record the experience of accessing a service.
+This generic Statement template describes a user accessing something. Use this template to create a specific access Statement template, for example for a accessing a sevice.
+
+The entities and properties described here represent a typical Statement template. Further properties or constraints could be defined to create a login Statement template for a more specific purpose.
+
+Natural language example of a typical login Statement: "John Smith logged in to his university Moodle VLE using his mobile phone."
 
 ### Actor
 Common entity identifier:  ActorA, as defined on the [common structures](/common_structures.md#actora) page.

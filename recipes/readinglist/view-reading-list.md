@@ -43,6 +43,21 @@ The Verb used in view Statements is [viewed](../vocabulary.md#verbs). It denotes
 
 #### Entity properties:
 
+<table>
+	<tr><th>Property [cardinality]</th><th>Description</th><th>Value information</</th></tr>
+<tr>
+	<tr>
+		<td>verb.id [1]</td>
+		<td>An IRI that identifies the Verb. Valid IRIs depend on the Statement and are given on the relevant Statement page.</td>
+		<td>IRI</td>
+	</tr>
+	<tr>
+		<td>verb.display [1]</td>
+		<td>A human readable representation of Verb, takes a RFC 5646 Language Tag. </td>
+		<td>string </td>
+	</tr>
+</table>
+
 ### Example:
 
 ``` javascript
@@ -60,7 +75,35 @@ The Object for viewed Statements identifies what is being viewed. It uses the Ji
 
 (Should we be borrowing from the library borrowed object? ISBN's that kind of thing)
 
+#### Entity properties:
 	
+<table>
+	<tr><th>Property [cardinality]</th><th>Description</th><th>Value information</</th></tr>
+	<tr>
+		<td>object.objectType [1]</td>
+		<td>The value must be "Activity".</td>
+		<td>String, value must be "Activity".</td>
+	</tr>
+	<tr>
+		<td>object.id [1]</td>
+		<td>An identifier for the object of the xAPI Statement. This must be unique (within a given platform) across all Object types.</td>
+		<td>iri</td>
+	</tr>
+	<tr>
+		<td>object.definition.type [1]</td>
+		<td>Indicates the type of the Object of the Statement. It is required and valid values are listed on the [vocabularies](vocabulary.md#activity-types) page.</td>
+		<td>iri</td>
+	</tr>
+	<tr>
+		<td>object.definition.name [0..1]</td>
+		<td>Optional Object name</td>
+		<td>string</td>
+	</tr>
+	<tr>
+		<td>object.definition.extensions.http://xapi.jisc.ac.uk/subType [0..1]</td>
+		<td>May be used to indicate the sub-type of this Activity, if applicable for the recipe being used to create the Statement. This qualifies the object.objectType, and is described on the [vocabularies](vocabulary.md#object-definition-extensions) page.</td>
+		<td>iri</td>
+	</tr>
 </table>
 
 ### Example
@@ -73,8 +116,8 @@ The Object for viewed Statements identifies what is being viewed. It uses the Ji
 	"objectType": "Activity",
 	"id": "http://reading.jisc.ac.uk/page/4/item/view.php?id=9"   	 	
 	"definition": {
-		"type": "<What does a reading list item look like>",			
-		"name": { "en": "Sample reading list item"}
+		"type": "http://jisc.ac.uk/reading-list",			
+		"name": { "en": "Computer Science Reading List"}
     }
 }
 ```
@@ -88,17 +131,8 @@ The Context entity can be used to describe any surrounding circumstances, includ
 
 ``` javascript
 "context": {
-	"contextActivities":{
-            "parent":[
-                {
-                    
-                    "id":"http://reading.jisc.ac.uk/page/4"
-                    
-                }
-            ]
-        },
         
-        "platform": "Moodle",
+        "platform": "Talis Aspire",
         "extensions": {
 		
 			"http://xapi.jisc.ac.uk/courseArea": {
@@ -107,8 +141,8 @@ The Context entity can be used to describe any surrounding circumstances, includ
 			},
 			
  		"http://xapi.jisc.ac.uk/sessionId":"32456891",
-    "http://id.tincanapi.com/extension/ip-address": "10.3.3.48"
-		"http://xapi.jisc.ac.uk/version" : "1.0.2"
+    	"http://id.tincanapi.com/extension/ip-address": "10.3.3.48"
+		"http://xapi.jisc.ac.uk/version" : "1.0.3"
 			}
 		}
 ```
@@ -135,7 +169,7 @@ The Context entity can be used to describe any surrounding circumstances, includ
 		"objectType": "Activity",
 		"id": "https://readinglist.alpha.jisc.ac.uk/",
 		"definition": {
-			"type": "<Not sure>",
+			"type": "http://jisc.ac.uk/reading-list",
 			"name": {
 				"en": "Intro to Java"
 			}
@@ -146,11 +180,16 @@ The Context entity can be used to describe any surrounding circumstances, includ
 	
 	"context": {
 		"platform" :"Talis Aspire",
-		"extensions": {
-			"http://xapi.jisc.ac.uk/statementCat": "library",,
-			"http://xapi.jisc.ac.uk/version": "1.0.2"
-	
-  		}
+        "extensions": {
+		
+			"http://xapi.jisc.ac.uk/courseArea": {
+				"http://xapi.jisc.ac.uk/vle_mod_id": "LA101",
+				"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0",
+			},
+
+		"http://xapi.jisc.ac.uk/sessionId":"32456891",
+    	"http://id.tincanapi.com/extension/ip-address": "10.3.3.48"
+		"http://xapi.jisc.ac.uk/version" : "1.0.3"
   	}
 }
 ```
