@@ -155,4 +155,4 @@ The Context for assignment graded is based on ContextA on the [common structures
 ### Complete VLE Specific Examples
 [Blackboard Example](/vle/blackboard/asssignment_graded.json)
 
-[Moodle Example](/vle/moodle/asssignment_graded.json)
+[Moodle Example](/vle/moodle/assignment_graded.json)

@@ -63,5 +63,5 @@ Student submitted a Blackboard assignment/assessment/test/survey
 Student graded for Blackboard assignment/assessment/test/survey
 
 
-* [asssignment_graded.json](asssignment_graded.json)
+* [assignment_graded.json](asssignment_graded.json)
 
