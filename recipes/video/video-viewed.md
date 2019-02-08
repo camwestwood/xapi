@@ -118,7 +118,10 @@ The Object for viewed Statements identifies what is being viewed. It uses the Ji
 <table>
 <tr><th>Property</th><th>Description</th></tr>
 	<tr><td>result.minutes-watched [0..1]</td>
-	<td>The number of minutes watched.</td></tr></table>
+	<td>The number of minutes watched.</td></tr>
+	<tr><td>result.viewsd [0..1]</td>
+	<td>The number of Views</td></tr>
+</table>
 
 
 
