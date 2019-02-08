@@ -66,7 +66,7 @@ Bug reports can be directed to the [Moodle](https://github.com/jiscdev/jisc-mood
 <table>
 <tr><td>Statement Template</td><td>Input TSV definitions</td><td>JSON Template</td></tr>  
      <tr><td> <a href = "recipes/readinglist/view-reading-list.md">Reading List Viewed</a></td><td><a href="recipes/readinglist/uxapi/readinglist-viewed-input.md">readinglist-itemviewed-input.md</a></td><td><a href="recipes/readinglist/uxapi/readinglist-viewed-template.json">readinglist-itemviewed-template.json</td></tr>    
-         <tr><td> <a href = "recipes/readinglist/view-reading-list.md">Reading List Item Viewed</a></td><td><a href="recipes/readinglist/uxapi/readinglist-itemviewed-input.md">readinglist-itemviewed-input.md</a></td><td><a href="recipes/readinglist/uxapi/readinglist-itemviewed-template.json">readinglist-itemviewed-template.json</td></tr>   
+         <tr><td> <a href = "recipes/readinglist/view-reading-list-item.md">Reading List Item Viewed</a></td><td><a href="recipes/readinglist/uxapi/readinglist-itemviewed-input.md">readinglist-itemviewed-input.md</a></td><td><a href="recipes/readinglist/uxapi/readinglist-itemviewed-template.json">readinglist-itemviewed-template.json</td></tr>   
 
 </table>
 
