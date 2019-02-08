@@ -1,10 +1,10 @@
-# viewed reading list item
+# viewed reading list 
 
 ## Purpose
 
 
 ### Actor
-The Actor entity is used to identify the individual that is viewing a reading list item. It uses the Jisc Profile common entity [ActorA](/common_structures.md#actora).
+The Actor entity is used to identify the individual that is viewing a reading list. It uses the Jisc Profile common entity [ActorA](/common_structures.md#actora).
 
 #### Entity properties:
 
