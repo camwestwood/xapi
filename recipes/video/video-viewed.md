@@ -1,9 +1,9 @@
-# video_viewed generic Statement template
+# video_viewed Statement template
 
 ## Purpose
 
 ### Actor
-The Actor entity is used to identify the individual that is viewing the resource. It uses the Jisc Profile common entity [ActorA](/common_structures.md#actora).
+The Actor entity is used to identify the individual viewing the video. It uses the Jisc Profile common entity [ActorA](/common_structures.md#actora).
 
 #### Entity properties:
 
@@ -38,7 +38,7 @@ actor.account.homepage [1] <br/>
 ```
 
 ### Verb
-The Verb used in view Statements is [viewed](../vocabulary.md#verbs). It denotes the action of the user requesting the resource that the user wishes to view. It uses the Jisc Profile common entity [VerbA](../common_structures.md#verba). 
+The Verb used in view Statements is [viewed](../vocabulary.md#verbs). It denotes the action of the user accessing the video. It uses the Jisc Profile common entity [VerbA](../common_structures.md#verba). 
 
 #### Entity properties:
 
@@ -103,7 +103,7 @@ The Object for viewed Statements identifies what is being viewed. It uses the Ji
 
 	"object": {
 		"objectType": "Activity",
-		"id": "http://steaming.jisc.ac.uk/video/54",
+		"id": "http://streaming.jisc.ac.uk/video/54",
 		"definition": {
 			"type": "https://w3id.org/xapi/video/activity-type/video"
 		}
@@ -119,7 +119,7 @@ The Object for viewed Statements identifies what is being viewed. It uses the Ji
 <tr><th>Property</th><th>Description</th></tr>
 	<tr><td>result.minutes-watched [0..1]</td>
 	<td>The number of minutes watched.</td></tr>
-	<tr><td>result.viewsd [0..1]</td>
+	<tr><td>result.viewed [0..1]</td>
 	<td>The number of Views</td></tr>
 </table>
 
@@ -183,6 +183,7 @@ The Context entity can be used to describe any surrounding circumstances, includ
 	"timestamp": "**TIMESTAMP**",
 	"actor": {
 		"objectType": "Agent",
+		"name": "John Smith",
 		"account": {
 			"name": "dms2ec",
 			"homePage": "http://steaming.jisc.ac.uk/"
@@ -196,7 +197,7 @@ The Context entity can be used to describe any surrounding circumstances, includ
 
 	"object": {
 		"objectType": "Activity",
-		"id": "http://steaming.jisc.ac.uk/video/54",
+		"id": "http://streaming.jisc.ac.uk/video/54",
 		"definition": {
 			"type": "https://w3id.org/xapi/video/activity-type/video"
 		}
