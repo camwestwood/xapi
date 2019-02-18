@@ -63,11 +63,21 @@ Bug reports can be directed to the [Moodle](https://github.com/jiscdev/jisc-mood
 </table>
 
 ## Reading Lists
+
+For discussion:
+
+* Number of statements
+	* Is viewed 1 or 2 statement templates. On a spec level and a template level
+* Statement makeup
+    * What is the external link followed?  Is this a type of accessed statement? 
+    * How does Jisc get this data, and is the template approach still useful? E.g is this one dataset that that gets chopped up 
+
+
 <table>
 <tr><td>Statement Template</td><td>Input TSV definitions</td><td>JSON Template</td></tr>  
-     <tr><td> <a href = "recipes/readinglist/view-reading-list.md">Reading List Viewed</a></td><td><a href="recipes/readinglist/uxapi/readinglist-viewed-input.md">readinglist-itemviewed-input.md</a></td><td><a href="recipes/readinglist/uxapi/readinglist-viewed-template.json">readinglist-itemviewed-template.json</td></tr>    
-         <tr><td> <a href = "recipes/readinglist/view-reading-list-item.md">Reading List Item Viewed</a></td><td><a href="recipes/readinglist/uxapi/readinglist-itemviewed-input.md">readinglist-itemviewed-input.md</a></td><td><a href="recipes/readinglist/uxapi/readinglist-itemviewed-template.json">readinglist-itemviewed-template.json</td></tr>   
-
+     <tr><td> <a href = "recipes/readinglist/readinglist-view-list.md">Reading List Viewed</a></td><td><a href="recipes/readinglist/uxapi/readinglist-viewed-input.md">readinglist-itemviewed-input.md</a></td><td><a href="recipes/readinglist/uxapi/readinglist-viewed-template.json">readinglist-itemviewed-template.json</td></tr>    
+         <tr><td> <a href = "recipes/readinglist/readinglist-view-reading-list-item.md">Reading List Item Viewed</a></td><td><a href="recipes/readinglist/uxapi/readinglist-itemviewed-input.md">readinglist-itemviewed-input.md</a></td><td><a href="recipes/readinglist/uxapi/readinglist-itemviewed-template.json">readinglist-itemviewed-template.json</td></tr>   
+         <tr><td> <a href = "recipes/readinglist/readinglist-accessed-content.md">Reading List accessed content</a></td><td><a href="recipes/readinglist/uxapi/readinglist-accessed-input.md">readinglist-accessed-input.md</a></td><td><a href="recipes/readinglist/uxapi/readinglist-accessed-template.json">readinglist-accessed-template.json</td></tr> 
 </table>
 
 
