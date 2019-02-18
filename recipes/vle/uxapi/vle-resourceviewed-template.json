@@ -12,6 +12,7 @@
 		"id": "http://id.tincanapi.com/verb/viewed",
 		"display": {
 			"en": "viewed"
+			}
 		},
 
 	"object": {
