@@ -2,6 +2,10 @@
 
 ## Purpose
 
+## For discussion
+* How items relate to reading lists
+	* we use contextActivities.parent (see example), at one stage we decided against using arrays, but I think we decided its ok (and it is always array of 1!)
+	* Is then then going to create a chain of contextActivities.parents accessed_item->list_item-list
 
 ### Actor
 The Actor entity is used to identify the individual that is viewing the reading list item. It uses the Jisc Profile common entity [ActorA](/common_structures.md#actora).
@@ -150,7 +154,7 @@ The Context entity can be used to describe any surrounding circumstances, includ
 			},
 			
  		"http://xapi.jisc.ac.uk/sessionId":"32456891",
-    "http://id.tincanapi.com/extension/ip-address": "10.3.3.48"
+      "http://id.tincanapi.com/extension/ip-address": "10.3.3.48"
 		"http://xapi.jisc.ac.uk/version" : "1.0.2"
 			}
 		}

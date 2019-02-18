@@ -2,12 +2,16 @@
 
 [Statement Template Changes](/version_changes.md#access_service)
 
+
 ## Purpose
-This generic Statement template describes a user accessing something. Use this template to create a specific access Statement template, for example for a accessing a sevice.
 
-The entities and properties described here represent a typical Statement template. Further properties or constraints could be defined to create a login Statement template for a more specific purpose.
+## For discussion
 
-Natural language example of a typical login Statement: "John Smith logged in to his university Moodle VLE using his mobile phone."
+* Is accessed ok?
+* How accessed items relate to reading lists
+	* we use contextActivities.parent (see example), at one stage we decided against using arrays, but I think we decided its ok (and it is always array of 1!)
+	* Is then then going to create a chain of contextActivities.parents accessed_item->list_item-list
+* What is the object.type or how do we work it out? Are we using subtypes
 
 ### Actor
 Common entity identifier:  ActorA, as defined on the [common structures](/common_structures.md#actora) page.
@@ -24,7 +28,7 @@ The actor entity describes the individual that is accessing econtent.
         "name": "John Smith",
         "account": {
             "name": "john-smith",
-            "homePage": "http://ezproxy.jisc.ac.uk"
+            "homePage": "https://readinglist.jisc.ac.uk/"
         }
     },
 ```
@@ -65,7 +69,7 @@ An object type of http://activitystrea.ms/schema/1.0/service is required for thi
 ``` javascript
 "object": {
 	"objectType": "Activity",
-	"id": "http://www.contenthost.com"   	 	
+	"id": "http://www.contenthost.com/"   	 	
 	"definition": {
 		"type": "http://activitystrea.ms/schema/1.0/service"
     	}
@@ -94,7 +98,7 @@ An object type of http://activitystrea.ms/schema/1.0/service is required for thi
 	</tr>
 	<tr>
 		<td>context.extensions.statementCat version [0..1]</td>
-		<td>Recommended for querying lookup. Set to "Library" in library statements <br/></td>
+		<td>Recommended for querying lookup. Set to "readinglist" in readinglist statements <br/></td>
 		<td>string</td>
 	</tr>
 </table>
@@ -104,11 +108,22 @@ An object type of http://activitystrea.ms/schema/1.0/service is required for thi
 
 ``` javascript
 	"context": {
-		"platform": "ezproxy",
+		"platform": "Echo 360",
+
+	"contextActivities":{
+            "parent":[
+                {
+                    
+                    "id":"http://reading.jisc.ac.uk/page/4/item"
+                    
+                }
+            ]
+        },
+
 		"extensions": {
-			"http://xapi.jisc.ac.uk/version": "1.0.2",
+			"http://xapi.jisc.ac.uk/version": "1.0.3",
 			"http://id.tincanapi.com/extensions/ip-address": "165.154.154.1",
-			"https://xapi.jisc.ac.uk/statementCat": "Library"
+			"https://xapi.jisc.ac.uk/statementCat": "Readinglist"
 		}
 	}
 ```
@@ -122,7 +137,7 @@ An object type of http://activitystrea.ms/schema/1.0/service is required for thi
 		"objectType": "Agent",
 		"account": {
 			"name": "Jsmith12",
-			"homePage": "http://ezproxy.jisc.ac.uk"
+			"homePage": "http://readinglist.jisc.ac.uk"
 		}
 	},
 	"timestamp": "2015-09-18T01:54:51.484Z",
@@ -137,16 +152,27 @@ An object type of http://activitystrea.ms/schema/1.0/service is required for thi
 		"objectType": "Activity",
 		"id": "http://onlinelibrary.jisc.ac.uk/",
 		"definition": {
-			"type": "http://activitystrea.ms/schema/1.0/service"
+			"type": ""
 		}
 
 	},	
 	"context": {
-		"platform": "ezproxy",
+		"platform": "Echo 360",
+
+		"contextActivities":{
+            "parent":[
+                {
+                    
+                    "id":"http://reading.jisc.ac.uk/page/4/item"
+                    
+                }
+            ]
+        },
+
 		"extensions": {
-			"http://xapi.jisc.ac.uk/version": "1.0.2",
+			"http://xapi.jisc.ac.uk/version": "1.0.3",
 			"http://id.tincanapi.com/extensions/ip-address": "165.154.154.1",
-			"https://xapi.jisc.ac.uk/statementCat": "Library"
+			"https://xapi.jisc.ac.uk/statementCat": "Readinglist"
 		}
 	}
 }

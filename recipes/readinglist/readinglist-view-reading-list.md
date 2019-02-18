@@ -2,6 +2,11 @@
 
 ## Purpose
 
+## For discussion
+
+* Activity types
+	* What is the activity types for reading list? I've temporarily minted a jisc thing, but is it a subtype of something. I don't really know what a reading list is!
+
 
 ### Actor
 The Actor entity is used to identify the individual that is viewing a reading list. It uses the Jisc Profile common entity [ActorA](/common_structures.md#actora).
@@ -33,7 +38,7 @@ actor.account.homepage [1] <br/>
   "name": "John Smith",
   "account": {
     "name": "jsmith12",
-    "homePage": "https://readinglist.alpha.jisc.ac.uk/"
+    "homePage": "https://readinglist.jisc.ac.uk/"
   }
 }
 ```
@@ -180,8 +185,9 @@ The Context entity can be used to describe any surrounding circumstances, includ
 	
 	"context": {
 		"platform" :"Talis Aspire",
-        "extensions": {
 		
+        "extensions": {
+			"https://xapi.jisc.ac.uk/statementCat": "Readinglist",
 			"http://xapi.jisc.ac.uk/courseArea": {
 				"http://xapi.jisc.ac.uk/vle_mod_id": "LA101",
 				"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0",
