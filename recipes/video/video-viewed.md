@@ -1,5 +1,20 @@
 # video_viewed Statement template
 
+## For discussion
+
+* Cam's fields
+** Consistent variable names with rest of repo?
+** what is 'Viewing type' - activity type of video?
+* What is the activity type for video:
+** Gone with https://w3id.org/xapi/video/activity-type/video
+** What is the difference between "lecture cap viewing and other videos"
+* The result entity:
+** Result.duration for minutes viewed
+** Cam has a 'views count' in the data. Is this a view count for the video, because that doesn't sound like something to do with the student, or is it the students view count of the video. Is a view count a measured outcome from the learning activity? If its a count of video then no (Is there/should we mint a context.extension for 'view number...'), if it is a student count, is this an attempt counter?
+* What about the usual suspects in common entities? Optional in spec, not in current TSV and json template
+**  "http://xapi.jisc.ac.uk/courseArea"
+
+
 ## Purpose
 
 ### Actor
@@ -32,7 +47,7 @@ actor.account.homepage [1] <br/>
   "name": "John Smith",
   "account": {
     "name": "jsmith12",
-    "homePage": "https://courses.alpha.jisc.ac.uk/moodle"
+    "homePage": "https://video.jisc.ac.uk/"
   }
 }
 ```
@@ -69,7 +84,7 @@ The Verb used in view Statements is [viewed](../vocabulary.md#verbs). It denotes
 
 ### Object
 
-The Object for viewed Statements identifies what is being viewed. It uses the Jisc Profile common entity [ObjectA](../common_structures.md#objecta).
+The Object for viewed Statements identifies what is being viewed. It is based on the the Jisc Profile common entity [ObjectA](../common_structures.md#objecta).
 
 
 #### Object Entity properties:
@@ -117,8 +132,8 @@ The Object for viewed Statements identifies what is being viewed. It uses the Ji
 #### Entity properties:
 <table>
 <tr><th>Property</th><th>Description</th></tr>
-	<tr><td>result.minutes-watched [0..1]</td>
-	<td>The number of minutes watched.</td></tr>
+	<tr><td>result.duration [0..1]</td>
+	<td>total time spent consuming the video under current registration)</td></tr>
 	<tr><td>result.viewed [0..1]</td>
 	<td>The number of Views</td></tr>
 </table>
@@ -127,9 +142,7 @@ The Object for viewed Statements identifies what is being viewed. It uses the Ji
 
 ``` javascript
 "result": {
-        "extensions": {
-            "https://jisc.ac.uk/minutes-watched": 5,
-			"https://jisc.ac.uk/views": 45
+       "duration": "PT1234S"
         }
     },
 
@@ -186,7 +199,7 @@ The Context entity can be used to describe any surrounding circumstances, includ
 		"name": "John Smith",
 		"account": {
 			"name": "dms2ec",
-			"homePage": "http://steaming.jisc.ac.uk/"
+			"homePage": "http://streaming.jisc.ac.uk/"
 		}
 	},
 	"verb": {
@@ -204,10 +217,7 @@ The Context entity can be used to describe any surrounding circumstances, includ
 	},
 
 	"result": {
-        "extensions": {
-			"https://jisc.ac.uk/minutes-watched": 41,
-			"https://jisc.ac.uk/views": 45
-        }
+         "duration": "PT1234S"
     },
 
 	"context": {
@@ -221,7 +231,7 @@ The Context entity can be used to describe any surrounding circumstances, includ
 					
 		"http://xapi.jisc.ac.uk/sessionId": "32456891"  ,
 		"http://id.tincanapi.com/extension/ip-address": "10.3.3.48"
-		"http://xapi.jisc.ac.uk/version" : "1.0.2"
+		"http://xapi.jisc.ac.uk/version" : "1.0.3"
 			}
         }
 }
