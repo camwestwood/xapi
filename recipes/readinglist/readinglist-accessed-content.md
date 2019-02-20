@@ -20,7 +20,7 @@ The actor entity describes the individual that is accessing econtent.
         "name": "John Smith",
         "account": {
             "name": "john-smith",
-            "homePage": "http://ezproxy.jisc.ac.uk"
+            "homePage": "http://reading.jisc.ac.uk"
         }
     },
 ```
@@ -37,7 +37,7 @@ An ISO 8601 format timestamp that corresponds to the time when the service was a
 ### Verb
 Common entity identifier: VerbA, as defined on the [common structures](/common_structures.md#verba) page.
 
-The Verb, [access](/vocabulary.md#verbs), denotes the action of the user's browser or app requesting the econtent.
+The Verb, [access](/vocabulary.md#verbs), denotes the action of the user's browser or app requesting the externalLink.
 
 ### Example:
 
@@ -54,7 +54,7 @@ The Verb, [access](/vocabulary.md#verbs), denotes the action of the user's brows
 ### Object
 Common entity identifier: ObjectA, as defined on the [common structures](/common_structures.md#objecta) page. 
 
-An object type of http://activitystrea.ms/schema/1.0/service is required for this statement,
+An object type of http://xapi.jisc.ac.uk/externalContent is required for this statement,
 
 ### Example
 
@@ -63,7 +63,7 @@ An object type of http://activitystrea.ms/schema/1.0/service is required for thi
 	"objectType": "Activity",
 	"id": "http://www.contenthost.com"   	 	
 	"definition": {
-		"type": "http://activitystrea.ms/schema/1.0/service"
+		"type": "http://xapi.jisc.ac.uk/externalContent"
     	}
 }
 ```
@@ -131,9 +131,9 @@ An object type of http://activitystrea.ms/schema/1.0/service is required for thi
 	},
 	"object": {
 		"objectType": "Activity",
-		"id": "http://onlinelibrary.jisc.ac.uk/",
+		"id": "http://onlinelibrary.jisc.ac.uk/4",
 		"definition": {
-			"type": "http://activitystrea.ms/schema/1.0/service"
+			"type": "http://xapi.jisc.ac.uk/externalContent"
 		}
 
 	},	
