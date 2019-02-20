@@ -3,31 +3,9 @@
 ## Purpose
 
 ## For discussion
-* How items relate to reading lists
-	* we use contextActivities.parent (see example), at one stage we decided against using arrays, but I think we decided its ok (and it is always array of 1!)
-	* Is then then going to create a chain of contextActivities.parents accessed_item->list_item-list
 
 ### Actor
 The Actor entity is used to identify the individual that is viewing the reading list item. It uses the Jisc Profile common entity [ActorA](/common_structures.md#actora).
-
-#### Entity properties:
-
-<table>
-<tr><th>Property</th><th>Description</th></tr>
-<tr>
-<td>actor.objectType [1]</td><td>Must have the value "Agent". Actors of type "Group" are not supported in the Jisc Profile.</td>
-</tr>
-<tr>
-<td>actor.name [0..1]</td><td>Full name of user.</td>
-</tr>
-<tr>
-<td>	
-actor.account [1] <br/>
-actor.account.name [1] <br/>
-actor.account.homepage [1] <br/>
-</td>
-<td>A JSON Object with <b>account.name</b> giving a system login id for the subject of the Statement and <b>account.homepage</b> giving the URL of the home page of the application for which the login id applies.</td></tr>
-</table>
 
 ### Example:
 
@@ -45,24 +23,6 @@ actor.account.homepage [1] <br/>
 
 ### Verb
 The Verb used in view Statements is [viewed](../vocabulary.md#verbs). It denotes the action of the user requesting the resource that the user wishes to view. It uses the Jisc Profile common entity [VerbA](../common_structures.md#verba). 
-
-#### Entity properties:
-<table>
-	<tr><th>Property [cardinality]</th><th>Description</th><th>Value information</</th></tr>
-<tr>
-	<tr>
-		<td>verb.id [1]</td>
-		<td>An IRI that identifies the Verb. Valid IRIs depend on the Statement and are given on the relevant Statement page.</td>
-		<td>IRI</td>
-	</tr>
-	<tr>
-		<td>verb.display [1]</td>
-		<td>A human readable representation of Verb, takes a RFC 5646 Language Tag. </td>
-		<td>string </td>
-	</tr>
-</table>
-
-
 
 ### Example:
 
