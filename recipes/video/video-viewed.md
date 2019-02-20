@@ -2,19 +2,6 @@
 
 ## For discussion
 
-* Cam's fields
-	* Consistent variable names with rest of repo?
-	* what is 'Viewing type' - activity type of video?
-* What is the activity type for video:
-	* Gone with https://w3id.org/xapi/video/activity-type/video
-	* What is the difference between "lecture cap viewing and other videos"
-* The result entity:
-	* Result.duration for minutes viewed
-	* Cam has a 'views count' in the data. Is this a view count for the video, because that doesn't sound like something to do with the student, or is it the students view count of the video. Is a view count a measured outcome from the learning activity? If its a count of video then no (Is there/should we mint a context.extension for 'view number...'), if it is a student count, is this an attempt counter?
-* What about the usual suspects in common entities? Optional in spec, not in current TSV and json template
-	*  "http://xapi.jisc.ac.uk/courseArea"
-
-
 ## Purpose
 
 ### Actor
