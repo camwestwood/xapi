@@ -4,8 +4,6 @@
 
 ## For discussion
 
-* Activity types
-	* What is the activity types for reading list? I've temporarily minted a jisc thing, but is it a subtype of something. I don't really know what a reading list is!
 
 
 ### Actor
@@ -43,7 +41,7 @@ The Verb used in view Statements is [viewed](../vocabulary.md#verbs). It denotes
 
 The Object for viewed Statements identifies what is being viewed. It uses the Jisc Profile common entity [ObjectA](../common_structures.md#objecta).
 
-(Should we be borrowing from the library borrowed object? ISBN's that kind of thing)
+
 
 #### Entity properties:
 	

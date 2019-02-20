@@ -64,14 +64,6 @@ Bug reports can be directed to the [Moodle](https://github.com/jiscdev/jisc-mood
 
 ## Reading Lists
 
-For discussion:
-
-* Number of statements
-	* Is viewed 1 or 2 statement templates. On a spec level and a template level
-* Statement makeup
-    * What is the external link followed?  Is this a type of accessed statement? 
-    * How does Jisc get this data, and is the template approach still useful? E.g is this one dataset that that gets chopped up 
-
 
 <table>
 <tr><td>Statement Template</td><td>Input TSV definitions</td><td>JSON Template</td></tr>  

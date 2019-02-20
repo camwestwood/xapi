@@ -1,17 +1,11 @@
-# accessed service statement template
+# accessed external document statement template
 
 [Statement Template Changes](/version_changes.md#access_service)
 
 
 ## Purpose
 
-## For discussion
 
-* Is accessed ok?
-* How accessed items relate to reading lists
-	* we use contextActivities.parent (see example), at one stage we decided against using arrays, but I think we decided its ok (and it is always array of 1!)
-	* Is then then going to create a chain of contextActivities.parents accessed_item->list_item-list
-* What is the object.type or how do we work it out? Are we using subtypes
 
 ### Actor
 Common entity identifier:  ActorA, as defined on the [common structures](/common_structures.md#actora) page.
@@ -69,7 +63,7 @@ An object type of http://activitystrea.ms/schema/1.0/service is required for thi
 ``` javascript
 "object": {
 	"objectType": "Activity",
-	"id": "http://www.contenthost.com/"   	 	
+	"id": "http://www.contenthost.com/books/5"   	 	
 	"definition": {
 		"type": "http://activitystrea.ms/schema/1.0/service"
     	}
@@ -79,29 +73,6 @@ An object type of http://activitystrea.ms/schema/1.0/service is required for thi
 
 
 ### Context
-
-<table>
-	<tr><th>Property [cardinality]</th><th>Description</th><th>Value information</</th></tr>
-	<tr>
-		<td>context.platform [1]</td>
-		<td>The platform used in the experience of this learning activity. The value used should not change between platform upgrades and version changes and should typically be a concise name by which the application is commonly known.</td>
-		<td>string</td>
-	</tr>	
-	<tr>
-		<td>context.extensions.version [0..1]</td>
-		<td>Recommended, identifies the version of the Jisc xAPI profile found on the ReadMe page. <br/></td>
-		<td>decimal</td>
-	</tr>
-		<td>context.extension.ip-address [1]</td>
-		<td>client's IP address. An IPv4 address is recommended.</td>
-		<td>ip address</td>
-	</tr>
-	<tr>
-		<td>context.extensions.statementCat version [0..1]</td>
-		<td>Recommended for querying lookup. Set to "readinglist" in readinglist statements <br/></td>
-		<td>string</td>
-	</tr>
-</table>
 
 
 ### Example:
