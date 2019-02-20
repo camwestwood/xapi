@@ -79,37 +79,6 @@ The Verb used in view Statements is [viewed](../vocabulary.md#verbs). It denotes
 
 The Object for viewed Statements identifies what is being viewed. It uses the Jisc Profile common entity [ObjectA](../common_structures.md#objecta).
 
-* But should we be borrowing from the library borrowed object? ISBN's that kind of thing *
-
-<table>
-	<tr><th>Property [cardinality]</th><th>Description</th><th>Value information</</th></tr>
-	<tr>
-		<td>object.objectType [1]</td>
-		<td>The value must be "Activity".</td>
-		<td>String, value must be "Activity".</td>
-	</tr>
-	<tr>
-		<td>object.id [1]</td>
-		<td>An identifier for the object of the xAPI Statement. This must be unique (within a given platform) across all Object types.</td>
-		<td>iri</td>
-	</tr>
-	<tr>
-		<td>object.definition.type [1]</td>
-		<td>Indicates the type of the Object of the Statement. It is required and valid values are listed on the [vocabularies](vocabulary.md#activity-types) page.</td>
-		<td>iri</td>
-	</tr>
-	<tr>
-		<td>object.definition.name [0..1]</td>
-		<td>Optional Object name</td>
-		<td>string</td>
-	</tr>
-	<tr>
-		<td>object.definition.extensions.http://xapi.jisc.ac.uk/subType [0..1]</td>
-		<td>May be used to indicate the sub-type of this Activity, if applicable for the recipe being used to create the Statement. This qualifies the object.objectType, and is described on the [vocabularies](vocabulary.md#object-definition-extensions) page.</td>
-		<td>iri</td>
-	</tr>
-</table>
-
 ### Example
 
 ``` javascript
@@ -120,7 +89,7 @@ The Object for viewed Statements identifies what is being viewed. It uses the Ji
 	"objectType": "Activity",
 	"id": "http://reading.jisc.ac.uk/page/4/item/view.php?id=9"   	 	
 	"definition": {
-		"type": "<What does a reading list item look like>",			
+		"type": "http://xapi.jisc.ac.uk/reading-list-item",			
 		"name": { "en": "Sample reading list item"}
     }
 }

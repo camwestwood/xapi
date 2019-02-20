@@ -2,17 +2,15 @@ This is the input file for a video-viewed event.
 
 Data should be supplied as a UTF-8 Tab Separated File called videoviewed.tsv.
 
-# video-viewed-viewed
+# video-viewed
 
 * [USERNAME](#username) [1]
 * [HOMEPAGE](#homepage) [1]
 * [TIMESTAMP](#timestamp) [1]
 * [OBJECT_ID](object_id) [1]
-* [VIEWING_TYPE](#viewing_type) [1]
 * [VIEWS](#views) [0..1]
 * [MINUTES_WATCHED](#minutes_watched) [0..1]
 * [SESSION_ID](#session_id) [1]
-* [CLIENT_IP](#client_ip) [0..1]
 
 
 
@@ -60,30 +58,6 @@ Any
 ### Format
 String (255)
 
-
-## VIEWING_TYPE
-### Description
-
-
-
-### Purpose
-
-
-
-### Format
-
-
-## VIEWS
-### Description
-
-The view count for the video
-
-### Valid Values
-Any
-
-### Format
-int (5)
-
 ## SESSION_ID
 ### Description
 
@@ -96,17 +70,6 @@ Any
 ### Format
 String (255)
 
-
-## CLIENT_IP 
-### Description
-
-Client's address location on internet, the IP address that has made the request to view the content.
-
-### Valid Values
-Value is a string representing an Internet Protocol address (IP address) in either IPv4 or IPv6 format.
-
-### Format
-String (255)
 
 
 
