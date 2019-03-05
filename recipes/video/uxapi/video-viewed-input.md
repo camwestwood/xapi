@@ -8,7 +8,6 @@ Data should be supplied as a UTF-8 Tab Separated File called videoviewed.tsv.
 * [HOMEPAGE](#homepage) [1]
 * [TIMESTAMP](#timestamp) [1]
 * [OBJECT_ID](object_id) [1]
-* [VIEWS](#views) [0..1]
 * [MINUTES_WATCHED](#minutes_watched) [0..1]
 * [SESSION_ID](#session_id) [1]
 

@@ -16,7 +16,7 @@
 
 	"object": {
 		"objectType": "Activity",
-		"id": "**OBJECT_ID**",
+		"id": "**HOMEPAGE**/**FOLDER_ID**",
 		"definition": {
 			"type": "https://w3id.org/xapi/video/activity-type/video"
 		}
