@@ -583,12 +583,24 @@ For more information, see Jisc Profile [CourseArea properties](#coursearea).
 ### Statement Category
 
 <table>
-<tr><th align="left">Label</th><td>Statement Category </td></tr>
+<tr><th align="left">Label</th><td>Statement Category (Deprecated as of 1.0.3) </td></tr>
 <tr><th align="left">Description</th><td>Identifies the statement category for querying lookup. </td></tr>
 <tr><th align="left">string</th><td> <a href="https://xapi.jisc.ac.uk/statementCat">https://xapi.jisc.ac.uk/statementCat</a> </td></tr>
 <tr><th align="left">Example in Statement template</th><td> <a href="recipes/vle/login.md#context">Logged in</a> </td></tr>
 <tr><th align="left">Data Type</th><td>String</td></tr>
-<tr><th align="left">Value Space</th><td>Attendance, VLE, Library </td></tr>
+<tr><th align="left">Value Space</th><td>Attendance, VLE, Library</td></tr>
+<tr><th align="left">Sample Value</th><td>Attendance</td></tr>
+</table>
+
+### Statement Category
+
+<table>
+<tr><th align="left">Label</th><td>Recipe Category (Deprecated as of 1.0.3) </td></tr>
+<tr><th align="left">Description</th><td>Identifies the statement category for querying lookup. </td></tr>
+<tr><th align="left">string</th><td> <a href="https://xapi.jisc.ac.uk/recipeCat">https://xapi.jisc.ac.uk/recipeCat</a> </td></tr>
+<tr><th align="left">Example in Statement template</th><td> <a href="recipes/vle/login.md#context">Logged in</a> </td></tr>
+<tr><th align="left">Data Type</th><td>String</td></tr>
+<tr><th align="left">Value Space</th><td>Any recipe Category</td></tr>
 <tr><th align="left">Sample Value</th><td>Attendance</td></tr>
 </table>
 

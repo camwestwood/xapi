@@ -122,7 +122,7 @@ The Context entity can be used to describe any surrounding circumstances, includ
 		"platform" :"Talis Aspire",
 		
         "extensions": {
-			"https://xapi.jisc.ac.uk/statementCat": "Readinglist",
+			"https://xapi.jisc.ac.uk/recipeCat": "Readinglist",
 			"http://xapi.jisc.ac.uk/courseArea": {
 				"http://xapi.jisc.ac.uk/vle_mod_id": "LA101",
 				"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0",

@@ -36,7 +36,7 @@
 			},
 
 				"http://xapi.jisc.ac.uk/version": "1.0.3",
-				"https://xapi.jisc.ac.uk/statementCat": "Readinglist"
+				"https://xapi.jisc.ac.uk/recipeCat": "Readinglist"
 				
 		}
 

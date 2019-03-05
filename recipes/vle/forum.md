@@ -104,7 +104,7 @@ The Context may describe the parent forum of the thread in context.contextActivi
 	  },
 
     "extensions": {
-			"http://xapi.jisc.ac.uk/statementCat": "VLE",
+			"http://xapi.jisc.ac.uk/recipeCat": "VLE",
 			
 			"http://xapi.jisc.ac.uk/courseArea": {
       		 	"http://xapi.jisc.ac.uk/vle_mod_id": "LA101",
@@ -161,7 +161,7 @@ The Context may describe the parent forum of the thread in context.contextActivi
 	  },
 
    "extensions": {
-	 "http://xapi.jisc.ac.uk/statementCat": "VLE",
+	 "http://xapi.jisc.ac.uk/recipeCat": "VLE",
 	 "http://xapi.jisc.ac.uk/courseArea": {
       		 "http://xapi.jisc.ac.uk/vle_mod_id": "LA101",
 		 "http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0"

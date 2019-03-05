@@ -101,7 +101,7 @@ Common entity identifier: ObjectA, as defined on the [common structures](/common
 		<td>ip address</td>
 	</tr>
 	<tr>
-		<td>context.extensions.statementCat version [0..1]</td>
+		<td>context.extensions.recipeCat version [0..1]</td>
 		<td>Recommended for querying lookup. Set to "Library" in library statements <br/></td>
 		<td>string</td>
 	</tr>
@@ -116,7 +116,7 @@ Common entity identifier: ObjectA, as defined on the [common structures](/common
 			"http://xapi.jisc.ac.uk/version": "1.0.2"
 			"http://xapi.jisc.ac.uk/sessionId": "A438L",
 			"http://id.tincanapi.com/extensions/ip-address": "10.3.3.48",
-			"https://xapi.jisc.ac.uk/statementCat": "Library"
+			"https://xapi.jisc.ac.uk/recipeCat": "Library"
 			
 		}
 	}
@@ -161,7 +161,7 @@ Common entity identifier: ObjectA, as defined on the [common structures](/common
 			"http://xapi.jisc.ac.uk/version": "1.0.2",
 			"http://xapi.jisc.ac.uk/sessionId": "32456891",
 			"http://id.tincanapi.com/extensions/ip-address": "10.3.3.48",
-			"https://xapi.jisc.ac.uk/statementCat": "Library"
+			"https://xapi.jisc.ac.uk/recipeCat": "Library"
 		}
 	}
 }

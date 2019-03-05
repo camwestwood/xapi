@@ -230,7 +230,7 @@ The result.completion must be set to true if the Actor attended the event, or fa
 	<td>JSON Object</td>
 </tr>
 	<tr>
-		<td><a href="vocabulary.md#StatementCategory">context.extensions.https://xapi.jisc.ac.uk/statementCat</a>[0..1]</td>
+		<td><a href="vocabulary.md#recipeCategory">context.extensions.https://xapi.jisc.ac.uk/recipeCat</a>[0..1]</td>
 		<td>Recommended For querying lookup. Set to "attendance" in attendance templates.<br/></td>
 		<td>string</td>
 	</tr>
@@ -269,7 +269,7 @@ The result.completion must be set to true if the Actor attended the event, or fa
 			"http://xapi.jisc.ac.uk/uddCourseInstanceID": "LA101-200",
 			"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0"
 		}
-		"http://xapi.jisc.ac.uk/statementCat": "Attendance",
+		"http://xapi.jisc.ac.uk/recipeCat": "Attendance",
 		"http://xapi.jisc.ac.uk/captured_from": "ios"
   }
 ```
@@ -354,7 +354,7 @@ In attendance statements the timestamp property must be set to the start time of
 			"http://xapi.jisc.ac.uk/vle_mod_id": "LA101-200-2016S1-0",
 			"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0",
 		},
-		"http://xapi.jisc.ac.uk/statementCat": "Attendance",
+		"http://xapi.jisc.ac.uk/recipeCat": "Attendance",
 		"http://xapi.jisc.ac.uk/captured_from": "ios"
 		}
 	 }

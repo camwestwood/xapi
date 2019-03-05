@@ -30,7 +30,7 @@
 		"platform": "**AUTHORITY_NAME**",
 		"extensions": {
 
-			"http://xapi.jisc.ac.uk/statementCat": "Readinglist",
+			"http://xapi.jisc.ac.uk/recipeCat": "Readinglist",
 			"http://xapi.jisc.ac.uk/sessionId": "**EVENT_ID**",
 			"http://xapi.jisc.ac.uk/version": "1.0.3"
 		}

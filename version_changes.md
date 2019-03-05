@@ -6,6 +6,10 @@ Change in Version - Date - Change
 
 ### Logged in
 
+v1.0.3 5-04-2019, Spec Change. [Recipe category added](https://github.com/jiscdev/xapi/issues/294)
+
+v1.0.3 5-04-2019, Spec Change. [Statement category deprecated](https://github.com/jiscdev/xapi/issues/294)
+
 v1.0.1 13-04-2018, Spec Change. [Statement category added as optional](https://github.co7/jiscdev/xapi/issues/225)
 
 v1.0 10-05-2017, Spec Change. recipeVersion depricated, replaced with version.
@@ -17,7 +21,11 @@ v0.2 2-05-2016, Documentation change [subType supersedes ApplicationType](https:
 
 ### Logged out
 
-v1.0.1 13-04-2018, Spec Change. [Statement category added as optional](https://github.co7/jiscdev/xapi/issues/225)
+v1.0.3 5-04-2019, Spec Change. [Recipe category added](https://github.com/jiscdev/xapi/issues/294)
+
+v1.0.3 5-04-2019, Spec Change. [Statement category deprecated](https://github.com/jiscdev/xapi/issues/294)
+
+v1.0.1 13-04-2018, Spec Change. [Statement category added as optional](https://github.com/jiscdev/xapi/issues/225)
 
 v1.0 10-05-2017, Spec Change. recipeVersion deprecated, replaced with version
 
@@ -29,6 +37,10 @@ v0.2 2-05-2016, Documentation change [subType supersedes ApplicationType](https:
 
 
 ### VLE resource viewed
+
+v1.0.3 5-04-2019, Spec Change. [Recipe category added](https://github.com/jiscdev/xapi/issues/294)
+
+v1.0.3 5-04-2019, Spec Change. [Statement category deprecated](https://github.com/jiscdev/xapi/issues/294)
 
 v1.0.1 13-04-2018, Spec Change. [Statement category added as optional](https://github.co7/jiscdev/xapi/issues/225)
 
@@ -51,6 +63,10 @@ v0.2 2-05-2016, Documentation change [subType supersedes ApplicationType](https:
 
 ### Session timeout
 
+v1.0.3 5-04-2019, Spec Change. [Recipe category added](https://github.com/jiscdev/xapi/issues/294)
+
+v1.0.3 5-04-2019, Spec Change. [Statement category deprecated](https://github.com/jiscdev/xapi/issues/294)
+
 v1.0 20-06-2017, Spec Change. [deprecated](https://github.com/jiscdev/xapi/issues/170)
 
 v1.0 10-05-2017, Spec Change. recipeVersion deprecated, replaced with version
@@ -63,6 +79,10 @@ v0.2 2-05-2016, Documentation change [subType supersedes ApplicationType](https:
 
 
 #### Assignment Graded
+
+v1.0.3 5-04-2019, Spec Change. [Recipe category added](https://github.com/jiscdev/xapi/issues/294)
+
+v1.0.3 5-04-2019, Spec Change. [Statement category deprecated](https://github.com/jiscdev/xapi/issues/294)
 
 v1.0.1 13-04-2018, Spec Change. [Statement category added as optional](https://github.co7/jiscdev/xapi/issues/225)
 
@@ -87,6 +107,10 @@ v1.0 20-03-2017, Spec change. [Description no longer required in ObjectA or B.](
 
 #### Assignment Submitted
 
+v1.0.3 5-04-2019, Spec Change. [Recipe category added](https://github.com/jiscdev/xapi/issues/294)
+
+v1.0.3 5-04-2019, Spec Change. [Statement category deprecated](https://github.com/jiscdev/xapi/issues/294)
+
 v1.0.1 13-04-2018, Spec Change. [Statement category added as optional](https://github.co7/jiscdev/xapi/issues/225)
 
 v1.0.1 27-11-2017, Doc Change. [Documentation to reflect removel of submitted in 1.1](https://github.com/jiscdev/xapi/issues/201)
@@ -109,6 +133,10 @@ v1.0 20-03-2017, Spec change. [Description no longer required in ObjectA.](https
 
 #### Forum post 
 
+v1.0.3 5-04-2019, Spec Change. [Recipe category added](https://github.com/jiscdev/xapi/issues/294)
+
+v1.0.3 5-04-2019, Spec Change. [Statement category deprecated](https://github.com/jiscdev/xapi/issues/294)
+
 v1.0.2 08-11-2018, Spec Change. [added response to TSV and TSV definition ](https://github.co7/jiscdev/xapi/issues/266)
 
 v1.0.1 Statement Added To Repository
@@ -116,9 +144,17 @@ v1.0.1 Statement Added To Repository
 
 #### Quiz: Answered Questions
 
+v1.0.3 5-04-2019, Spec Change. [Recipe category added](https://github.com/jiscdev/xapi/issues/294)
+
+v1.0.3 5-04-2019, Spec Change. [Statement category deprecated](https://github.com/jiscdev/xapi/issues/294)
+
 v1.0.1 Statement Added To Repository
 
 #### Quiz: Quiz Completed
+
+v1.0.3 5-04-2019, Spec Change. [Recipe category added](https://github.com/jiscdev/xapi/issues/294)
+
+v1.0.3 5-04-2019, Spec Change. [Statement category deprecated](https://github.com/jiscdev/xapi/issues/294)
 
 v1.0.1 Statement Added To Repository
 
@@ -126,6 +162,10 @@ v1.0.1 Statement Added To Repository
 
 
 #### Attended learning activity
+
+v1.0.3 5-04-2019, Spec Change. [Recipe category added](https://github.com/jiscdev/xapi/issues/294)
+
+v1.0.3 5-04-2019, Spec Change. [Statement category deprecated](https://github.com/jiscdev/xapi/issues/294)
 
 v1.0.2 08-11-2018, Spec Change. [added captured from field](https://github.com/jiscdev/xapi/issues/281)
 
@@ -200,6 +240,10 @@ Documentation change [start time and end time replace duration](https://github.c
 
 ### Mobile App Content Viewed 
 
+v1.0.3 5-04-2019, Spec Change. [Recipe category added](https://github.com/jiscdev/xapi/issues/294)
+
+v1.0.3 5-04-2019, Spec Change. [Statement category deprecated](https://github.com/jiscdev/xapi/issues/294)
+
 v1.0.2 13-04-2018, Doc Change. [Statement cat added to markdow](https://github.co7/jiscdev/xapi/issues/278)
 
 v1.0.1 13-04-2018, Spec Change. [Statement category added as optional](https://github.co7/jiscdev/xapi/issues/225)
@@ -210,9 +254,17 @@ v1.0 25-05-2017, Spec Change. [UDD Mod ID added to courseArea](https://github.co
 
 #### Library item viewed econtent 
 
+v1.0.3 5-04-2019, Spec Change. [Recipe category added](https://github.com/jiscdev/xapi/issues/294)
+
+v1.0.3 5-04-2019, Spec Change. [Statement category deprecated](https://github.com/jiscdev/xapi/issues/294)
+
 v1.0.1 Statement Added To Repository
 
 #### Library item Borrowed Item
+
+v1.0.3 5-04-2019, Spec Change. [Recipe category added](https://github.com/jiscdev/xapi/issues/294)
+
+v1.0.3 5-04-2019, Spec Change. [Statement category deprecated](https://github.com/jiscdev/xapi/issues/294)
 
 v1.0.2 08-11-2018, Spec Change. [Context.platform is optional](https://github.com/jiscdev/xapi/issues/279)
 
@@ -224,23 +276,43 @@ v1.0.1 Statement Added To Repository
 
 #### access service
 
+v1.0.3 5-04-2019, Spec Change. [Recipe category added](https://github.com/jiscdev/xapi/issues/294)
+
+v1.0.3 5-04-2019, Spec Change. [Statement category deprecated](https://github.com/jiscdev/xapi/issues/294)
+
 v1.0.2 New Access statement Added To Repository
 
 ## Intervention/Case
 
 #### Open a case
 
+v1.0.3 5-04-2019, Spec Change. [Recipe category added](https://github.com/jiscdev/xapi/issues/294)
+
+v1.0.3 5-04-2019, Spec Change. [Statement category deprecated](https://github.com/jiscdev/xapi/issues/294)
+
 v1.0.1 Statement Added To Repository
 
 #### Update a case
+
+v1.0.3 5-04-2019, Spec Change. [Recipe category added](https://github.com/jiscdev/xapi/issues/294)
+
+v1.0.3 5-04-2019, Spec Change. [Statement category deprecated](https://github.com/jiscdev/xapi/issues/294)
 
 v1.0.1 Statement Added To Repository
 
 #### Close a case
 
+v1.0.3 5-04-2019, Spec Change. [Recipe category added](https://github.com/jiscdev/xapi/issues/294)
+
+v1.0.3 5-04-2019, Spec Change. [Statement category deprecated](https://github.com/jiscdev/xapi/issues/294)
+
 v1.0.1 Statement Added To Repository
 
 #### Create a note
+
+v1.0.3 5-04-2019, Spec Change. [Recipe category added](https://github.com/jiscdev/xapi/issues/294)
+
+v1.0.3 5-04-2019, Spec Change. [Statement category deprecated](https://github.com/jiscdev/xapi/issues/294)
 
 v1.0.1 Statement Added To Repository
 
@@ -250,6 +322,12 @@ v1.0.1 Statement Added To Repository
 
 # Vocabulary Changes
 Tracking identifier mappings between changes
+
+
+## v1.0.3
+
+05/03/19: /statementCat deprecrated /retirementCat instead
+
 
 
 ## v1.0
@@ -273,3 +351,4 @@ Tracking identifier mappings between changes
 | http://xapi.jisc.ac.uk/extensions/duedate  | http://xapi.jisc.ac.uk/dueDate
 | http://xapi.jisc.ac.uk/define/vle   		 | http://id.tincanapi.com/activitytype/lms        
 | http://www.tincanapi.co.uk/verbs/evaluated | http://adlnet.gov/expapi/verbs/scored 
+

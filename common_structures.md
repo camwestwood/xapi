@@ -125,7 +125,7 @@ This pattern is used across many Statements in the Jisc Profile, but there may b
 		<td>JSON object</td>
 	<tr> 
 		<tr>
-		<td>context.extensions.https://xapi.jisc.ac.uk/statementCat [0..1]</td>
+		<td>context.extensions.https://xapi.jisc.ac.uk/recipeCat [0..1]</td>
 		<td>Recommended For querying lookup. Set to category of statement. Attendance, VLE, Library <br/></td>
 		<td>string</td>
 	</tr>
@@ -187,8 +187,8 @@ The ContextB pattern is similar to ContextA, but with the addition of a contextA
 		</tr>
 	<tr> 
 		<tr>
-		<td>context.extensions.https://xapi.jisc.ac.uk/statementCat [0..1]</td>
-		<td>Recommended For querying lookup. Set to category of statement. Attendance, VLE, Library <br/></td>
+		<td>context.extensions.https://xapi.jisc.ac.uk/recipeCat [0..1]</td>
+		<td>Recommended For querying lookup. Set to category of recipe.<br/></td>
 		<td>string</td>
 	</tr>
 </table>

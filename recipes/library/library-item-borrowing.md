@@ -126,7 +126,7 @@ An ISO 8601 format timestamp that corresponds to the time of when the item was b
 		<td>string</td>
 	</tr>
 	<tr>
-		<td><a href="vocabulary.md#statement-category">context.extensions.https://xapi.jisc.ac.uk/statementCat</a> [0..1]</td>
+		<td><a href="vocabulary.md#statement-category">context.extensions.https://xapi.jisc.ac.uk/recipeCat</a> [0..1]</td>
 		<td>Recommended, For querying lookup. Set to "Library" in library statements <br/></td>
 		<td>string</td>
 	</tr>
@@ -146,9 +146,9 @@ An ISO 8601 format timestamp that corresponds to the time of when the item was b
 "context": {
   "platform" :"WorldShare",
   "extensions": {
-	"http://xapi.jisc.ac.uk/statementCat": "Library",
+	"http://xapi.jisc.ac.uk/recipeCat": "Library",
 	"http://xapi.jisc.ac.uk/borrowing_site": "Main Library",
-	"http://xapi.jisc.ac.uk/version": "1.0.2"
+	"http://xapi.jisc.ac.uk/version": "1.0.3"
 	
   }
 }
@@ -192,7 +192,7 @@ An ISO 8601 format timestamp that corresponds to the time of when the item was b
 	"context": {
 		"platform" :"WorldShare",
 		"extensions": {
-			"http://xapi.jisc.ac.uk/statementCat": "library",
+			"http://xapi.jisc.ac.uk/recipeCat": "library",
 			"http://xapi.jisc.ac.uk/borrowing_site": "Main Library",
 			"http://xapi.jisc.ac.uk/version": "1.0.2"
 	

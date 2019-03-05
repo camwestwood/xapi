@@ -134,7 +134,7 @@ The Context may describe the parent quiz of the question in context.contextActiv
       "platform": "Moodle",
       
       "extensions": {
-	"http://xapi.jisc.ac.uk/statementCat": "VLE",
+	"http://xapi.jisc.ac.uk/recipeCat": "VLE",
 	"http://xapi.jisc.ac.uk/version": "x-2017-05-16",
 	"http://xapi.jisc.ac.uk/sessionId": "Iye9OqwM9O", 
         "http://id.tincanapi.com/extension/ip-address": "193.24.14.15", 
@@ -193,7 +193,7 @@ The Context may describe the parent quiz of the question in context.contextActiv
        "platform": "Moodle",
 	    
 	"extensions": {
-	    	"http://xapi.jisc.ac.uk/statementCat": "VLE",
+	    	"http://xapi.jisc.ac.uk/recipeCat": "VLE",
 		"http://xapi.jisc.ac.uk/version": "x-2017-05-16",
 		"http://xapi.jisc.ac.uk/sessionId": "Iye9OqwM9O", 
 		"http://id.tincanapi.com/extension/ip-address": "193.24.14.15", 

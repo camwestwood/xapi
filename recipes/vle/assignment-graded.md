@@ -117,7 +117,7 @@ The Context for assignment graded is based on ContextA on the [common structures
 	<td>JSON object</td>
 <tr> 
 	<tr>
-		<td><a href="vocabulary.md#statement-category">context.extensions.https://xapi.jisc.ac.uk/statementCat</a> [0..1]</td>
+		<td><a href="vocabulary.md#recipe-category">context.extensions.https://xapi.jisc.ac.uk/recipeCat</a> [0..1]</td>
 		<td>Recommended For querying lookup. Set to "VLE" in vle statements <br/></td>
 		<td>string</td>
 	</tr>
@@ -144,7 +144,7 @@ The Context for assignment graded is based on ContextA on the [common structures
 			"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0"
              },
 				
-		"http://xapi.jisc.ac.uk/statementCat": "VLE",		
+		"http://xapi.jisc.ac.uk/recipeCat": "VLE",		
 		"http://xapi.jisc.ac.uk/sessionId": "32456891" ,
 		"http://id.tincanapi.com/extension/ip-address": "10.3.3.48"
 		"http://xapi.jisc.ac.uk/version" : "1.0.2"
