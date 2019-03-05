@@ -7,6 +7,9 @@
 ### Actor
 The Actor entity is used to identify the individual that is viewing the reading list item. It uses the Jisc Profile common entity [ActorA](/common_structures.md#actora).
 
+#### Entity properties:
+
+
 ### Example:
 
 ``` Javascript
@@ -23,6 +26,7 @@ The Actor entity is used to identify the individual that is viewing the reading 
 
 ### Verb
 The Verb used in view Statements is [viewed](../vocabulary.md#verbs). It denotes the action of the user requesting the resource that the user wishes to view. It uses the Jisc Profile common entity [VerbA](../common_structures.md#verba). 
+
 
 ### Example:
 
