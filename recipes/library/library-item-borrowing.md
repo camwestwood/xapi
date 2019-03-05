@@ -126,7 +126,7 @@ An ISO 8601 format timestamp that corresponds to the time of when the item was b
 		<td>string</td>
 	</tr>
 	<tr>
-		<td><a href="vocabulary.md#statement-category">context.extensions.https://xapi.jisc.ac.uk/recipeCat</a> [0..1]</td>
+		<td><a href="vocabulary.md#recipe-category">context.extensions.https://xapi.jisc.ac.uk/recipeCat</a> [0..1]</td>
 		<td>Recommended, For querying lookup. Set to "Library" in library statements <br/></td>
 		<td>string</td>
 	</tr>

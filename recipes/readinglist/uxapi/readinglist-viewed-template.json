@@ -1,6 +1,6 @@
 {
 	"version": "1.0.0",
-	"timestamp": "**EVENT_TIMESTAMP**",
+	"timestamp": "**TIMESTAMP**",
 	"actor": {
 		"objectType": "Agent",
 		"account": {
@@ -16,18 +16,18 @@
 
 	"object": {
 		"objectType": "Activity",
-		"id": "**LIST_URL**",
+		"id": "**URL**",
 		"definition": {
 			"type": "http://jisc.ac.uk/reading-list",
 			"name": {
-				"en": "**lists.title**"
+				"en": "**TITLE**"
 			}
 		}
 
 	},
 
 	"context": {
-		"platform": "**AUTHORITY_NAME**",
+		"platform": "**PLATFORM**",
 		"extensions": {
 
 			"http://xapi.jisc.ac.uk/recipeCat": "Readinglist",
