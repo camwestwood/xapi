@@ -31,7 +31,7 @@
 		"extensions": {
 
 			"http://xapi.jisc.ac.uk/recipeCat": "Readinglist",
-			"http://xapi.jisc.ac.uk/sessionId": "**EVENT_ID**",
+			"http://xapi.jisc.ac.uk/sessionId": "**SESSION_ID**",
 			"http://xapi.jisc.ac.uk/version": "1.0.3"
 		}
 	}
