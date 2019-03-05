@@ -6,7 +6,7 @@ Data should be supplied as a UTF-8 Tab Seperated File called readinglistitemview
 
 * [USERNAME](#username) [1]
 * [HOMEPAGE](#homepage) [1]
-* [TIMESTAMP](#timestamp) [1] (event_timestamp)
+* [TIMESTAMP](#timestamp) [1] 
 * [OBJECT_ID](#object_id) [1] (item_url)
 * [SESSION_ID](#session_id) [0..1] (event_id)
 * [PLATFORM](#platform) [0..1] (AUTHORITY_NAME)

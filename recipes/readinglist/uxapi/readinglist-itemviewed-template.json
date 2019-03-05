@@ -1,6 +1,6 @@
 {
 	"version": "1.0.0",
-	"timestamp": "**EVENT_TIMESTAMP**",
+	"timestamp": "**TIMESTAMP**",
 	"actor": {
 		"objectType": "Agent",
 		"account": {
@@ -18,9 +18,9 @@
 		"objectType": "Activity",
 		"id": "**ITEM_URL**",
 		"definition": {
-			"type": "**ITEM_TYPE**",
+			"type": "http://jisc.ac.uk/reading-list-item",
 			"name": {
-				"en": "**OBJECT_NAME**"
+				"en": "**TITLE**"
 			}
 		}
 
