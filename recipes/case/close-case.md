@@ -77,7 +77,7 @@ In create statements the Timestamp property must be set to the date and time tha
 "context": {
 	"platform": "Jisc Notes",
 	    "extensions": {
-				"http://xapi.jisc.ac.uk/recipeCat": "Note",
+				"http://xapi.jisc.ac.uk/recipeCat": "Case",
 				"http://xapi.jisc.ac.uk/version" : "1.0.2"
 			}
 		}

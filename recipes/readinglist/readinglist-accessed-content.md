@@ -90,7 +90,7 @@ An object type of http://xapi.jisc.ac.uk/externalContent is required for this st
 	</tr>
 	<tr>
 		<td>context.extensions.recipeCat version [0..1]</td>
-		<td>Recommended for querying lookup. Set to "Library" in library statements <br/></td>
+		<td>Recommended for querying lookup. Set to "Readinglist" in Readinglist statements <br/></td>
 		<td>string</td>
 	</tr>
 </table>
@@ -104,7 +104,7 @@ An object type of http://xapi.jisc.ac.uk/externalContent is required for this st
 		"extensions": {
 			"http://xapi.jisc.ac.uk/version": "1.0.2",
 			"http://id.tincanapi.com/extensions/ip-address": "165.154.154.1",
-			"https://xapi.jisc.ac.uk/recipeCat": "Library"
+			"https://xapi.jisc.ac.uk/recipeCat": "Readinglist"
 		}
 	}
 ```
@@ -142,7 +142,7 @@ An object type of http://xapi.jisc.ac.uk/externalContent is required for this st
 		"extensions": {
 			"http://xapi.jisc.ac.uk/version": "1.0.2",
 			"http://id.tincanapi.com/extensions/ip-address": "165.154.154.1",
-			"https://xapi.jisc.ac.uk/recipeCat": "Library"
+			"https://xapi.jisc.ac.uk/recipeCat": "Readinglist"
 		}
 	}
 }

@@ -75,7 +75,7 @@ The Context must describe the target of the case. A mode of intervention and the
 "context": {
 	"platform": "**PLATFORM**",
     "extensions": {
-			"http://xapi.jisc.ac.uk/recipeCat": "Note",
+			"http://xapi.jisc.ac.uk/recipeCat": "Case",
 			"http://xapi.jisc.ac.uk/mode" : "email",
 			"http://xapi.jisc.ac.uk/weighting" : 3 ,
 			"http://xapi.jisc.ac.uk/version" : "1.0.2"
