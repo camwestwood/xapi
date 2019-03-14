@@ -67,9 +67,10 @@ Bug reports can be directed to the [Moodle](https://github.com/jiscdev/jisc-mood
 
 <table>
 <tr><td>Statement Template</td><td>Input TSV definitions</td><td>JSON Template</td><td>Example Input</td></tr>  
-     <tr><td> <a href = "recipes/readinglist/readinglist-view-reading-list.md">Reading List Viewed</a></td><td><a href="recipes/readinglist/uxapi/readinglist-viewed-input.md">readinglist-itemviewed-input.md</a></td><td><a href="recipes/readinglist/uxapi/readinglist-viewed-template.json">readinglist-viewed-template.json</td><td><a href="recipes/readinglist/tsv/readinglist-view-reading-list.tsv">TSV</a></td> </tr>    
-         <tr><td> <a href = "recipes/readinglist/readinglist-view-reading-list-item.md">Reading List Item Viewed</a></td><td><a href="recipes/readinglist/uxapi/readinglist-itemviewed-input.md">readinglist-itemviewed-input.md</a></td><td><a href="recipes/readinglist/uxapi/readinglist-itemviewed-template.json">readinglist-itemviewed-template.json</td><td><a href="recipes/readinglist/tsv/readinglist-view-reading-list-item.tsv">TSV</a></td></tr>   
+     <tr><td> <a href = "recipes/readinglist/readinglist-view-reading-list.md">Viewed a Reading List </a></td><td><a href="recipes/readinglist/uxapi/readinglist-viewed-input.md">readinglist-itemviewed-input.md</a></td><td><a href="recipes/readinglist/uxapi/readinglist-viewed-template.json">readinglist-viewed-template.json</td><td><a href="recipes/readinglist/tsv/readinglist-view-reading-list.tsv">TSV</a></td> </tr>    
+         <tr><td> <a href = "recipes/readinglist/readinglist-view-reading-list-item.md">Viewed a Reading List Item</a></td><td><a href="recipes/readinglist/uxapi/readinglist-itemviewed-input.md">readinglist-itemviewed-input.md</a></td><td><a href="recipes/readinglist/uxapi/readinglist-itemviewed-template.json">readinglist-itemviewed-template.json</td><td><a href="recipes/readinglist/tsv/readinglist-view-reading-list-item.tsv">TSV</a></td></tr>   
          <tr><td> <a href = "recipes/readinglist/readinglist-accessed-content.md">Reading List accessed content</a></td><td><a href="recipes/readinglist/uxapi/readinglist-accessed-input.md">readinglist-accessed-input.md</a></td><td><a href="recipes/readinglist/uxapi/readinglist-accessed-template.json">readinglist-accessed-template.json</td></tr> 
+        <tr><td> <a href = "recipes/readinglist/readinglist-viewed-content.md">Reading List viewed content</a></td><td><a href="recipes/readinglist/uxapi/readinglist-viewed-content-input.md">readinglist-viewed-content-input.md</a></td><td><a href="recipes/readinglist/uxapi/readinglist-viewed-content-template.json">readinglist-viewed-content-template.json</td></tr> 
 </table>
 
 
@@ -82,7 +83,7 @@ Bug reports can be directed to the [Moodle](https://github.com/jiscdev/jisc-mood
 ## Video
 <table>
 <tr><td>Statement Template</td><td>Input TSV definitions</td><td>JSON Template</td><td>Example Input</td></tr>  
-     <tr><td> <a href = "recipes/video/video-viewed.md">Video Viewed</a></td><td><a href="recipes/video/uxapi/video-viewed-input.md">video-viewed-input.md</a></td><td><a href="recipes/video/uxapi/video-viewed-template.json">video-video-templates.json</td><td><a href="recipes/video/tsv/video.tsv">TSV</a></td>   </tr>  
+     <tr><td> <a href = "recipes/video/video-viewed.md">Video Viewed</a></td><td><a href="recipes/video/uxapi/video-viewed-input.md">video-viewed-input.md</a></td><td><a href="recipes/video/uxapi/video-viewed-template.json">video-video-templates.json</td><td><a href="recipes/video/tsv/video.tsv">TSV</a></td></tr>  
 </table>
 
 ## Setting and Reaching Targets
