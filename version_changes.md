@@ -326,6 +326,7 @@ Tracking identifier mappings between changes
 
 ## v1.0.3
 
+14/03/19: /devicelocation was inconsitent. Changed to /deviceLocation instead
 05/03/19: /statementCat deprecrated /retirementCat instead
 
 
