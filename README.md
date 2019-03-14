@@ -1,4 +1,4 @@
-# xAPI recipes for the Jisc Learning Analytics Service v1.0.2
+# xAPI recipes for the Jisc Learning Analytics Service v1.0.3
 
 ## Repository Workflow
 The simplest way to contribute to the xAPI service is as follows:
@@ -78,7 +78,7 @@ Bug reports can be directed to the [Moodle](https://github.com/jiscdev/jisc-mood
 
 <table>
 <tr><td>Statement Template</td><td>JSON example</td><td>Input TSV definitions</td><td>JSON Template</td></tr>  
-<tr><td><a href = "recipes/studyapps/mobile-app.md">Mobile app content viewed</a></td><td><a href = "recipes/studyapps/mobile-app.md#full-example">Mobile App content viewed</a></td> <td><a href = "recipes/universal-xapi-translator/app-content-viewed.md">/app-content-viewed.md</a></td><td><a href = "recipes/universal-xapi-translator/app-content-viewed.json">/app-content-viewed.json</td></tr></table>    
+<tr><td><a href = "recipes/studyapps/mobile-app.md">Mobile app content viewed</a></td><td><a href = "recipes/studyapps/mobile-app.md#full-example">Mobile App content viewed</a></td> <td><a href = "recipes/study-app/uxapi/app-content-viewed.md">app-content-viewed.md</a></td><td><a href = "recipes/study-app/app-content-viewed.json">app-content-viewed.json</td></tr></table>    
 
 ## Video
 <table>
