@@ -77,8 +77,8 @@ Bug reports can be directed to the [Moodle](https://github.com/jiscdev/jisc-mood
 ## Tracking App
 
 <table>
-<tr><td>Statement Template</td><td>JSON example</td><td>Input TSV definitions</td><td>JSON Template</td></tr>  
-<tr><td><a href = "recipes/studyapps/mobile-app.md">Mobile app content viewed</a></td><td><a href = "recipes/studyapps/mobile-app.md#full-example">Mobile App content viewed</a></td> <td><a href = "recipes/studyapp/uxapi/app-content-viewed.md">app-content-viewed.md</a></td><td><a href = "recipes/studyapp/app-content-viewed.json">app-content-viewed.json</td></tr></table>    
+<tr><td>Statement Template</td><td>Input TSV definitions</td><td>JSON Template</td></tr>  
+<tr><td><a href = "recipes/studyapps/mobile-app.md">Mobile app content viewed</a></td><td><a href = "recipes/studyapps/uxapi/app-content-viewed.md">app-content-viewed.md</a></td><td><a href = "recipes/studyapp/app-content-viewed.json">app-content-viewed.json</td></tr></table>    
 
 ## Video
 <table>
