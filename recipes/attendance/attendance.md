@@ -220,8 +220,8 @@ The result.completion must be set to true if the Actor attended the event, or fa
 	<td>string</td>
 </tr>
 <tr>
-	<td>context.extensions.https://xapi.jisc.ac.uk/devicelocation [0..1]</td>
-	<td>devicelocation is an optional geoJSON Object with  geolocation details of the device used to attend the event.</td>
+	<td>context.extensions.https://xapi.jisc.ac.uk/deviceLocation [0..1]</td>
+	<td>deviceLocation is an optional geoJSON Object with  geolocation details of the device used to attend the event.</td>
 	<td>JSON Object following the geoJSON spec</td>
 </tr>
 <tr>
