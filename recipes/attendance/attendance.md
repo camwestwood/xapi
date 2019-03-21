@@ -15,6 +15,8 @@ A **timetabled event** is a learning activity that is specifically recorded in t
 
 A **non-timetabled event** is an event not contained within the provider's timetabling system, for example an ad hoc learning activity, pastoral activity or a non-teaching activity. These events may or may not have fixed start and end times, and may or may not be within the context of a module or course. Most importantly, they are not covered by the timetabled event definition.
 
+Natural language example of a typical Statement: "Logged via Moodle from the Study Goal app, John Smith was late attending the Psychology 101 Introduction workshop, which started at 09:00 on 24th May 2015. This workshop was part of LA101-200-2016, a Psychology module."
+
 ### Actor
 
 Common entity identifier: [ActorA](/common_structures.md#actora)
@@ -37,9 +39,9 @@ The Actor entity describes the individual who has attended the event.
 
 Common entity identifier: [VerbA](/common_structures.md#verba)
 
-#### Entity Example:
-
 The Verb used in the attendance Statement is "attended" (http://adlnet.gov/expapi/verbs/attended). It indicates the Actor was present at a virtual or physical event or activity. It uses the Jisc Profile common entity identifier [VerbA](/common_structures.md#verba). The verb by itself does not indicate what kind of event was attended.
+
+#### Entity Example:
 
 ``` javascript
 "verb": {
@@ -52,7 +54,7 @@ The Verb used in the attendance Statement is "attended" (http://adlnet.gov/expap
 
 ### Object
 
-The Object entity defines an event that has been attended. Only one value for object.definition.type is permitted; see the documented purpose of this statement template.
+The Object entity defines an event that has been attended. 1 of 2 values for object.definition.type is permitted; see Purpose above.
 
 <table>
 	<tr><th>Property [cardinality]</th><th>Description</th><th>Data type</th></tr>
@@ -132,7 +134,7 @@ The Object defines an event that has been attended. Information on the event can
             },
 	    	"extensions": {
             	"http://xapi.jisc.ac.uk/subType": "http://poppleton.xapi.jisc.ac.uk/workshop",
-				"http://xapi.jisc.ac.uk/starttime": "2016-02-05T10:00:00.000Z",
+		"http://xapi.jisc.ac.uk/starttime": "2016-02-05T10:00:00.000Z",
             	"http://xapi.jisc.ac.uk/endtime": "2016-02-05T14:00:00.000Z",
                 "http://xapi.jisc.ac.uk/event_type_description": "Workshop",
                 "http://xapi.jisc.ac.uk/event_max_count": 32,
@@ -281,7 +283,7 @@ In attendance statements the timestamp property must be set to the start time of
 ```
  "timestamp": "2016-02-05T10:00:00.000Z"
  ```
-#### Example
+### Full Example
 ``` javascript
 {
     "id": "12345678-1234-5678-1234-567812345678",
@@ -313,7 +315,7 @@ In attendance statements the timestamp property must be set to the start time of
 			 },
 			 "extensions": {
 				 "http://xapi.jisc.ac.uk/subType": "http://poppleton.xapi.jisc.ac.uk/workshop",
-				 "http://xapi.jisc.ac.uk/starttime": "2016-02-05T10:00:00.000Z",
+				 "http://xapi.jisc.ac.uk/starttime": "2016-02-05T09:00:00.000Z",
 				 "http://xapi.jisc.ac.uk/endtime": "2016-02-05T14:00:00.000Z",
 				 "http://xapi.jisc.ac.uk/event_type_description": "Workshop",
 				 "http://xapi.jisc.ac.uk/event_max_count": 32,
@@ -326,7 +328,7 @@ In attendance statements the timestamp property must be set to the start time of
       "extensions":{
         "http://xapi.jisc.ac.uk/attendance_late":1,
         "http://xapi.jisc.ac.uk/attendance_category":"1",
-	"http://xapi.jisc.ac.uk/submission_time": "2015-05-24T09:00"
+	"http://xapi.jisc.ac.uk/submission_time": "2016-02-05T10:00:00.000Z"
       }
  },
   "context": {
