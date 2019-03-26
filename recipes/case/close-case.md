@@ -6,7 +6,7 @@ This Statement template specifies how to record a case being closed.
 Natural language example of a typical Statement: "At 10:00 on 5 February 2016 tutor Angela Jones closed the case with ID '123456' on Jisc Notes".
 
 ### Actor
-The Actor entity describes the individual member of staff who is closing the case.
+The Actor entity identifies the individual member of staff who is closing the case.
 
 Common entity identifier: [ActorA](/common_structures.md#actora)
 
