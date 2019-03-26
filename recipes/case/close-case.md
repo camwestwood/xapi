@@ -131,12 +131,12 @@ The Context entity contains only the platform the case was on, the recipeCat and
       			}
   		 }
 	},
-"timestamp": "2016-02-05T10:00:00.000Z",
-"context": {
-	"platform": "Jisc Notes",
-	"extensions": {
-		"http://xapi.jisc.ac.uk/recipeCat": "Case",
-		"http://xapi.jisc.ac.uk/version" : "1.0.2"
+	"timestamp": "2016-02-05T10:00:00.000Z",
+	"context": {
+		"platform": "Jisc Notes",
+		"extensions": {
+			"http://xapi.jisc.ac.uk/recipeCat": "Case",
+			"http://xapi.jisc.ac.uk/version" : "1.0.2"
 		}
 	}
 }
