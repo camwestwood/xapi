@@ -80,7 +80,7 @@ The Context entity contains only the platform the case was on, the recipeCat and
 		<td>string</td>
 	</tr>	
 	<tr>
-		<td>context.extensions.version [1]</td>
+		<td>context.extensions.https://xapi.jisc.ac.uk/version [1]</td>
 		<td>Identifies the version of the Jisc xAPI Profile found on the ReadMe page. <br/></td>
 		<td>decimal</td>
 	</tr>
