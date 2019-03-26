@@ -40,7 +40,7 @@ Common entity identifier: [VerbA](/common_structures.md#verba)
 ```
 
 ### Object
-The Object is the case is being closed.
+The Object is the case being closed.
 
 Common entity identifier: [ObjectA](/common_structures.md#objecta). There is no subType extension in the Object entity in this Statement.
 
