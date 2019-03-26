@@ -86,8 +86,8 @@ The Context entity contains only the platform the case was on, the recipeCat and
 	</tr>
 	<tr>
 		<td>context.extensions.https://xapi.jisc.ac.uk/recipeCat [1]</td>
-		<td>Recommended for querying lookup. Set to recipe of Statement, "Case".<br/></td>
-		<td>string</td>
+		<td>Recommended for querying lookup. Set to recipe of Statement.<br/></td>
+		<td>String, value must be "Case".</td>
 	</tr>
 	</table>
 
