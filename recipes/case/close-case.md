@@ -5,12 +5,12 @@ This Statement template specifies how to record a case being closed.
 
 Natural language example of a typical Statement: "At 10:00 on 5 February 2016 tutor Angela Jones closed the case with ID '123456' on Jisc Notes".
 
-### Actor
+## Actor
 The Actor entity identifies the individual member of staff who is closing the case.
 
 Common entity identifier: [ActorA](/common_structures.md#actora)
 
-#### Entity Example:
+### Entity Example:
 
 ``` Javascript
 "actor": {
@@ -23,12 +23,12 @@ Common entity identifier: [ActorA](/common_structures.md#actora)
 }
 ```
 
-### Verb
+## Verb
 This Verb, [closed](/vocabulary.md#closed), describes the action of closing the case.
 
 Common entity identifier: [VerbA](/common_structures.md#verba)
 
-#### Entity Example:
+### Entity Example:
 
 ``` javascript
 "verb": {
@@ -39,12 +39,12 @@ Common entity identifier: [VerbA](/common_structures.md#verba)
 }
 ```
 
-### Object
+## Object
 The Object is the case being closed.
 
 Common entity identifier: [ObjectA](/common_structures.md#objecta). There is no subType extension in the Object entity in this Statement.
 
-#### Entity Example
+### Entity Example
 
 ``` javascript
 "object": {
@@ -59,17 +59,17 @@ Common entity identifier: [ObjectA](/common_structures.md#objecta). There is no 
 }
 ```
 
-### Timestamp
+## Timestamp
 
 The Timestamp property must be set to the date and time that the case was closed.
 
-#### Example:
+### Example:
 
 ``` javascript
  "timestamp": "2016-02-05T10:00:00.000Z"
 ```
 
-### Context
+## Context
 The Context entity contains only the platform the case was on, the recipeCat and the version of the Jisc Profile.
 
 <table>
@@ -91,7 +91,7 @@ The Context entity contains only the platform the case was on, the recipeCat and
 	</tr>
 	</table>
 
-#### Entity Example:
+### Entity Example:
 
 ``` javascript
 
@@ -104,7 +104,7 @@ The Context entity contains only the platform the case was on, the recipeCat and
 	}
 ```
 
-### Full Example
+## Full Example
 ```
 {
 	"actor": {
