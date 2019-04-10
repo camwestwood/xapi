@@ -10,7 +10,7 @@ Natural language example of a typical Statement: "The student, John Smith, click
 ## Actor
 Common entity identifier:  ActorA, as defined on the [common structures](/common_structures.md#actora) page.
 
-The actor entity describes the individual that is accessing an econtent service.
+The actor entity identifies the individual that is accessing an econtent service.
 
 ### Example:
 
@@ -61,6 +61,30 @@ Common entity identifier: ObjectA, as defined on the [common structures](/common
 
 An object type of http://activitystrea.ms/schema/1.0/service is required for this statement.
 
+<table>
+	<tr><th>Property [cardinality]</th><th>Description</th><th>Value information</</th></tr>
+	<tr>
+		<td>object.objectType [1]</td>
+		<td>The value must be "Activity".</td>
+		<td>String, value must be "Activity".</td>
+	</tr>
+	<tr>
+		<td>object.id [1]</td>
+		<td>An identifier for the service accessed. This must be unique across all object types.</td>
+		<td>iri</td>
+	</tr>
+	<tr>
+		<td>object.definition.type [1]</td>
+		<td>Indicates the type of the object of the statement. It is required and must be http://activitystrea.ms/schema/1.0/service.</td>
+		<td>http://activitystrea.ms/schema/1.0/service</td>
+	</tr>
+	<tr>
+		<td>object.definition.name [0..1]</td>
+		<td>Optional human-readable name of the service</td>
+		<td>string</td>
+	</tr>
+</table>
+
 ### Example
 
 ``` javascript
@@ -69,7 +93,8 @@ An object type of http://activitystrea.ms/schema/1.0/service is required for thi
       "objectType": "Activity",
       "id": "https://journals.bmj.com/",
       "definition": {
-         "type": "http://activitystrea.ms/schema/1.0/service"
+         "type": "http://activitystrea.ms/schema/1.0/service",
+         "name": "BMJ Journals Service"
       }
    }
 }
@@ -137,7 +162,8 @@ An object type of http://activitystrea.ms/schema/1.0/service is required for thi
 		"objectType": "Activity",
 		"id": "https://journals.bmj.com/",
 		"definition": {
-			"type": "http://activitystrea.ms/schema/1.0/service"
+			"type": "http://activitystrea.ms/schema/1.0/service",
+			"name": "BMJ Journals Service"
 		}
 	},
 	"context": {
