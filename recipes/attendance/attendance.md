@@ -287,7 +287,7 @@ The result.completion must be set to true if the student attended the event, or 
 ## Timestamp
 In attendance statements the timestamp property must be set to the start time of the timetabled event; the value must be identical to the value found in the starttime extension.
 
-### Example Entity
+### Entity Example
 ```
 {
  "timestamp": "2016-02-05T10:00:00.000Z"
