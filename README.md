@@ -46,7 +46,7 @@ Bug reports can be directed to the [Moodle](https://github.com/jiscdev/jisc-mood
 * [Blackboard VLE samples](vle/blackboard/Examples.md)
 * [Moodle VLE samples](vle/moodle/examples.md)
 
-## Econtent
+## Econtent Services
 
 
 <table>
@@ -56,7 +56,7 @@ Bug reports can be directed to the [Moodle](https://github.com/jiscdev/jisc-mood
 </table>
 
 
-## Library
+## Library Services
 <table>
 <tr><td>Statement Template</td><td>Input TSV definitions</td><td>JSON Template</td></tr>  
      <tr><td> <a href = "/recipes/library/library-item-borrowing.md">Library item: Borrowed item</a></td><td><a href="recipes/library/uxapi/library-item-borrowed-input.md">library-item-borrowed-input.md</a></td><td><a href="recipes/library/uxapi/library-item-borrowed-template.json">library-item-template.json</td></tr>    
