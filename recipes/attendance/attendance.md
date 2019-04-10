@@ -17,12 +17,12 @@ A **non-timetabled event** is an event not contained within the provider's timet
 
 Natural language example of a typical Statement: "Logged via Moodle from the Study Goal app, John Smith was late attending the Psychology 101 Introduction workshop, which started at 09:00 on 24th May 2015. This workshop was part of LA101-200-2016, a Psychology module."
 
-### Actor
+## Actor
 
 Common entity identifier: [ActorA](/common_structures.md#actora)
-
-#### Entity Example:
 The Actor entity describes the individual who has attended the event.
+
+### Entity Example:
 
 ``` Javascript
 {
@@ -32,27 +32,30 @@ The Actor entity describes the individual who has attended the event.
             "name": "jsmith12",
             "homePage": "https://courses.alpha.jisc.ac.uk/moodle"
         }
-    },
+    }
+}
 ```
 
-### Verb
+## Verb
 
 Common entity identifier: [VerbA](/common_structures.md#verba)
 
 The Verb used in the attendance Statement is "attended" (http://adlnet.gov/expapi/verbs/attended). It indicates the Actor was present at a virtual or physical event or activity. It uses the Jisc Profile common entity identifier [VerbA](/common_structures.md#verba). The verb by itself does not indicate what kind of event was attended.
 
-#### Entity Example:
+### Entity Example:
 
 ``` javascript
-"verb": {
-        "id": "http://adlnet.gov/expapi/verbs/attended",
-        "display": {
-            "en": "attended"
-        }
-    },
+{
+   "verb": {
+      "id": "http://adlnet.gov/expapi/verbs/attended",
+      "display": {
+         "en": "attended"
+      }
+   }
+}
 ```
 
-### Object
+## Object
 
 The Object entity defines an event that has been attended. 1 of 2 values for object.definition.type is permitted; see Purpose above.
 
@@ -116,37 +119,38 @@ The Object entity defines an event that has been attended. 1 of 2 values for obj
 	</tr>
  </table>
 
-
-#### Entity Example:
+### Entity Example:
 The Object defines an event that has been attended. Information on the event can be found in the object.extensions.
 
 ``` javascript
- "object": {
-        "objectType": "Activity",
-        "id": "http://wicketkeeper.poppleton.ac.uk/modules/2016/sem1/psy101/qlecture1",
-        "definition": {
-            "type": "http://xapi.jisc.ac.uk/event_timetabled",
-            "name": {
-                "en": "Psychology 101 Introduction"
-            },
-            "description": {
-                "en": "The first tutorial of psychology 101"
-            },
-	    	"extensions": {
-            	"http://xapi.jisc.ac.uk/subType": "http://poppleton.xapi.jisc.ac.uk/workshop",
-		"http://xapi.jisc.ac.uk/starttime": "2016-02-05T10:00:00.000Z",
-            	"http://xapi.jisc.ac.uk/endtime": "2016-02-05T14:00:00.000Z",
-                "http://xapi.jisc.ac.uk/event_type_description": "Workshop",
-                "http://xapi.jisc.ac.uk/event_max_count": 32,
-                "http://xapi.jisc.ac.uk/event_mandatory": 1
-   	 	}
-		}
+{
+   "object": {
+      "objectType": "Activity",
+      "id": "http://wicketkeeper.poppleton.ac.uk/modules/2016/sem1/psy101/qlecture1",
+      "definition": {
+         "type": "http://xapi.jisc.ac.uk/event_timetabled",
+         "name": {
+            "en": "Psychology 101 Introduction"
+         },
+         "description": {
+            "en": "The first tutorial of psychology 101"
+         },
+	 "extensions": {
+            "http://xapi.jisc.ac.uk/subType": "http://poppleton.xapi.jisc.ac.uk/workshop",
+            "http://xapi.jisc.ac.uk/event_type_description": "Workshop",
+            "http://xapi.jisc.ac.uk/event_max_count": 32,
+            "http://xapi.jisc.ac.uk/event_mandatory": 1,
+            "http://xapi.jisc.ac.uk/starttime": "2016-02-05T10:00:00.000Z",
+            "http://xapi.jisc.ac.uk/endtime": "2016-02-05T14:00:00.000Z"
+         }
+      }
+   }
 }
 ```
-### Result
-The `result` component is used to indicate facts about the agent's attendance or non-attendance.
+## Result
+The `result` component is used to indicate facts about the student's attendance or non-attendance.
 
-The result.completion must be set to true if the Actor attended the event, or false otherwise. The extension [attendance_late](/vocabulary.md#attendance-late) can be set to 1 if the Actor did not attend the event on time. [Attendance_category](/vocabulary.md#attendance-category) can be used to express additional detail, for example whether lateness was extreme or condoned, or to provide the source system attendance type code (as might be recorded in a conventional paper register). The values which may be used for the attendance_category are not constrained, and may be those used in the source system.
+The result.completion must be set to true if the student attended the event, or false otherwise. The extension [attendance_late](/vocabulary.md#attendance-late) can be set to 1 if the student did not attend the event on time. [Attendance_category](/vocabulary.md#attendance-category) can be used to express additional detail, for example whether lateness was extreme or condoned, or to provide the source system attendance type code (as might be recorded in a conventional paper register). The values which may be used for the attendance_category are not constrained, and may be those used in the source system.
 
 <table>
 	<tr><th>Property [cardinality]</th><th>Description</th><th>Data type</th></tr>
@@ -173,21 +177,22 @@ The result.completion must be set to true if the Actor attended the event, or fa
 
 </table>
 
-
-#### Entity Example:
+### Entity Example:
 
 ``` javascript
-"result":{
-	"completion": true,
-	"extensions": {
-		  "http://xapi.jisc.ac.uk/attendance_late": 1,
-		  "http://xapi.jisc.ac.uk/submission_time": "2015-05-24T09:00",
-		  "http://xapi.jisc.ac.uk/attendance_category": "L"
-	}
+{
+   "result":{
+      "completion": true,
+      "extensions": {
+         "http://xapi.jisc.ac.uk/attendance_late": 1,
+	 "http://xapi.jisc.ac.uk/submission_time": "2015-05-24T09:00",
+         "http://xapi.jisc.ac.uk/attendance_category": "L"
+      }
+   }
 }
 ```
 
-### Context
+## Context
 
 <table>
 <tr><th>Property [cardinality]</th><th>Description</th><th>Value information</</th></tr>
@@ -218,8 +223,8 @@ The result.completion must be set to true if the Actor attended the event, or fa
 </tr>
 <tr>
 	<td>context.extensions.http://xapi.jisc.ac.uk/version [0..1]</td>
-	<td>Recommended, identifies the version of the Jisc Profile found on the ReadMe page.</td>
-	<td>string</td>
+	<td>Recommended. Identifies the version of the Jisc Profile found on the ReadMe page.</td>
+	<td>decimal</td>
 </tr>
 <tr>
 	<td>context.extensions.https://xapi.jisc.ac.uk/deviceLocation [0..1]</td>
@@ -246,119 +251,124 @@ The result.completion must be set to true if the Actor attended the event, or fa
 #### Entity Example:
 
 ``` javascript
- "context": {
-	"platform" :"Study Goal",
-    "instructor": {
-            "objectType": "Agent",
-            "account": {
-                "name": "RKeenan",
-                "homePage": "https://courses.alpha.jisc.ac.uk/moodle"
-            }
-		},
-	"extensions": {
-        	"http://xapi.jisc.ac.uk/version": "1.0.2",
-		"http://xapi.jisc.ac.uk/deviceLocation": {
-			"type": "Feature",
-			"geometry": {
-				"type": "Point",
-				"coordinates": [51.510531, -0.118930]
-					},
-			"properties": {
-				"name": "University of Jisc"
-				}
-		},
-		"http://xapi.jisc.ac.uk/courseArea": {
-			"http://xapi.jisc.ac.uk/uddCourseInstanceID": "LA101-200",
-			"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0"
-		}
-		"http://xapi.jisc.ac.uk/recipeCat": "Attendance",
-		"http://xapi.jisc.ac.uk/captured_from": "ios"
-  }
+{
+   "context": {
+      "platform" :"Study Goal",
+      "instructor": {
+         "objectType": "Agent",
+         "account": {
+            "name": "RKeenan",
+            "homePage": "https://courses.alpha.jisc.ac.uk/moodle"
+         }
+      },
+      "extensions": {
+         "http://xapi.jisc.ac.uk/version": "1.0.2",
+         "http://xapi.jisc.ac.uk/deviceLocation": {
+            "type": "Feature",
+            "geometry": {
+               "type": "Point",
+               "coordinates": [51.510531, -0.118930]
+            },
+            "properties": {
+               "name": "University of Jisc"
+	    }
+         },
+         "http://xapi.jisc.ac.uk/courseArea": {
+            "http://xapi.jisc.ac.uk/uddCourseInstanceID": "LA101-200",
+            "http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0"
+         },
+         "http://xapi.jisc.ac.uk/recipeCat": "Attendance",
+         "http://xapi.jisc.ac.uk/captured_from": "ios"
+      }
+   }
+}
 ```
 
-### Timestamp
+## Timestamp
 In attendance statements the timestamp property must be set to the start time of the timetabled event; the value must be identical to the value found in the starttime extension.
 
-#### Example Entity
+### Entity Example
 ```
+{
  "timestamp": "2016-02-05T10:00:00.000Z"
- ```
-### Full Example
+}
+```
+
+## Full Example
 ``` javascript
 {
-    "id": "12345678-1234-5678-1234-567812345678",
-    "timestamp": "2016-02-05T10:00:00.000Z",
-    "actor": {
-        "objectType": "Agent",
-        "name": "John Smith",
-        "account": {
-            "name": "2",
-            "homePage": "https://courses.alpha.jisc.ac.uk/moodle"
-       }
-    },
-    "verb": {
-        "id": "http://adlnet.gov/expapi/verbs/attended",
-        "display": {
-            "en": "attended"
-        }
-    },
-	 "object": {
-		 "objectType": "Activity",
-		 "id": "http://wicketkeeper.poppleton.ac.uk/modules/2016/sem1/psy101/qlecture1",
-		 "definition": {
-			 "type": "http://xapi.jisc.ac.uk/event_timetabled",
-			 "name": {
-				 "en": "Psychology 101 Introduction"
-			 },
-			 "description": {
-				 "en": "The first tutorial of psychology 101"
-			 },
-			 "extensions": {
-				 "http://xapi.jisc.ac.uk/subType": "http://poppleton.xapi.jisc.ac.uk/workshop",
-				 "http://xapi.jisc.ac.uk/starttime": "2016-02-05T09:00:00.000Z",
-				 "http://xapi.jisc.ac.uk/endtime": "2016-02-05T14:00:00.000Z",
-				 "http://xapi.jisc.ac.uk/event_type_description": "Workshop",
-				 "http://xapi.jisc.ac.uk/event_max_count": 32,
-				 "http://xapi.jisc.ac.uk/event_mandatory": 1
-			 }
-		 }
-	},
-  "result":{
-      "completion":true,
-      "extensions":{
-        "http://xapi.jisc.ac.uk/attendance_late":1,
-        "http://xapi.jisc.ac.uk/attendance_category":"1",
-	"http://xapi.jisc.ac.uk/submission_time": "2016-02-05T10:00:00.000Z"
-      }
- },
-  "context": {
-  	"platform" :"Study Goal",
-	"instructor": {
-		"objectType": "Agent",
-		"account": {
-			"name": "RKeenan",
+	"actor": {
+        	"objectType": "Agent",
+        	"name": "John Smith",
+        	"account": {
+			"name": "2",
 			"homePage": "https://courses.alpha.jisc.ac.uk/moodle"
-			}
-	},
-	"extensions": {
-		"http://xapi.jisc.ac.uk/version": "1.0.1",
-		"http://xapi.jisc.ac.uk/deviceLocation": {
-			"type": "Feature",
-			"geometry": {
-				"type": "Point",
-				"coordinates": [51.510531, -0.118930]
-			},
-			"properties": {
-				"name": "University of Jisc"
-			}
-		},
-		"http://xapi.jisc.ac.uk/courseArea": {
-			"http://xapi.jisc.ac.uk/vle_mod_id": "LA101-200-2016S1-0",
-			"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0",
-		},
-		"http://xapi.jisc.ac.uk/recipeCat": "Attendance",
-		"http://xapi.jisc.ac.uk/captured_from": "ios"
 		}
-	 }
+	},
+	"verb": {
+		"id": "http://adlnet.gov/expapi/verbs/attended",
+		"display": {
+			"en": "attended"
+		}
+	},
+	"object": {
+		"objectType": "Activity",
+		"id": "http://wicketkeeper.poppleton.ac.uk/modules/2016/sem1/psy101/qlecture1",
+		"definition": {
+			"type": "http://xapi.jisc.ac.uk/event_timetabled",
+			"name": {
+				"en": "Psychology 101 Introduction"
+			},
+			"description": {
+				"en": "The first tutorial of psychology 101"
+			 },
+			"extensions": {
+				"http://xapi.jisc.ac.uk/subType": "http://poppleton.xapi.jisc.ac.uk/workshop",
+				"http://xapi.jisc.ac.uk/event_type_description": "Workshop",
+				"http://xapi.jisc.ac.uk/event_max_count": 32,
+				"http://xapi.jisc.ac.uk/event_mandatory": 1,
+				"http://xapi.jisc.ac.uk/starttime": "2016-02-05T09:00:00.000Z",
+				"http://xapi.jisc.ac.uk/endtime": "2016-02-05T14:00:00.000Z"
+			}
+		}
+	},
+	"result":{
+		"completion":true,
+		"extensions":{
+			"http://xapi.jisc.ac.uk/attendance_late":1,
+			"http://xapi.jisc.ac.uk/attendance_category":"1",
+			"http://xapi.jisc.ac.uk/submission_time": "2016-02-05T10:00:00.000Z"
+		}
+	},
+	"context": {
+		"platform" :"Study Goal",
+		"instructor": {
+			"objectType": "Agent",
+			"account": {
+				"name": "RKeenan",
+				"homePage": "https://courses.alpha.jisc.ac.uk/moodle"
+			}
+		},
+		"extensions": {
+			"http://xapi.jisc.ac.uk/version": "1.0.1",
+			"http://xapi.jisc.ac.uk/deviceLocation": {
+				"type": "Feature",
+				"geometry": {
+					"type": "Point",
+					"coordinates": [51.510531, -0.118930]
+				},
+				"properties": {
+					"name": "University of Jisc"
+				}
+			},
+			"http://xapi.jisc.ac.uk/courseArea": {
+				"http://xapi.jisc.ac.uk/vle_mod_id": "LA101-200-2016S1-0",
+				"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0"
+			},
+			"http://xapi.jisc.ac.uk/recipeCat": "Attendance",
+			"http://xapi.jisc.ac.uk/captured_from": "ios"
+		}
+	},
+	"timestamp": "2016-02-05T10:00:00.000Z"
 }
 ```
