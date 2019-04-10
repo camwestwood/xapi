@@ -121,7 +121,7 @@ An object type of http://activitystrea.ms/schema/1.0/service is required for thi
 	<tr>
 		<td>context.extensions.recipeCat version [0..1]</td>
 		<td>Recommended for querying lookup. Set to "Library" in library statements.<br/></td>
-		<td>string</td>
+		<td>"Library"</td>
 	</tr>
 </table>
 
