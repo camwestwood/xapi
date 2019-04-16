@@ -1,4 +1,4 @@
-TIMESTAMP	User ID	USERNAME	Email	SESSION_ID	Session Name	FOLDER_ID	Folder Name	MINUTES_WATCHED	Viewing Type
+TIMESTAMP	USER_ID	USERNAME	EMAIL	SESSION_ID	SESSION_NAME	OBJECT_ID	FOLDER_NAME	MINUTES_WATCHED	VIEWING_TYPE
 11/15/2018 1:44:52 AM	7defd8ba-33ff-45ea-a55a-a8b800010c53	username	user@panopto.com	0ecc10b9-b161-4780-a3b9-a99900196b8a	sessionname	749bab78-5913-44c9-b58e-a8ef01538b2e	foldernname	0.030178967	Interactive Desktop On Demand
 11/15/2018 1:46:42 AM	7defd8ba-33ff-45ea-a55a-a8b800010c53	username	user@panopto.com	e8bbc4ba-2101-4fae-9c78-a999001ca54e	sessionname	749bab78-5913-44c9-b58e-a8ef01538b2e	foldernname	0.036940417	Interactive Desktop On Demand
 11/30/2018 1:30:34 AM	a8276a9c-4cd8-4e76-8c90-a8e70171d41a	username	user@panopto.com	6c97b17c-53de-4b4b-8821-a8e10154bbe6	sessionname	255428a7-aa2e-4a73-bef5-a8e10154ab33	foldernname	0.55699945	Embedded Viewer

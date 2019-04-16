@@ -2,6 +2,7 @@
 	"version": "1.0.0",
 	"timestamp": "**TIMESTAMP**",
 	"actor": {
+		"mbox": "mailto:**EMAIL**",  
 		"objectType": "Agent",
 		"account": {
 			"name": "**USERNAME**",
@@ -16,7 +17,7 @@
 
 	"object": {
 		"objectType": "Activity",
-		"id": "**HOMEPAGE**/**FOLDER_ID**",
+		"id": "**HOMEPAGE**/**OBJECT_ID**",
 		"definition": {
 			"type": "https://w3id.org/xapi/video/activity-type/video"
 		}
@@ -27,11 +28,17 @@
     },
 
 	"context": {
-
+		"platform": "**PLATFORM**",
 		"extensions": {
+
+			"http://xapi.jisc.ac.uk/courseArea": {
+				"http://xapi.jisc.ac.uk/vle_mod_id": "**VLE_MOD_ID**",
+				"http://xapi.jisc.ac.uk/uddModInstanceID": "**UDD_MOD_INST_ID**"
+			},
 
 			"http://xapi.jisc.ac.uk/recipeCat": "Video",
 			"http://xapi.jisc.ac.uk/sessionId": "**SESSION_ID**",
+			"http://id.tincanapi.com/extension/ip-address": "**CLIENT_IP**",
 			"http://xapi.jisc.ac.uk/version": "1.0.3"
 		}
 	}
