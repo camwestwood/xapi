@@ -1,4 +1,4 @@
-SESSION_ID	USERNAME	EMAIL	JOB_ROLE	URL	TITLE	ITEM_TYPE	ITEM_URL	PLATFORM	TIMESTAMP	ACTIVITY_TYPE
+SESSION_ID	USERNAME	EMAIL	JOB_ROLE	OBJECT_ID	OBJECT_NAME	ITEM_TYPE	ITEM_URL	PLATFORM	TIMESTAMP	ACTIVITY_TYPE
 94323afa-ce06-4723-8a47-b862d54aac46	user	user@talis.ac.uk	an undergraduate	http://lists.southwales.ac.uk/lists/86EB3C9A-0072-AE55-AEFC-C8AF4D3DF4FB	Faculty of Business and Society Exam Papers	Document	http://lists.southwales.ac.uk/items/C06BC94D-3363-5A79-6D44-282618852A45	talis	2019-02-20 01:35	list.item.view
 937a2a1c-2f84-4f21-a173-c531ff8c1274	user	user@talis.ac.uk	an undergraduate	http://lists.southwales.ac.uk/lists/86EB3C9A-0072-AE55-AEFC-C8AF4D3DF4FB	Faculty of Business and Society Exam Papers	Document	http://lists.southwales.ac.uk/items/95099C63-3318-F5F4-B1C8-1D4A4FA6C033	talis	2019-02-20 01:36	list.item.view
 db8ea9ff-4f58-474f-b70a-b0956d1678c0	user	user@talis.ac.uk	an undergraduate	http://lists.southwales.ac.uk/lists/243ACF94-195C-CCE4-284F-B652C2B8ACCD	Caring for the Adult Client	Website	http://lists.southwales.ac.uk/items/10AF56EC-8606-0016-1BE8-014A4B3AEA55	talis	2019-02-17 14:31	list.item.view

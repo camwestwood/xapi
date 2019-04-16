@@ -6,12 +6,17 @@ Data should be supplied as a UTF-8 Tab Seperated File called reading_viewed.tsv
 
 * [USERNAME](#username) [1]
 * [HOMEPAGE](#homepage) [1]
-* [TIMESTAMP](#timestamp) [1] (
+* [EMAIL](#email) [0..1]
+* [TIMESTAMP](#timestamp) [1]
 * [URL](#object_id) [1]
 * [TITLE](#object_name) [0..1] 
-* [ACTIVITY_TYPE](#object_type) [0..1] 
+* [OBJECT_TYPE](#object_type) [0..1] 
 * [SESSION_ID](#session_id) [0..1] 
 * [PLATFORM](#platform) [0..1] 
+* [CLIENT_IP](#client_ip) [0..1]
+* [UDD_MOD_INST_ID](#udd_mod_inst_id) [0..1]
+* [VLE_MOD_ID](#vle_mod_id) [0..1]
+
 
 ## USERNAME 
 ### Description
@@ -40,6 +45,15 @@ Any
 ### Format
 String (255)
 
+## Email 
+### Description
+An Email address that has only ever been and will ever be assigned to this Agent.
+
+### Valid Values
+Email Address
+
+### Format
+String (255)
 
 ## TIMESTAMP 
 ### Description
@@ -75,7 +89,7 @@ String (255)
 
 ## OBJECT_TYPE 
 ### Description
-Optional type for resource being viewed.
+Type for resource being viewed.
 
 ### Valid Values
 Any
@@ -104,3 +118,32 @@ Any
 
 ### Format
 String (255)
+
+## VLE_MOD_ID 
+### Description
+An identifier for a course area in a VLE. It is used in conjunction with UDD_MOD_INST_ID to link module instances to course areas. Note that several module instances identified by their UDD_MOD_INST_ID can link to one VLE_MOD_ID in the VLE.
+
+### Valid Values
+Any
+
+### Format
+String (255)
+
+### Notes
+Mandatory if UDD_MOD_INST_ID not present.
+
+
+## UDD_MOD_INST_ID 
+### Description
+An identifier for a module instance
+The value should correspond to the UDD module_instance.MOD_INSTANCE_ID identifier that identifies the relevant module in UDD compliant data.
+
+### Valid Values
+Any
+
+### Format
+String (255)
+
+### Notes
+Mandatory if VLE_MOD_ID not present.
+

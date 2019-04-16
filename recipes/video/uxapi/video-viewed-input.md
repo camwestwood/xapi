@@ -43,7 +43,7 @@ String (255)
 An Email address that has only ever been and will ever be assigned to this Agent.
 
 ### Valid Values
-IRI
+Email Address
 
 ### Format
 String (255)
