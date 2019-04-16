@@ -100,7 +100,7 @@ The Context entity can be used to describe any surrounding circumstances, includ
 ``` javascript
 {
 	"version": "1.0.0",
-	"timestamp": "**TIMESTAMP**",
+	"timestamp": "2018-09-18T01:54:51.484Z",
 	"actor": {
 		"objectType": "Agent",
 		"name": "John Smith",
