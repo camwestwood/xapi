@@ -1,6 +1,10 @@
 # Statement Template Changes
 Change in Version - Date - Change
 
+## Documentation
+
+v1.0.3 21-02-2019, Best practice. [Snake case and iri conventions ](https://github.com/jiscdev/xapi/issues/297)
+
 ##  VLE Recipes
 
 

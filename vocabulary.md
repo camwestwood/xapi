@@ -11,6 +11,7 @@ IRIs will not necessarily link to a page in a browser, as these are identifiers 
 	*	3.1 [Activity Types](./vocabulary.md#activity-types)
 *	4.0 [Object Definition and Context Extensions](./vocabulary.md#extensions)
 *	5.0 [CourseArea](./vocabulary.md#coursearea)
+*	6.0 [Minting Conventions](./vocabulary.md#namingconventions)
 
 <a name="verb"></a>
 ## 1.0 Verb
@@ -699,3 +700,10 @@ attendance statements: optional
 </td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/vle_mod_id">http://xapi.jisc.ac.uk/vle_mod_id</a> </td></tr>
 </table>
+
+<a name="namingconventions"></a>
+## 6.0 Naming Concentions
+
+
+* Minted IRIs must indicates the entity they are to be used in:. For example: xapi.jisc.ac.uk/verbs/verb , xapi.jisc.ac.uk/extensions/extension
+* Minted IRIs to use snakecase:  xapi.jisc.ac.uk/extensions/snake_case
