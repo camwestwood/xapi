@@ -8,7 +8,7 @@ Data should be supplied as a UTF-8 Tab Seperated File called reading_viewed.tsv
 * [HOMEPAGE](#homepage) [1]
 * [EMAIL](#email) [0..1]
 * [TIMESTAMP](#timestamp) [1]
-* [URL](#object_id) [1]
+* [OBJECT_ID](#object_id) [1]
 * [TITLE](#object_name) [0..1] 
 * [OBJECT_TYPE](#object_type) [0..1] 
 * [SESSION_ID](#session_id) [0..1] 
