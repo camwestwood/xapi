@@ -1,4 +1,4 @@
-SESSION_ID	USERNAME	EMAIL	JOB_ROLE	URL	TITLE	PLATFORM	TIMESTAMP	ACTIVITY_TYPE
+SESSION_ID	USERNAME	EMAIL	JOB_ROLE	OBJECT_ID	OBJECT_NAME	PLATFORM	TIMESTAMP	ACTIVITY_TYPE
 f6ca1a3a-572a-4ce5-bfee-59c79a35d150	user	user@talis.ac.uk	a librarian	http://lists.southwales.ac.uk/lists/EE4B817B-367A-C2A4-183E-12D34F1081AC	Category Management	talis	2019-02-22 16:53	list.view
 2e37f059-d746-4d21-87dc-881b81858370	user	user@talis.ac.uk	a librarian	http://lists.southwales.ac.uk/lists/188FB009-04E7-E611-A251-3C9EB27B007A	Raising Aspirations through Real World Exposure:21st Century Graduate Attributes	talis	2019-02-19 12:22	list.view
 3a70c80c-71e5-434d-a5af-6cf00eaca537	user	user@talis.ac.uk	a librarian	http://lists.southwales.ac.uk/lists/188FB009-04E7-E611-A251-3C9EB27B007A	Raising Aspirations through Real World Exposure:21st Century Graduate Attributes	talis	2019-02-19 12:20	list.view
