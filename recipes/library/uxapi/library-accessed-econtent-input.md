@@ -6,7 +6,7 @@ Data should be supplied as a UTF-8 Tab Separated File called econtent.tsv.
 
 * [USERNAME](#username) [1]
 * [TIMESTAMP](#timestamp) [1]
-* [URL](#url) [1]
+* [HOSTNAME](#hostname) [1]
 * [CLIENT_IP](#client_ip) [0..1]
 
 
