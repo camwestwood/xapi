@@ -19,7 +19,7 @@ The actor entity describes the individual that is viewing an app resource.
         "objectType": "Agent",
         "account": {
             "name": "jsmith12",
-            "homePage": "https://courses.alpha.jisc.ac.uk/moodle"
+            "homePage": "https://jisc.ac.uk/studygoal/"
         }
 
 ```
