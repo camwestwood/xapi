@@ -9,7 +9,7 @@ Natural language example of a typical view Statement: "John Smith viewed a modul
 
 Examples:
 
-- [VLE resource viewed](../recipes/vle/Module-View.md)
+- [VLE resource viewed](../recipes/vle/vle-viewed-content.md)
 - [Mobile app content viewed](../recipes/studyapps/mobile-app.md)
 - [Blackboard course viewed ](../recipes/blackboard/course_access.json)
 - [Moodle module viewed ](../recipes/moodle/moduleview.js)

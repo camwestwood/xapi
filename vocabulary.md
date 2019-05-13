@@ -92,7 +92,7 @@ The following [xAPI Verbs](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-
 <tr><th align="left">Verb</th><td>Viewed</td></tr>
 <tr><th align="left">Description</th><td>Indicates that the Actor has viewed the Object.</td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://id.tincanapi.com/verb/viewed"> http://id.tincanapi.com/verb/viewed</a> </td></tr>
-<tr><th align="left">Statement Example</th><td> <a href="/recipes/vle/Module-View.md#verb">Resource Viewed</a> </td></tr>
+<tr><th align="left">Statement Example</th><td> <a href="/recipes/vle/vle-viewed-content.md#verb">Resource Viewed</a> </td></tr>
 </table>
 
 <a name="result"></a>
@@ -307,7 +307,7 @@ Example:
 <tr><th align="left">Label</th><td>Module</td></tr>
 <tr><th align="left">Description</th><td>A module represents any “content aggregation” at least one level below the course level. Modules of modules can exist for layering purposes. Modules are not content. Modules are one level up from all content. </td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://adlnet.gov/expapi/activities/module">http://adlnet.gov/expapi/activities/module</a> </td></tr>
-<tr><th align="left">Statement Example</th><td> <a href="recipes/vle/Module-View.md#object">Resource viewed</a> </td></tr>
+<tr><th align="left">Statement Example</th><td> <a href="recipes/vle/vle-viewed-content.md#object">Resource viewed</a> </td></tr>
 <tr><th align="left">Example Subtypes</th><td><ul><li>http://bblearn.xapi.jisc.ac.uk/learningmodule</li></ul></td></tr>
 </table>
 
@@ -377,7 +377,7 @@ Example:
 <tr><th align="left">Label</th><td>VLE page</td></tr>
 <tr><th align="left">Description</th><td>Any page within a VLE that is not designed to be learning content, for example navigation or administration pages   </td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/vle/page">http://xapi.jisc.ac.uk/vle/page</a> </td></tr>
-<tr><th align="left">Example in Statement template</th><td> <a href="recipes/vle/Module-View.md#object">Resource viewed</a> </td></tr>
+<tr><th align="left">Example in Statement template</th><td> <a href="recipes/vle/vle-viewed-content.md#object">Resource viewed</a> </td></tr>
 <tr><th align="left">Example Subtypes</th><td><ul><li>http://moodle.xapi.jisc.ac.uk/page</li><li>http://bblearn.xapi.jisc.ac.uk/blankpage</li><li>http://bblearn.xapi.jisc.ac.uk/modulepage</li></ul></td></tr>
 </table>
 
@@ -388,7 +388,7 @@ Example:
 <tr><th align="left">Label</th><td>VLE quiz</td></tr>
 <tr><th align="left">Description</th><td>Quiz within a VLE</td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/vle/quiz">http://xapi.jisc.ac.uk/vle/quiz</a> </td></tr>
-<tr><th align="left">Example in Statement template</th><td> <a href="recipes/vle/Module-View.md#object">Resource viewed</a> </td></tr>
+<tr><th align="left">Example in Statement template</th><td> <a href="recipes/vle/vle-viewed-content.md#object">Resource viewed</a> </td></tr>
 <tr><th align="left">Example Subtypes</th><td><ul><li>http://moodle.xapi.jisc.ac.uk/quiz</li><li>http://bblearn.xapi.jisc.ac.uk/test</li><li>http://bblearn.xapi.jisc.ac.uk/survey</li></ul>  </td></tr>
 </table>
 
