@@ -129,6 +129,12 @@ This pattern is used across many Statements in the Jisc Profile, but there may b
 		<td>Recommended For querying lookup. Set to category of statement. Attendance, VLE, Library <br/></td>
 		<td>string</td>
 	</tr>
+	<tr> 
+		<tr>
+		<td>context.extensions.http://xapi.jisc.ac.uk/extensions/user-agent [0..1]</td>
+		<td>String with User-Agent characteristics. Used to identify the application type, operating system, software vendor or software version of the requesting software user agent. <br/></td>
+		<td>string</td>
+	</tr>
 	</table>
 
 #### Example:
@@ -190,6 +196,12 @@ The ContextB pattern is similar to ContextA, but with the addition of a contextA
 		<td>context.extensions.https://xapi.jisc.ac.uk/recipeCat [0..1]</td>
 		<td>Recommended For querying lookup. Set to category of recipe.<br/></td>
 		<td>string</td>
+		<tr> 
+		<tr>
+		<td>context.extensions.http://xapi.jisc.ac.uk/extensions/user-agent [0..1]</td>
+		<td>String with User-Agent characteristics. Used to identify the application type, operating system, software vendor or software version of the requesting software user agent. <br/></td>
+		<td>string</td>
+	</tr>
 	</tr>
 </table>
 

@@ -616,6 +616,17 @@ For more information, see Jisc Profile [CourseArea properties](#coursearea).
 <tr><th align="left">Sample Value</th><td>http://id.tincanapi.com/activitytype/lms</td></tr>
 </table>
 
+### User Agent
+
+<table>
+<tr><th align="left">Label</th><td>User Agent</td></tr>
+<tr><th align="left">Description</th><td>String with User-Agent characteristics. Used to identify the application type, operating system, software vendor or software version of the requesting software user agent. </td></tr>
+<tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/extensions/user-agent">http://xapi.jisc.ac.uk/subType</a> </td></tr>
+<tr><th align="left">Example in Statement template</th><td> <a href="recipes/app/app-login.md#object">Application Logged in</a> </td></tr>
+<tr><th align="left">Data Type</th><td>String</td></tr>
+<tr><th align="left">Sample Value</th><td>Mozilla/5.0 (iPad; U; CPU OS 3_2_1 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Mobile/7B405</td></tr>
+</table>
+
 ### xAPI Profile Version
 
 <table>
@@ -634,7 +645,7 @@ For more information, see Jisc Profile [CourseArea properties](#coursearea).
 <tr><th align="left">Label</th><td>Jisc Profile Version</td></tr>
 <tr><th align="left">Description</th><td>Bytes downloaded by the client when making a request for electronic content
 </td></tr>
-<tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/version">http://xapi.jisc.ac.uk/BytesDownloaded</a> </td></tr>
+<tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/BytesDownloaded">http://xapi.jisc.ac.uk/BytesDownloaded</a> </td></tr>
 <tr><th align="left">Data Type</th><td>Integer</td></tr>
 <tr><th align="left">Value Space</th><td>Any Integer representing the number of bytes downloaded</td></tr>
 <tr><th align="left">Sample Value</th><td>1200</td></tr>
