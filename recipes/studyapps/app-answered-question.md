@@ -8,10 +8,8 @@ Use this template to create a specific Statement for a student answering 1 or mo
 ### Actor
 Common entity identifier: [ActorA](/common_structures.md#actora)
 
-#### Entity properties:
+#### Entity Example:
 The actor entity describes the individual who answered the question.
-
-### Example:
 
 ``` Javascript
 "actor": {
@@ -29,8 +27,6 @@ Common entity identifier: [VerbA](/common_structures.md#verba)
 #### Entity Example:
 The Verb [answered](/vocabulary.md#answered). It denotes the action of the Actor answering a question, where the Object is generally an activity representing the question or questions.
 
-### Example:
-
 ``` javascript
 "verb": {
   "id": "http://adlnet.gov/expapi/verbs/answered",
@@ -42,46 +38,15 @@ The Verb [answered](/vocabulary.md#answered). It denotes the action of the Actor
 
 ### Timestamp
 
-In quiz answered statements the timestamp property is set to the time the question/s were answered.
-
-#### Example:
+#### Entity Example:
+In question answered statements the timestamp property is set to the time the question/s were answered.
 
  "timestamp": "2016-02-05T10:00:00.000Z"
 
 ### Object
+Common entity identifier: [ObjectC](/common_structures.md#objectc)
 
-### Entity properties:
-<table>
-	<tr><th>Property [cardinality]</th><th>Description</th><th>Value information</</th></tr>
-	<tr>
-		<td>object.objectType [1]</td>
-		<td>The value must be "Activity".</td>
-		<td>String, value must be "Activity".</td>
-	</tr>
-	<tr>
-		<td>object.id [1]</td>
-		<td>An identifier for the quiz</td>
-		<td>iri</td>
-	</tr>
-	<tr>
-		<td>object.definition.type [1]</td>
-		<td>Indicates the type of the Object of the Statement. It is required and valid values are listed on the vocabulary page.</td>
-		<td>iri</td>
-	</tr>
-	<tr>
-		<td>object.definition.name [0..1]</td>
-		<td>Optional object name</td>
-		<td>string</td>
-	</tr>
-	<tr>
-		<td>object.definition.interactionType [0..1]</td>
-		<td>The type of interaction. Possible values are: true-false, choice, fill-in, long-fill-in, matching, performance, sequencing, likert, numeric or other. <a href="https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#interaction-types">xAPI spec for more details</a>.</td>
-		<td>iri</td>
-	</tr>
-</table>
-
-
-### Example
+#### Entity Example:
 
 ``` javascript
 	"object": {
@@ -118,10 +83,10 @@ In quiz answered statements the timestamp property is set to the time the questi
 ```
 
 ### Result
-
 Common entity identifier: ResultA [common structures](/common_structures.md#result-a) page.
 
-### Example
+#### Entity Example:
+The result entity stores the response to the question
 
 ``` javascript
  "result": {
@@ -134,12 +99,9 @@ Common entity identifier: ResultA [common structures](/common_structures.md#resu
 Common entity identifier: [ContextB](/common_structures.md#contextb)
 
 #### Entity Example:
-Although it is not typical for mobile application statements, the Context may describe the parent quiz of the question in context.contextActivies, and optionally, the courseArea (with module identifiers). See the (VLE Example)[] for details.
-
-This
+Although it is not typical for mobile application interactions, the Context may describe the parent quiz of the question in context.contextActivies, and optionally, the courseArea (with module identifiers). See the [VLE Example](../vle/answered_questions.md) for details.
 
 
-#### Example:
 ``` javascript
   "context": {
     
