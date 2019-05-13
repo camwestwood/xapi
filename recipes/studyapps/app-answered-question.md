@@ -145,11 +145,11 @@ This
     
       "platform": "App",
       "extensions": {
-	      "http://xapi.jisc.ac.uk/recipeCat": "app",
+	    "http://xapi.jisc.ac.uk/recipeCat": "app",
 		"http://xapi.jisc.ac.uk/version": "1.0.3",
 		"http://xapi.jisc.ac.uk/sessionId": "Iye9OqwM9O", 
-		"http://xapi.jisc.ac.uk/captured_from": "ios"
-        "http://id.tincanapi.com/extension/ip-address": "193.24.14.15", 
+		"http://xapi.jisc.ac.uk/captured_from": "ios",
+        "http://id.tincanapi.com/extension/ip-address": "193.24.14.15"
         }
     }
 ```
