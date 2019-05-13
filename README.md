@@ -23,6 +23,7 @@ If the need arises, particular versions will get their own branches, but until t
 # Recipes
 Here are descriptions of Statements that can be sent to the Jisc Learning Data Hub, full Statement examples, and data needed to create the Statement. As far as possible all entities are the same across all the Statements, these reusable parts of Statements are linked from templates and can be found in the [Common Structures](common_structures.md) page which contains all common patterns used across different Statements. If an entity is not reusable then properties are described in the Statement template.
 
+
 ## Econtent services
 
 <table>
@@ -31,12 +32,24 @@ Here are descriptions of Statements that can be sent to the Jisc Learning Data H
 <tr><td> <a href = "/recipes/econtent/econtent-accessed-econtent.md">Accessed service</a></td><td><a href="recipes/econtent/uxapi/econtent-accessed-econtent-input.md">econtent-accessed-econtent-input.md</a></td><td><a href="recipes/econtent/uxapi/econtent-accessed-econtent-template.json">econtent-accessed-econtent-template.json</a></td></tr>  
 </table>
 
+
+## Intervention Case
+
+<table>
+<tr><td>Statement Template </td><td>Input TSV  definitions</td><td>JSON Template</td></tr>
+<tr><td> <a href="recipes/case/create-case.md"> Open a case </a> </td><td> <a href="recipes/case/uxapi/case-create-activity-input.md">case-create-activity-input.md </a>  </td> <td><a href="recipes/case/uxapi/case-create-activity-input.json">case-create-activity-input.json</a></td></tr>
+<tr><td><a href="recipes/case/update-case.md"> Update a case</a> </td><td><a href="recipes/case/uxapi/case-update-activity-input.md">case-update-activity-input.md </a>   </td> <td><a href="recipes/case/uxapi/case-update-activity-input.json">case-update-activity-input.json </a>  </td></tr>      
+<tr><td> <a href="recipes/case/close-case.md" > Close a case </a> </td><td><a href="recipes/case/uxapi/case-close-activity-input.md">case-close-activity-input.md </a>   </td> <td><a href="recipes/case/uxapi/case-close-activity-input.json">case-close-activity-input.json </a></td></tr>  
+<tr><td><a href="recipes/case/create-note.md"> Create a note</a> </td><td><a href="recipes/case/uxapi/note-create-activity-input.md">note-create-activity-input.md </a>   </td> <td><a href="recipes/case/uxapi/note-create-activity-input.json">note-create-activity-input.json </a>  </td></tr>
+</table>
+
 ## Library Services
 
 <table>
 <tr><td>Statement Template</td><td>Input TSV definitions</td><td>JSON Template</td></tr>  
      <tr><td> <a href = "/recipes/library/library-item-borrowing.md">Library item: Borrowed item</a></td><td><a href="recipes/library/uxapi/library-item-borrowed-input.md">library-item-borrowed-input.md</a></td><td><a href="recipes/library/uxapi/library-item-borrowed-template.json">library-item-template.json</td></tr>    
 </table>
+
 
 ## Predictive Model Output
 
@@ -70,6 +83,20 @@ Here are descriptions of Statements that can be sent to the Jisc Learning Data H
          <tr><td> <a href = "recipes/readinglist/readinglist-view-reading-list-item.md">Viewed a Reading List Item</a></td><td><a href="recipes/readinglist/uxapi/readinglist-itemviewed-input.md">readinglist-itemviewed-input.md</a></td><td><a href="recipes/readinglist/uxapi/readinglist-itemviewed-template.json">readinglist-itemviewed-template.json</td><td><a href="recipes/readinglist/tsv/readinglist-view-reading-list-item.tsv">TSV</a></td></tr>   
         <tr><td> <a href = "recipes/readinglist/readinglist-viewed-content.md">Reading List viewed content</a></td><td><a href="recipes/readinglist/uxapi/readinglist-viewed-content-input.md">readinglist-viewed-content-input.md</a></td><td><a href="recipes/readinglist/uxapi/readinglist-viewed-content-template.json">readinglist-viewed-content-template.json</td></tr> 
 </table>
+
+
+## Setting and Reaching Targets
+
+<table>
+<tr><td>Statement Template</td><td>Input TSV definitions</td><td>JSON Template</td></tr>  
+
+<tr><td><a href = "recipes/targetsetting/target-set.md">Set a target</a></td> <td><a href="recipes/targetsetting/uxapi/target-set-input.md">target-set-input.md</a></td> <td></td></tr>
+<tr><td><a href = "recipes/targetsetting/target-recording-activity.md">Record an activity against a target</a> </td><td><a href="recipes/targetsetting/uxapi/target-set-input.md">target-set-input.md</a></td><td></td></tr>
+<tr><td><a href = "recipes/targetsetting/target-reached-completed.md">Reach a target</a></td><td><a href="recipes/targetsetting/uxapi/target-set-input.md">target-set-input.md</a></td><td></td></tr>
+<tr><td><a href = "recipes/targetsetting/target-update.md">Post an update</a></td><td><a href="recipes/targetsetting/uxapi/target-set-input.md">target-set-input.md</a> </td><td></td></tr> 
+</table>
+
+
 
 ## Video
 <table>
