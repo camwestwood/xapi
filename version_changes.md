@@ -242,6 +242,10 @@ Documentation change [start time and end time replace duration](https://github.c
 
 ## Student App Recipes
 
+#### Quiz: Quiz Completed
+
+v1.0.3 Statement Added To Repository
+
 ### Mobile App Content Viewed 
 
 v1.0.3 5-04-2019, Spec Change. [Recipe category added](https://github.com/jiscdev/xapi/issues/294)
