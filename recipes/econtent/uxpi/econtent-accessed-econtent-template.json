@@ -26,7 +26,9 @@
 		"extensions": {
 				"http://xapi.jisc.ac.uk/version": "1.0.3",
 				"http://id.tincanapi.com/extensions/ip-address": "**CLIENT_IP**",
-				"https://xapi.jisc.ac.uk/recipeCat": "Library"
+				"https://xapi.jisc.ac.uk/recipeCat": "Econtent",
+				"http://xapi.jisc.ac.uk/extensions/user-agent": "**USER_AGENT**"
+		}
 				
 		}
 

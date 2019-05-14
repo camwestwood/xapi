@@ -9,6 +9,7 @@ Data should be supplied as a UTF-8 Tab Separated File called readinglist-accesse
 * [URL](#url) [1]
 * [CLIENT_IP](#client_ip) [0..1]
 * [LIST_ITEM](#list_item) [0..1]
+* [USER_AGENT](#user_agent) [0..1]
 
 
 
@@ -56,3 +57,13 @@ Value is a string representing an Internet Protocol address (IP address) in eith
 
 ### Format
 String (255)
+
+## USER_AGENT 
+### Description
+String with User-Agent characteristics. Used to identify the application type, operating system, software vendor or software version of the requesting software user agent. 
+
+### Valid Values
+Any
+
+### Format
+string

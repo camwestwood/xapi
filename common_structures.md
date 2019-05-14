@@ -124,13 +124,11 @@ This pattern is used across many Statements in the Jisc Profile, but there may b
 		<td>The academic context in which this Activity is situated (e.g. umbrella course, or parent area). The properties in courseArea must be a UDD Module Instance ID or a VLE Module ID or both. More information can be found on the <a href="vocabulary.md#course-area">vocabularies page</a>.</td>
 		<td>JSON object</td>
 	<tr> 
-		<tr>
 		<td>context.extensions.https://xapi.jisc.ac.uk/recipeCat [0..1]</td>
 		<td>Recommended For querying lookup. Set to category of statement. Attendance, VLE, Library <br/></td>
 		<td>string</td>
 	</tr>
 	<tr> 
-		<tr>
 		<td>context.extensions.http://xapi.jisc.ac.uk/extensions/user-agent [0..1]</td>
 		<td>String with User-Agent characteristics. Used to identify the application type, operating system, software vendor or software version of the requesting software user agent. <br/></td>
 		<td>string</td>
@@ -192,7 +190,6 @@ The ContextB pattern is similar to ContextA, but with the addition of a contextA
 		<td>JSON object</td>
 		</tr>
 	<tr> 
-		<tr>
 		<td>context.extensions.https://xapi.jisc.ac.uk/recipeCat [0..1]</td>
 		<td>Recommended For querying lookup. Set to category of recipe.<br/></td>
 		<td>string</td>
@@ -202,6 +199,10 @@ The ContextB pattern is similar to ContextA, but with the addition of a contextA
 		<td>String with User-Agent characteristics. Used to identify the application type, operating system, software vendor or software version of the requesting software user agent. <br/></td>
 		<td>string</td>
 	</tr>
+		<tr> 
+		<td>context.extensions.http://xapi.jisc.ac.uk/extensions/user-agent [0..1]</td>
+		<td>String with User-Agent characteristics. Used to identify the application type, operating system, software vendor or software version of the requesting software user agent. <br/></td>
+		<td>string</td>
 	</tr>
 </table>
 

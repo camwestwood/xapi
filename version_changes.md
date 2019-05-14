@@ -10,6 +10,8 @@ v1.0.3 21-02-2019, Best practice. [Snake case and iri conventions ](https://gith
 
 ### Logged in
 
+v1.0.3 5-04-2019, Spec Change. [Added user agent otpional](https://github.com/jiscdev/xapi/issues/311)
+
 v1.0.3 5-04-2019, Spec Change. [Recipe category added](https://github.com/jiscdev/xapi/issues/294)
 
 v1.0.3 5-04-2019, Spec Change. [Statement category deprecated](https://github.com/jiscdev/xapi/issues/294)

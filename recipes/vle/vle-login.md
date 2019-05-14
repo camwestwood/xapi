@@ -49,9 +49,10 @@ Since the logged-in action is not undertaken in respect of a particular learning
   "platform": "Moodle",
   "extensions": {
     "http://xapi.jisc.ac.uk/recipeCat": "VLE",
+    "http://xapi.jisc.ac.uk/extensions/user-agent": "Mozilla/5.0 (iPad; U; CPU OS 3_2_1 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Mobile/7B405",
     "http://xapi.jisc.ac.uk/sessionId": "32456891",
     "http://id.tincanapi.com/extensions/ip-address": "10.3.3.48",
-    "http://xapi.jisc.ac.uk/version" : "1.0.2"
+    "http://xapi.jisc.ac.uk/version" : "1.0.3"
   }
 }
 ```

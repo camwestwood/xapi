@@ -16,6 +16,7 @@ Data should be supplied as a UTF-8 Tab Seperated File called reading_viewed.tsv
 * [CLIENT_IP](#client_ip) [0..1]
 * [UDD_MOD_INST_ID](#udd_mod_inst_id) [0..1]
 * [VLE_MOD_ID](#vle_mod_id) [0..1]
+* [USER_AGENT](#user_agent) [0..1]
 
 
 ## USERNAME 
@@ -147,3 +148,12 @@ String (255)
 ### Notes
 Mandatory if VLE_MOD_ID not present.
 
+## USER_AGENT 
+### Description
+String with User-Agent characteristics. Used to identify the application type, operating system, software vendor or software version of the requesting software user agent. 
+
+### Valid Values
+Any
+
+### Format
+string
