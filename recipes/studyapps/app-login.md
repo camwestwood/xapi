@@ -53,7 +53,7 @@ Since the logged-in action is not undertaken in respect of a particular learning
 		  	  "http://xapi.jisc.ac.uk/sessionId": "32456891"  ,
 		    	"http://xapi.jisc.ac.uk/recipeCat": "App",
 		  	  "http://id.tincanapi.com/extension/ip-address": "10.3.3.48",
-		    	"http://xapi.jisc.ac.uk/version" : "1.0.3"
+		    	"http://xapi.jisc.ac.uk/version" : "1.0.3",
           "http://xapi.jisc.ac.uk/extensions/user-agent" : "Mozilla/5.0 (iPad; U; CPU OS 3_2_1 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Mobile/7B405"
 			
 			}
@@ -90,6 +90,64 @@ In logged in statements the timestamp property must be set to the date and time 
 
 #### Example:
 
+``` javascript
  "timestamp": "2016-02-05T10:00:00.000Z"
+```
 
+"context": {
+        "platform": "Study-Goal",
+        "extensions": {
+					
+		  	  "http://xapi.jisc.ac.uk/sessionId": "32456891"  ,
+		    	"http://xapi.jisc.ac.uk/recipeCat": "App",
+		  	  "http://id.tincanapi.com/extension/ip-address": "10.3.3.48",
+		    	"http://xapi.jisc.ac.uk/version" : "1.0.3",
+          "http://xapi.jisc.ac.uk/extensions/user-agent" : "Mozilla/5.0 (iPad; U; CPU OS 3_2_1 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Mobile/7B405"
+			
+			}
+              
+  }
 
+### Full Example
+
+``` javascript
+	"version": "1.0.0",
+	"timestamp": "2016-02-05T10:00:00.000Z"
+	"actor": {
+		"objectType": "Agent",
+		"account": {
+			"name": "jsmith12",
+			"homePage": "https://jisc.ac.uk/studygoal/"
+		}
+	},
+	"verb": {
+		"id": "https://brindlewaye.com/xAPITerms/verbs/loggedin",
+		"display": {
+			"en": "logged in to"
+		}
+	},
+	"context": {
+		"platform": "**PLATFORM**",
+		"extensions": {
+			"http://xapi.jisc.ac.uk/recipeCat": "APP",
+			"http://xapi.jisc.ac.uk/sessionId": "32456891",
+			"http://id.tincanapi.com/extensions/ip-address": "10.3.3.48",
+			"http://xapi.jisc.ac.uk/version": "1.0.3",
+			"http://xapi.jisc.ac.uk/extensions/user-agent": "Mozilla/5.0 (iPad; U; CPU OS 3_2_1 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Mobile/7B405"
+		}
+	},
+  "object": {
+    "objectType": "Activity",
+    "id": "https://jisc.ac.uk/studygoal/",
+    "definition": {
+      "type": "http://activitystrea.ms/schema/1.0/application",
+      "name": {
+        "en": "University of Jisc Study Goal"
+      },
+      "extensions": {
+        "http://xapi.jisc.ac.uk/subType": "http://id.tincanapi.com/activitytype/mobile-app"
+    }
+  }
+}
+}
+```
