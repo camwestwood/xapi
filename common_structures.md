@@ -179,7 +179,7 @@ The ContextB pattern is similar to ContextA, but with the addition of a contextA
 		<td>The VLE session ID, or a suitably hashed version of it. A value should be provided if this information is available.</td>
 		<td>string</td>
 		</tr>
-	<tr> 
+	<tr>  
 		<td>context.extension.ip-address [1]</td>
 		<td>Client's IP address. An IPv4 address is recommended.</td>
 		<td>ip address</td>

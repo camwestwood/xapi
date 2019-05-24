@@ -58,7 +58,7 @@ Here are descriptions of Statements that can be sent to the Jisc Learning Data H
 <table>
 <tr><td>Statement Template</td><td>Input TSV definitions</td><td>JSON Template</td></tr> 
 <tr><td><a href = "recipes/studyapps/app-login.md">Logged in</a></td><td><a href = "recipes/studyapps/uxapi/app-loggedin-input.md">recipes/studyapps/uxapi/app-loggedin-input.md</a></td><td><a href = "recipes/studyapp/uxapi/app-loggedin-template.json">recipes/studyapp/uxapi/app-loggedin-template.json</td></tr> 
-<tr><tr><td><a href = "recipes/studyapps/app-answered-question.md">Answered Question</a></td><td><a href = "recipes/studyapps/uxapi/app-answered-question-input.md">recipes/studyapps/uxapi/app-answered-question-input.md</a></td><td><a href = "recipes/studyapps/uxapi/app-answered-question-template.json">recipes/studyapps/uxapi/app-answered-question-template.json</td></tr> 
+<tr><tr><td><a href = "recipes/studyapps/app-questions.md">Answered Question</a></td><td><a href = "recipes/studyapps/uxapi/app-answered-question-input.md">recipes/studyapps/uxapi/app-answered-question-input.md</a></td><td><a href = "recipes/studyapps/uxapi/app-answered-question-template.json">recipes/studyapps/uxapi/app-answered-question-template.json</td></tr> 
 <tr><td><a href = "recipes/studyapps/app-content-viewed.md">Mobile app content viewed</a></td><td><a href = "recipes/studyapps/uxapi/app-content-viewed.md">app-content-viewed.md</a></td><td><a href = "recipes/studyapp/uxapi/app-content-viewed.json">app-content-viewed.json</td></tr></table>    
 
 ## Reading Lists
