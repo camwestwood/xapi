@@ -43,10 +43,11 @@ The verb [create](/vocabulary.md#create) denotes the action of creating an objec
 
 In forum post statements the timestamp property must be set to the date and time of the post.
 
-#### Example:
+#### Entity Example:
 
+``` javascript
  "timestamp": "2016-02-05T10:00:00.000Z"
-
+```
 
 ### Result
 The result.response entity contains plain text from the post encoded as per the encoding of the rest of the statement. There must be no markup,  HTML entity encodings or invalid characters.
@@ -72,7 +73,7 @@ Common entity identifier: [ObjectA](/common_structures.md#objecta)
 #### Entity Example:
 The object.definition.type is http://xapi.jisc.ac.uk/forum-post
 
- ``` javascript
+``` javascript
 "object": {
 	"objectType": "Activity",
 	"id": "https://courses.alpha.jisc.ac.uk/mod/forum/discuss.php?d=19474"	

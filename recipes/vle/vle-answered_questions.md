@@ -10,7 +10,7 @@ Use this template to create a specific Statement for a student answering 1 or mo
 ### Actor
 Common entity identifier: [ActorA](/common_structures.md#actora)
 
-#### Entity properties:
+#### Entity Example:
 The actor entity describes the individual who answered the question.
 
 ### Example:
@@ -48,14 +48,16 @@ In quiz answered statements the timestamp property is set to the time the questi
 
 #### Example:
 
+``` javascript
  "timestamp": "2016-02-05T10:00:00.000Z"
+```
 
 ### Object
 Common entity identifier: [ObjectC](/common_structures.md#objectc)
 
 The Correct Responses Pattern contains an array of response patterns. A learner's response will be considered correct if it matches any of the response patterns in that array. See the 
 
-### Example
+#### Entity Example:
 
 ``` javascript
 "object": {
@@ -76,7 +78,7 @@ The Correct Responses Pattern contains an array of response patterns. A learner'
 
 Common entity identifier: ResultA [common structures](/common_structures.md#result-a) page.
 
-### Example
+#### Entity Example:
 
 ``` javascript
  "result": {
@@ -96,8 +98,6 @@ Common entity identifier: [ContextB](/common_structures.md#contextb)
 #### Entity Example:
 The Context may describe the parent quiz of the question in context.contextActivies, and optionally, the courseArea (with module identifiers).
 
-
-#### Example:
 ``` javascript
   "context": {
     

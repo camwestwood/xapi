@@ -14,7 +14,7 @@ Common entity identifier:  ActorA, as defined on the [common structures](/common
 
 The Actor entity describes the individual whose work has been graded.
 
-### Example:
+#### Entity Example:
 ``` Javascript
 {
     "actor": {
@@ -31,7 +31,7 @@ Common entity identifier: VerbA, as defined on the [common structures](/common_s
 
 The Verb [scored](/vocabulary.md#verbs) describes the student receiving a score for a learning activity.
 
-### Example:
+#### Entity Example:
 
 ``` javascript
  "verb":{
@@ -47,7 +47,7 @@ Common entity identifier: ResultA [common structures](/common_structures.md#resu
 
 The result entity is required for this kind of statement.
 
-### Example of grade result:
+#### Entity Example:
 
 ``` javascript 
 "result": {
@@ -59,7 +59,7 @@ The result entity is required for this kind of statement.
         "completion": true,
         "response": "Your answer should have been: The cow jumped over the moon."
          }
-````
+```
 
 ### Object
 Common entity identifier: uses a refinement of ObjectB, as defined on the [common structures](/common_structures.md#objectb) page.
@@ -123,7 +123,7 @@ The Context for assignment graded is based on ContextA on the [common structures
 	</tr>
 </table>
 
-### Example
+#### Entity Example:
 
 ``` javascript
 "context": {
@@ -152,6 +152,15 @@ The Context for assignment graded is based on ContextA on the [common structures
         }
 ```
 
+### Timestamp
+
+In assignment graded statements the timestamp property is set to time it was graded.
+
+#### Example:
+
+``` javascript
+ "timestamp": "2016-02-05T10:00:00.000Z"
+```
 
 ### Complete VLE Specific Examples
 [Blackboard Example](/vle/blackboard/asssignment_graded.json)
