@@ -1,4 +1,4 @@
-# VLE forum post and reply template
+# vle_forum_post and reply template
 
 ## Purpose
 This statement defines the structure and terms to record a post or reply to a forum within a VLE.

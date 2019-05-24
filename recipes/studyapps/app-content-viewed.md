@@ -1,4 +1,4 @@
-# mobile_app_content_viewed statement template
+# app_content_viewed statement template
 
 Based on generic template statement: [Viewed](/generic/view.md)
 

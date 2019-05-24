@@ -1,4 +1,4 @@
-# question_answered statement template
+# app_question_answered statement template
 
 
 ## Purpose

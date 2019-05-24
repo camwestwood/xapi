@@ -1,4 +1,4 @@
-# accessed service statement template
+# accessed_service statement template
 
 [Statement Template Changes](/version_changes.md#access_service)
 

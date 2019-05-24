@@ -1,4 +1,4 @@
-# quiz_question_answered statement template
+# vle_quiz_question_answered Statement template
 
 In this version the Moodle domain IRIs for subType are not definitive, but purely given as examples. Moodle domain experts will control these IRIs.
 

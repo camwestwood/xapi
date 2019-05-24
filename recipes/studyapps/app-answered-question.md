@@ -1,4 +1,4 @@
-# quiz_question_answered statement template
+# app_question_answered Statement template
 
 ## Purpose
 Use this template to create a specific Statement for a student answering 1 or more questions.

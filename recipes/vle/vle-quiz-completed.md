@@ -1,4 +1,4 @@
-# quiz_assessed statement template
+# vle_quiz_assessed Statement template
 
 ## Purpose
 
@@ -7,7 +7,7 @@
 ### Actor
 Common entity identifier:  ActorA, as defined on the [common structures](/common_structures.md#actora) page.
 
-The actor entity describes the individual who is making the post.
+The actor entity describes the individual who has completed a quiz.
 
 #### Entity Example:
 

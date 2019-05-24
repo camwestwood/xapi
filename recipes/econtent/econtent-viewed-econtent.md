@@ -1,4 +1,4 @@
-# econtent viewed statement template
+# econtent_viewed statement template
 
 Based on generic template statement: [Viewed](/generic/view.md)
 
@@ -116,7 +116,7 @@ Common entity identifier: ObjectA, as defined on the [common structures](/common
 			"http://xapi.jisc.ac.uk/version": "1.0.3"
 			"http://xapi.jisc.ac.uk/sessionId": "A438L",
 			"http://id.tincanapi.com/extensions/ip-address": "10.3.3.48",
-			"https://xapi.jisc.ac.uk/recipeCat": "Library"
+			"https://xapi.jisc.ac.uk/recipeCat": "Econtent"
 			
 		}
 	}

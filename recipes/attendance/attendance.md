@@ -1,4 +1,4 @@
-# Attended_Learning_Event Statement template
+# attended_learning_event Statement template
 
 [Statement Template Changes](/version_changes.md#attendance)
 

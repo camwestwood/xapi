@@ -1,4 +1,4 @@
-# borrowed statement template
+# item_borrowed Statement template
 
 [Statement Template Changes](/version_changes.md#borrowed)
 

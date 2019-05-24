@@ -1,16 +1,17 @@
-# viewed reading list item
+# reading_list_viewed_item Statement template
+
+Based on generic Statement template: [Viewed](/generic/view.md)
+
+[Statement Template Changes](/version_changes.md#readinglist-resource-viewed)
 
 ## Purpose
-
-## For discussion
+This template defines the structure and terms to record the experience of viewing a reading list item
 
 ### Actor
-The Actor entity is used to identify the individual that is viewing the reading list item. It uses the Jisc Profile common entity [ActorA](/common_structures.md#actora).
+Common entity identifier: [ActorA](/common_structures.md#actora)
 
-#### Entity properties:
-
-
-### Example:
+### Entity Example:
+The Actor entity is used to identify the individual that is viewing the reading list item. 
 
 ``` Javascript
 "actor": {
@@ -25,10 +26,10 @@ The Actor entity is used to identify the individual that is viewing the reading 
 
 
 ### Verb
-The Verb used in view Statements is [viewed](../vocabulary.md#verbs). It denotes the action of the user requesting the resource that the user wishes to view. It uses the Jisc Profile common entity [VerbA](../common_structures.md#verba). 
+Common entity identifier: [VerbA](../common_structures.md#verba). 
 
-
-### Example:
+### Entity Example:
+It denotes the action of the user requesting the resource that the user wishes to view. 
 
 ``` javascript
 "verb": {
@@ -40,12 +41,11 @@ The Verb used in view Statements is [viewed](../vocabulary.md#verbs). It denotes
 ```
 
 ### Object
+Common entity identifier:  [ObjectA](../common_structures.md#objecta)
 
-The Object for viewed Statements identifies what is being viewed. It uses the Jisc Profile common entity [ObjectA](../common_structures.md#objecta).
 
-### Example
-
-``` javascript
+### Entity Example:
+The Object for viewed Statements identifies what is being viewed. 
 
 
 ``` javascript
@@ -53,7 +53,7 @@ The Object for viewed Statements identifies what is being viewed. It uses the Ji
 	"objectType": "Activity",
 	"id": "http://reading.jisc.ac.uk/page/4/item/view.php?id=9"   	 	
 	"definition": {
-		"type": "http://xapi.jisc.ac.uk/reading-list-item",			
+		"type": "http://xapi.jisc.ac.uk/activities/reading-list-item",			
 		"name": { "en": "Sample reading list item"}
     }
 }
@@ -61,12 +61,11 @@ The Object for viewed Statements identifies what is being viewed. It uses the Ji
 
 
 ### Context
-The Context entity can be used to describe any surrounding circumstances, including for example the device used and id of the module. If the device supports it, session Ids and ip-addresses can be recorded. The contextActivities parent contains the id of the list the item belongs to.
-
- Common entity identifier: ContextB, as defined on the [common structures](/common_structures.md#contextb) page. 
+Common entity identifier: [ContextB](/common_structures.md#contextb) . 
 
 
-### Example:
+### Entity Example:
+The contextActivities parent contains the id of the list the item belongs to.
 
 ``` javascript
 "context": {
@@ -87,8 +86,9 @@ The Context entity can be used to describe any surrounding circumstances, includ
 			},
 			
  		"http://xapi.jisc.ac.uk/sessionId":"32456891",
-      "http://id.tincanapi.com/extension/ip-address": "10.3.3.48"
-		"http://xapi.jisc.ac.uk/version" : "1.0.2"
+        "http://id.tincanapi.com/extension/ip-address": "10.3.3.48",
+		"http://xapi.jisc.ac.uk/version" : "1.0.3",
+		
 			}
 		}
 ```
@@ -115,7 +115,7 @@ The Context entity can be used to describe any surrounding circumstances, includ
 		"objectType": "Activity",
 		"id": "https://readinglist.alpha.jisc.ac.uk/",
 		"definition": {
-			"type": "<Not sure>",
+			"type": "http://xapi.jisc.ac.uk/activities/reading-list-item",
 			"name": {
 				"en": "Intro to Java"
 			}

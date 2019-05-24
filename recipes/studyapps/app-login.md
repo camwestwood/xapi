@@ -1,4 +1,4 @@
-# mobile_app_logged_in Statement template
+# app_logged_in Statement template
 
 Based on generic Statement template: [Login](/generic/login.md)
 
