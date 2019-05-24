@@ -1,7 +1,12 @@
 # app_question_answered Statement template
 
+
+
+[Statement Template Changes](/version_changes.md#app-questions)
+
 ## Purpose
-Use this template to create a specific Statement for a student answering 1 or more questions.
+This Statement template records the results of a user being asked a question
+
 
 ## Definition
 

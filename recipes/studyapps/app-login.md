@@ -2,7 +2,7 @@
 
 Based on generic Statement template: [Login](/generic/login.md)
 
-[Statement Template Changes](/version_changes.md#logged-in)
+[Statement Template Changes](/version_changes.md#app-logged-in)
 
 ## Purpose
 This Statement template records a user logging in to the study app.
@@ -44,7 +44,7 @@ Common entity identifier: ContextA, as defined on the [common structures](/commo
 Since the logged-in action is not undertaken in respect of a particular learning activity or course, only the core attributes of the Context entity are applicable.
 
 #### Example:
-``` javascript
+
 ``` javascript
 "context": {
         "platform": "Study-Goal",
