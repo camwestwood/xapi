@@ -92,12 +92,11 @@ Common entity identifier: ContextA, as defined on the [common structures](/commo
 #### Entity Example:
 
 
-### Example:
-
 ``` javascript
 "context": {
       "extensions": {
         "http://xapi.jisc.ac.uk/recipeCat": "VLE",
+        "http://xapi.jisc.ac.uk/extensions/user-agent": "Mozilla/5.0 (iPad; U; CPU OS 3_2_1 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Mobile/7B405",
         "http://xapi,jisc.ac.uk/courseArea": {
           "http://xapi.jisc.ac.uk/vle_mod_id": "Test1"
         },
@@ -153,6 +152,7 @@ Common entity identifier: ContextA, as defined on the [common structures](/commo
 	"context": {
       "extensions": {
         "http://xapi.jisc.ac.uk/recipeCat": "VLE",
+    	  "http://xapi.jisc.ac.uk/extensions/user-agent": "Mozilla/5.0 (iPad; U; CPU OS 3_2_1 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Mobile/7B405",
         "http://xapi.jisc.ac.uk/courseArea": {
           "http://xapi.jisc.ac.uk/vle_mod_id": "Test1"
         },

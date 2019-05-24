@@ -113,7 +113,7 @@ This pattern is used across many Statements in the Jisc Profile, but there may b
 	</tr>
 	<tr>
 		<td>context.extension.sessionId [0..1]</td>
-		<td>The VLE session ID, or a suitably hashed version of it. A value should be provided if this information is available.</td>
+		<td>Any session ID, or a suitably hashed version of it. A value should be provided if this information is available.</td>
 		<td>string</td>
 	<tr> 
 		<td>context.extension.ip-address [1]</td>
@@ -140,16 +140,17 @@ This pattern is used across many Statements in the Jisc Profile, but there may b
 "context": {
         "platform": "Moodle",
         "extensions": {
-	
-			"http://xapi.jisc.ac.uk/courseArea": {
+				"http://xapi.jisc.ac.uk/courseArea": {
 				"http://xapi.jisc.ac.uk/vle_mod_id": "LA101",
 				"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0"
 			},
 					
 		"http://xapi.jisc.ac.uk/sessionId": "32456891"  ,
-		"http://id.tincanapi.com/extension/ip-address": "10.3.3.48"
-		"http://xapi.jisc.ac.uk/version" : "1.0.2"
-			}
+		"http://id.tincanapi.com/extension/ip-address": "10.3.3.48",
+		"http://xapi.jisc.ac.uk/version" : "1.0.3"
+		"http://xapi.jisc.ac.uk/recipeCat": "VLE",				
+    	"http://xapi.jisc.ac.uk/extensions/user-agent": "Mozilla/5.0 (iPad; U; CPU OS 3_2_1 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Mobile/7B405"
+			}	
         }
 ``` 
 ### ContextB
@@ -176,7 +177,7 @@ The ContextB pattern is similar to ContextA, but with the addition of a contextA
 	</tr>
 	<tr>
 		<td>context.extension.sessionId [0..1]</td>
-		<td>The VLE session ID, or a suitably hashed version of it. A value should be provided if this information is available.</td>
+		<td>Any session ID, or a suitably hashed version of it. A value should be provided if this information is available.</td>
 		<td>string</td>
 		</tr>
 	<tr>  
@@ -195,11 +196,6 @@ The ContextB pattern is similar to ContextA, but with the addition of a contextA
 		<td>string</td>
 		<tr> 
 		<tr>
-		<td>context.extensions.http://xapi.jisc.ac.uk/extensions/user-agent [0..1]</td>
-		<td>String with User-Agent characteristics. Used to identify the application type, operating system, software vendor or software version of the requesting software user agent. <br/></td>
-		<td>string</td>
-	</tr>
-		<tr> 
 		<td>context.extensions.http://xapi.jisc.ac.uk/extensions/user-agent [0..1]</td>
 		<td>String with User-Agent characteristics. Used to identify the application type, operating system, software vendor or software version of the requesting software user agent. <br/></td>
 		<td>string</td>
@@ -229,7 +225,9 @@ The ContextB pattern is similar to ContextA, but with the addition of a contextA
 			
  		"http://xapi.jisc.ac.uk/sessionId":"32456891",
         "http://id.tincanapi.com/extension/ip-address": "10.3.3.48"
-		"http://xapi.jisc.ac.uk/version" : "1.0.2"
+		"http://xapi.jisc.ac.uk/version" : "1.0.2",
+		"http://xapi.jisc.ac.uk/recipeCat": "VLE",				
+    	"http://xapi.jisc.ac.uk/extensions/user-agent": "Mozilla/5.0 (iPad; U; CPU OS 3_2_1 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Mobile/7B405"
 			}
 		}
 ```
