@@ -349,7 +349,7 @@ This Object pattern describes an Activity with a due date.
 ```
 
 
-### ObjectB
+### ObjectC
 Common entity identifier: ObjectC
 
 This Object pattern describes an Activity which is some kind of interaction, such as a question.
