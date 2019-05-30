@@ -238,6 +238,22 @@ Example:
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/collaboration_space">http://xapi.jisc.ac.uk/collaboration_space</a> </td></tr>
 </table>
 
+### Conference
+
+<table>
+<tr><th align="left">Label</th><td>Conference</td></tr>
+<tr><th align="left">Description</th><td>A formal meeting which includes presentations or discussions</td></tr>
+<tr><th align="left">IRI</th><td> <a href="http://id.tincanapi.com/activitytype/conference">http://id.tincanapi.com/activitytype/conference</a> </td></tr>
+</table>
+
+### Content Tag
+
+<table>
+<tr><th align="left">Label</th><td>Content Tag</td></tr>
+<tr><th align="left">Description</th><td> Context Activities lists to mark a statement as being related to a particular subject area </td></tr>
+<tr><th align="left">IRI</th><td>http://id.tincanapi.com/activitytype/tag</td></tr>
+</table>
+
 ### Course
 
 <table>
@@ -246,6 +262,15 @@ Example:
 <tr><th align="left">IRI</th><td> <a href="http://adlnet.gov/expapi/activities/course">http://adlnet.gov/expapi/activities/course</a> </td></tr>
 </table>
 
+### Discussion
+
+<table>
+<tr><th align="left">Label</th><td>Discussion</td></tr>
+<tr><th align="left">Description</th><td>Represents an ongoing conversation between persons, such as an email thread or a forum topic.</td></tr>
+<tr><th align="left">IRI</th><td> <a href="http://id.tincanapi.com/activitytype/discussion">http://id.tincanapi.com/activitytype/discussion</a> </td></tr>
+</table>
+
+
 ### Event
 
 <table>
@@ -253,7 +278,6 @@ Example:
 <tr><th align="left">Description</th><td>Any event.<br/>The "event" Activity Type should only be used when a more specific (i.e. narrowly-defined) event type, defined on this page, is not available; this IRI indicates that the type of event is unspecified.</td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://activitystrea.ms/schema/1.0/event">http://activitystrea.ms/schema/1.0/event</a> </td></tr>
 </table>
-
 
 
 ### Timetabled Event
@@ -265,7 +289,6 @@ Example:
 <tr><th align="left">Example in Statement template</th><td> <a href="/recipes/attendance/attendance.md#object">attendance</a> </td></tr>
 </table>
 
-### External Content
 
 ### None-Timetabled Event
 
@@ -276,6 +299,7 @@ Example:
 <tr><th align="left">Example in Statement template</th><td> <a href="/recipes/attendance/attendance.md#object">attendance</a> </td></tr>
 </table>
 
+### External Content
 
 <table>
 <tr><th align="left">Label</th><td>External Content</td></tr>
@@ -301,6 +325,14 @@ Example:
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/vle/file">http://xapi.jisc.ac.uk/vle/file</a> </td></tr>
 </table>
 
+### File
+
+<table>
+<tr><th align="left">Label</th><td>File</td></tr>
+<tr><th align="left">Description</th><td>Represents any form of document or file </td></tr>
+<tr><th align="left">IRI</th><td> <a href="http://activitystrea.ms/schema/1.0/file">http://activitystrea.ms/schema/1.0/file</a> </td></tr>
+</table>
+
 ### Module
 
 <table>
@@ -320,6 +352,14 @@ Example:
 <tr><th align="left">Example Subtypes</th><td><ul><li>http://moodle.xapi.jisc.ac.uk/choice</li><ul></td></tr>
 </table>
 
+### Outcome
+
+<table>
+<tr><th align="left">Label</th><td>Outcome</td></tr>
+<tr><th align="left">Description</th><td></td></tr>
+<tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/activities/syllabus">http://xapi.jisc.ac.uk/activities/syllabus</a> </td></tr>
+</table>
+
 ### Study Goal Statistics
 
 <table>
@@ -337,13 +377,31 @@ Example:
 <tr><th align="left">Statement Example</th><td> <a href="recipes/library/library-item-borrowing.md">Item borrowed</a> </td></tr>
 </table>
 
+### Syllabus
+
+<table>
+<tr><th align="left">Label</th><td>Subject Area</td></tr>
+<tr><th align="left">Description</th><td>Information that defines the academic expectations and responsibilities. </td></tr>
+<tr><th align="left">IRI</th><td>http://xapi.jisc.ac.uk/activities/syllabus</td></tr>
+</table>
+
+
+
 
 ### Tutor session
 
 <table>
 <tr><th align="left">Label</th><td>Tutor session</td></tr>
-<tr><th align="left">Description</th><td>This represents a tutoring session. (not currently used in any statement templates)</td></tr>
+<tr><th align="left">Description</th><td>Represents a tutoring session.</td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://id.tincanapi.com/activitytype/tutor-session">http://id.tincanapi.com/activitytype/tutor-session</a> </td></tr>
+</table>
+
+### User profile
+
+<table>
+<tr><th align="left">Label</th><td>User profile</td></tr>
+<tr><th align="left">Description</th><td>A page displaying information about a user.</td></tr>
+<tr><th align="left">IRI</th><td> <a href="http://id.tincanapi.com/activitytype/user-profile">http://id.tincanapi.com/activitytype/user-profile</a> </td></tr>
 </table>
 
 ### VLE
