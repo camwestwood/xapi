@@ -299,10 +299,9 @@ In attendance statements the timestamp property must be set to the start time of
 {
 	"actor": {
         	"objectType": "Agent",
-        	"name": "John Smith",
         	"account": {
-			"name": "2",
-			"homePage": "https://courses.alpha.jisc.ac.uk/moodle"
+				"name": "2",
+				"homePage": "https://courses.alpha.jisc.ac.uk/moodle"
 		}
 	},
 	"verb": {
@@ -362,7 +361,7 @@ In attendance statements the timestamp property must be set to the start time of
 				}
 			},
 			"http://xapi.jisc.ac.uk/courseArea": {
-				"http://xapi.jisc.ac.uk/vle_mod_id": "LA101-200-2016S1-0",
+				"http://xapi.jisc.ac.uk/uddCourseInstanceId": "LA101-200-2016S1-0",
 				"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0"
 			},
 			"http://xapi.jisc.ac.uk/recipeCat": "Attendance",
