@@ -57,7 +57,7 @@ The Object for viewed Statements identifies what is being viewed.
 ```
 
 ### Context
-Common entity identifier: [ContextB](/common_structures.md#contextb) . 
+Common entity identifier: [ContextA](/common_structures.md#contextb) . 
 
 
 ### Entity Example:
