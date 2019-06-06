@@ -256,7 +256,7 @@ Documentation change [start time and end time replace duration](https://github.c
 
 v1.0.3 Statement Added To Repository
 
-### Quiz: Quiz Completed
+### Answered Question
 
 v1.0.3 Statement Added To Repository
 
