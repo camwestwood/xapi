@@ -146,9 +146,10 @@ The following are extension properties in the Result entity:
 
 <table>
 <tr><th align="left">Label</th><td>Scored</td></tr>
-<tr><th align="left">Description</th><td>A non-numerical assessment result. Data type is string (256)</td></tr>
+<tr><th align="left">Description</th><td>A non-numerical assessment result.</td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/grade">http://xapi.jisc.ac.uk/grade</a> </td></tr>
 <tr><th align="left">Statement Example</th><td> <a href="recipes/vle/vle-assignment-graded.md#result">Assignment Graded</a> </td></tr>
+<tr><th align="left">Data type</th><td>String (256)</td></tr>
 <tr><th align="left">Value Space</th><td>String</td></tr>
 <tr><th align="left">Sample Value</th><td>5 Stars</td></tr>
 </table>
