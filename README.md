@@ -102,7 +102,3 @@ Bug reports can be directed to the [Moodle](https://github.com/jiscdev/jisc-mood
 * [Moodle VLE samples](vle/moodle/examples.md)
 
 
-# Deprecated Statements
-
-- [Session timeout](/recipes/vle/Session-timeout.md)    
-
