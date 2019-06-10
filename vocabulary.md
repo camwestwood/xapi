@@ -489,7 +489,7 @@ For more information, see Jisc Profile [CourseArea properties](#coursearea).
 
 <table>
 <tr><th align="left">Label</th><td>DateTime</td></tr>
-<tr><th align="left">Description</th><td>Value representing a calendar date and time, such as 2013-08-27T09:26:45.001. Value should be a string formatted as an ISO8601 date and time to match the rest of the specification values.</td></tr>
+<tr><th align="left">Description</th><td>Value representing a calendar date and time, such as 2013-08-27T09:26:45.001Z. Value should be a string formatted as an ISO8601 date and time to match the rest of the specification values.</td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://id.tincanapi.com/extension/datetime">http://id.tincanapi.com/extension/datetime</a> </td></tr>
 <tr><th align="left">Example in Statement template</th><td> <a href="recipes/attendance/attendance.md#object">attendance</a> </td></tr>
 <tr><th align="left">Data Type</th><td>String</td></tr>
@@ -594,7 +594,7 @@ For more information, see Jisc Profile [CourseArea properties](#coursearea).
 <table>
 <tr><th align="left">Label</th><td>End time</td></tr>
 <tr><th align="left">Description</th><td>An ISO8601 timestamp representing the planned end time of a scheduled or planned event.</td></tr>
-<tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/endtime">http://xapi.jisc.ac.uk/endtime/a> </td></tr>
+<tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/endtime">http://xapi.jisc.ac.uk/endtime</a> </td></tr>
 <tr><th align="left">Data Type</th><td>ISO 8601 timestamp</td></tr>
 <tr><th align="left">Value Space</th><td>Timestamp</td></tr>
 <tr><th align="left">Sample Value</th><td>2016-02-05T10:00:00.000Z</td></tr>
@@ -609,6 +609,18 @@ For more information, see Jisc Profile [CourseArea properties](#coursearea).
 <tr><th align="left">Data Type</th><td>ISO 8601 timestamp</td></tr>
 <tr><th align="left">Value Space</th><td>Timestamp</td></tr>
 <tr><th align="left">Sample Value</th><td>2016-02-05T10:00:00.000Z</td></tr>
+</table>
+
+### Recipe Category
+
+<table>
+<tr><th align="left">Label</th><td>Recipe Category</td></tr>
+<tr><th align="left">Description</th><td>Identifies the recipe category for querying lookup. </td></tr>
+<tr><th align="left">string</th><td> <a href="https://xapi.jisc.ac.uk/recipeCat">https://xapi.jisc.ac.uk/recipeCat</a> </td></tr>
+<tr><th align="left">Example in Statement template</th><td> <a href="recipes/vle/vle-login.md#context">Logged in</a> </td></tr>
+<tr><th align="left">Data Type</th><td>String</td></tr>
+<tr><th align="left">Value Space</th><td>Any recipe Category</td></tr>
+<tr><th align="left">Sample Value</th><td>Attendance</td></tr>
 </table>
 
 ### Recipe Version (deprecated since 1.0)
@@ -643,18 +655,6 @@ For more information, see Jisc Profile [CourseArea properties](#coursearea).
 <tr><th align="left">Example in Statement template</th><td> <a href="recipes/vle/vle-login.md#context">Logged in</a> </td></tr>
 <tr><th align="left">Data Type</th><td>String</td></tr>
 <tr><th align="left">Value Space</th><td>Attendance, VLE, Library</td></tr>
-<tr><th align="left">Sample Value</th><td>Attendance</td></tr>
-</table>
-
-### Statement Category
-
-<table>
-<tr><th align="left">Label</th><td>Recipe Category (Deprecated as of 1.0.3) </td></tr>
-<tr><th align="left">Description</th><td>Identifies the statement category for querying lookup. </td></tr>
-<tr><th align="left">string</th><td> <a href="https://xapi.jisc.ac.uk/recipeCat">https://xapi.jisc.ac.uk/recipeCat</a> </td></tr>
-<tr><th align="left">Example in Statement template</th><td> <a href="recipes/vle/vle-login.md#context">Logged in</a> </td></tr>
-<tr><th align="left">Data Type</th><td>String</td></tr>
-<tr><th align="left">Value Space</th><td>Any recipe Category</td></tr>
 <tr><th align="left">Sample Value</th><td>Attendance</td></tr>
 </table>
 
