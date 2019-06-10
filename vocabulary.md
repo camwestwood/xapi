@@ -72,7 +72,7 @@ The following [xAPI Verbs](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-
 ### Answered
 <table>
 <tr><th align="left">Verb</th><td>Answered</td></tr>
-<tr><th align="left">Description</th><td>  Indicates the actor replied to a question, where the object is generally an activity representing the question. result.Activity.</td></tr>
+<tr><th align="left">Description</th><td>  Indicates the actor replied to a question, where the object is generally an activity representing the question.</td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://adlnet.gov/expapi/verbs/answered">http://adlnet.gov/expapi/verbs/answered</a> </td></tr>
 <tr><th align="left">Statement Example</th><td> In <a href="/recipes/vle/vle-answered-questions.md#verb">Answered Questions</a> Statement template</td></tr>
 </table>
