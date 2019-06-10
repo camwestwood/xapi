@@ -714,8 +714,8 @@ Example of courseArea usage in VLE statement:
       	"extensions":	{
       		"http://xapi.jisc.ac.uk/courseArea": {
 			"http://xapi.jisc.ac.uk/vle_mod_id": "LA101",
-			"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0",
-		},
+			"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0"
+		}
 	}
 ```
 
@@ -727,8 +727,8 @@ Example of courseArea usage in attendance statement:
       	"extensions":	{
 		"http://xapi.jisc.ac.uk/courseArea": {
         		"http://xapi.jisc.ac.uk/uddCourseInstanceID": "LA101-200",
-			"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0",
-            	},
+			"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0"
+            	}
 	}
 ```
 
@@ -766,8 +766,7 @@ attendance statements: optional
 </table>
 
 <a name="namingconventions"></a>
-## 6.0 Naming Concentions
-
+## 6.0 Naming Conventions
 
 * Minted IRIs must indicate the entity they are to be used in. For example: xapi.jisc.ac.uk/verbs/verb, xapi.jisc.ac.uk/extensions/extension
 * Minted IRIs to use snakecase:  xapi.jisc.ac.uk/extensions/snake_case
