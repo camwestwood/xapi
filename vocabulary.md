@@ -42,7 +42,7 @@ The following [xAPI Verbs](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-
 <tr><th align="left">Verb</th><td>Completed</td></tr>
 <tr><th align="left">Description</th><td>Completing an Activity - finishing it in its entirety</td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://adlnet.gov/expapi/verbs/completed">http://adlnet.gov/expapi/verbs/completed</a> </td></tr>
-<tr><th align="left">Statement Example</th><td> <a href="recipes/vle/assignment-submitted.md">Assignment submitted</a> </td></tr>
+<tr><th align="left">Statement Example</th><td> <a href="recipes/vle/vle-assignment-submitted.md">Assignment submitted</a> </td></tr>
 </table>
 
 ### Logged in
@@ -50,7 +50,7 @@ The following [xAPI Verbs](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-
 <tr><th align="left">Verb</th><td>Logged in</td></tr>
 <tr><th align="left">Description</th><td>Logged in to some service </td></tr>
 <tr><th align="left">IRI</th><td> <a href="https://brindlewaye.com/xAPITerms/verbs/loggedin"> https://brindlewaye.com/xAPITerms/verbs/loggedin </a> </td></tr>
-<tr><th align="left">Statement Example</th><td> <a href="/recipes/vle/login.md#verb">Logged in</a> </td></tr>
+<tr><th align="left">Statement Example</th><td> <a href="/recipes/vle/vle-login.md#verb">Logged in</a> </td></tr>
 </table>
 
 ### Logged out
@@ -58,7 +58,7 @@ The following [xAPI Verbs](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-
 <tr><th align="left">Verb</th><td>Logged out</td></tr>
 <tr><th align="left">Description</th><td>Logged out of some service</td></tr>
 <tr><th align="left">IRI</th><td> <a href="https://brindlewaye.com/xAPITerms/verbs/loggedout"> https://brindlewaye.com/xAPITerms/verbs/loggedout </a> </td></tr>
-<tr><th align="left">Statement Example</th><td> <a href="/recipes/vle/logout.md#verb">Logged out</a> </td></tr>
+<tr><th align="left">Statement Example</th><td> <a href="/recipes/vle/vle-logout.md#verb">Logged out</a> </td></tr>
 </table>
 
 ### Scored
@@ -66,7 +66,7 @@ The following [xAPI Verbs](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-
 <tr><th align="left">Verb</th><td>Scored</td></tr>
 <tr><th align="left">Description</th><td>Indicates a numerical value related to an Actor's performance on an Activity.</td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://adlnet.gov/expapi/verbs/scored">http://adlnet.gov/expapi/verbs/scored</a> </td></tr>
-<tr><th align="left">Statement Example</th><td> In <a href="/recipes/vle/assignment-graded.md#verb">Assignment Graded</a> Statement template</td></tr>
+<tr><th align="left">Statement Example</th><td> In <a href="/recipes/vle/vle-assignment-graded.md#verb">Assignment Graded</a> Statement template</td></tr>
 </table>
 
 ### Answered
@@ -74,10 +74,8 @@ The following [xAPI Verbs](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-
 <tr><th align="left">Verb</th><td>Answered</td></tr>
 <tr><th align="left">Description</th><td>  Indicates the actor replied to a question, where the object is generally an activity representing the question. result.Activity.</td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://adlnet.gov/expapi/verbs/answered">http://adlnet.gov/expapi/verbs/answered</a> </td></tr>
-<tr><th align="left">Statement Example</th><td> In <a href="/recipes/answered_questions.md#verb">Answered Questions</a> Statement template</td></tr>
+<tr><th align="left">Statement Example</th><td> In <a href="/recipes/vle/vle-answered-questions.md#verb">Answered Questions</a> Statement template</td></tr>
 </table>
-
-
 
 ### Session timed out
 <table>
