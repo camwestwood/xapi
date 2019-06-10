@@ -79,7 +79,7 @@ Here are descriptions of Statements that can be sent to the Jisc Learning Data H
 
 
 ## VLE
-These are platform independent Statements related to Virtual Learning Enviroments. 
+These are platform-independent Statements related to Virtual Learning Enviroments. 
 
 <table>
 <tr><td>Statement Template</td> <td>Input TSV definitions</td>   <td>JSON Template</td><td>Example Input</td></tr>
