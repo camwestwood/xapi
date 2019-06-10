@@ -162,7 +162,7 @@ The following are extension properties in the Result entity:
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/submission_time">http://xapi.jisc.ac.uk/submission_time</a> </td></tr>
 <tr><th align="left">Example in Statement template</th><td> <a href="/recipes/attendance/attendance.md#result">attendance</a> </td></tr>
 <tr><th align="left">Data Type</th><td>String</td></tr>
-<tr><th align="left">Sample Value</th><td>eg 2015-05-24T09:00</td></tr>
+<tr><th align="left">Sample Value</th><td>eg 2015-05-24T09:00Z</td></tr>
 </table>
 
 <a name="object"></a>
@@ -172,13 +172,13 @@ The following are extension properties in the Result entity:
 ### 3.1 Activity Types
 The following are types of the [Activity Definition Object](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#activity-definition). Activity Types may use the [subType extension](vocabulary.md#sub-type) to further indicate the subType of the Activity.
 
-Some example statements make use of subTypes of Activity Types, but sub-types are not defined by the Jisc profile spec and the examples shown are indicative; it is the responsibility of the plugin to define the subType.  Since the vendors do not own the IRI, these subTypes use a Jisc-controlled namespace that relates to the vendor, vendor product, or institution which _de facto_ defines the sub-type (for example: <a href="https://github.com/jiscdev/xapi/tree/1.0/generic/iri_landing_page.md">http://bblearn.xapi.jisc.ac.uk</a>).
+Some example statements make use of subTypes of Activity Types, but subTypes are not defined by the Jisc profile spec and the examples shown are indicative; it is the responsibility of the plugin to define the subType.  Since the vendors do not own the IRI, these subTypes use a Jisc-controlled namespace that relates to the vendor, vendor product, or institution which _de facto_ defines the sub-type (for example: <a href="https://github.com/jiscdev/xapi/tree/1.0/generic/iri_landing_page.md">http://bblearn.xapi.jisc.ac.uk</a>).
 
 Example:
 ``` javascript
 "object": {
 	"objectType": "Activity",
-	"id": "http://moodle.data.alpha.jisc.ac.uk/mod/quiz/view.php?id=13"
+	"id": "http://moodle.data.alpha.jisc.ac.uk/mod/quiz/view.php?id=13",
 	"definition": {
 		"type": "http://xapi.jisc.ac.uk/vle/page",			
 		"name": { "en": "Sample page" },			   
@@ -195,7 +195,7 @@ Example:
 <tr><th align="left">Label</th><td>Application</td></tr>
 <tr><th align="left">Description</th><td>Represents any kind of software application</td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://activitystrea.ms/schema/1.0/application">http://activitystrea.ms/schema/1.0/application</a> </td></tr>
-<tr><th align="left">Statement Example</th><td> <a href="recipes/vle/login.md#complete_example">Logged in</a> </td></tr>
+<tr><th align="left">Statement Example</th><td> <a href="recipes/vle/vle-login.md#complete_example">Logged in</a> </td></tr>
 <tr><th align="left">Example Subtypes</th><td><ul><li>http://id.tincanapi.com/activitytype/mobile-app</li></ul>  </td></tr>
 
 </table>
@@ -233,7 +233,7 @@ Example:
 
 <table>
 <tr><th align="left">Label</th><td>Collaboration Space</td></tr>
-<tr><th align="left">Description</th><td>An collaboration space.<br/> A collaborative space where students can work together on group projects and assignments. For example <a href="https://community.canvaslms.com/docs/DOC-10717">Cavas Groups</a></td></tr>
+<tr><th align="left">Description</th><td>A collaborative space where students can work together on group projects and assignments. For example <a href="https://community.canvaslms.com/docs/DOC-10717">Cavas Groups</a></td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/collaboration_space">http://xapi.jisc.ac.uk/collaboration_space</a> </td></tr>
 </table>
 
@@ -289,10 +289,10 @@ Example:
 </table>
 
 
-### None-Timetabled Event
+### Non-Timetabled Event
 
 <table>
-<tr><th align="left">Label</th><td>Timetabled Event</td></tr>
+<tr><th align="left">Label</th><td>Non-timetabled Event</td></tr>
 <tr><th align="left">Description</th><td>An event not contained within the provider's timetabling system, for example an ad hoc learning activity, pastoral activity or a non-teaching activity. These events may or may not have fixed start and end times, and may or may not be within the context of a module or course. Most importantly, they are not covered by the timetabled event definition.</td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/event_non-timetable">http://xapi.jisc.ac.uk/event_non-timetable</a> </td></tr>
 <tr><th align="left">Example in Statement template</th><td> <a href="/recipes/attendance/attendance.md#object">attendance</a> </td></tr>
@@ -320,7 +320,7 @@ Example:
 
 <table>
 <tr><th align="left">Label</th><td>File</td></tr>
-<tr><th align="left">Description</th><td>Accessing any kind of non-web native file type. e.g. MS office, video or audio. </td></tr>
+<tr><th align="left">Description</th><td>Accessing any kind of non-web native file type, for example, MS office, video or audio.</td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/vle/file">http://xapi.jisc.ac.uk/vle/file</a> </td></tr>
 </table>
 
@@ -446,7 +446,6 @@ Example:
 <tr><th align="left">Example Subtypes</th><td><ul><li>http://moodle.xapi.jisc.ac.uk/quiz</li><li>http://bblearn.xapi.jisc.ac.uk/test</li><li>http://bblearn.xapi.jisc.ac.uk/survey</li></ul>  </td></tr>
 </table>
 
-
 <a name="extensions"><a/>
 ## 4.0 Object Definition and Context Extensions
 The following are Jisc Profile extensions to be used in [object.definition.extensions](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#object).
@@ -456,10 +455,10 @@ The following are Jisc Profile extensions to be used in [object.definition.exten
 Was used in older recipes to identify the genre of software application. Best practice is to use subType instead.
 
 <table>
-<tr><th align="left">Label</th><td>Application Type </td></tr>
-<tr><th align="left">Description</th><td>Identifies the genre of software application </td></tr>
-<tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/applicationType">http://xapi.jisc.ac.uk/applicationType</a> </td></tr>
-<tr><th align="left">Example in Statement template</th><td> <a href="recipes/vle/login.md#object">Logged in</a> </td></tr>
+<tr><th align="left">Label</th><td>Application Type</td></tr>
+<tr><th align="left">Description</th><td>Identifies the genre of software application</td></tr>
+<tr><th align="left">IRI</th><td><a href="http://xapi.jisc.ac.uk/applicationType">http://xapi.jisc.ac.uk/applicationType</a></td></tr>
+<tr><th align="left">Example in Statement template</th><td> <a href="recipes/vle/vle-login.md#object">Logged in</a> </td></tr>
 <tr><th align="left">Data Type</th><td>IRI</td></tr>
 <tr><th align="left">Sample Value</th><td>http://id.tincanapi.com/activitytype/lms</td></tr>
 </table>
@@ -467,9 +466,9 @@ Was used in older recipes to identify the genre of software application. Best pr
 ### Captured From
 
 <table>
-<tr><th align="left">Label</th><td>Captured From/td></tr>
+<tr><th align="left">Label</th><td>Captured From</td></tr>
 <tr><th align="left">Description</th><td>The application or device type that captured the attendance; for example, Web, Android, iOS</td></tr>
-<tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/captured_from">http://xapi.jisc.ac.uk/captured_from"</a> </td></tr>
+<tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/captured_from">http://xapi.jisc.ac.uk/captured_from</a> </td></tr>
 <tr><th align="left">Data Type</th><td>string </td></tr>
 <tr><th align="left">Sample Value</th><td>ios</td></tr>
 </table>
