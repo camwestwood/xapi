@@ -148,7 +148,7 @@ The following are extension properties in the Result entity:
 <tr><th align="left">Label</th><td>Scored</td></tr>
 <tr><th align="left">Description</th><td>A non-numerical assessment result. Data type is string (256)</td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/grade">http://xapi.jisc.ac.uk/grade</a> </td></tr>
-<tr><th align="left">Statement Example</th><td> <a href="recipes/vle/assignment-graded.md#result">Assignment Graded</a> </td></tr>
+<tr><th align="left">Statement Example</th><td> <a href="recipes/vle/vle-assignment-graded.md#result">Assignment Graded</a> </td></tr>
 <tr><th align="left">Value Space</th><td>String</td></tr>
 <tr><th align="left">Sample Value</th><td>5 Stars</td></tr>
 </table>
@@ -206,7 +206,7 @@ Example:
 <tr><th align="left">Label</th><td>Assessment</td></tr>
 <tr><th align="left">Description</th><td>An assessment is an Activity Type that determines a learner’s mastery of a particular subject area. An assessment typically has one or more questions.</td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://adlnet.gov/expapi/activities/assessment">http://adlnet.gov/expapi/activities/assessment</a> </td></tr>
-<tr><th align="left">Statement Example</th><td> <a href="recipes/vle/assignment-submitted.md">assignment-submitted</a> </td></tr>
+<tr><th align="left">Statement Example</th><td> <a href="recipes/vle/vle-assignment-submitted.md">assignment-submitted</a> </td></tr>
 <tr><th align="left">Example Subtypes</th><td><ul><li>http://bblearn.xapi.jisc.ac.uk/selfandpeerassessment</li><li>http://bblearn.xapi.jisc.ac.uk/safeassignment</li><li>http://moodle.xapi.jisc.ac.uk/assignment</li></ul>  </td></tr>
 </table>
 
@@ -383,9 +383,6 @@ Example:
 <tr><th align="left">IRI</th><td>http://xapi.jisc.ac.uk/activities/syllabus</td></tr>
 </table>
 
-
-
-
 ### Tutor session
 
 <table>
@@ -516,7 +513,7 @@ For more information, see Jisc Profile [CourseArea properties](#coursearea).
 <tr><th align="left">Label</th><td>Due Date</td></tr>
 <tr><th align="left">Description</th><td>Date student's work is due to be submitted. Format is ISO8601 date time. </td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/dueDate">http://xapi.jisc.ac.uk/dueDate</a> </td></tr>
-<tr><th align="left">Example in Statement template</th><td> <a href="recipes/vle/assignment-graded.md#object">assignment-graded</a> </td></tr>
+<tr><th align="left">Example in Statement template</th><td> <a href="recipes/vle/vle-assignment-graded.md#object">assignment-graded</a> </td></tr>
 <tr><th align="left">Data Type</th><td>String</td></tr>
 <tr><th align="left">Value Space</th><td>ISO 8601 date time</td></tr>
 <tr><th align="left">Sample Value</th><td>2016-02-05T17:59:45.000Z</td></tr>
@@ -643,7 +640,7 @@ For more information, see Jisc Profile [CourseArea properties](#coursearea).
 <tr><th align="left">Label</th><td>Statement Category (Deprecated as of 1.0.3) </td></tr>
 <tr><th align="left">Description</th><td>Identifies the statement category for querying lookup. </td></tr>
 <tr><th align="left">string</th><td> <a href="https://xapi.jisc.ac.uk/statementCat">https://xapi.jisc.ac.uk/statementCat</a> </td></tr>
-<tr><th align="left">Example in Statement template</th><td> <a href="recipes/vle/login.md#context">Logged in</a> </td></tr>
+<tr><th align="left">Example in Statement template</th><td> <a href="recipes/vle/vle-login.md#context">Logged in</a> </td></tr>
 <tr><th align="left">Data Type</th><td>String</td></tr>
 <tr><th align="left">Value Space</th><td>Attendance, VLE, Library</td></tr>
 <tr><th align="left">Sample Value</th><td>Attendance</td></tr>
@@ -655,7 +652,7 @@ For more information, see Jisc Profile [CourseArea properties](#coursearea).
 <tr><th align="left">Label</th><td>Recipe Category (Deprecated as of 1.0.3) </td></tr>
 <tr><th align="left">Description</th><td>Identifies the statement category for querying lookup. </td></tr>
 <tr><th align="left">string</th><td> <a href="https://xapi.jisc.ac.uk/recipeCat">https://xapi.jisc.ac.uk/recipeCat</a> </td></tr>
-<tr><th align="left">Example in Statement template</th><td> <a href="recipes/vle/login.md#context">Logged in</a> </td></tr>
+<tr><th align="left">Example in Statement template</th><td> <a href="recipes/vle/vle-login.md#context">Logged in</a> </td></tr>
 <tr><th align="left">Data Type</th><td>String</td></tr>
 <tr><th align="left">Value Space</th><td>Any recipe Category</td></tr>
 <tr><th align="left">Sample Value</th><td>Attendance</td></tr>
@@ -667,7 +664,7 @@ For more information, see Jisc Profile [CourseArea properties](#coursearea).
 <tr><th align="left">Label</th><td>Sub Type </td></tr>
 <tr><th align="left">Description</th><td>Identifies the sub genre of any Activity Type.  </td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/subType">http://xapi.jisc.ac.uk/subType</a> </td></tr>
-<tr><th align="left">Example in Statement template</th><td> <a href="recipes/vle/login.md#object">Logged in</a> </td></tr>
+<tr><th align="left">Example in Statement template</th><td> <a href="recipes/vle/vle-login.md#object">Logged in</a> </td></tr>
 <tr><th align="left">Data Type</th><td>IRI or String</td></tr>
 <tr><th align="left">Sample Value</th><td>http://id.tincanapi.com/activitytype/lms</td></tr>
 </table>
@@ -678,7 +675,7 @@ For more information, see Jisc Profile [CourseArea properties](#coursearea).
 <tr><th align="left">Label</th><td>User Agent</td></tr>
 <tr><th align="left">Description</th><td>String with User-Agent characteristics. Used to identify the application type, operating system, software vendor or software version of the requesting software user agent. </td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/extensions/user-agent">http://xapi.jisc.ac.uk/subType</a> </td></tr>
-<tr><th align="left">Example in Statement template</th><td> <a href="recipes/app/app-login.md#object">Application Logged in</a> </td></tr>
+<tr><th align="left">Example in Statement template</th><td> <a href="recipes/studyapps/app-login.md#object">Application Logged in</a> </td></tr>
 <tr><th align="left">Data Type</th><td>String</td></tr>
 <tr><th align="left">Sample Value</th><td>Mozilla/5.0 (iPad; U; CPU OS 3_2_1 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Mobile/7B405</td></tr>
 </table>
@@ -772,5 +769,5 @@ attendance statements: optional
 ## 6.0 Naming Concentions
 
 
-* Minted IRIs must indicates the entity they are to be used in:. For example: xapi.jisc.ac.uk/verbs/verb , xapi.jisc.ac.uk/extensions/extension
+* Minted IRIs must indicate the entity they are to be used in. For example: xapi.jisc.ac.uk/verbs/verb, xapi.jisc.ac.uk/extensions/extension
 * Minted IRIs to use snakecase:  xapi.jisc.ac.uk/extensions/snake_case
