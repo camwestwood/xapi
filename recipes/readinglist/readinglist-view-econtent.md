@@ -8,7 +8,7 @@ Based on generic template statement: [Viewed](/generic/view.md)
 This template defines the structure and terms to record the experience of viewing econtent.
 
 ### Actor
-Common entity identifier:  ActorA, as defined on the [common structures](/common_structures.md#actora) page.
+Common entity identifier: [ActorA](/common_structures.md#actora) 
 
 The actor entity describes the individual that is viewing econtent.
 
@@ -54,7 +54,7 @@ The Verb, [viewed](/vocabulary.md#verbs), denotes the action of the user's brows
 
 
 ### Object
-Common entity identifier: ObjectA, as defined on the [common structures](/common_structures.md#objecta) page.
+Common entity identifier: [ObjectA](/common_structures.md#objecta)
 
 ### Example
 

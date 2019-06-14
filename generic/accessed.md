@@ -10,7 +10,7 @@ The entities and properties described here represent a typical Statement templat
 Natural language example of a typical login Statement: "John Smith logged in to his university Moodle VLE using his mobile phone."
 
 ### Actor
-Common entity identifier:  ActorA, as defined on the [common structures](/common_structures.md#actora) page.
+Common entity identifier: [ActorA](/common_structures.md#actora) 
 
 The actor entity describes the individual that is accessing econtent.
 
@@ -56,7 +56,7 @@ The Verb, [access](/vocabulary.md#verbs), denotes the action of the user's brows
 
 
 ### Object
-Common entity identifier: ObjectA, as defined on the [common structures](/common_structures.md#objecta) page. 
+Common entity identifier: [ObjectA](/common_structures.md#objecta) 
 
 An object type of http://activitystrea.ms/schema/1.0/service is required for this statement,
 

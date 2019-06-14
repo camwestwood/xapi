@@ -83,7 +83,7 @@ Common entity identifier:  [ObjectB](/common_structures.md#objectb)
 ```
 
 ### Context
-Common entity identifier: ContextA, as defined on the [common structures](/common_structures.md#contexta) page.
+Common entity identifier: [ContextA](/common_structures.md#contexta)  
 
 #### Entity Example:
 

@@ -39,7 +39,7 @@ This Verb, [logged in](/vocabulary.md#logged-in), describes the action of loggin
 ```
 
 ### Context
-Common entity identifier: ContextA, as defined on the [common structures](/common_structures.md#contexta) page.
+Common entity identifier: [ContextA](/common_structures.md#contexta)  
 
 Since the logged-in action is not undertaken in respect of a particular learning activity or course, only the core attributes of the Context entity are applicable.
 
@@ -62,7 +62,7 @@ Since the logged-in action is not undertaken in respect of a particular learning
 ```
 
 ### Object
-Common entity identifier: ObjectA, as defined on the [common structures](/common_structures.md#objecta) page.
+Common entity identifier: [ObjectA](/common_structures.md#objecta)
 
 When logging in to a Mobile App the object.definition.type should be http://activitystrea.ms/schema/1.0/application. When the object.definition.type is "http://activitystrea.ms/schema/1.0/application", the subType (http://xapi.jisc.ac.uk/subType) extension should be used to identify the subType of the application that is being logged into, in this example a Mobile App, identified by  http://id.tincanapi.com/activitytype/mobile-app. Different application types should use the relevant subType, as defined on the [vocabularies](/vocabulary.md#activity-types) page.
 

@@ -10,7 +10,7 @@ Natural language example of a typical Statement: "John Smith scored 90% when he 
 ## Definition
 ### Actor
 
-Common entity identifier:  ActorA, as defined on the [common structures](/common_structures.md#actora) page.
+Common entity identifier: [ActorA](/common_structures.md#actora) 
 
 The Actor entity describes the individual whose work has been graded.
 
