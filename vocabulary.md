@@ -298,6 +298,14 @@ Example:
 <tr><th align="left">Example in Statement template</th><td> <a href="/recipes/attendance/attendance.md#object">attendance</a> </td></tr>
 </table>
 
+### Enrollment
+
+<table>
+<tr><th align="left">Label</th><td>Enrollment</td></tr>
+<tr><th align="left">Description</th><td>Enrollment</td></tr>
+<tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/activities/enrollement">http://xapi.jisc.ac.uk/activities/enrollement</a> </td></tr>
+</table>
+
 ### External Content
 
 <table>
@@ -355,8 +363,16 @@ Example:
 
 <table>
 <tr><th align="left">Label</th><td>Outcome</td></tr>
-<tr><th align="left">Description</th><td></td></tr>
-<tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/activities/syllabus">http://xapi.jisc.ac.uk/activities/syllabus</a> </td></tr>
+<tr><th align="left">Description</th><td>A measure used to track competency or mastery in a course or across a program.</td></tr>
+<tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/activities/outcome">http://xapi.jisc.ac.uk/activities/outcome</a> </td></tr>
+</table>
+
+### Roster
+
+<table>
+<tr><th align="left">Label</th><td>Roster</td></tr>
+<tr><th align="left">Description</th><td>List of students on the course/module.  </td></tr>
+<tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/activities/roster">http://xapi.jisc.ac.uk/activities/roster</a> </td></tr>
 </table>
 
 ### Study Goal Statistics
@@ -444,6 +460,15 @@ Example:
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/vle/quiz">http://xapi.jisc.ac.uk/vle/quiz</a> </td></tr>
 <tr><th align="left">Example in Statement template</th><td> <a href="recipes/vle/vle-viewed-content.md#object">Resource viewed</a> </td></tr>
 <tr><th align="left">Example Subtypes</th><td><ul><li>http://moodle.xapi.jisc.ac.uk/quiz</li><li>http://bblearn.xapi.jisc.ac.uk/test</li><li>http://bblearn.xapi.jisc.ac.uk/survey</li></ul>  </td></tr>
+</table>
+
+
+### Wiki
+
+<table>
+<tr><th align="left">Label</th><td>Wiki</td></tr>
+<tr><th align="left">Description</th><td>Wiki</td></tr>
+<tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/activities/wiki">http://xapi.jisc.ac.uk/activities/wiki</a> </td></tr>
 </table>
 
 <a name="extensions"><a/>
