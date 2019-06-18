@@ -29,6 +29,14 @@ The following example of a [Verb entity](https://github.com/adlnet/xAPI-Spec/blo
 
 The following [xAPI Verbs](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#verb) are defined as part of the Jisc Profile:
 
+### Access
+<table>
+<tr><th align="left">Verb</th><td>Access</td></tr>
+<tr><th align="left">Description</th><td>The action of the user's browser or app requesting a service.</td></tr>
+<tr><th align="left">IRI</th><td>http://activitystrea.ms/schema/1.0/access</td></tr>
+<tr><th align="left">Statement Example</th><td> <a href="/recipes/econtent/econtent-accessed-econtent.md#verb">Accessed service</a> </td></tr>
+</table>
+
 ### Attended
 <table>
 <tr><th align="left">Verb</th><td>Attended</td></tr>
