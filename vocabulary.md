@@ -475,7 +475,7 @@ Example:
 
 <table>
 <tr><th align="left">Label</th><td>Wiki</td></tr>
-<tr><th align="left">Description</th><td>Wiki</td></tr>
+<tr><th align="left">Description</th><td>Website which users can collaboratively modify directly from the web browser. </td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/activities/wiki">http://xapi.jisc.ac.uk/activities/wiki</a> </td></tr>
 </table>
 
