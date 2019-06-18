@@ -310,7 +310,7 @@ Example:
 
 <table>
 <tr><th align="left">Label</th><td>Enrollment</td></tr>
-<tr><th align="left">Description</th><td>Enrollment</td></tr>
+<tr><th align="left">Description</th><td>The action of enrolling or being enrolled.</td></tr>
 <tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/activities/enrollement">http://xapi.jisc.ac.uk/activities/enrollement</a> </td></tr>
 </table>
 
