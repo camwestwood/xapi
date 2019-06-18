@@ -403,7 +403,7 @@ Example:
 ### Syllabus
 
 <table>
-<tr><th align="left">Label</th><td>Subject Area</td></tr>
+<tr><th align="left">Label</th><td>Syllabus</td></tr>
 <tr><th align="left">Description</th><td>Information that defines the academic expectations and responsibilities. </td></tr>
 <tr><th align="left">IRI</th><td>http://xapi.jisc.ac.uk/activities/syllabus</td></tr>
 </table>
