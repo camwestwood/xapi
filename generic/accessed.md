@@ -3,10 +3,14 @@
 [Statement Template Changes](/version_changes.md#access_service)
 
 ## Purpose
-This template defines the structure and terms to record the experience of accessing a service.
+This generic Statement template describes a user accessing something. Use this template to create a specific access Statement template, for example for a accessing a sevice.
+
+The entities and properties described here represent a typical Statement template. Further properties or constraints could be defined to create a login Statement template for a more specific purpose.
+
+Natural language example of a typical login Statement: "John Smith logged in to his university Moodle VLE using his mobile phone."
 
 ### Actor
-Common entity identifier:  ActorA, as defined on the [common structures](/common_structures.md#actora) page.
+Common entity identifier: [ActorA](/common_structures.md#actora) 
 
 The actor entity describes the individual that is accessing econtent.
 
@@ -52,7 +56,7 @@ The Verb, [access](/vocabulary.md#verbs), denotes the action of the user's brows
 
 
 ### Object
-Common entity identifier: ObjectA, as defined on the [common structures](/common_structures.md#objecta) page. 
+Common entity identifier: [ObjectA](/common_structures.md#objecta) 
 
 An object type of http://activitystrea.ms/schema/1.0/service is required for this statement,
 
@@ -89,7 +93,7 @@ An object type of http://activitystrea.ms/schema/1.0/service is required for thi
 		<td>ip address</td>
 	</tr>
 	<tr>
-		<td>context.extensions.statementCat version [0..1]</td>
+		<td>context.extensions.recipeCat version [0..1]</td>
 		<td>Recommended for querying lookup. Set to "Library" in library statements <br/></td>
 		<td>string</td>
 	</tr>
@@ -102,9 +106,9 @@ An object type of http://activitystrea.ms/schema/1.0/service is required for thi
 	"context": {
 		"platform": "ezproxy",
 		"extensions": {
-			"http://xapi.jisc.ac.uk/version": "1.0.2",
+			"http://xapi.jisc.ac.uk/version": "1.0.3",
 			"http://id.tincanapi.com/extensions/ip-address": "165.154.154.1",
-			"https://xapi.jisc.ac.uk/statementCat": "Library"
+			"https://xapi.jisc.ac.uk/recipeCat": "Library"
 		}
 	}
 ```
@@ -140,9 +144,9 @@ An object type of http://activitystrea.ms/schema/1.0/service is required for thi
 	"context": {
 		"platform": "ezproxy",
 		"extensions": {
-			"http://xapi.jisc.ac.uk/version": "1.0.2",
+			"http://xapi.jisc.ac.uk/version": "1.0.3",
 			"http://id.tincanapi.com/extensions/ip-address": "165.154.154.1",
-			"https://xapi.jisc.ac.uk/statementCat": "Library"
+			"https://xapi.jisc.ac.uk/recipeCat": "Library"
 		}
 	}
 }

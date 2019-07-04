@@ -1,4 +1,4 @@
-# mobile_app_content_viewed statement template
+# app_content_viewed statement template
 
 Based on generic template statement: [Viewed](/generic/view.md)
 
@@ -19,7 +19,7 @@ The actor entity describes the individual that is viewing an app resource.
         "objectType": "Agent",
         "account": {
             "name": "jsmith12",
-            "homePage": "https://courses.alpha.jisc.ac.uk/moodle"
+            "homePage": "https://jisc.ac.uk/studygoal/"
         }
 
 ```
@@ -50,9 +50,9 @@ Common entity identifier: [ContextA](/common_structures.md#contexta) page.
         "extensions": {
 					
 		  	"http://xapi.jisc.ac.uk/sessionId": "32456891"  ,
-			"http://xapi.jisc.ac.uk/statementCat": "App",
+			"http://xapi.jisc.ac.uk/recipeCat": "App",
 		  	"http://id.tincanapi.com/extension/ip-address": "10.3.3.48",
-			"http://xapi.jisc.ac.uk/version" : "1.0.2"
+			"http://xapi.jisc.ac.uk/version" : "1.0.3"
 			
 			}
               
@@ -110,9 +110,9 @@ In this recipe the object should identify what was viewed. A list of valid value
 		"platform": "Study-Goal",
 		"extensions": {
 			"http://xapi.jisc.ac.uk/sessionId": "32456891",
-			"http://xapi.jisc.ac.uk/statementCat": "App",
+			"http://xapi.jisc.ac.uk/recipeCat": "App",
 			"http://id.tincanapi.com/extension/ip-address": "10.3.3.48",
-			"http://xapi.jisc.ac.uk/version": "1.0.2"
+			"http://xapi.jisc.ac.uk/version": "1.0.3"
 		}
 
 	},

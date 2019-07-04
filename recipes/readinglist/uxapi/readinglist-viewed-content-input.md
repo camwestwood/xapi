@@ -1,13 +1,15 @@
 This is the input file for a library-accessed-econtent event.
 
-Data should be supplied as a UTF-8 Tab Separated File called econtent.tsv.
+Data should be supplied as a UTF-8 Tab Separated File called readinglist-accessed.tsv.
 
 # library-accessed-econtent
 
 * [USERNAME](#username) [1]
 * [TIMESTAMP](#timestamp) [1]
-* [HOSTNAME](#hostname) [1]
+* [URL](#url) [1]
 * [CLIENT_IP](#client_ip) [0..1]
+* [LIST_ITEM](#list_item) [0..1]
+* [USER_AGENT](#user_agent) [0..1]
 
 
 
@@ -55,3 +57,13 @@ Value is a string representing an Internet Protocol address (IP address) in eith
 
 ### Format
 String (255)
+
+## USER_AGENT 
+### Description
+String with User-Agent characteristics. Used to identify the application type, operating system, software vendor or software version of the requesting software user agent. 
+
+### Valid Values
+Any
+
+### Format
+string

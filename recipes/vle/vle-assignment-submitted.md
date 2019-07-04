@@ -8,8 +8,9 @@ This Statement template records a user submitting an assignment.
 ## Definition
 
 ### Actor
-Common entity identifier:  ActorA, as defined on the [common structures](/common_structures.md#actora) page.
+Common entity identifier: [ActorA](/common_structures.md#actora) 
 
+#### Entity Example:
 The Actor entity describes the individual who has submitted the assignment.
 
 ``` Javascript
@@ -24,10 +25,11 @@ The Actor entity describes the individual who has submitted the assignment.
 ```
 
 ### Verb
-Common entity identifier: VerbA, as defined on the [common structures](/common_structures.md#verba) page.
+Common entity identifier: [VerbA](/common_structures.md#verba)
 
 The Verb [completed](/vocabulary.md#verbs) describes the action of completing an Activity - finishing it in its entirety.
 
+#### Entity Example:
 ``` javascript
 "verb": {
         "id": "http://adlnet.gov/expapi/verbs/completed",
@@ -40,6 +42,7 @@ The Verb [completed](/vocabulary.md#verbs) describes the action of completing an
 ### Result (Deprecated)
 The Result entity describes the completion of a learning activity.
 
+#### Entity Example:
 <table>
 	<tr><th>Property [cardinality]</th><th>Description</th><th>Data type</th></tr>
 	<tr>
@@ -50,6 +53,7 @@ The Result entity describes the completion of a learning activity.
 </table>
 
 #### Example:
+
 ``` javascript
  "result":{
         "completion":true
@@ -57,9 +61,9 @@ The Result entity describes the completion of a learning activity.
 ```
 
 ### Object
-Common entity identifier: ObjectB, as defined on the [common structures](/common_structures.md#objectb) page.
+Common entity identifier:  [ObjectB](/common_structures.md#objectb) 
 
-Example:
+#### Entity Example:
 
 ``` javascript
 
@@ -79,9 +83,9 @@ Example:
 ```
 
 ### Context
-Common entity identifier: ContextA, as defined on the [common structures](/common_structures.md#contexta) page.
+Common entity identifier: [ContextA](/common_structures.md#contexta)  
 
-Example:
+#### Entity Example:
 
 ``` javascript
 "context": {
@@ -95,12 +99,22 @@ Example:
 				"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0"
 				},
 			
-			"http://xapi.jisc.ac.uk/statementCat": "VLE",
+			"http://xapi.jisc.ac.uk/recipeCat": "VLE",
+			"http://xapi.jisc.ac.uk/extensions/user-agent": "Mozilla/5.0 (iPad; U; CPU OS 3_2_1 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Mobile/7B405",
 			"http://xapi.jisc.ac.uk/sessionId":"32456891",
          	"http://id.tincanapi.com/extension/ip-address": "10.3.3.48",
-			"http://xapi.jisc.ac.uk/version" : "1.0.2"
+			"http://xapi.jisc.ac.uk/version" : "1.0.3"
 			}
 		}
+```
+### Timestamp
+
+In assignment graded statements the timestamp property is set to time the assignment was submitted.
+
+#### Example:
+
+``` javascript
+ "timestamp": "2016-02-05T10:00:00.000Z"
 ```
 
 ### Complete VLE Specific Examples

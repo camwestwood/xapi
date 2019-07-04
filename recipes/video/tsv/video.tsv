@@ -1,0 +1,11 @@
+TIMESTAMP	USER_ID	USERNAME	EMAIL	SESSION_ID	SESSION_NAME	OBJECT_ID	FOLDER_NAME	MINUTES_WATCHED	VIEWING_TYPE
+11/15/2018 1:44:52 AM	7defd8ba-33ff-45ea-a55a-a8b800010c53	username	user@panopto.com	0ecc10b9-b161-4780-a3b9-a99900196b8a	sessionname	749bab78-5913-44c9-b58e-a8ef01538b2e	foldernname	0.030178967	Interactive Desktop On Demand
+11/15/2018 1:46:42 AM	7defd8ba-33ff-45ea-a55a-a8b800010c53	username	user@panopto.com	e8bbc4ba-2101-4fae-9c78-a999001ca54e	sessionname	749bab78-5913-44c9-b58e-a8ef01538b2e	foldernname	0.036940417	Interactive Desktop On Demand
+11/30/2018 1:30:34 AM	a8276a9c-4cd8-4e76-8c90-a8e70171d41a	username	user@panopto.com	6c97b17c-53de-4b4b-8821-a8e10154bbe6	sessionname	255428a7-aa2e-4a73-bef5-a8e10154ab33	foldernname	0.55699945	Embedded Viewer
+11/30/2018 1:31:13 AM	a8276a9c-4cd8-4e76-8c90-a8e70171d41a	username	user@panopto.com	6c97b17c-53de-4b4b-8821-a8e10154bbe6	sessionname	255428a7-aa2e-4a73-bef5-a8e10154ab33	foldernname	1.166161977	Embedded Viewer
+11/30/2018 1:33:28 AM	a8276a9c-4cd8-4e76-8c90-a8e70171d41a	username	user@panopto.com	6c97b17c-53de-4b4b-8821-a8e10154bbe6	sessionname	255428a7-aa2e-4a73-bef5-a8e10154ab33	foldernname	0.357575598	Embedded Viewer
+11/16/2018 12:24:36 AM	3b998779-04af-4437-89ed-a99a0005180c	username	user@panopto.com	a0a3d736-2500-4a46-ab47-a999017de5cc	sessionname	7bdf75e6-636c-4380-ab8b-a999017d8b82	foldernname	0.033333333	Android App On Demand
+11/16/2018 12:29:35 AM	3b998779-04af-4437-89ed-a99a0005180c	username	user@panopto.com	8da81e30-b95c-4ec6-b0ce-a99a000767c3	sessionname	c0e51a0c-7e2b-4405-aefb-a8d50163082e	foldernname	0.058440622	Android App Live Broadcast
+11/16/2018 12:43:41 AM	3b998779-04af-4437-89ed-a99a0005180c	username	user@panopto.com	8da81e30-b95c-4ec6-b0ce-a99a000767c3	sessionname	c0e51a0c-7e2b-4405-aefb-a8d50163082e	foldernname	0.519703293	Android App Live Broadcast
+11/27/2018 11:12:06 PM	4737d416-d629-429b-8436-980f2b3b68cd	username	user@panopto.com	85c4c356-a8fa-49fa-8e32-a923000b8f8c	sessionname	c1f0947a-c591-4b18-9d9a-6a1989b2da11	foldernname	0.5	Android App On Demand
+

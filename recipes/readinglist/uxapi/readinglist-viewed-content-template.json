@@ -16,17 +16,29 @@
 	},
 	"object": {
 		"objectType": "Activity",
-		"id": "**HOSTNAME**",
+		"id": "**URL**",
 		"definition": {
-			"type": "http://activitystrea.ms/schema/1.0/service"
+			"type": "http://xapi.jisc.ac.uk/externalContent"
 		}
 	},
 	"context": {
 		"platform": "**PLATFORM**", 
 		"extensions": {
-				"http://xapi.jisc.ac.uk/version": "1.0.2",
-				"http://id.tincanapi.com/extensions/ip-address": "**CLIENT_IP**",
-				"https://xapi.jisc.ac.uk/statementCat": "Library"
+
+			"contextActivities":{
+				"parent":[
+					{
+						
+						"id":"**PARENT_ID**"
+						
+					}
+				]
+			},
+
+				"http://xapi.jisc.ac.uk/version": "1.0.3",
+				"https://xapi.jisc.ac.uk/recipeCat": "Readinglist",
+				"http://xapi.jisc.ac.uk/extensions/user-agent": "**USER_AGENT**"
+		}
 				
 		}
 

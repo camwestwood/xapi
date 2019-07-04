@@ -1,46 +1,51 @@
-# borrowed statement template
+# item_borrowed Statement template
 
 [Statement Template Changes](/version_changes.md#borrowed)
 
 ## Purpose
 This template defines the structure and terms to record the experience of borrowing an item from the library.
 
-### Actor
-Common entity identifier:  ActorA, as defined on the [common structures](/common_structures.md#actora) page.
+Natural language example of a typical Statement: "The student, John Smith, borrowed the book 'Introduction to Java' (OCLC number 1234567890) from the university library at 13:05 on 18 November 2018."
+
+## Actor
+Common entity identifier: [ActorA](/common_structures.md#actora) 
+
+The actor entity identifies the individual borrowing the object.
 
 ### Example:
 
 ``` Javascript
 {
-    "version": "1.0.0",
-    "actor": {
-        "objectType": "Agent",
-        "account": {
-            "name": "jsmith20",
-            "homePage": "http://library.universityofjisc.ac.uk/" 
-        }
-    },
+   "actor": {
+      "objectType": "Agent",
+      "name": "John Smith",
+      "account": {
+         "name": "jsmith20",
+         "homePage": "http://library.universityofjisc.ac.uk/" 
+      }
+   }
+}
 ```
 
-### Verb
+## Verb
 Common entity identifier: VerbA, as defined on the [common structures](/common_structures.md#verba) page.
 
-The Verb depends [borrowed](http://activitystrea.ms/schema/1.0/borrowed) indicates that the actor has borrowed the object.
-
+The Verb [borrowed](http://activitystrea.ms/schema/1.0/borrowed) indicates that the student has borrowed the object.
 
 ### Example:
 
 ``` javascript
-"verb": {
-        "id": "http://activitystrea.ms/schema/1.0/borrowed",
-        "display": {
-            "en": "borrowed"
-        }
-    },
+{
+   "verb": {
+      "id": "http://activitystrea.ms/schema/1.0/borrowed",
+      "display": {
+         "en": "borrowed"
+      }
+   }
+}
 ```
 
-
-### Object
+## Object
 
 <table>
 	<tr><th>Property [cardinality]</th><th>Description</th><th>Value information</</th></tr>
@@ -51,7 +56,7 @@ The Verb depends [borrowed](http://activitystrea.ms/schema/1.0/borrowed) indicat
 	</tr>
 	<tr>
 		<td>object.id [1]</td>
-		<td>An identifier for the object of the xAPI statement. This must be unique across all object types.</td>
+		<td>An identifier for the thing being borrowed. This must be unique across all object types.</td>
 		<td>iri</td>
 	</tr>
 	<tr>
@@ -61,22 +66,22 @@ The Verb depends [borrowed](http://activitystrea.ms/schema/1.0/borrowed) indicat
 	</tr>
 	<tr>
 		<td>object.definition.name [0..1]</td>
-		<td>Optional object name</td>
+		<td>Optional name of the thing being borrowed</td>
 		<td>string</td>
 	</tr>
 	<tr>
 		<td>object.definition.extensions.http://xapi.jisc.ac.uk/subType [0..1]</td>
-		<td>May be used to indicate the sub-type of this activity, if applicable for the recipe being used to create the statement. This qualifies the object.objectType, and is described on the [vocabularies](vocabulary.md#object-definition-extensions) page.</td>
+		<td>May be used to indicate the sub-type of this activity, if applicable for the recipe being used to create the statement. This qualifies the object.objectType, and is described on the <a href="../../vocabulary.md#extensions">vocabulary page</a>.</td>
 		<td>iri</td>
 	</tr>
 	<tr>
 		<td>object.definition.extensions.http://oclc.com/number [0..1]</td>
-		<td>OCLC Number</td>
+		<td>OCLC Number of the thing being borrowed</td>
 		<td>string</td>
 	<tr>
 	<tr>
 		<td>object.definition.extensions.http://xapi.jisc.ac.uk/subject_area [0..1]</td>
-		<td>The subject area of the item.</td>
+		<td>The subject area of the thing being borrowed</td>
 		<td>string</td>
 	<tr>
 </table>
@@ -85,50 +90,54 @@ The Verb depends [borrowed](http://activitystrea.ms/schema/1.0/borrowed) indicat
 ### Example
 
 ``` javascript
-"object": {
-	"objectType": "Activity",
-	"id": "http://library.universityofjisc.ac.uk/0123456789" 	
-	"definition": {
-		"type": "http://xapi.jisc.ac.uk/library/resource",	
-		"name": { "en": "Intro to Java" },			   
-	        }
-		"extensions": {
-			"http://xapi.jisc.ac.uk/subType":"http://id.tincanapi.com/activitytype/book",
-			"http://oclc.com/number": "1234567890",
-			"http://xapi.jisc.ac.uk/subject_area": "Mathamatics"
-		}
+{
+   "object": {
+      "objectType": "Activity",
+      "id": "http://library.universityofjisc.ac.uk/13579",
+      "definition": {
+         "type": "http://xapi.jisc.ac.uk/library/resource",
+         "name": { "en": 
+	    "Introduction to Java"
+	 }
+      },
+      "extensions": {
+         "http://xapi.jisc.ac.uk/subType": "http://id.tincanapi.com/activitytype/book",
+         "http://oclc.com/number": "1234567890",
+	 "http://xapi.jisc.ac.uk/subject_area": "Computing"
+      }
+   }
 }
 ```
 
-### Timestamp
+## Timestamp
 An ISO 8601 format timestamp that corresponds to the time of when the item was borrowed.
 
 ### Example:
 
 ``` javascript
-"timestamp": "2015-09-18T01:54:51.484Z",
+{
+   "timestamp": "2018-11-18T13:05:51.484Z"
+}
 ```
 
-
-### Context
-
+## Context
 
 <table>
 	<tr><th>Property [cardinality]</th><th>Description</th><th>Value information</</th></tr>
 	<tr>
 		<td>context.platform [0..1]</td>
-		<td>The platform used in the experience of this learning activity. The value used should not change between platform upgrades and version changes, and should typically be a concise name by which the application is commonly known, for example "Moodle" or "Blackboard"</td>
+		<td>The platform used in the experience of this learning activity. The value used should not change between platform upgrades and version changes, and should typically be a concise name by which the application is commonly known.</td>
 		<td>string</td>
 	</tr>
 	<tr>
 		<td>context.extensions.version [0..1]</td>
-		<td>Recommended, identifies the version of the Jisc xAPI profile found on the ReadMe page. <br/></td>
-		<td>string</td>
+		<td>Recommended. Identifies the version of the Jisc xAPI Profile found on the ReadMe page.<br/></td>
+		<td>decimal</td>
 	</tr>
 	<tr>
-		<td><a href="vocabulary.md#statement-category">context.extensions.https://xapi.jisc.ac.uk/statementCat</a> [0..1]</td>
-		<td>Recommended, For querying lookup. Set to "Library" in library statements <br/></td>
-		<td>string</td>
+		<td><a href="vocabulary.md#recipe-category">context.extensions.https://xapi.jisc.ac.uk/recipeCat</a> [0..1]</td>
+		<td>Recommended. For querying lookup. Set to "Library" in library statements.<br/></td>
+		<td>"Library"</td>
 	</tr>
 	<tr>
 		<td><a href="vocabulary.md#borrowing-site">context.extensions.http://xapi.jisc.ac.uk/borrowing_site</a> [0..1]</td>
@@ -137,66 +146,61 @@ An ISO 8601 format timestamp that corresponds to the time of when the item was b
 	</tr>
 </table>
 
-
-
-
 ### Example:
 
 ``` javascript
-"context": {
-  "platform" :"WorldShare",
-  "extensions": {
-	"http://xapi.jisc.ac.uk/statementCat": "Library",
-	"http://xapi.jisc.ac.uk/borrowing_site": "Main Library",
-	"http://xapi.jisc.ac.uk/version": "1.0.2"
-	
-  }
+{
+   "context": {
+      "platform" :"WorldShare",
+      "extensions": {
+	"http://xapi.jisc.ac.uk/version": "1.0.3",
+	"http://xapi.jisc.ac.uk/recipeCat": "Library",
+	"http://xapi.jisc.ac.uk/borrowing_site": "Main Library"	
+      }
+   }
 }
 ```
 
-### Full Example:
+## Full Example:
 ``` javascript
 {
-    "version": "1.0.0",
-    "actor": {
-        "objectType": "Agent",
-        "account": {
-            "name": "jsmith12",
-            "homePage": "http://library.universityofjisc.ac.uk/" 
-        }
-    },
-	"verb": {
-        "id": "http://activitystrea.ms/schema/1.0/borrowed",
-        "display": {
-            "en": "borrowed"
-        }
-    },
-	"object": {
-		"objectType": "Activity",
-		"id": "http://library.universityofjisc.ac.uk/0123456789",
-		"definition": {
-			"type": "http://xapi.jisc.ac.uk/library/resource",
-			"name": {
-				"en": "Intro to Java"
-			},
-			"extensions": {
-				"http://xapi.jisc.ac.uk/subType": "http://id.tincanapi.com/activitytype/book",
-				"http://oclc.com/number": "ocn123456789",
-				"http://xapi.jisc.ac.uk/subject_area": "Mathamatics"
-			}
+	"actor": {
+		"objectType": "Agent",
+		"name": "John Smith",
+		"account": {
+			"name": "jsmith20",
+			"homePage": "http://library.universityofjisc.ac.uk/" 
 		}
 	},
-	
-	"timestamp": "2015-09-18T01:54:51.484Z",
-	
+	"verb": {
+		"id": "http://activitystrea.ms/schema/1.0/borrowed",
+		"display": {
+			"en": "borrowed"
+		}
+	},
+	"object": {
+		"objectType": "Activity",
+		"id": "http://library.universityofjisc.ac.uk/13579",
+		"definition": {
+			"type": "http://xapi.jisc.ac.uk/library/resource",
+			"name": { "en": 
+				"Introduction to Java"
+			}
+		},
+		"extensions": {
+			"http://xapi.jisc.ac.uk/subType": "http://id.tincanapi.com/activitytype/book",
+			"http://oclc.com/number": "1234567890",
+			"http://xapi.jisc.ac.uk/subject_area": "Computing"
+      		}
+	},
+	"timestamp": "2018-11-18T13:05:51.484Z",
 	"context": {
 		"platform" :"WorldShare",
 		"extensions": {
-			"http://xapi.jisc.ac.uk/statementCat": "library",
-			"http://xapi.jisc.ac.uk/borrowing_site": "Main Library",
-			"http://xapi.jisc.ac.uk/version": "1.0.2"
-	
-  		}
-  	}
+			"http://xapi.jisc.ac.uk/version": "1.0.3",
+			"http://xapi.jisc.ac.uk/recipeCat": "Library",
+			"http://xapi.jisc.ac.uk/borrowing_site": "Main Library"	
+		}
+	}
 }
 ```

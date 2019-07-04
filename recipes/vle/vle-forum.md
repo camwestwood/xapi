@@ -1,4 +1,4 @@
-# VLE forum post and reply template
+# vle_forum_post and reply template
 
 ## Purpose
 This statement defines the structure and terms to record a post or reply to a forum within a VLE.
@@ -43,10 +43,11 @@ The verb [create](/vocabulary.md#create) denotes the action of creating an objec
 
 In forum post statements the timestamp property must be set to the date and time of the post.
 
-#### Example:
+#### Entity Example:
 
+``` javascript
  "timestamp": "2016-02-05T10:00:00.000Z"
-
+```
 
 ### Result
 The result.response entity contains plain text from the post encoded as per the encoding of the rest of the statement. There must be no markup,  HTML entity encodings or invalid characters.
@@ -72,7 +73,7 @@ Common entity identifier: [ObjectA](/common_structures.md#objecta)
 #### Entity Example:
 The object.definition.type is http://xapi.jisc.ac.uk/forum-post
 
- ``` javascript
+``` javascript
 "object": {
 	"objectType": "Activity",
 	"id": "https://courses.alpha.jisc.ac.uk/mod/forum/discuss.php?d=19474"	
@@ -104,7 +105,7 @@ The Context may describe the parent forum of the thread in context.contextActivi
 	  },
 
     "extensions": {
-			"http://xapi.jisc.ac.uk/statementCat": "VLE",
+			"http://xapi.jisc.ac.uk/recipeCat": "VLE",
 			
 			"http://xapi.jisc.ac.uk/courseArea": {
       		 	"http://xapi.jisc.ac.uk/vle_mod_id": "LA101",
@@ -112,8 +113,9 @@ The Context may describe the parent forum of the thread in context.contextActivi
 			},
 			
 			"http://xapi.jisc.ac.uk/sessionId":"32456891",
-			"http://id.tincanapi.com/extension/ip-address": "10.3.3.48"
-			"http://xapi.jisc.ac.uk/version" : "1.0.2"
+            "http://xapi.jisc.ac.uk/extensions/user-agent": "Mozilla/5.0 (iPad; U; CPU OS 3_2_1 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Mobile/7B405",
+			"http://id.tincanapi.com/extension/ip-address": "10.3.3.48",
+			"http://xapi.jisc.ac.uk/version" : "1.0.3"
 			}
 		}
 ```
@@ -161,7 +163,8 @@ The Context may describe the parent forum of the thread in context.contextActivi
 	  },
 
    "extensions": {
-	 "http://xapi.jisc.ac.uk/statementCat": "VLE",
+	 "http://xapi.jisc.ac.uk/recipeCat": "VLE",
+     "http://xapi.jisc.ac.uk/extensions/user-agent": "Mozilla/5.0 (iPad; U; CPU OS 3_2_1 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Mobile/7B405",
 	 "http://xapi.jisc.ac.uk/courseArea": {
       		 "http://xapi.jisc.ac.uk/vle_mod_id": "LA101",
 		 "http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0"
@@ -169,7 +172,7 @@ The Context may describe the parent forum of the thread in context.contextActivi
 			
 	"http://xapi.jisc.ac.uk/sessionId":"32456891",
 	"http://id.tincanapi.com/extension/ip-address": "10.3.3.48",
-	"http://xapi.jisc.ac.uk/version" : "1.0.2"
+	"http://xapi.jisc.ac.uk/version" : "1.0.3"
 	}
   }
 }

@@ -18,6 +18,7 @@ Data should be supplied as a UTF-8 Tab Separated File called quiz-completed.tsv
 * [SCORE_MAX](#score_max) [0..1]
 * [SESSION_ID](#session_id) [0..1]
 * [CLIENT_IP](#client_ip) [1]
+* [USER_AGENT](#user_agent) [0..1]
 
 
 
@@ -183,3 +184,13 @@ Any
 
 ### Format
 String (256)
+
+## USER_AGENT 
+### Description
+String with User-Agent characteristics. Used to identify the application type, operating system, software vendor or software version of the requesting software user agent. 
+
+### Valid Values
+Any
+
+### Format
+string

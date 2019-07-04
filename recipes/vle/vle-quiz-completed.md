@@ -1,16 +1,16 @@
-# quiz_assessed statement template
+# vle_quiz_assessed Statement template
+
 
 ## Purpose
+This template defines the structure and terms to record the experience of completing a quiz
 
 ## Definition
 
 ### Actor
-Common entity identifier:  ActorA, as defined on the [common structures](/common_structures.md#actora) page.
-
-The actor entity describes the individual who is making the post.
+Common entity identifier: [ActorA](/common_structures.md#actora) 
 
 #### Entity Example:
-
+The actor entity describes the individual who has completed a quiz.
 
 ``` Javascript
 {
@@ -24,9 +24,9 @@ The actor entity describes the individual who is making the post.
 ```
 
 ### Verb
-Common entity identifier: VerbA, as defined on the [common structures](/common_structures.md#verba) page.
+Common entity identifier: [VerbA](/common_structures.md#verba) 
 
-#### Entity properties:
+#### Entity Example:
 The verb used in quiz_assessed statement is [completed](/vocabulary.md#verbs).
 
 ``` javascript
@@ -39,17 +39,18 @@ The verb used in quiz_assessed statement is [completed](/vocabulary.md#verbs).
 ``` 
 
 ### Timestamp
-
 In quiz completed statements the timestamp property must be set to the date and time othe quiz was completed.
 
 #### Example:
 
+``` Javascript
  "timestamp": "2016-02-05T10:00:00.000Z"
+```
 
 ### Result
-Common entity identifier: ResultA [common structures](/common_structures.md#result-a) page.
+Common entity identifier: [ResultA](/common_structures.md#result-a) 
 
-### Example
+#### Entity Example:
 
 ``` javascript 
 
@@ -66,13 +67,10 @@ Common entity identifier: ResultA [common structures](/common_structures.md#resu
 ```
 
 ### Object
-Common entity identifier: ObjectA, as defined on the [common structures](/common_structures.md#objecta) page.
-
+Common entity identifier: [ObjectA](/common_structures.md#objecta)
 
 #### Entity Example:
 
-
-#### Example:
 
 ``` javascript
 
@@ -87,17 +85,16 @@ Common entity identifier: ObjectA, as defined on the [common structures](/common
 ```
 
 ### Context
-Common entity identifier: ContextA, as defined on the [common structures](/common_structures.md#contexta) page. 
+Common entity identifier: [ContextA](/common_structures.md#contexta) page. 
 
 #### Entity Example:
 
 
-### Example:
-
 ``` javascript
 "context": {
       "extensions": {
-        "http://xapi.jisc.ac.uk/statementCat": "VLE",
+        "http://xapi.jisc.ac.uk/recipeCat": "VLE",
+        "http://xapi.jisc.ac.uk/extensions/user-agent": "Mozilla/5.0 (iPad; U; CPU OS 3_2_1 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Mobile/7B405",
         "http://xapi,jisc.ac.uk/courseArea": {
           "http://xapi.jisc.ac.uk/vle_mod_id": "Test1"
         },
@@ -152,7 +149,8 @@ Common entity identifier: ContextA, as defined on the [common structures](/commo
 		
 	"context": {
       "extensions": {
-        "http://xapi.jisc.ac.uk/statementCat": "VLE",
+        "http://xapi.jisc.ac.uk/recipeCat": "VLE",
+    	  "http://xapi.jisc.ac.uk/extensions/user-agent": "Mozilla/5.0 (iPad; U; CPU OS 3_2_1 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Mobile/7B405",
         "http://xapi.jisc.ac.uk/courseArea": {
           "http://xapi.jisc.ac.uk/vle_mod_id": "Test1"
         },

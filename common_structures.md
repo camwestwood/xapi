@@ -97,7 +97,7 @@ The significance of data in a Statement can be more clearly understood if we des
 ### ContextA
 Common entity identifier: ContextA
 
-This pattern is used across many Statements in the Jisc Profile, but there may be additional data elements required for some Statements. Four extensions are provided, with IRIs as defined on the <a href="vocabulary.md#extensions">vocabularies page</a>.
+This pattern is used across many Statements in the Jisc Profile, but there may be additional data elements required for some Statements. Extensions are provided, with IRIs as defined on the <a href="vocabulary.md#extensions">vocabularies page</a>.
 
 <table>
 	<tr><th>Property [cardinality]</th><th>Description</th><th>Value information</</th></tr>
@@ -113,7 +113,7 @@ This pattern is used across many Statements in the Jisc Profile, but there may b
 	</tr>
 	<tr>
 		<td>context.extension.sessionId [0..1]</td>
-		<td>The VLE session ID, or a suitably hashed version of it. A value should be provided if this information is available.</td>
+		<td>Any session ID, or a suitably hashed version of it. A value should be provided if this information is available.</td>
 		<td>string</td>
 	<tr> 
 		<td>context.extension.ip-address [1]</td>
@@ -124,9 +124,13 @@ This pattern is used across many Statements in the Jisc Profile, but there may b
 		<td>The academic context in which this Activity is situated (e.g. umbrella course, or parent area). The properties in courseArea must be a UDD Module Instance ID or a VLE Module ID or both. More information can be found on the <a href="vocabulary.md#course-area">vocabularies page</a>.</td>
 		<td>JSON object</td>
 	<tr> 
-		<tr>
-		<td>context.extensions.https://xapi.jisc.ac.uk/statementCat [0..1]</td>
-		<td>Recommended For querying lookup. Set to category of statement. Attendance, VLE, Library <br/></td>
+		<td>context.extensions.https://xapi.jisc.ac.uk/recipeCat [0..1]</td>
+		<td>Recommended For querying lookup. Set to category of recipe, for example, Attendance, VLE, Library <br/></td>
+		<td>string</td>
+	</tr>
+	<tr> 
+		<td>context.extensions.http://xapi.jisc.ac.uk/extensions/user-agent [0..1]</td>
+		<td>String with User-Agent characteristics. Used to identify the application type, operating system, software vendor or software version of the requesting software user agent. <br/></td>
 		<td>string</td>
 	</tr>
 	</table>
@@ -136,17 +140,17 @@ This pattern is used across many Statements in the Jisc Profile, but there may b
 "context": {
         "platform": "Moodle",
         "extensions": {
-	
-			"http://xapi.jisc.ac.uk/courseArea": {
-				"http://xapi.jisc.ac.uk/vle_mod_id": "LA101",
-				"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0"
-			},
-					
-		"http://xapi.jisc.ac.uk/sessionId": "32456891"  ,
-		"http://id.tincanapi.com/extension/ip-address": "10.3.3.48"
-		"http://xapi.jisc.ac.uk/version" : "1.0.2"
-			}
-        }
+		"http://xapi.jisc.ac.uk/courseArea": {
+			"http://xapi.jisc.ac.uk/vle_mod_id": "LA101",
+			"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0"
+		},			
+		"http://xapi.jisc.ac.uk/sessionId": "32456891",
+		"http://id.tincanapi.com/extension/ip-address": "10.3.3.48",
+		"http://xapi.jisc.ac.uk/version" : "1.0.3",
+		"http://xapi.jisc.ac.uk/recipeCat": "VLE",				
+    		"http://xapi.jisc.ac.uk/extensions/user-agent": "Mozilla/5.0 (iPad; U; CPU OS 3_2_1 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Mobile/7B405"
+	}	
+}
 ``` 
 ### ContextB
 Common entity identifier: ContextB
@@ -158,7 +162,7 @@ The ContextB pattern is similar to ContextA, but with the addition of a contextA
 	<tr>
 		<td>context.contextActivities [0..1]</td>
 		<td>An optional property that holds a mandatory parent property. It allows statements to be associated with the Object entity's Activity as part of a larger whole. The example shows a course within the VLE. 
-		<td>The 'property' property has a object as its value, typically just the object.id.</td>
+		<td>The 'property' property has an object as its value, typically just the object.id.</td>
 	</tr>
 	<tr>
 		<td>context.platform [1]</td>
@@ -172,23 +176,27 @@ The ContextB pattern is similar to ContextA, but with the addition of a contextA
 	</tr>
 	<tr>
 		<td>context.extension.sessionId [0..1]</td>
-		<td>The VLE session ID, or a suitably hashed version of it. A value should be provided if this information is available.</td>
+		<td>Any session ID, or a suitably hashed version of it. A value should be provided if this information is available.</td>
 		<td>string</td>
 		</tr>
-	<tr> 
+	<tr>  
 		<td>context.extension.ip-address [1]</td>
 		<td>Client's IP address. An IPv4 address is recommended.</td>
 		<td>ip address</td>
 		</tr>
 	<tr> 
 		<td>context.extension.courseArea [0..1]</td>
-		<td>Umbrella course/parent area by its an UDD Module Instance ID or VLE Module ID. More information can be found on the <a href="vocabulary.md#course-area">vocabularies page</a>..</td>
+		<td>Umbrella course/parent area by its an UDD Module Instance ID or VLE Module ID. More information can be found on the <a href="vocabulary.md#course-area">vocabularies page</a>.</td>
 		<td>JSON object</td>
 		</tr>
 	<tr> 
+		<td>context.extensions.https://xapi.jisc.ac.uk/recipeCat [0..1]</td>
+		<td>Recommended For querying lookup. Set to category of recipe.<br/></td>
+		<td>string</td>
+		<tr> 
 		<tr>
-		<td>context.extensions.https://xapi.jisc.ac.uk/statementCat [0..1]</td>
-		<td>Recommended For querying lookup. Set to category of statement. Attendance, VLE, Library <br/></td>
+		<td>context.extensions.http://xapi.jisc.ac.uk/extensions/user-agent [0..1]</td>
+		<td>String with User-Agent characteristics. Used to identify the application type, operating system, software vendor or software version of the requesting software user agent. <br/></td>
 		<td>string</td>
 	</tr>
 </table>
@@ -199,30 +207,24 @@ The ContextB pattern is similar to ContextA, but with the addition of a contextA
 	"contextActivities":{
             "parent":[
                 {
-                    
-                    "id":"http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=4"
-                    
+                	"id":"http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=4"
                 }
             ]
         },
-        
         "platform": "Moodle",
-        "extensions": {
-		
-			"http://xapi.jisc.ac.uk/courseArea": {
-				"http://xapi.jisc.ac.uk/vle_mod_id": "LA101",
-				"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0",
-			},
-			
+        "extensions": {		
+		"http://xapi.jisc.ac.uk/courseArea": {
+			"http://xapi.jisc.ac.uk/vle_mod_id": "LA101",
+			"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0"
+		},	
  		"http://xapi.jisc.ac.uk/sessionId":"32456891",
-        "http://id.tincanapi.com/extension/ip-address": "10.3.3.48"
-		"http://xapi.jisc.ac.uk/version" : "1.0.2"
-			}
-		}
+        	"http://id.tincanapi.com/extension/ip-address": "10.3.3.48",
+		"http://xapi.jisc.ac.uk/version" : "1.0.3",
+		"http://xapi.jisc.ac.uk/recipeCat": "VLE",				
+    		"http://xapi.jisc.ac.uk/extensions/user-agent": "Mozilla/5.0 (iPad; U; CPU OS 3_2_1 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Mobile/7B405"
+	}
+}
 ```
-
-
-
 
 ## Object
 Depending on the Statement, different patterns apply to express the Object of a Statement.
@@ -246,7 +248,8 @@ This Object pattern describes the core attributes of Object as used in the Jisc 
 	</tr>
 	<tr>
 		<td>object.definition.type [1]</td>
-		<td>Indicates the type of the Object of the Statement. It is required and valid values are listed on the [vocabularies](vocabulary.md#activity-types) page.</td>
+		<td>Indicates the type of the Object of the Statement. It is required and valid values are listed on the 
+			[vocabularies](vocabulary.md#activity-types) page.</td>
 		<td>iri</td>
 	</tr>
 	<tr>
@@ -256,7 +259,7 @@ This Object pattern describes the core attributes of Object as used in the Jisc 
 	</tr>
 	<tr>
 		<td>object.definition.extensions.http://xapi.jisc.ac.uk/subType [0..1]</td>
-		<td>May be used to indicate the sub-type of this Activity, if applicable for the recipe being used to create the Statement. This qualifies the object.objectType, and is described on the [vocabularies](vocabulary.md#object-definition-extensions) page.</td>
+		<td>May be used to indicate the sub-type of this Activity, if applicable for the recipe being used to create the Statement. This qualifies the object.objectType, and is described on the <a href="vocabulary.md#object-definition-extensions">vocabularies page</a>.</td>
 		<td>iri</td>
 	</tr>
 </table>
@@ -317,25 +320,91 @@ This Object pattern describes an Activity with a due date.
 #### Example:
 ``` javascript
 "object":{
-
-		"objectType":"Activity",
-		"id":"http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=4",
-		"definition":{
-			"type":"http://adlnet.gov/expapi/activities/assessment",
+	"objectType":"Activity",
+	"id":"http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=4",
+	"definition":{
+		"type":"http://adlnet.gov/expapi/activities/assessment",
 			"name":{
 				"en":"Course Assignment"
 			},
 			"description":{
 				"en":"Course Assignment description"
-				}
-			},
-			
-		    "extensions":{
-				"http://xapi.jisc.ac.uk/dueDate": "2016-02-05T17:59:45.000Z"
 			}
-			
-		}
+		},	
+	"extensions":{
+		"http://xapi.jisc.ac.uk/dueDate": "2016-02-05T17:59:45.000Z"
+	}
+}
 ```
+
+### ObjectC
+Common entity identifier: ObjectC
+
+This Object pattern describes an Activity which is some kind of interaction, such as a question.
+
+<table>
+	<tr><th>Property [cardinality]</th><th>Description</th><th>Value information</</th></tr>
+	<tr>
+		<td>object.objectType [1]</td>
+		<td>The value must be "Activity".</td>
+		<td>String, value must be "Activity".</td>
+	</tr>
+	<tr>
+		<td>object.id [1]</td>
+		<td>An identifier for the Object of the xAPI Statement. This must be unique (within a given platform) across all Object types.</td>
+		<td>iri</td>
+	</tr>
+	<tr>
+		<td>object.definition.type [1]</td>
+		<td>Indicates the type of the Object of the Statement. It is required and valid values are listed on the <a href="vocabulary.md#31-activity-types">vocabulary page</a></td>
+		<td>iri</td>
+	</tr>
+	<tr>
+		<td>object.definition.name [0..1]</td>
+		<td>Optional Object name</td>
+		<td>string</td>
+	</tr>
+	<tr>
+		<td>object.definition.description [0..1]</td>
+		<td>Optional Object description</td>
+		<td>string</td>
+	</tr>
+	<tr>
+		<td>object.definition.extensions.http://xapi.jisc.ac.uk/dueDate [0..1]</td>
+		<td>Indicates when an assignment is due</td>
+		<td>ISO 8601 date time</td>
+	</tr>
+	<td>object.definition.interactionType [0..1]</td>
+		<td>The type of interaction. Possible values are: true-false, choice, fill-in, long-fill-in, matching, performance, sequencing, likert, numeric or other. <a href="https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#interaction-types">xAPI spec for more details</a>.</td>
+		<td>iri</td>
+	</tr>
+		<td>object.definition.choices [0..1]</td>
+		<td>Choice of answers. If the interaction type is set to choice. <a href="https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#interaction-types">xAPI spec for more details</a>.</td>
+		<td>Javascript Array</td>
+	</tr>
+</table>
+
+
+#### Example:
+``` javascript
+"object":{
+	"objectType":"Activity",
+	"id":"http://moodle.data.alpha.jisc.ac.uk/course/view.php?id=4",
+	"definition":{
+		"type":"http://adlnet.gov/expapi/activities/assessment",
+		"name":{
+			"en":"Course Assignment"
+		},
+		"description":{
+			"en":"Course Assignment description"
+		}
+	},
+	"extensions":{
+		"http://xapi.jisc.ac.uk/dueDate": "2016-02-05T17:59:45.000Z"
+	}
+}
+```
+
 ## Result A
 
 The entity can include scaled, raw, min and max score, success, and response (the instructor's feedback) if known. See [score](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#Score). See the [vocabulary](vocabulary.md) page for a definition of the 'http://xapi.jisc.ac.uk/grade' extension.

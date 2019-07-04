@@ -34,9 +34,9 @@
 	"context": {
 		"platform": "**PLATFORM**",
 		"extensions": {
-			"http://xapi.jisc.ac.uk/statementCat": "Library",
+			"http://xapi.jisc.ac.uk/recipeCat": "Library",
 			"http://xapi.jisc.ac.uk/borrowing_site": "**BORROWING_SITE**",
-			"http://xapi.jisc.ac.uk/version": "1.0.2"
+			"http://xapi.jisc.ac.uk/version": "1.0.3"
 		}
 	}
 }

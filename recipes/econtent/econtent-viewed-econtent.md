@@ -1,4 +1,4 @@
-# econtent viewed statement template
+# econtent_viewed statement template
 
 Based on generic template statement: [Viewed](/generic/view.md)
 
@@ -8,7 +8,7 @@ Based on generic template statement: [Viewed](/generic/view.md)
 This template defines the structure and terms to record the experience of viewing econtent.
 
 ### Actor
-Common entity identifier:  ActorA, as defined on the [common structures](/common_structures.md#actora) page.
+Common entity identifier: [ActorA](/common_structures.md#actora) 
 
 The actor entity describes the individual that is viewing econtent.
 
@@ -54,7 +54,7 @@ The Verb, [viewed](/vocabulary.md#verbs), denotes the action of the user's brows
 
 
 ### Object
-Common entity identifier: ObjectA, as defined on the [common structures](/common_structures.md#objecta) page.
+Common entity identifier: [ObjectA](/common_structures.md#objecta)
 
 ### Example
 
@@ -101,7 +101,7 @@ Common entity identifier: ObjectA, as defined on the [common structures](/common
 		<td>ip address</td>
 	</tr>
 	<tr>
-		<td>context.extensions.statementCat version [0..1]</td>
+		<td>context.extensions.recipeCat version [0..1]</td>
 		<td>Recommended for querying lookup. Set to "Library" in library statements <br/></td>
 		<td>string</td>
 	</tr>
@@ -113,10 +113,10 @@ Common entity identifier: ObjectA, as defined on the [common structures](/common
  "context": {
 		"platform": "UxAPI",
 		"extensions": {
-			"http://xapi.jisc.ac.uk/version": "1.0.2"
+			"http://xapi.jisc.ac.uk/version": "1.0.3"
 			"http://xapi.jisc.ac.uk/sessionId": "A438L",
 			"http://id.tincanapi.com/extensions/ip-address": "10.3.3.48",
-			"https://xapi.jisc.ac.uk/statementCat": "Library"
+			"https://xapi.jisc.ac.uk/recipeCat": "Econtent"
 			
 		}
 	}
@@ -158,10 +158,10 @@ Common entity identifier: ObjectA, as defined on the [common structures](/common
 	"context": {
 		"platform": "UxAPI",
 		"extensions": {
-			"http://xapi.jisc.ac.uk/version": "1.0.2",
+			"http://xapi.jisc.ac.uk/version": "1.0.3",
 			"http://xapi.jisc.ac.uk/sessionId": "32456891",
 			"http://id.tincanapi.com/extensions/ip-address": "10.3.3.48",
-			"https://xapi.jisc.ac.uk/statementCat": "Library"
+			"https://xapi.jisc.ac.uk/recipeCat": "Library"
 		}
 	}
 }

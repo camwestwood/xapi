@@ -2,7 +2,7 @@ This is the input file for a library-viewed-econtent event.
 
 Data should be supplied as a UTF-8 Tab Separated File called econtent.tsv.
 
-# library-viewed-econtent
+# viewed-econtent
 
 * [USERNAME](#username) [1]
 * [TIMESTAMP](#timestamp) [1]
@@ -11,6 +11,7 @@ Data should be supplied as a UTF-8 Tab Separated File called econtent.tsv.
 * [ITEM_SUBTYPE](#item_subtype) [1]
 * [SESSION_ID](#session_id) [1]
 * [CLIENT_IP](#client_ip) [0..1]
+* [USER_AGENT](#user_agent) [0..1]
 
 
 
@@ -96,5 +97,13 @@ Value is a string representing an Internet Protocol address (IP address) in eith
 ### Format
 String (255)
 
+## USER_AGENT 
+### Description
+String with User-Agent characteristics. Used to identify the application type, operating system, software vendor or software version of the requesting software user agent. 
 
+### Valid Values
+Any
+
+### Format
+string
 

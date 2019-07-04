@@ -8,11 +8,10 @@ Based on generic Statement template: [Viewed](/generic/view.md)
 This template defines the structure and terms to record the experience of viewing a vle resource such as a Moodle Module or Blackboard building block (eg a page as identified by its url).
 
 ### Actor
-Common entity identifier:  ActorA, as defined on the [common structures](/common_structures.md#actora) page.
+Common entity identifier: [ActorA](/common_structures.md#actora)
 
+#### Entity Example:
 The Actor entity describes the individual that is viewing a vle resource.
-
-### Example:
 
 ``` Javascript
 {
@@ -27,11 +26,11 @@ The Actor entity describes the individual that is viewing a vle resource.
 ```
 
 ### Verb
-Common entity identifier: VerbA, as defined on the [common structures](/common_structures.md#verba) page.
+Common entity identifier: [VerbA](/common_structures.md#verba)
 
+#### Entity Example:
 The Verb, [viewed](/vocabulary.md#verb) denotes the action of the user's browser or app requesting the resource that the user wishes to view.
 
-### Example:
 
 ``` javascript
 "verb": {
@@ -41,15 +40,16 @@ The Verb, [viewed](/vocabulary.md#verb) denotes the action of the user's browser
         }
     },
 ```
+
 ### Object
-Common entity identifier: ObjectA, as defined on the [common structures](/common_structures.md#objecta) page.
+Common entity identifier:  [ObjectA](/common_structures.md#objecta)
 
 For this Statement the Object needs to identify what was viewed. A list of valid values for the object.definition.type can be found on the [vocabularies page](/vocabulary.md#activity-types).
 
 Some statements may make use of subTypes of Activity Types. These sub-types are not defined by the Jisc profile spec, but for guidance examples can be found on the [vocabularies page](/vocabulary.md#activity-types) within the description of each valid activity type. It is the responsibility of the plugin to define the subType but the vendors do not own the IRI since these subTypes use a Jisc-controlled namespace that relates to the vendor, vendor product, or institution which de facto defines the sub-type.
 
 
-### Example
+#### Entity Example:
 
 ``` javascript
 "object": {
@@ -68,9 +68,12 @@ Some statements may make use of subTypes of Activity Types. These sub-types are 
 
 ### Context
 
-Common entity identifier: ContextA, as defined on the [common structures](/common_structures.md#contexta) page. In this Statement, the courseArea extension is required. See the [vocabularies](/vocabulary.md#coursearea) page for more information.
+Common entity identifier: [ContextA](/common_structures.md#contexta)  
 
-### Example:
+
+
+#### Entity Example:
+In this Statement, the courseArea extension is required. See the [vocabularies](/vocabulary.md#coursearea) page for more information.
 
 ``` javascript
 "context": {
@@ -82,10 +85,11 @@ Common entity identifier: ContextA, as defined on the [common structures](/commo
 			"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0"
 		},
 
-    "http://xapi.jisc.ac.uk/statementCat": "VLE",				
+    "http://xapi.jisc.ac.uk/recipeCat": "VLE",				
 	"http://xapi.jisc.ac.uk/sessionId": "32456891"  ,
-	"http://id.tincanapi.com/extension/ip-address": "10.3.3.48"
-	"http://xapi.jisc.ac.uk/version" : "1.0.2"
+	"http://id.tincanapi.com/extension/ip-address": "10.3.3.48",
+    "http://xapi.jisc.ac.uk/extensions/user-agent": "Mozilla/5.0 (iPad; U; CPU OS 3_2_1 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Mobile/7B405",
+	"http://xapi.jisc.ac.uk/version" : "1.0.3"
 			}
         }
 ```
@@ -96,8 +100,9 @@ In viewed statements the timestamp property must be set to the date and time at 
 
 #### Example:
 
+``` javascript
  "timestamp": "2016-02-05T10:00:00.000Z"
-
+```
 
 ### Complete VLE Specific Examples
 [Moodle Example](/vle/moodle/moduleview.js)
