@@ -33,12 +33,14 @@ Here are descriptions of Statements that can be sent to the Jisc Learning Data H
 </table>
 
 ## Intervention Case
+
 <table>
 <tr><td>Statement Template </td><td>Input TSV  definitions</td><td>JSON Template</td></tr>
 <tr><td> <a href="recipes/case/create-case.md"> Open a case </a> </td><td> <a href="recipes/case/uxapi/case-create-activity-input.md">case-create-activity-input.md </a>  </td> <td><a href="recipes/case/uxapi/case-create-activity-input.json">case-create-activity-input.json</a></td></tr>
 <tr><td><a href="recipes/case/update-case.md"> Update a case</a> </td><td><a href="recipes/case/uxapi/case-update-activity-input.md">case-update-activity-input.md </a>   </td> <td><a href="recipes/case/uxapi/case-update-activity-input.json">case-update-activity-input.json </a>  </td></tr>      
 <tr><td> <a href="recipes/case/close-case.md" > Close a case </a> </td><td><a href="recipes/case/uxapi/case-close-activity-input.md">case-close-activity-input.md </a>   </td> <td><a href="recipes/case/uxapi/case-close-activity-input.json">case-close-activity-input.json </a></td></tr><tr><td><a href="recipes/case/create-note.md"> Create a note</a> </td><td><a href="recipes/case/uxapi/note-create-activity-input.md">note-create-activity-input.md </a></td> <td><a href="recipes/case/uxapi/note-create-activity-input.json">note-create-activity-input.json </a></td></tr>
 </table>
+
 
 ## Library Services
 
@@ -81,6 +83,7 @@ Here are descriptions of Statements that can be sent to the Jisc Learning Data H
 </table>
 
 ## Video
+
 <table>
 <tr><td>Statement Template</td><td>Input TSV definitions</td><td>JSON Template</td><td>Example Input</td></tr>  
      <tr><td> <a href = "recipes/video/video-viewed.md">Video Viewed</a></td><td><a href="recipes/video/uxapi/video-viewed-input.md">video-viewed-input.md</a></td><td><a href="recipes/video/uxapi/video-viewed-template.json">video-video-templates.json</td><td><a href="recipes/video/tsv/video.tsv">TSV</a></td></tr>  
@@ -88,6 +91,7 @@ Here are descriptions of Statements that can be sent to the Jisc Learning Data H
 
 
 ## VLE
+
 These are platform-independent Statements related to Virtual Learning Enviroments. 
 
 <table>
