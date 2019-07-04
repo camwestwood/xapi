@@ -1,7 +1,12 @@
-# quiz_question_answered statement template
+# app_question_answered Statement template
+
+
+
+[Statement Template Changes](/version_changes.md#app-questions)
 
 ## Purpose
-Use this template to create a specific Statement for a student answering 1 or more questions.
+This Statement template records the results of a user being asked a question
+
 
 ## Definition
 
@@ -41,7 +46,9 @@ The Verb [answered](/vocabulary.md#answered). It denotes the action of the Actor
 #### Entity Example:
 In question answered statements the timestamp property is set to the time the question/s were answered.
 
+``` javascript
  "timestamp": "2016-02-05T10:00:00.000Z"
+```
 
 ### Object
 Common entity identifier: [ObjectC](/common_structures.md#objectc)

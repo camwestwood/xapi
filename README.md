@@ -17,6 +17,7 @@ If the need arises, particular versions will get their own branches, but until t
 ## Statement Vocabulary and Common Structures
 
 * [Vocabulary](vocabulary.md) gives the IRIs and definitions for Verbs, Activity types, and so on, as well as for extensions used in the Statements.
+* [Integrations](intergrations) contains the latest intergration exercises for vendors. 
 * [Common Structures](common_structures.md) outlines common patterns used across different Statements.
 * [Generic Statement Templates](generic/index.md) can be found in this directory.
 
@@ -71,7 +72,7 @@ Here are descriptions of Statements that can be sent to the Jisc Learning Data H
 <table>
 <tr><td>Statement Template</td><td>Input TSV definitions</td><td>JSON Template</td></tr> 
 <tr><td><a href = "recipes/studyapps/app-login.md">Logged in</a></td><td><a href = "recipes/studyapps/uxapi/app-loggedin-input.md">recipes/studyapps/uxapi/app-loggedin-input.md</a></td><td><a href = "recipes/studyapp/uxapi/app-loggedin-template.json">recipes/studyapp/uxapi/app-loggedin-template.json</td></tr> 
-<tr><tr><td><a href = "recipes/studyapps/app-answered-question.md">Answered Question</a></td><td><a href = "recipes/studyapps/uxapi/app-answered-question-input.md">recipes/studyapps/uxapi/app-answered-question-input.md</a></td><td><a href = "recipes/studyapps/uxapi/app-answered-question-template.json">recipes/studyapps/uxapi/app-answered-question-template.json</td></tr> 
+<tr><tr><td><a href = "recipes/studyapps/app-questions.md">Answered Question</a></td><td><a href = "recipes/studyapps/uxapi/app-answered-question-input.md">recipes/studyapps/uxapi/app-answered-question-input.md</a></td><td><a href = "recipes/studyapps/uxapi/app-answered-question-template.json">recipes/studyapps/uxapi/app-answered-question-template.json</td></tr> 
 <tr><td><a href = "recipes/studyapps/app-content-viewed.md">Mobile app content viewed</a></td><td><a href = "recipes/studyapps/uxapi/app-content-viewed.md">app-content-viewed.md</a></td><td><a href = "recipes/studyapp/uxapi/app-content-viewed.json">app-content-viewed.json</td></tr></table>    
 
 ## Reading Lists
@@ -106,7 +107,7 @@ Here are descriptions of Statements that can be sent to the Jisc Learning Data H
 
 
 ## VLE
-These are platform independent Statements related to Virtual Learning Enviroments. 
+These are platform-independent Statements related to Virtual Learning Enviroments. 
 
 <table>
 <tr><td>Statement Template</td> <td>Input TSV definitions</td>   <td>JSON Template</td><td>Example Input</td></tr>
@@ -114,9 +115,9 @@ These are platform independent Statements related to Virtual Learning Enviroment
 <tr><td> <a href = "/recipes/vle/vle-logout.md">Logged out</a></td><td><a href="recipes/vle/uxapi/vle-loggedout-input.md">vle-loggedout-input.md</a></td><td><a href="recipes/vle/uxapi/vle-loggedout-template.json">vle-loggedout-template.json</a></td>  <td><a href="recipes/vle/tsv/logged_out.tsv">TSV</a></td></tr>    
 <tr><td> <a href = "/recipes/vle/vle-viewed-content.md">VLE resource viewed   </a></td><td><a href="recipes/vle/uxapi/vle-resourceviewed-input.md">vle-resourceviewed-input.md</a></td><td><a href="recipes/vle/uxapi/vle-resourceviewed-template.json">vle-resourceviewed-template.json</a></td> <td><a href="recipes/vle/tsv/viewed.tsv">TSV</a></td></tr>    
 <tr><td> <a href =  "/recipes/vle/vle-assignment-graded.md">Assignment Graded   </a></td> <td><a href="recipes/vle/uxapi/vle-assignmentgraded-input.md">vle-assignmentgraded-input.md</a></td><td><a href="recipes/vle/uxapi/vle-assignmentgraded-template.json">vle-assignmentgraded-template.json</a> <td><a href="recipes/vle/tsv/assignment_graded.tsv">TSV</a></td></tr>
-<tr><td> <a href =  "/recipes/vle/vle-assignment-submitted.md">Assignment Submitted  </a></td><td><a href="recipes/vle/uxapi/vle-assignmentsubmitted-input.md">vle-assignmentsubmitted-input.md</a></td><td><a href="recipes/vle/uxapi/vle-assignmentsubmitted-template.json">vle-assignmentsubmitted-template.json</a></td> <td><a href="recipes/vle/tsv/assignment_submitted.tsv">TSV</a></td></tr><tr><td><a href =  "/recipes/vle/forum.md">Create a forum post</a></td><td><a href="recipes/vle/uxapi/vle-forum-input.md">vle-forum-input.md</a></td><td><a href="recipes/vle/uxapi/vle-forum-template.json">vle-forum-template.json</a></td>             <td><a href="recipes/vle/tsv/vle-forum_post.tsv">TSV</a></td></tr>
-<tr><td> <a href =  "/recipes/vle/vle-answered_questions.md">Quiz: Answered Questions</a></td><td><a href="recipes/vle/uxapi/vle-answered-questions-input.md">vle-answered-questions-input.md</a></td><td><a href="recipes/vle/uxapi/vle-answered-questions-template.json">vle-answered-questions-template.json</a></td> <td><a href="recipes/vle/tsv/answered_questions.tsv">TSV</a></td></tr>
-<tr><td> <a href =  "/recipes/vle/vle-quiz-completed">Quiz: Quiz Completed</a> <td><a href="recipes/vle/uxapi/vle-quiz-completed-input.md">vle-quiz-completed-input.md</a></td><td><a href="recipes/vle/uxapi/vle-quiz-completed-template.json">vle-quiz-completed-template.json</a><td><a href="recipes/vle/tsv/quiz_completed.tsv">TSV</a></td></td> </tr>                                                             
+<tr><td> <a href =  "/recipes/vle/vle-assignment-submitted.md">Assignment Submitted  </a></td><td><a href="recipes/vle/uxapi/vle-assignmentsubmitted-input.md">vle-assignmentsubmitted-input.md</a></td><td><a href="recipes/vle/uxapi/vle-assignmentsubmitted-template.json">vle-assignmentsubmitted-template.json</a></td> <td><a href="recipes/vle/tsv/assignment_submitted.tsv">TSV</a></td></tr><tr><td><a href =  "/recipes/vle/vle-forum.md">Create a forum post</a></td><td><a href="recipes/vle/uxapi/vle-forum-input.md">vle-forum-input.md</a></td><td><a href="recipes/vle/uxapi/vle-forum-template.json">vle-forum-template.json</a></td>             <td><a href="recipes/vle/tsv/vle-forum_post.tsv">TSV</a></td></tr>
+<tr><td> <a href =  "/recipes/vle/vle-answered-questions.md">Quiz: Answered Questions</a></td><td><a href="recipes/vle/uxapi/vle-answered-questions-input.md">vle-answered-questions-input.md</a></td><td><a href="recipes/vle/uxapi/vle-answered-questions-template.json">vle-answered-questions-template.json</a></td> <td><a href="recipes/vle/tsv/answered_questions.tsv">TSV</a></td></tr>
+<tr><td> <a href =  "/recipes/vle/vle-quiz-completed.md">Quiz: Quiz Completed</a> <td><a href="recipes/vle/uxapi/vle-quiz-completed-input.md">vle-quiz-completed-input.md</a></td><td><a href="recipes/vle/uxapi/vle-quiz-completed-template.json">vle-quiz-completed-template.json</a><td><a href="recipes/vle/tsv/quiz_completed.tsv">TSV</a></td></td> </tr>                                                             
 </table>
 
 ### All VLE Statement examples
@@ -128,8 +129,4 @@ Bug reports can be directed to the [Moodle](https://github.com/jiscdev/jisc-mood
 * [Blackboard VLE samples](vle/blackboard/Examples.md)
 * [Moodle VLE samples](vle/moodle/examples.md)
 
-
-# Deprecated Statements
-
-- [Session timeout](/recipes/vle/Session-timeout.md)    
 

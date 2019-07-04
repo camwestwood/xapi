@@ -22,6 +22,7 @@ Data should be supplied as a UTF-8 Tab Separated File called assignmentgraded.ts
 * [DUE_DATE](#due_date) [0..1]
 * [INSTRUCTOR_USERNAME](#instructor_username) [1]
 * [INSTRUCTOR_HOMEPAGE](#instructor_homepage) [1]
+* [USER_AGENT](#user_agent) [0..1]
 
 
 ## USERNAME 
@@ -225,3 +226,13 @@ Any
 
 ### Format
 String (255)
+
+## USER_AGENT 
+### Description
+String with User-Agent characteristics. Used to identify the application type, operating system, software vendor or software version of the requesting software user agent. 
+
+### Valid Values
+Any
+
+### Format
+string

@@ -12,6 +12,8 @@ Data should be supplied as a UTF-8 Tab Separated File called login.tsv
 * [OBJECT_ID](#object_id) [1]
 * [OBJECT_NAME](#object_name) [0..1]
 * [SUBTYPE](#subtype) [0..1]
+* [USER_AGENT](#user_agent) [0..1]
+
 
 ## USERNAME 
 ### Description
@@ -99,3 +101,13 @@ Any
 
 ### Format
 iri
+
+## USER_AGENT 
+### Description
+String with User-Agent characteristics. Used to identify the application type, operating system, software vendor or software version of the requesting software user agent. 
+
+### Valid Values
+Any
+
+### Format
+string

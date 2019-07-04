@@ -1,4 +1,4 @@
-# Attended_Learning_Event Statement template
+# attended_learning_event Statement template
 
 [Statement Template Changes](/version_changes.md#attendance)
 
@@ -28,6 +28,7 @@ The Actor entity describes the individual who has attended the event.
 {
     "actor": {
         "objectType": "Agent",
+	"name": "John Smith",
         "account": {
             "name": "jsmith12",
             "homePage": "https://courses.alpha.jisc.ac.uk/moodle"
@@ -87,23 +88,23 @@ The Object entity defines an event that has been attended. 1 of 2 values for obj
 		<td>string</td>
 	</tr>
 	<tr>
-	   <td>object.definition.extensions.http://xapi.jisc.ac.uk/subType [0.1]</td>
+	   <td>object.definition.extensions.http://xapi.jisc.ac.uk/subType [0..1]</td>
 	   <td>May be used to qualify what kind of event occurred - for example, for a timetabled event whether it was a lecture, practical, a group tutorial, etc - using the approach documented on the
 	   <a href="/vocabulary.md#31-activity-types">vocabulary</a> page. Separate subType lists for timetabled and non-timetabled events may be used.</td>
 	   <td>iri</td>
 	</tr>
 	<tr>
-	   <td><a href="/vocabulary.md#event-type-description">object.definition.extensions.http://xapi.jisc.ac.uk/event_type_description</a> [0.1]</td>
+	   <td><a href="/vocabulary.md#event-type-description">object.definition.extensions.http://xapi.jisc.ac.uk/event_type_description</a> [0..1]</td>
 	   <td>Description of the event type. Description is from locally-defined list. </td>
 	   <td>String, description of event</td>
 	</tr>
 	<tr>
-	   <td><a href="/vocabulary.md#event-max-count">object.definition.extensions.http://xapi.jisc.ac.uk/event_max_count </a>[0.1]</td>
+	   <td><a href="/vocabulary.md#event-max-count">object.definition.extensions.http://xapi.jisc.ac.uk/event_max_count </a>[0..1]</td>
 	   <td>The maximum number of people that could have attended the event. </td>
 	   <td>Integer</td>
 	</tr>
 	<tr>
-	   <td><a href="/vocabulary.md#event-mandatory">object.definition.extensions.http://xapi.jisc.ac.uk/event_mandatory</a> [0.1]</td>
+	   <td><a href="/vocabulary.md#event-mandatory">object.definition.extensions.http://xapi.jisc.ac.uk/event_mandatory</a> [0..1]</td>
 	   <td>States whether or not the event was mandatory.</td>
 	   <td>Integer, 1 for mandatory, 0 for non mandatory</td>
 	</tr>
@@ -113,7 +114,7 @@ The Object entity defines an event that has been attended. 1 of 2 values for obj
 	   <td>ISO8601 timestamp</td>
 	</tr>
 	<tr>
-	<td>object.definition.extensions.http://xapi.jisc.ac.uk/endtime [0.1]</td>
+	<td>object.definition.extensions.http://xapi.jisc.ac.uk/endtime [0..1]</td>
 	   <td>Planned end time. Uses datetimes for planned end time of event. Recommended</td>
 	   <td>ISO8601 timestamp</td>
 	</tr>
@@ -262,7 +263,7 @@ The result.completion must be set to true if the student attended the event, or 
          }
       },
       "extensions": {
-         "http://xapi.jisc.ac.uk/version": "1.0.2",
+         "http://xapi.jisc.ac.uk/version": "1.0.3",
          "http://xapi.jisc.ac.uk/deviceLocation": {
             "type": "Feature",
             "geometry": {
@@ -299,10 +300,10 @@ In attendance statements the timestamp property must be set to the start time of
 {
 	"actor": {
         	"objectType": "Agent",
-        	"name": "John Smith",
+		"name": "John Smith",
         	"account": {
-			"name": "2",
-			"homePage": "https://courses.alpha.jisc.ac.uk/moodle"
+				"name": "jsmith12",
+				"homePage": "https://courses.alpha.jisc.ac.uk/moodle"
 		}
 	},
 	"verb": {
@@ -362,7 +363,7 @@ In attendance statements the timestamp property must be set to the start time of
 				}
 			},
 			"http://xapi.jisc.ac.uk/courseArea": {
-				"http://xapi.jisc.ac.uk/vle_mod_id": "LA101-200-2016S1-0",
+				"http://xapi.jisc.ac.uk/uddCourseInstanceId": "LA101-200-2016S1-0",
 				"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0"
 			},
 			"http://xapi.jisc.ac.uk/recipeCat": "Attendance",

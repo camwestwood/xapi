@@ -41,6 +41,7 @@
 "context": {
 	"extensions": {
 		"http://xapi.jisc.ac.uk/recipeCat": "VLE",
+		"http://xapi.jisc.ac.uk/extensions/user-agent": "**USER_AGENT**",
 		"http://xapi.jisc.ac.uk/attempt": "**ATTEMPT_NUMBER**",
 	  	"http://xapi.jisc.ac.uk/courseArea": {
 			"http://xapi.jisc.ac.uk/vle_mod_id": "**VLE_MOD_ID**",

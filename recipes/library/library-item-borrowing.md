@@ -1,4 +1,4 @@
-# borrowed statement template
+# item_borrowed Statement template
 
 [Statement Template Changes](/version_changes.md#borrowed)
 
@@ -8,7 +8,7 @@ This template defines the structure and terms to record the experience of borrow
 Natural language example of a typical Statement: "The student, John Smith, borrowed the book 'Introduction to Java' (OCLC number 1234567890) from the university library at 13:05 on 18 November 2018."
 
 ## Actor
-Common entity identifier:  ActorA, as defined on the [common structures](/common_structures.md#actora) page.
+Common entity identifier: [ActorA](/common_structures.md#actora) 
 
 The actor entity identifies the individual borrowing the object.
 

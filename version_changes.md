@@ -10,6 +10,8 @@ v1.0.3 21-02-2019, Best practice. [Snake case and iri conventions ](https://gith
 
 ### Logged in
 
+v1.0.3 14-05-2019, Spec Change. [Added user agent optional](https://github.com/jiscdev/xapi/issues/311)
+
 v1.0.3 5-04-2019, Spec Change. [Recipe category added](https://github.com/jiscdev/xapi/issues/294)
 
 v1.0.3 5-04-2019, Spec Change. [Statement category deprecated](https://github.com/jiscdev/xapi/issues/294)
@@ -24,6 +26,8 @@ v0.2 2-05-2016, Documentation change [subType supersedes ApplicationType](https:
 
 
 ### Logged out
+
+v1.0.3 14-05-2019, Spec Change. [Added user agent optional](https://github.com/jiscdev/xapi/issues/311)
 
 v1.0.3 5-04-2019, Spec Change. [Recipe category added](https://github.com/jiscdev/xapi/issues/294)
 
@@ -41,6 +45,7 @@ v0.2 2-05-2016, Documentation change [subType supersedes ApplicationType](https:
 
 
 ### VLE resource viewed
+v1.0.3 14-05-2019, Spec Change. [Added user agent optional](https://github.com/jiscdev/xapi/issues/311)
 
 v1.0.3 5-04-2019, Spec Change. [Recipe category added](https://github.com/jiscdev/xapi/issues/294)
 
@@ -83,6 +88,7 @@ v0.2 2-05-2016, Documentation change [subType supersedes ApplicationType](https:
 
 
 #### Assignment Graded
+v1.0.3 14-05-2019, Spec Change. [Added user agent optional](https://github.com/jiscdev/xapi/issues/311)
 
 v1.0.3 5-04-2019, Spec Change. [Recipe category added](https://github.com/jiscdev/xapi/issues/294)
 
@@ -110,6 +116,7 @@ v1.0 20-03-2017, Spec change. [Description no longer required in ObjectA or B.](
 
 
 #### Assignment Submitted
+v1.0.3 14-05-2019, Spec Change. [Added user agent optional](https://github.com/jiscdev/xapi/issues/311)
 
 v1.0.3 5-04-2019, Spec Change. [Recipe category added](https://github.com/jiscdev/xapi/issues/294)
 
@@ -136,6 +143,7 @@ v1.0 11-04-2017, Documentation change. [Description no longer required in Object
 v1.0 20-03-2017, Spec change. [Description no longer required in ObjectA.](https://github.com/jiscdev/xapi/issues/148). Removed from ObjectA in Context.
 
 #### Forum post 
+v1.0.3 14-05-2019, Spec Change. [Added user agent optional](https://github.com/jiscdev/xapi/issues/311)
 
 v1.0.3 5-04-2019, Spec Change. [Recipe category added](https://github.com/jiscdev/xapi/issues/294)
 
@@ -147,6 +155,7 @@ v1.0.1 Statement Added To Repository
 
 
 #### Quiz: Answered Questions
+v1.0.3 14-05-2019, Spec Change. [Added user agent optional](https://github.com/jiscdev/xapi/issues/311)
 
 v1.0.3 5-04-2019, Spec Change. [Recipe category added](https://github.com/jiscdev/xapi/issues/294)
 
@@ -155,6 +164,7 @@ v1.0.3 5-04-2019, Spec Change. [Statement category deprecated](https://github.co
 v1.0.1 Statement Added To Repository
 
 #### Quiz: Quiz Completed
+v1.0.3 14-05-2019, Spec Change. [Added user agent optional](https://github.com/jiscdev/xapi/issues/311)
 
 v1.0.3 5-04-2019, Spec Change. [Recipe category added](https://github.com/jiscdev/xapi/issues/294)
 
@@ -246,7 +256,7 @@ Documentation change [start time and end time replace duration](https://github.c
 
 v1.0.3 Statement Added To Repository
 
-### Quiz: Quiz Completed
+### Answered Question
 
 v1.0.3 Statement Added To Repository
 

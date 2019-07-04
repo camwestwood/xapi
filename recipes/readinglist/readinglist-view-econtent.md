@@ -1,18 +1,16 @@
-# accessed service statement template
+# econtent_viewed statement template
 
-[Statement Template Changes](/version_changes.md#access_service)
+Based on generic template statement: [Viewed](/generic/view.md)
+
+[Statement Template Changes](/version_changes.md#econtent)
 
 ## Purpose
-This generic Statement template describes a user accessing something. Use this template to create a specific access Statement template, for example for a accessing a sevice.
-
-The entities and properties described here represent a typical Statement template. Further properties or constraints could be defined to create a login Statement template for a more specific purpose.
-
-Natural language example of a typical login Statement: "John Smith logged in to his university Moodle VLE using his mobile phone."
+This template defines the structure and terms to record the experience of viewing econtent.
 
 ### Actor
 Common entity identifier: [ActorA](/common_structures.md#actora) 
 
-The actor entity describes the individual that is accessing econtent.
+The actor entity describes the individual that is viewing econtent.
 
 ### Example:
 
@@ -30,7 +28,7 @@ The actor entity describes the individual that is accessing econtent.
 ```
 
 ### Timestamp
-An ISO 8601 format timestamp that corresponds to the time when the service was accessed.
+An ISO 8601 format timestamp that corresponds to the time when the content was viewed.
 
 ### Example:
 
@@ -41,36 +39,41 @@ An ISO 8601 format timestamp that corresponds to the time when the service was a
 ### Verb
 Common entity identifier: VerbA, as defined on the [common structures](/common_structures.md#verba) page.
 
-The Verb, [access](/vocabulary.md#verbs), denotes the action of the user's browser or app requesting the econtent.
+The Verb, [viewed](/vocabulary.md#verbs), denotes the action of the user's browser or app requesting the econtent.
 
 ### Example:
 
 ``` javascript
 "verb": {
-        "id": "http://activitystrea.ms/schema/1.0/access",
+        "id": "http://id.tincanapi.com/verb/viewed",
         "display": {
-            "en": "access"
+            "en": "viewed"
         }
     },
 ```
 
 
 ### Object
-Common entity identifier: [ObjectA](/common_structures.md#objecta) 
-
-An object type of http://activitystrea.ms/schema/1.0/service is required for this statement,
+Common entity identifier: [ObjectA](/common_structures.md#objecta)
 
 ### Example
 
 ``` javascript
 "object": {
 	"objectType": "Activity",
-	"id": "http://www.contenthost.com"   	 	
+	"id": "http://onlinelibrary.jisc.ac.uk/doi/10.1111"   	 	
 	"definition": {
-		"type": "http://activitystrea.ms/schema/1.0/service"
+		"type": "http://id.tincanapi.com/activitytype/resource",			
+		"name": { "en": "The Condition of the Working Class in England"
+		},
+		"extensions": {
+     		 "http://xapi.jisc.ac.uk/subType": "http://xapi.jisc.ac.uk/journal"
+	 	}
     	}
 }
 ```
+
+
 
 
 
@@ -88,6 +91,11 @@ An object type of http://activitystrea.ms/schema/1.0/service is required for thi
 		<td>Recommended, identifies the version of the Jisc xAPI profile found on the ReadMe page. <br/></td>
 		<td>decimal</td>
 	</tr>
+	<tr>
+		<td>context.extension.sessionId [0..1]</td>
+		<td>The VLE session ID, or a suitably hashed version of it. A value should be provided if this information is available.</td>
+		<td>string</td>
+	<tr> 
 		<td>context.extension.ip-address [1]</td>
 		<td>client's IP address. An IPv4 address is recommended.</td>
 		<td>ip address</td>
@@ -99,18 +107,20 @@ An object type of http://activitystrea.ms/schema/1.0/service is required for thi
 	</tr>
 </table>
 
-
 ### Example:
 
 ``` javascript
-	"context": {
-		"platform": "ezproxy",
+ "context": {
+		"platform": "UxAPI",
 		"extensions": {
-			"http://xapi.jisc.ac.uk/version": "1.0.2",
-			"http://id.tincanapi.com/extensions/ip-address": "165.154.154.1",
-			"https://xapi.jisc.ac.uk/recipeCat": "Library"
+			"http://xapi.jisc.ac.uk/version": "1.0.3"
+			"http://xapi.jisc.ac.uk/sessionId": "A438L",
+			"http://id.tincanapi.com/extensions/ip-address": "10.3.3.48",
+			"https://xapi.jisc.ac.uk/recipeCat": "Econtent"
+			
 		}
 	}
+}
 ```
 
 
@@ -126,27 +136,32 @@ An object type of http://activitystrea.ms/schema/1.0/service is required for thi
 		}
 	},
 	"timestamp": "2015-09-18T01:54:51.484Z",
-	
 	"verb": {
-        	"id": "http://activitystrea.ms/schema/1.0/access"	,
-       		 "display": {
-           		"en": "access"
-        		}
+		"id": "http://id.tincanapi.com/verb/viewed",
+		"display": {
+			"en": "viewed"
+		}
 	},
 	"object": {
 		"objectType": "Activity",
-		"id": "http://onlinelibrary.jisc.ac.uk/",
+		"id": "http://onlinelibrary.jisc.ac.uk/doi/10.1111",
 		"definition": {
-			"type": "http://activitystrea.ms/schema/1.0/service"
+			"type": "http://id.tincanapi.com/activitytype/resource",
+			"name": {
+				"en": "The Condition of the Working Class in England"
+			},
+			"extensions": {
+				"http://xapi.jisc.ac.uk/subType": "http://xapi.jisc.ac.uk/journal"
+			}
 		}
-
 	},	
 	"context": {
-		"platform": "ezproxy",
+		"platform": "UxAPI",
 		"extensions": {
-			"http://xapi.jisc.ac.uk/version": "1.0.2",
-			"http://id.tincanapi.com/extensions/ip-address": "165.154.154.1",
-			"https://xapi.jisc.ac.uk/recipeCat": "Library"
+			"http://xapi.jisc.ac.uk/version": "1.0.3",
+			"http://xapi.jisc.ac.uk/sessionId": "32456891",
+			"http://id.tincanapi.com/extensions/ip-address": "10.3.3.48",
+			"https://xapi.jisc.ac.uk/recipeCat": "readinglist"
 		}
 	}
 }

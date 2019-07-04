@@ -10,11 +10,11 @@ Natural language example of a typical Statement: "John Smith scored 90% when he 
 ## Definition
 ### Actor
 
-Common entity identifier:  ActorA, as defined on the [common structures](/common_structures.md#actora) page.
+Common entity identifier: [ActorA](/common_structures.md#actora) 
 
 The Actor entity describes the individual whose work has been graded.
 
-### Example:
+#### Entity Example:
 ``` Javascript
 {
     "actor": {
@@ -31,7 +31,7 @@ Common entity identifier: VerbA, as defined on the [common structures](/common_s
 
 The Verb [scored](/vocabulary.md#verbs) describes the student receiving a score for a learning activity.
 
-### Example:
+#### Entity Example:
 
 ``` javascript
  "verb":{
@@ -47,7 +47,7 @@ Common entity identifier: ResultA [common structures](/common_structures.md#resu
 
 The result entity is required for this kind of statement.
 
-### Example of grade result:
+#### Entity Example:
 
 ``` javascript 
 "result": {
@@ -59,7 +59,7 @@ The result entity is required for this kind of statement.
         "completion": true,
         "response": "Your answer should have been: The cow jumped over the moon."
          }
-````
+```
 
 ### Object
 Common entity identifier: uses a refinement of ObjectB, as defined on the [common structures](/common_structures.md#objectb) page.
@@ -123,7 +123,7 @@ The Context for assignment graded is based on ContextA on the [common structures
 	</tr>
 </table>
 
-### Example
+#### Entity Example:
 
 ``` javascript
 "context": {
@@ -144,13 +144,23 @@ The Context for assignment graded is based on ContextA on the [common structures
 			"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0"
              },
 				
-		"http://xapi.jisc.ac.uk/recipeCat": "VLE",		
+		"http://xapi.jisc.ac.uk/recipeCat": "VLE",	
+		"http://xapi.jisc.ac.uk/extensions/user-agent": "Mozilla/5.0 (iPad; U; CPU OS 3_2_1 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Mobile/7B405",	
 		"http://xapi.jisc.ac.uk/sessionId": "32456891" ,
 		"http://id.tincanapi.com/extension/ip-address": "10.3.3.48"
 		"http://xapi.jisc.ac.uk/version" : "1.0.2"
         }
 ```
 
+### Timestamp
+
+In assignment graded statements the timestamp property is set to time it was graded.
+
+#### Example:
+
+``` javascript
+ "timestamp": "2016-02-05T10:00:00.000Z"
+```
 
 ### Complete VLE Specific Examples
 [Blackboard Example](/vle/blackboard/asssignment_graded.json)

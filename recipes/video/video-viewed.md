@@ -74,7 +74,7 @@ The result entity is used to record total time spent consuming the video in the 
 
 
 ### Context
-The Context entity can be used to describe any surrounding circumstances, including for example the device used and id of the module. If the device supports it, session Ids and ip-addresses can be recorded. Common entity identifier: ContextA, as defined on the [common structures](/common_structures.md#contexta) page. 
+The Context entity can be used to describe any surrounding circumstances, including for example the device used and id of the module. If the device supports it, session Ids and ip-addresses can be recorded. Common entity identifier: [ContextA](/common_structures.md#contexta)   
 
 ### Example:
 
