@@ -82,7 +82,7 @@ The Context must describe extensions that describe the updates. A mode of interv
 			"http://xapi.jisc.ac.uk/statementCat": "Note",
 			"http://xapi.jisc.ac.uk/mode" : "email",
 			"http://xapi.jisc.ac.uk/weighting" : 7 ,
-			"http://xapi.jisc.ac.uk/version" : "1.0.2"
+			"http://xapi.jisc.ac.uk/version" : "1.0.3"
 			}
 		}
 }
