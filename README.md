@@ -17,6 +17,7 @@ If the need arises, particular versions will get their own branches, but until t
 ## Statement Vocabulary and Common Structures
 
 * [Vocabulary](vocabulary.md) gives the IRIs and definitions for Verbs, Activity types, and so on, as well as for extensions used in the Statements.
+* [Integrations](intergrations) contains the latest intergration exercises for vendors. 
 * [Common Structures](common_structures.md) outlines common patterns used across different Statements.
 * [Generic Statement Templates](generic/index.md) can be found in this directory.
 
@@ -29,6 +30,14 @@ Here are descriptions of Statements that can be sent to the Jisc Learning Data H
 <tr><td>Statement Template</td><td>Input TSV definitions</td><td>JSON Template</td></tr>  
 <tr><td> <a href = "/recipes/econtent/econtent-viewed-econtent.md">Viewing econtent</a></td><td><a href="recipes/econtent/uxapi/econtent-viewed-econtent-input.md">econtent-viewed-econtent-input.md</a></td><td><a href="recipes/econtent/uxapi/econtent-viewed-econtent-template.json">econtent-viewed-econtent-template.json</a></td></tr>  
 <tr><td> <a href = "/recipes/econtent/econtent-accessed-econtent.md">Accessed service</a></td><td><a href="recipes/econtent/uxapi/econtent-accessed-econtent-input.md">econtent-accessed-econtent-input.md</a></td><td><a href="recipes/econtent/uxapi/econtent-accessed-econtent-template.json">econtent-accessed-econtent-template.json</a></td></tr>  
+</table>
+
+## Intervention Case
+<table>
+<tr><td>Statement Template </td><td>Input TSV  definitions</td><td>JSON Template</td></tr>
+<tr><td> <a href="recipes/case/create-case.md"> Open a case </a> </td><td> <a href="recipes/case/uxapi/case-create-activity-input.md">case-create-activity-input.md </a>  </td> <td><a href="recipes/case/uxapi/case-create-activity-input.json">case-create-activity-input.json</a></td></tr>
+<tr><td><a href="recipes/case/update-case.md"> Update a case</a> </td><td><a href="recipes/case/uxapi/case-update-activity-input.md">case-update-activity-input.md </a>   </td> <td><a href="recipes/case/uxapi/case-update-activity-input.json">case-update-activity-input.json </a>  </td></tr>      
+<tr><td> <a href="recipes/case/close-case.md" > Close a case </a> </td><td><a href="recipes/case/uxapi/case-close-activity-input.md">case-close-activity-input.md </a>   </td> <td><a href="recipes/case/uxapi/case-close-activity-input.json">case-close-activity-input.json </a></td></tr><tr><td><a href="recipes/case/create-note.md"> Create a note</a> </td><td><a href="recipes/case/uxapi/note-create-activity-input.md">note-create-activity-input.md </a></td> <td><a href="recipes/case/uxapi/note-create-activity-input.json">note-create-activity-input.json </a></td></tr>
 </table>
 
 ## Library Services

@@ -1,0 +1,54 @@
+{
+	
+    "actor": {
+        "objectType": "Agent",
+        "account": {
+			"name": "**TUTOR_ID**",
+			"homePage": "**HOMEPAGE**"
+        }
+    },
+  "verb": {
+        "id": "http://activitystrea.ms/schema/1.0/create",
+        "display": {
+            "en": "create"
+        }
+    },
+
+"object": {
+   "objectType": "Activity",
+   "id": "**HOMEPAGE**/**OBJECT_ID**",	
+   "definition": {
+   		"type": "http://xapi.jisc.ac.uk/case",			
+   		"name": { "en": "Case" }   
+    }
+   },
+
+"timestamp": "**TIMESTAMP**",
+
+"context": {
+	"platform": "**PLATFORM**",
+
+    "extensions": {
+			"http://xapi.jisc.ac.uk/statementCat": "Note",
+			"http://xapi.jisc.ac.uk/mode" : "**MODE**",
+			"http://xapi.jisc.ac.uk/weighting" : **WEIGHTING**,
+            "http://xapi.jisc.ac.uk/version" : "1.0.2",
+            
+            "http://xapi.jisc.ac.uk/case-target": {
+				"actor": {
+					"objectType": "Agent",
+					"account": {
+						"name": "**USERNAME**",
+						"homePage": "**HOMEPAGE**"
+				}
+				
+			}
+
+
+			}
+        }
+        
+
+
+
+}

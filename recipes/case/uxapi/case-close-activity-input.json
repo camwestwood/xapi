@@ -1,0 +1,39 @@
+{
+	
+    "actor": {
+        "objectType": "Agent",
+        "account": {
+			"name": "**TUTOR_ID**",
+			"homePage": "**HOMEPAGE**"
+        }
+    },
+  "verb": {
+        "id": "http://xapi.jisc.ac.uk/close",
+        "display": {
+            "en": "Close"
+        }
+    },
+
+
+
+"object": {
+   "objectType": "Activity",
+   "id": "**HOMEPAGE**/**OBJECT_ID**",	
+   "definition": {
+   		"type": "http://xapi.jisc.ac.uk/case",			
+   		"name": { "en": "Case" }   
+    }
+   },
+	
+
+
+    "timestamp": "**TIMESTAMP**",
+
+    "extensions": {
+			"http://xapi.jisc.ac.uk/statementCat": "Note",
+			"http://xapi.jisc.ac.uk/version" : "1.0.2"
+			}
+		}
+	
+
+}
