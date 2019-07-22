@@ -111,23 +111,26 @@ The Context must identify the student who is the target of the case. A mode of i
 
 ``` javascript
 "context": {
-   "platform": "**PLATFORM**",
-   "extensions": {
-      "http://xapi.jisc.ac.uk/version" : "1.0.2",
-      "http://xapi.jisc.ac.uk/recipeCat": "Case",
-      "http://xapi.jisc.ac.uk/mode": "email",
-      "http://xapi.jisc.ac.uk/weighting": 3,
-      "http://xapi.jisc.ac.uk/case-target" {
-         "actor": {
-            "objectType": "Agent",
-	    "name": "John Smith",
-            "account": {
-               "name": "jsmith12",
-               "homePage": "https://courses.alpha.jisc.ac.uk/moodle"
-	    }
-         }
-      }
-   }
+
+	"platform": "**PLATFORM**",
+    "extensions": {
+			"http://xapi.jisc.ac.uk/statementCat": "Case",
+			"http://xapi.jisc.ac.uk/mode" : "email",
+			"http://xapi.jisc.ac.uk/weighting" : 3 ,
+			"http://xapi.jisc.ac.uk/version" : "1.0.3"
+
+			"http://xapi.jisc.ac.uk/case-target" {
+				"actor": {
+					"objectType": "Agent",
+					"account": {
+						"name": "jsmith12",
+						"homePage": "https://courses.alpha.jisc.ac.uk/moodle"
+				}
+				
+			}
+
+			}
+		}
 }
 ```
 ## Full Example

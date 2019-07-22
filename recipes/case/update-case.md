@@ -119,8 +119,10 @@ The Context contains extensions that describe the update, for example a mode of 
     		"extensions": {
 			"http://xapi.jisc.ac.uk/mode" : "email",
 			"http://xapi.jisc.ac.uk/weighting" : 7 ,
-			"http://xapi.jisc.ac.uk/recipeCat": "Case",
+
+			"http://xapi.jisc.ac.uk/recipeCat": "Note",
 			"http://xapi.jisc.ac.uk/version" : "1.0.3"
+			}
 		}
 	}
 }

@@ -99,7 +99,9 @@ The Context entity contains only the platform the case was on, the recipeCat and
 	"platform": "Jisc Notes",
 	"extensions": {
 		"http://xapi.jisc.ac.uk/recipeCat": "Case",
-		"http://xapi.jisc.ac.uk/version" : "1.0.2"
+		"http://xapi.jisc.ac.uk/version" : "1.0.3"
+			}
+
 		}
 	}
 ```

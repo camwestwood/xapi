@@ -148,6 +148,18 @@ The Context describes the parent case of the note in context.contextActivies.
 		"id": "http://activitystrea.ms/schema/1.0/create",
 		"display": {
 			"en" : "create"
+
+        "parent": [
+        {
+            "id" : "https://notes.jisc.ac.uk/138371"
+        }
+		 ]
+	  },
+
+    "extensions": {
+			"http://xapi.jisc.ac.uk/statementCat": "Note",
+			"http://xapi.jisc.ac.uk/version" : "1.0.3"
+
 			}
 	},
 	"object": {
