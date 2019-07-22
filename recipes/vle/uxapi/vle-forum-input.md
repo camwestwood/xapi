@@ -17,6 +17,7 @@ Data should be supplied as a UTF-8 Tab Separated File called forum.tsv
 * [UDD_MOD_INST_ID](#udd_mod_inst_id) [0..1]
 * [PARENT_ID](#udd_mod_inst_id) [0..1]
 * [RESPONSE](#response) [1]
+* [USER_AGENT](#user_agent) [0..1]
 
 
 
@@ -165,3 +166,13 @@ String (2047)
 
 ### Notes
 Mandatory if VLE_MOD_ID not present.
+
+## USER_AGENT 
+### Description
+String with User-Agent characteristics. Used to identify the application type, operating system, software vendor or software version of the requesting software user agent. 
+
+### Valid Values
+Any
+
+### Format
+string

@@ -1,68 +1,81 @@
- "statement": {
-    "authority": {
-      "mbox": "mailto:analytics@jisc.ac.uk",
-      "name": "Moodle",
-      "objectType": "Agent"
-    },
-    "stored": "2017-11-02T10:55:29.867100+00:00",
-    "context": {
-      "extensions": {
-        "http://blackboard&46;com/extensions/info": {
-          "https://jisc&46;blackboard&46;com/webapps/bbc-xAPI-BBLEARN/": "2.0.0",
-          "https://jisc&46;blackboard&46;com": "9.1.201510"
-        },
-        "http://id&46;tincanapi&46;com/extension/ip-address": "10.3.3.48",
-        "http://xapi&46;jisc&46;ac&46;uk/sessionId": "722601",
-        "http://xapi&46;jisc&46;ac&46;uk/recipeVersion": "1.0"
-      },
-      "platform": "Blackboard"
-    },
-    "actor": {
-      "account": {
-        "name": "test_user1",
-        "homePage": "https://jisc.blackboard.com"
-      },
-      "name": "test_user1 test_user1",
-      "objectType": "Agent"
-    },
-<<<<<<< HEAD
-    "timestamp": "2017-08-28T23:47:57.000Z",
-    "version": "1.0.0",
-    "id": "c3bcaf1e-b9d9-40c0-b335-36c40519146d",
-    "verb": {
-      "display": {
-        "en": "logged out"
-      },
-      "id": "https://brindlewaye.com/xAPITerms/verbs/loggedout"
-    },
-    "object": {
-      "definition": {
-        "description": {
-          "en": "Blackboard (https://jisc.blackboard.com)"
-        },
-        "name": {
-          "en": "Blackboard (https://jisc.blackboard.com)"
-        },
-        "extensions": {
-          "http://xapi&46;jisc&46;ac&46;uk/applicationType": "http://id.tincanapi.com/activitytype/lms"
-        },
-        "type": "http://activitystrea.ms/schema/1.0/application"
-      },
-      "id": "https://jisc.blackboard.com/webapps/login/",
-      "objectType": "Activity"
-=======
-    "context":{
-        "platform":"Blackboard",
-        "extensions":{
-            "http://xapi.jisc.ac.uk/plugin/info":{
-                "https://jisc.blackboard.com":"9.1.201410",
-                "https://jisc.blackboard.com/webapps/bbc-xAPI-BBLEARN/":"1.0.0"
+{
+        "_id": "5c4a61585c67de07df8dda7e",
+        "hasGeneratedId": false,
+        "organisation": "57f3fd05e726fabb68f6d626",
+        "lrs_id": "584550472de34e951d0b1523",
+        "client": "5845502f2de34e951d0b12bb",
+        "person": null,
+        "active": true,
+        "voided": false,
+        "timestamp": "2019-01-24T23:24:23.000Z",
+        "stored": "2019-01-25T01:07:35.953Z",
+        "hash": "fe01d2ebc189fc0d5ebf17f5e0c0c52fb3bb6384",
+        "agents": [
+            "https://jisc.blackboard.com|12345678"
+        ],
+        "relatedAgents": [
+            "https://jisc.blackboard.com|12345678"
+        ],
+        "registrations": [],
+        "verbs": [
+            "https://brindlewaye.com/xAPITerms/verbs/loggedout"
+        ],
+        "activities": [
+            "https://jisc.blackboard.com/webapps/login/"
+        ],
+        "relatedActivities": [
+            "https://usw.blackboard.com/webapps/login/"
+        ],
+        "statement": {
+            "id": "f6fad460-3c61-41e1-8b22-546930f223ea",
+            "timestamp": "2019-01-01T00:00:00.000Z",
+            "verb": {
+                "id": "https://brindlewaye.com/xAPITerms/verbs/loggedout",
+                "display": {
+                    "en": "logged out"
+                }
             },
-            "http://xapi.jisc.ac.uk/sessionId":"32456891",
-            "http://xapi.jisc.ac.uk/recipeVersion": "1.0",
-            "http://id.tincanapi.com/extension/ip-address":"10.3.3.48"
+            "actor": {
+                "name": "Jisc User",
+                "account": {
+                    "homePage": "https://jisc.blackboard.com",
+                    "name": "12345678"
+                },
+                "objectType": "Agent"
+            },
+            "object": {
+                "id": "https://jisc.blackboard.com/webapps/login/",
+                "definition": {
+                    "type": "http://activitystrea.ms/schema/1.0/application",
+                    "extensions": {
+                        "http://xapi.jisc.ac.uk/applicationType": "http://id.tincanapi.com/activitytype/lms"
+                    },
+                    "name": {
+                        "en": "Blackboard (https://jisc.blackboard.com)"
+                    },
+                    "description": {
+                        "en": "Blackboard (https://jisc.blackboard.com)"
+                    }
+                },
+                "objectType": "Activity"
+            },
+            "context": {
+                "platform": "Blackboard",
+                "extensions": {
+                    "http://blackboard.com/extensions/info": {
+                        "https://usw.blackboard.com": "3100.0.3",
+                        "https://usw.blackboard.com/webapps/bbc-xAPI-BBLEARN/": "2.0.0"
+                    },
+                    "http://xapi.jisc.ac.uk/recipeVersion": "1.0",
+                    "http://xapi.jisc.ac.uk/sessionId": "12345678",
+                    "http://id.tincanapi.com/extension/ip-address": "127.0.0.1"
+                }
+            },
+            "stored": "2019-01-01T00:00:00.000Z",
+            "authority": {
+                "name": "Jisc Client",
+                "mbox": "mailto:jisc@learninglocker.net"
+            },
+            "version": "1.0.0"
         }
->>>>>>> master
-    }
-  }
 }

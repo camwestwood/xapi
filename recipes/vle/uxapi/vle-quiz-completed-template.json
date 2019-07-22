@@ -40,7 +40,8 @@
 	  
 "context": {
 	"extensions": {
-		"http://xapi.jisc.ac.uk/statementCat": "VLE",
+		"http://xapi.jisc.ac.uk/recipeCat": "VLE",
+		"http://xapi.jisc.ac.uk/extensions/user-agent": "**USER_AGENT**",
 		"http://xapi.jisc.ac.uk/attempt": "**ATTEMPT_NUMBER**",
 	  	"http://xapi.jisc.ac.uk/courseArea": {
 			"http://xapi.jisc.ac.uk/vle_mod_id": "**VLE_MOD_ID**",
@@ -49,7 +50,7 @@
 
 		"http://xapi.jisc.ac.uk/sessionId": "**SESSION_ID**",
 		"http://id.tincanapi.com/extension/ip-address": "**CLIENT_IP**",
-		"http://xapi.jisc.ac.uk/version": "1.0.2"
+		"http://xapi.jisc.ac.uk/version": "1.0.3"
 	},
 	"platform": "**PLATFORM**"
 }

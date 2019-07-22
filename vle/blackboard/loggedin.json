@@ -1,53 +1,81 @@
- {
-    "authority": {
-      "mbox": "mailto:analytics@jisc.ac.uk",
-      "name": "Moodle",
-      "objectType": "Agent"
-    },
-    "stored": "2017-11-02T10:55:21.958300+00:00",
-    "context": {
-      "extensions": {
-        "http://blackboard&46;com/extensions/info": {
-          "https://jisc&46;blackboard&46;com/webapps/bbc-xAPI-BBLEARN/": "2.0.0",
-          "https://jisc&46;blackboard&46;com": "9.1.201510"
-        },
-        "http://id&46;tincanapi&46;com/extension/ip-address": "10.3.3.48",
-        "http://xapi&46;jisc&46;ac&46;uk/sessionId": "686696",
-        "http://xapi&46;jisc&46;ac&46;uk/recipeVersion": "1.0"
-      },
-      "platform": "Blackboard"
-    },
-    "actor": {
-      "account": {
-        "name": "test_user1",
-        "homePage": "https://jisc.blackboard.com"
-      },
-      "name": "test_user1 test_user1",
-      "objectType": "Agent"
-    },
-    "timestamp": "2017-07-21T09:48:23.000Z",
-    "version": "1.0.0",
-    "id": "864431b4-7ff6-412d-8582-4a254c5ad8e0",
-    "verb": {
-      "display": {
-        "en": "logged in to"
-      },
-      "id": "https://brindlewaye.com/xAPITerms/verbs/loggedin"
-    },
-    "object": {
-      "definition": {
-        "description": {
-          "en": "Blackboard (https://jisc.blackboard.com)"
-        },
-        "name": {
-          "en": "Blackboard (https://jisc.blackboard.com)"
-        },
-        "extensions": {
-          "http://xapi&46;jisc&46;ac&46;uk/applicationType": "http://id.tincanapi.com/activitytype/lms"
-        },
-        "type": "http://activitystrea.ms/schema/1.0/application"
-      },
-      "id": "https://jisc.blackboard.com/webapps/login/",
-      "objectType": "Activity"
-    }
-  }
+{
+        "_id": "5be6578ccccc625630180f07",
+        "hasGeneratedId": true,
+        "organisation": "57f3fd05e726fabb68f6d626",
+        "lrs_id": "584550472de34e951d0b1523",
+        "client": "5845502f2de34e951d0b12bb",
+        "person": null,
+        "active": true,
+        "voided": false,
+        "timestamp": "2019-01-01T00:00:00.000Z",
+        "stored": "2019-01-01T00:00:00.000Z",
+        "hash": "2bcf8333c7c2b71e016a2f04c36df0e2e08c9c3f",
+        "agents": [
+            "https://jisc.blackboard.com|12345"
+        ],
+        "relatedAgents": [
+            "https://jisc.blackboard.com|12345"
+        ],
+        "registrations": [],
+        "verbs": [
+            "https://brindlewaye.com/xAPITerms/verbs/loggedin"
+        ],
+        "activities": [
+            "https://jisc.blackboard.com/webapps/login/"
+        ],
+        "relatedActivities": [
+            "https://jisc.blackboard.com/webapps/login/"
+        ],
+        "statement": {
+            "id": "4f173835-9f7d-43a0-8c1c-c0b23cb19b48",
+            "timestamp": "2019-01-01T00:00:00.000Z",
+            "verb": {
+                "id": "https://brindlewaye.com/xAPITerms/verbs/loggedin",
+                "display": {
+                    "en": "logged in to"
+                }
+            },
+            "actor": {
+                "name": "Jisc User",
+                "account": {
+                    "homePage": "https://jisc.blackboard.com",
+                    "name": "12345678"
+                },
+                "objectType": "Agent"
+            },
+            "object": {
+                "id": "https://jisc.blackboard.com/webapps/login/",
+                "definition": {
+                    "type": "http://activitystrea.ms/schema/1.0/application",
+                    "extensions": {
+                        "http://xapi.jisc.ac.uk/applicationType": "http://id.tincanapi.com/activitytype/lms"
+                    },
+                    "name": {
+                        "en": "Blackboard (https://jisc.blackboard.com)"
+                    },
+                    "description": {
+                        "en": "Blackboard (https://jisc.blackboard.com)"
+                    }
+                },
+                "objectType": "Activity"
+            },
+            "context": {
+                "platform": "Blackboard",
+                "extensions": {
+                    "http://blackboard.com/extensions/info": {
+                        "https://jisc.blackboard.com": "3100.0.3",
+                        "https://jisc.blackboard.com/webapps/bbc-xAPI-BBLEARN/": "2.0.0"
+                    },
+                    "http://xapi.jisc.ac.uk/recipeVersion": "1.0",
+                    "http://xapi.jisc.ac.uk/sessionId": "12345678",
+                    "http://id.tincanapi.com/extension/ip-address": "127.0.0.1"
+                }
+            },
+            "stored": "2019-01-01T00:00:00.000Z",
+            "authority": {
+                "name": "Jisc Client",
+                "mbox": "mailto:jisc@learninglocker.net"
+            },
+            "version": "1.0.0"
+        }
+}

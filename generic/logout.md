@@ -124,7 +124,7 @@ The Object for logout Statements identifies what is being logged out of. It uses
 ``` 
 
 ### Context
-The Context entity can be used to describe any surrounding circumstances to the logout, including, for example, the device used to login. If the device supports it, session Ids and ip-addresses can be recorded. Common entity identifier: ContextA, as defined on the [common structures](/common_structures.md#contexta) page. 
+The Context entity can be used to describe any surrounding circumstances to the logout, including, for example, the device used to login. If the device supports it, session Ids and ip-addresses can be recorded. Common entity identifier: [ContextA](/common_structures.md#contexta)   
 
 #### Entity properties:
 
@@ -150,7 +150,7 @@ The Context entity can be used to describe any surrounding circumstances to the 
   "extensions": {
     "http://xapi.jisc.ac.uk/sessionId": "L5t1W93PED",
     "http://id.tincanapi.com/extensions/ip-address": "10.3.3.48",
-    "http://xapi.jisc.ac.uk/version" : "1.0.2"
+    "http://xapi.jisc.ac.uk/version" : "1.0.3"
   }
 }
 ```

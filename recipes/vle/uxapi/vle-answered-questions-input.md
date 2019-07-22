@@ -20,6 +20,7 @@ Data should be supplied as a UTF-8 Tab Separated File called assignmentgraded.ts
 * [SCORE_MIN](#score_min) [0..1]
 * [SCORE_MAX](#score_max) [0..1]
 * [SCORE_RESPONSE](#score_response) [0..1]
+* [USER_AGENT](#user_agent) [0..1]
 
 
 ## USERNAME 
@@ -225,4 +226,12 @@ Any
 ### Format
 ISO 8601 date time
 
+## USER_AGENT 
+### Description
+String with User-Agent characteristics. Used to identify the application type, operating system, software vendor or software version of the requesting software user agent. 
 
+### Valid Values
+Any
+
+### Format
+string

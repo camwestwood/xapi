@@ -35,9 +35,10 @@
 		      "http://xapi.jisc.ac.uk/uddModInstanceID": "**UDD_MOD_INST_ID**"
 		  },
 
-		  "http://xapi.jisc.ac.uk/statementCat": "VLE",
+		  "http://xapi.jisc.ac.uk/recipeCat": "VLE",
+		  "http://xapi.jisc.ac.uk/extensions/user-agent": "**USER_AGENT**",
 		  "http://xapi.jisc.ac.uk/sessionId": "**SESSION_ID**",
 		  "http://id.tincanapi.com/extension/ip-address": "**CLIENT_IP**",
-		  "http://xapi.jisc.ac.uk/version": "1.0.2"						}
+		  "http://xapi.jisc.ac.uk/version": "1.0.3"						}
 	}
 }

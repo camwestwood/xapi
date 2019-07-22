@@ -119,7 +119,7 @@ The Object for Login Statements identifies what is being logged in to. It uses t
 ```
 
 ### Context Entity
-Context can be used to describe any surrounding circumstances to the login, including for example the device used to login. If the device supports it, session Ids and ip-addresses can be recorded. Common entity identifier: ContextA, as defined on the [common structures](/common_structures.md#contexta) page. 
+Context can be used to describe any surrounding circumstances to the login, including for example the device used to login. If the device supports it, session Ids and ip-addresses can be recorded. Common entity identifier: [ContextA](/common_structures.md#contexta)   
 
 #### Context Entity properties:
 <table>
@@ -142,7 +142,7 @@ Context can be used to describe any surrounding circumstances to the login, incl
   "extensions": {
     "http://xapi.jisc.ac.uk/sessionId": "L5t1W93PED",
     "http://id.tincanapi.com/extension/ip-address": "10.3.3.48",
-    "http://xapi.jisc.ac.uk/version" : "1.0.2"
+    "http://xapi.jisc.ac.uk/version" : "1.0.3"
   }
 }
 ```

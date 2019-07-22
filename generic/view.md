@@ -9,7 +9,7 @@ Natural language example of a typical view Statement: "John Smith viewed a modul
 
 Examples:
 
-- [VLE resource viewed](../recipes/vle/Module-View.md)
+- [VLE resource viewed](../recipes/vle/vle-viewed-content.md)
 - [Mobile app content viewed](../recipes/studyapps/mobile-app.md)
 - [Blackboard course viewed ](../recipes/blackboard/course_access.json)
 - [Moodle module viewed ](../recipes/moodle/moduleview.js)
@@ -129,7 +129,7 @@ The Object for viewed Statements identifies what is being viewed. It uses the Ji
 ```
 
 ### Context
-The Context entity can be used to describe any surrounding circumstances, including for example the device used and id of the module. If the device supports it, session Ids and ip-addresses can be recorded. Common entity identifier: ContextA, as defined on the [common structures](/common_structures.md#contexta) page. 
+The Context entity can be used to describe any surrounding circumstances, including for example the device used and id of the module. If the device supports it, session Ids and ip-addresses can be recorded. Common entity identifier: [ContextA](/common_structures.md#contexta)   
 
 #### Entity properties:
 <table>
@@ -162,7 +162,7 @@ The Context entity can be used to describe any surrounding circumstances, includ
 					
 	"http://xapi.jisc.ac.uk/sessionId": "32456891"  ,
 	"http://id.tincanapi.com/extension/ip-address": "10.3.3.48"
-	"http://xapi.jisc.ac.uk/version" : "1.0.2"
+	"http://xapi.jisc.ac.uk/version" : "1.0.3"
 			}
         }
 ```

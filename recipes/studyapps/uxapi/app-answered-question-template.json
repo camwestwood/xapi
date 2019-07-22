@@ -1,0 +1,57 @@
+{
+	"actor": {
+		"objectType": "Agent",
+		"account": {
+			"name": "**USERNAME**",
+			"homePage": "**HOMEPAGE**"
+		}
+	},
+	"verb": {
+		"id": "http://adlnet.gov/expapi/verbs/answered",
+		"display": {
+			"en" : "answered"
+		}
+	},
+	"object": {
+		"id": "**OBJECT_ID**",
+		"objectType": "Activity",
+		"definition": {
+			"type": "http://activitystrea.ms/schema/1.0/question",
+			"interactionType": "**INTERACTION_TYPE**",
+	
+			"name": {
+				"en": "**OBJECT_NAME**"
+				},
+	
+			"description": {
+					"en": "**OBJECT_DESCRIPTION**"
+				},
+			
+			"choices": **CHOICES**
+		}
+	},
+	
+	"timestamp": "**TIMESTAMP**",
+	
+	"result": {
+		"response": "**QUESTION_RESPONSE**"
+	},
+	
+	"context": {
+			
+		"platform": "Studygoal",
+				
+		"extensions": {
+			"http://xapi.jisc.ac.uk/recipeCat": "APP",
+			"http://xapi.jisc.ac.uk/version": "1.0.3",
+			"http://xapi.jisc.ac.uk/sessionId": "**SESSION_ID**", 
+			"http://id.tincanapi.com/extension/ip-address": "**CLIENT_IP**", 
+			"http://xapi.jisc.ac.uk/captured_from": "**CAPTURED_FROM**",
+			"http://id.tincanapi.com/extension/ip-address": "**IP_ADDRESS**"
+			
+		}
+					
+		
+	}
+	}
+	

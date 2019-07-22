@@ -1,0 +1,125 @@
+{
+	"_id": "5be603ccbe036a5642e188f9",
+	"hasGeneratedId": false,
+	"organisation": "5835788a1442f7c91d4c0ff7",
+	"lrs_id": "597b3a6890dfa23e3d6c80aa",
+	"client": "597b3b3d90dfa23e3d6c87d6",
+	"person": null,
+	"active": true,
+	"voided": false,
+	"timestamp": "2018-11-09T21:44:17.330Z",
+	"stored": "2018-11-09T22:01:48.339Z",
+	"hash": "96c1b3e8ed96dfaf739f2d08ff66aa591af188cc",
+	"agents": [
+		"https://blackboard.jisc.ac.uk|1234"
+	],
+	"relatedAgents": [
+		"https://blackboard.jisc.ac.uk|1234",
+		"https://blackboard.jisc.ac.uk|9876",
+		"mailto:jisc@learninglocker.net"
+	],
+	"registrations": [],
+	"verbs": [
+		"http://adlnet.gov/expapi/verbs/scored"
+	],
+	"activities": [
+		"https://blackboard.jisc.ac.uk/webapps/gradebook/do/instructor/enterGradeCenter?course_id=_12345_1&cvid=fullGC#"
+	],
+	"relatedActivities": [
+		"https://blackboard.jisc.ac.uk/webapps/gradebook/do/instructor/enterGradeCenter?course_id=_12345_1&cvid=fullGC#",
+		"https://blackboard.jisc.ac.uk/webapps/blackboard/execute/courseMain?course_id=12345&sc="
+	],
+	"statement": {
+		"id": "cd9c119a-1485-4146-83aa-9af3999a80c2",
+		"timestamp": "2019-01-01T00:00:00.000Z",
+		"verb": {
+			"id": "http://adlnet.gov/expapi/verbs/scored",
+			"display": {
+				"en-US": "scored"
+			}
+		},
+		"actor": {
+			"name": "Jisc User",
+			"account": {
+				"homePage": "https://blackboard.jisc.ac.uk",
+				"name": "jisc1"
+			},
+			"objectType": "Agent"
+		},
+		"object": {
+			"id": "https://blackboard.jisc.ac.uk/webapps/gradebook/do/instructor/enterGradeCenter?course_id=_12345_1&cvid=fullGC#",
+			"definition": {
+				"type": "http://adlnet.gov/expapi/activities/assessment",
+				"extensions": {
+					"http://xapi.jisc.ac.uk/dueDate": "2019-01-01T00:00:00.000Z"
+				},
+				"name": {
+					"en": "Jisc 5 – 5%"
+				},
+				"description": {
+					"en": "Jisc 5 – 5%"
+				}
+			},
+			"objectType": "Activity"
+		},
+		"result": {
+			"score": {
+				"scaled": 0,
+				"raw": 20,
+				"min": 0,
+				"max": 100
+			},
+			"completion": true,
+			"extensions": {
+				"http://xapi.jisc.ac.uk/grade": "20"
+			}
+		},
+		"context": {
+			"platform": "Blackboard",
+			"instructor": {
+				"name": "Test User",
+				"account": {
+					"homePage": "https://blackboard.jisc.ac.uk",
+					"name": "9876"
+				},
+				"objectType": "Agent"
+			},
+			"contextActivities": {
+				"grouping": [
+					{
+						"id": "https://blackboard.jisc.ac.uk/webapps/blackboard/execute/courseMain?course_id=12345&sc=",
+						"definition": {
+							"type": "http://xapi.jisc.ac.uk/courseArea",
+							"name": {
+								"en": "Jisc Course"
+							},
+							"description": {
+								"en": "Jisc Course"
+							}
+						},
+						"objectType": "Activity"
+					}
+				]
+			},
+			"extensions": {
+				"http://blackboard.com/extensions/info": {
+					"https://blackboard.jisc.ac.uk": "3200.0.5",
+					"https://blackboard.jisc.ac.uk/webapps/bbc-xAPI-BBLEARN/": "2.0.1"
+				},
+				"http://xapi.jisc.ac.uk/recipeVersion": "1.0",
+				"http://id.tincanapi.com/extension/ip-address": "127.0.0.1",
+				"http://xapi.jisc.ac.uk/courseArea": {
+					"http://xapi.jisc.ac.uk/vle_mod_id": "MOD_123456",
+					"id": "https://blackboard.jisc.ac.uk/webapps/blackboard/execute/courseMain?course_id=12345&sc="
+				}
+			}
+		},
+		"stored": "2019-01-01T00:00:00.000Z",
+		"authority": {
+			"objectType": "Agent",
+			"name": "Jisc Client",
+			"mbox": "mailto:jisc@learninglocker.net"
+		},
+		"version": "1.0.0"
+	}
+}

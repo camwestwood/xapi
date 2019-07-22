@@ -1,0 +1,47 @@
+{
+	"version": "1.0.0",
+	"actor": {
+		"objectType": "Agent",
+		"account": {
+			"name": "**USERNAME**",
+			"homePage": "**HOMEPAGE**" 
+		}
+	},
+	"timestamp": "**TIMESTAMP**",
+	"verb": {
+		"id": "http://activitystrea.ms/schema/1.0/access",
+		"display": {
+			"en": "accessed"
+		}
+	},
+	"object": {
+		"objectType": "Activity",
+		"id": "**URL**",
+		"definition": {
+			"type": "http://xapi.jisc.ac.uk/externalContent"
+		}
+	},
+	"context": {
+		"platform": "**PLATFORM**", 
+		"extensions": {
+
+			"contextActivities":{
+				"parent":[
+					{
+						
+						"id":"**PARENT_ID**"
+						
+					}
+				]
+			},
+
+				"http://xapi.jisc.ac.uk/version": "1.0.3",
+				"https://xapi.jisc.ac.uk/recipeCat": "Readinglist",
+				"http://xapi.jisc.ac.uk/extensions/user-agent": "**USER_AGENT**"
+		}
+				
+		}
+
+	}
+
+}
