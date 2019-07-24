@@ -43,12 +43,12 @@ The Canvas integrations maps canvas assests to activities.
        <tr>
               <td>collaboration</td>
               <td>Type</td>
-              <td><a href="../vocabulary.md#collaboration-space">http://xapi.jisc.ac.uk/collaboration_space</a></td>
+              <td><a href="../vocabulary.md#collaboration-space">http://xapi.jisc.ac.uk/activities/collaboration_space</a></td>
           </tr>
        <tr>
               <td>collaborations</td>
               <td>Subtype</td>
-              <td><a href="../vocabulary.md#collaboration-space">http://xapi.jisc.ac.uk/collaboration_space</a></td>
+              <td><a href="../vocabulary.md#collaboration-space">http://xapi.jisc.ac.uk/activities/collaboration_space</a></td>
           </tr>
        <tr>
               <td>conferences</td>
@@ -88,7 +88,7 @@ The Canvas integrations maps canvas assests to activities.
        <tr>
               <td>grades</td>
               <td>Subtype</td>
-              <td><a href="../vocabulary.md#grade">http://xapi.jisc.ac.uk/grades</a></td>
+              <td><a href="../vocabulary.md#grade">http://xapi.jisc.ac.uk/grade</a></td>
           </tr>
        <tr>
               <td>group</td>
@@ -138,7 +138,7 @@ The Canvas integrations maps canvas assests to activities.
        <tr>
               <td>speed_grader</td>
               <td>Subtype</td>
-              <td><a href="../vocabulary.md#grade">http://xapi.jisc.ac.uk/grades</a></td>
+              <td><a href="../vocabulary.md#grade">http://xapi.jisc.ac.uk/grade</a></td>
           </tr>
        <tr>
               <td>syllabus</td>

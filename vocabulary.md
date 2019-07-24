@@ -241,7 +241,7 @@ Example:
 <table>
 <tr><th align="left">Label</th><td>Collaboration Space</td></tr>
 <tr><th align="left">Description</th><td>A collaborative space where students can work together on group projects and assignments. For example <a href="https://community.canvaslms.com/docs/DOC-10717">Cavas Groups</a></td></tr>
-<tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/collaboration_space">http://xapi.jisc.ac.uk/collaboration_space</a> </td></tr>
+<tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/activities/collaboration_space">http://xapi.jisc.ac.uk/activities/collaboration_space</a> </td></tr>
 </table>
 
 ### Conference
