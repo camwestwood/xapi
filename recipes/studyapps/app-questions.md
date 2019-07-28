@@ -68,23 +68,32 @@ Common entity identifier: [ObjectC](/common_structures.md#objectc)
 			},
 			"interactionType": "choice",
 			"type": "http://activitystrea.ms/schema/1.0/question",
-			"choices": [{
-					"id": "Very Happy",
-					"description": "Very Happy"
-				},
-				{
-					"id": "Happy",
-					"description": "Happy"
-				},
-				{
-					"id": "Sad",
-					"description": "Sad"
-				}, {
-					"id": "Very Sad",
-					"description": "Very Sad"
-				}
-
-			]
+			 "choices": [
+                {
+                    "id": "Very Happy",
+                    "description": {
+                        "en": "Very Happy"
+                    }
+                },
+                {
+                    "id": "Happy",
+                    "description": {
+                        "en": "Happy"
+                    }
+                },
+                {
+                    "id": "Sad",
+                    "description": {
+                        "en": "Sad"
+                    }
+                },
+                {
+                    "id": "Very Sad",
+                    "description": {
+                        "en": "Very Sad"
+                    }
+                }
+            ]
 		}
 	}
 ```
@@ -155,23 +164,32 @@ Although it is not typical for mobile application interactions, the Context may 
 				"en": "How are you feeling today?"
 			},
 		
-        "choices": [{
-                "id": "Very Happy",
-                "description": "Very Happy"
-            },
-            {
-                "id": "Happy",
-                "description": "Happy"
-            },
-            {
-                "id": "Sad",
-                "description": "Sad"
-            }, {
-                "id": "Very Sad",
-                "description": "Very Sad"
-            }
-
-        ]
+        "choices": [
+                {
+                    "id": "Very Happy",
+                    "description": {
+                        "en": "Very Happy"
+                    }
+                },
+                {
+                    "id": "Happy",
+                    "description": {
+                        "en": "Happy"
+                    }
+                },
+                {
+                    "id": "Sad",
+                    "description": {
+                        "en": "Sad"
+                    }
+                },
+                {
+                    "id": "Very Sad",
+                    "description": {
+                        "en": "Very Sad"
+                    }
+                }
+            ]
 	}
 },
 
