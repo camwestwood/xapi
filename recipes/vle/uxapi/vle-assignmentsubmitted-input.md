@@ -15,7 +15,7 @@ Data should be supplied as a UTF-8 Tab Separated File called assignmentsubmitted
 * [VLE_MOD_ID](#vle_mod_id) [0..1]
 * [UDD_MOD_INST_ID](#udd_mod_inst_id) [0..1]
 * [USER_AGENT](#user_agent) [0..1]
-
+* [SEQUENCE_NUMBER](#sequence_number) [0..1]
 
 ## USERNAME 
 ### Description
@@ -181,3 +181,13 @@ Any
 
 ### Format
 string
+
+## USER_AGENT 
+### Description
+If the activity is part of a sequence then SequenceNumber can be used as a counter
+
+### Valid Values
+Any
+
+### Format
+int

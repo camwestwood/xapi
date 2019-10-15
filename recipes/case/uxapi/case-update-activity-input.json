@@ -33,7 +33,7 @@
 			"http://xapi.jisc.ac.uk/recipeCat": "Case",
 			"http://xapi.jisc.ac.uk/type": "**TYPE**",
 			"http://xapi.jisc.ac.uk/weighting" : **WEIGHTING**
-			"http://xapi.jisc.ac.uk/version" : "1.0.3"
+			"http://xapi.jisc.ac.uk/version" : "1.1"
 			}
 		}
 

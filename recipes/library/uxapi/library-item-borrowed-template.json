@@ -36,7 +36,7 @@
 		"extensions": {
 			"http://xapi.jisc.ac.uk/recipeCat": "Library",
 			"http://xapi.jisc.ac.uk/borrowing_site": "**BORROWING_SITE**",
-			"http://xapi.jisc.ac.uk/version": "1.0.3"
+			"http://xapi.jisc.ac.uk/version": "1.1"
 		}
 	}
 }

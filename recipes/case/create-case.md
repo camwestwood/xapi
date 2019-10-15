@@ -117,7 +117,7 @@ The Context must identify the student who is the target of the case. A mode of i
 			"http://xapi.jisc.ac.uk/statementCat": "Case",
 			"http://xapi.jisc.ac.uk/mode" : "email",
 			"http://xapi.jisc.ac.uk/weighting" : 3 ,
-			"http://xapi.jisc.ac.uk/version" : "1.0.3"
+			"http://xapi.jisc.ac.uk/version" : "1.1"
 
 			"http://xapi.jisc.ac.uk/case-target" {
 				"actor": {

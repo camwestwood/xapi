@@ -154,7 +154,7 @@ This pattern is used across many Statements in the Jisc Profile, but there may b
 		},			
 		"http://xapi.jisc.ac.uk/sessionId": "32456891",
 		"http://id.tincanapi.com/extension/ip-address": "10.3.3.48",
-		"http://xapi.jisc.ac.uk/version" : "1.0.3",
+		"http://xapi.jisc.ac.uk/version" : "1.1",
 		"http://xapi.jisc.ac.uk/recipeCat": "VLE",				
     		"http://xapi.jisc.ac.uk/extensions/user-agent": "Mozilla/5.0 (iPad; U; CPU OS 3_2_1 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Mobile/7B405"
 	}	
@@ -227,7 +227,7 @@ The ContextB pattern is similar to ContextA, but with the addition of a contextA
 		},	
  		"http://xapi.jisc.ac.uk/sessionId":"32456891",
         	"http://id.tincanapi.com/extension/ip-address": "10.3.3.48",
-		"http://xapi.jisc.ac.uk/version" : "1.0.3",
+		"http://xapi.jisc.ac.uk/version" : "1.1",
 		"http://xapi.jisc.ac.uk/recipeCat": "VLE",				
     		"http://xapi.jisc.ac.uk/extensions/user-agent": "Mozilla/5.0 (iPad; U; CPU OS 3_2_1 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Mobile/7B405"
 	}

@@ -91,13 +91,13 @@ v0.2 2-05-2016, Documentation change [subType supersedes ApplicationType](https:
 
 
 #### Assignment Graded
+v1.1 27-11-2017, Spec change [removed result.success](https://github.com/jiscdev/xapi/issues/202) 
+
 v1.0.3 14-05-2019, Spec Change. [Added user agent optional](https://github.com/jiscdev/xapi/issues/311)
 
 v1.0.3 5-04-2019, Spec Change. [Recipe category added](https://github.com/jiscdev/xapi/issues/294)
 
 v1.0.3 5-04-2019, Spec Change. [Statement category deprecated](https://github.com/jiscdev/xapi/issues/294)
-
-v1.1 27-11-2017, Spec change [removed result.success](https://github.com/jiscdev/xapi/issues/202) 
 
 v1.0.1 13-04-2018, Spec Change. [Statement category added as optional](https://github.co7/jiscdev/xapi/issues/225)
 
@@ -121,13 +121,16 @@ v1.0 20-03-2017, Spec change. [Description no longer required in ObjectA or B.](
 
 
 #### Assignment Submitted
+v1.1  Spec Change. [Added Sequence Number]()
+
+v1.1  Spec Change. [Removed Result]()
+
 v1.0.3 14-05-2019, Spec Change. [Added user agent optional](https://github.com/jiscdev/xapi/issues/311)
 
 v1.0.3 5-04-2019, Spec Change. [Recipe category added](https://github.com/jiscdev/xapi/issues/294)
 
 v1.0.3 5-04-2019, Spec Change. [Statement category deprecated](https://github.com/jiscdev/xapi/issues/294)
 
-v1.1  Spec Change. [Added Sequence Number]()
 
 v1.0.1 13-04-2018, Spec Change. [Statement category added as optional](https://github.co7/jiscdev/xapi/issues/225)
 

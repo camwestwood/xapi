@@ -87,20 +87,6 @@ Here are descriptions of Statements that can be sent to the Jisc Learning Data H
 </table>
 
 
-## Setting and Reaching Targets
-
-<table>
-<tr><td>Statement Template</td><td>Input TSV definitions</td><td>JSON Template</td></tr>  
-
-<tr><td><a href = "recipes/targetsetting/target-set.md">Set a target</a></td> <td><a href="recipes/targetsetting/uxapi/target-set-input.md">target-set-input.md</a></td> <td></td></tr>
-<tr><td><a href = "recipes/targetsetting/target-recording-activity.md">Record an activity against a target</a> </td><td><a href="recipes/targetsetting/uxapi/target-set-input.md">target-set-input.md</a></td><td></td></tr>
-<tr><td><a href = "recipes/targetsetting/target-reached-completed.md">Reach a target</a></td><td><a href="recipes/targetsetting/uxapi/target-set-input.md">target-set-input.md</a></td><td></td></tr>
-<tr><td><a href = "recipes/targetsetting/target-update.md">Post an update</a></td><td><a href="recipes/targetsetting/uxapi/target-set-input.md">target-set-input.md</a> </td><td></td></tr> 
-</table>
-
-
-
-
 ## Video
 
 <table>

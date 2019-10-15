@@ -158,7 +158,7 @@ The Context describes the parent case of the note in context.contextActivies.
 
     "extensions": {
 			"http://xapi.jisc.ac.uk/statementCat": "Note",
-			"http://xapi.jisc.ac.uk/version" : "1.0.3"
+			"http://xapi.jisc.ac.uk/version" : "1.1"
 
 			}
 	},
