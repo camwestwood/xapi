@@ -102,7 +102,6 @@ An object type of http://activitystrea.ms/schema/1.0/service is required for thi
 
 <table>
 	<tr><th>Property [cardinality]</th><th>Description</th><th>Value information</</th></tr>
-
 	<tr>
 		<td>context.extensions.version [0..1]</td>
 		<td>Recommended. Identifies the version of the Jisc xAPI profile found on the ReadMe page. <br/></td>
