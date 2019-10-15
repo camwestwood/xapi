@@ -24,6 +24,13 @@ If the need arises, particular versions will get their own branches, but until t
 # Recipes
 Here are descriptions of Statements that can be sent to the Jisc Learning Data Hub, full Statement examples, and data needed to create the Statement. As far as possible all entities are the same across all the Statements, these reusable parts of Statements are linked from templates and can be found in the [Common Structures](common_structures.md) page which contains all common patterns used across different Statements. If an entity is not reusable then properties are described in the Statement template.
 
+## Accessed Facilties
+
+<table>
+<tr><td>Statement Template</td><td>Input TSV definitions</td><td>JSON Template</td></tr>  
+<tr><td> <a href = "/recipes/access/econtent-accessed-econtent.md">Accessed facility</a></td><td><a href="recipes/econtent/uxapi/facility-accessed-input.md">facility-accessed-input.md</a></td><td><a href="recipes/econtent/uxapi/facility-accessed--template.json">facility-accessed-template.json</a></td></tr>  
+</table>
+
 
 ## Econtent services
 
