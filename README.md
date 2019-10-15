@@ -28,7 +28,7 @@ Here are descriptions of Statements that can be sent to the Jisc Learning Data H
 
 <table>
 <tr><td>Statement Template</td><td>Input TSV definitions</td><td>JSON Template</td></tr>  
-<tr><td> <a href = "/recipes/access/facility-accessed.md">Accessed facility</a></td><td><a href="recipes/access/uxapi/facility-accessed-input.md">facility-accessed-input.md</a></td><td><a href="recipes/access/uxapi/facility-accessed-template.json">facility-accessed-template.json</a></td></tr>  
+<tr><td> <a href = "recipes/access/facility-accessed.md">Accessed facility</a></td><td><a href="recipes/access/uxapi/facility-accessed-input.md">facility-accessed-input.md</a></td><td><a href="recipes/access/uxapi/facility-accessed-template.json">facility-accessed-template.json</a></td></tr>  
 </table>
 
 
