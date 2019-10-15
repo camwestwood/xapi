@@ -87,7 +87,7 @@ The contextActivities parent contains the id of the list the item belongs to.
 			
  		"http://xapi.jisc.ac.uk/sessionId":"32456891",
         "http://id.tincanapi.com/extension/ip-address": "10.3.3.48",
-		"http://xapi.jisc.ac.uk/version" : "1.0.3",
+		"http://xapi.jisc.ac.uk/version" : "1.1",
 		
 			}
 		}
@@ -139,7 +139,7 @@ The contextActivities parent contains the id of the list the item belongs to.
 		"platform" :"Talis Aspire",
 		"extensions": {
 			"http://xapi.jisc.ac.uk/recipeCat": "Readinglist",,
-			"http://xapi.jisc.ac.uk/version": "1.0.3"
+			"http://xapi.jisc.ac.uk/version": "1.1"
 	
   		}
   	}

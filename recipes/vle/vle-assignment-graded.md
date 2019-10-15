@@ -47,7 +47,49 @@ Common entity identifier: ResultA [common structures](/common_structures.md#resu
 
 The result entity is required for this kind of statement.
 
+
+<table>
+	<tr><th>Property [cardinality]</th><th>Description</th><th>Data type</th></tr>
+	<tr>
+		<td>result.score.scaled [0..1]</td>
+		<td>The score related to the experience as modified by scaling and/or normalization.  If the raw value can be calculated as a percentage then the scaled may be populated as such. In the example shown, there is a 100 question quiz and a user has 25 questions correct, corresponding to a raw value of ‘25’ and a scaled value of ‘0.25’ (25%). If the data is not scaled then it should not be given and should not be zero</td>
+<td>decimal number between -1 and 1, inclusive.</td>
+	</tr>
+	<tr>
+		<td>result.score.raw [0..1]</td>
+		<td>Unmodified score. If not present then grade must be given.</td>
+<td>decimal number between min and max (if present, otherwise unrestricted), inclusive</td>
+	</tr>
+	<tr>
+		<td>result.score.min [0..1]</td>
+		<td>The lowest possible score. If known this should be given.</td>
+<td>decimal number less than max (if present)</td>
+	</tr>
+	<tr>
+		<td>result.score.max [0..1]</td>
+		<td>The highest possible score. If known this should be given.</td>
+		<td>decimal number greater than min (if present)</td>
+	</tr>
+	<tr>
+		<td>result.completion [0..1]</td>
+		<td>Indicates whether or not the Activity was completed.</td>
+		<td>true or false</td>
+	</tr
+	>	<tr>
+		<td>result.response [0..1]</td>
+		<td>Instructor's or automatic feedback</td>
+		<td>string (256)</td>
+	</tr>
+	<tr>
+		<td>result.extensions.http://xapi.jisc.ac.uk/grade [0..1]</td>
+		<td>Non-numerical assessment result. If not present then score.raw must be given</td>
+		<td>string (256)</td>
+	</tr>
+</table>
+
+
 #### Entity Example:
+
 
 ``` javascript 
 "result": {
@@ -55,7 +97,6 @@ The result entity is required for this kind of statement.
         	"http://xapi.jisc.ac.uk/grade": "E"
         },
 		
-        "success": false,
         "completion": true,
         "response": "Your answer should have been: The cow jumped over the moon."
          }
@@ -148,7 +189,7 @@ The Context for assignment graded is based on ContextA on the [common structures
 		"http://xapi.jisc.ac.uk/extensions/user-agent": "Mozilla/5.0 (iPad; U; CPU OS 3_2_1 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Mobile/7B405",	
 		"http://xapi.jisc.ac.uk/sessionId": "32456891" ,
 		"http://id.tincanapi.com/extension/ip-address": "10.3.3.48"
-		"http://xapi.jisc.ac.uk/version" : "1.0.3"
+		"http://xapi.jisc.ac.uk/version" : "1.1"
         }
 ```
 

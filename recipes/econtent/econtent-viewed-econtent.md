@@ -63,8 +63,7 @@ Common entity identifier: [ObjectA](/common_structures.md#objecta)
 	"objectType": "Activity",
 	"id": "http://onlinelibrary.jisc.ac.uk/doi/10.1111"   	 	
 	"definition": {
-		"type": "http://id.tincanapi.com/activitytype/resource",			
-		"name": { "en": "The Condition of the Working Class in England"
+		"type": "http://id.tincanapi.com/activitytype/resource"
 		},
 		"extensions": {
      		 "http://xapi.jisc.ac.uk/subType": "http://xapi.jisc.ac.uk/journal"
@@ -78,6 +77,7 @@ Common entity identifier: [ObjectA](/common_structures.md#objecta)
 
 
 ### Context
+
 
 <table>
 	<tr><th>Property [cardinality]</th><th>Description</th><th>Value information</</th></tr>
@@ -107,20 +107,20 @@ Common entity identifier: [ObjectA](/common_structures.md#objecta)
 	</tr>
 </table>
 
+
 ### Example:
 
 ``` javascript
- "context": {
+	"context": {
 		"platform": "UxAPI",
 		"extensions": {
-			"http://xapi.jisc.ac.uk/version": "1.0.3"
+			"http://xapi.jisc.ac.uk/version": "1.1"
 			"http://xapi.jisc.ac.uk/sessionId": "A438L",
 			"http://id.tincanapi.com/extensions/ip-address": "10.3.3.48",
 			"https://xapi.jisc.ac.uk/recipeCat": "Econtent"
 			
 		}
 	}
-}
 ```
 
 
@@ -147,18 +147,12 @@ Common entity identifier: [ObjectA](/common_structures.md#objecta)
 		"id": "http://onlinelibrary.jisc.ac.uk/doi/10.1111",
 		"definition": {
 			"type": "http://id.tincanapi.com/activitytype/resource",
-			"name": {
-				"en": "The Condition of the Working Class in England"
-			},
-			"extensions": {
-				"http://xapi.jisc.ac.uk/subType": "http://xapi.jisc.ac.uk/journal"
-			}
 		}
 	},	
 	"context": {
 		"platform": "UxAPI",
 		"extensions": {
-			"http://xapi.jisc.ac.uk/version": "1.0.3",
+			"http://xapi.jisc.ac.uk/version": "1.1",
 			"http://xapi.jisc.ac.uk/sessionId": "32456891",
 			"http://id.tincanapi.com/extensions/ip-address": "10.3.3.48",
 			"https://xapi.jisc.ac.uk/recipeCat": "Library"

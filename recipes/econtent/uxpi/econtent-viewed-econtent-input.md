@@ -7,6 +7,7 @@ Data should be supplied as a UTF-8 Tab Separated File called econtent.tsv.
 * [USERNAME](#username) [1]
 * [TIMESTAMP](#timestamp) [1]
 * [ITEM_ID](#item_id) [1]
+* [HOMEPAGE](#HOMPAGE) [0..1]
 * [ITEM_NAME](#item_name) [1]
 * [ITEM_SUBTYPE](#item_subtype) [1]
 * [SESSION_ID](#session_id) [1]
@@ -62,6 +63,7 @@ tbc
 ### Format
 String (255)
 
+
 ## ITEM_SUBTYPE
 ### Description
 
@@ -106,4 +108,3 @@ Any
 
 ### Format
 string
-

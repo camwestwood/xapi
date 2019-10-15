@@ -124,7 +124,7 @@ Although it is not typical for mobile application interactions, the Context may 
       "platform": "App",
       "extensions": {
 	    "http://xapi.jisc.ac.uk/recipeCat": "app",
-		"http://xapi.jisc.ac.uk/version": "1.0.3",
+		"http://xapi.jisc.ac.uk/version": "1.1",
 		"http://xapi.jisc.ac.uk/sessionId": "Iye9OqwM9O", 
 		"http://xapi.jisc.ac.uk/captured_from": "ios",
         "http://id.tincanapi.com/extension/ip-address": "193.24.14.15"
@@ -205,7 +205,7 @@ Although it is not typical for mobile application interactions, the Context may 
 			
 	"extensions": {
 		"http://xapi.jisc.ac.uk/recipeCat": "APP",
-		"http://xapi.jisc.ac.uk/version": "1.0.3",
+		"http://xapi.jisc.ac.uk/version": "1.1",
 		"http://xapi.jisc.ac.uk/sessionId": "v535a", 
 		"http://id.tincanapi.com/extension/ip-address": "192.168.6.3", 
 		"http://xapi.jisc.ac.uk/captured_from": "ios"

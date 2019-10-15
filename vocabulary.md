@@ -723,7 +723,18 @@ For more information, see Jisc Profile [CourseArea properties](#coursearea).
 <tr><th align="left">Sample Value</th><td>Mozilla/5.0 (iPad; U; CPU OS 3_2_1 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Mobile/7B405</td></tr>
 </table>
 
-### xAPI Profile Version
+
+### SequenceNumber
+
+<table>
+<tr><th align="left">Label</th><td>Sequence Number</td></tr>
+<tr><th align="left">Description</th><td>Used as a sequence counter when it is possible to have multiple statements referring to the same activity.
+</td></tr>
+<tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/sequenceNumber">http://xapi.jisc.ac.uk/sequenceNumber</a> </td></tr>
+<tr><th align="left">Data Type</th><td>Integer</td></tr>
+<tr><th align="left">Value Space</th><td>A sequence number. May not be avalible depending on the system.</td></tr>
+<tr><th align="left">Sample Value</th><td>1</td></tr>
+</table>
 
 <table>
 <tr><th align="left">Label</th><td>Jisc Profile Version</td></tr>
@@ -733,8 +744,8 @@ For more information, see Jisc Profile [CourseArea properties](#coursearea).
 <tr><th align="left">Data Type</th><td>String</td></tr>
 <tr><th align="left">Value Space</th><td>A version number as specified on homepage the Github homepage for the Jisc xAPI, for example "1.0.3".</td></tr>
 <tr><th align="left">Sample Value</th><td>1.0</td></tr>
-</table>
 
+</table>
 
 <a name="coursearea"></a>
 ## 5.0 Properties of courseArea extension

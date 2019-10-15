@@ -153,7 +153,7 @@ An ISO 8601 format timestamp that corresponds to the time of when the item was b
    "context": {
       "platform" :"WorldShare",
       "extensions": {
-	"http://xapi.jisc.ac.uk/version": "1.0.3",
+	"http://xapi.jisc.ac.uk/version": "1.1",
 	"http://xapi.jisc.ac.uk/recipeCat": "Library",
 	"http://xapi.jisc.ac.uk/borrowing_site": "Main Library"	
       }
@@ -197,7 +197,7 @@ An ISO 8601 format timestamp that corresponds to the time of when the item was b
 	"context": {
 		"platform" :"WorldShare",
 		"extensions": {
-			"http://xapi.jisc.ac.uk/version": "1.0.3",
+			"http://xapi.jisc.ac.uk/version": "1.1",
 			"http://xapi.jisc.ac.uk/recipeCat": "Library",
 			"http://xapi.jisc.ac.uk/borrowing_site": "Main Library"	
 		}

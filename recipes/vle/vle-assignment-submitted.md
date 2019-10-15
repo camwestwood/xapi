@@ -39,26 +39,7 @@ The Verb [completed](/vocabulary.md#verbs) describes the action of completing an
     },
 ``` 
 
-### Result (Deprecated)
-The Result entity describes the completion of a learning activity.
 
-#### Entity Example:
-<table>
-	<tr><th>Property [cardinality]</th><th>Description</th><th>Data type</th></tr>
-	<tr>
-		<td>result.completion [1]</td>
-		<td>When set to "true", result.completion indicates that the learner attended the event; "false" indicates that the learner did not attend the event.</td>
-		<td>Boolean</td>
-	</tr>
-</table>
-
-#### Example:
-
-``` javascript
- "result":{
-        "completion":true
-    }
-```
 
 ### Object
 Common entity identifier:  [ObjectB](/common_structures.md#objectb) 
@@ -103,7 +84,9 @@ Common entity identifier: [ContextA](/common_structures.md#contexta)
 			"http://xapi.jisc.ac.uk/extensions/user-agent": "Mozilla/5.0 (iPad; U; CPU OS 3_2_1 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Mobile/7B405",
 			"http://xapi.jisc.ac.uk/sessionId":"32456891",
          	"http://id.tincanapi.com/extension/ip-address": "10.3.3.48",
-			"http://xapi.jisc.ac.uk/version" : "1.0.3"
+			"http://xapi.jisc.ac.uk/version" : "1.1"
+			"http://xapi.jisc.ac.uk/sequenceNumber" : 1
+
 			}
 		}
 ```
