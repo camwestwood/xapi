@@ -92,10 +92,10 @@ The Context entity can be used to describe any surrounding circumstances, includ
 		<td>context.extension.courseArea [0..1]</td>
 		<td>The academic context in which this Activity is situated (e.g. umbrella course, or parent area). The properties in courseArea must be a UDD Module Instance ID or a VLE Module ID or both. More information can be found on the <a href="vocabulary.md#course-area">vocabularies page</a>.</td>
 		<td>JSON object</td>
-	<tr> 
-		<tr>
+	</tr>
+	<tr>
 		<td>context.extensions.https://xapi.jisc.ac.uk/recipeCat [0..1]</td>
-		<td>Recommended For querying lookup. Set to category of recipe, for example, Attendance, VLE, Library <br/></td>
+		<td>Recommended For querying lookup. Set to category of recipe, video for video statements<br/></td>
 		<td>string</td>
 	</tr>
 </table>
