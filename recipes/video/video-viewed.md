@@ -76,7 +76,7 @@ The result entity is used to record total time spent consuming the video in the 
 ### Context
 The Context entity can be used to describe any surrounding circumstances, including for example the device used and id of the module. If the device supports it, session Ids and ip-addresses can be recorded.
 
-able>
+<table>
 	<tr><th>Property [cardinality]</th><th>Description</th><th>Value information</</th></tr>
 	<tr>
 		<td>context.platform [1]</td>
@@ -98,7 +98,7 @@ able>
 		<td>Recommended For querying lookup. Set to category of recipe, for example, Attendance, VLE, Library <br/></td>
 		<td>string</td>
 	</tr>
-	</table>
+</table>
 
 ### Example:
 
