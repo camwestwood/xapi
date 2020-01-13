@@ -6,13 +6,10 @@ Data should be supplied as a UTF-8 Tab Separated File called videoviewed.tsv.
 
 * [USERNAME](#username) [1]
 * [HOMEPAGE](#homepage) [1]
-* [EMAIL](#email) [0..1]
 * [TIMESTAMP](#timestamp) [1]
 * [OBJECT_ID](object_id) [1]
 * [OBJECT_NAME](#object_name) [0..1]
 * [MINUTES_WATCHED](#minutes_watched) [0..1]
-* [SESSION_ID](#session_id) [1]
-* [CLIENT_IP](#client_ip) [0..1]
 * [UDD_MOD_INST_ID](#udd_mod_inst_id) [0..1]
 * [VLE_MOD_ID](#vle_mod_id) [0..1]
 
@@ -34,19 +31,6 @@ URL of the home page of the application for which the login id applies.
 
 ### Valid Values
 Any
-
-### Format
-String (255)
-
-## Email 
-### Description
-An Email address that has only ever been and will ever be assigned to this Agent.
-
-### Valid Values
-Email Address
-
-### Format
-String (255)
 
 
 ## TIMESTAMP
@@ -74,38 +58,6 @@ String (255)
 ## OBJECT_NAME 
 ### Description
 Optional name for resource being viewed.
-
-### Valid Values
-Any
-
-### Format
-String (255)
-
-## SESSION_ID
-### Description
-
-The local version of an identifier for the session currently in use by the actor. A value should be provided if this information is available from the source system.
-
-
-### Valid Values
-Any
-
-### Format
-String (255)
-
-## CLIENT_IP 
-### Description
-Client's IP address. An IPv4 address is recommended.
-
-### Valid Values
-Any
-
-### Format
-String (255)
-
-## SESSION_ID 
-### Description
-The VLE session ID, or a suitably hashed version of it. A value should be provided if this information is available.
 
 ### Valid Values
 Any
