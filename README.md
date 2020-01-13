@@ -57,6 +57,8 @@ Here are descriptions of Statements that can be sent to the Jisc Learning Data H
 <table>
 <tr><td>Statement Template</td><td>Input TSV definitions</td><td>JSON Template</td></tr>  
      <tr><td> <a href = "/recipes/library/library-item-borrowing.md">Library item: Borrowed item</a></td><td><a href="recipes/library/uxapi/library-item-borrowed-input.md">library-item-borrowed-input.md</a></td><td><a href="recipes/library/uxapi/library-item-borrowed-template.json">library-item-template.json</td></tr>    
+     <tr><td>Statement Template</td><td>Input TSV definitions</td><td>JSON Template</td></tr>  
+     <tr><td> <a href = "/recipes/library/library-location-borrowing.md">Library location: Borrowed item n</a></td><td><a href="recipes/library/uxapi/library-location-borrowed-input.md">library-location-borrowed-input.md</a></td><td><a href="recipes/library/uxapi/library-location-borrowed-template.json">library-lcocation-template.json</td></tr>  
 </table>
 
 
