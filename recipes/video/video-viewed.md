@@ -74,7 +74,31 @@ The result entity is used to record total time spent consuming the video in the 
 
 
 ### Context
-The Context entity can be used to describe any surrounding circumstances, including for example the device used and id of the module. If the device supports it, session Ids and ip-addresses can be recorded. Common entity identifier: [ContextA](/common_structures.md#contexta)   
+The Context entity can be used to describe any surrounding circumstances, including for example the device used and id of the module. If the device supports it, session Ids and ip-addresses can be recorded.
+
+<table>
+	<tr><th>Property [cardinality]</th><th>Description</th><th>Value information</</th></tr>
+	<tr>
+		<td>context.platform [1]</td>
+		<td>The platform used in the experience of this learning activity. The value used should not change between platform upgrades and version changes, and should typically be a concise name by which the application is commonly known, for example "Moodle" or "Blackboard"</td>
+		<td>string</td>
+	</tr>	
+	<tr>
+		<td>context.extensions.version [0..1]</td>
+		<td>Recommended. Identifies the version of the Jisc xAPI Profile found on the ReadMe page. <br/></td>
+		<td>decimal</td>
+	</tr>
+	<tr> 
+		<td>context.extension.courseArea [0..1]</td>
+		<td>The academic context in which this Activity is situated (e.g. umbrella course, or parent area). The properties in courseArea must be a UDD Module Instance ID or a VLE Module ID or both. More information can be found on the <a href="vocabulary.md#course-area">vocabularies page</a>.</td>
+		<td>JSON object</td>
+	</tr>
+	<tr>
+		<td>context.extensions.https://xapi.jisc.ac.uk/recipeCat [0..1]</td>
+		<td>Recommended For querying lookup. Set to category of recipe, video for video statements<br/></td>
+		<td>string</td>
+	</tr>
+</table>
 
 ### Example:
 
@@ -87,9 +111,6 @@ The Context entity can be used to describe any surrounding circumstances, includ
 			"http://xapi.jisc.ac.uk/vle_mod_id": "LA101",
 				"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0",
 			},
-					
-		"http://xapi.jisc.ac.uk/sessionId": "32456891"  ,
-		"http://id.tincanapi.com/extension/ip-address": "10.3.3.48"
 		"http://xapi.jisc.ac.uk/version" : "1.1"
 			}
         }
@@ -135,9 +156,6 @@ The Context entity can be used to describe any surrounding circumstances, includ
 				"http://xapi.jisc.ac.uk/vle_mod_id": "LA101",
 				"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0",
 			},
-					
-			"http://xapi.jisc.ac.uk/sessionId": "32456891"  ,
-			"http://id.tincanapi.com/extension/ip-address": "10.3.3.48"
 			"http://xapi.jisc.ac.uk/version" : "1.1"
 			}
         }
