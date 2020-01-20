@@ -57,8 +57,6 @@ The Verb, [access](/vocabulary.md#verbs), denotes the action of the user's brows
 ## Object
 Common entity identifier: [ObjectA](/common_structures.md#objecta) 
 
-An object type of http://activitystrea.ms/schema/1.0/service is required for this statement.
-
 <table>
 	<tr><th>Property [cardinality]</th><th>Description</th><th>Value information</</th></tr>
 	<tr>
