@@ -109,6 +109,11 @@ Common entity identifier: [ObjectA](/common_structures.md#objecta)
 		<td>Recommended for querying lookup. Set to "Access" in access statements.<br/></td>
 		<td>"Library"</td>
 	</tr>
+	<tr>
+		<td>context.extensions.direction_of_access version [0..1]</td>
+		<td>Direction of access. E.g in or out<br/></td>
+		<td>"In"</td>
+	</tr>
 </table>
 
 ### Example:
@@ -118,6 +123,7 @@ Common entity identifier: [ObjectA](/common_structures.md#objecta)
   "context": {
 		"extensions": {
 				"http://xapi.jisc.ac.uk/version": "1.1",
+				"http://xapi.jisc.ac.uk/extensions/direction_of_access": "In",
 				"https://xapi.jisc.ac.uk/recipeCat": "Access"
 		}
    }
@@ -152,6 +158,7 @@ Common entity identifier: [ObjectA](/common_structures.md#objecta)
 	"context": {
 		"extensions": {
 				"http://xapi.jisc.ac.uk/version": "1.1",
+				"http://xapi.jisc.ac.uk/extensions/direction_of_access": "in",
 				"https://xapi.jisc.ac.uk/recipeCat": "access"
 		}
 				

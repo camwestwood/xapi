@@ -8,7 +8,8 @@ Data should be supplied as a UTF-8 Tab Separated File called econtent.tsv.
 * [HOMEPAGE](#username) [1]
 * [TIMESTAMP](#timestamp) [1]
 * [SITE](#site) [1]
-* [TYPE](#type) []
+* [DIRECTION](#direction) [0..1]
+* [TYPE](#type) [1]
 
 
 
@@ -55,6 +56,17 @@ iri
 
 ### Format
 String (1023)
+
+## DIRECTION
+### Description
+
+direction of access
+
+### Valid Values
+String
+
+### Format
+String (255)
 
 
 ## TYPE 
