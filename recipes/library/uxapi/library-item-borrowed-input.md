@@ -5,7 +5,8 @@ Data should be supplied as a UTF-8 Tab Separated File called borrowing.tsv
 # library-borrowed
 
 * [USERNAME](#USERNAME) [1]
-* [ITEM_ID](#item_id) [1]
+* [ITEM_ID](#item_id) [0..1]
+* [HOMEPAGE](#item_id) [1]
 * [ITEM_NAME](#item_name) [0..1]
 * [ITEM_SUBTYPE](#item_subtype) [1]
 * [OCLC_NUMBER](#oclc_number) [0..1]
@@ -19,6 +20,12 @@ Data should be supplied as a UTF-8 Tab Separated File called borrowing.tsv
 ### Description
 
 A unique identifier for that user
+
+## HOMEPAGE 
+### Description
+
+The canonical home page for the system the account is on.
+
 
 ### Valid Values
 Any

@@ -15,7 +15,7 @@
 	},
 	"object": {
 		"objectType": "Activity",
-		"id": "**HOMEPAGE**/library/**ITEM_ID**",
+		"id": "**HOMEPAGE**/resource/**ITEM_ID**",
 		"definition": {
 			"type": "http://xapi.jisc.ac.uk/library/resource",
 			"name": {
