@@ -93,16 +93,6 @@ Here are descriptions of Statements that can be sent to the Jisc Learning Data H
         <tr><td> <a href = "recipes/readinglist/readinglist-viewed-content.md">Reading List viewed content</a></td><td><a href="recipes/readinglist/uxapi/readinglist-viewed-content-input.md">readinglist-viewed-content-input.md</a></td><td><a href="recipes/readinglist/uxapi/readinglist-viewed-content-template.json">readinglist-viewed-content-template.json</td></tr> 
 </table>
 
-## Setting and Reaching Targets
-
-<table>
-<tr><td>Statement Template</td><td>Input TSV definitions</td><td>JSON Template</td></tr>  
-<tr><td><a href = "recipes/studyapps/target-set.md">Set a target</a></td> <td><a href="recipes/studyapps/uxapi/target-set-input.md">target-set-input.md</a></td> <td></td></tr>
-<tr><td><a href = "recipes/studyapps/target-recording-activity.md">Record an activity against a target</a> </td><td><a href="recipes/studyapps/uxapi/target-set-input.md">target-set-input.md</a></td><td></td></tr>
-<tr><td><a href = "recipes/studyapps/target-reached-completed.md">Reach a target</a></td><td><a href="recipes/studyapps/uxapi/target-set-input.md">target-set-input.md</a></td><td></td></tr>
-<tr><td><a href = "recipes/studyapps/target-update.md">Post an update</a></td><td><a href="recipes/studyapps/uxapi/target-set-input.md">target-set-input.md</a> </td><td></td></tr> 
-</table>
-
 
 ## Video
 
