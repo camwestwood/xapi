@@ -122,7 +122,7 @@ Common entity identifier: [ObjectA](/common_structures.md#objecta)
 {
   "context": {
 		"extensions": {
-				"http://xapi.jisc.ac.uk/version": "1.1",
+				"http://xapi.jisc.ac.uk/version": "1.1.1",
 				"http://xapi.jisc.ac.uk/extensions/direction_of_access": "In",
 				"https://xapi.jisc.ac.uk/recipeCat": "Access"
 		}
@@ -157,7 +157,7 @@ Common entity identifier: [ObjectA](/common_structures.md#objecta)
 	},
 	"context": {
 		"extensions": {
-				"http://xapi.jisc.ac.uk/version": "1.1",
+				"http://xapi.jisc.ac.uk/version": "1.1.1",
 				"http://xapi.jisc.ac.uk/extensions/direction_of_access": "in",
 				"https://xapi.jisc.ac.uk/recipeCat": "access"
 		}

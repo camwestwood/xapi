@@ -23,7 +23,7 @@
 	},
 	"context": {
 		"extensions": {
-				"http://xapi.jisc.ac.uk/version": "1.1",
+				"http://xapi.jisc.ac.uk/version": "1.1.1",
 				"http://xapi.jisc.ac.uk/extensions/direction_of_access": "**DIRECTION_OF_ACCESS**",
 				"https://xapi.jisc.ac.uk/recipeCat": "Access"
 		}

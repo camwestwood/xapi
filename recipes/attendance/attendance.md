@@ -263,7 +263,7 @@ The result.completion must be set to true if the student attended the event, or 
          }
       },
       "extensions": {
-         "http://xapi.jisc.ac.uk/version": "1.1",
+         "http://xapi.jisc.ac.uk/version": "1.1.1",
          "http://xapi.jisc.ac.uk/deviceLocation": {
             "type": "Feature",
             "geometry": {

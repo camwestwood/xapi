@@ -40,7 +40,7 @@
 			"http://xapi.jisc.ac.uk/recipeCat": "ReadingList",
 			"http://xapi.jisc.ac.uk/sessionId": "**SESSION_ID**",
 			"http://id.tincanapi.com/extension/ip-address": "**CLIENT_IP**",
-			"http://xapi.jisc.ac.uk/version": "1.1"
+			"http://xapi.jisc.ac.uk/version": "1.1.1"
 		}
 	}
 }

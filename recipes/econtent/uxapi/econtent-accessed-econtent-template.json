@@ -24,7 +24,7 @@
 	"context": {
 		"platform": "**PLATFORM**", 
 		"extensions": {
-				"http://xapi.jisc.ac.uk/version": "1.1",
+				"http://xapi.jisc.ac.uk/version": "1.1.1",
 				"http://id.tincanapi.com/extensions/ip-address": "**CLIENT_IP**",
 				"https://xapi.jisc.ac.uk/recipeCat": "Econtent",
 				"http://xapi.jisc.ac.uk/extensions/user-agent": "**USER_AGENT**"
