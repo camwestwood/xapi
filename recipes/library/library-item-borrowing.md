@@ -56,12 +56,12 @@ The Verb [borrowed](http://activitystrea.ms/schema/1.0/borrowed) indicates that 
 	</tr>
 	<tr>
 		<td>object.id [1]</td>
-		<td>An identifier for the thing being borrowed. This must be unique across all object types.</td>
+		<td>An identifier for the thing being borrowed or resource being borrowed from. This must be unique across all object types.</td>
 		<td>iri</td>
 	</tr>
 	<tr>
 		<td>object.definition.type [1]</td>
-		<td>Indicates the type of the object of the statement. It is required and valid values are listed on the <a href="../../vocabulary.md#activity-types">vocabulary page</a></td>
+		<td>Indicates the type of the object of the statement. It is required and should be http://xapi.jisc.ac.uk/library/resource" for item borrowed statements</a></td>
 		<td>iri</td>
 	</tr>
 	<tr>

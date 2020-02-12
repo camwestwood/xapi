@@ -5,13 +5,13 @@ Data should be supplied as a UTF-8 Tab Separated File called borrowing.tsv
 # library-borrowed
 
 * [USERNAME](#USERNAME) [1]
-* [ITEM_ID](#item_id) [0..1]
+* [ITEM_ID](#item_id) [0..1] (deprecated)
 * [HOMEPAGE](#item_id) [1]
-* [ITEM_NAME](#item_name) [0..1]
-* [ITEM_SUBTYPE](#item_subtype) [1]
-* [OCLC_NUMBER](#oclc_number) [0..1]
-* [SUBJECT_AREA](#subject_area) [0..1]
-* [BORROWING_SITE](#borrowing_site) [0..1]
+* [ITEM_NAME](#item_name) [0..1] (deprecated)
+* [ITEM_SUBTYPE](#item_subtype) [1] (deprecated)
+* [OCLC_NUMBER](#oclc_number) [0..1] (deprecated)
+* [SUBJECT_AREA](#subject_area) [0..1] (deprecated)
+* [BORROWING_SITE](#borrowing_site) [0..1] (deprecated)
 * [TIMESTAMP](#timestamp) [1]
 
 
@@ -33,7 +33,7 @@ Any
 ### Format
 String (255)
 
-## ITEM_ID 
+## ITEM_ID (deprecated)
 ### Description
 
 A unique identifier for that item
@@ -45,7 +45,7 @@ Any
 String (255)
 
 
-## ITEM_NAME
+## ITEM_NAME (deprecated)
 ### Description
 
 A name identifier for that item
@@ -53,7 +53,7 @@ A name identifier for that item
 ### Format
 String (255)
 
-## ITEM_SUBTYPE
+## ITEM_SUBTYPE (deprecated)
 ### Description
 
 The type of item being borrowed
@@ -65,7 +65,7 @@ Any
 String (255)
 
 
-## OCLC_NUMBER
+## OCLC_NUMBER (deprecated)
 ### Description
 
 OLCL Number. See the [the OCLC help site for more information](https://help.oclc.org/Metadata_Services/WorldShare_Collection_Manager/Choose_your_Collection_Manager_workflow/Data_sync_collections/Prepare_your_data/035_field_and_OCLC_control_numbers)
@@ -78,7 +78,7 @@ Any
 String (255)
 
 
-## TIMESTAMP 
+## TIMESTAMP (deprecated)
 ### Description
 The time at which the library item was borrowed
 
@@ -88,7 +88,7 @@ Any
 ### Format
 ISO 8601 date time
 
-## BORROWING_SITE 
+## BORROWING_SITE (deprecated)
 ### Description
 The site that the item was borrowed from.
 
@@ -98,7 +98,7 @@ Any
 ### Format
 String (255)
 
-## SUBJECT_AREA 
+## SUBJECT_AREA (deprecated)
 ### Description
 The subject area of the item.
 

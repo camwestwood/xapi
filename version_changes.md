@@ -298,6 +298,8 @@ v1.0.1 Statement Added To Repository
 
 #### Library item Borrowed Item
 
+v1.1.1 5-04-2020, Spec Change. [depricated item details](https://github.com/jiscdev/xapi/issues/331)
+
 v1.0.3 5-04-2019, Spec Change. [Recipe category added](https://github.com/jiscdev/xapi/issues/294)
 
 v1.0.3 5-04-2019, Spec Change. [Statement category deprecated](https://github.com/jiscdev/xapi/issues/294)
@@ -353,7 +355,9 @@ v1.0.3 5-04-2019, Spec Change. [Statement category deprecated](https://github.co
 v1.0.1 Statement Added To Repository
 
 
+## access
 
+v1.1.1 Statement Added To Repository
 
 
 # Vocabulary Changes
