@@ -6,13 +6,10 @@ Data should be supplied as a UTF-8 Tab Seperated File called reading_viewed.tsv
 
 * [USERNAME](#username) [1]
 * [HOMEPAGE](#homepage) [1]
-* [EMAIL](#email) [0..1] (depricated)
 * [TIMESTAMP](#timestamp) [1]
 * [OBJECT_ID](#object_id) [1]
 * [OBJECT_NAME](#object_name) [0..1] 
-* [SESSION_ID](#session_id) [0..1] (depricated)
 * [PLATFORM](#platform) [0..1] 
-* [CLIENT_IP](#client_ip) [0..1] (depricated)
 * [UDD_MOD_INST_ID](#udd_mod_inst_id) [0..1]
 * [VLE_MOD_ID](#vle_mod_id) [0..1]
 

@@ -6,18 +6,14 @@ Data should be supplied as a UTF-8 Tab Seperated File called readinglistitemview
 
 * [USERNAME](#username) [1]
 * [HOMEPAGE](#homepage) [1]
-* [EMAIL](#email) [0..1]
 * [TIMESTAMP](#timestamp) [1]
 * [OBJECT_ID](#object_id) [1]
 * [OBJECT_NAME](#object_name) [0..1] 
 * [PARENT_ID](#parent_id) [0..1] 
 * [OBJECT_TYPE](#object_type) [0..1] 
-* [SESSION_ID](#session_id) [0..1] 
 * [PLATFORM](#platform) [0..1] 
-* [CLIENT_IP](#client_ip) [0..1]
 * [UDD_MOD_INST_ID](#udd_mod_inst_id) [0..1]
 * [VLE_MOD_ID](#vle_mod_id) [0..1]
-* [USER_AGENT](#user_agent) [0..1]
 
 
 
@@ -102,27 +98,6 @@ Any
 
 ### Format
 iri
-
-
-## CLIENT_IP 
-### Description
-Client's IP address. An IPv4 address is recommended.
-
-### Valid Values
-Any
-
-### Format
-String (255)
-
-## SESSION_ID 
-### Description
-The VLE session ID, or a suitably hashed version of it. A value should be provided if this information is available.
-
-### Valid Values
-Any
-
-### Format
-String (255)
 
 
 ## VLE_MOD_ID 

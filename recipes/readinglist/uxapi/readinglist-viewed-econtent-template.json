@@ -1,43 +1,44 @@
 {
-	"version": "1.0.0",
-	"actor": {
-		"objectType": "Agent",
-		"account": {
-			"name": "**USERNAME**",
-			"homePage": "**HOMEPAGE**"
-		}
+	"version":"1.0.0",
+	"timestamp":"**TIMESTAMP**",
+	"actor":{
+	   "objectType":"Agent",
+	   "account":{
+		  "name":"**USERNAME**",
+		  "homePage":"**HOMEPAGE**"
+	   }
 	},
-	"timestamp": "**TIMESTAMP**",
-	"verb": {
-		"id": "http://id.tincanapi.com/verb/viewed",
-		"display": {
-			"en": "viewed"
-		}
+	"verb":{
+	   "id":"http://activitystrea.ms/schema/1.0/access",
+	   "display":{
+		  "en":"accessed"
+	   }
 	},
-	"object": {
-		"objectType": "Activity",
-		"id": "**ITEM_ID**",
-		"definition": {
-			"type": "http://id.tincanapi.com/activitytype/resource",
-			"name": {
-				"en": "**ITEM_NAME**"
-			},
-		        "extensions": {
-					"http://xapi.jisc.ac.uk/subType": "**ITEM_SUBTYPE**"
-			}	
-		}
+	"object":{
+	   "objectType":"Activity",
+	   "id":"**URL**",
+	   "definition":{
+		  "type":"http://xapi.jisc.ac.uk/activities/externalContent"
+	   }
 	},
-	"context": {
-		"platform": "**PLATFORM**",
-		"extensions": {
-			"http://xapi.jisc.ac.uk/sessionId": "**SESSION_ID**",
-			"http://xapi.jisc.ac.uk/recipeCat": "Readinglist",
-			"http://id.tincanapi.com/extensions/ip-address": "**CLIENT_IP**",
-			"http://xapi.jisc.ac.uk/version": "1.1.1",
-			"http://xapi.jisc.ac.uk/extensions/user-agent": "**USER_AGENT**"
-		}
-		}
-
+	"context":{
+	   "extensions":{
+		  "http://xapi.jisc.ac.uk/courseArea": {
+				 "http://xapi.jisc.ac.uk/vle_mod_id": "**VLE_MOD_ID**",
+				 "http://xapi.jisc.ac.uk/uddModInstanceID": "**UDD_MOD_INST_ID**"
+			 },
+		  "http://xapi.jisc.ac.uk/recipeCat":"ReadingList",
+		  "http://xapi.jisc.ac.uk/version":"1.1.1",
+		  "http://xapi.jisc.ac.uk/course_id": "**COURSE_ID**",
+		  "http://xapi.jisc.ac.uk/item_type": "**OBJECT_TYPE**"
+	   },
+	   "platform":"**PLATFORM**",
+	   "contextActivities":{
+		  "parent":[
+			 {
+				"id":"**PARENT_ID**"
+			 }
+		  ]
+	   }
 	}
-
-}
+ }
