@@ -50,7 +50,7 @@ The Object for viewed Statements identifies what is being viewed.
 	"objectType": "Activity",
 	"id": "http://reading.jisc.ac.uk/page/4/item/view.php?id=9"   	 	
 	"definition": {
-		"type": "http://jisc.ac.uk/reading-list",			
+		"type": "http://jisc.ac.uk/activities/reading-list",			
 		"name": { "en": "Computer Science Reading List"}
     }
 }
@@ -73,9 +73,8 @@ Common entity identifier: [ContextA](/common_structures.md#contextb) .
 				"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0"
 			},
 			
- 		"http://xapi.jisc.ac.uk/sessionId":"32456891",
     	"http://id.tincanapi.com/extension/ip-address": "10.3.3.48",
-		"http://xapi.jisc.ac.uk/version" : "1.1"
+		"http://xapi.jisc.ac.uk/version" : "1.1.1"
 			}
 		}
 ```
