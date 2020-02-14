@@ -10,6 +10,8 @@ Data should be supplied as a UTF-8 Tab Separated File called readinglist-accesse
 * [CLIENT_IP](#client_ip) [0..1]
 * [LIST_ITEM](#list_item) [0..1]
 * [USER_AGENT](#user_agent) [0..1]
+* [LIST_ID](#list_id) [0..1]
+
 
 
 
@@ -61,6 +63,16 @@ String (255)
 ## USER_AGENT 
 ### Description
 String with User-Agent characteristics. Used to identify the application type, operating system, software vendor or software version of the requesting software user agent. 
+
+### Valid Values
+Any
+
+### Format
+string
+
+## LIST_ID 
+### Description
+The list ID is a unique identifier for the list
 
 ### Valid Values
 Any

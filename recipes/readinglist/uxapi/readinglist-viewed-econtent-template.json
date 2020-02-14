@@ -27,7 +27,7 @@
 		  "http://xapi.jisc.ac.uk/version":"1.1.1",
 		  "http://xapi.jisc.ac.uk/course_id": "**COURSE_ID**",
 		  "http://xapi.jisc.ac.uk/item_type": "**OBJECT_TYPE**",
-		  "http://xapi.jisc.ac.uk/list_id`":"**LIST_ID**"
+		  "http://xapi.jisc.ac.uk/extensions/list_id":"**LIST_ID**"
 	   },
 	   "platform":"**PLATFORM**",
 	   "contextActivities":{
