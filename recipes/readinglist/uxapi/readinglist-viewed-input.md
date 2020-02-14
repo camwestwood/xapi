@@ -10,8 +10,7 @@ Data should be supplied as a UTF-8 Tab Seperated File called reading_viewed.tsv
 * [OBJECT_ID](#object_id) [1]
 * [OBJECT_NAME](#object_name) [0..1] 
 * [PLATFORM](#platform) [0..1] 
-* [UDD_MOD_INST_ID](#udd_mod_inst_id) [0..1]
-* [VLE_MOD_ID](#vle_mod_id) [0..1]
+* [LIST_ID](#list_id) [0..1] 
 
 
 ## USERNAME 

@@ -9,7 +9,7 @@ Data should be supplied as a UTF-8 Tab Separated File called econtent.tsv.
 * [ITEM_ID](#item_id) [1]
 * [ITEM_NAME](#item_name) [1]
 * [ITEM_SUBTYPE](#item_subtype) [1]
-
+* [LIST_ID](#list_id) [0..1] 
 
 
 ## USERNAME 

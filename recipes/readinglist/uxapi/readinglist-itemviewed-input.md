@@ -12,9 +12,7 @@ Data should be supplied as a UTF-8 Tab Seperated File called readinglistitemview
 * [PARENT_ID](#parent_id) [0..1] 
 * [OBJECT_TYPE](#object_type) [0..1] 
 * [PLATFORM](#platform) [0..1] 
-* [UDD_MOD_INST_ID](#udd_mod_inst_id) [0..1]
-* [VLE_MOD_ID](#vle_mod_id) [0..1]
-
+* [LIST_id](#list_id) [0..1] 
 
 
 ## USERNAME 
