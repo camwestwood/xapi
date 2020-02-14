@@ -130,3 +130,13 @@ Any
 
 ### Format
 string
+
+## LIST_ID 
+### Description
+The list ID is a unique identifier for the list
+
+### Valid Values
+Any
+
+### Format
+string
