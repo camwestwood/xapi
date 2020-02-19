@@ -18,7 +18,10 @@
 		"objectType": "Activity",
 		"id": "**HOMEPAGE**/**OBJECT_ID**",
 		"definition": {
-			"type": "https://w3id.org/xapi/video/activity-type/video"
+			"type": "https://w3id.org/xapi/video/activity-type/video",
+			"name": {
+                    		"en": "**OBJECT_NAME**"
+                	}
 		}
 	},
 
