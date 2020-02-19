@@ -1,33 +1,34 @@
-{
-	"version": "1.0.0",
-	"actor": {
-		"objectType": "Agent",
-		"account": {
-			"name": "**USERNAME**",
-			"homePage": "**HOMEPAGE**" 
-		}
-	},
-	"timestamp": "**TIMESTAMP**",
-	"verb": {
-		"id": "http://activitystrea.ms/schema/1.0/access",
-		"display": {
-			"en": "accessed"
-		}
-	},
-	"object": {
-		"objectType": "Activity",
-		"id": "**SITE**",
-		"definition": {
-			"type": "**TYPE**"
-		}
-	},
-	"context": {
-		"extensions": {
-				"http://xapi.jisc.ac.uk/version": "1.1.1",
-				"http://xapi.jisc.ac.uk/extensions/direction_of_access": "**DIRECTION_OF_ACCESS**",
-				"https://xapi.jisc.ac.uk/recipeCat": "Access"
-		}
-				
-	}
 
+"version": "1.0.0",
+"actor": {
+	"objectType": "Agent",
+	"account": {
+		"name": "**STUDENT_ID**",
+		"homePage": "https:\\**HOMEPAGE**\"
+	}
+},
+"timestamp": "**TIMESTAMP**",
+"verb": {
+	"id": "http://activitystrea.ms/schema/1.0/access",
+	"display": {
+		"en": "accessed"
+	}
+},
+"object": {
+	"objectType": "Activity",
+	"id": "https:\\**HOMEPAGE**\**SITE**",
+	"definition": {
+		"type": "http://xapi.jisc.ac.uk/activities/learning_space"
+	}
+},
+"context": {
+	"extensions": {
+			"http://xapi.jisc.ac.uk/version": "1.1.1",
+			"http://xapi.jisc.ac.uk/extensions/direction_of_access": "**DIRECTION_OF_ACCESS**",
+			"http://xapi.jisc.ac.uk/extensions/access_id": "**ACCESS_ID**",
+			"https://xapi.jisc.ac.uk/recipeCat": "Access"
+	}
+			
 }
+
+}```

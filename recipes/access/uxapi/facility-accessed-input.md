@@ -9,8 +9,7 @@ Data should be supplied as a UTF-8 Tab Separated File called econtent.tsv.
 * [TIMESTAMP](#timestamp) [1]
 * [SITE](#site) [1]
 * [DIRECTION](#direction) [0..1]
-* [TYPE](#type) [1]
-
+* [ACCESS_ID](#type) [1]
 
 
 ## USERNAME 
@@ -79,3 +78,15 @@ Value is a string representing an Internet Protocol address (IP address) in eith
 
 ### Format
 String (255)
+
+## ACCESS ID 
+### Description
+
+The activity type
+
+### Valid Values
+Identifer for access id
+
+### Format
+String (255)
+
