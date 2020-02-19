@@ -2,7 +2,7 @@ This is the input file for an note-create-activity event.
 
 Data should be supplied as a UTF-8 Tab Seperated File called notes-create.tsv
 
-# case-create-activity
+# interaction-activity
 
 
 * [USERNAME](#username) [1]
