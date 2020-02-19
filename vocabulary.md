@@ -496,6 +496,15 @@ The following are Jisc Profile extensions to be used in [object.definition.exten
 
 Was used in older recipes to identify the genre of software application. Best practice is to use subType instead.
 
+
+<table>
+<tr><th align="left">Label</th><td>Access ID</td></tr>
+<tr><th align="left">Description</th><td>Identifies the student's access ID </td></tr>
+<tr><th align="left">IRI</th><td><a href="http://xapi.jisc.ac.uk/extensions/access_id">http://xapi.jisc.ac.uk/extensions/access_id/a></td></tr>
+<tr><th align="left">Data Type</th><td>IRI</td></tr>
+</table>
+
+
 <table>
 <tr><th align="left">Label</th><td>Application Type</td></tr>
 <tr><th align="left">Description</th><td>Identifies the genre of software application</td></tr>
