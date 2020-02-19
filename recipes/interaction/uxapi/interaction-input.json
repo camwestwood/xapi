@@ -28,12 +28,11 @@
 	"platform": "**PLATFORM**",
 
     "extensions": {
-			"http://xapi.jisc.ac.uk/extensions/interaction_type": "interaction_type"
+            "http://xapi.jisc.ac.uk/extensions/interaction_type": "**INTERACTION_TYPE**",
+            "http://xapi.jisc.ac.uk/extensions/interaction_reson": "**INTERACTION_REASON**"
+            
 			}
 				
         }
         
-
-
-
 }

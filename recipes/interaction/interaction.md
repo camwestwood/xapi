@@ -71,41 +71,8 @@ The Timestamp property must be set to the date and time of the interaction
 ```
 
 ## Context
-The Context must identify the type of interaction
+The Context must identify the type of interaction and reason
 
-<table>
-	<tr><th>Property [cardinality]</th><th>Description</th><th>Value information</</th></tr>
-	<tr>
-		<td>context.platform [1]</td>
-		<td>The platform used in the experience of this learning activity. The value used should not change between platform upgrades and version changes, and should typically be a concise name by which the application is commonly known, for example "Moodle" or "Blackboard"</td>
-		<td>string</td>
-	</tr>	
-	<tr>
-		<td>context.extensions.https://xapi.jisc.ac.uk/version [0..1]</td>
-		<td>Recommended. Identifies the version of the Jisc xAPI Profile found on the ReadMe page. <br/></td>
-		<td>decimal</td>
-	</tr>
-	<tr>
-		<td>context.extensions.https://xapi.jisc.ac.uk/recipeCat [0..1]</td>
-		<td>Recommended for querying lookup. Set to recipe of Statement.<br/></td>
-		<td>String, value must be "Case".</td>
-	</tr>
-	<tr>
-		<td>context.extensions.http://xapi.jisc.ac.uk/case-target [1]</td>
-		<td>Identifies student who is target of case.</td>
-		<td>Actor entity (see example)</td>
-	</tr>
-	<tr>
-		<td>context.extensions.http://xapi.jisc.ac.uk/mode [0..1]</td>
-		<td>Describes the way in which the case was notified, for example "email".</td>
-		<td>string</td>
-	</tr>
-	<tr>
-		<td>context.extensions.http://xapi.jisc.ac.uk/weighting [0..1]</td>
-		<td>Numerical value of the importance of the case</td>
-		<td>integer</td>
-	</tr>
-</table>
 
 ### Entity Example:
 
@@ -114,7 +81,8 @@ The Context must identify the type of interaction
 	"platform": "**PLATFORM**",
 
     "extensions": {
-			"http://xapi.jisc.ac.uk/extensions/interaction_type": "interaction_type"
+			"http://xapi.jisc.ac.uk/extensions/interaction_type": "interaction_type",
+			"http://xapi.jisc.ac.uk/extensions/interaction_reason": "interaction_reason"
 			}
 ```
 ## Full Example
@@ -150,7 +118,8 @@ The Context must identify the type of interaction
 	"platform": "**PLATFORM**",
 
     "extensions": {
-			"http://xapi.jisc.ac.uk/extensions/interaction_type": "interaction_type"
+			"http://xapi.jisc.ac.uk/extensions/interaction_type": "interaction_type",
+			"http://xapi.jisc.ac.uk/extensions/interaction_reason": "interaction_reason"
 			}
 				
         }

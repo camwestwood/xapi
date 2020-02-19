@@ -10,6 +10,7 @@ Data should be supplied as a UTF-8 Tab Seperated File called notes-create.tsv
 * [DATE](#date) [1]
 * [INTERACTION_TYPE](#interaction_type) [1]
 * [INTERACTED_WITH](#interaction_with) [1]
+* [INTINTERACTION_REASON](#interaction_with) [1]
 
 
 ## USERNAME 
@@ -71,6 +72,18 @@ String (255)
 ### Description
 
 A unique identifier for the user who has been met with
+
+### Valid Values
+ANY
+
+### Format
+String (255)
+
+
+## INTERACTION_REASON 
+### Description
+
+A reason for the interaction
 
 ### Valid Values
 ANY
