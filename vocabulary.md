@@ -327,6 +327,17 @@ Example:
 <tr><th align="left">IRI</th><td> <a href="http://activitystrea.ms/schema/1.0/file">http://activitystrea.ms/schema/1.0/file</a> </td></tr>
 </table>
 
+### Learning Space
+
+<table>
+<tr><th align="left">Label</th><td>Learning Space</td></tr>
+<tr><th align="left">Description</th><td>A place in which teaching and learning occur. E.g A library</td></tr>
+<tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/activities/learning_space">http://xapi.jisc.ac.uk/activities/learning_space</a> </td></tr>
+</table>
+
+
+
+
 ### Module
 
 <table>
