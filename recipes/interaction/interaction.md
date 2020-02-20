@@ -28,7 +28,7 @@ Common entity identifier: [ActorA](/common_structures.md#actora)
 ```
 
 ## Verb
-This Verb, [interacted](/vocabulary.md#created), describes the action of interacting with another member of staff or student,
+This Verb, TBD, describes the action of interacting with another member of staff or student,
 
 Common entity identifier: [VerbA](/common_structures.md#verba)
 
@@ -36,28 +36,27 @@ Common entity identifier: [VerbA](/common_structures.md#verba)
 
 ``` javascript
 "verb": {
-   "id": "http://activitystrea.ms/schema/1.0/create",
+   "id": "TBD",
    "display": {
-      "en" : "created"
+      "en" : ""
    }
 }
 ```
 
 ## Object
-The Object is an actor describing the member of staff or student
 
-Common entity identifier: [VerbA](/common_structures.md#verba)
+
 
 ### Entity Example
 
 ``` javascript
-Object": {
-   "objectType": "AGENT",
-   "account": {
-       "name": "ds10",
-       "homePage": "https://notes.jisc.ac.uk""
-   },
-
+   "object": {
+    "objectType": "Activity",
+    "id": "**HOMEPAGE**/**OBJECT_ID**",	
+    "definition": {
+            "type": "**TYPE_TBD**",			
+            "name": { "en": "**NAME_TBD" }   
+     },
 ```
 
 ## Timestamp
@@ -98,19 +97,21 @@ The Context must identify the type of interaction and reason
         }
     },
   "verb": {
-        "id": "http://xapi.jisc.ac.uk/verbs/interacted",
+        "id": "**verb_TBD**",
         "display": {
             "en": "interacted with"
         }
     },
 
-"object": {
-   "objectType": "AGENT",
-   "account": {
-       "name": "**INTERACTION_WITH**",
-       "homePage": "**HOMEPAGE**"
-    }
-   },
+
+
+   "object": {
+    "objectType": "Activity",
+    "id": "**HOMEPAGE**/**OBJECT_ID**",	
+    "definition": {
+            "type": "**TYPE_TBD**",			
+            "name": { "en": "**NAME_TBD" }   
+     },
 
 "timestamp": "**TIMESTAMP**",
 
@@ -118,14 +119,12 @@ The Context must identify the type of interaction and reason
 	"platform": "**PLATFORM**",
 
     "extensions": {
-			"http://xapi.jisc.ac.uk/extensions/interaction_type": "interaction_type",
-			"http://xapi.jisc.ac.uk/extensions/interaction_reason": "interaction_reason"
+            "http://xapi.jisc.ac.uk/extensions/interaction_type": "**INTERACTION_TYPE**",
+            "http://xapi.jisc.ac.uk/extensions/interaction_reson": "**INTERACTION_REASON**"
+            
 			}
 				
         }
         
-
-
-
 }
 ```

@@ -8,19 +8,21 @@
         }
     },
   "verb": {
-        "id": "http://xapi.jisc.ac.uk/verbs/interacted",
+        "id": "**verb_TBD**",
         "display": {
             "en": "interacted with"
         }
     },
 
-"object": {
-   "objectType": "AGENT",
-   "account": {
-       "name": "**INTERACTION_WITH**",
-       "homePage": "**HOMEPAGE**"
-    }
-   },
+
+
+   "object": {
+    "objectType": "Activity",
+    "id": "**HOMEPAGE**/**OBJECT_ID**",	
+    "definition": {
+            "type": "**TYPE_TBD**",			
+            "name": { "en": "**NAME_TBD" }   
+     },
 
 "timestamp": "**TIMESTAMP**",
 
