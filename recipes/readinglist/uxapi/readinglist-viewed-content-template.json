@@ -1,47 +1,43 @@
 {
-	"version": "1.0.0",
-	"actor": {
-		"objectType": "Agent",
-		"account": {
-			"name": "**USERNAME**",
-			"homePage": "**HOMEPAGE**" 
-		}
-	},
-	"timestamp": "**TIMESTAMP**",
-	"verb": {
-		"id": "http://activitystrea.ms/schema/1.0/access",
-		"display": {
-			"en": "accessed"
-		}
-	},
-	"object": {
-		"objectType": "Activity",
-		"id": "**URL**",
-		"definition": {
-			"type": "http://xapi.jisc.ac.uk/externalContent"
-		}
-	},
-	"context": {
-		"platform": "**PLATFORM**", 
-		"extensions": {
-
-			"contextActivities":{
-				"parent":[
-					{
-						
-						"id":"**PARENT_ID**"
-						
-					}
-				]
-			},
-
-				"http://xapi.jisc.ac.uk/version": "1.1",
-				"https://xapi.jisc.ac.uk/recipeCat": "Readinglist",
-				"http://xapi.jisc.ac.uk/extensions/user-agent": "**USER_AGENT**"
-		}
-				
-		}
-
-	}
-
+   "version":"1.0.0",
+   "timestamp":"**TIMESTAMP**",
+   "actor":{
+      "objectType":"Agent",
+      "account":{
+         "name":"**USERNAME**",
+         "homePage":"**HOMEPAGE**"
+      }
+   },
+   "verb":{
+      "id":"http://activitystrea.ms/schema/1.0/access",
+      "display":{
+         "en":"accessed"
+      }
+   },
+   "object":{
+      "objectType":"Activity",
+      "id":"**OBJECT_ID**",
+      "definition":{
+         "type":"http://xapi.jisc.ac.uk/activities/externalContent",
+          "name":{
+            "en":"**OBJECT_NAME**"
+         }
+      }
+   },
+    "context":{
+        "platform":"**PLATFORM**",
+        "extensions":{
+            "http://xapi.jisc.ac.uk/recipeCat":"ReadingList",
+            "http://xapi.jisc.ac.uk/version":"1.0.3",
+            "http://xapi.jisc.ac.uk/extenstions/list_id:":"**LIST_ID**",
+            "http://xapi.jisc.ac.uk/extenstions/list_name":"**LIST_NAME**",
+            "http://xapi.jisc.ac.uk/extenstions/item_type":"**ITEM_TYPE**",
+            "http://xapi.jisc.ac.uk/extenstions/item_id":"**ITEM_ID**",
+            "http://xapi.jisc.ac.uk/extenstions/resource_domain":"**RESOURCE_DOMAIN**",
+                "http://xapi.jisc.ac.uk/courseArea":{
+                    "http://xapi.jisc.ac.uk/vle_mod_id":"**VLE_MOD_ID**",
+                    "http://xapi.jisc.ac.uk/uddModInstanceID":"**UDD_MOD_INST_ID**"
+                }
+        }
+    }
 }
