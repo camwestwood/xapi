@@ -1,24 +1,31 @@
-This is the input file for a library-accessed-econtent event.
+This is the specification for an input TSV file for accessing a reading list item content.  This might be clicking through to the LMS to borrow a book, or following an external link to a YouTube video.
 
-Data should be supplied as a UTF-8 Tab Separated File called readinglist-accessed.tsv.
+Data should be supplied as a UTF-8 Tab Seperated File called reading_accessed.tsv
 
-# library-accessed-econtent
+# reading_list_viewed
 
 * [USERNAME](#username) [1]
+* [HOMEPAGE](#homepage) [1]
 * [TIMESTAMP](#timestamp) [1]
-* [URL](#url) [1]
-* [CLIENT_IP](#client_ip) [0..1]
-* [LIST_ITEM](#list_item) [0..1]
-* [USER_AGENT](#user_agent) [0..1]
-* [LIST_ID](#list_id) [0..1]
-
-
+* [OBJECT_ID](#object_id) [1]
+* [OBJECT_NAME](#object_name) [0..1] 
+* [PLATFORM](#platform) [0..1] 
+* [LIST_ID](#list_id) [0..1] 
+* [LIST_NAME](#list_name) [0..1] 
+* [ITEM_ID](#item_id) [0..1] 
+* [ITEM_TYPE](#item_type) [0..1] 
+* [RESOURCE_DOMAIN](#resource_domain) [0..1] 
 
 
 ## USERNAME 
 ### Description
+A unique identifier for the individual viewing the resource.
 
-A unique identifier for that user
+### Purpose
+Analytics - to identify the user
+
+### Derivation
+Jisc
 
 ### Valid Values
 Any
@@ -26,56 +33,112 @@ Any
 ### Format
 String (255)
 
-## TIMESTAMP
-### Description
 
-Timestamp representing time
+## HOMEPAGE 
+### Description
+URL of the home page of the application for which the login id applies.
 
 ### Valid Values
 Any
-
-### Format
-ISO 8601 timestamp
-
-## URL 
-### Description
-
-A full URL for this resource
-
-### Valid Values
-Any
-
-### Format
-String (1023)
-
-
-## CLIENT_IP 
-### Description
-
-Client's address location on internet, the IP address that has made the request to view the content.
-
-### Valid Values
-Value is a string representing an Internet Protocol address (IP address) in either IPv4 or IPv6 format.
 
 ### Format
 String (255)
 
-## USER_AGENT 
+
+## TIMESTAMP 
 ### Description
-String with User-Agent characteristics. Used to identify the application type, operating system, software vendor or software version of the requesting software user agent. 
+The time at which the user viewed the resource.
+
 
 ### Valid Values
 Any
 
 ### Format
-string
+ISO 8601 date time
+
+
+## OBJECT_ID 
+### Description
+An identifier for the resource being viewed.
+
+### Valid Values
+Any
+
+### Format
+iri
+
+
+## OBJECT_NAME 
+### Description
+Optional name for resource being viewed.
+
+### Valid Values
+Any
+
+### Format
+String (255)
+
+## OBJECT_TYPE 
+### Description
+Type for resource being viewed.
+
+### Valid Values
+Any
+
+### Format
+String (255)
+
 
 ## LIST_ID 
 ### Description
-The list ID is a unique identifier for the list
+An identifier for a the list in the platform
 
 ### Valid Values
 Any
 
 ### Format
-string
+String (255)
+
+
+## LIST_NAME 
+### Description
+The name of the list in the platform
+
+### Valid Values
+Any
+
+### Format
+String (255)
+
+
+## ITEM_ID 
+### Description
+An identifier for item being viewed (e.g. book, external link)
+
+### Valid Values
+Any
+
+### Format
+String (255)
+
+
+## ITEM_TYPE 
+### Description
+The type of item being viewed (e.g. book, external link)
+
+### Valid Values
+Any
+
+### Format
+String (255)
+
+
+## RESOURCE_DOMAIN 
+### Description
+The domain for the resource being viewed (e.g. github.com as opposed to the full URL which is captured in OBJECT_ID).
+
+### Valid Values
+Any
+
+### Format
+String (255)

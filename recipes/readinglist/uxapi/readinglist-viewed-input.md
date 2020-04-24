@@ -11,6 +11,7 @@ Data should be supplied as a UTF-8 Tab Seperated File called reading_viewed.tsv
 * [OBJECT_NAME](#object_name) [0..1] 
 * [PLATFORM](#platform) [0..1] 
 * [LIST_ID](#list_id) [0..1] 
+* [LIST_NAME](#list_name) [0..1] 
 
 
 ## USERNAME 
@@ -40,15 +41,6 @@ Any
 ### Format
 String (255)
 
-## Email 
-### Description
-An Email address that has only ever been and will ever be assigned to this Agent.
-
-### Valid Values
-Email Address
-
-### Format
-String (255)
 
 ## TIMESTAMP 
 ### Description
@@ -60,6 +52,7 @@ Any
 
 ### Format
 ISO 8601 date time
+
 
 ## OBJECT_ID 
 ### Description
@@ -82,10 +75,9 @@ Any
 ### Format
 String (255)
 
-
-## SESSION_ID 
+## OBJECT_TYPE 
 ### Description
-The VLE session ID, or a suitably hashed version of it. A value should be provided if this information is available.
+Type for resource being viewed.
 
 ### Valid Values
 Any
@@ -93,50 +85,24 @@ Any
 ### Format
 String (255)
 
-## VLE_MOD_ID 
-### Description
-An identifier for a course area in a VLE. It is used in conjunction with UDD_MOD_INST_ID to link module instances to course areas. Note that several module instances identified by their UDD_MOD_INST_ID can link to one VLE_MOD_ID in the VLE.
-
-### Valid Values
-Any
-
-### Format
-String (255)
-
-### Notes
-Mandatory if UDD_MOD_INST_ID not present.
-
-
-## UDD_MOD_INST_ID 
-### Description
-An identifier for a module instance
-The value should correspond to the UDD module_instance.MOD_INSTANCE_ID identifier that identifies the relevant module in UDD compliant data.
-
-### Valid Values
-Any
-
-### Format
-String (255)
-
-### Notes
-Mandatory if VLE_MOD_ID not present.
-
-## USER_AGENT 
-### Description
-String with User-Agent characteristics. Used to identify the application type, operating system, software vendor or software version of the requesting software user agent. 
-
-### Valid Values
-Any
-
-### Format
-string
 
 ## LIST_ID 
 ### Description
-The list ID is a unique identifier for the list
+An identifier for a the list in the platform
 
 ### Valid Values
 Any
 
 ### Format
-string
+String (255)
+
+
+## LIST_NAME 
+### Description
+The name of the list in the platform
+
+### Valid Values
+Any
+
+### Format
+String (255)
