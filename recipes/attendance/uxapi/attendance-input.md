@@ -3,6 +3,7 @@ This is the input file for an attendance event.
 Data should be supplied as a UTF-8 Tab Seperated File called attendance.tsv
 
 # Attendance TSV Binding
+
 * [STUDENT_ID](#student_id) [1]
 * [EVENT_ID](#event_id) [1]
 * [EVENT_NAME](#event_name) [0..1]
@@ -20,7 +21,7 @@ Data should be supplied as a UTF-8 Tab Seperated File called attendance.tsv
 * [STAFF_ID](#staff_id) [0..1]
 * [MOD_INSTANCE_ID](#mod_instance_id) [0..1]
 * [COURSE_INSTANCE_ID](#course_instance_id) [0..1]
-
+* [TIMETABLED](#timetabled) [0..1]
 
 
 ## STUDENT_ID
@@ -240,5 +241,20 @@ Any
 ### Format
 ISO 8601 Datetime (eg 2015-05-24T09:00Z)
 
-### Notes
+## TIMETABLED
+### Description
+Attendance at either timetabled events or non-timetabled events can be recorded in an attendance statement. It is vital that the correct object.definition.type is used to differentiate them:
 
+- timetabled event - object.definition.type: http://xapi.jisc.ac.uk/event_timetabled
+- non-timetabled event - object.definition.type: http://xapi.jisc.ac.uk/event_non-timetabled
+
+A **timetabled event** is a learning activity that is specifically recorded in the provider's timetabling system for students to attend usually but not exclusively within the context of a module or course; for example, a lecture, seminar or practical. These events will usually have fixed start and end times.
+
+A **non-timetabled event** is an event not contained within the provider's timetabling system, for example an ad hoc learning activity, pastoral activity or a non-teaching activity. These events may or may not have fixed start and end times, and may or may not be within the context of a module or course. Most importantly, they are not covered by the timetabled event definition.
+
+### Valid Values
+0 - NO  
+1 - YES
+
+### Format
+INTEGER
