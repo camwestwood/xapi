@@ -1,14 +1,15 @@
 # xAPI recipes for the Jisc Learning Analytics Service v1.1.1
 
 ## Repository Workflow
+
 The simplest way to contribute to the xAPI service is as follows:
 
 1. Add an issue to the issue tracker to alert everyone to what you are working on and why.
 2. Tag the issue with the version milestone you'd like the patch to be part of.
 3. If the feature is for this version then make an edit or add a file in this repository, and save it to your own branch. If you prefer, you can fork the whole repository and work in your own repository. Otherwise create a feature-branch to work in.
 4. If you are creating a new Statement in a recipe then check if a generic template will help. If you are creating a new Statement then consider creating a generic one first.
-4. Send a pull request once you're done.
-5. The pull request will be discussed at one of our regular meetings and either merged, or kept in the queue, depending on whether more work is required.
+5. Send a pull request once you're done.
+6. The pull request will be discussed at one of our regular meetings and either merged, or kept in the queue, depending on whether more work is required.
 
 You can do all this through the Github GUI, but you're welcome to use any other git tool you prefer.
 
@@ -22,6 +23,7 @@ If the need arises, particular versions will get their own branches, but until t
 * [Generic Statement Templates](generic/index.md) can be found in this directory.
 
 # Recipes
+
 Here are descriptions of Statements that can be sent to the Jisc Learning Data Hub, full Statement examples, and data needed to create the Statement. As far as possible all entities are the same across all the Statements, these reusable parts of Statements are linked from templates and can be found in the [Common Structures](common_structures.md) page which contains all common patterns used across different Statements. If an entity is not reusable then properties are described in the Statement template.
 
 ## Accessed Facilties
@@ -40,7 +42,6 @@ Here are descriptions of Statements that can be sent to the Jisc Learning Data H
 <tr><td> <a href = "/recipes/econtent/econtent-accessed-econtent.md">Accessed service</a></td><td><a href="recipes/econtent/uxapi/econtent-accessed-econtent-input.md">econtent-accessed-econtent-input.md</a></td><td><a href="recipes/econtent/uxapi/econtent-accessed-econtent-template.json">econtent-accessed-econtent-template.json</a></td></tr>  
 </table>
 
-
 ## Intervention Case
 
 <table>
@@ -50,7 +51,6 @@ Here are descriptions of Statements that can be sent to the Jisc Learning Data H
 <tr><td> <a href="recipes/case/close-case.md" > Close a case </a> </td><td><a href="recipes/case/uxapi/case-close-activity-input.md">case-close-activity-input.md </a>   </td> <td><a href="recipes/case/uxapi/case-close-activity-input.json">case-close-activity-input.json </a></td></tr>  
 <tr><td><a href="recipes/case/create-note.md"> Create a note</a> </td><td><a href="recipes/case/uxapi/note-create-activity-input.md">note-create-activity-input.md </a>   </td> <td><a href="recipes/case/uxapi/note-create-activity-input.json">note-create-activity-input.json </a>  </td></tr>
 </table>
-
 
 ## Interaction
 
