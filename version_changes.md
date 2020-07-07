@@ -320,6 +320,13 @@ v1.0.3 5-04-2019, Spec Change. [Statement category deprecated](https://github.co
 
 v1.0.2 New Access statement Added To Repository
 
+#### accessed learning space
+
+v1.1.1 5-04-2019, Spec Change. [Minted learning space](https://github.com/jiscdev/xapi/issues/329)
+
+v1.1 Added statement to repository
+
+
 ## Intervention/Case
 
 #### Open a case

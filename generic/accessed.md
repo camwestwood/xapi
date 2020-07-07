@@ -144,7 +144,7 @@ An object type of http://activitystrea.ms/schema/1.0/service is required for thi
 	"context": {
 		"platform": "ezproxy",
 		"extensions": {
-			"http://xapi.jisc.ac.uk/version": "1.1.1s",
+			"http://xapi.jisc.ac.uk/version": "1.1.1",
 			"http://id.tincanapi.com/extensions/ip-address": "165.154.154.1",
 			"https://xapi.jisc.ac.uk/recipeCat": "Library"
 		}

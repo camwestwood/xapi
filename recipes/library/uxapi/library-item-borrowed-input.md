@@ -78,7 +78,7 @@ Any
 String (255)
 
 
-## TIMESTAMP (deprecated)
+## TIMESTAMP 
 ### Description
 The time at which the library item was borrowed
 
@@ -88,7 +88,7 @@ Any
 ### Format
 ISO 8601 date time
 
-## BORROWING_SITE (deprecated)
+## BORROWING_SITE 
 ### Description
 The site that the item was borrowed from.
 
@@ -98,7 +98,7 @@ Any
 ### Format
 String (255)
 
-## SUBJECT_AREA (deprecated)
+## SUBJECT_AREA 
 ### Description
 The subject area of the item.
 

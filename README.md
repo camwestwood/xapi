@@ -52,6 +52,13 @@ Here are descriptions of Statements that can be sent to the Jisc Learning Data H
 </table>
 
 
+## Interaction
+
+<table>
+<tr><td>Statement Template </td><td>Input TSV  definitions</td><td>JSON Template</td></tr>
+<tr><td> <a href="recipes/interaction/interaction.md"> Interaction </a> </td><td> <a href="recipes/interaction/uxapi/interaction-input.md">interaction-input.md </a>  </td> <td><a href="recipes/interaction/uxapi/interaction-input.json">interaction-activity-input.json</a></td></tr>
+</table>
+
 ## Library Services
 
 <table>
