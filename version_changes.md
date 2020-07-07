@@ -1,6 +1,8 @@
 # Statement Template Changes
 Change in Version - Date - Change
 
+This document is no longer being contributed to since v 1.1 - changes can be tracked through commit history.
+
 ## Documentation
 
 v1.0.3 21-02-2019, Best practice. [Snake case and iri conventions ](https://github.com/jiscdev/xapi/issues/297)
