@@ -29,6 +29,8 @@ String (255)
 ### Description
 URL of the home page of the application for which the login id applies.
 
+Example: https://jisc.cloud.panopto.eu/
+
 ### Valid Values
 Any
 
