@@ -1,6 +1,6 @@
 This is the specification for an input TSV file for viewing a reading list item.
 
-Data should be supplied as a UTF-8 Tab Seperated File called reading_itemview.tsv
+Data should be supplied as a UTF-8 Tab Seperated File called readinglistitem_viewed.tsv
 
 # reading_list_viewed
 
