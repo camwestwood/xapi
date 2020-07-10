@@ -22,6 +22,7 @@ Data should be supplied as a UTF-8 Tab Seperated File called attendance.tsv
 * [MOD_INSTANCE_ID](#mod_instance_id) [0..1]
 * [COURSE_INSTANCE_ID](#course_instance_id) [0..1]
 * [TIMETABLED](#timetabled) [0..1]
+* [PLATFORM](#platform) [0..1] 
 
 
 ## STUDENT_ID
@@ -258,3 +259,13 @@ A **non-timetabled event** is an event not contained within the provider's timet
 
 ### Format
 INTEGER
+
+## PLATFORM 
+### Description
+The system/platform the activity has been captured from
+
+### Valid Values
+Any
+
+### Format
+String (255)

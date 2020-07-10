@@ -12,7 +12,7 @@ Data should be supplied as a UTF-8 Tab Separated File called videoviewed.tsv.
 * [MINUTES_WATCHED](#minutes_watched) [0..1]
 * [UDD_MOD_INST_ID](#udd_mod_inst_id) [0..1]
 * [VLE_MOD_ID](#vle_mod_id) [0..1]
-
+* [PLATFORM](#platform) [0..1] 
 
 ## USERNAME 
 ### Description
@@ -94,5 +94,12 @@ String (255)
 ### Notes
 Mandatory if VLE_MOD_ID not present.
 
+## PLATFORM 
+### Description
+The system/platform the activity has been captured from
 
+### Valid Values
+Any
 
+### Format
+String (255)

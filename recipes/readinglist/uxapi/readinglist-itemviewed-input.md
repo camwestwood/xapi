@@ -76,9 +76,9 @@ Any
 ### Format
 String (255)
 
-## OBJECT_TYPE 
+## PLATFORM 
 ### Description
-Type for resource being viewed.
+The system/platform the activity has been captured from
 
 ### Valid Values
 Any

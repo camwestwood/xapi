@@ -8,12 +8,12 @@ Data should be supplied as a UTF-8 Tab Separated File called econtent.tsv.
 * [TIMESTAMP](#timestamp) [1]
 * [ITEM_ID](#item_id) [1]
 * [HOMEPAGE](#HOMPAGE) [0..1]
+* [PLATFORM](#platform) [0..1] 
 * [ITEM_NAME](#item_name) [1]
 * [ITEM_SUBTYPE](#item_subtype) [1]
 * [SESSION_ID](#session_id) [1]
 * [CLIENT_IP](#client_ip) [0..1]
 * [USER_AGENT](#user_agent) [0..1]
-
 
 
 ## USERNAME 
@@ -56,9 +56,6 @@ String (255)
 
 A name identifier for that item
 
-### Purpose
-
-tbc
 
 ### Format
 String (255)
@@ -108,3 +105,13 @@ Any
 
 ### Format
 string
+
+## PLATFORM 
+### Description
+The system/platform the activity has been captured from
+
+### Valid Values
+Any
+
+### Format
+String (255)
