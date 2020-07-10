@@ -65,6 +65,12 @@ Any
 ### Format
 String (255)
 
+## MINUTES_WATCHED 
+### Description
+Number of minutes watches.  This is as a decimal value, including the seconds such as 14.34.
+
+### Format
+Decimal
 
 ## VLE_MOD_ID 
 ### Description
