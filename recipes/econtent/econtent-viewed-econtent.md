@@ -61,15 +61,11 @@ Common entity identifier: [ObjectA](/common_structures.md#objecta)
 ``` javascript
 "object": {
 	"objectType": "Activity",
-	"id": "http://onlinelibrary.jisc.ac.uk/doi/10.1111"   	 	
+	"id": "http://onlinelibrary.jisc.ac.uk/doi/10.1111",
 	"definition": {
 		"type": "http://id.tincanapi.com/activitytype/resource"
-		},
-		"extensions": {
-     		 "http://xapi.jisc.ac.uk/subType": "http://xapi.jisc.ac.uk/journal"
-	 	}
-    	}
-}
+		}
+    }
 ```
 
 
@@ -146,7 +142,7 @@ Common entity identifier: [ObjectA](/common_structures.md#objecta)
 		"objectType": "Activity",
 		"id": "http://onlinelibrary.jisc.ac.uk/doi/10.1111",
 		"definition": {
-			"type": "http://id.tincanapi.com/activitytype/resource",
+			"type": "http://xapi.jisc.ac.uk/activities/externalContent",
 		}
 	},	
 	"context": {

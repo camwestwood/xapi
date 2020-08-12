@@ -9,7 +9,7 @@ Data should be supplied as a UTF-8 Tab Separated File called econtent.tsv.
 * [HOSTNAME](#hostname) [1]
 * [CLIENT_IP](#client_ip) [0..1]
 * [USER_AGENT](#user_agent) [0..1]
-
+* [PLATFORM](#platform) [0..1] 
 
 
 ## USERNAME 
@@ -66,3 +66,13 @@ Any
 
 ### Format
 string
+
+## PLATFORM 
+### Description
+The system/platform the activity has been captured from
+
+### Valid Values
+Any
+
+### Format
+String (255)

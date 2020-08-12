@@ -1,8 +1,8 @@
 This is the specification for an input TSV file for accessing a reading list item content.  This might be clicking through to the LMS to borrow a book, or following an external link to a YouTube video.
 
-Data should be supplied as a UTF-8 Tab Seperated File called reading_accessed.tsv
+Data should be supplied as a UTF-8 Tab Seperated File called readinglistecontent_viewed.tsv
 
-# reading_list_viewed
+# Reading List viewed content
 
 * [USERNAME](#username) [1]
 * [HOMEPAGE](#homepage) [1]
@@ -78,9 +78,9 @@ Any
 ### Format
 String (255)
 
-## OBJECT_TYPE 
+## PLATFORM 
 ### Description
-Type for resource being viewed.
+The system/platform the activity has been captured from
 
 ### Valid Values
 Any

@@ -1,4 +1,4 @@
-# econtent_viewed statement template
+# Reading list e-content viewed statement template
 
 Based on generic template statement: [Viewed](/generic/view.md)
 
@@ -22,7 +22,7 @@ The actor entity describes the individual that is viewing econtent.
         "name": "John Smith",
         "account": {
             "name": "john-smith",
-            "homePage": "http://ezproxy.jisc.ac.uk"
+            "homePage": "http://readinglist.jisc.ac.uk"
         }
     },
 ```
@@ -116,7 +116,7 @@ Common entity identifier: [ObjectA](/common_structures.md#objecta)
 			"http://xapi.jisc.ac.uk/version": "1.1.1"
 			"http://xapi.jisc.ac.uk/sessionId": "A438L",
 			"http://id.tincanapi.com/extensions/ip-address": "10.3.3.48",
-			"https://xapi.jisc.ac.uk/recipeCat": "Econtent"
+			"https://xapi.jisc.ac.uk/recipeCat": "ReadingList"
 			
 		}
 	}
@@ -132,37 +132,40 @@ Common entity identifier: [ObjectA](/common_structures.md#objecta)
 		"objectType": "Agent",
 		"account": {
 			"name": "Jsmith12",
-			"homePage": "http://ezproxy.jisc.ac.uk"
+			"homePage": "http://readinglist.jisc.ac.uk"
 		}
 	},
 	"timestamp": "2015-09-18T01:54:51.484Z",
-	"verb": {
-		"id": "http://id.tincanapi.com/verb/viewed",
-		"display": {
-			"en": "viewed"
+	"verb":{
+		"id":"http://id.tincanapi.com/verb/viewed",
+		"display":{
+			"en":"viewed"
 		}
 	},
 	"object": {
 		"objectType": "Activity",
 		"id": "http://onlinelibrary.jisc.ac.uk/doi/10.1111",
 		"definition": {
-			"type": "http://id.tincanapi.com/activitytype/resource",
+			"type": "http://xapi.jisc.ac.uk/activities/externalContent",
 			"name": {
 				"en": "The Condition of the Working Class in England"
-			},
-			"extensions": {
-				"http://xapi.jisc.ac.uk/subType": "http://xapi.jisc.ac.uk/journal"
 			}
 		}
 	},	
-	"context": {
-		"platform": "UxAPI",
-		"extensions": {
-			"http://xapi.jisc.ac.uk/version": "1.1.1",
-			"http://xapi.jisc.ac.uk/sessionId": "32456891",
-			"http://id.tincanapi.com/extensions/ip-address": "10.3.3.48",
-			"https://xapi.jisc.ac.uk/recipeCat": "readinglist"
-		}
-	}
+    "context":{
+        "platform":"ReadingList System",
+        "extensions":{
+            "http://xapi.jisc.ac.uk/recipeCat":"ReadingList",
+            "http://xapi.jisc.ac.uk/version":"1.0.3",
+            "http://xapi.jisc.ac.uk/extenstions/list_id:":"list_1234",
+            "http://xapi.jisc.ac.uk/extenstions/list_name":"21st Century British Sociology",
+            "http://xapi.jisc.ac.uk/extenstions/item_type":"Video",
+            "http://xapi.jisc.ac.uk/extenstions/resource_domain":"youtube.com",
+                "http://xapi.jisc.ac.uk/courseArea":{
+                    "http://xapi.jisc.ac.uk/vle_mod_id":"MOD_SOCIO",
+                    "http://xapi.jisc.ac.uk/uddModInstanceID":"COURSE_SOCIO"
+                }
+        }
+    }
 }
 ```

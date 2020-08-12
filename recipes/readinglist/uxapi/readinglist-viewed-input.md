@@ -1,6 +1,6 @@
 This is the specification for an input TSV file for viewing a reading list.
 
-Data should be supplied as a UTF-8 Tab Seperated File called reading_viewed.tsv
+Data should be supplied as a UTF-8 Tab Seperated File called readinglist_viewed.tsv
 
 # reading_list_viewed
 
@@ -75,9 +75,9 @@ Any
 ### Format
 String (255)
 
-## OBJECT_TYPE 
+## PLATFORM 
 ### Description
-Type for resource being viewed.
+The system/platform the activity has been captured from
 
 ### Valid Values
 Any

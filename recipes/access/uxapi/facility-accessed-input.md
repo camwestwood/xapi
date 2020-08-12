@@ -10,6 +10,7 @@ Data should be supplied as a UTF-8 Tab Separated File called econtent.tsv.
 * [SITE](#site) [1]
 * [DIRECTION](#direction) [0..1]
 * [ACCESS_ID](#type) [1]
+* [PLATFORM](#platform) [0..1] 
 
 
 ## USERNAME 
@@ -90,3 +91,12 @@ Identifer for access id
 ### Format
 String (255)
 
+## PLATFORM 
+### Description
+The system/platform the activity has been captured from
+
+### Valid Values
+Any
+
+### Format
+String (255)

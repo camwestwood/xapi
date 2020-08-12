@@ -228,11 +228,6 @@ The result.completion must be set to true if the student attended the event, or 
 	<td>decimal</td>
 </tr>
 <tr>
-	<td>context.extensions.https://xapi.jisc.ac.uk/deviceLocation [0..1]</td>
-	<td>deviceLocation is an optional geoJSON Object with  geolocation details of the device used to attend the event.</td>
-	<td>JSON Object following the geoJSON spec</td>
-</tr>
-<tr>
 	<td><a href="vocabulary.md#course-area">context.extensions.https://xapi.jisc.ac.uk/courseArea</a> [0..1]</td>
 	<td>Standard container for the UDD Course Instance ID and/or the UDD Module Instance ID which the attendance is related to.</td>
 	<td>JSON Object</td>
@@ -264,16 +259,6 @@ The result.completion must be set to true if the student attended the event, or 
       },
       "extensions": {
          "http://xapi.jisc.ac.uk/version": "1.1.1",
-         "http://xapi.jisc.ac.uk/deviceLocation": {
-            "type": "Feature",
-            "geometry": {
-               "type": "Point",
-               "coordinates": [51.510531, -0.118930]
-            },
-            "properties": {
-               "name": "University of Jisc"
-	    }
-         },
          "http://xapi.jisc.ac.uk/courseArea": {
             "http://xapi.jisc.ac.uk/uddCourseInstanceID": "LA101-200",
             "http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0"
@@ -352,16 +337,6 @@ In attendance statements the timestamp property must be set to the start time of
 		},
 		"extensions": {
 			"http://xapi.jisc.ac.uk/version": "1.0.1",
-			"http://xapi.jisc.ac.uk/deviceLocation": {
-				"type": "Feature",
-				"geometry": {
-					"type": "Point",
-					"coordinates": [51.510531, -0.118930]
-				},
-				"properties": {
-					"name": "University of Jisc"
-				}
-			},
 			"http://xapi.jisc.ac.uk/courseArea": {
 				"http://xapi.jisc.ac.uk/uddCourseInstanceId": "LA101-200-2016S1-0",
 				"http://xapi.jisc.ac.uk/uddModInstanceID": "LA101-200-2016S1-0"
