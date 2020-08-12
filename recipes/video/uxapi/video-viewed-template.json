@@ -39,7 +39,7 @@
 			},
 
 			"http://xapi.jisc.ac.uk/recipeCat": "Video",
-			"http://xapi.jisc.ac.uk/version": "1.1"
+			"http://xapi.jisc.ac.uk/version": "1.1.1"
 		}
 	}
 }

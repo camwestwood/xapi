@@ -327,6 +327,17 @@ Example:
 <tr><th align="left">IRI</th><td> <a href="http://activitystrea.ms/schema/1.0/file">http://activitystrea.ms/schema/1.0/file</a> </td></tr>
 </table>
 
+### Learning Space
+
+<table>
+<tr><th align="left">Label</th><td>Learning Space</td></tr>
+<tr><th align="left">Description</th><td>A place in which teaching and learning occur. E.g A library</td></tr>
+<tr><th align="left">IRI</th><td> <a href="http://xapi.jisc.ac.uk/activities/learning_space">http://xapi.jisc.ac.uk/activities/learning_space</a> </td></tr>
+</table>
+
+
+
+
 ### Module
 
 <table>
@@ -484,6 +495,15 @@ The following are Jisc Profile extensions to be used in [object.definition.exten
 ### Application Type (Deprecated)
 
 Was used in older recipes to identify the genre of software application. Best practice is to use subType instead.
+
+
+<table>
+<tr><th align="left">Label</th><td>Access ID</td></tr>
+<tr><th align="left">Description</th><td>Identifies the student's access ID </td></tr>
+<tr><th align="left">IRI</th><td><a href="http://xapi.jisc.ac.uk/extensions/access_id">http://xapi.jisc.ac.uk/extensions/access_id/a></td></tr>
+<tr><th align="left">Data Type</th><td>IRI</td></tr>
+</table>
+
 
 <table>
 <tr><th align="left">Label</th><td>Application Type</td></tr>

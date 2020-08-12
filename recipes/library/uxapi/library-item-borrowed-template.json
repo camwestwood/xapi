@@ -4,7 +4,7 @@
 		"objectType": "Agent",
 		"account": {
 			"name": "**USERNAME**",
-			"homePage": "**HOMEPAGE**"
+			"homePage": "https://**HOMEPAGE**/"
 		}
 	},
 	"verb": {
@@ -15,28 +15,27 @@
 	},
 	"object": {
 		"objectType": "Activity",
-		"id": "**HOMEPAGE**/library/**ITEM_ID**",
+		"id": "https://**HOMEPAGE**/library/resource",
 		"definition": {
 			"type": "http://xapi.jisc.ac.uk/library/resource",
 			"name": {
-				"en": "**ITEM_NAME**"
+				"en": "resource"
 			},
 		    	"extensions": {
 			    	"http://xapi.jisc.ac.uk/subType": "**ITEM_SUBTYPE**",
-					"http://xapi.jisc.ac.uk/subject_area": "**SUBJECT_AREA**",
-					"http://oclc.com/number": "**OCLC_NUMBER**"
+					"http://xapi.jisc.ac.uk/subject_area": "**SUBJECT_AREA**"
 		    	}
 		}
 	},
-	
+
 	"timestamp": "**TIMESTAMP**",
 
 	"context": {
 		"platform": "**PLATFORM**",
 		"extensions": {
-			"http://xapi.jisc.ac.uk/recipeCat": "Library",
+			"http://xapi.jisc.ac.uk/statementCat": "Library",
 			"http://xapi.jisc.ac.uk/borrowing_site": "**BORROWING_SITE**",
-			"http://xapi.jisc.ac.uk/version": "1.1"
+			"http://xapi.jisc.ac.uk/version": "1.1.1"
 		}
 	}
 }

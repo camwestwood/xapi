@@ -112,7 +112,7 @@ In this recipe the object should identify what was viewed. A list of valid value
 			"http://xapi.jisc.ac.uk/sessionId": "32456891",
 			"http://xapi.jisc.ac.uk/recipeCat": "App",
 			"http://id.tincanapi.com/extension/ip-address": "10.3.3.48",
-			"http://xapi.jisc.ac.uk/version": "1.1"
+			"http://xapi.jisc.ac.uk/version": "1.1.1"
 		}
 
 	},

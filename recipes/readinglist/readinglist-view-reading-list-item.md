@@ -139,7 +139,7 @@ The contextActivities parent contains the id of the list the item belongs to.
 		"platform" :"Talis Aspire",
 		"extensions": {
 			"http://xapi.jisc.ac.uk/recipeCat": "Readinglist",,
-			"http://xapi.jisc.ac.uk/version": "1.1"
+			"http://xapi.jisc.ac.uk/version": "1.1.1"
 	
   		}
   	}

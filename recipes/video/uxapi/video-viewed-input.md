@@ -14,7 +14,7 @@ Data should be supplied as a UTF-8 Tab Separated File called videoviewed.tsv.
 * [VLE\_MOD\_ID](#vle_mod_id) [0..1]
 * [HIERARCHY\_ID](#HIERARCHY_ID) [0..1]
 * [HIERARCHY\_NAME](#HIERARCHY_NAME) [0..1]
-
+* [PLATFORM](#platform) [0..1] 
 
 ## USERNAME 
 ### Description
@@ -33,6 +33,8 @@ Joe.Bloggs@Jisc.ac.uk
 ## HOMEPAGE 
 ### Description
 URL of the home page of the application from which the video was viewed.
+
+Example: https://jisc.cloud.panopto.eu/
 
 ### Valid Values
 Any
@@ -76,7 +78,6 @@ Number of minutes watches.  This is as a decimal value, including the seconds su
 ### Format
 Decimal
 
-
 ## VLE\_MOD_ID 
 ### Description
 An identifier for a course area in a VLE. It is used in conjunction with UDD_MOD_INST_ID to link module instances to course areas. Note that several module instances identified by their UDD_MOD_INST_ID can link to one VLE_MOD_ID in the VLE.
@@ -116,6 +117,10 @@ Video content structure might align with organisation's module structure which c
 ## HIERARCHY_NAME
 ### Description
 The name of the hierarchy component where the video resides in the application.
+
+## PLATFORM 
+### Description
+The system/platform the activity has been captured from
 
 ### Valid Values
 Any

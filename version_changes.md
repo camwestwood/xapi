@@ -1,6 +1,8 @@
 # Statement Template Changes
 Change in Version - Date - Change
 
+This document is no longer being contributed to since v 1.1 - changes can be tracked through commit history.
+
 ## Documentation
 
 v1.0.3 21-02-2019, Best practice. [Snake case and iri conventions ](https://github.com/jiscdev/xapi/issues/297)
@@ -298,6 +300,8 @@ v1.0.1 Statement Added To Repository
 
 #### Library item Borrowed Item
 
+v1.1.1 5-04-2020, Spec Change. [depricated item details](https://github.com/jiscdev/xapi/issues/331)
+
 v1.0.3 5-04-2019, Spec Change. [Recipe category added](https://github.com/jiscdev/xapi/issues/294)
 
 v1.0.3 5-04-2019, Spec Change. [Statement category deprecated](https://github.com/jiscdev/xapi/issues/294)
@@ -317,6 +321,13 @@ v1.0.3 5-04-2019, Spec Change. [Recipe category added](https://github.com/jiscde
 v1.0.3 5-04-2019, Spec Change. [Statement category deprecated](https://github.com/jiscdev/xapi/issues/294)
 
 v1.0.2 New Access statement Added To Repository
+
+#### accessed learning space
+
+v1.1.1 5-04-2019, Spec Change. [Minted learning space](https://github.com/jiscdev/xapi/issues/329)
+
+v1.1 Added statement to repository
+
 
 ## Intervention/Case
 
@@ -353,7 +364,9 @@ v1.0.3 5-04-2019, Spec Change. [Statement category deprecated](https://github.co
 v1.0.1 Statement Added To Repository
 
 
+## access
 
+v1.1.1 Statement Added To Repository
 
 
 # Vocabulary Changes

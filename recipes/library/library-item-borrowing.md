@@ -56,12 +56,12 @@ The Verb [borrowed](http://activitystrea.ms/schema/1.0/borrowed) indicates that 
 	</tr>
 	<tr>
 		<td>object.id [1]</td>
-		<td>An identifier for the thing being borrowed. This must be unique across all object types.</td>
+		<td>An identifier for the thing being borrowed or resource being borrowed from. This must be unique across all object types.</td>
 		<td>iri</td>
 	</tr>
 	<tr>
 		<td>object.definition.type [1]</td>
-		<td>Indicates the type of the object of the statement. It is required and valid values are listed on the <a href="../../vocabulary.md#activity-types">vocabulary page</a></td>
+		<td>Indicates the type of the object of the statement. It is required and should be http://xapi.jisc.ac.uk/library/resource" for item borrowed statements</a></td>
 		<td>iri</td>
 	</tr>
 	<tr>
@@ -93,17 +93,15 @@ The Verb [borrowed](http://activitystrea.ms/schema/1.0/borrowed) indicates that 
 {
    "object": {
       "objectType": "Activity",
-      "id": "http://library.universityofjisc.ac.uk/13579",
+      "id": "http://library.universityofjisc.ac.uk/resource/13579",
       "definition": {
          "type": "http://xapi.jisc.ac.uk/library/resource",
-         "name": { "en": 
-	    "Introduction to Java"
-	 }
+
       },
       "extensions": {
          "http://xapi.jisc.ac.uk/subType": "http://id.tincanapi.com/activitytype/book",
          "http://oclc.com/number": "1234567890",
-	 "http://xapi.jisc.ac.uk/subject_area": "Computing"
+	     "http://xapi.jisc.ac.uk/subject_area": "Computing"
       }
    }
 }
@@ -153,7 +151,7 @@ An ISO 8601 format timestamp that corresponds to the time of when the item was b
    "context": {
       "platform" :"WorldShare",
       "extensions": {
-	"http://xapi.jisc.ac.uk/version": "1.1",
+	"http://xapi.jisc.ac.uk/version": "1.2",
 	"http://xapi.jisc.ac.uk/recipeCat": "Library",
 	"http://xapi.jisc.ac.uk/borrowing_site": "Main Library"	
       }
@@ -180,7 +178,7 @@ An ISO 8601 format timestamp that corresponds to the time of when the item was b
 	},
 	"object": {
 		"objectType": "Activity",
-		"id": "http://library.universityofjisc.ac.uk/13579",
+		"id": "http://library.universityofjisc.ac.uk/resource",
 		"definition": {
 			"type": "http://xapi.jisc.ac.uk/library/resource",
 			"name": { "en": 
@@ -197,7 +195,7 @@ An ISO 8601 format timestamp that corresponds to the time of when the item was b
 	"context": {
 		"platform" :"WorldShare",
 		"extensions": {
-			"http://xapi.jisc.ac.uk/version": "1.1",
+			"http://xapi.jisc.ac.uk/version": "1.1.1",
 			"http://xapi.jisc.ac.uk/recipeCat": "Library",
 			"http://xapi.jisc.ac.uk/borrowing_site": "Main Library"	
 		}

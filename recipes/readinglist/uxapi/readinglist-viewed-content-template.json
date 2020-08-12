@@ -9,9 +9,9 @@
       }
    },
    "verb":{
-      "id":"http://activitystrea.ms/schema/1.0/access",
+      "id":"http://id.tincanapi.com/verb/viewed",
       "display":{
-         "en":"accessed"
+         "en":"viewed"
       }
    },
    "object":{

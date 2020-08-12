@@ -61,15 +61,11 @@ Common entity identifier: [ObjectA](/common_structures.md#objecta)
 ``` javascript
 "object": {
 	"objectType": "Activity",
-	"id": "http://onlinelibrary.jisc.ac.uk/doi/10.1111"   	 	
+	"id": "http://onlinelibrary.jisc.ac.uk/doi/10.1111",
 	"definition": {
 		"type": "http://id.tincanapi.com/activitytype/resource"
-		},
-		"extensions": {
-     		 "http://xapi.jisc.ac.uk/subType": "http://xapi.jisc.ac.uk/journal"
-	 	}
-    	}
-}
+		}
+    }
 ```
 
 
@@ -114,7 +110,7 @@ Common entity identifier: [ObjectA](/common_structures.md#objecta)
 	"context": {
 		"platform": "UxAPI",
 		"extensions": {
-			"http://xapi.jisc.ac.uk/version": "1.1"
+			"http://xapi.jisc.ac.uk/version": "1.1.1"
 			"http://xapi.jisc.ac.uk/sessionId": "A438L",
 			"http://id.tincanapi.com/extensions/ip-address": "10.3.3.48",
 			"https://xapi.jisc.ac.uk/recipeCat": "Econtent"
@@ -146,13 +142,13 @@ Common entity identifier: [ObjectA](/common_structures.md#objecta)
 		"objectType": "Activity",
 		"id": "http://onlinelibrary.jisc.ac.uk/doi/10.1111",
 		"definition": {
-			"type": "http://id.tincanapi.com/activitytype/resource",
+			"type": "http://xapi.jisc.ac.uk/activities/externalContent",
 		}
 	},	
 	"context": {
 		"platform": "UxAPI",
 		"extensions": {
-			"http://xapi.jisc.ac.uk/version": "1.1",
+			"http://xapi.jisc.ac.uk/version": "1.1.1",
 			"http://xapi.jisc.ac.uk/sessionId": "32456891",
 			"http://id.tincanapi.com/extensions/ip-address": "10.3.3.48",
 			"https://xapi.jisc.ac.uk/recipeCat": "Library"
