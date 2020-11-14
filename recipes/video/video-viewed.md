@@ -21,7 +21,7 @@ The Actor entity is used to identify the individual viewing the video. It uses t
 ```
 
 ### Verb
-The Verb used in view Statements is [viewed](../vocabulary.md#verbs). It denotes the action of the user accessing the video. It uses the Jisc Profile common entity [VerbA](../common_structures.md#verba). 
+The Verb used in view Statements is [viewed](/vocabulary.md#viewed). It denotes the action of the user accessing the video. It uses the Jisc Profile common entity [VerbA](/common_structures.md#verba). 
 
 ### Example:
 
@@ -36,7 +36,7 @@ The Verb used in view Statements is [viewed](../vocabulary.md#verbs). It denotes
 
 ### Object
 
-The Object for viewed Statements identifies what is being viewed. It is based on the the Jisc Profile common entity [ObjectA](../common_structures.md#objecta).
+The Object for viewed Statements identifies what is being viewed. It is based on the the Jisc Profile common entity [ObjectA](/common_structures.md#objecta).
 
 ### Example
 
@@ -90,7 +90,7 @@ The Context entity can be used to describe any surrounding circumstances, includ
 	</tr>
 	<tr> 
 		<td>context.extension.courseArea [0..1]</td>
-		<td>The academic context in which this Activity is situated (e.g. umbrella course, or parent area). The properties in courseArea must be a UDD Module Instance ID or a VLE Module ID or both. More information can be found on the <a href="vocabulary.md#course-area">vocabularies page</a>.</td>
+		<td>The academic context in which this Activity is situated (e.g. umbrella course, or parent area). The properties in courseArea must be a UDD Module Instance ID or a VLE Module ID or both. More information can be found on the <a href="/vocabulary.md#course-area">vocabularies page</a>.</td>
 		<td>JSON object</td>
 	</tr>
 	<tr>
