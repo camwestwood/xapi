@@ -59,6 +59,16 @@ Here are descriptions of Statements that can be sent to the Jisc Learning Data H
      <tr><td> <a href = "/recipes/library/library-item-borrowing.md">Library item: Borrowed item</a></td><td><a href="recipes/library/uxapi/library-item-borrowed-input.md">library-item-borrowed-input.md</a></td><td><a href="recipes/library/uxapi/library-item-borrowed-template.json">library-item-template.json</td></tr>
 </table>
 
+## Microsoft Products and Services
+
+<table>
+<tr><td>Statement Template</td><td>Input TSV definitions</td><td>JSON Template</td></tr>  
+     <tr>
+     <td> <a href = "/recipes/microsoft/microsoft-aggregated-activity.md">Microsoft Aggregated Activity</a></td>
+     <td></td>
+     <td><a href="recipes/microsoft/microsoft-aggregated-activity.json">microsoft-aggregated-activity.json</td></tr>
+</table>
+
 ## Predictive Model Output
 
 <table>

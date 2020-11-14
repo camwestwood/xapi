@@ -1,0 +1,66 @@
+{
+    "actor": {
+      "objectType": "Agent",
+      "account": {
+          "name": "STU_12345",
+          "homePage": "https://jisc-demo.ac.uk"
+      }
+    },
+    "verb": {
+      "id": "http://activitystrea.ms/schema/1.0/interact",
+      "display": {
+        "en": "interacted"
+      }
+    },
+    "object": {
+      "objectType": "Activity",
+      "id": "http://<DOMAIN>/<STUDENT_ID>/microsoft_aggregations_2020_10_20",
+      "definition": {
+        "name": {
+          "en": "Microsoft Activity Aggregations"
+        },
+        "type": "http://xapi.jisc.ac.uk/activities/microsoft_aggregations"
+      }
+    },
+    "context": {
+      "platform": "Microsoft",
+      "http://xapi.jisc.ac.uk/recipeCat": "Microsoft"
+    },
+    "result": {
+      "extensions": {
+        "http://jisc.ac.uk/microsoft/teams/teamchat": {"count": 16},
+        "http://jisc.ac.uk/microsoft/teams/privatechat": {"count": 22},
+        "http://jisc.ac.uk/microsoft/teams/call": {"count": 12},
+        "http://jisc.ac.uk/microsoft/teams/meeting": {"count": 7},      
+        "http://jisc.ac.uk/microsoft/teams/lastactivity": {"date": "2020-10-20"},
+        "http://jisc.ac.uk/microsoft/onedrive/viewandedit": {"count": 76},
+        "http://jisc.ac.uk/microsoft/onedrive/synced": {"count": 28},
+        "http://jisc.ac.uk/microsoft/onedrive/sharedinternal": {"count": 1},
+        "http://jisc.ac.uk/microsoft/onedrive/sharedexternal": {"count": 1},      
+        "http://jisc.ac.uk/microsoft/onedrive/lastactivity": {"date": "2020-10-23"},
+        "http://jisc.ac.uk/microsoft/sharepoint/viewandedit": {"count": 76},
+        "http://jisc.ac.uk/microsoft/sharepoint/synced": {"count": 28},
+        "http://jisc.ac.uk/microsoft/sharepoint/sharedinternal": {"count": 6},
+        "http://jisc.ac.uk/microsoft/sharepoint/sharedexternal": {"count": 2}, 
+        "http://jisc.ac.uk/microsoft/sharepoint/vistedpages": {"count": 2},        
+        "http://jisc.ac.uk/microsoft/sharepoint/lastactivity": {"date": "2020-10-21"},
+        "http://jisc.ac.uk/microsoft/yammer/user": {"status": "active","statuschangedate": "2020-10-18"},
+        "http://jisc.ac.uk/microsoft/yammer/posted": {"count": 76},
+        "http://jisc.ac.uk/microsoft/yammer/read": {"count": 28},
+        "http://jisc.ac.uk/microsoft/yammer/liked": {"count": 6},
+        "http://jisc.ac.uk/microsoft/yammer/lastactivity": {"date": "2020-10-18"},
+        "http://jisc.ac.uk/microsoft/outlook/send": {"count": 41},
+        "http://jisc.ac.uk/microsoft/outlook/receive": {"count": 39},      
+        "http://jisc.ac.uk/microsoft/outlook/read": {"count": 26},
+        "http://jisc.ac.uk/microsoft/outlook/lastactivity": {"date": "2020-10-18"},
+        "http://jisc.ac.uk/microsoft/activedirectory/lastactivity": {"date": "2020-10-18"},
+        "http://jisc.ac.uk/microsoft/activedirectory/signin": {
+          "count": 41,
+          "detail": {
+            "Moodle": 37,
+            "Panopto": 20
+        }}
+      }
+    },
+    "timestamp": "2020-10-24T09:00Z"
+  }
