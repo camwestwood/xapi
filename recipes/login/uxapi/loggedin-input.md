@@ -11,7 +11,7 @@ Data should be supplied as a UTF-8 Tab Separated File called login.tsv
 * [SESSION_ID](#session_id) [0..1]
 * [OBJECT_ID](#object_id) [1]
 * [OBJECT_NAME](#object_name) [0..1]
-* [SUBTYPE](#subtype) [0..1]
+* [TYPE](#TYPE) [0..1]
 * [USER_AGENT](#user_agent) [0..1]
 
 
@@ -92,9 +92,11 @@ Any
 ### Format
 String (255)
 
-## SUBTYPE 
+## TYPE 
 ### Description
-Used to identify the subType of the application that is being logged into
+Used to identify the type of the application that is being logged into
+
+Different application types should use the relevant type, as defined on the [vocabularies](/vocabulary.md#activity-types) page.
 
 ### Valid Values
 Any

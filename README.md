@@ -1,4 +1,4 @@
-# xAPI recipes for Jisc Learning Analytics v1.1.1
+# xAPI recipes for Jisc Learning Analytics v1.2.0
 
 ## Statement Vocabulary and Common Structures
 
@@ -45,13 +45,29 @@ Here are descriptions of Statements that can be sent to the Jisc Learning Data H
 <tr><td><a href="recipes/case/create-note.md"> Create a note</a> </td><td><a href="recipes/case/uxapi/note-create-activity-input.md">note-create-activity-input.md </a>   </td> <td><a href="recipes/case/uxapi/note-create-activity-input.json">note-create-activity-input.json </a>  </td></tr>
 </table>
 
-</table>
-
 ## Library Services
 
 <table>
 <tr><td>Statement Template</td><td>Input TSV definitions</td><td>JSON Template</td></tr>  
      <tr><td> <a href = "/recipes/library/library-item-borrowing.md">Library item: Borrowed item</a></td><td><a href="recipes/library/uxapi/library-item-borrowed-input.md">library-item-borrowed-input.md</a></td><td><a href="recipes/library/uxapi/library-item-borrowed-template.json">library-item-template.json</td></tr>
+</table>
+
+## Login activity
+
+<table>
+<tr><td>Statement Template</td> <td>Input TSV definitions</td>   <td>JSON Template</td><td>Example Input</td></tr>
+<tr><td><a href = "/generic/login.md">Logged in</a></td><td><a href="recipes/login/uxapi/loggedin-input.md">loggedin-input.md</a></td><td><a href="recipes/login/uxapi/loggedin-template.json">loggedin-template.json</a></td> <td><a href="recipes/login/tsv/logged_in.tsv">TSV</a></td></tr>          
+<tr><td> <a href = "/generic/logout.md">Logged out</a></td><td><a href="recipes/login/uxapi/loggedout-input.md">loggedout-input.md</a></td><td><a href="recipes/login/uxapi/loggedout-template.json">loggedout-template.json</a></td>  <td><a href="recipes/login/tsv/logged_out.tsv">TSV</a></td></tr>   
+</table>
+
+## Microsoft Products and Services
+
+<table>
+<tr><td>Statement Template</td><td>Input TSV definitions</td><td>JSON Template</td></tr>  
+     <tr>
+     <td> <a href = "/recipes/microsoft/microsoft-aggregated-activity.md">Microsoft Aggregated Activity</a></td>
+     <td></td>
+     <td><a href="recipes/microsoft/microsoft-aggregated-activity.json">microsoft-aggregated-activity.json</td></tr>
 </table>
 
 ## Predictive Model Output
@@ -65,7 +81,6 @@ Here are descriptions of Statements that can be sent to the Jisc Learning Data H
 
 <table>
 <tr><td>Statement Template</td><td>Input TSV definitions</td><td>JSON Template</td></tr> 
-<tr><td><a href = "recipes/studyapps/app-login.md">Logged in</a></td><td><a href = "recipes/studyapps/uxapi/app-loggedin-input.md">recipes/studyapps/uxapi/app-loggedin-input.md</a></td><td><a href = "recipes/studyapp/uxapi/app-loggedin-template.json">recipes/studyapp/uxapi/app-loggedin-template.json</td></tr> 
 <tr><tr><td><a href = "recipes/studyapps/app-questions.md">Answered Question</a></td><td><a href = "recipes/studyapps/uxapi/app-answered-question-input.md">recipes/studyapps/uxapi/app-answered-question-input.md</a></td><td><a href = "recipes/studyapps/uxapi/app-answered-question-template.json">recipes/studyapps/uxapi/app-answered-question-template.json</td></tr> 
 <tr><td><a href = "recipes/studyapps/app-content-viewed.md">Mobile app content viewed</a></td><td><a href = "recipes/studyapps/uxapi/app-content-viewed.md">app-content-viewed.md</a></td><td><a href = "recipes/studyapp/uxapi/app-content-viewed.json">app-content-viewed.json</td></tr></table>    
 
@@ -89,10 +104,7 @@ Here are descriptions of Statements that can be sent to the Jisc Learning Data H
 
 These are platform-independent Statements related to Virtual Learning Enviroments. 
 
-<table>
-<tr><td>Statement Template</td> <td>Input TSV definitions</td>   <td>JSON Template</td><td>Example Input</td></tr>
-<tr><td><a href = "/recipes/vle/vle-login.md">Logged in</a></td><td><a href="recipes/vle/uxapi/vle-loggedin-input.md">vle-loggedin-input.md</a></td><td><a href="recipes/vle/uxapi/vle-loggedin-template.json">vle-loggedin-template.json</a></td> <td><a href="recipes/vle/tsv/logged_in.tsv">TSV</a></td></tr>          
-<tr><td> <a href = "/recipes/vle/vle-logout.md">Logged out</a></td><td><a href="recipes/vle/uxapi/vle-loggedout-input.md">vle-loggedout-input.md</a></td><td><a href="recipes/vle/uxapi/vle-loggedout-template.json">vle-loggedout-template.json</a></td>  <td><a href="recipes/vle/tsv/logged_out.tsv">TSV</a></td></tr>    
+<table>  
 <tr><td> <a href = "/recipes/vle/vle-viewed-content.md">VLE resource viewed   </a></td><td><a href="recipes/vle/uxapi/vle-resourceviewed-input.md">vle-resourceviewed-input.md</a></td><td><a href="recipes/vle/uxapi/vle-resourceviewed-template.json">vle-resourceviewed-template.json</a></td> <td><a href="recipes/vle/tsv/viewed.tsv">TSV</a></td></tr>    
 <tr><td> <a href =  "/recipes/vle/vle-assignment-graded.md">Assignment Graded   </a></td> <td><a href="recipes/vle/uxapi/vle-assignmentgraded-input.md">vle-assignmentgraded-input.md</a></td><td><a href="recipes/vle/uxapi/vle-assignmentgraded-template.json">vle-assignmentgraded-template.json</a> <td><a href="recipes/vle/tsv/assignment_graded.tsv">TSV</a></td></tr>
 <tr><td> <a href =  "/recipes/vle/vle-assignment-submitted.md">Assignment Submitted  </a></td><td><a href="recipes/vle/uxapi/vle-assignmentsubmitted-input.md">vle-assignmentsubmitted-input.md</a></td><td><a href="recipes/vle/uxapi/vle-assignmentsubmitted-template.json">vle-assignmentsubmitted-template.json</a></td> <td><a href="recipes/vle/tsv/assignment_submitted.tsv">TSV</a></td></tr><tr><td><a href =  "/recipes/vle/vle-forum.md">Create a forum post</a></td><td><a href="recipes/vle/uxapi/vle-forum-input.md">vle-forum-input.md</a></td><td><a href="recipes/vle/uxapi/vle-forum-template.json">vle-forum-template.json</a></td>             <td><a href="recipes/vle/tsv/vle-forum_post.tsv">TSV</a></td></tr>

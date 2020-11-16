@@ -1,0 +1,79 @@
+{
+    "actor": {
+      "objectType": "Agent",
+      "account": {
+          "name": "**USERNAME**",
+          "homePage": "https://jisc-demo.ac.uk"
+      }
+    },
+    "verb": {
+      "id": "http://activitystrea.ms/schema/1.0/interact",
+      "display": {
+        "en": "interacted"
+      }
+    },
+    "object": {
+      "objectType": "Activity",
+      "id": "http://**DOMAIN**/**USERNAME**/microsoft_2020_10_24",
+      "definition": {
+        "name": {
+          "en": "Microsoft Activity"
+        },
+        "type": "http://xapi.jisc.ac.uk/activities/microsoft"
+      },
+      "extensions": {
+        "http://jisc.ac.uk/microsoft/teams": {
+          "teamchat": 16,
+          "privatechat": 22,
+          "call": 12,
+          "meeting": 7,
+          "lastactivity": "2020-10-24"
+        },
+
+        "http://jisc.ac.uk/microsoft/onedrive": {
+          "viewandedit": 76,
+          "synced": 28,
+          "sharedinternal": 1,
+          "sharedexternal": 1,
+          "lastactivity": "2020-10-24"
+        },
+
+        "http://jisc.ac.uk/microsoft/sharepoint": {
+          "viewandedit": 28,
+          "synced": 21,
+          "sharedinternal": 6,
+          "sharedexternal": 2,
+          "vistedpages": 4,
+          "lastactivity": "2020-10-24"
+        },
+
+        "http://jisc.ac.uk/microsoft/yammer": {
+          "status": {"status": "active","statuschangedate": "2020-10-18"},
+          "posted": 23,
+          "read": 34,
+          "liked": 12,
+          "lastactivity": "2020-10-24"
+        },
+
+        "http://jisc.ac.uk/microsoft/outlook": {
+          "sent": 0,
+          "receive": 0,
+          "read": 0,
+          "lastactivity": "2020-10-18"
+        },
+
+        "http://jisc.ac.uk/microsoft/activedirectory/signin": {
+          "total_signin": 57,
+          "lastactivity": "2020-10-24",
+          "signins_by_service": {
+            "Moodle": 37,
+            "Panopto": 20
+        }}
+      }
+    },
+    "context": {
+      "platform": "Microsoft",
+      "http://xapi.jisc.ac.uk/recipeCat": "Microsoft"
+    },
+    "timestamp": "**TIMESTAMP**"
+  }
