@@ -72,7 +72,6 @@ The Verb [interacted](http://activitystrea.ms/schema/1.0/interact) indicates tha
 	</tr>
 </table>
 
-
 ### Example
 
 ``` javascript
@@ -91,13 +90,16 @@ The Verb [interacted](http://activitystrea.ms/schema/1.0/interact) indicates tha
 ```
 
 ## Timestamp
-An ISO 8601 format timestamp that corresponds to the time of when the item was borrowed.
 
-### Example:
+An ISO 8601 format timestamp that corresponds to the 24 hours that activity has been captured for.
+
+If the "latest activity" for a service is in the past, the activity counts should be 0 for the timestamp day.
+
+### Example
 
 ``` javascript
 {
-   "timestamp": "2018-11-18T13:05:51.484Z"
+   "timestamp": "2020-10-24T00:00:00.000Z"
 }
 ```
 
@@ -131,69 +133,82 @@ An ISO 8601 format timestamp that corresponds to the time of when the item was b
 ## Full Example:
 ``` javascript
 {
-  "actor": {
-    "objectType": "Agent",
-    "account": {
-        "name": "STU_12345",
-        "homePage": "https://jisc-demo.ac.uk"
-    }
-  },
-  "verb": {
-    "id": "http://activitystrea.ms/schema/1.0/interact",
-    "display": {
-      "en": "interacted"
-    }
-  },
-  "object": {
-    "objectType": "Activity",
-    "id": "http://<DOMAIN>/<STUDENT_ID>/microsoft_aggregations_2020_10_20",
-    "definition": {
-      "name": {
-        "en": "Microsoft Activity Aggregations"
+    "actor": {
+      "objectType": "Agent",
+      "account": {
+          "name": "STU_12345",
+          "homePage": "https://jisc-demo.ac.uk"
+      }
+    },
+    "verb": {
+      "id": "http://activitystrea.ms/schema/1.0/interact",
+      "display": {
+        "en": "interacted"
+      }
+    },
+    "object": {
+      "objectType": "Activity",
+      "id": "http://<DOMAIN>/<STUDENT_ID>/microsoft_2020_10_24",
+      "definition": {
+        "name": {
+          "en": "Microsoft Activity"
+        },
+        "type": "http://xapi.jisc.ac.uk/activities/microsoft"
       },
-      "type": "http://xapi.jisc.ac.uk/activities/microsoft_aggregations"
-    }
-  },
-  "context": {
-    "platform": "Microsoft",
-    "http://xapi.jisc.ac.uk/recipeCat": "Microsoft"
-  },
-  "result": {
-    "extensions": {
-      "http://jisc.ac.uk/microsoft/teams/teamchat": {"count": 16},
-      "http://jisc.ac.uk/microsoft/teams/privatechat": {"count": 22},
-      "http://jisc.ac.uk/microsoft/teams/call": {"count": 12},
-      "http://jisc.ac.uk/microsoft/teams/meeting": {"count": 7},      
-      "http://jisc.ac.uk/microsoft/teams/lastactivity": {"date": "2020-10-20"},
-      "http://jisc.ac.uk/microsoft/onedrive/viewandedit": {"count": 76},
-      "http://jisc.ac.uk/microsoft/onedrive/synced": {"count": 28},
-      "http://jisc.ac.uk/microsoft/onedrive/sharedinternal": {"count": 1},
-      "http://jisc.ac.uk/microsoft/onedrive/sharedexternal": {"count": 1},      
-      "http://jisc.ac.uk/microsoft/onedrive/lastactivity": {"date": "2020-10-23"},
-      "http://jisc.ac.uk/microsoft/sharepoint/viewandedit": {"count": 76},
-      "http://jisc.ac.uk/microsoft/sharepoint/synced": {"count": 28},
-      "http://jisc.ac.uk/microsoft/sharepoint/sharedinternal": {"count": 6},
-      "http://jisc.ac.uk/microsoft/sharepoint/sharedexternal": {"count": 2}, 
-      "http://jisc.ac.uk/microsoft/sharepoint/vistedpages": {"count": 2},        
-      "http://jisc.ac.uk/microsoft/sharepoint/lastactivity": {"date": "2020-10-21"},
-      "http://jisc.ac.uk/microsoft/yammer/user": {"status": "active","statuschangedate": "2020-10-18"},
-      "http://jisc.ac.uk/microsoft/yammer/posted": {"count": 76},
-      "http://jisc.ac.uk/microsoft/yammer/read": {"count": 28},
-      "http://jisc.ac.uk/microsoft/yammer/liked": {"count": 6},
-      "http://jisc.ac.uk/microsoft/yammer/lastactivity": {"date": "2020-10-18"},
-      "http://jisc.ac.uk/microsoft/outlook/send": {"count": 41},
-      "http://jisc.ac.uk/microsoft/outlook/receive": {"count": 39},      
-      "http://jisc.ac.uk/microsoft/outlook/read": {"count": 26},
-      "http://jisc.ac.uk/microsoft/outlook/lastactivity": {"date": "2020-10-18"},
-      "http://jisc.ac.uk/microsoft/activedirectory/lastactivity": {"date": "2020-10-18"},
-      "http://jisc.ac.uk/microsoft/activedirectory/signin": {
-        "count": 41,
-        "detail": {
-          "Moodle": 37,
-          "Panopto": 20
-      }}
-    }
-  },
-  "timestamp": "2020-10-24T09:00Z"
-}
+      "extensions": {
+        "http://jisc.ac.uk/microsoft/teams": {
+          "teamchat": 16,
+          "privatechat": 22,
+          "call": 12,
+          "meeting": 7,
+          "lastactivity": "2020-10-24"
+        },
+
+        "http://jisc.ac.uk/microsoft/onedrive": {
+          "viewandedit": 76,
+          "synced": 28,
+          "sharedinternal": 1,
+          "sharedexternal": 1,
+          "lastactivity": "2020-10-24"
+        },
+
+        "http://jisc.ac.uk/microsoft/sharepoint": {
+          "viewandedit": 28,
+          "synced": 21,
+          "sharedinternal": 6,
+          "sharedexternal": 2,
+          "vistedpages": 4,
+          "lastactivity": "2020-10-24"
+        },
+
+        "http://jisc.ac.uk/microsoft/yammer": {
+          "status": {"status": "active","statuschangedate": "2020-10-18"},
+          "posted": 23,
+          "read": 34,
+          "liked": 12,
+          "lastactivity": "2020-10-24"
+        },
+
+        "http://jisc.ac.uk/microsoft/outlook": {
+          "sent": 0,
+          "receive": 0,
+          "read": 0,
+          "lastactivity": "2020-10-18"
+        },
+
+        "http://jisc.ac.uk/microsoft/activedirectory/signin": {
+          "total_signin": 57,
+          "lastactivity": "2020-10-24",
+          "signins_by_service": {
+            "Moodle": 37,
+            "Panopto": 20
+        }}
+      }
+    },
+    "context": {
+      "platform": "Microsoft",
+      "http://xapi.jisc.ac.uk/recipeCat": "Microsoft"
+    },
+    "timestamp": "2020-10-24T00:00Z"
+  }
 ```
