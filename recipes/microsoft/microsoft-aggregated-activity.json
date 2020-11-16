@@ -14,19 +14,13 @@
     },
     "object": {
       "objectType": "Activity",
-      "id": "http://<DOMAIN>/<STUDENT_ID>/microsoft_aggregations_2020_10_20",
+      "id": "http://<DOMAIN>/<STUDENT_ID>/microsoft_2020_10_20",
       "definition": {
         "name": {
-          "en": "Microsoft Activity Aggregations"
+          "en": "Microsoft Activity"
         },
-        "type": "http://xapi.jisc.ac.uk/activities/microsoft_aggregations"
-      }
-    },
-    "context": {
-      "platform": "Microsoft",
-      "http://xapi.jisc.ac.uk/recipeCat": "Microsoft"
-    },
-    "result": {
+        "type": "http://xapi.jisc.ac.uk/activities/microsoft"
+      },
       "extensions": {
         "http://jisc.ac.uk/microsoft/teams/teamchat": {"count": 16},
         "http://jisc.ac.uk/microsoft/teams/privatechat": {"count": 22},
@@ -61,6 +55,10 @@
             "Panopto": 20
         }}
       }
+    },
+    "context": {
+      "platform": "Microsoft",
+      "http://xapi.jisc.ac.uk/recipeCat": "Microsoft"
     },
     "timestamp": "2020-10-24T09:00Z"
   }

@@ -52,18 +52,23 @@ The Verb [interacted](http://activitystrea.ms/schema/1.0/interact) indicates tha
 	</tr>
 	<tr>
 		<td>object.id [1]</td>
-		<td>An identifier for the aggregation set - indicating a single set of aggregations for the student on a day</td>
+		<td>An identifier for the activity set - indicating a collected  set of activity for the student on a day</td>
 		<td>iri</td>
 	</tr>
 	<tr>
 		<td>object.definition.type [1]</td>
-		<td>Indicates the type of the object of the statement. It is required and should be http://xapi.jisc.ac.uk/activities/microsoft_aggregations</a></td>
+		<td>Indicates the type of the object of the statement. It is required and should be http://xapi.jisc.ac.uk/activities/microsoft</a></td>
 		<td>iri</td>
 	</tr>
 	<tr>
 		<td>object.definition.name [0..1]</td>
-		<td>Microsoft Activity Aggregations</td>
+		<td>Microsoft Activity</td>
 		<td>string</td>
+	</tr>
+	<tr>
+		<td>object.extension</td>
+		<td>Microsoft activity collection - this will capture aggregated activity counts across products and services.  See full example below.</td>
+		<td>JSON</td>
 	</tr>
 </table>
 
@@ -74,12 +79,12 @@ The Verb [interacted](http://activitystrea.ms/schema/1.0/interact) indicates tha
 {
   "object": {
     "objectType": "Activity",
-    "id": "http://<DOMAIN>/<STUDENT_ID>/microsoft_aggregations_2020_10_20",
+    "id": "http://<DOMAIN>/<STUDENT_ID>/microsoft_2020_10_20",
     "definition": {
       "name": {
-        "en": "Microsoft Activity Aggregations"
+        "en": "Microsoft Activity"
       },
-      "type": "http://xapi.jisc.ac.uk/activities/microsoft_aggregations"
+      "type": "http://xapi.jisc.ac.uk/activities/microsoft"
     }
   }
 }
