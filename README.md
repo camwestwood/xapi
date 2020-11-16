@@ -45,13 +45,6 @@ Here are descriptions of Statements that can be sent to the Jisc Learning Data H
 <tr><td><a href="recipes/case/create-note.md"> Create a note</a> </td><td><a href="recipes/case/uxapi/note-create-activity-input.md">note-create-activity-input.md </a>   </td> <td><a href="recipes/case/uxapi/note-create-activity-input.json">note-create-activity-input.json </a>  </td></tr>
 </table>
 
-## Interaction
-
-<table>
-<tr><td>Statement Template </td><td>Input TSV  definitions</td><td>JSON Template</td></tr>
-<tr><td> <a href="recipes/interaction/interaction.md"> Interaction </a> </td><td> <a href="recipes/interaction/uxapi/interaction-input.md">interaction-input.md </a>  </td> <td><a href="recipes/interaction/uxapi/interaction-input.json">interaction-activity-input.json</a></td></tr>
-</table>
-
 ## Library Services
 
 <table>
@@ -92,17 +85,6 @@ Here are descriptions of Statements that can be sent to the Jisc Learning Data H
          <tr><td> <a href = "recipes/readinglist/readinglist-view-reading-list-item.md">Viewed a Reading List Item</a></td><td><a href="recipes/readinglist/uxapi/readinglist-itemviewed-input.md">readinglist-itemviewed-input.md</a></td><td><a href="recipes/readinglist/uxapi/readinglist-itemviewed-template.json">readinglist-itemviewed-template.json</td><td><a href="recipes/readinglist/tsv/readinglist-view-reading-list-item.tsv">TSV</a></td></tr>   
         <tr><td> <a href = "recipes/readinglist/readinglist-view-content.md">Viewed reaing list e-content</a></td><td><a href="recipes/readinglist/uxapi/readinglist-viewed-content-input.md">readinglist-viewed-content-input.md</a></td><td><a href="recipes/readinglist/uxapi/readinglist-viewed-content-template.json">readinglist-viewed-content-template.json</td></tr> 
 </table>
-
-## Setting and Reaching Targets
-
-<table>
-<tr><td>Statement Template</td><td>Input TSV definitions</td><td>JSON Template</td></tr>  
-<tr><td><a href = "recipes/studyapps/target-set.md">Set a target</a></td> <td><a href="recipes/studyapps/uxapi/target-set-input.md">target-set-input.md</a></td> <td></td></tr>
-<tr><td><a href = "recipes/studyapps/target-recording-activity.md">Record an activity against a target</a> </td><td><a href="recipes/studyapps/uxapi/target-set-input.md">target-set-input.md</a></td><td></td></tr>
-<tr><td><a href = "recipes/studyapps/target-reached-completed.md">Reach a target</a></td><td><a href="recipes/studyapps/uxapi/target-set-input.md">target-set-input.md</a></td><td></td></tr>
-<tr><td><a href = "recipes/studyapps/target-update.md">Post an update</a></td><td><a href="recipes/studyapps/uxapi/target-set-input.md">target-set-input.md</a> </td><td></td></tr> 
-</table>
-
 
 ## Video
 
