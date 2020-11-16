@@ -1,4 +1,4 @@
-# xAPI recipes for Jisc Learning Analytics v1.1.1
+# xAPI recipes for Jisc Learning Analytics v1.2.0
 
 ## Statement Vocabulary and Common Structures
 
