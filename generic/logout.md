@@ -1,23 +1,18 @@
 # Generic logged_out Statement template
 
 ## Purpose
+
 This generic Statement template describes a user logging out of a VLE.
 
 The entities and properties described here represent a typical Statement template. Further properties or constraints could be defined to create a login Statement template for a more specific purpose.
 
 Natural language example of a typical logout Statement: "John Smith logged out of his university Moodle VLE using his mobile phone."
 
-
-## Statement template and JSON examples in Jisc Profile:
-
-- [VLE Logout](/recipes/vle/logout.md)
-- [Blackboard VLE Login](/vle/blackboard/loggedout.json)
-- [Moodle VLE Login](/vle/moodle/logout.js)
-
 ### Actor
+
 The Actor entity is used to identify the individual that is logging out. It uses the Jisc Profile common entity [ActorA](/common_structures.md#actora).
 
-#### Entity properties:
+#### Entity properties
 
 <table>
 <tr><th>Property</th><th>Description</th></tr>
@@ -79,9 +74,10 @@ The Verb used in log out Statements is [logged out](/vocabulary.md#verbs). It de
 ```
 
 ### Object
+
 The Object for logout Statements identifies what is being logged out of. It uses the Jisc Profile common entity [ObjectA](../common_structures.md#objecta),
 
-#### Entity properties:
+#### Entity properties
 
 <table>
 	<tr><th>Property</th><th>Description</th></tr>
@@ -91,18 +87,13 @@ The Object for logout Statements identifies what is being logged out of. It uses
 	</tr>
 	<tr>
 		<td>object.id [1]</td>
-		<td>An identifier for the Object of the xAPI Statement. This must be unique (within a given platform) across all Object types.</td>
+		<td>An identifier for the Object of the xAPI Statement. This must be unique (within a given platform) across all Object types.</td>	
+  </tr>
+	<tr>
+		<td>object.definition.type [1]</td>
+		<td>Indicates the type of the object of the statement. It is required and should be aligned with those defined in the [vocabularies](/vocabulary.md#activity-types)</td>
+		<td>iri</td>
 	</tr>
-		<tr>
-		<td>object.definition.type [1]<br />
-	object.definition.name [0..1]<br />
-	object.definition.extensions.http://xapi.jisc.ac.uk/subType [0..1]<br />
-	object.definition.extensions.http://xapi.jisc.ac.uk/uddModInstanceID [0..1]</td>
-		<td>A JSON Object comprising both standard xAPI attributes and the Jisc Profile 'subType' and 'uddModInstanceID' extensions.<br/>
-    The <b>type</b> indicates the type of the Object of the Statement. It is required and valid values are listed on the <a href="vocabulary.md#31-activity-types">vocabulary page</a>.<br/>
-    The <b>name</b> is optional.<br/>
-    The <b>subType</b> extension may be used to indicate the sub-type of this Activity, if applicable, for the recipe being used to create the Statement. This qualifies the object.objectType, and is described on the [vocabularies](vocabulary.md#32-object-definition-extensions) page.<br />
-  	</tr>
 </table>
 
 ### Example
@@ -111,12 +102,9 @@ The Object for logout Statements identifies what is being logged out of. It uses
   "objectType": "Activity",
   "id": "https://courses.alpha.jisc.ac.uk/moodle",
   "definition": {
-    "type": "http://activitystrea.ms/schema/1.0/application",
+    "type": "http://id.tincanapi.com/activitytype/lms",
     "name": {
       "en": "University of Jisc VLE"
-    },
-    "extensions": {
-      "http://xapi.jisc.ac.uk/subType": "http://id.tincanapi.com/activitytype/lms"
     }
   }
 }
@@ -154,4 +142,3 @@ The Context entity can be used to describe any surrounding circumstances to the 
   }
 }
 ```
-

@@ -1,5 +1,5 @@
-USERNAME	CLIENT_IP	TIMESTAMP	SESSION_ID	OBJECT_ID	OBJECT_NAME	SUBTYPE
-STUDENT12345	10.3.3.48	2016-02-06T10:00:00.000Z	32456891	https://courses.alpha.jisc.ac.uk/moodle	University of Jisc VLE	http://id.tincanapi.com/activitytype/lms
+USERNAME	CLIENT_IP	TIMESTAMP	SESSION_ID	OBJECT_ID	OBJECT_NAME	TYPE
+STUDENT12345    10.3.3.48	2016-02-06T10:00:00.000Z		https://courses.alpha.jisc.ac.uk/moodle	University of Jisc VLE	http://id.tincanapi.com/activitytype/lms
 STUDENT12346	10.3.3.49	2016-02-07T10:00:00.000Z	32469439	https://courses.alpha.jisc.ac.uk/moodle	University of Jisc VLE	http://id.tincanapi.com/activitytype/lms
 STUDENT12347	10.3.3.50	2016-02-08T10:00:00.000Z	32481987	https://courses.alpha.jisc.ac.uk/moodle	University of Jisc VLE	http://id.tincanapi.com/activitytype/lms
 STUDENT12348	10.3.3.51	2016-02-09T10:00:00.000Z	32494535	https://courses.alpha.jisc.ac.uk/moodle	University of Jisc VLE	http://id.tincanapi.com/activitytype/lms

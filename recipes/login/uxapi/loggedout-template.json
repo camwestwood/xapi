@@ -14,6 +14,16 @@
 			"en": "logged out of"
 		}
 	},
+	"object": {
+		"objectType": "Activity",
+		"id": "**OBJECT_ID**",
+		"definition": {
+			"type": "**TYPE**",
+			"name": {
+				"en": "**OBJECT_NAME**"
+			}
+		}
+	},
 	"context": {
 		"platform": "**PLATFORM**",
 		"extensions": {
@@ -22,19 +32,6 @@
 			"http://id.tincanapi.com/extension/ip-address": "**CLIENT_IP**",
 			"http://xapi.jisc.ac.uk/version": "1.1.1",
 			"http://xapi.jisc.ac.uk/extensions/user-agent": "**USER_AGENT**"
-		}
-	},
-	"object": {
-		"objectType": "Activity",
-		"id": "**OBJECT_ID**",
-		"definition": {
-			"type": "http://activitystrea.ms/schema/1.0/application",
-			"name": {
-				"en": "**OBJECT_NAME**"
-			},
-			"extensions": {
-				"http://xapi.jisc.ac.uk/subType": "**SUBTYPE**"
-			}
 		}
 	}
 }

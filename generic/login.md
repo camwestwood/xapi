@@ -7,14 +7,6 @@ The entities and properties described here represent a typical Statement templat
 
 Natural language example of a typical login Statement: "John Smith logged in to his university Moodle VLE using his mobile phone."
 
-## Statement template and JSON examples in Jisc Profile:
-
-The following Statements follow the generic template:
-
-- [VLE Login](/recipes/vle/login.md)
-- [Blackboard VLE Login](/vle/blackboard/loggedin.json)
-- [Moodle VLE Login](/vle/moodle/login.js)
-
 ### Actor Entity
 The Actor entity is used to identify the individual that is logging in. It uses the Jisc Profile common entity [ActorA](/common_structures.md#actora).
 
@@ -77,7 +69,9 @@ The Verb used in login Statements is [logged in](../vocabulary.md#logged-in). It
 ```
 
 ### Object Entity
-The Object for Login Statements identifies what is being logged in to. It uses the Jisc Profile common entity [ObjectA](../common_structures.md#objecta),
+The Object for Login Statements identifies what is being logged in to. It uses the Jisc Profile common entity [ObjectA](../common_structures.md#objecta).
+
+Different application types should use the relevant type, as defined on the [vocabularies](/vocabulary.md#activity-types) page
 
 #### Object Entity properties:
 <table>
@@ -88,17 +82,13 @@ The Object for Login Statements identifies what is being logged in to. It uses t
 	</tr>
 	<tr>
 		<td>object.id [1]</td>
-		<td>An identifier for the Object of the xAPI Statement. This must be unique (within a given platform) across all Object types.</td>
+		<td>An identifier for the Object of the xAPI Statement. This must be unique (within a given platform) across all Object types.</td>	
+  </tr>
+	<tr>
+		<td>object.definition.type [1]</td>
+		<td>Indicates the type of the object of the statement. It is required and should be aligned with those defined in the [vocabularies](/vocabulary.md#activity-types)</td>
+		<td>iri</td>
 	</tr>
-		<tr>
-		<td>object.definition.type [1]<br />
-	object.definition.name [0..1]<br />
-	object.definition.extensions.http://xapi.jisc.ac.uk/subType [0..1]<br /></td>
-		<td>A JSON Object comprising both standard xAPI properties and the Jisc Profile 'subType' extension.<br/>
-    The <b>type</b> classifies generally what is being logged into, for example an application or a platform. Valid values are listed on the <a href="../vocabulary.md#31-activity-types">vocabulary page</a>.<br/>
-    The <b>name</b> is optional.<br/>
-    The <b>subType</b> extension may be used to further qualify the object.objectType, and is described on the [vocabularies](vocabulary.md#32-object-definition-extensions) page.<br /></tr>
-	
 </table>
 
 #### Object Example:
@@ -107,14 +97,10 @@ The Object for Login Statements identifies what is being logged in to. It uses t
   "objectType": "Activity",
   "id": "https://courses.alpha.jisc.ac.uk/moodle",
   "definition": {
-    "type": "http://activitystrea.ms/schema/1.0/application",
+    "type": "http://id.tincanapi.com/activitytype/lms",
     "name": {
       "en": "University of Jisc VLE"
-    },
-    "extensions": {
-      "http://xapi.jisc.ac.uk/subType": "http://id.tincanapi.com/activitytype/lms"
     }
-  }
 }
 ```
 
@@ -146,6 +132,3 @@ Context can be used to describe any surrounding circumstances to the login, incl
   }
 }
 ```
-
-
-
