@@ -16,8 +16,8 @@ Here are descriptions of Statements that can be sent to the Jisc Learning Data H
 ## Accessed Facilties
 
 <table>
-<tr><td>Statement Template</td><td>Input TSV definitions</td><td>JSON Template</td></tr>  
-<tr><td> <a href = "recipes/access/facility-accessed.md">Accessed facility</a></td><td><a href="recipes/access/uxapi/facility-accessed-input.md">facility-accessed-input.md</a></td><td><a href="recipes/access/uxapi/facility-accessed-template.json">facility-accessed-template.json</a></td></tr>  
+<tr><td>Statement Template</td><td>Input TSV definitions</td><td>JSON Template</td><td>Example Input</td></tr>  
+<tr><td> <a href = "recipes/access/facility-accessed.md">Accessed facility</a></td><td><a href="recipes/access/uxapi/facility-accessed-input.md">facility-accessed-input.md</a></td><td><a href="recipes/access/uxapi/facility-accessed-template.json">facility-accessed-template.json</a></td><td><a href="recipes/access/tsv/access.tsv">TSV</a></td></tr>  
 </table>
 
 ## Attendance
@@ -30,26 +30,26 @@ Here are descriptions of Statements that can be sent to the Jisc Learning Data H
 ## Econtent services
 
 <table>
-<tr><td>Statement Template</td><td>Input TSV definitions</td><td>JSON Template</td></tr>  
-<tr><td> <a href = "/recipes/econtent/econtent-viewed-econtent.md">Viewing econtent</a></td><td><a href="recipes/econtent/uxapi/econtent-viewed-econtent-input.md">econtent-viewed-econtent-input.md</a></td><td><a href="recipes/econtent/uxapi/econtent-viewed-econtent-template.json">econtent-viewed-econtent-template.json</a></td></tr>  
-<tr><td> <a href = "/recipes/econtent/econtent-accessed-econtent.md">Accessed service</a></td><td><a href="recipes/econtent/uxapi/econtent-accessed-econtent-input.md">econtent-accessed-econtent-input.md</a></td><td><a href="recipes/econtent/uxapi/econtent-accessed-econtent-template.json">econtent-accessed-econtent-template.json</a></td></tr>  
+<tr><td>Statement Template</td><td>Input TSV definitions</td><td>JSON Template</td><td>Example Input</td></tr>  
+<tr><td> <a href = "/recipes/econtent/econtent-viewed-econtent.md">Viewing econtent</a></td><td><a href="recipes/econtent/uxapi/econtent-viewed-econtent-input.md">econtent-viewed-econtent-input.md</a></td><td><a href="recipes/econtent/uxapi/econtent-viewed-econtent-template.json">econtent-viewed-econtent-template.json</a></td><td></td></tr>  
+<tr><td> <a href = "/recipes/econtent/econtent-accessed-econtent.md">Accessed service</a></td><td><a href="recipes/econtent/uxapi/econtent-accessed-econtent-input.md">econtent-accessed-econtent-input.md</a></td><td><a href="recipes/econtent/uxapi/econtent-accessed-econtent-template.json">econtent-accessed-econtent-template.json</a></td><td></td></tr>  
 </table>
 
 ## Intervention Case
 
 <table>
-<tr><td>Statement Template </td><td>Input TSV  definitions</td><td>JSON Template</td></tr>
-<tr><td> <a href="recipes/case/create-case.md"> Open a case </a> </td><td> <a href="recipes/case/uxapi/case-create-activity-input.md">case-create-activity-input.md </a>  </td> <td><a href="recipes/case/uxapi/case-create-activity-input.json">case-create-activity-input.json</a></td></tr>
-<tr><td><a href="recipes/case/update-case.md"> Update a case</a> </td><td><a href="recipes/case/uxapi/case-update-activity-input.md">case-update-activity-input.md </a>   </td> <td><a href="recipes/case/uxapi/case-update-activity-input.json">case-update-activity-input.json </a>  </td></tr>      
-<tr><td> <a href="recipes/case/close-case.md" > Close a case </a> </td><td><a href="recipes/case/uxapi/case-close-activity-input.md">case-close-activity-input.md </a>   </td> <td><a href="recipes/case/uxapi/case-close-activity-input.json">case-close-activity-input.json </a></td></tr>  
-<tr><td><a href="recipes/case/create-note.md"> Create a note</a> </td><td><a href="recipes/case/uxapi/note-create-activity-input.md">note-create-activity-input.md </a>   </td> <td><a href="recipes/case/uxapi/note-create-activity-input.json">note-create-activity-input.json </a>  </td></tr>
+<tr><td>Statement Template </td><td>Input TSV  definitions</td><td>JSON Template</td><td>Example Input</td></tr>
+<tr><td> <a href="recipes/case/create-case.md"> Open a case </a> </td><td> <a href="recipes/case/uxapi/case-create-activity-input.md">case-create-activity-input.md </a>  </td> <td><a href="recipes/case/uxapi/case-create-activity-input.json">case-create-activity-input.json</a></td><td></td></tr>
+<tr><td><a href="recipes/case/update-case.md"> Update a case</a> </td><td><a href="recipes/case/uxapi/case-update-activity-input.md">case-update-activity-input.md </a>   </td> <td><a href="recipes/case/uxapi/case-update-activity-input.json">case-update-activity-input.json </a>  </td><td></td></tr>      
+<tr><td> <a href="recipes/case/close-case.md" > Close a case </a> </td><td><a href="recipes/case/uxapi/case-close-activity-input.md">case-close-activity-input.md </a>   </td> <td><a href="recipes/case/uxapi/case-close-activity-input.json">case-close-activity-input.json </a></td><td></td></tr>  
+<tr><td><a href="recipes/case/create-note.md"> Create a note</a> </td><td><a href="recipes/case/uxapi/note-create-activity-input.md">note-create-activity-input.md </a>   </td> <td><a href="recipes/case/uxapi/note-create-activity-input.json">note-create-activity-input.json </a>  </td><td></td></tr>
 </table>
 
 ## Library Services
 
 <table>
-<tr><td>Statement Template</td><td>Input TSV definitions</td><td>JSON Template</td></tr>  
-     <tr><td> <a href = "/recipes/library/library-item-borrowing.md">Library item: Borrowed item</a></td><td><a href="recipes/library/uxapi/library-item-borrowed-input.md">library-item-borrowed-input.md</a></td><td><a href="recipes/library/uxapi/library-item-borrowed-template.json">library-item-template.json</td></tr>
+<tr><td>Statement Template</td><td>Input TSV definitions</td><td>JSON Template</td><td>Example Input</td></tr>  
+     <tr><td> <a href = "/recipes/library/library-item-borrowing.md">Library item: Borrowed item</a></td><td><a href="recipes/library/uxapi/library-item-borrowed-input.md">library-item-borrowed-input.md</a></td><td><a href="recipes/library/uxapi/library-item-borrowed-template.json">library-item-template.json</td><td><a href="recipes/library/tsv/borrowed.tsv">TSV</a></td></tr>
 </table>
 
 ## Login activity
@@ -63,11 +63,11 @@ Here are descriptions of Statements that can be sent to the Jisc Learning Data H
 ## Microsoft Products and Services
 
 <table>
-<tr><td>Statement Template</td><td>Input TSV definitions</td><td>JSON Template</td></tr>  
+<tr><td>Statement Template</td><td>Input TSV definitions</td><td>JSON Template</td><td>Example Input</td></tr>  
      <tr>
      <td> <a href = "/recipes/microsoft/microsoft-aggregated-activity.md">Microsoft Aggregated Activity</a></td>
      <td></td>
-     <td><a href="recipes/microsoft/microsoft-aggregated-activity.json">microsoft-aggregated-activity.json</td></tr>
+     <td><a href="recipes/microsoft/microsoft-aggregated-activity.json">microsoft-aggregated-activity.json</td><td></td></tr>
 </table>
 
 ## Predictive Model Output
@@ -90,7 +90,7 @@ Here are descriptions of Statements that can be sent to the Jisc Learning Data H
 <tr><td>Statement Template</td><td>Input TSV definitions</td><td>JSON Template</td><td>Example Input</td></tr>  
      <tr><td> <a href = "recipes/readinglist/readinglist-view-reading-list.md">Viewed a Reading List </a></td><td><a href="recipes/readinglist/uxapi/readinglist-viewed-input.md">readinglist-itemviewed-input.md</a></td><td><a href="recipes/readinglist/uxapi/readinglist-viewed-template.json">readinglist-viewed-template.json</td><td><a href="recipes/readinglist/tsv/readinglist-view-reading-list.tsv">TSV</a></td> </tr>    
          <tr><td> <a href = "recipes/readinglist/readinglist-view-reading-list-item.md">Viewed a Reading List Item</a></td><td><a href="recipes/readinglist/uxapi/readinglist-itemviewed-input.md">readinglist-itemviewed-input.md</a></td><td><a href="recipes/readinglist/uxapi/readinglist-itemviewed-template.json">readinglist-itemviewed-template.json</td><td><a href="recipes/readinglist/tsv/readinglist-view-reading-list-item.tsv">TSV</a></td></tr>   
-        <tr><td> <a href = "recipes/readinglist/readinglist-view-content.md">Viewed reaing list e-content</a></td><td><a href="recipes/readinglist/uxapi/readinglist-viewed-content-input.md">readinglist-viewed-content-input.md</a></td><td><a href="recipes/readinglist/uxapi/readinglist-viewed-content-template.json">readinglist-viewed-content-template.json</td></tr> 
+        <tr><td> <a href = "recipes/readinglist/readinglist-view-content.md">Viewed reaing list e-content</a></td><td><a href="recipes/readinglist/uxapi/readinglist-viewed-content-input.md">readinglist-viewed-content-input.md</a></td><td><a href="recipes/readinglist/uxapi/readinglist-viewed-content-template.json">readinglist-viewed-content-template.json</td><td></td></tr> 
 </table>
 
 ## Video
